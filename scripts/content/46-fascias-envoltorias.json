@@ -1,0 +1,9 @@
+{
+  "patches": [
+    { "id": "fascia-lata", "envelope": true },
+    { "id": "fascias-do-membro-superior", "envelope": true },
+    { "id": "fascias-do-membro-inferior", "envelope": true },
+    { "id": "fascias-do-tronco", "envelope": true },
+    { "id": "fascias-da-cabeca-e-pescoco", "envelope": true }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "patches": [
+    {
+      "id": "tendao-calcaneo",
+      "summary": "O tendão mais forte do corpo; transmite ao calcâneo a força do tríceps sural na flexão plantar e na propulsão da marcha.",
+      "fields": {
+        "Músculo": "Tríceps sural: as duas cabeças do gastrocnêmio, medial e lateral, e o sóleo. O plantar contribui com um tendão fino e independente na sua borda medial.",
+        "Trajeto": "Forma-se na metade da perna pela confluência das aponeuroses do gastrocnêmio e do sóleo. Suas fibras giram cerca de 90° no sentido lateral enquanto descem, o que concentra tensão na porção média.",
+        "Inserção": "Face posterior média do tubérculo do calcâneo, com a bolsa retrocalcânea entre o tendão e o osso e a bolsa subcutânea entre o tendão e a pele.",
+        "Função": "Transmite a flexão plantar do tornozelo e, pelo gastrocnêmio, participa também da flexão do joelho. É o motor da fase de propulsão da marcha, da corrida e do salto, armazenando e devolvendo energia elástica.",
+        "Lesão típica": "Tendinopatia da porção média, tipicamente 2 a 6 cm acima da inserção, onde a vascularização é menor; tendinopatia insercional, com ou sem esporão; e ruptura completa, mais comum em homens de meia-idade em esporte recreativo.",
+        "Palpação": "Facilmente palpável em pé ou em decúbito ventral com o pé para fora da maca. Pinçar o tendão entre polegar e indicador e comparar espessura e dor com o lado oposto.",
+        "Teste clínico": "Teste de Thompson: com a pessoa em decúbito ventral, comprimir a panturrilha; se o pé não faz flexão plantar, o tendão está roto.",
+        "Na prática": "O tratamento de escolha da tendinopatia é o exercício com carga progressiva, em especial o trabalho excêntrico. Na forma insercional, evita-se a dorsiflexão máxima no início, porque ela comprime o tendão contra o calcâneo."
+      },
+      "related": ["gastrocnemio", "soleo", "calcaneo", "talocrural", "nervo-tibial", "nervo-sural", "tibial-posterior"],
+      "aliases": ["Aquiles", "tendão de Aquiles", "tríceps sural"]
+    },
+    {
+      "id": "tendao-do-extensor-longo-dos-dedos",
+      "summary": "Divide-se em quatro tendões no dorso do pé e forma as expansões extensoras dos dedos.",
+      "fields": {
+        "Músculo": "Extensor longo dos dedos, do compartimento anterior da perna.",
+        "Trajeto": "Passa por baixo dos retináculos extensores superior e inferior do tornozelo, dentro de sua bainha sinovial, e se abre em quatro tendões no dorso do pé, que divergem para o segundo, terceiro, quarto e quinto dedos.",
+        "Inserção": "Cada tendão forma uma expansão extensora sobre a falange proximal, que se divide em uma faixa central para a base da falange média e duas faixas laterais para a base da falange distal.",
+        "Função": "Estende as articulações metatarsofalângicas e, com o auxílio dos lumbricais e interósseos, as interfalângicas. Auxilia a dorsiflexão do tornozelo, o que mantém o pé livre do chão na fase de balanço da marcha.",
+        "Lesão típica": "Tendinite por atrito sob o retináculo extensor, comum com calçados apertados ou cadarço muito justo. Sua atividade aumenta na tentativa de compensar um tibial anterior fraco.",
+        "Palpação": "Peça extensão dos dedos com o tornozelo em dorsiflexão: os quatro tendões saltam sob a pele do dorso do pé e são facilmente visíveis e palpáveis.",
+        "Teste clínico": "Extensão resistida dos dedos; comparar com a extensão isolada do hálux, comandada pelo extensor longo do hálux.",
+        "Na prática": "Dedos em garra com hiperextensão das metatarsofalângicas indicam predomínio deste tendão sobre a musculatura intrínseca do pé, padrão comum no pé cavo e nas neuropatias."
+      },
+      "related": ["extensor-longo-dos-dedos", "falanges-do-pe", "metatarsais", "metatarsofalangicas", "talocrural", "nervo-fibular-comum", "tibial-anterior"],
+      "aliases": ["tendões extensores do pé", "expansão extensora do pé"]
+    },
+    {
+      "id": "tendao-intermediario-do-digastrico",
+      "summary": "Alça tendínea presa ao hioide que une os dois ventres do digástrico, cada um com inervação diferente.",
+      "fields": {
+        "Músculo": "Músculo digástrico. Une o ventre anterior, que nasce da fossa digástrica da mandíbula, ao ventre posterior, que nasce da incisura mastóidea do temporal.",
+        "Trajeto": "Desce do ventre posterior, atravessa ou passa através do tendão do músculo estilo-hióideo e é mantido junto ao hioide por uma alça fibrosa que funciona como polia.",
+        "Inserção": "Preso ao corpo e ao corno maior do osso hioide por essa alça de fáscia cervical profunda.",
+        "Função": "Permite que os dois ventres trabalhem como uma unidade funcional apesar de terem inervações distintas: o ventre anterior é inervado pelo nervo milo-hióideo, ramo do trigêmeo, e o posterior pelo nervo facial. Juntos abaixam a mandíbula quando o hioide está fixo e elevam o hioide na deglutição quando a mandíbula está fixa.",
+        "Lesão típica": "Não sofre lesão isolada com frequência, mas participa das tensões da musculatura supra-hióidea em disfunções temporomandibulares e em alterações de deglutição.",
+        "Palpação": "Palpável no trígono submandibular, logo abaixo da mandíbula, pedindo à pessoa que engula e sinta o hioide subir sob os dedos.",
+        "Teste clínico": "Avaliado dentro do exame da musculatura supra-hióidea: abertura da boca contra resistência leve no mento, com o pescoço estabilizado.",
+        "Na prática": "É referência em fisioterapia de disfunção temporomandibular e em reabilitação da deglutição. O padrão de abrir a boca usando os supra-hióideos em vez de deixar a mandíbula descer é alvo frequente de reeducação."
+      },
+      "related": ["hioide", "mandibula", "temporal", "temporomandibular", "masseter", "musculo-temporal"],
+      "aliases": ["digástrico", "supra-hióideo"]
+    }
+  ]
+}

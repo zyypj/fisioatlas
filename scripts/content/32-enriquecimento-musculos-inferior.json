@@ -1,0 +1,264 @@
+{
+  "patches": [
+    {
+      "id": "reto-femoral",
+      "fields": {
+        "Grupo muscular": "Quadríceps femoral; compartimento anterior da coxa.",
+        "Plano e eixo": "Extensão do joelho e flexão do quadril, ambas no plano sagital e eixo transversal.",
+        "Sinergistas": "Vastos lateral, medial e intermédio na extensão do joelho; iliopsoas e sartório na flexão do quadril.",
+        "Antagonistas": "Isquiotibiais na extensão do joelho; glúteo máximo e isquiotibiais na flexão do quadril.",
+        "Observação funcional": "É o único dos quatro ventres do quadríceps que cruza duas articulações, o que o torna biarticular. Por isso perde força na extensão do joelho quando o quadril já está estendido: é a chamada insuficiência ativa. Sua lesão proximal, na origem do tendão refletido, é comum em chutes e sprints.",
+        "Exemplo de exercício": "Extensão de joelho em posição sentada, que favorece o reto femoral, e alongamento em decúbito ventral com joelho fletido e quadril estendido, em contexto didático.",
+        "Palpação básica": "Ocupa a linha média da face anterior da coxa. Peça extensão do joelho com o quadril fletido e siga o ventre da espinha ilíaca ântero-inferior até o tendão do quadríceps."
+      },
+      "related": ["nervo-femoral", "osso-do-quadril", "patela", "tibia", "coxofemoral", "joelho", "vasto-lateral", "vasto-medial", "vasto-intermedio", "ligamento-patelar", "psoas-maior"]
+    },
+    {
+      "id": "vasto-lateral",
+      "fields": {
+        "Grupo muscular": "Quadríceps femoral; compartimento anterior da coxa.",
+        "Plano e eixo": "Extensão do joelho no plano sagital e eixo transversal, com vetor lateral.",
+        "Sinergistas": "Reto femoral, vasto medial e vasto intermédio.",
+        "Antagonistas": "Isquiotibiais: bíceps femoral, semitendíneo e semimembranáceo.",
+        "Observação funcional": "É o maior e mais potente dos quatro ventres do quadríceps. Sua tração é lateral e, junto com o retináculo patelar lateral e o trato iliotibial, puxa a patela para fora. O equilíbrio com o vasto medial oblíquo é o que mantém a patela centrada no sulco troclear; quando esse equilíbrio falha, surge a dor femoropatelar.",
+        "Exemplo de exercício": "Agachamento, leg press e extensão de joelho, sempre com atenção ao alinhamento do joelho, em contexto didático.",
+        "Palpação básica": "Palpável em toda a face lateral da coxa, profundamente ao trato iliotibial, na extensão resistida do joelho."
+      },
+      "related": ["nervo-femoral", "femur", "patela", "tibia", "joelho", "reto-femoral", "vasto-medial", "vasto-intermedio", "trato-iliotibial", "retinaculo-patelar-lateral"]
+    },
+    {
+      "id": "vasto-medial",
+      "fields": {
+        "Grupo muscular": "Quadríceps femoral; compartimento anterior da coxa.",
+        "Plano e eixo": "Extensão do joelho no plano sagital e eixo transversal, com vetor medial.",
+        "Sinergistas": "Reto femoral, vasto lateral e vasto intermédio.",
+        "Antagonistas": "Isquiotibiais.",
+        "Observação funcional": "Suas fibras mais distais e mais oblíquas formam o vasto medial oblíquo, que se insere na borda medial da patela com ângulo de 50° a 55°. Essas fibras têm papel específico de contrabalançar a tração lateral e manter a patela centrada nos últimos graus de extensão. É a porção do quadríceps que atrofia primeiro após lesão ou imobilização do joelho.",
+        "Exemplo de exercício": "Extensão terminal do joelho, agachamento com adução isométrica de quadril e exercícios em cadeia fechada com controle de alinhamento, em contexto didático.",
+        "Palpação básica": "Palpável na face ântero-medial distal da coxa, logo acima e medialmente à patela; sua atrofia é facilmente percebida na comparação entre os lados."
+      },
+      "related": ["nervo-femoral", "femur", "patela", "tibia", "joelho", "reto-femoral", "vasto-lateral", "vasto-intermedio", "retinaculo-patelar-medial", "adutor-magno"]
+    },
+    {
+      "id": "vasto-intermedio",
+      "fields": {
+        "Grupo muscular": "Quadríceps femoral; compartimento anterior da coxa.",
+        "Plano e eixo": "Extensão do joelho no plano sagital e eixo transversal.",
+        "Sinergistas": "Reto femoral, vasto lateral e vasto medial.",
+        "Antagonistas": "Isquiotibiais.",
+        "Observação funcional": "É o mais profundo dos quatro ventres, situado diretamente sobre o fêmur e coberto pelo reto femoral. Suas fibras mais profundas e distais formam o músculo articular do joelho, que traciona a cápsula e a bolsa suprapatelar para cima durante a extensão, impedindo que sejam pinçadas entre a patela e o fêmur.",
+        "Exemplo de exercício": "Extensão de joelho em toda a amplitude; não é isolável dos demais vastos, em contexto didático.",
+        "Palpação básica": "Não é palpável diretamente: está sob o reto femoral, na face anterior do fêmur."
+      },
+      "related": ["nervo-femoral", "femur", "patela", "tibia", "joelho", "reto-femoral", "vasto-lateral", "vasto-medial", "coxim-adiposo-infrapatelar"]
+    },
+    {
+      "id": "sartorio",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior da coxa; flexores do quadril.",
+        "Plano e eixo": "Flexão, abdução e rotação lateral do quadril, nos três planos; flexão e rotação medial do joelho.",
+        "Sinergistas": "Iliopsoas e reto femoral na flexão do quadril; grácil e semitendíneo na flexão e rotação medial do joelho.",
+        "Antagonistas": "Glúteo máximo na extensão do quadril; adutores na abdução; quadríceps na flexão do joelho.",
+        "Observação funcional": "É o músculo mais longo do corpo. Seu nome vem de sartor, alfaiate em latim, porque produz exatamente a posição de pernas cruzadas em que os alfaiates trabalhavam. Forma o teto do canal dos adutores, por onde passam a artéria femoral e o nervo safeno, e compõe a pata de ganso com o grácil e o semitendíneo.",
+        "Exemplo de exercício": "Flexão, abdução e rotação lateral combinadas do quadril, com o joelho fletido, em contexto didático.",
+        "Palpação básica": "Palpável como uma faixa fina que cruza obliquamente a face anterior da coxa, da espinha ilíaca ântero-superior à face medial do joelho. Peça a posição de alfaiate e ele salta sob a pele."
+      },
+      "related": ["nervo-femoral", "osso-do-quadril", "tibia", "coxofemoral", "joelho", "gracil", "semitendineo", "nervo-safeno", "adutor-magno", "adutor-longo"]
+    },
+    {
+      "id": "biceps-femoral",
+      "fields": {
+        "Grupo muscular": "Isquiotibiais; compartimento posterior da coxa.",
+        "Plano e eixo": "Flexão do joelho no plano sagital; extensão do quadril, pela cabeça longa; rotação lateral da tíbia no plano transverso.",
+        "Sinergistas": "Semitendíneo e semimembranáceo na flexão do joelho; glúteo máximo na extensão do quadril.",
+        "Antagonistas": "Quadríceps femoral na extensão do joelho; iliopsoas e reto femoral na flexão do quadril.",
+        "Observação funcional": "Tem duas cabeças com inervações diferentes: a longa pela divisão tibial do ciático e a curta pela divisão fibular. É o isquiotibial mais lesionado, sobretudo na junção musculotendínea proximal da cabeça longa, durante a fase final do balanço na corrida em alta velocidade, quando trabalha excentricamente. O nervo fibular comum corre ao longo do seu tendão distal.",
+        "Exemplo de exercício": "Curl nórdico, elevação pélvica com uma perna e stiff, com ênfase no trabalho excêntrico, em contexto didático.",
+        "Palpação básica": "Seu tendão distal é facilmente palpável na face posterolateral do joelho, dirigindo-se à cabeça da fíbula, com o joelho fletido a 90° contra resistência."
+      },
+      "related": ["nervo-ciatico", "nervo-fibular-comum", "osso-do-quadril", "femur", "fibula", "joelho", "coxofemoral", "semitendineo", "semimembranaceo", "ligamento-sacrotuberal", "ligamento-popliteofibular", "tibiofibular-proximal"]
+    },
+    {
+      "id": "semitendineo",
+      "fields": {
+        "Grupo muscular": "Isquiotibiais; compartimento posterior da coxa.",
+        "Plano e eixo": "Flexão do joelho no plano sagital; extensão do quadril; rotação medial da tíbia no plano transverso.",
+        "Sinergistas": "Semimembranáceo e bíceps femoral na flexão; glúteo máximo na extensão do quadril; grácil e sartório na rotação medial do joelho.",
+        "Antagonistas": "Quadríceps femoral; bíceps femoral na rotação da tíbia.",
+        "Observação funcional": "Seu tendão distal é longo, superficial e facilmente identificável, o que faz dele o enxerto de escolha na reconstrução do ligamento cruzado anterior, geralmente junto com o do grácil. Compõe a pata de ganso com o sartório e o grácil, região onde a bursite é causa frequente de dor medial do joelho.",
+        "Exemplo de exercício": "Flexão de joelho resistida com rotação medial da tíbia e curl nórdico, em contexto didático.",
+        "Palpação básica": "Seu tendão é o mais medial e mais superficial dos que se palpam na face posterior do joelho fletido; é arredondado e destaca-se sob a pele."
+      },
+      "related": ["nervo-ciatico", "osso-do-quadril", "tibia", "joelho", "coxofemoral", "semimembranaceo", "biceps-femoral", "gracil", "sartorio", "ligamento-sacrotuberal"]
+    },
+    {
+      "id": "semimembranaceo",
+      "fields": {
+        "Grupo muscular": "Isquiotibiais; compartimento posterior da coxa.",
+        "Plano e eixo": "Flexão do joelho no plano sagital; extensão do quadril; rotação medial da tíbia no plano transverso.",
+        "Sinergistas": "Semitendíneo e bíceps femoral; glúteo máximo na extensão do quadril.",
+        "Antagonistas": "Quadríceps femoral; bíceps femoral na rotação da tíbia.",
+        "Observação funcional": "É o mais volumoso e potente dos isquiotibiais, e o mais profundo. Seu tendão distal se divide em várias expansões, uma das quais forma o ligamento poplíteo oblíquo, o que faz dele um estabilizador dinâmico do canto póstero-medial do joelho. Também traciona o corno posterior do menisco medial para trás durante a flexão, protegendo-o do pinçamento.",
+        "Exemplo de exercício": "Flexão de joelho resistida e exercícios excêntricos de cadeia posterior, em contexto didático.",
+        "Palpação básica": "Palpável profundamente ao semitendíneo, na face póstero-medial da coxa; seu tendão distal é mais largo e menos definido que o do semitendíneo."
+      },
+      "related": ["nervo-ciatico", "osso-do-quadril", "tibia", "joelho", "coxofemoral", "semitendineo", "biceps-femoral", "ligamento-popliteo-obliquo", "menisco-medial", "popliteo"]
+    },
+    {
+      "id": "adutor-longo",
+      "fields": {
+        "Grupo muscular": "Compartimento medial da coxa; adutores.",
+        "Plano e eixo": "Adução no plano frontal e eixo ântero-posterior; auxilia a flexão no plano sagital.",
+        "Sinergistas": "Adutor curto, adutor magno, pectíneo e grácil.",
+        "Antagonistas": "Glúteo médio, glúteo mínimo e tensor da fáscia lata.",
+        "Observação funcional": "É o mais anterior e mais visível dos adutores, e o mais lesionado. Sua inserção no púbis é o epicentro da chamada pubalgia do atleta, muito frequente em futebol e hóquei, em que gestos de chute e mudança de direção sobrecarregam a junção entre adutores e parede abdominal.",
+        "Exemplo de exercício": "Exercício de Copenhague, adução isométrica com bola entre os joelhos e adução em decúbito lateral, em contexto didático.",
+        "Palpação básica": "Seu tendão proximal é o mais evidente da região inguinal medial: peça adução resistida e ele salta imediatamente abaixo da virilha."
+      },
+      "related": ["nervo-obturatorio", "osso-do-quadril", "femur", "sinfise-pubica", "coxofemoral", "adutor-curto", "adutor-magno", "pectineo", "gracil", "reto-do-abdomen"]
+    },
+    {
+      "id": "adutor-magno",
+      "fields": {
+        "Grupo muscular": "Compartimento medial da coxa; adutores, com porção isquiocondilar.",
+        "Plano e eixo": "Adução no plano frontal; a porção adutora auxilia a flexão e a porção isquiocondilar, a extensão do quadril, ambas no plano sagital.",
+        "Sinergistas": "Demais adutores; glúteo máximo e isquiotibiais, com a porção isquiocondilar.",
+        "Antagonistas": "Glúteo médio, glúteo mínimo e tensor da fáscia lata.",
+        "Observação funcional": "É o maior músculo do compartimento medial e tem inervação dupla: a porção adutora pelo nervo obturatório e a porção isquiocondilar pela divisão tibial do nervo ciático, como os isquiotibiais. Essa porção posterior é, na prática, um extensor potente do quadril. Entre suas inserções fica o hiato dos adutores, por onde os vasos femorais passam para a fossa poplítea.",
+        "Exemplo de exercício": "Adução resistida e exercícios de extensão de quadril em amplitude ampla, como stiff e ponte unilateral, em contexto didático.",
+        "Palpação básica": "Palpável profundamente na face medial da coxa; sua inserção no tubérculo adutor, acima do epicôndilo medial do fêmur, é referência palpável importante."
+      },
+      "related": ["nervo-obturatorio", "nervo-ciatico", "osso-do-quadril", "femur", "coxofemoral", "adutor-longo", "adutor-curto", "adutor-minimo", "gracil", "nervo-safeno", "vasto-medial"]
+    },
+    {
+      "id": "gracil",
+      "fields": {
+        "Grupo muscular": "Compartimento medial da coxa; adutores.",
+        "Plano e eixo": "Adução do quadril no plano frontal; flexão e rotação medial do joelho.",
+        "Sinergistas": "Demais adutores na adução; semitendíneo e sartório na flexão e rotação medial do joelho.",
+        "Antagonistas": "Abdutores do quadril; quadríceps na extensão do joelho.",
+        "Observação funcional": "É o único adutor biarticular, cruzando quadril e joelho. Seu tendão compõe a pata de ganso e é usado, junto com o do semitendíneo, como enxerto na reconstrução do ligamento cruzado anterior. Também é frequentemente transferido em cirurgias reconstrutivas por ser superficial, longo e de sacrifício funcional pequeno.",
+        "Exemplo de exercício": "Adução resistida com o joelho estendido e exercícios de controle do valgo dinâmico, em contexto didático.",
+        "Palpação básica": "Palpável como uma faixa fina e superficial ao longo de toda a face medial da coxa, da virilha ao joelho, na adução resistida com o joelho estendido."
+      },
+      "related": ["nervo-obturatorio", "osso-do-quadril", "tibia", "sinfise-pubica", "coxofemoral", "joelho", "adutor-longo", "adutor-magno", "sartorio", "semitendineo"]
+    },
+    {
+      "id": "tibial-anterior",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior da perna; dorsiflexores.",
+        "Plano e eixo": "Dorsiflexão no plano sagital e eixo transversal; inversão no plano frontal e eixo ântero-posterior.",
+        "Sinergistas": "Extensor longo dos dedos, extensor longo do hálux e fibular terceiro na dorsiflexão; tibial posterior na inversão.",
+        "Antagonistas": "Tríceps sural na flexão plantar; fibulares longo e curto na eversão.",
+        "Observação funcional": "É o dorsiflexor mais potente e o responsável por manter o pé livre do chão na fase de balanço da marcha. Na fase de contato inicial, trabalha excentricamente para baixar o pé suavemente; sua fraqueza produz o pé caído com marcha escarvante e o característico bater do pé no chão. É o principal músculo envolvido na síndrome compartimental anterior crônica de esforço.",
+        "Exemplo de exercício": "Dorsiflexão resistida com elástico, caminhada sobre os calcanhares e exercícios excêntricos de controle da descida do pé, em contexto didático.",
+        "Palpação básica": "Seu tendão é o mais medial e mais evidente do dorso do tornozelo. Peça dorsiflexão com inversão e ele salta imediatamente lateral à crista da tíbia."
+      },
+      "related": ["nervo-fibular-comum", "tibia", "cuneiforme-medial", "metatarsais", "talocrural", "extensor-longo-dos-dedos", "extensor-longo-do-halux", "tibial-posterior", "fibular-longo", "retinaculo-extensor-superior-do-tornozelo"]
+    },
+    {
+      "id": "gastrocnemio",
+      "fields": {
+        "Grupo muscular": "Tríceps sural; compartimento posterior superficial da perna.",
+        "Plano e eixo": "Flexão plantar no plano sagital e eixo transversal; auxilia a flexão do joelho.",
+        "Sinergistas": "Sóleo e plantar na flexão plantar; isquiotibiais na flexão do joelho.",
+        "Antagonistas": "Tibial anterior, extensor longo dos dedos e extensor longo do hálux.",
+        "Observação funcional": "É biarticular: cruza joelho e tornozelo. Por isso sua força na flexão plantar diminui com o joelho fletido, situação em que o sóleo assume. Esse detalhe é a base do teste de Silfverskiöld, que diferencia o encurtamento do gastrocnêmio do encurtamento de todo o tríceps sural, comparando a dorsiflexão com o joelho estendido e fletido.",
+        "Exemplo de exercício": "Elevação do calcanhar com joelho estendido para o gastrocnêmio, e alongamento com o joelho estendido contra a parede, em contexto didático.",
+        "Palpação básica": "Forma o relevo mais evidente da panturrilha, com as duas cabeças bem delimitadas. Peça elevação do calcanhar em pé, com o joelho estendido."
+      },
+      "related": ["nervo-tibial", "femur", "calcaneo", "joelho", "talocrural", "soleo", "plantar", "tendao-calcaneo", "nervo-sural", "popliteo"]
+    },
+    {
+      "id": "soleo",
+      "fields": {
+        "Grupo muscular": "Tríceps sural; compartimento posterior superficial da perna.",
+        "Plano e eixo": "Flexão plantar no plano sagital e eixo transversal.",
+        "Sinergistas": "Gastrocnêmio e plantar; tibial posterior e flexores longos auxiliam.",
+        "Antagonistas": "Tibial anterior e extensores longos dos dedos e do hálux.",
+        "Observação funcional": "É monoarticular, cruzando apenas o tornozelo, e por isso mantém sua força com o joelho em qualquer posição. Rico em fibras lentas, é o músculo antigravitário por excelência: trabalha continuamente em pé, controlando a oscilação do corpo para a frente. É também chamado de coração periférico, porque suas contrações bombeiam o sangue venoso de volta ao coração.",
+        "Exemplo de exercício": "Elevação do calcanhar em posição sentada, com o joelho fletido a 90°, que isola o sóleo do gastrocnêmio, em contexto didático.",
+        "Palpação básica": "Palpável nas bordas medial e lateral da panturrilha, abaixo das cabeças do gastrocnêmio, na elevação do calcanhar com o joelho fletido."
+      },
+      "related": ["nervo-tibial", "tibia", "fibula", "calcaneo", "talocrural", "gastrocnemio", "plantar", "tendao-calcaneo", "flexor-longo-do-halux", "tibial-posterior"]
+    },
+    {
+      "id": "tibial-posterior",
+      "fields": {
+        "Grupo muscular": "Compartimento posterior profundo da perna; inversores.",
+        "Plano e eixo": "Inversão no plano frontal e eixo ântero-posterior; flexão plantar no plano sagital.",
+        "Sinergistas": "Tibial anterior na inversão; tríceps sural e flexores longos na flexão plantar.",
+        "Antagonistas": "Fibulares longo e curto na eversão; tibial anterior na dorsiflexão.",
+        "Observação funcional": "É o principal sustentador dinâmico do arco longitudinal medial. Sua insuficiência produz o pé plano adquirido do adulto, com queda progressiva do arco, desvio do retropé em valgo e o sinal dos dedos demais, em que se veem mais dedos pelo lado de fora ao observar o pé por trás. A disfunção começa com dor medial e evolui para deformidade rígida se não tratada.",
+        "Exemplo de exercício": "Elevação do calcanhar em apoio unipodal, inversão resistida com elástico e exercícios de controle do arco medial, em contexto didático.",
+        "Palpação básica": "Seu tendão é palpável logo atrás e abaixo do maléolo medial, sendo o mais anterior dos tendões dessa região. Peça inversão resistida com flexão plantar."
+      },
+      "related": ["nervo-tibial", "tibia", "fibula", "navicular", "cuneiforme-medial", "talocrural", "subtalar", "ligamento-calcaneonavicular-plantar", "tibial-anterior", "fibular-longo", "retinaculo-dos-flexores-do-tornozelo", "membrana-interossea-da-perna"]
+    },
+    {
+      "id": "fibular-longo",
+      "fields": {
+        "Grupo muscular": "Compartimento lateral da perna; evertores.",
+        "Plano e eixo": "Eversão no plano frontal e eixo ântero-posterior; flexão plantar no plano sagital.",
+        "Sinergistas": "Fibular curto na eversão; tríceps sural na flexão plantar.",
+        "Antagonistas": "Tibial anterior e tibial posterior na inversão.",
+        "Observação funcional": "Seu tendão atravessa toda a planta do pé, do lado lateral ao medial, passando pelo sulco do cuboide, e se insere no primeiro metatarsal e no cuneiforme medial. Esse trajeto único faz dele o sustentador do arco transverso e o responsável por pressionar a cabeça do primeiro metatarsal contra o solo na propulsão, ação essencial para o impulso do passo.",
+        "Exemplo de exercício": "Eversão resistida com elástico e exercícios de propulsão com apoio no primeiro metatarsal, em contexto didático.",
+        "Palpação básica": "Palpável ao longo da face lateral da perna, abaixo da cabeça da fíbula, e seu tendão atrás do maléolo lateral, na eversão resistida."
+      },
+      "related": ["nervo-fibular-comum", "fibula", "cuneiforme-medial", "metatarsais", "cuboide", "talocrural", "subtalar", "fibular-curto", "tibial-posterior", "ligamento-plantar-longo", "retinaculo-fibular-superior"]
+    },
+    {
+      "id": "fibular-curto",
+      "fields": {
+        "Grupo muscular": "Compartimento lateral da perna; evertores.",
+        "Plano e eixo": "Eversão no plano frontal e eixo ântero-posterior; auxilia a flexão plantar.",
+        "Sinergistas": "Fibular longo e fibular terceiro na eversão.",
+        "Antagonistas": "Tibial anterior e tibial posterior na inversão.",
+        "Observação funcional": "É o principal evertor puro do pé e o mais importante freio dinâmico da inversão, o que o torna peça central na prevenção de entorses laterais recorrentes. Sua inserção na base do quinto metatarsal é o local da fratura por avulsão do pseudo-Jones, comum em entorses em inversão e distinta da fratura de Jones, que é mais distal e cicatriza pior.",
+        "Exemplo de exercício": "Eversão resistida com elástico e treino proprioceptivo em superfícies instáveis, base da prevenção de entorses, em contexto didático.",
+        "Palpação básica": "Seu tendão é palpável atrás do maléolo lateral, abaixo do tendão do fibular longo, seguindo até a base do quinto metatarsal, que é facilmente palpável na borda lateral do pé."
+      },
+      "related": ["nervo-fibular-comum", "fibula", "metatarsais", "talocrural", "subtalar", "fibular-longo", "fibular-terceiro", "ligamento-talofibular-anterior", "ligamento-calcaneofibular", "retinaculo-fibular-inferior"]
+    },
+    {
+      "id": "extensor-longo-dos-dedos",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior da perna; dorsiflexores.",
+        "Plano e eixo": "Extensão dos dedos e dorsiflexão no plano sagital; auxilia a eversão no plano frontal.",
+        "Sinergistas": "Tibial anterior, extensor longo do hálux e fibular terceiro na dorsiflexão; extensor curto dos dedos na extensão.",
+        "Antagonistas": "Flexor longo dos dedos, flexor curto dos dedos e tríceps sural.",
+        "Observação funcional": "Quando o tibial anterior está fraco, ele assume a dorsiflexão, mas com um vetor em eversão e hiperestendendo as metatarsofalângicas. Esse padrão compensatório é o mecanismo dos dedos em garra em neuropatias e no pé cavo: os extensores longos dominam sobre a musculatura intrínseca do pé.",
+        "Exemplo de exercício": "Dorsiflexão com extensão dos dedos resistida e treino de dissociação entre tornozelo e dedos, em contexto didático.",
+        "Palpação básica": "Seus quatro tendões são facilmente visíveis no dorso do pé ao estender os dedos com o tornozelo em dorsiflexão."
+      },
+      "related": ["nervo-fibular-comum", "tibia", "fibula", "falanges-do-pe", "talocrural", "tibial-anterior", "extensor-longo-do-halux", "fibular-terceiro", "extensor-curto-dos-dedos", "tendao-do-extensor-longo-dos-dedos", "lumbricais-do-pe"]
+    },
+    {
+      "id": "flexor-longo-do-halux",
+      "fields": {
+        "Grupo muscular": "Compartimento posterior profundo da perna; flexores dos dedos.",
+        "Plano e eixo": "Flexão do hálux no plano sagital; auxilia a flexão plantar e a inversão.",
+        "Sinergistas": "Flexor curto do hálux, flexor longo dos dedos e tríceps sural.",
+        "Antagonistas": "Extensor longo do hálux e extensor curto do hálux; tibial anterior na dorsiflexão.",
+        "Observação funcional": "É o músculo do impulso final do passo: dá o último empurrão do dedão contra o chão. Seu tendão passa por um túnel fibro-ósseo entre os tubérculos do processo posterior do tálus, onde sofre atrito em bailarinas e jogadores de futebol, produzindo a tenossinovite estenosante conhecida como hálux saltans. Atravessa a planta cruzando o tendão do flexor longo dos dedos no nó de Henry.",
+        "Exemplo de exercício": "Flexão resistida do hálux, elevação do calcanhar com apoio no dedão e exercícios de propulsão, em contexto didático.",
+        "Palpação básica": "Seu tendão é o mais posterior dos que passam atrás do maléolo medial. Peça flexão resistida do hálux e sinta a tensão profunda nessa região."
+      },
+      "related": ["nervo-tibial", "fibula", "falanges-do-pe", "talus", "calcaneo", "talocrural", "flexor-curto-do-halux", "flexor-longo-dos-dedos", "quadrado-plantar", "retinaculo-dos-flexores-do-tornozelo", "sesamoides-do-halux"]
+    },
+    {
+      "id": "popliteo",
+      "fields": {
+        "Grupo muscular": "Compartimento posterior profundo da perna; destravadores do joelho.",
+        "Plano e eixo": "Rotação medial da tíbia, ou lateral do fêmur, no plano transverso e eixo vertical; auxilia a flexão do joelho.",
+        "Sinergistas": "Semitendíneo, semimembranáceo e grácil na rotação medial da tíbia.",
+        "Antagonistas": "Bíceps femoral na rotação lateral da tíbia; quadríceps na extensão.",
+        "Observação funcional": "É o músculo que destrava o joelho. Na extensão completa, o joelho entra no mecanismo de parafuso, com rotação lateral da tíbia que trava a articulação. Para iniciar a flexão, o poplíteo precisa girar a tíbia medialmente e destravá-la. Também traciona o corno posterior do menisco lateral para trás durante a flexão, protegendo-o. Seu tendão é intracapsular e faz parte do canto póstero-lateral.",
+        "Exemplo de exercício": "Rotação medial resistida da tíbia com o joelho fletido e exercícios de controle rotacional do joelho, em contexto didático.",
+        "Palpação básica": "Profundo, no assoalho da fossa poplítea; não é palpável diretamente. A fossa poplítea contém a artéria poplítea e o nervo tibial, o que exige cautela na palpação."
+      },
+      "related": ["nervo-tibial", "femur", "tibia", "fibula", "joelho", "menisco-lateral", "ligamento-popliteofibular", "ligamento-popliteo-arqueado", "ligamento-colateral-fibular", "gastrocnemio", "semimembranaceo"]
+    }
+  ]
+}

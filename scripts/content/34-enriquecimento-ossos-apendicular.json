@@ -1,0 +1,256 @@
+{
+  "patches": [
+    {
+      "id": "clavicula",
+      "fields": {
+        "Articula-se com": "Esterno, medialmente, na articulação esternoclavicular, e acrômio da escápula, lateralmente, na articulação acromioclavicular.",
+        "Palpação básica": "Palpável em toda a sua extensão, da incisura jugular ao acrômio. É o único osso longo horizontal do corpo e o único elo ósseo entre o membro superior e o esqueleto axial.",
+        "Marcos para o exercício": "Sua curva em S tem uma zona de transição no terço médio, que é o local mais comum de fratura, responsável por cerca de 80% dos casos. Recebe o trapézio e o deltoide acima e o peitoral maior e o subclávio abaixo."
+      },
+      "related": ["esterno", "escapula", "esternoclavicular", "acromioclavicular", "ligamento-conoide", "ligamento-trapezoide", "ligamentos-esternoclaviculares", "trapezio", "deltoide", "peitoral-maior", "subclavio"]
+    },
+    {
+      "id": "escapula",
+      "fields": {
+        "Articula-se com": "Úmero, na articulação glenoumeral, e clavícula, na acromioclavicular. Com o tórax mantém uma relação funcional, chamada articulação escapulotorácica, que não é uma articulação verdadeira.",
+        "Palpação básica": "A espinha da escápula, o acrômio, a borda medial e o ângulo inferior são facilmente palpáveis. O processo coracoide é sentido cerca de 2 cm abaixo da clavícula, no terço lateral, com pressão firme.",
+        "Marcos para o exercício": "Em repouso fica entre T2 e T7, com cerca de 30° de rotação anterior no plano transverso. Recebe dezessete músculos. Sua rotação superior de aproximadamente 60° durante a elevação do braço é essencial para a mecânica do ombro."
+      },
+      "related": ["umero", "clavicula", "glenoumeral", "acromioclavicular", "labio-glenoidal", "supraespinal", "infraespinal", "subescapular", "redondo-menor", "redondo-maior", "serratil-anterior", "trapezio", "romboide-maior", "romboide-menor", "levantador-da-escapula", "ligamentos-transversos-da-escapula", "ligamento-coracoacromial"]
+    },
+    {
+      "id": "umero",
+      "fields": {
+        "Articula-se com": "Escápula, acima, na articulação glenoumeral; rádio e ulna, abaixo, nas articulações do cotovelo.",
+        "Palpação básica": "O tubérculo maior é palpável abaixo do acrômio; o sulco intertubercular, entre os tubérculos, com o braço em leve rotação medial. Os epicôndilos medial e lateral são facilmente palpáveis no cotovelo.",
+        "Marcos para o exercício": "O nervo axilar contorna o colo cirúrgico e o nervo radial percorre o sulco espiral, ambos em risco nas fraturas correspondentes. O epicôndilo lateral é a origem dos extensores, na epicondilalgia lateral; o medial, dos flexores e pronadores."
+      },
+      "related": ["escapula", "radio", "ulna", "glenoumeral", "cotovelo", "nervo-axilar", "nervo-radial", "nervo-ulnar", "deltoide", "peitoral-maior", "latissimo-do-dorso", "biceps-braquial", "triceps-braquial", "tendao-comum-dos-extensores", "tendao-comum-dos-flexores", "ligamento-transverso-do-umero"]
+    },
+    {
+      "id": "radio",
+      "fields": {
+        "Articula-se com": "Úmero, no cotovelo; ulna, nas articulações radioulnares proximal e distal; e escafoide e semilunar, no punho.",
+        "Palpação básica": "A cabeça do rádio é palpável na face lateral do cotovelo e gira sob os dedos durante a pronação e a supinação. O processo estiloide é palpável na face lateral do punho, cerca de 1 cm distal ao da ulna.",
+        "Marcos para o exercício": "É o osso que gira sobre a ulna na pronação e supinação. Recebe quase toda a carga axial do punho e a transfere à ulna pela membrana interóssea. O tubérculo de Lister, no dorso, serve de polia ao extensor longo do polegar."
+      },
+      "related": ["umero", "ulna", "escafoide", "semilunar", "cotovelo", "radiocarpal", "radioulnar-proximal", "radioulnar-distal", "membrana-interossea-do-antebraco", "biceps-braquial", "supinador", "pronador-redondo", "braquiorradial"]
+    },
+    {
+      "id": "ulna",
+      "fields": {
+        "Articula-se com": "Úmero, no cotovelo; rádio, nas articulações radioulnares proximal e distal. No punho não toca o carpo diretamente: é separada dele pelo disco articular da radioulnar distal.",
+        "Palpação básica": "O olécrano e toda a borda posterior são palpáveis da ponta do cotovelo ao punho, sendo subcutâneos em toda a extensão. O processo estiloide é palpável na face medial do punho.",
+        "Marcos para o exercício": "O nervo ulnar passa no sulco atrás do epicôndilo medial, onde é facilmente percutido, produzindo a sensação conhecida como bater o osso da alegria. A incisura troclear forma a dobradiça do cotovelo com a tróclea do úmero."
+      },
+      "related": ["umero", "radio", "cotovelo", "radioulnar-proximal", "radioulnar-distal", "nervo-ulnar", "membrana-interossea-do-antebraco", "triceps-braquial", "braquial", "anconeo", "flexor-ulnar-do-carpo", "extensor-ulnar-do-carpo"]
+    },
+    {
+      "id": "escafoide",
+      "fields": {
+        "Articula-se com": "Rádio, semilunar, capitato, trapézio e trapezoide: cinco ossos.",
+        "Palpação básica": "Palpável no assoalho da tabaqueira anatômica, entre os tendões do extensor longo do polegar e do abdutor longo do polegar, com o punho em desvio ulnar.",
+        "Marcos para o exercício": "É o osso do carpo mais fraturado. Sua irrigação é retrógrada, entrando pelo polo distal, o que faz as fraturas do polo proximal terem alto risco de não consolidação e de necrose avascular. Dor na tabaqueira após queda sobre a mão exige investigação mesmo com radiografia normal."
+      },
+      "related": ["radio", "semilunar", "capitato", "trapezio-do-carpo", "trapezoide", "radiocarpal", "ligamento-escafolunar-interosseo", "abdutor-longo-do-polegar", "extensor-longo-do-polegar", "retinaculo-dos-flexores-do-punho"]
+    },
+    {
+      "id": "semilunar",
+      "fields": {
+        "Articula-se com": "Rádio, escafoide, piramidal, capitato e hamato: cinco ossos.",
+        "Palpação básica": "Palpável no dorso do punho, distalmente ao tubérculo de Lister, com o punho em flexão, quando se torna proeminente.",
+        "Marcos para o exercício": "É o osso do carpo mais luxado. Sua necrose avascular é a doença de Kienböck, que causa dor e rigidez progressivas do punho. Sua posição depende do equilíbrio entre os ligamentos escafolunar e lunopiramidal: a falha de um deles produz os padrões de instabilidade DISI e VISI."
+      },
+      "related": ["radio", "escafoide", "piramidal", "capitato", "hamato", "radiocarpal", "ligamento-escafolunar-interosseo", "ligamento-lunopiramidal-interosseo", "radioulnar-distal"]
+    },
+    {
+      "id": "piramidal",
+      "fields": {
+        "Articula-se com": "Semilunar, pisiforme, hamato e, indiretamente, com o disco articular da radioulnar distal.",
+        "Palpação básica": "Palpável na face dorso-ulnar do punho, distalmente ao processo estiloide da ulna, com o punho em desvio radial.",
+        "Marcos para o exercício": "É o segundo osso do carpo mais fraturado, geralmente por avulsão dorsal em queda com o punho em extensão e desvio ulnar. Participa da instabilidade lunopiramidal e do contato com a fibrocartilagem triangular."
+      },
+      "related": ["semilunar", "pisiforme", "hamato", "ulna", "radiocarpal", "radioulnar-distal", "ligamento-lunopiramidal-interosseo", "ligamento-radiocarpal-dorsal"]
+    },
+    {
+      "id": "pisiforme",
+      "fields": {
+        "Articula-se com": "Apenas o piramidal. É o único osso do carpo com uma única articulação.",
+        "Palpação básica": "Facilmente palpável na base da eminência hipotenar, no lado ulnar da face palmar do punho. Pode ser movido lateralmente com os dedos, o que confirma sua identificação.",
+        "Marcos para o exercício": "É um osso sesamoide alojado no tendão do flexor ulnar do carpo, funcionando como polia que aumenta o braço de alavanca desse músculo. Com o hâmulo do hamato, delimita o canal de Guyon, por onde passa o nervo ulnar."
+      },
+      "related": ["piramidal", "hamato", "flexor-ulnar-do-carpo", "abdutor-do-dedo-minimo-da-mao", "nervo-ulnar", "retinaculo-dos-flexores-do-punho", "radiocarpal"]
+    },
+    {
+      "id": "trapezio-do-carpo",
+      "fields": {
+        "Articula-se com": "Escafoide, trapezoide, primeiro metacarpal e segundo metacarpal.",
+        "Palpação básica": "Palpável na base da eminência tenar, distalmente ao escafoide, com o polegar em movimento para confirmar a articulação em sela.",
+        "Marcos para o exercício": "Sua face distal em sela, articulando com o primeiro metacarpal, é o que torna o polegar oponível. É também a articulação da mão mais acometida por artrose, a rizartrose. Seu tubérculo é uma das quatro fixações do retináculo dos flexores."
+      },
+      "related": ["escafoide", "trapezoide", "metacarpais", "carpometacarpal-do-polegar", "oponente-do-polegar", "abdutor-curto-do-polegar", "flexor-curto-do-polegar", "retinaculo-dos-flexores-do-punho", "flexor-radial-do-carpo"]
+    },
+    {
+      "id": "trapezoide",
+      "fields": {
+        "Articula-se com": "Escafoide, trapézio, capitato e segundo metacarpal.",
+        "Palpação básica": "De difícil palpação isolada: situa-se no dorso do punho, na base do segundo metacarpal, entre o trapézio e o capitato.",
+        "Marcos para o exercício": "É o menor osso da fileira distal do carpo e o menos lesionado de todos, graças à sua posição protegida entre os vizinhos e à forte articulação com a base do segundo metacarpal, que é a mais rígida do carpo."
+      },
+      "related": ["escafoide", "trapezio-do-carpo", "capitato", "metacarpais", "flexor-curto-do-polegar", "radiocarpal"]
+    },
+    {
+      "id": "capitato",
+      "fields": {
+        "Articula-se com": "Escafoide, semilunar, trapezoide, hamato e o segundo, terceiro e quarto metacarpais: sete ossos.",
+        "Palpação básica": "Palpável no dorso do punho, em uma depressão na base do terceiro metacarpal, mais evidente com o punho em leve flexão.",
+        "Marcos para o exercício": "É o maior e mais central osso do carpo, e o eixo em torno do qual os demais se movem. Sua cabeça encaixa na concavidade formada pelo escafoide e pelo semilunar, funcionando como o centro de rotação do punho."
+      },
+      "related": ["escafoide", "semilunar", "trapezoide", "hamato", "metacarpais", "radiocarpal", "adutor-do-polegar", "flexor-curto-do-polegar"]
+    },
+    {
+      "id": "hamato",
+      "fields": {
+        "Articula-se com": "Semilunar, piramidal, capitato e o quarto e quinto metacarpais.",
+        "Palpação básica": "Seu hâmulo é palpável na palma, cerca de 2 cm distal e lateral ao pisiforme, com pressão firme. A palpação costuma ser desconfortável, pois o nervo ulnar passa ao lado.",
+        "Marcos para o exercício": "O hâmulo forma a parede lateral do canal de Guyon, por onde passa o nervo ulnar. Sua fratura é típica de esportes com taco, raquete ou bastão, e frequentemente produz sintomas ulnares por proximidade."
+      },
+      "related": ["semilunar", "piramidal", "capitato", "metacarpais", "pisiforme", "nervo-ulnar", "retinaculo-dos-flexores-do-punho", "flexor-do-dedo-minimo-da-mao", "oponente-do-dedo-minimo-da-mao"]
+    },
+    {
+      "id": "metacarpais",
+      "fields": {
+        "Articula-se com": "Ossos da fileira distal do carpo, proximalmente, nas articulações carpometacarpais; entre si, pelas articulações intermetacarpais; e com as falanges proximais, nas metacarpofalângicas.",
+        "Palpação básica": "Palpáveis em toda a extensão no dorso da mão. As cabeças formam os nós dos dedos quando a mão é fechada.",
+        "Marcos para o exercício": "O segundo e o terceiro são fixos e formam o pilar rígido da mão; o quarto e o quinto são móveis, permitindo que a palma se feche em concha; o primeiro é o mais móvel de todos, graças à articulação em sela. A fratura do colo do quinto metacarpal é a fratura do boxeador."
+      },
+      "related": ["trapezio-do-carpo", "trapezoide", "capitato", "hamato", "falanges-da-mao", "metacarpofalangicas", "carpometacarpal-do-polegar", "interosseos-dorsais-da-mao", "interosseos-palmares", "ligamento-metacarpal-transverso-profundo", "oponente-do-polegar"]
+    },
+    {
+      "id": "falanges-da-mao",
+      "fields": {
+        "Articula-se com": "Metacarpais, nas articulações metacarpofalângicas, e entre si, nas interfalângicas. O polegar tem duas falanges; os demais dedos, três.",
+        "Palpação básica": "Palpáveis em toda a extensão. As articulações interfalângicas são facilmente delimitadas pelas pregas cutâneas dorsais.",
+        "Marcos para o exercício": "As falanges distais têm a tuberosidade que sustenta a polpa digital. O sistema de polias fibrosas dos flexores corre na face palmar: a polia A1 é onde ocorre o dedo em gatilho, com o nódulo tendíneo travando ao passar por ela."
+      },
+      "related": ["metacarpais", "metacarpofalangicas", "interfalangicas-da-mao", "flexor-superficial-dos-dedos", "flexor-profundo-dos-dedos", "extensor-dos-dedos", "lumbricais-da-mao", "ligamentos-colaterais-interfalangicos-da-mao", "aponeurose-palmar"]
+    },
+    {
+      "id": "osso-do-quadril",
+      "fields": {
+        "Articula-se com": "Sacro, atrás, na articulação sacroilíaca; osso do quadril do lado oposto, à frente, na sínfise púbica; e fêmur, lateralmente, na articulação coxofemoral.",
+        "Palpação básica": "A crista ilíaca, a espinha ilíaca ântero-superior, a espinha ilíaca póstero-superior, o túber isquiático e o tubérculo púbico são todos facilmente palpáveis e são as referências centrais da avaliação lombopélvica.",
+        "Marcos para o exercício": "Resulta da fusão de ílio, ísquio e púbis na cartilagem trirradiada do acetábulo, por volta dos 15 aos 17 anos. A espinha ilíaca ântero-superior e a póstero-superior são os pontos usados para medir a inclinação pélvica."
+      },
+      "related": ["sacro", "femur", "coccix", "sacroiliaca", "sinfise-pubica", "coxofemoral", "labio-acetabular", "ligamento-iliofemoral", "ligamento-isquiofemoral", "ligamento-pubofemoral", "gluteo-medio", "gluteo-maximo", "iliaco", "ligamento-inguinal", "ligamento-sacrotuberal", "membrana-obturatoria"]
+    },
+    {
+      "id": "patela",
+      "fields": {
+        "Articula-se com": "Fêmur, na articulação femoropatelar, deslizando no sulco troclear.",
+        "Palpação básica": "Facilmente palpável e móvel na face anterior do joelho, com o joelho estendido e o quadríceps relaxado. Suas bordas medial e lateral e os polos superior e inferior devem ser palpados separadamente.",
+        "Marcos para o exercício": "É o maior osso sesamoide do corpo, alojado no tendão do quadríceps. Aumenta o braço de alavanca da extensão do joelho em cerca de 30%. Sua faceta lateral é maior, refletindo a maior carga que recebe; a mediana ímpar só entra em contato acima de 90° de flexão."
+      },
+      "related": ["femur", "tibia", "joelho", "ligamento-patelar", "reto-femoral", "vasto-medial", "vasto-lateral", "vasto-intermedio", "retinaculo-patelar-medial", "retinaculo-patelar-lateral", "coxim-adiposo-infrapatelar"]
+    },
+    {
+      "id": "tibia",
+      "fields": {
+        "Articula-se com": "Fêmur e patela, acima, no joelho; fíbula, nas articulações tibiofibulares proximal e distal; e tálus, abaixo, na articulação talocrural.",
+        "Palpação básica": "Sua face ântero-medial é subcutânea em toda a extensão, facilmente palpável da tuberosidade ao maléolo medial. A tuberosidade da tíbia e o tubérculo de Gerdy, lateralmente, são referências importantes.",
+        "Marcos para o exercício": "Suporta praticamente toda a carga do corpo: a fíbula transmite apenas cerca de 10%. A tuberosidade recebe o ligamento patelar e é o local da doença de Osgood-Schlatter no adolescente; o tubérculo de Gerdy recebe o trato iliotibial."
+      },
+      "related": ["femur", "patela", "fibula", "talus", "joelho", "talocrural", "tibiofibular-proximal", "ligamento-patelar", "trato-iliotibial", "tibial-anterior", "semitendineo", "gracil", "sartorio", "membrana-interossea-da-perna", "ligamento-colateral-tibial"]
+    },
+    {
+      "id": "fibula",
+      "fields": {
+        "Articula-se com": "Tíbia, nas articulações tibiofibulares proximal e distal, e tálus, na articulação talocrural, pelo maléolo lateral.",
+        "Palpação básica": "A cabeça é palpável na face lateral do joelho, abaixo da interlinha; o maléolo lateral é facilmente palpável no tornozelo e desce mais que o medial. A diáfise é palpável apenas nos terços proximal e distal.",
+        "Marcos para o exercício": "Transmite pouca carga, cerca de 10%, e serve sobretudo de origem muscular e de parede lateral da pinça do tornozelo. O nervo fibular comum contorna seu colo logo abaixo da cabeça, onde é muito superficial e vulnerável a compressão por gesso, posicionamento ou cruzar as pernas."
+      },
+      "related": ["tibia", "talus", "joelho", "talocrural", "tibiofibular-proximal", "nervo-fibular-comum", "biceps-femoral", "fibular-longo", "fibular-curto", "soleo", "membrana-interossea-da-perna", "ligamento-colateral-fibular", "ligamento-talofibular-anterior"]
+    },
+    {
+      "id": "talus",
+      "fields": {
+        "Articula-se com": "Tíbia e fíbula, acima, na talocrural; calcâneo, abaixo, na subtalar; e navicular, à frente, na talonavicular.",
+        "Palpação básica": "Sua cabeça é palpável à frente do maléolo medial, entre ele e o navicular. A cúpula é acessível na dorsiflexão, na face anterior do tornozelo.",
+        "Marcos para o exercício": "Nenhum músculo se insere nele: é inteiramente coberto por cartilagem e ligamentos. Sua irrigação é precária e retrógrada, o que faz as fraturas do colo terem alto risco de necrose avascular. A tróclea é mais larga à frente, o que torna a dorsiflexão a posição mais estável do tornozelo."
+      },
+      "related": ["tibia", "fibula", "calcaneo", "navicular", "talocrural", "subtalar", "ligamento-talofibular-anterior", "ligamento-deltoide", "ligamento-calcaneonavicular-plantar", "ligamento-talonavicular", "flexor-longo-do-halux"]
+    },
+    {
+      "id": "calcaneo",
+      "fields": {
+        "Articula-se com": "Tálus, acima, na articulação subtalar, e cuboide, à frente, na calcaneocuboidea.",
+        "Palpação básica": "Palpável em toda a região do calcanhar. O sustentáculo do tálus é sentido cerca de 2 cm abaixo do maléolo medial; a tróclea fibular, abaixo do maléolo lateral; e o processo medial da tuberosidade, na face plantar, onde dói na fascite plantar.",
+        "Marcos para o exercício": "É o maior osso do tarso e o que recebe o primeiro impacto na marcha. Recebe o tendão calcâneo atrás e a aponeurose plantar embaixo. O sustentáculo do tálus sustenta a cabeça do tálus e dá apoio ao ligamento mola."
+      },
+      "related": ["talus", "cuboide", "subtalar", "tendao-calcaneo", "aponeurose-plantar", "ligamento-calcaneonavicular-plantar", "ligamento-plantar-longo", "ligamento-calcaneofibular", "abdutor-do-halux", "flexor-curto-dos-dedos", "quadrado-plantar", "retinaculo-dos-flexores-do-tornozelo"]
+    },
+    {
+      "id": "navicular",
+      "fields": {
+        "Articula-se com": "Tálus, atrás; os três cuneiformes, à frente; e, de forma variável, o cuboide, lateralmente.",
+        "Palpação básica": "Sua tuberosidade é facilmente palpável na borda medial do pé, cerca de 2 a 3 cm à frente e abaixo do maléolo medial, sendo a referência mais usada para avaliar a altura do arco medial.",
+        "Marcos para o exercício": "Recebe a inserção principal do tendão do tibial posterior. O teste de queda do navicular, que mede quanto a tuberosidade desce entre a posição sem carga e com carga, é usado para quantificar a pronação do pé."
+      },
+      "related": ["talus", "cuneiforme-medial", "cuneiforme-intermedio", "cuneiforme-lateral", "cuboide", "tibial-posterior", "ligamento-calcaneonavicular-plantar", "ligamento-talonavicular", "subtalar"]
+    },
+    {
+      "id": "cuboide",
+      "fields": {
+        "Articula-se com": "Calcâneo, atrás; quarto e quinto metatarsais, à frente; cuneiforme lateral e, de forma variável, navicular, medialmente.",
+        "Palpação básica": "Palpável na borda lateral do pé, entre a base do quinto metatarsal e o calcâneo, em uma pequena depressão.",
+        "Marcos para o exercício": "Seu sulco plantar transforma-se em túnel para o tendão do fibular longo, graças ao ligamento plantar longo. A chamada síndrome cuboideana, com bloqueio da sua mobilidade, é causa reconhecida de dor lateral do médio-pé após entorses."
+      },
+      "related": ["calcaneo", "metatarsais", "cuneiforme-lateral", "navicular", "fibular-longo", "ligamento-plantar-longo", "ligamento-calcaneocuboideo-plantar", "flexor-curto-do-halux"]
+    },
+    {
+      "id": "cuneiforme-medial",
+      "fields": {
+        "Articula-se com": "Navicular, atrás; primeiro e segundo metatarsais, à frente; e cuneiforme intermédio, lateralmente.",
+        "Palpação básica": "Palpável na borda medial do pé, entre a tuberosidade do navicular e a base do primeiro metatarsal.",
+        "Marcos para o exercício": "É o maior dos três cuneiformes. Recebe o tendão do tibial anterior na face medial e o do fibular longo na face plantar: os dois formam um estribo que sustenta e controla o arco medial."
+      },
+      "related": ["navicular", "metatarsais", "cuneiforme-intermedio", "tibial-anterior", "fibular-longo", "cuneiforme-lateral"]
+    },
+    {
+      "id": "cuneiforme-intermedio",
+      "fields": {
+        "Articula-se com": "Navicular, atrás; segundo metatarsal, à frente; e cuneiformes medial e lateral, dos lados.",
+        "Palpação básica": "Palpável no dorso do médio-pé, entre o navicular e a base do segundo metatarsal; de difícil individualização.",
+        "Marcos para o exercício": "É o menor dos três cuneiformes e o mais recuado, formando um encaixe em que a base do segundo metatarsal fica travada. Esse encaixe é a pedra angular do arco transverso e explica por que o segundo metatarsal é o mais sujeito a fratura por estresse."
+      },
+      "related": ["navicular", "metatarsais", "cuneiforme-medial", "cuneiforme-lateral"]
+    },
+    {
+      "id": "cuneiforme-lateral",
+      "fields": {
+        "Articula-se com": "Navicular, atrás; segundo, terceiro e quarto metatarsais, à frente; cuneiforme intermédio, medialmente; e cuboide, lateralmente.",
+        "Palpação básica": "Palpável no dorso do médio-pé, entre o navicular e a base do terceiro metatarsal.",
+        "Marcos para o exercício": "Articula-se com cinco ossos, mais que os outros dois cuneiformes. Junto com eles, forma o arco transverso do médio-pé, em que os cuneiformes se encaixam como as pedras de um arco romano."
+      },
+      "related": ["navicular", "metatarsais", "cuneiforme-intermedio", "cuboide", "flexor-curto-do-halux"]
+    },
+    {
+      "id": "metatarsais",
+      "fields": {
+        "Articula-se com": "Cuneiformes e cuboide, atrás, nas articulações tarsometatarsais; entre si, nas intermetatarsais; e com as falanges proximais, nas metatarsofalângicas.",
+        "Palpação básica": "Palpáveis no dorso do pé em toda a extensão. A base do quinto metatarsal é uma proeminência evidente na borda lateral do pé e referência clínica frequente.",
+        "Marcos para o exercício": "A linha das articulações tarsometatarsais é a articulação de Lisfranc, cuja lesão é grave e subdiagnosticada. O primeiro metatarsal é curto e robusto e recebe cerca do dobro da carga dos demais; o segundo é o mais longo e o mais sujeito a fratura por estresse."
+      },
+      "related": ["cuneiforme-medial", "cuneiforme-intermedio", "cuneiforme-lateral", "cuboide", "falanges-do-pe", "metatarsofalangicas", "sesamoides-do-halux", "fibular-curto", "fibular-longo", "tibial-anterior", "ligamento-metatarsal-transverso-profundo", "interosseos-dorsais-do-pe"]
+    },
+    {
+      "id": "falanges-do-pe",
+      "fields": {
+        "Articula-se com": "Metatarsais, nas metatarsofalângicas, e entre si, nas interfalângicas. O hálux tem duas falanges; os demais dedos, três.",
+        "Palpação básica": "Palpáveis em toda a extensão, com as articulações delimitadas pelas pregas cutâneas dorsais.",
+        "Marcos para o exercício": "A metatarsofalângica do hálux precisa de cerca de 60° a 70° de extensão para o desprendimento normal do passo. Sua limitação é o hálux rígido, que altera toda a mecânica da propulsão e sobrecarrega os demais raios."
+      },
+      "related": ["metatarsais", "metatarsofalangicas", "interfalangicas-do-pe", "flexor-longo-dos-dedos", "extensor-longo-dos-dedos", "flexor-curto-do-halux", "abdutor-do-halux", "lumbricais-do-pe", "ligamentos-colaterais-metatarsofalangicos", "aponeurose-plantar"]
+    }
+  ]
+}

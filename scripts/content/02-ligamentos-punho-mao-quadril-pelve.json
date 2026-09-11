@@ -1,0 +1,211 @@
+{
+  "patches": [
+    {
+      "id": "ligamento-radiocarpal-dorsal",
+      "summary": "Conduz o carpo pelo dorso do punho, limita a flexão e participa do mecanismo do desvio radial e ulnar.",
+      "fields": {
+        "Fixações": "Borda dorsal do rádio distal, obliquamente para baixo e medialmente, até o piramidal e, por fibras mais curtas, até o semilunar.",
+        "Função": "Limita a flexão do punho e, por sua obliquidade, arrasta a fileira proximal do carpo durante o desvio radial e ulnar. Com os ligamentos palmares, mantém o carpo alinhado ao rádio quando a mão gira.",
+        "Tensiona em": "Flexão do punho e desvio radial.",
+        "Teste clínico": "Dor dorsal reproduzida na flexão passiva máxima do punho.",
+        "Lesão típica": "Distendido em quedas sobre a mão espalmada; sua insuficiência contribui para instabilidades do carpo.",
+        "Na prática": "É a rédea dorsal do punho: quando encurta após imobilização longa, a flexão é o movimento que demora mais a voltar."
+      },
+      "related": [
+        "radiocarpal",
+        "radio",
+        "piramidal",
+        "semilunar",
+        "ligamento-escafolunar-interosseo"
+      ],
+      "aliases": [
+        "radiocarpal dorsal",
+        "radiopiramidal dorsal"
+      ]
+    },
+    {
+      "id": "ligamento-escafolunar-interosseo",
+      "summary": "Une escafoide e semilunar; sua ruptura é a instabilidade mais comum do carpo.",
+      "fields": {
+        "Fixações": "Une as faces adjacentes do escafoide e do semilunar. Tem três porções: dorsal (a mais resistente), proximal membranosa e palmar.",
+        "Função": "Mantém a congruência da fileira proximal do carpo, fazendo escafoide e semilunar girarem juntos. Sem ele, o escafoide flete e o semilunar estende, e o carpo perde o alinhamento.",
+        "Tensiona em": "Extensão do punho com desvio ulnar e carga axial, como na queda sobre a mão espalmada.",
+        "Teste clínico": "Teste de Watson (scaphoid shift): pressão sobre o tubérculo do escafoide enquanto o punho vai do desvio ulnar ao radial reproduz dor ou estalo.",
+        "Lesão típica": "Dissociação escafolunar. Na radiografia aparece o aumento do espaço entre os dois ossos, chamado sinal de Terry Thomas. Não tratada, evolui para o colapso degenerativo conhecido como SLAC.",
+        "Na prática": "Dor dorsal no punho após queda que não melhora, com força de preensão reduzida e estalo ao girar — vale sempre testar este ligamento."
+      },
+      "related": [
+        "escafoide",
+        "semilunar",
+        "radiocarpal",
+        "ligamento-lunopiramidal-interosseo",
+        "ligamento-radiocarpal-dorsal"
+      ],
+      "aliases": [
+        "escafossemilunar",
+        "SL",
+        "Terry Thomas"
+      ]
+    },
+    {
+      "id": "ligamento-lunopiramidal-interosseo",
+      "summary": "Une semilunar e piramidal, estabilizando a metade ulnar da fileira proximal do carpo.",
+      "fields": {
+        "Fixações": "Une as faces adjacentes do semilunar e do piramidal, com porções dorsal, proximal e palmar; aqui a porção palmar é a mais resistente.",
+        "Função": "Solidariza semilunar e piramidal para que girem como unidade. Sua falência deixa o semilunar em flexão relativa, padrão chamado VISI.",
+        "Tensiona em": "Desvio radial e carga sobre o lado ulnar do punho.",
+        "Teste clínico": "Teste de balotamento lunopiramidal (Reagan): mobilização ântero-posterior entre semilunar e piramidal reproduz dor e movimento excessivo.",
+        "Lesão típica": "Instabilidade lunopiramidal, causa frequente de dor ulnar crônica do punho, muitas vezes confundida com lesão da fibrocartilagem triangular.",
+        "Na prática": "Dor no lado do dedo mínimo ao apoiar a mão para levantar do sofá pede avaliação deste ligamento."
+      },
+      "related": [
+        "semilunar",
+        "piramidal",
+        "radiocarpal",
+        "ligamento-escafolunar-interosseo"
+      ],
+      "aliases": [
+        "lunotriquetral",
+        "LT"
+      ]
+    },
+    {
+      "id": "ligamentos-colaterais-metacarpofalangicos",
+      "summary": "Estabilizam as metacarpofalângicas lateralmente e ficam tensos só em flexão, o que define a posição segura de imobilização.",
+      "fields": {
+        "Fixações": "Tubérculos laterais das cabeças dos metacarpais até as bases das falanges proximais, correndo obliquamente para baixo e para a palma. Fibras acessórias vão à placa palmar.",
+        "Função": "Contêm o desvio lateral dos dedos. Como as cabeças dos metacarpais são excêntricas e mais largas na frente, esses ligamentos ficam frouxos na extensão e tensos entre 70° e 90° de flexão.",
+        "Tensiona em": "Flexão das metacarpofalângicas; na extensão ficam relaxados.",
+        "Teste clínico": "Estresse lateral da metacarpofalângica em flexão, comparando com o lado oposto.",
+        "Lesão típica": "No polegar, a lesão do colateral ulnar é o polegar do esquiador ou do guarda-caça, com instabilidade na pinça.",
+        "Na prática": "É por causa deles que a mão se imobiliza na posição intrínseca-plus, com as metacarpofalângicas fletidas a 70°-90° e as interfalângicas estendidas: assim os colaterais ficam no comprimento máximo e não encurtam."
+      },
+      "related": [
+        "metacarpofalangicas",
+        "metacarpais",
+        "falanges-da-mao",
+        "ligamentos-colaterais-interfalangicos-da-mao",
+        "adutor-do-polegar"
+      ],
+      "aliases": [
+        "colaterais MCF",
+        "polegar do esquiador"
+      ]
+    },
+    {
+      "id": "ligamentos-colaterais-interfalangicos-da-mao",
+      "summary": "Estabilizam as interfalângicas nos lados e mantêm tensão quase constante em todo o arco, o que favorece a rigidez pós-trauma.",
+      "fields": {
+        "Fixações": "Faces laterais das cabeças das falanges proximal e média até as bases das falanges seguintes, com fibras acessórias para a placa palmar.",
+        "Função": "Impedem o desvio lateral dos dedos e, com a placa palmar, limitam a hiperextensão. Diferentemente das metacarpofalângicas, mantêm-se relativamente tensos em toda a amplitude, porque as cabeças das falanges são quase circulares.",
+        "Tensiona em": "Praticamente toda a amplitude, com pico nos extremos.",
+        "Teste clínico": "Estresse lateral da interfalângica em extensão e em flexão leve.",
+        "Lesão típica": "Entorse de dedo por bola, com edema fusiforme na interfalângica proximal e rigidez prolongada.",
+        "Na prática": "Explica por que dedo torcido enrijece tão rápido: imobilizar a interfalângica proximal em extensão por muitos dias é o caminho mais curto para perder flexão."
+      },
+      "related": [
+        "interfalangicas-da-mao",
+        "falanges-da-mao",
+        "ligamentos-colaterais-metacarpofalangicos"
+      ],
+      "aliases": [
+        "colaterais IF da mão",
+        "dedo de bola"
+      ]
+    },
+    {
+      "id": "ligamento-da-cabeca-do-femur",
+      "summary": "Liga a fóvea da cabeça femoral ao acetábulo e conduz a artéria que irriga a cabeça na criança.",
+      "fields": {
+        "Fixações": "Fóvea da cabeça do fêmur até as margens da incisura acetabular e o ligamento transverso do acetábulo.",
+        "Função": "Contribuição mecânica pequena no adulto. Conduz a artéria do ligamento da cabeça do fêmur, ramo do obturatório, que é fonte importante de irrigação da cabeça femoral na infância. Tensiona em adução associada a flexão e rotação lateral.",
+        "Tensiona em": "Adução com flexão e rotação lateral do quadril.",
+        "Teste clínico": "Não tem teste isolado confiável; a suspeita vem de dor inguinal profunda em atletas com quadril hipermóvel.",
+        "Lesão típica": "Ruptura reconhecida em atletas e após luxação do quadril. Na criança, a lesão dessa via vascular participa da necrose avascular.",
+        "Na prática": "Também chamado de ligamento redondo. Anatomicamente pequeno, mas clinicamente lembrado pela artéria que carrega."
+      },
+      "related": [
+        "coxofemoral",
+        "femur",
+        "osso-do-quadril",
+        "ligamento-transverso-do-acetabulo",
+        "ligamento-iliofemoral"
+      ],
+      "aliases": [
+        "ligamento redondo",
+        "ligamentum teres"
+      ]
+    },
+    {
+      "id": "ligamento-transverso-do-acetabulo",
+      "summary": "Fecha a incisura acetabular, completando o anel do lábio e a vedação da articulação do quadril.",
+      "fields": {
+        "Fixações": "Atravessa a incisura acetabular, ligando suas duas margens e dando continuidade ao lábio acetabular, que não recobre essa região.",
+        "Função": "Transforma a incisura em forame, por onde passam vasos e nervos para a articulação. Completa o anel do lábio acetabular, que ajuda a manter a vedação e a pressão negativa intra-articular, um dos fatores de estabilidade do quadril.",
+        "Tensiona em": "Cargas que tendem a alargar o acetábulo e a tração axial do membro.",
+        "Teste clínico": "Não tem teste isolado; é referência anatômica na artroscopia do quadril e na orientação do componente acetabular na artroplastia.",
+        "Lesão típica": "Comprometido em fraturas do acetábulo e em lesões labrais extensas.",
+        "Na prática": "É a peça que fecha a ferradura do acetábulo, transformando-a num anel."
+      },
+      "related": [
+        "coxofemoral",
+        "osso-do-quadril",
+        "femur",
+        "ligamento-da-cabeca-do-femur",
+        "ligamento-iliofemoral"
+      ],
+      "aliases": [
+        "transverso acetabular"
+      ]
+    },
+    {
+      "id": "ligamento-sacrotuberal",
+      "summary": "Vai do sacro ao túber isquiático e resiste à nutação, sendo peça central da estabilidade da sacroilíaca.",
+      "fields": {
+        "Fixações": "Espinha ilíaca póstero-superior, face lateral do sacro e borda do cóccix até o túber isquiático, com prolongamento ao longo do ramo isquiático.",
+        "Função": "Resiste à nutação do sacro, que é seu giro anterior entre os ilíacos sob carga. Junto com o sacroespinal, impede que a extremidade inferior do sacro se eleve, fechando o mecanismo de estabilidade da articulação sacroilíaca. Converte a incisura isquiática menor em forame.",
+        "Tensiona em": "Nutação do sacro, flexão de tronco com quadril estendido e carga em apoio unipodal.",
+        "Teste clínico": "Palpação profunda entre o sacro e o túber isquiático; avaliado dentro do conjunto de testes de provocação sacroilíaca.",
+        "Lesão típica": "Fonte de dor glútea profunda e sacroilíaca, frequentemente associada a sobrecarga em gestantes e corredores.",
+        "Na prática": "A cabeça longa do bíceps femoral tem continuidade fascial com ele, o que explica por que tensão nos isquiotibiais e dor sacroilíaca costumam andar juntas."
+      },
+      "related": [
+        "sacroiliaca",
+        "sacro",
+        "osso-do-quadril",
+        "coccix",
+        "ligamento-sacroespinal",
+        "biceps-femoral",
+        "gluteo-maximo",
+        "nervo-pudendo"
+      ],
+      "aliases": [
+        "sacrotuberoso"
+      ]
+    },
+    {
+      "id": "ligamento-sacroespinal",
+      "summary": "Vai do sacro à espinha isquiática, divide os forames isquiáticos e serve de referência ao nervo pudendo.",
+      "fields": {
+        "Fixações": "Borda lateral do sacro e do cóccix até a espinha isquiática, à frente do sacrotuberal.",
+        "Função": "Resiste à nutação do sacro junto com o sacrotuberal. Divide a incisura isquiática em forame isquiático maior, acima, e menor, abaixo, definindo por onde cada estrutura sai da pelve.",
+        "Tensiona em": "Nutação do sacro e cargas em apoio unipodal.",
+        "Teste clínico": "Palpação transvaginal ou transretal da espinha isquiática na avaliação da dor pélvica; testes de provocação sacroilíaca.",
+        "Lesão típica": "Participa dos quadros de dor pélvica crônica, sobretudo quando associada ao aprisionamento do nervo pudendo.",
+        "Na prática": "O nervo pudendo contorna a espinha isquiática exatamente entre este ligamento e o sacrotuberal: esse é o ponto da pinça em que ele pode ser comprimido e também o alvo do bloqueio pudendo."
+      },
+      "related": [
+        "sacroiliaca",
+        "sacro",
+        "osso-do-quadril",
+        "coccix",
+        "ligamento-sacrotuberal",
+        "nervo-pudendo",
+        "piriforme"
+      ],
+      "aliases": [
+        "sacroespinhoso"
+      ]
+    }
+  ]
+}

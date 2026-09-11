@@ -1,0 +1,109 @@
+{
+  "patches": [
+    {
+      "id": "ligamento-patelar",
+      "summary": "Continuação do tendão do quadríceps até a tuberosidade da tíbia; sede da tendinopatia patelar e da doença de Osgood-Schlatter.",
+      "fields": {
+        "Fixações": "Ápice e margem posterior inferior da patela até a tuberosidade da tíbia. Tem cerca de 5 a 6 cm de comprimento e 3 cm de largura.",
+        "Função": "É a continuação distal do tendão do quadríceps femoral. Transmite à tíbia toda a força dos quatro ventres do quadríceps, produzindo a extensão do joelho. A patela funciona como osso sesamoide interposto nesse sistema, afastando o tendão do eixo articular e aumentando o braço de alavanca da extensão em cerca de 30%.",
+        "Tensiona em": "Extensão resistida do joelho e, sobretudo, na fase de amortecimento de saltos e aterrissagens.",
+        "Teste clínico": "Palpação do polo inferior da patela e da tuberosidade da tíbia; extensão resistida do joelho e agachamento em declive reproduzem a dor. Teste do reflexo patelar avalia a raiz L4.",
+        "Lesão típica": "Tendinopatia patelar, chamada joelho do saltador, com dor no polo inferior da patela. Na criança e no adolescente em crescimento, a tração repetida na tuberosidade da tíbia produz a doença de Osgood-Schlatter, e no polo inferior da patela, a de Sinding-Larsen-Johansson.",
+        "Na prática": "Apesar do nome, tecnicamente é um tendão, já que liga músculo a osso através da patela. O nome ligamento se manteve por tradição. O tratamento da tendinopatia é o exercício com carga progressiva, começando por isometria e avançando para trabalho pesado e lento.",
+        "Estudo 3D": "O modelo mostra as duas áreas de fixação do ligamento: no ápice da patela, acima, e na tuberosidade da tíbia, abaixo. São exatamente os dois pontos que se tornam dolorosos, cada um em uma condição diferente.",
+        "Localização": "Joelho"
+      },
+      "related": ["patela", "tibia", "joelho", "reto-femoral", "vasto-medial", "vasto-lateral", "vasto-intermedio", "coxim-adiposo-infrapatelar", "retinaculo-patelar-medial", "retinaculo-patelar-lateral"],
+      "aliases": ["tendão patelar", "joelho do saltador", "Osgood-Schlatter", "Sinding-Larsen"],
+      "source_objects": ["Patellar ligament.ol", "Patellar ligament.or", "Patellar ligament.el", "Patellar ligament.er"]
+    },
+    {
+      "id": "carpometacarpal-do-polegar",
+      "summary": "Articulação em sela entre trapézio e primeiro metacarpal; permite a oposição e é sede da rizartrose.",
+      "fields": {
+        "Classificação": "Articulação sinovial em sela, ou selar. As duas superfícies são côncavas em uma direção e convexas na outra, encaixando-se como um cavaleiro na sela.",
+        "Superfícies articulares": "Face distal do osso trapézio e base do primeiro metacarpal.",
+        "Movimentos": "Flexão e extensão no plano da palma, abdução e adução perpendicularmente a ele, e a combinação dos dois com rotação axial, que produz a oposição e a reposição. É a articulação com maior liberdade de movimento da mão.",
+        "Estabilizadores": "Ligamento oblíquo anterior, também chamado ligamento em bico; ligamentos intermetacarpais dorsal e palmar; ligamentos carpometacarpais dorsais e palmares; e, dinamicamente, os músculos tenares, em especial o oponente do polegar.",
+        "Na prática": "É a articulação da mão mais acometida pela artrose, condição chamada rizartrose. Muito mais frequente em mulheres após os 50 anos, causa dor na base do polegar ao girar chaves, abrir potes e fazer pinça de força.",
+        "Função": "É a articulação que torna o polegar humano oponível. Sua forma em sela permite o movimento em dois planos mais rotação, o que nenhuma outra articulação da mão consegue.",
+        "Teste clínico": "Teste de moagem (grind test): compressão axial do primeiro metacarpal contra o trapézio associada à rotação reproduz dor e crepitação na rizartrose.",
+        "Estudo 3D": "O modelo mostra os ligamentos carpometacarpais dorsais e palmares, que reforçam esta e as demais articulações carpometacarpais. A forma em sela é melhor observada isolando o trapézio e o primeiro metacarpal na camada de ossos.",
+        "Localização": "Mão"
+      },
+      "related": ["trapezio-do-carpo", "metacarpais", "oponente-do-polegar", "abdutor-curto-do-polegar", "flexor-curto-do-polegar", "adutor-do-polegar", "abdutor-longo-do-polegar", "escafoide"],
+      "aliases": ["trapeziometacarpal", "rizartrose", "articulação em sela", "grind test"],
+      "source_objects": ["Dorsal carpometacarpal ligaments.l", "Dorsal carpometacarpal ligaments.r", "Palmar carpometacarpal ligaments.l", "Palmar carpometacarpal ligaments.r"]
+    },
+    {
+      "id": "talocrural",
+      "summary": "Articulação em dobradiça entre a pinça maleolar e o tálus; responsável pela dorsiflexão e flexão plantar.",
+      "fields": {
+        "Classificação": "Articulação sinovial do tipo gínglimo, ou dobradiça, com um eixo único que passa aproximadamente pelos dois maléolos.",
+        "Superfícies articulares": "A pinça maleolar, formada pela face articular inferior da tíbia com os maléolos medial e lateral, encaixa-se sobre a tróclea do tálus.",
+        "Movimentos": "Dorsiflexão, de aproximadamente 20°, e flexão plantar, de aproximadamente 50°. Como a tróclea do tálus é mais larga à frente do que atrás, a dorsiflexão encaixa o tálus na pinça e é a posição de maior estabilidade; a flexão plantar afrouxa o encaixe e é a posição de maior risco de entorse.",
+        "Estabilizadores": "Lateralmente, os ligamentos talofibular anterior, calcaneofibular e talofibular posterior. Medialmente, o ligamento deltoide. Acima, a sindesmose tibiofibular distal com seus ligamentos anterior e posterior.",
+        "Na prática": "A entorse em inversão é a lesão musculoesquelética mais comum do esporte. A ordem de falha dos ligamentos é talofibular anterior, depois calcaneofibular e, por último, talofibular posterior. Limitação de dorsiflexão abaixo de 10° é fator de risco para lesões de joelho e para dor no tendão calcâneo.",
+        "Função": "Transmite toda a carga do corpo ao pé e permite o avanço da tíbia sobre o pé fixo durante a fase de apoio da marcha.",
+        "Teste clínico": "Gaveta anterior do tornozelo, teste de inclinação talar, teste de compressão da perna para a sindesmose e teste de dorsiflexão com joelho na parede para medir a amplitude funcional.",
+        "Estudo 3D": "Esta ficha não tem malha própria: a fonte Z-Anatomy não modela a cápsula da articulação do tornozelo separadamente. Para estudá-la em três dimensões, isole a tíbia, a fíbula e o tálus na camada de ossos e ative os ligamentos talofibular anterior, calcaneofibular, talofibular posterior e deltoide na camada de ligamentos.",
+        "Localização": "Tornozelo"
+      },
+      "related": ["tibia", "fibula", "talus", "calcaneo", "ligamento-talofibular-anterior", "ligamento-calcaneofibular", "ligamento-talofibular-posterior", "ligamento-deltoide", "ligamento-tibiofibular-anterior", "subtalar", "tendao-calcaneo", "membrana-interossea-da-perna"],
+      "aliases": ["tornozelo", "tibiotársica", "entorse de tornozelo"]
+    },
+    {
+      "id": "atlanto-occipital",
+      "summary": "Articulação entre os côndilos do occipital e o atlas; responsável pelo movimento de assentir com a cabeça.",
+      "fields": {
+        "Classificação": "Articulação sinovial condilar, par, entre os côndilos occipitais e as massas laterais do atlas.",
+        "Superfícies articulares": "Côndilos do osso occipital, convexos, sobre as fossas articulares superiores do atlas, côncavas.",
+        "Movimentos": "Predomina a flexão e a extensão, com aproximadamente 15° a 20° no total: é a articulação do movimento de dizer sim com a cabeça. Permite ainda cerca de 5° de inclinação lateral para cada lado. Praticamente não faz rotação.",
+        "Estabilizadores": "Membranas atlanto-occipitais anterior e posterior, cápsulas articulares, ligamentos alares e membrana tectória.",
+        "Na prática": "É o segmento avaliado no teste de flexão-rotação cervical e alvo direto da reabilitação da cefaleia cervicogênica. Junto com a atlantoaxial, forma o complexo craniocervical, onde se concentram os movimentos finos que estabilizam o olhar.",
+        "Função": "Sustenta o peso da cabeça sobre a coluna e permite o ajuste fino da sua posição no plano sagital, essencial para manter o olhar no horizonte.",
+        "Teste clínico": "Teste de flexão craniocervical com biofeedback pressórico; avaliação da mobilidade em assentir passivo com o pescoço estabilizado.",
+        "Estudo 3D": "Esta ficha não tem malha própria: a fonte Z-Anatomy não modela a cápsula nem as membranas atlanto-occipitais separadamente. Para estudá-la, isole o osso occipital e o atlas na camada de ossos e ative os músculos suboccipitais, que cruzam diretamente esta articulação.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": ["occipital", "atlas", "axis", "atlantoaxial", "reto-posterior-menor-da-cabeca", "obliquo-superior-da-cabeca", "longo-da-cabeca", "reto-anterior-da-cabeca", "reto-lateral-da-cabeca", "ligamento-nucal"],
+      "aliases": ["C0-C1", "craniocervical", "articulação do sim"]
+    },
+    {
+      "id": "atlantoaxial",
+      "summary": "Complexo de três articulações entre atlas e áxis; responde por cerca de metade da rotação cervical.",
+      "fields": {
+        "Classificação": "Complexo de três articulações sinoviais: duas laterais, do tipo plano, entre as massas laterais do atlas e as facetas superiores do áxis, e uma mediana, do tipo trocoide ou pivô, entre o dente do áxis e o arco anterior do atlas.",
+        "Superfícies articulares": "Facetas articulares inferiores do atlas com as superiores do áxis, lateralmente; dente do áxis com a fóvea do arco anterior do atlas e com o ligamento transverso do atlas, medialmente.",
+        "Movimentos": "Rotação axial de aproximadamente 40° a 45° para cada lado, o que corresponde a cerca de metade de toda a rotação da coluna cervical. Também permite pequena flexão e extensão.",
+        "Estabilizadores": "Ligamento transverso do atlas, que é a peça central e mantém o dente contra o arco anterior; ligamentos alares, que limitam a rotação; ligamento apical do dente; ligamento cruciforme e membrana tectória.",
+        "Na prática": "A instabilidade atlantoaxial é preocupação real na artrite reumatoide, na síndrome de Down e após traumas cervicais, porque a falência do ligamento transverso expõe a medula espinal ao dente do áxis. Por isso é contraindicação formal para manipulação cervical de alta velocidade sem investigação prévia.",
+        "Função": "Concentra a rotação da cabeça em um único nível, permitindo olhar para os lados sem mover o restante da coluna cervical.",
+        "Teste clínico": "Teste de flexão-rotação cervical, que isola o segmento C1-C2; teste do ligamento transverso e teste dos ligamentos alares, na avaliação de estabilidade craniocervical.",
+        "Estudo 3D": "Esta ficha não tem malha própria: a fonte Z-Anatomy não modela o ligamento transverso do atlas nem as cápsulas atlantoaxiais separadamente. Para estudá-la, isole o atlas e o áxis na camada de ossos, observando o dente do áxis, e ative o oblíquo inferior da cabeça, que é o principal rotador deste segmento.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": ["atlas", "axis", "occipital", "atlanto-occipital", "obliquo-inferior-da-cabeca", "reto-posterior-maior-da-cabeca", "vertebras-cervicais", "ligamento-nucal", "multifido-cervical"],
+      "aliases": ["C1-C2", "dente do áxis", "ligamento transverso do atlas", "instabilidade atlantoaxial"]
+    },
+    {
+      "id": "nervo-gluteo-inferior",
+      "summary": "Nervo motor exclusivo do glúteo máximo; sua lesão produz a marcha em extensão de tronco.",
+      "fields": {
+        "Raízes": "L5, S1 e S2.",
+        "Origem": "Plexo sacral, na face anterior do sacro.",
+        "Trajeto": "Sai da pelve pelo forame isquiático maior, passando abaixo do músculo piriforme, junto com o nervo ciático e o nervo cutâneo posterior da coxa. Distribui-se imediatamente na face profunda do glúteo máximo.",
+        "Inerva": "Exclusivamente o músculo glúteo máximo.",
+        "Sensibilidade": "Puramente motor. Não tem território cutâneo.",
+        "Função": "Comanda a extensão do quadril contra resistência, movimento essencial para levantar de uma cadeira, subir escadas e correr. Também participa da rotação lateral e da estabilização do quadril.",
+        "Local de compressão": "Na região glútea profunda, junto ao piriforme, nas chamadas síndromes do glúteo profundo. Também está em risco em injeções intramusculares mal posicionadas na região glútea e em abordagens cirúrgicas posteriores do quadril.",
+        "Sinal clínico": "Dificuldade para levantar de uma cadeira sem apoio, para subir escadas e para correr. A marcha característica é a de glúteo máximo, em que o tronco se inclina para trás no momento do apoio, para levar a linha de gravidade atrás do quadril e dispensar a ação do músculo.",
+        "Na prática": "É o motivo pelo qual as injeções intramusculares glúteas devem ser aplicadas no quadrante súpero-lateral: ali o nervo e os vasos estão fora do caminho.",
+        "Estudo 3D": "Esta ficha não tem malha própria: a fonte Z-Anatomy modela o nervo glúteo superior, mas não o inferior. Para estudar seu território, ative o glúteo máximo na camada de músculos e o nervo ciático e o piriforme, que acompanham seu trajeto na saída da pelve.",
+        "Localização": "Quadril"
+      },
+      "related": ["gluteo-maximo", "piriforme", "nervo-ciatico", "nervo-gluteo-superior", "sacro", "osso-do-quadril", "nervo-cutaneo-posterior-da-coxa", "coxofemoral"],
+      "aliases": ["glúteo inferior", "marcha de glúteo máximo", "inferior gluteal nerve"]
+    }
+  ]
+}

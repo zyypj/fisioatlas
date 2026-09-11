@@ -1,0 +1,277 @@
+{
+  "patches": [
+    {
+      "id": "deltoide",
+      "fields": {
+        "Grupo muscular": "Musculatura intrínseca do ombro; abdutores do braço.",
+        "Plano e eixo": "Abdução no plano frontal e eixo ântero-posterior; flexão e extensão no plano sagital e eixo transversal.",
+        "Sinergistas": "Supraespinal na abdução; peitoral maior clavicular e coracobraquial na flexão; latíssimo do dorso e redondo maior na extensão.",
+        "Antagonistas": "Peitoral maior e latíssimo do dorso na adução; as próprias fibras anteriores e posteriores são antagonistas entre si na rotação.",
+        "Observação funcional": "É um músculo multipenado com três porções que podem agir de forma independente e até opostas. Para que o deltoide eleve o braço sem que a cabeça do úmero suba e bata no acrômio, o manguito rotador precisa deprimir e centrar a cabeça ao mesmo tempo: esse é o binário de forças do ombro. Quando o manguito falha, o deltoide sozinho produz a migração superior da cabeça.",
+        "Exemplo de exercício": "Elevação lateral para as fibras acromiais, elevação frontal para as claviculares e crucifixo invertido para as escapulares, em contexto didático.",
+        "Palpação básica": "Fácil de identificar: cobre toda a região do ombro como uma ombreira. Peça abdução, flexão e extensão resistidas para sentir cada porção contrair separadamente."
+      },
+      "related": ["nervo-axilar", "clavicula", "acromioclavicular", "peitoral-maior", "latissimo-do-dorso", "trapezio"]
+    },
+    {
+      "id": "infraespinal",
+      "fields": {
+        "Grupo muscular": "Manguito rotador; rotadores laterais do ombro.",
+        "Plano e eixo": "Rotação lateral no plano transverso e eixo vertical; estabilização no plano frontal.",
+        "Sinergistas": "Redondo menor na rotação lateral; demais músculos do manguito na estabilização; fibras posteriores do deltoide.",
+        "Antagonistas": "Subescapular, peitoral maior, latíssimo do dorso e redondo maior na rotação medial.",
+        "Observação funcional": "É o principal rotador lateral do ombro, responsável por cerca de 60% dessa força. Sua atrofia isolada, visível como um afundamento na fossa infraespinal, é achado clássico em atletas de arremesso por compressão do nervo supraescapular na incisura espinoglenoidal.",
+        "Exemplo de exercício": "Rotação lateral com elástico, cotovelo junto ao corpo a 90°, e progressão para 90° de abdução, em contexto didático.",
+        "Palpação básica": "Palpável na fossa infraespinal, abaixo da espinha da escápula, pedindo rotação lateral resistida com o cotovelo colado ao tronco."
+      },
+      "related": ["nervo-supraescapular", "escapula", "umero", "redondo-menor", "subescapular", "ligamentos-transversos-da-escapula"]
+    },
+    {
+      "id": "subescapular",
+      "fields": {
+        "Grupo muscular": "Manguito rotador; rotadores mediais do ombro.",
+        "Plano e eixo": "Rotação medial no plano transverso e eixo vertical.",
+        "Sinergistas": "Peitoral maior, latíssimo do dorso e redondo maior na rotação medial; demais músculos do manguito na estabilização.",
+        "Antagonistas": "Infraespinal e redondo menor na rotação lateral.",
+        "Observação funcional": "É o único músculo do manguito rotador na face anterior da escápula e o único rotador medial do grupo. Funciona como o principal freio anterior dinâmico da cabeça umeral, complementando os ligamentos glenoumerais. Sua lesão costuma passar despercebida porque o peitoral maior compensa a rotação medial.",
+        "Exemplo de exercício": "Rotação medial com elástico e exercício de empurrar a mão contra a barriga com o cotovelo à frente, em contexto didático.",
+        "Palpação básica": "De difícil acesso: apenas sua borda lateral é palpável na parede anterior da axila, com o braço em abdução. Avaliado sobretudo pelo teste de lift-off e pelo belly-press."
+      },
+      "related": ["nervo-subescapular-superior", "nervo-subescapular-inferior", "escapula", "umero", "infraespinal", "bainha-intertubercular", "ligamento-transverso-do-umero"]
+    },
+    {
+      "id": "redondo-menor",
+      "fields": {
+        "Grupo muscular": "Manguito rotador; rotadores laterais do ombro.",
+        "Plano e eixo": "Rotação lateral no plano transverso e eixo vertical.",
+        "Sinergistas": "Infraespinal na rotação lateral; demais músculos do manguito na estabilização.",
+        "Antagonistas": "Subescapular, peitoral maior e redondo maior na rotação medial.",
+        "Observação funcional": "É o único músculo do manguito rotador inervado pelo nervo axilar, e não pelo supraescapular ou subescapular. Por isso, na lesão do nervo axilar a rotação lateral fica parcialmente comprometida, além da abdução pelo deltoide. Forma a borda inferior do espaço quadrangular, por onde passa o próprio nervo axilar.",
+        "Exemplo de exercício": "Rotação lateral resistida a 90° de abdução, que recruta mais o redondo menor do que o infraespinal, em contexto didático.",
+        "Palpação básica": "Palpável na borda lateral da escápula, abaixo do infraespinal e acima do redondo maior, com rotação lateral resistida."
+      },
+      "related": ["nervo-axilar", "escapula", "umero", "infraespinal", "redondo-maior", "deltoide"]
+    },
+    {
+      "id": "redondo-maior",
+      "fields": {
+        "Grupo muscular": "Musculatura escapuloumeral; adutores e rotadores mediais do braço.",
+        "Plano e eixo": "Adução no plano frontal, extensão no plano sagital e rotação medial no plano transverso.",
+        "Sinergistas": "Latíssimo do dorso, peitoral maior e subescapular.",
+        "Antagonistas": "Deltoide e supraespinal na abdução; infraespinal e redondo menor na rotação lateral.",
+        "Observação funcional": "É frequentemente chamado de o pequeno ajudante do latíssimo do dorso, porque tem quase as mesmas ações. Não faz parte do manguito rotador, ao contrário do redondo menor, e é inervado pelo nervo subescapular inferior. Junto com o redondo menor e a cabeça longa do tríceps, delimita os espaços quadrangular e triangular da axila.",
+        "Exemplo de exercício": "Puxada e remada com ênfase na adução e extensão do braço, em contexto didático.",
+        "Palpação básica": "Palpável na borda lateral da escápula, formando a prega posterior da axila junto com o latíssimo do dorso, na adução resistida."
+      },
+      "related": ["nervo-subescapular-inferior", "escapula", "umero", "latissimo-do-dorso", "redondo-menor", "triceps-braquial"]
+    },
+    {
+      "id": "braquial",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior do braço; flexores do cotovelo.",
+        "Plano e eixo": "Flexão do cotovelo no plano sagital e eixo transversal.",
+        "Sinergistas": "Bíceps braquial e braquiorradial.",
+        "Antagonistas": "Tríceps braquial e ancôneo.",
+        "Observação funcional": "É o verdadeiro cavalo de batalha da flexão do cotovelo: cruza apenas essa articulação e se insere na ulna, que não gira. Por isso sua força é a mesma em qualquer posição de pronação ou supinação, diferentemente do bíceps. Tem inervação dupla em boa parte das pessoas, recebendo fibras do musculocutâneo e do radial.",
+        "Exemplo de exercício": "Rosca martelo e rosca com antebraço pronado, que reduzem a participação do bíceps, em contexto didático.",
+        "Palpação básica": "Palpável de cada lado do tendão do bíceps, na porção distal e anterior do braço, com o cotovelo fletido a 90° em pronação."
+      },
+      "related": ["nervo-musculocutaneo", "nervo-radial", "umero", "ulna", "biceps-braquial", "cotovelo", "nervo-cutaneo-lateral-do-antebraco"]
+    },
+    {
+      "id": "triceps-braquial",
+      "fields": {
+        "Grupo muscular": "Compartimento posterior do braço; extensores do cotovelo.",
+        "Plano e eixo": "Extensão do cotovelo no plano sagital; a cabeça longa também estende e aduz o ombro.",
+        "Sinergistas": "Ancôneo na extensão do cotovelo; latíssimo do dorso e redondo maior na extensão do ombro, com a cabeça longa.",
+        "Antagonistas": "Bíceps braquial, braquial e braquiorradial.",
+        "Observação funcional": "É o único músculo do compartimento posterior do braço e o único extensor potente do cotovelo. Apenas a cabeça longa cruza o ombro, o que a torna biarticular: ela perde força na extensão do cotovelo quando o ombro já está estendido. O nervo radial corre no sulco espiral entre as cabeças lateral e medial, o que explica a paralisia do radial nas fraturas da diáfise do úmero.",
+        "Exemplo de exercício": "Extensão de cotovelo na polia, mergulho no banco e tríceps francês acima da cabeça, que alonga a cabeça longa, em contexto didático.",
+        "Palpação básica": "Ocupa toda a face posterior do braço. Peça extensão resistida do cotovelo e identifique as cabeças lateral e longa; o tendão comum é largo e fácil de sentir acima do olécrano."
+      },
+      "related": ["nervo-radial", "umero", "ulna", "escapula", "cotovelo", "anconeo", "biceps-braquial", "redondo-maior"]
+    },
+    {
+      "id": "coracobraquial",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior do braço; flexores e adutores do ombro.",
+        "Plano e eixo": "Flexão no plano sagital e adução no plano frontal do ombro.",
+        "Sinergistas": "Deltoide anterior e peitoral maior clavicular na flexão; peitoral maior e latíssimo do dorso na adução.",
+        "Antagonistas": "Deltoide posterior e latíssimo do dorso na extensão; deltoide e supraespinal na abdução.",
+        "Observação funcional": "É o único dos três músculos do compartimento anterior do braço que não cruza o cotovelo. É perfurado pelo nervo musculocutâneo, arranjo anatômico marcante e referência cirúrgica. Sua origem no processo coracoide o liga ao mesmo ponto de onde nascem o peitoral menor e a cabeça curta do bíceps.",
+        "Exemplo de exercício": "Flexão de ombro resistida com o cotovelo estendido e adução horizontal, em contexto didático.",
+        "Palpação básica": "Palpável na parede medial da axila, do processo coracoide para baixo, com o braço em abdução e rotação lateral e adução resistida."
+      },
+      "related": ["nervo-musculocutaneo", "escapula", "umero", "biceps-braquial", "peitoral-menor", "glenoumeral"]
+    },
+    {
+      "id": "braquiorradial",
+      "fields": {
+        "Grupo muscular": "Compartimento posterior do antebraço, mas funcionalmente flexor do cotovelo.",
+        "Plano e eixo": "Flexão do cotovelo no plano sagital e eixo transversal.",
+        "Sinergistas": "Bíceps braquial e braquial.",
+        "Antagonistas": "Tríceps braquial e ancôneo.",
+        "Observação funcional": "É uma exceção notável: está no compartimento posterior e é inervado pelo nervo radial, mas flete o cotovelo em vez de estender. Por isso é chamado de músculo enganador. É mais eficiente com o antebraço em posição neutra, entre pronação e supinação, e leva o antebraço para essa posição a partir dos extremos.",
+        "Exemplo de exercício": "Rosca martelo, com o antebraço em posição neutra, em contexto didático.",
+        "Palpação básica": "Forma o relevo mais evidente da face lateral do antebraço. Peça flexão resistida do cotovelo com o polegar apontando para cima e ele salta sob a pele."
+      },
+      "related": ["nervo-radial", "umero", "radio", "cotovelo", "biceps-braquial", "extensor-radial-longo-do-carpo", "supinador"]
+    },
+    {
+      "id": "pronador-redondo",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior superficial do antebraço; pronadores.",
+        "Plano e eixo": "Pronação no plano transverso e eixo longitudinal do antebraço.",
+        "Sinergistas": "Pronador quadrado; flexor radial do carpo auxilia discretamente.",
+        "Antagonistas": "Supinador e bíceps braquial.",
+        "Observação funcional": "O nervo mediano passa entre suas duas cabeças, umeral e ulnar. Sua hipertrofia ou tensão nesse ponto produz a síndrome do pronador, com dor no antebraço proximal e parestesia no território do mediano, diferenciada da síndrome do túnel do carpo por não piorar à noite e por comprometer a sensibilidade da palma.",
+        "Exemplo de exercício": "Pronação resistida com o cotovelo fletido a 90°, usando um bastão ou halter desbalanceado, em contexto didático.",
+        "Palpação básica": "Palpável na face anterior do antebraço proximal, dirigindo-se obliquamente do epicôndilo medial para a face lateral do rádio, na pronação resistida."
+      },
+      "related": ["nervo-mediano", "umero", "ulna", "radio", "cotovelo", "pronador-quadrado", "supinador", "tendao-comum-dos-flexores", "nervo-interosseo-anterior-do-antebraco"]
+    },
+    {
+      "id": "pronador-quadrado",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior profundo do antebraço; pronadores.",
+        "Plano e eixo": "Pronação no plano transverso e eixo longitudinal do antebraço.",
+        "Sinergistas": "Pronador redondo.",
+        "Antagonistas": "Supinador e bíceps braquial.",
+        "Observação funcional": "É o motor primário da pronação: entra em ação em toda pronação, enquanto o pronador redondo só é recrutado quando há resistência ou velocidade. Suas fibras profundas também mantêm a cabeça da ulna unida ao rádio, estabilizando a articulação radioulnar distal.",
+        "Exemplo de exercício": "Pronação lenta e sem resistência, que isola melhor o pronador quadrado, em contexto didático.",
+        "Palpação básica": "Profundo, na face anterior do antebraço distal, sob os tendões flexores; não é isolável à palpação."
+      },
+      "related": ["nervo-interosseo-anterior-do-antebraco", "nervo-mediano", "radio", "ulna", "radioulnar-distal", "pronador-redondo", "membrana-interossea-do-antebraco"]
+    },
+    {
+      "id": "supinador",
+      "fields": {
+        "Grupo muscular": "Compartimento posterior profundo do antebraço; supinadores.",
+        "Plano e eixo": "Supinação no plano transverso e eixo longitudinal do antebraço.",
+        "Sinergistas": "Bíceps braquial, que é o supinador mais potente quando o cotovelo está fletido.",
+        "Antagonistas": "Pronador redondo e pronador quadrado.",
+        "Observação funcional": "É o supinador de escolha quando o movimento é lento e sem resistência ou quando o cotovelo está estendido, situação em que o bíceps perde eficiência. O ramo profundo do nervo radial atravessa o músculo sob a arcada de Frohse, ponto clássico de compressão que produz a síndrome do interósseo posterior.",
+        "Exemplo de exercício": "Supinação resistida com o cotovelo estendido, que isola o supinador do bíceps, em contexto didático.",
+        "Palpação básica": "Profundo, na face posterolateral do antebraço proximal, sob o braquiorradial e os extensores radiais; palpável apenas de forma indireta."
+      },
+      "related": ["nervo-radial", "nervo-interosseo-posterior-do-antebraco", "umero", "ulna", "radio", "cotovelo", "biceps-braquial", "ligamento-colateral-radial-do-cotovelo", "radioulnar-proximal"]
+    },
+    {
+      "id": "flexor-radial-do-carpo",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior superficial do antebraço; flexores do punho.",
+        "Plano e eixo": "Flexão no plano sagital e desvio radial no plano frontal do punho.",
+        "Sinergistas": "Flexor ulnar do carpo e palmar longo na flexão; extensor radial longo do carpo no desvio radial.",
+        "Antagonistas": "Extensores radiais e ulnar do carpo na extensão; flexor e extensor ulnares no desvio ulnar.",
+        "Observação funcional": "Seu tendão é a referência mais usada do punho: a artéria radial corre imediatamente lateral a ele, onde se palpa o pulso. Trabalha em par diagonal com o extensor ulnar do carpo, e esse par cruzado é o que permite o movimento de dar o laço, usado ao usar um martelo ou fazer um saque de tênis.",
+        "Exemplo de exercício": "Flexão de punho com halter em supinação e exercícios em diagonal de flexão com desvio radial, em contexto didático.",
+        "Palpação básica": "Seu tendão é o mais lateral dos que se veem na face anterior do punho, medialmente ao pulso radial, ao fletir o punho contra resistência leve."
+      },
+      "related": ["nervo-mediano", "umero", "metacarpais", "radiocarpal", "flexor-ulnar-do-carpo", "palmar-longo", "tendao-comum-dos-flexores", "retinaculo-dos-flexores-do-punho"]
+    },
+    {
+      "id": "flexor-ulnar-do-carpo",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior superficial do antebraço; flexores do punho.",
+        "Plano e eixo": "Flexão no plano sagital e desvio ulnar no plano frontal do punho.",
+        "Sinergistas": "Flexor radial do carpo e palmar longo na flexão; extensor ulnar do carpo no desvio ulnar.",
+        "Antagonistas": "Extensores do carpo na extensão; flexor radial do carpo no desvio radial.",
+        "Observação funcional": "É o único músculo do antebraço, junto com metade do flexor profundo dos dedos, inervado pelo nervo ulnar. O nervo ulnar passa entre suas duas cabeças, umeral e ulnar, logo abaixo do cotovelo, formando o túnel cubital, que é o segundo local mais comum de compressão nervosa do membro superior, atrás apenas do túnel do carpo.",
+        "Exemplo de exercício": "Flexão de punho com desvio ulnar resistido e exercícios em diagonal, em contexto didático.",
+        "Palpação básica": "Seu tendão é o mais medial da face anterior do punho, dirigindo-se ao pisiforme, facilmente identificado na flexão com desvio ulnar resistido."
+      },
+      "related": ["nervo-ulnar", "umero", "ulna", "pisiforme", "hamato", "radiocarpal", "flexor-radial-do-carpo", "tendao-comum-dos-flexores", "abdutor-do-dedo-minimo-da-mao"]
+    },
+    {
+      "id": "extensor-radial-longo-do-carpo",
+      "fields": {
+        "Grupo muscular": "Compartimento posterior superficial do antebraço; extensores do punho.",
+        "Plano e eixo": "Extensão no plano sagital e desvio radial no plano frontal do punho.",
+        "Sinergistas": "Extensor radial curto do carpo e extensor ulnar do carpo na extensão; flexor radial do carpo no desvio radial.",
+        "Antagonistas": "Flexores radial e ulnar do carpo.",
+        "Observação funcional": "Nasce acima do epicôndilo lateral, na crista supracondilar, e não do tendão comum dos extensores. Por isso é inervado pelo nervo radial antes da divisão do ramo profundo: na síndrome do interósseo posterior ele é poupado, e o punho ainda estende, mas em desvio radial. Esse detalhe é a chave do diagnóstico diferencial com a paralisia alta do radial.",
+        "Exemplo de exercício": "Extensão de punho com halter e exercícios de preensão com o punho em leve extensão, em contexto didático.",
+        "Palpação básica": "Palpável na face dorsolateral do antebraço; seu tendão é o mais radial dos extensores do punho, dirigindo-se à base do segundo metacarpal."
+      },
+      "related": ["nervo-radial", "umero", "metacarpais", "radiocarpal", "extensor-radial-curto-do-carpo", "braquiorradial", "nervo-interosseo-posterior-do-antebraco", "retinaculo-dos-extensores-do-punho"]
+    },
+    {
+      "id": "extensor-ulnar-do-carpo",
+      "fields": {
+        "Grupo muscular": "Compartimento posterior superficial do antebraço; extensores do punho.",
+        "Plano e eixo": "Extensão no plano sagital e desvio ulnar no plano frontal do punho.",
+        "Sinergistas": "Extensores radiais do carpo na extensão; flexor ulnar do carpo no desvio ulnar.",
+        "Antagonistas": "Flexores do carpo na flexão; extensor radial longo do carpo no desvio radial.",
+        "Observação funcional": "Sua bainha é a única fixada ao osso, formando um túnel próprio no sulco da ulna distal, o que o torna também um estabilizador da articulação radioulnar distal. Sua subluxação, com estalido doloroso na supinação, é causa reconhecida de dor ulnar do punho em atletas de raquete.",
+        "Exemplo de exercício": "Extensão de punho com desvio ulnar resistido e exercícios de preensão em supinação, em contexto didático.",
+        "Palpação básica": "Seu tendão é palpável no dorso do punho, entre a cabeça da ulna e a base do quinto metacarpal, na extensão com desvio ulnar."
+      },
+      "related": ["nervo-interosseo-posterior-do-antebraco", "umero", "ulna", "metacarpais", "radioulnar-distal", "radiocarpal", "flexor-ulnar-do-carpo", "retinaculo-dos-extensores-do-punho", "tendao-comum-dos-extensores"]
+    },
+    {
+      "id": "flexor-superficial-dos-dedos",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior intermediário do antebraço; flexores dos dedos.",
+        "Plano e eixo": "Flexão das interfalângicas proximais e metacarpofalângicas no plano sagital.",
+        "Sinergistas": "Flexor profundo dos dedos, lumbricais e interósseos.",
+        "Antagonistas": "Extensor dos dedos, extensor do indicador e extensor do dedo mínimo.",
+        "Observação funcional": "Cada tendão se divide em duas faixas na altura da falange proximal para deixar passar o tendão do flexor profundo, arranjo chamado quiasma tendíneo de Camper. Por isso é ele o único flexor da interfalângica proximal, e sua função é testada isoladamente bloqueando os demais dedos em extensão.",
+        "Exemplo de exercício": "Flexão isolada da interfalângica proximal com os outros dedos mantidos estendidos, em contexto didático.",
+        "Palpação básica": "Palpável na face anterior média do antebraço, sob os flexores superficiais do punho; seus tendões são visíveis na palma durante a flexão dos dedos."
+      },
+      "related": ["nervo-mediano", "umero", "radio", "ulna", "falanges-da-mao", "flexor-profundo-dos-dedos", "tendao-comum-dos-flexores", "bainha-comum-dos-flexores", "retinaculo-dos-flexores-do-punho"]
+    },
+    {
+      "id": "flexor-profundo-dos-dedos",
+      "fields": {
+        "Grupo muscular": "Compartimento anterior profundo do antebraço; flexores dos dedos.",
+        "Plano e eixo": "Flexão das interfalângicas distais, proximais e metacarpofalângicas no plano sagital.",
+        "Sinergistas": "Flexor superficial dos dedos e lumbricais, que nascem dos seus próprios tendões.",
+        "Antagonistas": "Extensor dos dedos, extensor do indicador e extensor do dedo mínimo.",
+        "Observação funcional": "É o único músculo capaz de fletir a falange distal dos quatro dedos e tem inervação dividida: a metade radial, para indicador e médio, pelo nervo interósseo anterior do mediano; a metade ulnar, para anular e mínimo, pelo nervo ulnar. Seus ventres compartilham um mesmo ventre muscular, o que explica por que é difícil fletir a ponta de um dedo sem os vizinhos acompanharem.",
+        "Exemplo de exercício": "Flexão isolada da interfalângica distal com a falange média estabilizada, em contexto didático.",
+        "Palpação básica": "Profundo, na face anterior do antebraço; avaliado funcionalmente pela flexão isolada da falange distal de cada dedo."
+      },
+      "related": ["nervo-mediano", "nervo-ulnar", "nervo-interosseo-anterior-do-antebraco", "ulna", "falanges-da-mao", "flexor-superficial-dos-dedos", "lumbricais-da-mao", "membrana-interossea-do-antebraco"]
+    },
+    {
+      "id": "extensor-dos-dedos",
+      "fields": {
+        "Grupo muscular": "Compartimento posterior superficial do antebraço; extensores dos dedos.",
+        "Plano e eixo": "Extensão das metacarpofalângicas no plano sagital; auxilia a extensão do punho.",
+        "Sinergistas": "Extensor do indicador e extensor do dedo mínimo; lumbricais e interósseos na extensão das interfalângicas.",
+        "Antagonistas": "Flexor superficial e flexor profundo dos dedos.",
+        "Observação funcional": "Estende com força as metacarpofalângicas, mas sozinho não consegue estender bem as interfalângicas: isso depende dos lumbricais e interósseos, que se inserem na expansão extensora. Seus tendões são unidos por conexões intertendíneas no dorso da mão, o que limita a extensão independente dos dedos médio e anular.",
+        "Exemplo de exercício": "Extensão dos dedos contra elástico ao redor deles e exercícios de abertura da mão, em contexto didático.",
+        "Palpação básica": "Seus tendões são facilmente visíveis e palpáveis no dorso da mão ao estender os dedos; observe as conexões entre eles tentando estender só o dedo anular."
+      },
+      "related": ["nervo-interosseo-posterior-do-antebraco", "nervo-radial", "umero", "falanges-da-mao", "extensor-do-indicador", "extensor-do-dedo-minimo", "lumbricais-da-mao", "tendao-comum-dos-extensores", "retinaculo-dos-extensores-do-punho"]
+    },
+    {
+      "id": "abdutor-curto-do-polegar",
+      "fields": {
+        "Grupo muscular": "Eminência tenar; musculatura intrínseca da mão.",
+        "Plano e eixo": "Abdução do polegar no plano perpendicular à palma.",
+        "Sinergistas": "Abdutor longo do polegar, oponente do polegar e flexor curto do polegar.",
+        "Antagonistas": "Adutor do polegar e primeiro interósseo dorsal.",
+        "Observação funcional": "É o músculo mais superficial da eminência tenar e o mais usado para avaliar a função motora do nervo mediano. Sua atrofia produz o achatamento visível da tenar, sinal tardio da síndrome do túnel do carpo, e é o músculo registrado nos estudos de condução motora do mediano.",
+        "Exemplo de exercício": "Abdução palmar do polegar contra resistência leve, com a mão apoiada em supinação, em contexto didático.",
+        "Palpação básica": "Forma o relevo mais superficial e lateral da eminência tenar. Peça para levantar o polegar perpendicularmente à palma e palpe a contração."
+      },
+      "related": ["nervo-mediano", "escafoide", "trapezio-do-carpo", "falanges-da-mao", "oponente-do-polegar", "flexor-curto-do-polegar", "adutor-do-polegar", "retinaculo-dos-flexores-do-punho", "carpometacarpal-do-polegar"]
+    },
+    {
+      "id": "adutor-do-polegar",
+      "fields": {
+        "Grupo muscular": "Musculatura intrínseca profunda da mão; grupo do polegar.",
+        "Plano e eixo": "Adução do polegar no plano da palma.",
+        "Sinergistas": "Primeiro interósseo dorsal e flexor curto do polegar.",
+        "Antagonistas": "Abdutor curto do polegar, abdutor longo do polegar e oponente do polegar.",
+        "Observação funcional": "É o principal músculo da pinça de força, aquela usada para segurar uma chave. Inervado pelo nervo ulnar, é o músculo avaliado no sinal de Froment: na lesão ulnar, ao segurar um papel entre polegar e indicador, a pessoa compensa fletindo a interfalângica do polegar com o flexor longo, que é inervado pelo mediano.",
+        "Exemplo de exercício": "Pinça lateral resistida, apertando um objeto entre o polegar e a lateral do indicador, em contexto didático.",
+        "Palpação básica": "Palpável na primeira comissura, entre o polegar e o indicador, na face palmar, ao fazer pinça de força."
+      },
+      "related": ["nervo-ulnar", "metacarpais", "capitato", "falanges-da-mao", "abdutor-curto-do-polegar", "flexor-curto-do-polegar", "interosseos-dorsais-da-mao", "interosseos-palmares", "ligamentos-colaterais-metacarpofalangicos"]
+    }
+  ]
+}

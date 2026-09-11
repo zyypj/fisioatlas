@@ -1,0 +1,86 @@
+export const sources = [
+  {
+    id: 'mechanics',
+    name: 'Mecânica dos tecidos — equações e hipóteses do aplicativo',
+    url: '/BIOMECANICA.md',
+    note: 'Modelo de Hill simplificado e mola ligamentar inspirados na documentação do OpenSim; reserva neural geométrica própria. Parâmetros genéricos, forças normalizadas e movimento imposto. Referências e limites completos no documento.',
+  },
+  {
+    id: "z-anatomy",
+    name: "Z-Anatomy — malhas anatômicas e componentes",
+    url: "https://github.com/Z-Anatomy/Models-of-human-anatomy",
+    note: "Base do corpo atual: ossos, músculos, cápsulas, discos, ligamentos e nervos. Autores: Gauthier Kervyn, Marcin Zielinski e colaboradores; base original BodyParts3D de Kousaku Okubo / DBCLS. Derivações das malhas distribuídas sob CC BY-SA 4.0, com atribuições adicionais preservadas no arquivo de licença.",
+  },
+  {
+    id: "higgsfield-joint",
+    name: "Higgsfield 3D Jutsu — esquema de articulação sinovial",
+    url: "https://higgsfield.ai/3d-jutsu/7d5ee5e8-869c-40f7-9c82-86a2c6d4f0ba",
+    note: "Modelo original construído no Blender do Higgsfield: oito peças editáveis. Esquema genérico em corte; não representa uma articulação específica nem substitui as malhas do atlas.",
+  },
+  {
+    id: "bodyparts",
+    name: "BodyParts3D — Database Center for Life Science",
+    url: "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+    note: "Modelos originais v4.0, redução de polígonos de 99%. Malhas OBJ convertidas para GLB, com normais e cores de estudo. Anatomia de um indivíduo adulto; não representa todas as variações.",
+  },
+  {
+    id: "license",
+    name: "Licença dos modelos — Creative Commons Atribuição 4.0",
+    url: "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+    note: "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International. Atribuição preservada nos arquivos e nesta aplicação.",
+  },
+  {
+    id: "paper",
+    name: "Mitsuhashi et al. — BodyParts3D (2009)",
+    url: "https://doi.org/10.1093/nar/gkn613",
+    note: "Publicação que descreve a base de estruturas tridimensionais e sua associação a conceitos anatômicos.",
+  },
+  {
+    id: "openstax-bones",
+    name: "OpenStax — Anatomy and Physiology 2e, capítulos 7 e 8",
+    url: "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-introduction",
+    note: "Esqueleto axial e apendicular. As fichas apresentam resumos próprios de fatos anatômicos, sem reproduzir ilustrações ou tabelas.",
+  },
+  {
+    id: "openstax-muscles",
+    name: "OpenStax — Anatomy and Physiology 2e, capítulo 11",
+    url: "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction",
+    note: "Organização muscular, ações e relações. Dados de fixações são apresentados de forma resumida e não substituem um atlas detalhado.",
+  },
+  {
+    id: "openstax-joints",
+    name: "OpenStax — Articulações e movimentos, capítulo 9",
+    url: "https://openstax.org/books/anatomy-and-physiology-2e/pages/9-5-types-of-body-movements",
+    note: "Classificação articular, planos e termos de movimento. Ângulos das animações são escolhas didáticas, não valores normativos de goniometria.",
+  },
+  {
+    id: "teach-nerves",
+    name: "TeachMeAnatomy — Plexo braquial e nervos periféricos",
+    url: "https://teachmeanatomy.info/upper-limb/nerves/brachial-plexus/",
+    note: "Revisão de relações entre músculos e nervos. Distribuições radiculares podem variar entre referências e indivíduos.",
+  },
+  {
+    id: "teach-shoulder",
+    name: "TeachMeAnatomy — Músculos intrínsecos do ombro",
+    url: "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    note: "Conferência das fixações, ações e inervações do manguito rotador e deltoide.",
+  },
+  {
+    id: "teach-arm",
+    name: "TeachMeAnatomy — Músculos do braço",
+    url: "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    note: "Conferência das relações funcionais de bíceps, braquial, coracobraquial e tríceps.",
+  },
+  {
+    id: "teach-thigh",
+    name: "TeachMeAnatomy — Compartimento anterior da coxa",
+    url: "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    note: "Conferência das relações do quadríceps e aparelho extensor do joelho.",
+  },
+  {
+    id: "bluelink",
+    name: "University of Michigan — BlueLink Anatomy Tables",
+    url: "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink-anatomy-tables/musculature-of-the-upper-limb",
+    note: "Leitura complementar universitária para revisão de musculatura do membro superior.",
+  },
+];

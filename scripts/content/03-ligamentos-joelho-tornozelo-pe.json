@@ -1,0 +1,158 @@
+{
+  "patches": [
+    {
+      "id": "ligamento-popliteo-obliquo",
+      "summary": "Expansão do semimembranáceo que reforça a cápsula posterior do joelho e freia a hiperextensão.",
+      "fields": {
+        "Fixações": "Expansão do tendão do semimembranáceo que sobe obliquamente da face póstero-medial da tíbia para o côndilo lateral do fêmur e a cápsula posterior.",
+        "Função": "Reforça a parede posterior da cápsula do joelho, resiste à hiperextensão e à rotação lateral da tíbia. Por ser uma expansão tendínea, é tensionado ativamente quando o semimembranáceo contrai, funcionando como estabilizador dinâmico.",
+        "Tensiona em": "Extensão final do joelho e rotação lateral da tíbia.",
+        "Teste clínico": "Dor posterior no recurvato passivo; avaliado dentro do conjunto do canto póstero-medial.",
+        "Lesão típica": "Comprometido em traumas em hiperextensão e nas lesões do canto póstero-medial associadas ao colateral tibial.",
+        "Na prática": "Forma o assoalho da fossa poplítea, onde passam a artéria poplítea e o nervo tibial — cuidado na palpação profunda dessa região."
+      },
+      "related": ["joelho", "semimembranaceo", "femur", "tibia", "ligamento-popliteo-arqueado", "ligamento-colateral-tibial", "popliteo"],
+      "aliases": ["poplíteo oblíquo"]
+    },
+    {
+      "id": "ligamento-popliteo-arqueado",
+      "summary": "Arqueia-se sobre o tendão do poplíteo e integra o canto póstero-lateral do joelho.",
+      "fields": {
+        "Fixações": "Cabeça da fíbula até a cápsula posterior, arqueando-se sobre o tendão do músculo poplíteo em direção ao côndilo lateral do fêmur e à tíbia.",
+        "Função": "Componente do canto póstero-lateral. Resiste à rotação externa da tíbia e ao estresse em varo, principalmente perto da extensão completa.",
+        "Tensiona em": "Rotação lateral da tíbia e varo do joelho em extensão.",
+        "Teste clínico": "Teste do dial, comparando a rotação externa a 30° e a 90° de flexão; estresse em varo a 0° e 30°.",
+        "Lesão típica": "Faz parte das lesões do canto póstero-lateral, que quando não reconhecidas levam à falha das reconstruções de cruzado.",
+        "Na prática": "Sua presença e tamanho variam entre pessoas; por isso o canto póstero-lateral é avaliado como conjunto, e não ligamento por ligamento."
+      },
+      "related": ["joelho", "fibula", "popliteo", "ligamento-popliteofibular", "ligamento-colateral-fibular", "ligamento-popliteo-obliquo"],
+      "aliases": ["poplíteo arqueado"]
+    },
+    {
+      "id": "ligamento-popliteofibular",
+      "summary": "Liga o tendão do poplíteo à cabeça da fíbula; peça-chave do canto póstero-lateral.",
+      "fields": {
+        "Fixações": "Junção musculotendínea do poplíteo até o processo estiloide da cabeça da fíbula.",
+        "Função": "Com o colateral fibular e o tendão do poplíteo, forma o trio principal do canto póstero-lateral. Restringe a rotação externa da tíbia, o varo e a translação posterior, sobretudo entre 30° e 90° de flexão.",
+        "Tensiona em": "Rotação lateral da tíbia com o joelho fletido.",
+        "Teste clínico": "Teste do dial: aumento maior que 10° na rotação externa a 30° sugere lesão isolada do canto póstero-lateral; se aumenta também a 90°, há lesão associada do cruzado posterior.",
+        "Lesão típica": "Lesão do canto póstero-lateral, geralmente por trauma em varo com o joelho em extensão ou hiperextensão com rotação.",
+        "Na prática": "Sua lesão não reconhecida é causa clássica de falha de reconstrução do cruzado posterior; por isso o teste do dial entra na avaliação de todo joelho instável."
+      },
+      "related": ["joelho", "fibula", "popliteo", "ligamento-colateral-fibular", "ligamento-popliteo-arqueado", "ligamento-cruzado-posterior", "nervo-fibular-comum"],
+      "aliases": ["popliteofibular", "canto póstero-lateral"]
+    },
+    {
+      "id": "ligamento-transverso-do-joelho",
+      "summary": "Une os cornos anteriores dos meniscos, fazendo-os deslizar juntos na flexão e na extensão.",
+      "fields": {
+        "Fixações": "Une o corno anterior do menisco lateral ao corno anterior do menisco medial, atravessando a frente da articulação.",
+        "Função": "Solidariza os dois meniscos no deslocamento ântero-posterior que eles fazem durante a flexão e a extensão, reduzindo o risco de o menisco ser pinçado entre fêmur e tíbia.",
+        "Tensiona em": "Extensão do joelho, quando os meniscos são levados para a frente.",
+        "Teste clínico": "Não tem teste isolado; é referência na artroscopia, onde pode ser confundido com uma lesão do corno anterior.",
+        "Lesão típica": "Raramente lesionado de forma isolada; costuma ser descrito junto com lesões meniscais anteriores.",
+        "Na prática": "Também chamado de ligamento intermeniscal anterior ou geniculado. Sua presença é variável."
+      },
+      "related": ["joelho", "menisco-medial", "menisco-lateral", "tibia", "ligamento-cruzado-anterior"],
+      "aliases": ["intermeniscal anterior", "ligamento geniculado"]
+    },
+    {
+      "id": "ligamento-talofibular-posterior",
+      "summary": "O mais forte do complexo lateral do tornozelo; só rompe em entorses graves e luxações.",
+      "fields": {
+        "Fixações": "Fossa maleolar, na face medial do maléolo lateral, até o tubérculo lateral do processo posterior do tálus, com trajeto quase horizontal.",
+        "Função": "Componente mais resistente do complexo ligamentar lateral. Limita a translação posterior e a rotação do tálus dentro da pinça, sobretudo em dorsiflexão máxima, quando fica mais tenso.",
+        "Tensiona em": "Dorsiflexão máxima e rotação forçada do tálus.",
+        "Teste clínico": "Avaliado indiretamente; não tem teste isolado confiável. Sua lesão é sugerida por instabilidade grosseira com gaveta anterior e inclinação talar muito aumentadas.",
+        "Lesão típica": "Preservado na maioria das entorses em inversão; rompe apenas nos traumas de alta energia e nas luxações do tornozelo.",
+        "Na prática": "A ordem de falha no entorse em inversão é talofibular anterior, depois calcaneofibular, e só por último este. Se ele está lesionado, o trauma foi grave."
+      },
+      "related": ["talocrural", "talus", "fibula", "ligamento-talofibular-anterior", "ligamento-calcaneofibular", "ligamento-deltoide"],
+      "aliases": ["LTFP", "talofibular posterior"]
+    },
+    {
+      "id": "ligamento-tibiofibular-anterior",
+      "summary": "Componente anterior da sindesmose; sua lesão é a entorse alta do tornozelo.",
+      "fields": {
+        "Fixações": "Tubérculo anterior da tíbia distal (tubérculo de Chaput) até a margem anterior do maléolo lateral, em trajeto oblíquo para baixo e lateralmente.",
+        "Função": "Mantém unidas tíbia e fíbula logo acima da articulação do tornozelo, formando a sindesmose tibiofibular distal. Resiste ao afastamento da pinça maleolar, que tende a alargar na dorsiflexão, porque a tróclea do tálus é mais larga na frente.",
+        "Tensiona em": "Dorsiflexão do tornozelo e rotação externa do pé.",
+        "Teste clínico": "Teste de compressão da perna (squeeze test) e teste de rotação externa; dor à palpação acima da interlinha articular.",
+        "Lesão típica": "Entorse alta do tornozelo, por rotação externa com o pé fixo. Recupera bem mais devagar que a entorse lateral comum e, se houver diástase, pode precisar de fixação.",
+        "Na prática": "Dor acima do maléolo lateral, e não abaixo, é o sinal que diferencia a entorse alta da entorse lateral clássica. O tempo de retorno ao esporte costuma ser o dobro."
+      },
+      "related": ["talocrural", "tibia", "fibula", "ligamento-tibiofibular-posterior", "ligamento-talofibular-anterior", "talus"],
+      "aliases": ["sindesmose anterior", "LTFAI", "entorse alta"]
+    },
+    {
+      "id": "ligamento-tibiofibular-posterior",
+      "summary": "Componente posterior da sindesmose, mais resistente que o anterior; aprofunda a pinça maleolar.",
+      "fields": {
+        "Fixações": "Tubérculo posterior da tíbia distal até a face posterior do maléolo lateral, com uma porção profunda chamada ligamento tibiofibular transverso.",
+        "Função": "Fecha a sindesmose por trás e resiste ao afastamento da pinça. Sua porção profunda desce além da margem óssea e funciona como um lábio posterior, aprofundando a superfície articular e impedindo a translação posterior do tálus.",
+        "Tensiona em": "Dorsiflexão e rotação externa do pé.",
+        "Teste clínico": "Avaliado junto com o anterior pelo squeeze test e pelo teste de rotação externa.",
+        "Lesão típica": "Menos lesionado que o anterior por ser mais resistente; costuma ser avulsionado junto com um fragmento ósseo posterior da tíbia, o chamado terceiro maléolo.",
+        "Na prática": "Quando a entorse alta vem com fratura do maléolo posterior, este ligamento normalmente está preso ao fragmento e não rompido."
+      },
+      "related": ["talocrural", "tibia", "fibula", "ligamento-tibiofibular-anterior", "talus"],
+      "aliases": ["sindesmose posterior", "LTFPI"]
+    },
+    {
+      "id": "ligamento-plantar-longo",
+      "summary": "O ligamento mais longo do pé; sustenta o arco lateral e forma um túnel para o tendão do fibular longo.",
+      "fields": {
+        "Fixações": "Face plantar do calcâneo, à frente dos tubérculos, até a tuberosidade do cuboide e as bases do segundo ao quinto metatarsais.",
+        "Função": "Principal sustentação passiva do arco longitudinal lateral. Resiste ao achatamento do pé na fase de apoio. Suas fibras superficiais passam sobre o sulco do cuboide e transformam-no em túnel para o tendão do fibular longo.",
+        "Tensiona em": "Apoio do peso, sobretudo na fase média do apoio, quando o arco tende a baixar.",
+        "Teste clínico": "Dor à palpação profunda na face plantar lateral do pé, entre calcâneo e cuboide.",
+        "Lesão típica": "Sobrecarga em corredores e em pés com arco lateral rígido; participa da dor lateral plantar crônica.",
+        "Na prática": "Junto com o plantar curto e o calcaneonavicular plantar, forma o conjunto de ligamentos que segura os arcos por baixo, enquanto a aponeurose plantar trabalha mais superficialmente."
+      },
+      "related": ["calcaneo", "cuboide", "metatarsais", "fibular-longo", "ligamento-calcaneocuboideo-plantar", "ligamento-calcaneonavicular-plantar"],
+      "aliases": ["plantar longo"]
+    },
+    {
+      "id": "ligamento-calcaneonavicular-plantar",
+      "summary": "Ligamento mola: sustenta a cabeça do tálus por baixo e é peça central do arco longitudinal medial.",
+      "fields": {
+        "Fixações": "Sustentáculo do tálus, no calcâneo, até a face plantar e a borda do navicular.",
+        "Função": "Forma um berço fibrocartilaginoso sob a cabeça do tálus, sustentando-a e mantendo a altura do arco longitudinal medial. Sua superfície superior é revestida de cartilagem e participa da articulação talocalcaneonavicular.",
+        "Tensiona em": "Apoio do peso e eversão do retropé, quando a cabeça do tálus tende a cair medialmente.",
+        "Teste clínico": "Dor à palpação logo abaixo e à frente do maléolo medial; avaliado junto com o tibial posterior no teste de elevação do calcanhar em apoio unipodal.",
+        "Lesão típica": "Sua insuficiência, geralmente associada à disfunção do tendão do tibial posterior, é o mecanismo do pé plano adquirido do adulto.",
+        "Na prática": "Chamado ligamento mola (spring ligament). O tibial posterior é seu parceiro dinâmico: quando o tendão falha, o ligamento é sobrecarregado e o arco desaba progressivamente."
+      },
+      "related": ["calcaneo", "navicular", "talus", "tibial-posterior", "subtalar", "ligamento-plantar-longo", "ligamento-calcaneocuboideo-plantar"],
+      "aliases": ["ligamento mola", "spring ligament"]
+    },
+    {
+      "id": "ligamento-calcaneocuboideo-plantar",
+      "summary": "Ligamento plantar curto; reforça a articulação calcaneocuboidea e sustenta o arco lateral.",
+      "fields": {
+        "Fixações": "Tubérculo anterior da face plantar do calcâneo até a face plantar do cuboide, profundamente ao ligamento plantar longo.",
+        "Função": "Reforço plantar direto da articulação calcaneocuboidea. Resiste à abertura dessa articulação sob carga e contribui para manter o arco longitudinal lateral.",
+        "Tensiona em": "Apoio do peso e supinação forçada do médio-pé.",
+        "Teste clínico": "Palpação profunda entre calcâneo e cuboide na face plantar lateral.",
+        "Lesão típica": "Comprometido em entorses do médio-pé e na chamada síndrome cuboideana.",
+        "Na prática": "Também chamado ligamento plantar curto. Fica por baixo do plantar longo e é mais profundo e mais curto que ele."
+      },
+      "related": ["calcaneo", "cuboide", "ligamento-plantar-longo", "ligamento-calcaneonavicular-plantar", "fibular-longo"],
+      "aliases": ["plantar curto", "calcaneocuboideo plantar"]
+    },
+    {
+      "id": "ligamentos-colaterais-metatarsofalangicos",
+      "summary": "Estabilizam as metatarsofalângicas nos lados; junto com a placa plantar contêm a hiperextensão dos dedos.",
+      "fields": {
+        "Fixações": "Tubérculos laterais das cabeças dos metatarsais até as bases das falanges proximais, com fibras acessórias que se prendem à placa plantar.",
+        "Função": "Contêm o desvio lateral dos dedos e, junto com a placa plantar, limitam a hiperextensão das metatarsofalângicas na fase de propulsão da marcha.",
+        "Tensiona em": "Flexão das metatarsofalângicas e extensão máxima dos dedos no desprendimento do passo.",
+        "Teste clínico": "Estresse lateral e teste de gaveta vertical da metatarsofalângica, comparando com o dedo contralateral.",
+        "Lesão típica": "No hálux, a lesão do complexo capsuloligamentar e da placa plantar por hiperextensão forçada é o turf toe, comum em esportes em piso sintético.",
+        "Na prática": "A insuficiência da placa plantar do segundo dedo produz o dedo em garra e a sensação de caroço sob a cabeça do metatarsal."
+      },
+      "related": ["metatarsofalangicas", "metatarsais", "falanges-do-pe", "flexor-longo-do-halux", "ligamentos-colaterais-metacarpofalangicos"],
+      "aliases": ["colaterais MTF", "turf toe"]
+    }
+  ]
+}

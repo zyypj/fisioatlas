@@ -1,0 +1,311 @@
+{
+  "patches": [
+    {
+      "id": "ligamento-cruzado-anterior",
+      "summary": "Principal freio à translação anterior da tíbia; o ligamento mais lesionado do joelho no esporte.",
+      "fields": {
+        "Fixações": "Área intercondilar anterior da tíbia até a face medial do côndilo lateral do fêmur, subindo obliquamente para trás e lateralmente. Tem duas bandas: ântero-medial, mais tensa em flexão, e póstero-lateral, mais tensa em extensão.",
+        "Função": "Impede o deslizamento anterior da tíbia sobre o fêmur e limita a rotação medial da tíbia e a hiperextensão. Como suas duas bandas se alternam, há sempre parte do ligamento tensa em qualquer ângulo de flexão.",
+        "Tensiona em": "Extensão completa, rotação medial da tíbia e translação anterior forçada.",
+        "Teste clínico": "Teste de Lachman, que é o mais sensível, feito a 20°-30° de flexão; gaveta anterior a 90°; e teste de pivot-shift, que avalia a instabilidade rotatória.",
+        "Lesão típica": "Rompe tipicamente sem contato, na desaceleração ou mudança de direção com o joelho em valgo dinâmico e rotação, ou na aterrissagem de um salto. Mulheres têm risco várias vezes maior, por fatores anatômicos, hormonais e sobretudo neuromusculares.",
+        "Na prática": "Sua irrigação é pobre e o ligamento praticamente não cicatriza sozinho, o que explica a frequência da reconstrução cirúrgica. A prevenção é possível e comprovada: programas de treino neuromuscular com controle do valgo dinâmico, aterrissagem e força de quadril reduzem substancialmente a incidência.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "joelho",
+        "femur",
+        "tibia",
+        "menisco-medial",
+        "menisco-lateral",
+        "ligamento-cruzado-posterior",
+        "ligamento-colateral-tibial",
+        "ligamentos-meniscotibiais",
+        "reto-femoral",
+        "semitendineo",
+        "gracil"
+      ],
+      "aliases": [
+        "LCA",
+        "cruzado anterior",
+        "ACL",
+        "teste de Lachman",
+        "pivot-shift"
+      ]
+    },
+    {
+      "id": "ligamento-cruzado-posterior",
+      "summary": "Principal freio à translação posterior da tíbia; o mais forte dos ligamentos do joelho.",
+      "fields": {
+        "Fixações": "Área intercondilar posterior da tíbia até a face lateral do côndilo medial do fêmur, subindo para a frente e medialmente. Tem banda ântero-lateral, mais tensa em flexão, e póstero-medial, mais tensa em extensão.",
+        "Função": "Impede o deslizamento posterior da tíbia sobre o fêmur, especialmente com o joelho fletido. É o mais resistente dos ligamentos do joelho, com cerca do dobro da força do cruzado anterior, e funciona como eixo central de rotação da articulação.",
+        "Tensiona em": "Flexão do joelho, sobretudo acima de 60°, e translação posterior forçada da tíbia.",
+        "Teste clínico": "Gaveta posterior a 90° de flexão; sinal do degrau posterior, em que se observa a perda do degrau normal entre o côndilo femoral e o platô tibial; teste de sag ou de Godfrey, em que a tíbia cai para trás com o joelho a 90°.",
+        "Lesão típica": "Mecanismo clássico é o trauma direto na face anterior da tíbia com o joelho fletido, como no impacto contra o painel do carro ou na queda sobre o joelho fletido com o pé em flexão plantar.",
+        "Na prática": "Ao contrário do cruzado anterior, lesões isoladas do cruzado posterior costumam ser tratadas de forma conservadora, com ênfase no fortalecimento do quadríceps, que traciona a tíbia para a frente e compensa ativamente a perda. Sempre avaliar o canto póstero-lateral em conjunto: sua lesão associada muda a conduta.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "joelho",
+        "femur",
+        "tibia",
+        "ligamento-cruzado-anterior",
+        "ligamento-popliteofibular",
+        "ligamento-popliteo-arqueado",
+        "menisco-medial",
+        "menisco-lateral",
+        "popliteo"
+      ],
+      "aliases": [
+        "LCP",
+        "cruzado posterior",
+        "PCL",
+        "gaveta posterior",
+        "lesão do painel"
+      ]
+    },
+    {
+      "id": "ligamento-colateral-tibial",
+      "summary": "Estabilizador medial do joelho contra o valgo; tem fibras profundas ligadas ao menisco medial.",
+      "fields": {
+        "Fixações": "Epicôndilo medial do fêmur até a face medial da tíbia, cerca de 5 a 7 cm abaixo da interlinha articular. Tem uma camada superficial, longa, e uma profunda, curta, que se prende ao menisco medial pelos ligamentos meniscofemoral e meniscotibial.",
+        "Função": "Principal freio ao estresse em valgo do joelho, em todos os ângulos de flexão. Também limita a rotação lateral da tíbia e contribui para a estabilidade ântero-posterior quando o cruzado anterior está lesionado.",
+        "Tensiona em": "Estresse em valgo e rotação lateral da tíbia; fica mais tenso próximo da extensão completa.",
+        "Teste clínico": "Estresse em valgo a 0° e a 30° de flexão. Abertura a 30° indica lesão isolada do colateral tibial; abertura também a 0° sugere lesão associada de cruzado e cápsula posterior.",
+        "Lesão típica": "Trauma em valgo, com ou sem contato. Suas fibras profundas ligadas ao menisco medial explicam a associação clássica entre lesão do colateral tibial, do menisco medial e do cruzado anterior, historicamente chamada de tríade infeliz.",
+        "Na prática": "Diferentemente do cruzado anterior, tem boa vascularização e cicatriza bem: a maioria das lesões isoladas é tratada de forma conservadora, com proteção em amplitude controlada e progressão de carga.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "joelho",
+        "femur",
+        "tibia",
+        "menisco-medial",
+        "ligamento-cruzado-anterior",
+        "ligamentos-meniscotibiais",
+        "ligamento-popliteo-obliquo",
+        "semimembranaceo",
+        "vasto-medial",
+        "retinaculo-patelar-medial"
+      ],
+      "aliases": [
+        "LCM",
+        "colateral medial",
+        "MCL",
+        "tríade infeliz"
+      ]
+    },
+    {
+      "id": "ligamento-colateral-fibular",
+      "summary": "Cordão que estabiliza o joelho contra o varo; não se prende ao menisco lateral.",
+      "fields": {
+        "Fixações": "Epicôndilo lateral do fêmur até a face lateral da cabeça da fíbula, onde se une ao tendão do bíceps femoral formando o tendão conjunto.",
+        "Função": "Principal freio ao estresse em varo do joelho, sobretudo próximo da extensão. Compõe o canto póstero-lateral junto com o tendão do poplíteo e o ligamento popliteofibular.",
+        "Tensiona em": "Estresse em varo e extensão do joelho; relaxa progressivamente com a flexão.",
+        "Teste clínico": "Estresse em varo a 0° e a 30° de flexão; palpável como um cordão firme com o joelho na posição de quatro, com a perna cruzada sobre a outra.",
+        "Lesão típica": "Menos lesionado que o colateral tibial. Sua ruptura costuma fazer parte das lesões do canto póstero-lateral, associadas a trauma em varo ou hiperextensão com rotação, e frequentemente vem com lesão do nervo fibular comum.",
+        "Na prática": "Ao contrário do colateral tibial, é separado do menisco lateral pelo tendão do poplíteo, o que dá ao menisco lateral muito mais mobilidade e explica por que ele se lesiona menos. Toda suspeita de lesão do canto póstero-lateral exige avaliação do nervo fibular comum.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "joelho",
+        "femur",
+        "fibula",
+        "menisco-lateral",
+        "popliteo",
+        "ligamento-popliteofibular",
+        "ligamento-popliteo-arqueado",
+        "biceps-femoral",
+        "nervo-fibular-comum",
+        "tibiofibular-proximal"
+      ],
+      "aliases": [
+        "LCL",
+        "colateral lateral",
+        "canto póstero-lateral"
+      ]
+    },
+    {
+      "id": "ligamento-talofibular-anterior",
+      "summary": "O ligamento mais lesionado do corpo humano; primeiro a romper na entorse em inversão.",
+      "fields": {
+        "Fixações": "Margem anterior do maléolo lateral até o colo do tálus, em trajeto quase horizontal com o pé em posição neutra.",
+        "Função": "Limita a translação anterior do tálus dentro da pinça maleolar e a inversão, principalmente quando o pé está em flexão plantar. É o mais fraco e o mais anterior dos três ligamentos do complexo lateral.",
+        "Tensiona em": "Flexão plantar com inversão, exatamente a posição em que o pé se encontra ao pisar em falso.",
+        "Teste clínico": "Teste da gaveta anterior do tornozelo, com o pé em leve flexão plantar; dor à palpação logo à frente do maléolo lateral.",
+        "Lesão típica": "É o ligamento mais lesionado do corpo humano. Rompe primeiro na entorse em inversão; se a energia continua, o calcaneofibular é o próximo, e só em traumas graves o talofibular posterior.",
+        "Na prática": "As regras de Ottawa para o tornozelo orientam quando a radiografia é necessária. O tratamento moderno combina carga precoce protegida, mobilização e, sobretudo, treino proprioceptivo e de força dos fibulares, que é o que reduz a recorrência.",
+        "Localização": "Tornozelo"
+      },
+      "related": [
+        "talocrural",
+        "talus",
+        "fibula",
+        "ligamento-calcaneofibular",
+        "ligamento-talofibular-posterior",
+        "ligamento-deltoide",
+        "fibular-curto",
+        "fibular-longo",
+        "retinaculo-fibular-superior",
+        "subtalar"
+      ],
+      "aliases": [
+        "LTFA",
+        "talofibular anterior",
+        "entorse de tornozelo",
+        "regras de Ottawa"
+      ]
+    },
+    {
+      "id": "ligamento-calcaneofibular",
+      "summary": "Único ligamento do complexo lateral que cruza duas articulações: a talocrural e a subtalar.",
+      "fields": {
+        "Fixações": "Ápice do maléolo lateral até um tubérculo na face lateral do calcâneo, em trajeto oblíquo para baixo e para trás.",
+        "Função": "Limita a inversão, sobretudo com o pé em posição neutra ou em dorsiflexão, quando o talofibular anterior está frouxo. É o único do complexo lateral que cruza a articulação talocrural e a subtalar, estabilizando as duas.",
+        "Tensiona em": "Inversão com dorsiflexão ou com o pé em posição neutra.",
+        "Teste clínico": "Teste de inclinação talar, com estresse em inversão do retropé; dor à palpação logo abaixo da ponta do maléolo lateral.",
+        "Lesão típica": "É o segundo a romper na entorse em inversão, depois do talofibular anterior. Sua lesão é o que introduz instabilidade da subtalar, além da talocrural.",
+        "Na prática": "Os tendões fibulares e sua bainha passam superficialmente a ele. Por isso a dor lateral persistente após entorse pode ser tanto instabilidade ligamentar como tenossinovite dos fibulares, e as duas precisam ser diferenciadas no exame.",
+        "Localização": "Tornozelo"
+      },
+      "related": [
+        "talocrural",
+        "subtalar",
+        "calcaneo",
+        "fibula",
+        "talus",
+        "ligamento-talofibular-anterior",
+        "ligamento-talofibular-posterior",
+        "fibular-curto",
+        "fibular-longo",
+        "retinaculo-fibular-superior"
+      ],
+      "aliases": [
+        "LCF",
+        "calcaneofibular",
+        "inclinação talar"
+      ]
+    },
+    {
+      "id": "ligamento-deltoide",
+      "summary": "Leque ligamentar medial do tornozelo, muito mais forte que o complexo lateral; raramente rompe.",
+      "fields": {
+        "Fixações": "Maléolo medial da tíbia, abrindo-se em leque para o navicular, o ligamento calcaneonavicular plantar, o sustentáculo do tálus e o tálus. Tem uma camada superficial e uma profunda, esta última a mais resistente.",
+        "Função": "Limita a eversão do pé e a translação lateral e a rotação externa do tálus. É o principal estabilizador medial do tornozelo e o mais forte dos ligamentos da articulação.",
+        "Tensiona em": "Eversão do pé e rotação externa forçada do tálus.",
+        "Teste clínico": "Teste de eversão forçada e teste de rotação externa; dor à palpação abaixo e à frente do maléolo medial.",
+        "Lesão típica": "Muito mais raro que a entorse lateral, respondendo por menos de 10% das entorses de tornozelo. Por ser tão resistente, o trauma em eversão frequentemente arranca o maléolo medial em vez de romper o ligamento. Sua lesão costuma vir associada a fratura da fíbula e a lesão da sindesmose.",
+        "Na prática": "Entorse com dor medial exige atenção redobrada: pesquisar fratura do maléolo medial, lesão da sindesmose e fratura de Maisonneuve, palpando a fíbula em toda a extensão até a cabeça.",
+        "Localização": "Tornozelo"
+      },
+      "related": [
+        "talocrural",
+        "tibia",
+        "talus",
+        "calcaneo",
+        "navicular",
+        "ligamento-calcaneonavicular-plantar",
+        "ligamento-talofibular-anterior",
+        "ligamento-tibiofibular-anterior",
+        "tibial-posterior",
+        "retinaculo-dos-flexores-do-tornozelo"
+      ],
+      "aliases": [
+        "deltoide do tornozelo",
+        "colateral medial do tornozelo",
+        "ligamento medial"
+      ]
+    },
+    {
+      "id": "ligamento-iliofemoral",
+      "summary": "O ligamento mais forte do corpo; mantém a postura ereta com esforço muscular mínimo.",
+      "fields": {
+        "Fixações": "Espinha ilíaca ântero-inferior e margem acetabular até a linha intertrocantérica do fêmur, em forma de Y invertido, com uma banda lateral e uma medial.",
+        "Função": "Reforça a cápsula anterior do quadril e é o principal freio à extensão e à rotação lateral. Suporta cargas superiores a 300 newtons, sendo considerado o ligamento mais resistente do corpo humano.",
+        "Tensiona em": "Extensão do quadril, sobretudo associada à rotação lateral e à adução.",
+        "Teste clínico": "Teste de Thomas, que avalia a extensão do quadril e diferencia encurtamento capsular de encurtamento muscular; dor e restrição na extensão passiva com rotação lateral.",
+        "Lesão típica": "Raramente rompe. Seu encurtamento limita a extensão e contribui para a inclinação pélvica anterior; sua frouxidão participa da instabilidade anterior do quadril.",
+        "Na prática": "É conhecido como ligamento de Bigelow ou ligamento em Y de Bigelow. Na posição em pé, ele fica tensionado e sustenta passivamente o tronco sobre os quadris, permitindo permanecer de pé por longos períodos com atividade muscular mínima. É essa propriedade que faz do quadril uma articulação energeticamente econômica na postura ereta.",
+        "Localização": "Quadril"
+      },
+      "related": [
+        "coxofemoral",
+        "osso-do-quadril",
+        "femur",
+        "ligamento-pubofemoral",
+        "ligamento-isquiofemoral",
+        "zona-orbicular",
+        "labio-acetabular",
+        "psoas-maior",
+        "reto-femoral",
+        "gluteo-maximo"
+      ],
+      "aliases": [
+        "ligamento de Bigelow",
+        "Y de Bigelow",
+        "iliofemoral"
+      ]
+    },
+    {
+      "id": "menisco-medial",
+      "summary": "Menisco em C, preso ao colateral tibial e à cápsula; menos móvel e por isso mais lesionado.",
+      "fields": {
+        "Classificação": "Fibrocartilagem semilunar, em forma de C aberto, interposta entre o côndilo medial do fêmur e o platô tibial medial.",
+        "Superfícies articulares": "Sua face superior é côncava e recebe o côndilo femoral; a inferior é plana e repousa sobre o platô tibial. É mais espesso na periferia e afila em direção ao centro.",
+        "Movimentos": "Desloca-se para trás na flexão e para a frente na extensão, acompanhando o côndilo femoral. Seu deslocamento é menor que o do menisco lateral, cerca de 5 mm contra 11 mm, porque está firmemente ancorado.",
+        "Estabilizadores": "Ligamentos meniscotibiais, conexão direta com as fibras profundas do ligamento colateral tibial, cápsula articular e ligamento transverso do joelho.",
+        "Na prática": "É o menisco mais lesionado, justamente por ser menos móvel. O mecanismo clássico é a rotação com o joelho fletido e o pé fixo no solo. A lesão em alça de balde pode travar o joelho, impedindo a extensão completa.",
+        "Função": "Aumenta a congruência entre o côndilo femoral, que é convexo, e o platô tibial, quase plano. Distribui a carga por uma área muito maior, absorve impacto, contribui para a estabilidade e participa da lubrificação e da nutrição da cartilagem.",
+        "Teste clínico": "Teste de McMurray, teste de Thessaly e teste de Apley; dor à palpação da interlinha articular medial é o achado mais sensível.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "joelho",
+        "femur",
+        "tibia",
+        "menisco-lateral",
+        "ligamento-colateral-tibial",
+        "ligamento-cruzado-anterior",
+        "ligamentos-meniscotibiais",
+        "ligamento-transverso-do-joelho",
+        "semimembranaceo"
+      ],
+      "aliases": [
+        "menisco interno",
+        "alça de balde",
+        "McMurray"
+      ]
+    },
+    {
+      "id": "menisco-lateral",
+      "summary": "Menisco quase circular, mais móvel e menos lesionado; separado do colateral fibular pelo poplíteo.",
+      "fields": {
+        "Classificação": "Fibrocartilagem quase circular, em forma de O quase fechado, interposta entre o côndilo lateral do fêmur e o platô tibial lateral.",
+        "Superfícies articulares": "Cobre uma proporção maior do platô tibial lateral do que o medial cobre do seu lado, aproximadamente dois terços contra metade.",
+        "Movimentos": "Desloca-se cerca de 11 mm entre a extensão e a flexão, mais que o dobro do menisco medial. Essa mobilidade é possível porque não está preso ao ligamento colateral fibular: o tendão do poplíteo se interpõe entre os dois.",
+        "Estabilizadores": "Ligamentos meniscotibiais, ligamento transverso do joelho, ligamentos meniscofemorais de Humphrey e Wrisberg, e o tendão do poplíteo, que ativamente o traciona para trás na flexão.",
+        "Na prática": "Lesiona-se bem menos que o medial, graças à mobilidade. O menisco discoide, variação em que ele é espesso e em forma de disco, é mais comum lateralmente e causa estalido audível e dor em crianças e adolescentes.",
+        "Função": "Aumenta a congruência articular, distribui a carga, absorve impacto e contribui para a estabilidade do compartimento lateral. Após meniscectomia, a pressão de contato na cartilagem aumenta várias vezes, o que acelera a artrose: por isso a preferência atual é sempre preservar ou reparar.",
+        "Teste clínico": "Teste de McMurray com rotação medial da tíbia, teste de Thessaly e palpação da interlinha articular lateral.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "joelho",
+        "femur",
+        "tibia",
+        "menisco-medial",
+        "popliteo",
+        "ligamento-colateral-fibular",
+        "ligamentos-meniscotibiais",
+        "ligamento-transverso-do-joelho",
+        "ligamento-cruzado-posterior"
+      ],
+      "aliases": [
+        "menisco externo",
+        "menisco discoide",
+        "Humphrey",
+        "Wrisberg"
+      ]
+    }
+  ]
+}

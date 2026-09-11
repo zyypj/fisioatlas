@@ -1,0 +1,891 @@
+{
+  "new": [
+    {
+      "id": "ligamento-isquiofemoral",
+      "name": "Ligamento isquiofemoral",
+      "english": "ischiofemoral ligament",
+      "kind": "ligamentos",
+      "region": "Quadril",
+      "depth": "profunda",
+      "summary": "Reforço posterior da cápsula do quadril; o mais fraco dos três e o principal freio à rotação medial.",
+      "fields": {
+        "Fixações": "Corpo do ísquio, atrás e abaixo do acetábulo, com fibras que sobem em espiral para a face medial do trocanter maior e a zona orbicular.",
+        "Função": "Reforça a cápsula do quadril por trás. Limita a rotação medial em extensão, a adução e a hiperextensão. É o mais delgado e mais fraco dos três ligamentos capsulares do quadril.",
+        "Tensiona em": "Extensão com rotação medial e adução do quadril.",
+        "Teste clínico": "Dor e restrição na rotação medial passiva do quadril em extensão, avaliada em decúbito ventral.",
+        "Lesão típica": "Sua frouxidão contribui para a instabilidade posterior do quadril; seu encurtamento limita a rotação medial e pode participar do impacto isquiofemoral.",
+        "Na prática": "Os três ligamentos capsulares se enrolam em espiral no colo do fêmur durante a extensão e desenrolam na flexão. É por isso que a articulação fica mais frouxa com o quadril fletido, posição usada para reduzir uma luxação.",
+        "Localização": "Quadril"
+      },
+      "related": [
+        "coxofemoral",
+        "osso-do-quadril",
+        "femur",
+        "ligamento-iliofemoral",
+        "ligamento-pubofemoral",
+        "zona-orbicular",
+        "labio-acetabular",
+        "quadrado-femoral"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "ischiofemoral",
+        "isquiofemoral"
+      ],
+      "source_objects": [
+        "Ischiofemoral ligament.l",
+        "Ischiofemoral ligament.r"
+      ]
+    },
+    {
+      "id": "ligamento-pubofemoral",
+      "name": "Ligamento pubofemoral",
+      "english": "pubofemoral ligament",
+      "kind": "ligamentos",
+      "region": "Quadril",
+      "depth": "profunda",
+      "summary": "Reforço ântero-inferior da cápsula do quadril; freia a abdução e a rotação lateral excessivas.",
+      "fields": {
+        "Fixações": "Eminência iliopúbica e ramo superior do púbis até a parte inferior da linha intertrocantérica e a cápsula anterior, misturando-se com a porção medial do ligamento iliofemoral.",
+        "Função": "Reforça a cápsula anterior e inferior do quadril. Limita principalmente a abdução e, em menor grau, a extensão e a rotação lateral.",
+        "Tensiona em": "Abdução com extensão e rotação lateral do quadril.",
+        "Teste clínico": "Restrição e dor no extremo da abdução passiva com o quadril estendido.",
+        "Lesão típica": "Sua distensão contribui para a instabilidade anterior do quadril, quadro descrito em atletas com hipermobilidade, bailarinas e ginastas.",
+        "Na prática": "Completa, junto com o iliofemoral e o isquiofemoral, a cobertura ligamentar da cápsula. Deixa uma área mais fraca entre ele e o iliofemoral, por onde a bolsa do iliopsoas pode se comunicar com a articulação.",
+        "Localização": "Quadril"
+      },
+      "related": [
+        "coxofemoral",
+        "osso-do-quadril",
+        "femur",
+        "ligamento-iliofemoral",
+        "ligamento-isquiofemoral",
+        "zona-orbicular",
+        "psoas-maior",
+        "pectineo"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "pubofemoral",
+        "pubocapsular"
+      ],
+      "source_objects": [
+        "Pubofemoral ligament.l",
+        "Pubofemoral ligament.r"
+      ]
+    },
+    {
+      "id": "membrana-interossea-do-antebraco",
+      "name": "Membrana interóssea do antebraço",
+      "english": "interosseous membrane of forearm",
+      "kind": "ligamentos",
+      "region": "Antebraço",
+      "depth": "profunda",
+      "summary": "Une rádio e ulna, transfere carga do punho para o cotovelo e dá origem a músculos profundos.",
+      "fields": {
+        "Fixações": "Borda interóssea do rádio até a borda interóssea da ulna, com as fibras principais dirigidas obliquamente para baixo e medialmente, do rádio para a ulna. A corda oblíqua, acima, tem direção inversa.",
+        "Função": "Mantém rádio e ulna unidos, formando com eles uma sindesmose. Transfere a carga recebida pelo punho, que chega quase toda ao rádio, para a ulna e daí ao úmero. Também amplia a superfície de origem dos músculos profundos do antebraço.",
+        "Tensiona em": "Posição intermediária entre pronação e supinação, quando as bordas interósseas estão mais afastadas. Fica frouxa na pronação e na supinação máximas.",
+        "Teste clínico": "Dor à palpação profunda entre rádio e ulna e à compressão longitudinal do antebraço.",
+        "Lesão típica": "Sua ruptura, associada à fratura da cabeça do rádio e à lesão da radioulnar distal, produz a lesão de Essex-Lopresti, com migração proximal do rádio e dor persistente no punho.",
+        "Na prática": "É por causa da direção das suas fibras que a carga axial não fica só no rádio. Se ela rompe, o rádio migra para cima e a ulna passa a bater no carpo, gerando dor ulnar crônica.",
+        "Localização": "Antebraço"
+      },
+      "related": [
+        "radio",
+        "ulna",
+        "radioulnar-proximal",
+        "radioulnar-distal",
+        "flexor-profundo-dos-dedos",
+        "flexor-longo-do-polegar",
+        "abdutor-longo-do-polegar"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "membrana interóssea",
+        "Essex-Lopresti",
+        "sindesmose radioulnar"
+      ],
+      "source_objects": [
+        "Interosseous membrane of forearm.l",
+        "Interosseous membrane of forearm.r"
+      ]
+    },
+    {
+      "id": "membrana-interossea-da-perna",
+      "name": "Membrana interóssea da perna",
+      "english": "interosseous membrane of leg",
+      "kind": "ligamentos",
+      "region": "Perna",
+      "depth": "profunda",
+      "summary": "Une tíbia e fíbula, separa os compartimentos anterior e posterior e transmite carga à fíbula.",
+      "fields": {
+        "Fixações": "Borda interóssea da tíbia até a borda interóssea da fíbula, com fibras dirigidas obliquamente para baixo e lateralmente, da tíbia para a fíbula.",
+        "Função": "Mantém tíbia e fíbula unidas ao longo de toda a diáfise e transfere parte da carga da tíbia para a fíbula. Separa o compartimento anterior do posterior da perna e amplia a superfície de origem dos músculos profundos.",
+        "Tensiona em": "Dorsiflexão do tornozelo, que afasta discretamente a fíbula da tíbia, e carga axial.",
+        "Teste clínico": "Dor à palpação profunda ao longo da linha entre tíbia e fíbula; teste de compressão da perna na suspeita de lesão sindesmótica.",
+        "Lesão típica": "Sua porção distal é lesionada nas entorses sindesmóticas graves e na fratura de Maisonneuve, em que a fratura ocorre na fíbula proximal, longe do tornozelo.",
+        "Na prática": "Tem uma abertura superior por onde passam os vasos tibiais anteriores, e uma inferior por onde passam os vasos fibulares perfurantes. Sempre que houver entorse grave com dor na perna, é preciso palpar a fíbula em toda a extensão para não deixar passar uma fratura de Maisonneuve.",
+        "Localização": "Perna"
+      },
+      "related": [
+        "tibia",
+        "fibula",
+        "talocrural",
+        "tibiofibular-proximal",
+        "ligamento-tibiofibular-anterior",
+        "tibial-posterior",
+        "flexor-longo-do-halux",
+        "extensor-longo-dos-dedos"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "membrana interóssea da perna",
+        "Maisonneuve",
+        "sindesmose tibiofibular"
+      ],
+      "source_objects": [
+        "Interosseous membrane of leg.l",
+        "Interosseous membrane of leg.r"
+      ]
+    },
+    {
+      "id": "ligamento-temporomandibular-lateral",
+      "name": "Ligamento temporomandibular lateral",
+      "english": "lateral temporomandibular ligament",
+      "kind": "ligamentos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Principal reforço da cápsula da ATM; limita o deslocamento posterior e inferior do côndilo.",
+      "fields": {
+        "Fixações": "Tubérculo articular e processo zigomático do osso temporal até o colo e a face posterior do côndilo da mandíbula, com uma porção oblíqua externa e uma horizontal interna.",
+        "Função": "É o único reforço verdadeiro da cápsula da articulação temporomandibular. Limita o deslocamento posterior do côndilo, protegendo a região retrodiscal, que é ricamente vascularizada e inervada. Guia também a trajetória do côndilo durante a abertura.",
+        "Tensiona em": "Abertura ampla da boca e retrusão forçada da mandíbula.",
+        "Teste clínico": "Avaliado pela amplitude e pela trajetória da abertura bucal e pela dor à palpação lateral da articulação, à frente do trago da orelha.",
+        "Lesão típica": "Sua distensão participa das hipermobilidades da ATM e das subluxações recorrentes, em que o côndilo ultrapassa a eminência articular e a boca trava aberta.",
+        "Na prática": "A abertura bucal normal é de aproximadamente 40 a 50 mm, medida entre os incisivos. Limitações abaixo de 35 mm merecem investigação da articulação e da musculatura.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": [
+        "temporomandibular",
+        "mandibula",
+        "temporal",
+        "disco-da-atm",
+        "pterigoideo-lateral",
+        "masseter",
+        "ligamento-esfenomandibular"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "ligamento lateral da ATM",
+        "TM lateral",
+        "DTM"
+      ],
+      "source_objects": [
+        "Lateral temporomandibular ligament.l",
+        "Lateral temporomandibular ligament.r"
+      ]
+    },
+    {
+      "id": "ligamento-esfenomandibular",
+      "name": "Ligamento esfenomandibular",
+      "english": "sphenomandibular ligament",
+      "kind": "ligamentos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Ligamento acessório da ATM; resto do primeiro arco faríngeo e eixo do movimento mandibular.",
+      "fields": {
+        "Fixações": "Espinha do osso esfenoide até a língula da mandíbula, junto ao forame mandibular.",
+        "Função": "Ligamento acessório da articulação temporomandibular. Funciona como eixo de suspensão da mandíbula, limitando o deslocamento inferior excessivo. Sua tensão varia pouco durante o movimento.",
+        "Tensiona em": "Protrusão e abertura ampla da boca.",
+        "Teste clínico": "Não tem teste isolado; é referência anatômica no bloqueio do nervo alveolar inferior.",
+        "Lesão típica": "Raramente lesionado. Sua importância é sobretudo anatômica e cirúrgica.",
+        "Na prática": "É um remanescente da cartilagem de Meckel, do primeiro arco faríngeo. Sua relação com a língula e o forame mandibular o torna referência obrigatória na anestesia odontológica do nervo alveolar inferior.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": [
+        "esfenoide",
+        "mandibula",
+        "temporomandibular",
+        "ligamento-temporomandibular-lateral",
+        "pterigoideo-medial",
+        "disco-da-atm"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "sphenomandibular",
+        "cartilagem de Meckel"
+      ],
+      "source_objects": [
+        "Sphenomandibular ligament.l",
+        "Sphenomandibular ligament.r"
+      ]
+    },
+    {
+      "id": "ligamento-estilo-hioideo",
+      "name": "Ligamento estilo-hióideo",
+      "english": "stylohyoid ligament",
+      "kind": "ligamentos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Liga o processo estiloide ao hioide; sua calcificação causa a síndrome de Eagle.",
+      "fields": {
+        "Fixações": "Ápice do processo estiloide do osso temporal até o corno menor do osso hioide.",
+        "Função": "Suspende o osso hioide e participa da contenção dos seus movimentos durante a deglutição. Dá inserção a fibras do músculo constritor médio da faringe.",
+        "Tensiona em": "Abaixamento do hioide e deglutição.",
+        "Teste clínico": "Palpação da fossa tonsilar, onde um processo estiloide alongado pode ser sentido; a dor reproduzida sugere síndrome de Eagle.",
+        "Lesão típica": "Sua calcificação ou ossificação, associada a um processo estiloide alongado, causa a síndrome de Eagle: dor cervical e faríngea ao virar a cabeça ou engolir, às vezes com sensação de corpo estranho na garganta.",
+        "Na prática": "Como o ligamento estilo-hióideo é remanescente do segundo arco faríngeo, sua ossificação segue o padrão do osso que se formaria ali. É diagnóstico diferencial de dor cervical e de disfunção temporomandibular.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": [
+        "temporal",
+        "hioide",
+        "estilo-hioideo",
+        "digastrico",
+        "temporomandibular",
+        "ligamento-esfenomandibular"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "stylohyoid ligament",
+        "síndrome de Eagle"
+      ],
+      "source_objects": [
+        "Stylohyoid ligament.l",
+        "Stylohyoid ligament.r"
+      ]
+    },
+    {
+      "id": "ligamento-iliolombar",
+      "name": "Ligamento iliolombar",
+      "english": "iliolumbar ligament",
+      "kind": "ligamentos",
+      "region": "Pelve",
+      "depth": "profunda",
+      "summary": "Ancora L5 ao ilíaco; é a principal estrutura que impede o escorregamento de L5 sobre o sacro.",
+      "fields": {
+        "Fixações": "Processos transversos de L4 e, principalmente, de L5 até a crista ilíaca e a face anterior da articulação sacroilíaca, com bandas anterior e posterior.",
+        "Função": "Estabiliza a junção lombossacra. Resiste à flexão, à inclinação lateral e, sobretudo, ao deslizamento anterior de L5 sobre o sacro, que é a direção de maior risco por causa da inclinação da base sacral.",
+        "Tensiona em": "Inclinação lateral contralateral, flexão do tronco e cargas de cisalhamento na junção lombossacra.",
+        "Teste clínico": "Dor profunda à palpação na região entre a crista ilíaca e L5; avaliado no conjunto dos testes lombopélvicos.",
+        "Lesão típica": "Fonte reconhecida de dor lombar baixa e de dor referida na região glútea e inguinal. Sua insuficiência participa da progressão da espondilolistese de L5.",
+        "Na prática": "Ele só se desenvolve plenamente na segunda década de vida, quando a postura ereta consolida as demandas mecânicas sobre a junção lombossacra. É um bom exemplo de estrutura moldada pela função.",
+        "Localização": "Pelve"
+      },
+      "related": [
+        "vertebras-lombares",
+        "osso-do-quadril",
+        "sacro",
+        "sacroiliaca",
+        "quadrado-lombar",
+        "ligamento-sacrotuberal",
+        "multifido-lombar"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "iliolumbar",
+        "junção lombossacra"
+      ],
+      "source_objects": [
+        "Iliolumbar ligament.l",
+        "Iliolumbar ligament.r"
+      ]
+    },
+    {
+      "id": "ligamento-inguinal",
+      "name": "Ligamento inguinal",
+      "english": "inguinal ligament",
+      "kind": "ligamentos",
+      "region": "Pelve",
+      "depth": "superficial",
+      "summary": "Borda inferior enrolada do oblíquo externo; forma o teto do canal por onde passam vasos e nervos da coxa.",
+      "fields": {
+        "Fixações": "Espinha ilíaca ântero-superior até o tubérculo púbico. É formado pelo espessamento e enrolamento da borda inferior da aponeurose do músculo oblíquo externo do abdome.",
+        "Função": "Forma o assoalho do canal inguinal e a ponte sob a qual passam, do abdome para a coxa, o músculo iliopsoas, o nervo femoral, a artéria e a veia femorais e os vasos linfáticos.",
+        "Tensiona em": "Extensão do quadril e contração dos músculos abdominais.",
+        "Teste clínico": "Palpação da linha entre a espinha ilíaca ântero-superior e o tubérculo púbico; referência para localizar o pulso femoral, que fica no ponto médio.",
+        "Lesão típica": "Não rompe. É referência anatômica nas hérnias inguinais, que são diretas quando passam medialmente aos vasos epigástricos inferiores e indiretas quando passam lateralmente a eles.",
+        "Na prática": "É a referência prática mais usada da virilha. Também é o ponto de compressão do nervo cutâneo lateral da coxa na meralgia parestésica, e o local sob o qual passa o tendão do iliopsoas, envolvido nos quadros de quadril em ressalto.",
+        "Localização": "Pelve"
+      },
+      "related": [
+        "osso-do-quadril",
+        "obliquo-externo",
+        "psoas-maior",
+        "iliaco",
+        "nervo-femoral",
+        "nervo-cutaneo-lateral-da-coxa",
+        "nervo-ilioinguinal",
+        "pectineo"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "arcada crural",
+        "ligamento de Poupart",
+        "canal inguinal"
+      ],
+      "source_objects": [
+        "Inguinal ligament.l",
+        "Inguinal ligament.r"
+      ]
+    },
+    {
+      "id": "ligamento-costotransversario",
+      "name": "Ligamento costotransversário",
+      "english": "costotransverse ligament",
+      "kind": "ligamentos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Liga o colo da costela ao processo transverso; guia a mecânica costal da respiração.",
+      "fields": {
+        "Fixações": "Face posterior do colo da costela até a face anterior do processo transverso da vértebra do mesmo nível.",
+        "Função": "Estabiliza a articulação costotransversária e orienta o eixo de movimento da costela. Como a orientação desse eixo muda ao longo do tórax, o ligamento determina se a costela se moverá mais em braço de bomba, nas costelas superiores, ou em alça de balde, nas inferiores.",
+        "Tensiona em": "Inspiração profunda, quando a costela gira em torno do seu eixo.",
+        "Teste clínico": "Dor à palpação profunda entre o processo transverso e o colo da costela, e à mobilização ântero-posterior da costela.",
+        "Lesão típica": "Restrições costotransversárias produzem dor torácica localizada que piora com a respiração profunda, frequentemente confundida com dor de origem cardíaca ou pulmonar.",
+        "Na prática": "É um alvo direto da terapia manual torácica. Devolver a mobilidade costal costuma melhorar simultaneamente a dor local e a amplitude da inspiração.",
+        "Localização": "Tronco"
+      },
+      "related": [
+        "costelas",
+        "vertebras-toracicas",
+        "intervertebrais",
+        "ligamento-radiado-da-cabeca-da-costela",
+        "diafragma",
+        "intercostais-externos",
+        "levantadores-das-costelas"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "costotransverso",
+        "articulação costotransversária"
+      ],
+      "source_objects": [
+        "Costotransverse ligament.l",
+        "Costotransverse ligament.r"
+      ]
+    },
+    {
+      "id": "ligamento-radiado-da-cabeca-da-costela",
+      "name": "Ligamento radiado da cabeça da costela",
+      "english": "radiate ligament of head of rib",
+      "kind": "ligamentos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Fibras em leque que prendem a cabeça da costela aos corpos vertebrais e ao disco.",
+      "fields": {
+        "Fixações": "Face anterior da cabeça da costela, abrindo-se em leque para o corpo da vértebra superior, o corpo da vértebra do mesmo nível e o disco intervertebral entre elas.",
+        "Função": "Reforça anteriormente a articulação da cabeça da costela e liga diretamente a caixa torácica ao disco intervertebral. Distribui as forças costais entre dois níveis vertebrais.",
+        "Tensiona em": "Inspiração profunda e movimentos de rotação do tronco.",
+        "Teste clínico": "Dor à palpação paravertebral profunda na altura da cabeça costal e à mobilização da costela correspondente.",
+        "Lesão típica": "Participa das restrições costovertebrais que causam dor torácica mecânica, agravada pela respiração e pela rotação do tronco.",
+        "Na prática": "Sua fixação no disco intervertebral, além dos corpos vertebrais, é o que explica por que restrições costais e rigidez torácica segmentar costumam caminhar juntas.",
+        "Localização": "Tronco"
+      },
+      "related": [
+        "costelas",
+        "vertebras-toracicas",
+        "intervertebrais",
+        "nucleo-pulposo",
+        "ligamento-costotransversario",
+        "ligamento-longitudinal-anterior"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "radiado da cabeça da costela",
+        "articulação costovertebral"
+      ],
+      "source_objects": [
+        "Radiate ligament of head of rib.l",
+        "Radiate ligament of head of rib.r",
+        "Intra-articular ligament of head of rib",
+        "Intra-articular ligament of head of rib.r"
+      ]
+    },
+    {
+      "id": "ligamentos-intertransversarios",
+      "name": "Ligamentos intertransversários",
+      "english": "intertransverse ligaments",
+      "kind": "ligamentos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Unem processos transversos vizinhos e limitam a inclinação lateral contralateral.",
+      "fields": {
+        "Fixações": "Entre processos transversos de vértebras adjacentes, ao longo de toda a coluna. São cordões finos na região cervical, feixes fibrosos na torácica e lâminas membranosas na lombar.",
+        "Função": "Limitam a inclinação lateral para o lado oposto e contribuem para a estabilidade lateral segmentar.",
+        "Tensiona em": "Inclinação lateral contralateral da coluna.",
+        "Teste clínico": "Avaliados dentro do exame de mobilidade segmentar; não têm teste isolado.",
+        "Lesão típica": "Participam das restrições segmentares de inclinação lateral e podem ser fonte de dor local em sobrecargas assimétricas.",
+        "Na prática": "Na região lombar formam lâminas que separam a musculatura anterior da posterior, e o ramo posterior do nervo espinal passa entre eles. Essa relação é a referência do bloqueio do ramo medial, usado na dor facetária.",
+        "Localização": "Coluna vertebral"
+      },
+      "related": [
+        "vertebras-lombares",
+        "vertebras-toracicas",
+        "vertebras-cervicais",
+        "intertransversarios",
+        "ligamentos-interespinais",
+        "quadrado-lombar",
+        "intervertebrais"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "intertransversos",
+        "intertransverse ligaments"
+      ],
+      "source_objects": [
+        "Intertransverse ligaments.l",
+        "Intertransverse ligaments.r"
+      ]
+    },
+    {
+      "id": "membrana-obturatoria",
+      "name": "Membrana obturatória",
+      "english": "obturator membrane",
+      "kind": "ligamentos",
+      "region": "Pelve",
+      "depth": "profunda",
+      "summary": "Fecha o forame obturado, deixando apenas o canal por onde passam vasos e nervo obturatórios.",
+      "fields": {
+        "Fixações": "Margens do forame obturado do osso do quadril, fechando-o quase completamente.",
+        "Função": "Converte o forame obturado em um pequeno canal, o canal obturatório, situado no seu bordo superior, por onde passam o nervo, a artéria e a veia obturatórios. Serve de origem aos músculos obturador interno, na face pélvica, e obturador externo, na face externa.",
+        "Tensiona em": "Não sofre variação de tensão significativa com o movimento; é uma membrana fixa.",
+        "Teste clínico": "Não tem teste isolado. A compressão do nervo obturatório produz dor na face medial da coxa e fraqueza dos adutores.",
+        "Lesão típica": "É o local da hérnia obturatória, rara mas grave, mais comum em mulheres idosas magras, que se manifesta por dor na face medial da coxa ao estender e rodar o quadril, o chamado sinal de Howship-Romberg.",
+        "Na prática": "Explica por que os dois músculos obturadores, apesar de estarem em lados opostos da pelve, têm origem comum e ações semelhantes de rotação lateral do quadril.",
+        "Localização": "Pelve"
+      },
+      "related": [
+        "osso-do-quadril",
+        "obturador-interno",
+        "obturador-externo",
+        "nervo-obturatorio",
+        "coxofemoral",
+        "adutor-curto"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "obturator membrane",
+        "canal obturatório",
+        "Howship-Romberg"
+      ],
+      "source_objects": [
+        "Obturator membrane.l",
+        "Obturator membrane.r"
+      ]
+    },
+    {
+      "id": "retinaculo-patelar-medial",
+      "name": "Retináculo patelar medial",
+      "english": "medial patellar retinaculum",
+      "kind": "ligamentos",
+      "region": "Joelho",
+      "depth": "superficial",
+      "summary": "Contém o ligamento patelofemoral medial, principal freio à luxação lateral da patela.",
+      "fields": {
+        "Fixações": "Expansão do vasto medial e da cápsula medial, indo do epicôndilo medial e do tubérculo adutor até a borda medial da patela e a tíbia.",
+        "Função": "Impede o deslocamento lateral da patela. Sua porção profunda, o ligamento patelofemoral medial, é responsável por aproximadamente 50 a 60% da resistência total à translação lateral da patela nos primeiros 20 a 30 graus de flexão.",
+        "Tensiona em": "Deslocamento lateral da patela, sobretudo com o joelho próximo da extensão, quando a patela ainda não entrou no sulco troclear.",
+        "Teste clínico": "Teste de apreensão patelar: o deslocamento lateral passivo da patela com o joelho em leve flexão provoca reação de defesa; avaliar também a translação comparativa em quadrantes.",
+        "Lesão típica": "Rompe em praticamente todas as luxações laterais agudas da patela. Sua insuficiência é a base da instabilidade patelar recidivante e o alvo das reconstruções do ligamento patelofemoral medial.",
+        "Na prática": "O vasto medial oblíquo é seu reforço dinâmico. Por isso o fortalecimento do quadríceps, com atenção ao componente medial, e o controle do valgo dinâmico são pilares do tratamento conservador da instabilidade patelar.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "patela",
+        "femur",
+        "joelho",
+        "vasto-medial",
+        "ligamento-patelar",
+        "retinaculo-patelar-lateral",
+        "ligamento-colateral-tibial",
+        "adutor-magno"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "ligamento patelofemoral medial",
+        "LPFM",
+        "instabilidade patelar"
+      ],
+      "source_objects": [
+        "Medial patellar retinaculum.l",
+        "Medial patellar retinaculum.r"
+      ]
+    },
+    {
+      "id": "retinaculo-patelar-lateral",
+      "name": "Retináculo patelar lateral",
+      "english": "lateral patellar retinaculum",
+      "kind": "ligamentos",
+      "region": "Joelho",
+      "depth": "superficial",
+      "summary": "Expansão lateral do quadríceps e do trato iliotibial; seu encurtamento inclina a patela.",
+      "fields": {
+        "Fixações": "Expansão do vasto lateral e do trato iliotibial até a borda lateral da patela e o tubérculo de Gerdy, na tíbia.",
+        "Função": "Estabiliza lateralmente a patela e transmite parte da força do quadríceps e do trato iliotibial ao aparelho extensor.",
+        "Tensiona em": "Flexão do joelho e deslocamento medial da patela.",
+        "Teste clínico": "Teste de inclinação patelar: a impossibilidade de elevar a borda lateral da patela até a horizontal indica encurtamento do retináculo lateral.",
+        "Lesão típica": "Seu encurtamento produz inclinação lateral da patela e aumento da pressão na faceta lateral, quadro descrito como síndrome de hiperpressão lateral, causa de dor anterior do joelho.",
+        "Na prática": "Forma com o retináculo medial um par de tensores opostos. O desequilíbrio entre eles, somado ao valgo dinâmico e à fraqueza dos abdutores do quadril, é o mecanismo mais comum da dor femoropatelar.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "patela",
+        "femur",
+        "tibia",
+        "joelho",
+        "vasto-lateral",
+        "trato-iliotibial",
+        "retinaculo-patelar-medial",
+        "ligamento-patelar"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "hiperpressão lateral",
+        "inclinação patelar",
+        "dor femoropatelar"
+      ],
+      "source_objects": [
+        "Lateral patellar retinaculum.l",
+        "Lateral patellar retinaculum.r"
+      ]
+    },
+    {
+      "id": "ligamentos-meniscotibiais",
+      "name": "Ligamentos meniscotibiais",
+      "english": "meniscotibial ligaments",
+      "kind": "ligamentos",
+      "region": "Joelho",
+      "depth": "profunda",
+      "summary": "Ligamentos coronários que prendem a borda periférica dos meniscos ao platô tibial.",
+      "fields": {
+        "Fixações": "Borda periférica inferior de cada menisco até a margem do platô tibial correspondente, em porções anterior e posterior para o menisco medial e para o lateral.",
+        "Função": "Ancoram os meniscos à tíbia, permitindo que se desloquem com ela e não com o fêmur durante a flexão e a extensão. Controlam a amplitude desse deslizamento.",
+        "Tensiona em": "Extensão do joelho e rotação da tíbia, quando os meniscos são tracionados.",
+        "Teste clínico": "Dor à palpação da interlinha articular; sua lesão é considerada no conjunto dos testes meniscais, como McMurray e Thessaly.",
+        "Lesão típica": "Sua ruptura produz o chamado menisco flutuante, em que o menisco se solta da tíbia e desliza excessivamente. É também parte da lesão de rampa, na junção meniscocapsular posterior do menisco medial, frequentemente associada à lesão do ligamento cruzado anterior.",
+        "Na prática": "O menisco medial é mais preso, pelas suas fixações coronárias e pela conexão com o colateral tibial, e por isso se move menos e se lesiona mais. O lateral é mais móvel e mais protegido.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "menisco-medial",
+        "menisco-lateral",
+        "joelho",
+        "tibia",
+        "ligamento-cruzado-anterior",
+        "ligamento-colateral-tibial",
+        "ligamento-transverso-do-joelho"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "ligamentos coronários",
+        "lesão de rampa",
+        "menisco flutuante"
+      ],
+      "source_objects": [
+        "Anterior meniscotibial ligament (Medial meniscus).l",
+        "Anterior meniscotibial ligament (Medial meniscus).r",
+        "Posterior meniscotibial ligament (Medial meniscus).l",
+        "Posterior meniscotibial ligament (Medial meniscus).r",
+        "Anterior meniscotibial ligament (Lateral meniscus).l",
+        "Anterior meniscotibial ligament (Lateral meniscus).r",
+        "Posterior meniscotibial ligament (Lateral meniscus).l",
+        "Posterior meniscotibial ligament (Lateral meniscus).r"
+      ]
+    },
+    {
+      "id": "ligamento-transverso-do-umero",
+      "name": "Ligamento transverso do úmero",
+      "english": "transverse humeral ligament",
+      "kind": "ligamentos",
+      "region": "Ombro",
+      "depth": "profunda",
+      "summary": "Faixa que cobre o sulco intertubercular e mantém o tendão da cabeça longa do bíceps no lugar.",
+      "fields": {
+        "Fixações": "Tubérculo maior até o tubérculo menor do úmero, atravessando a abertura do sulco intertubercular.",
+        "Função": "Transforma o sulco intertubercular em um túnel e mantém dentro dele o tendão da cabeça longa do bíceps braquial, impedindo que ele escape medialmente durante a rotação do ombro.",
+        "Tensiona em": "Rotação lateral do ombro e tração do tendão do bíceps.",
+        "Teste clínico": "Sensação de estalido doloroso na face anterior do ombro durante a rotação, com dor à palpação do sulco intertubercular.",
+        "Lesão típica": "Sua insuficiência, geralmente associada à lesão do tendão do subescapular, permite a subluxação medial do tendão da cabeça longa do bíceps.",
+        "Na prática": "Estudos anatômicos mostram que a contenção do tendão depende mais das fibras do tendão do subescapular e do ligamento coracoumeral do que deste ligamento isoladamente. Por isso, dor anterior do ombro com estalido pede avaliação do subescapular.",
+        "Localização": "Ombro"
+      },
+      "related": [
+        "umero",
+        "glenoumeral",
+        "biceps-braquial",
+        "subescapular",
+        "bainha-intertubercular",
+        "ligamento-coracoumeral",
+        "supraespinal"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "transverse humeral",
+        "polia do bíceps"
+      ],
+      "source_objects": [
+        "Transverse humeral ligament.l",
+        "Transverse humeral ligament.r"
+      ]
+    },
+    {
+      "id": "ligamentos-transversos-da-escapula",
+      "name": "Ligamentos transversos da escápula",
+      "english": "transverse scapular ligaments",
+      "kind": "ligamentos",
+      "region": "Ombro",
+      "depth": "profunda",
+      "summary": "Transformam as incisuras escapulares em forames; pontos clássicos de compressão do nervo supraescapular.",
+      "fields": {
+        "Fixações": "O superior atravessa a incisura da escápula, na borda superior. O inferior, também chamado espinoglenoidal, vai da espinha da escápula à margem da cavidade glenoidal.",
+        "Função": "Convertem as incisuras em forames osteofibrosos. O superior separa o nervo supraescapular, que passa por baixo dele, dos vasos supraescapulares, que passam por cima. O inferior forma o teto da incisura espinoglenoidal.",
+        "Tensiona em": "Protração escapular e adução horizontal do braço, que tracionam o nervo contra a borda do ligamento.",
+        "Teste clínico": "Teste de adução horizontal com estiramento do nervo supraescapular; avaliar atrofia do supraespinal e do infraespinal nas fossas correspondentes.",
+        "Lesão típica": "São os dois pontos onde o nervo supraescapular é comprimido. Na incisura da escápula, a compressão afeta supraespinal e infraespinal; na incisura espinoglenoidal, apenas o infraespinal, o que produz atrofia isolada e visível da fossa infraespinal.",
+        "Na prática": "Atrofia isolada do infraespinal em atletas de vôlei e tênis é achado clássico e aponta para compressão na incisura espinoglenoidal, muitas vezes por um cisto paralabral.",
+        "Localização": "Ombro"
+      },
+      "related": [
+        "escapula",
+        "nervo-supraescapular",
+        "supraespinal",
+        "infraespinal",
+        "glenoumeral",
+        "labio-glenoidal"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "ligamento espinoglenoidal",
+        "incisura da escápula",
+        "nervo supraescapular"
+      ],
+      "source_objects": [
+        "Superior transverse scapular ligament.l",
+        "Superior transverse scapular ligament.r",
+        "Inferior transverse scapular ligament.l",
+        "Inferior transverse scapular ligament.r"
+      ]
+    },
+    {
+      "id": "ligamentos-esternoclaviculares",
+      "name": "Ligamentos esternoclaviculares",
+      "english": "sternoclavicular ligaments",
+      "kind": "ligamentos",
+      "region": "Ombro",
+      "depth": "profunda",
+      "summary": "Conjunto que torna a esternoclavicular uma das articulações mais estáveis do corpo.",
+      "fields": {
+        "Fixações": "O anterior e o posterior reforçam a cápsula entre a clavícula e o manúbrio. O interclavicular une as duas clavículas por cima da incisura jugular. O costoclavicular vai da primeira cartilagem costal à face inferior da clavícula.",
+        "Função": "Estabilizam a única articulação verdadeira entre o membro superior e o esqueleto axial. O costoclavicular é o mais forte e o principal freio à elevação da clavícula; o posterior é o principal freio ao deslocamento anterior.",
+        "Tensiona em": "Elevação do ombro, para o costoclavicular; protração e retração, para os esternoclaviculares anterior e posterior.",
+        "Teste clínico": "Palpação da interlinha durante elevação, protração e retração do ombro, comparando com o lado oposto.",
+        "Lesão típica": "A luxação esternoclavicular é rara. Quando ocorre, a posterior é a que preocupa, porque a clavícula pode comprimir traqueia, esôfago e grandes vasos atrás do manúbrio, configurando urgência.",
+        "Na prática": "Apesar de ter superfícies articulares muito incongruentes, quase nunca luxa, graças ao disco articular e a este conjunto de ligamentos. Em traumas, é mais comum fraturar a clavícula do que luxar esta articulação.",
+        "Localização": "Ombro"
+      },
+      "related": [
+        "esternoclavicular",
+        "clavicula",
+        "esterno",
+        "costelas",
+        "disco-esternoclavicular",
+        "subclavio",
+        "acromioclavicular"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "costoclavicular",
+        "interclavicular",
+        "luxação esternoclavicular"
+      ],
+      "source_objects": [
+        "Anterior sternoclavicular ligament.l",
+        "Anterior sternoclavicular ligament.r",
+        "Posterior sternoclavicular ligament.l",
+        "Posterior sternoclavicular ligament.r",
+        "Interclavicular ligament.l",
+        "Interclavicular ligament.r",
+        "Costoclavicular ligament.l",
+        "Costoclavicular ligament.r"
+      ]
+    },
+    {
+      "id": "ligamento-metacarpal-transverso-profundo",
+      "name": "Ligamento metacarpal transverso profundo",
+      "english": "deep transverse metacarpal ligament",
+      "kind": "ligamentos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "Une as cabeças dos metacarpais, mantendo o arco transverso distal da mão.",
+      "fields": {
+        "Fixações": "Placas palmares das articulações metacarpofalângicas do segundo ao quinto dedo, unindo as cabeças desses metacarpais entre si.",
+        "Função": "Impede que as cabeças dos metacarpais se afastem, mantendo o arco transverso distal da palma. É o que faz os quatro dedos longos trabalharem como uma unidade.",
+        "Tensiona em": "Abertura forçada da mão e tentativas de afastar as cabeças dos metacarpais.",
+        "Teste clínico": "Avaliado de forma indireta pela manutenção do arco transverso e pela posição relativa das cabeças dos metacarpais.",
+        "Lesão típica": "Sua ruptura é rara isoladamente. Participa das deformidades da artrite reumatoide, junto com o desvio ulnar dos dedos.",
+        "Na prática": "É um marco anatômico importante: os tendões dos lumbricais passam à frente dele, e os dos interósseos, atrás. Essa relação explica a diferença de ação entre os dois grupos sobre as metacarpofalângicas.",
+        "Localização": "Mão"
+      },
+      "related": [
+        "metacarpais",
+        "metacarpofalangicas",
+        "falanges-da-mao",
+        "lumbricais-da-mao",
+        "interosseos-palmares",
+        "ligamentos-colaterais-metacarpofalangicos",
+        "aponeurose-palmar"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "metacarpal transverso profundo",
+        "arco transverso da mão"
+      ],
+      "source_objects": [
+        "Deep transverse metacarpal ligament.l",
+        "Deep transverse metacarpal ligament.r"
+      ]
+    },
+    {
+      "id": "ligamento-metatarsal-transverso-profundo",
+      "name": "Ligamento metatarsal transverso profundo",
+      "english": "deep transverse metatarsal ligament",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Une as cabeças dos metatarsais e forma o teto sob o qual o neuroma de Morton se desenvolve.",
+      "fields": {
+        "Fixações": "Placas plantares das articulações metatarsofalângicas, unindo as cabeças de todos os cinco metatarsais, incluindo a do hálux.",
+        "Função": "Mantém as cabeças dos metatarsais unidas, preservando o arco transverso do antepé e impedindo o alargamento do pé sob carga.",
+        "Tensiona em": "Apoio do peso e alargamento do antepé na fase de propulsão.",
+        "Teste clínico": "Teste de compressão do antepé, ou sinal de Mulder, em que a compressão lateral associada à pressão no espaço intermetatarsal produz um clique doloroso.",
+        "Lesão típica": "O nervo digital plantar passa por baixo deste ligamento. Sua compressão repetida nesse ponto, sobretudo no terceiro espaço intermetatarsal, produz o neuroma de Morton, com dor em queimação e sensação de pedra no sapato.",
+        "Na prática": "Diferentemente do análogo na mão, este ligamento une também o primeiro metatarsal, porque o pé precisa de estabilidade e não de independência do polegar. Calçados estreitos aumentam a pressão sob ele e favorecem o neuroma.",
+        "Localização": "Pé"
+      },
+      "related": [
+        "metatarsais",
+        "metatarsofalangicas",
+        "falanges-do-pe",
+        "nervo-plantar-medial",
+        "nervo-plantar-lateral",
+        "ligamentos-colaterais-metatarsofalangicos",
+        "interosseos-plantares"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "metatarsal transverso profundo",
+        "neuroma de Morton",
+        "sinal de Mulder"
+      ],
+      "source_objects": [
+        "Deep transverse metatarsal ligament.l",
+        "Deep transverse metatarsal ligament.r"
+      ]
+    },
+    {
+      "id": "ligamento-talonavicular",
+      "name": "Ligamento talonavicular",
+      "english": "talonavicular ligament",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Reforça dorsalmente a articulação entre o tálus e o navicular, peça da articulação de Chopart.",
+      "fields": {
+        "Fixações": "Colo do tálus, na face dorsal, até a face dorsal do navicular.",
+        "Função": "Reforça por cima a articulação talonavicular, que junto com a calcaneocuboidea forma a articulação transversa do tarso, também chamada articulação de Chopart. Limita a flexão plantar e a adução do médio-pé.",
+        "Tensiona em": "Flexão plantar e inversão do pé.",
+        "Teste clínico": "Dor à palpação dorsal entre o tálus e o navicular e na mobilização passiva do médio-pé.",
+        "Lesão típica": "Comprometido em entorses do médio-pé e nas lesões de Chopart, frequentemente subdiagnosticadas após traumas do pé.",
+        "Na prática": "A articulação talonavicular é a mais importante do retropé funcionalmente: sua artrodese elimina praticamente toda a mobilidade da articulação subtalar e do médio-pé. Por baixo, o ligamento calcaneonavicular plantar completa o suporte da cabeça do tálus.",
+        "Localização": "Pé"
+      },
+      "related": [
+        "talus",
+        "navicular",
+        "calcaneo",
+        "subtalar",
+        "ligamento-calcaneonavicular-plantar",
+        "cuboide",
+        "tibial-posterior"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "talonavicular",
+        "Chopart",
+        "articulação transversa do tarso"
+      ],
+      "source_objects": [
+        "Talonavicular ligament.l",
+        "Talonavicular ligament.r"
+      ]
+    }
+  ]
+}

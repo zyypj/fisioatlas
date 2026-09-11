@@ -1,0 +1,88 @@
+{
+  "patches": [
+    {
+      "id": "ligamento-longitudinal-anterior",
+      "summary": "Faixa que desce pela frente dos corpos vertebrais do occipital ao sacro; é o único ligamento longo que a extensão tensiona.",
+      "fields": {
+        "Fixações": "Da parte basilar do occipital e do tubérculo anterior do atlas até a face anterior do sacro, percorrendo a face anterior de todos os corpos vertebrais e discos. Adere firmemente aos corpos e mais frouxamente aos discos.",
+        "Função": "Limita a extensão da coluna em todos os níveis e impede a separação anterior dos corpos vertebrais. Reforça a parede anterior dos discos e ajuda a manter as curvaturas.",
+        "Tensiona em": "Extensão da coluna. É o oposto de todos os outros ligamentos longos, que tensionam na flexão.",
+        "Teste clínico": "Dor reproduzida na extensão passiva mantida; avaliado dentro do exame de mobilidade segmentar.",
+        "Lesão típica": "Lesionado no mecanismo de hiperextensão, como no traumatismo em chicote na fase de aceleração e em quedas para trás.",
+        "Na prática": "Costuma calcificar com a idade e é o ligamento envolvido na hiperostose esquelética idiopática difusa, em que a coluna anterior enrijece em bloco."
+      },
+      "related": ["intervertebrais", "vertebras-cervicais", "vertebras-toracicas", "vertebras-lombares", "sacro", "ligamento-longitudinal-posterior"],
+      "aliases": ["LLA", "longitudinal anterior"]
+    },
+    {
+      "id": "ligamento-longitudinal-posterior",
+      "summary": "Desce dentro do canal vertebral, limita a flexão e explica por que as hérnias de disco tendem a ser póstero-laterais.",
+      "fields": {
+        "Fixações": "Do corpo do áxis, onde continua a membrana tectória, até o sacro, percorrendo a face posterior dos corpos vertebrais dentro do canal vertebral. É largo sobre os discos e estreito sobre os corpos, com formato de ampulheta.",
+        "Função": "Limita a flexão da coluna e resiste ao deslocamento posterior do material discal. Sua inervação é rica, o que faz dele uma fonte relevante de dor discogênica.",
+        "Tensiona em": "Flexão da coluna.",
+        "Teste clínico": "Avaliado indiretamente pela dor na flexão e pelos testes de tensão neural quando há herniação associada.",
+        "Lesão típica": "Não rompe sozinho: é atravessado ou empurrado pelo material discal nas hérnias.",
+        "Na prática": "Como é estreito nas laterais, o disco encontra menos resistência ali. Por isso a hérnia mais comum é póstero-lateral, exatamente onde a raiz nervosa está saindo — e não posterior central."
+      },
+      "related": ["intervertebrais", "axis", "vertebras-cervicais", "vertebras-toracicas", "vertebras-lombares", "sacro", "ligamento-longitudinal-anterior", "ligamentos-amarelos"],
+      "aliases": ["LLP", "longitudinal posterior"]
+    },
+    {
+      "id": "ligamentos-amarelos",
+      "summary": "Ligamentos elásticos entre as lâminas; formam a parede posterior do canal e hipertrofiam na estenose.",
+      "fields": {
+        "Fixações": "Face anterior da lâmina da vértebra superior até a borda superior da lâmina da vértebra inferior, em pares, de C2 ao sacro.",
+        "Função": "Formam a parede posterior do canal vertebral. São os ligamentos mais ricos em elastina do corpo: ficam pré-tensionados mesmo em repouso, o que os mantém lisos e impede que dobrem para dentro do canal durante a extensão. Ajudam a devolver a coluna à posição ereta depois da flexão e limitam a flexão excessiva.",
+        "Tensiona em": "Flexão da coluna; na extensão encurtam sem pregueamento, graças à elastina.",
+        "Teste clínico": "Sem teste direto. Sua hipertrofia aparece na ressonância e se correlaciona com claudicação neurogênica.",
+        "Lesão típica": "Perdem elastina e ganham colágeno com a idade, hipertrofiando e estreitando o canal.",
+        "Na prática": "São a causa posterior da estenose de canal lombar, junto com a artrose facetária e o abaulamento discal. Por isso a pessoa com estenose melhora ao fletir o tronco, como ao empurrar um carrinho de supermercado, e piora ao caminhar ereta."
+      },
+      "related": ["intervertebrais", "vertebras-lombares", "vertebras-cervicais", "vertebras-toracicas", "ligamento-longitudinal-posterior", "ligamentos-interespinais"],
+      "aliases": ["ligamenta flava", "ligamento flavo", "amarelo"]
+    },
+    {
+      "id": "ligamento-supraespinal",
+      "summary": "Corre sobre as pontas dos processos espinhosos e é o primeiro a tensionar na flexão do tronco.",
+      "fields": {
+        "Fixações": "Ápices dos processos espinhosos, de C7 até o sacro. Acima de C7 continua como ligamento nucal.",
+        "Função": "Limita a flexão da coluna. Por ser o ligamento mais posterior e mais distante do eixo de movimento, tem o maior braço de alavanca e é o primeiro a ser tensionado quando o tronco flete.",
+        "Tensiona em": "Flexão da coluna, sobretudo no fim da amplitude.",
+        "Teste clínico": "Dor à palpação sobre as pontas dos espinhosos e piora na flexão mantida do tronco.",
+        "Lesão típica": "Distensão por flexão repetida com carga, comum em quem trabalha curvado. Sua ruptura em nível lombar, junto com os interespinais, é parte da chamada lesão por flexão-distração.",
+        "Na prática": "É o que se palpa como um cordão firme ao correr o dedo sobre a fileira de espinhosos com a pessoa curvada para a frente."
+      },
+      "related": ["vertebras-toracicas", "vertebras-lombares", "sacro", "ligamentos-interespinais", "ligamento-nucal", "ligamentos-amarelos"],
+      "aliases": ["supraespinhoso", "supraespinhal"]
+    },
+    {
+      "id": "ligamentos-interespinais",
+      "summary": "Preenchem o espaço entre processos espinhosos vizinhos e limitam a separação na flexão.",
+      "fields": {
+        "Fixações": "Da raiz ao ápice de cada processo espinhoso, unindo espinhosos adjacentes. São mais espessos e mais desenvolvidos na região lombar.",
+        "Função": "Limitam a flexão e a separação entre os processos espinhosos. Trabalham em série com o supraespinal e com os ligamentos amarelos no controle da flexão segmentar.",
+        "Tensiona em": "Flexão da coluna.",
+        "Teste clínico": "Dor localizada entre dois espinhosos à palpação, com piora na flexão. Na lombar é diagnóstico diferencial de dor facetária.",
+        "Lesão típica": "Degeneração e formação de pseudoartrose entre espinhosos que se tocam, quadro conhecido como doença de Baastrup ou kissing spines.",
+        "Na prática": "São atravessados pela agulha na punção lombar, entre L3-L4 ou L4-L5, no caminho até o espaço epidural."
+      },
+      "related": ["vertebras-lombares", "vertebras-toracicas", "vertebras-cervicais", "ligamento-supraespinal", "ligamentos-amarelos", "intervertebrais"],
+      "aliases": ["interespinhosos", "interespinhais"]
+    },
+    {
+      "id": "ligamento-nucal",
+      "summary": "Septo fibroso mediano da nuca; substitui os supraespinais no pescoço e dá inserção a vários músculos.",
+      "fields": {
+        "Fixações": "Protuberância occipital externa e crista occipital externa até o processo espinhoso de C7, prendendo-se ao longo do caminho ao tubérculo posterior do atlas e aos espinhosos cervicais. Forma uma lâmina mediana no plano sagital.",
+        "Função": "Substitui os ligamentos supraespinal e interespinais na região cervical, limitando a flexão do pescoço. Serve de septo que separa a musculatura dos dois lados e de superfície de inserção para trapézio, esplênio da cabeça, romboide menor e serrátil posterior superior.",
+        "Tensiona em": "Flexão cervical, sobretudo na flexão anterior mantida.",
+        "Teste clínico": "Dor mediana posterior do pescoço na flexão passiva; palpável como uma crista firme na linha média da nuca.",
+        "Lesão típica": "Sobrecarregado na postura de cabeça anteriorizada e no traumatismo em chicote na fase de flexão.",
+        "Na prática": "É a razão de uma parte do trapézio superior não nascer de osso, mas deste septo elástico. Em quadrúpedes é enorme e sustenta a cabeça; em nós é mais delgado."
+      },
+      "related": ["vertebras-cervicais", "occipital", "atlas", "axis", "trapezio", "levantador-da-escapula", "ligamento-supraespinal"],
+      "aliases": ["ligamentum nuchae", "nucal"]
+    }
+  ]
+}

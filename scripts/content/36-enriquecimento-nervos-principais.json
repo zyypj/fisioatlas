@@ -1,0 +1,238 @@
+{
+  "patches": [
+    {
+      "id": "plexo-braquial",
+      "summary": "Rede nervosa de C5 a T1 que comanda todo o membro superior; organizada em raízes, troncos, divisões, fascículos e ramos terminais.",
+      "fields": {
+        "Raízes": "Ramos anteriores de C5, C6, C7, C8 e T1, com contribuições variáveis de C4 e T2.",
+        "Origem": "Formado na região cervical baixa, entre os músculos escaleno anterior e escaleno médio, no trígono interescalênico.",
+        "Trajeto": "Cinco raízes formam três troncos: superior, de C5 e C6; médio, de C7; e inferior, de C8 e T1. Cada tronco se divide em ramo anterior e posterior. As divisões se reagrupam em três fascículos, nomeados pela relação com a artéria axilar: lateral, medial e posterior. Deles saem os cinco ramos terminais. A regra de memorização é raízes, troncos, divisões, fascículos e ramos.",
+        "Inerva": "Toda a musculatura do membro superior e da cintura escapular, com exceção do trapézio, que é inervado pelo nervo acessório.",
+        "Sensibilidade": "Toda a pele do membro superior, exceto a região da axila e a face medial do braço proximal, que recebem o nervo intercostobraquial.",
+        "Função": "É a central de distribuição do membro superior. Sua organização em rede permite que um único músculo receba fibras de várias raízes, o que dá redundância ao sistema.",
+        "Local de compressão": "Trígono interescalênico, entre os escalenos anterior e médio; espaço costoclavicular, entre a clavícula e a primeira costela; e espaço coracopeitoral, sob o tendão do peitoral menor. Os três compõem a síndrome do desfiladeiro torácico.",
+        "Sinal clínico": "Lesão do tronco superior, de C5 e C6, produz a paralisia de Erb-Duchenne, com o braço em adução, rotação medial e antebraço pronado, na chamada posição de gorjeta de garçom. Lesão do tronco inferior, de C8 e T1, produz a paralisia de Klumpke, com mão em garra e possível síndrome de Horner.",
+        "Na prática": "Entender a organização do plexo é o que permite localizar uma lesão pelo padrão de déficits. Se um músculo está fraco mas outro da mesma raiz está normal, a lesão é do nervo periférico; se todos os músculos de uma raiz estão fracos, a lesão é radicular.",
+        "Localização": "Ombro"
+      },
+      "related": ["vertebras-cervicais", "escaleno-anterior", "escaleno-medio", "clavicula", "costelas", "peitoral-menor", "nervo-musculocutaneo", "nervo-axilar", "nervo-radial", "nervo-mediano", "nervo-ulnar", "subclavio", "nervo-toracico-longo"],
+      "aliases": ["plexo", "Erb-Duchenne", "Klumpke", "desfiladeiro torácico", "brachial plexus"]
+    },
+    {
+      "id": "nervo-musculocutaneo",
+      "summary": "Ramo do fascículo lateral que perfura o coracobraquial e comanda os flexores do braço.",
+      "fields": {
+        "Raízes": "C5, C6 e C7.",
+        "Origem": "Fascículo lateral do plexo braquial.",
+        "Trajeto": "Perfura o músculo coracobraquial, desce entre o bíceps braquial e o braquial e, acima do cotovelo, emerge lateralmente ao tendão do bíceps para continuar como nervo cutâneo lateral do antebraço.",
+        "Inerva": "Coracobraquial, bíceps braquial e braquial.",
+        "Sensibilidade": "Face lateral do antebraço, pelo seu ramo terminal, o nervo cutâneo lateral do antebraço.",
+        "Função": "Comanda a flexão do cotovelo e a supinação do antebraço realizada pelo bíceps.",
+        "Local de compressão": "Na passagem pelo coracobraquial e no ponto em que perfura a fáscia, ao lado do tendão do bíceps. Extensão forçada e repetida do cotovelo em pronação é o mecanismo mais descrito.",
+        "Sinal clínico": "Fraqueza de flexão do cotovelo e de supinação, com reflexo bicipital diminuído e dormência na face lateral do antebraço. A flexão do cotovelo não desaparece completamente porque o braquiorradial, inervado pelo radial, compensa parcialmente.",
+        "Na prática": "Sua lesão isolada é rara. Quando há fraqueza de flexão do cotovelo, testar sempre a sensibilidade da face lateral do antebraço: sua alteração confirma o musculocutâneo e afasta lesão tendínea do bíceps.",
+        "Localização": "Braço"
+      },
+      "related": ["plexo-braquial", "coracobraquial", "biceps-braquial", "braquial", "nervo-cutaneo-lateral-do-antebraco", "umero", "cotovelo"],
+      "aliases": ["musculocutâneo", "musculocutaneous"]
+    },
+    {
+      "id": "nervo-axilar",
+      "summary": "Contorna o colo cirúrgico do úmero; comanda o deltoide e é lesado na luxação do ombro.",
+      "fields": {
+        "Raízes": "C5 e C6.",
+        "Origem": "Fascículo posterior do plexo braquial.",
+        "Trajeto": "Passa pelo espaço quadrangular, delimitado pelo redondo menor acima, redondo maior abaixo, cabeça longa do tríceps medialmente e úmero lateralmente. Contorna o colo cirúrgico do úmero junto com a artéria circunflexa umeral posterior.",
+        "Inerva": "Deltoide e redondo menor.",
+        "Sensibilidade": "Pele sobre a porção inferior do deltoide, pelo nervo cutâneo lateral superior do braço, em uma área conhecida como distintivo de sargento.",
+        "Função": "Comanda a abdução do braço acima de 15°, realizada pelo deltoide, e contribui para a rotação lateral pelo redondo menor.",
+        "Local de compressão": "No espaço quadrangular, quadro chamado síndrome do espaço quadrangular, e no colo cirúrgico do úmero.",
+        "Sinal clínico": "Incapacidade de abduzir o braço e dormência na região lateral do ombro. É a complicação neurológica mais comum da luxação anterior do ombro e da fratura do colo cirúrgico do úmero.",
+        "Na prática": "Testar a sensibilidade da região lateral do deltoide antes e depois da redução de uma luxação de ombro é conduta obrigatória. A perda da abdução após luxação exige sempre descartar tanto a lesão do nervo axilar quanto a ruptura do manguito rotador.",
+        "Localização": "Ombro"
+      },
+      "related": ["plexo-braquial", "deltoide", "redondo-menor", "redondo-maior", "triceps-braquial", "umero", "glenoumeral", "escapula"],
+      "aliases": ["axilar", "espaço quadrangular", "axillary nerve"]
+    },
+    {
+      "id": "nervo-supraescapular",
+      "summary": "Passa sob os ligamentos transversos da escápula; comanda o supraespinal e o infraespinal.",
+      "fields": {
+        "Raízes": "C5 e C6, com contribuição ocasional de C4.",
+        "Origem": "Tronco superior do plexo braquial, no ponto chamado ponto de Erb.",
+        "Trajeto": "Passa sob o ligamento transverso superior da escápula, na incisura da escápula, inervando o supraespinal; contorna a espinha da escápula pela incisura espinoglenoidal, sob o ligamento transverso inferior, e alcança o infraespinal.",
+        "Inerva": "Supraespinal e infraespinal.",
+        "Sensibilidade": "Não tem território cutâneo. Fornece ramos sensitivos para as articulações glenoumeral e acromioclavicular.",
+        "Função": "Comanda os primeiros graus da abdução e a rotação lateral do braço, além da estabilização da cabeça umeral pelo manguito rotador.",
+        "Local de compressão": "Incisura da escápula, onde compromete supraespinal e infraespinal, e incisura espinoglenoidal, onde compromete apenas o infraespinal.",
+        "Sinal clínico": "Atrofia visível das fossas supraespinal e infraespinal, com fraqueza de abdução e rotação lateral. Atrofia isolada do infraespinal indica compressão na incisura espinoglenoidal, muitas vezes por cisto paralabral associado a lesão do lábio glenoidal.",
+        "Na prática": "Atleta de vôlei ou tênis com fraqueza indolor de rotação lateral e atrofia da fossa infraespinal deve ser investigado para compressão deste nervo, e não apenas para tendinopatia do manguito.",
+        "Localização": "Ombro"
+      },
+      "related": ["plexo-braquial", "supraespinal", "infraespinal", "escapula", "ligamentos-transversos-da-escapula", "glenoumeral", "labio-glenoidal", "acromioclavicular"],
+      "aliases": ["supraescapular", "incisura espinoglenoidal", "suprascapular"]
+    },
+    {
+      "id": "nervo-radial",
+      "summary": "O maior ramo do plexo braquial; percorre o sulco espiral do úmero e comanda toda a extensão do membro.",
+      "fields": {
+        "Raízes": "C5, C6, C7, C8 e T1.",
+        "Origem": "Fascículo posterior do plexo braquial. É o seu maior ramo terminal.",
+        "Trajeto": "Desce pela face posterior do braço no sulco espiral, entre as cabeças lateral e medial do tríceps, acompanhado da artéria braquial profunda. Perfura o septo intermuscular lateral, passa à frente do epicôndilo lateral e divide-se em ramo superficial, sensitivo, e ramo profundo, motor, que atravessa o supinador e continua como nervo interósseo posterior.",
+        "Inerva": "Tríceps braquial, ancôneo, braquiorradial, extensor radial longo do carpo e, pelo interósseo posterior, todos os demais extensores do antebraço.",
+        "Sensibilidade": "Face posterior do braço e do antebraço e a face dorsal e lateral da mão, incluindo o dorso do polegar e a região da primeira comissura.",
+        "Função": "É o nervo da extensão: comanda a abertura da mão, a extensão do punho, do cotovelo e a supinação com o cotovelo estendido.",
+        "Local de compressão": "Sulco espiral do úmero, axila, arcada de Frohse no supinador e a passagem pelo septo intermuscular lateral.",
+        "Sinal clínico": "Mão caída, com incapacidade de estender punho e dedos, é o sinal clássico da lesão alta. A compressão prolongada na axila por muleta produz quadro semelhante; a compressão no sulco espiral durante o sono profundo é a chamada paralisia do sábado à noite.",
+        "Na prática": "A regra para localizar a lesão: se o tríceps está fraco, a lesão é muito alta, na axila; se o tríceps é normal mas o punho cai, a lesão está no sulco espiral; se o punho ainda estende em desvio radial mas os dedos caem, é o interósseo posterior.",
+        "Localização": "Braço"
+      },
+      "related": ["plexo-braquial", "umero", "triceps-braquial", "anconeo", "braquiorradial", "extensor-radial-longo-do-carpo", "supinador", "nervo-interosseo-posterior-do-antebraco", "extensor-dos-dedos", "cotovelo"],
+      "aliases": ["radial", "mão caída", "paralisia do sábado à noite", "radial nerve"]
+    },
+    {
+      "id": "nervo-mediano",
+      "summary": "O nervo da preensão fina; atravessa o túnel do carpo e é o mais comumente comprimido do corpo.",
+      "fields": {
+        "Raízes": "C6, C7, C8 e T1, por duas raízes que abraçam a artéria axilar.",
+        "Origem": "União das raízes lateral, do fascículo lateral, e medial, do fascículo medial, do plexo braquial.",
+        "Trajeto": "Desce no braço medialmente à artéria braquial, sem emitir ramos. No cotovelo passa entre as duas cabeças do pronador redondo, cruza sob a arcada do flexor superficial dos dedos, desce entre o flexor superficial e o profundo e atravessa o túnel do carpo, onde é a estrutura mais superficial.",
+        "Inerva": "Quase todos os flexores do antebraço, exceto o flexor ulnar do carpo e a metade ulnar do flexor profundo dos dedos; na mão, os músculos tenares, exceto o adutor do polegar e a cabeça profunda do flexor curto, e o primeiro e segundo lumbricais.",
+        "Sensibilidade": "Face palmar dos três dedos e meio laterais, do polegar à metade radial do anular, e a face dorsal das falanges distais desses mesmos dedos.",
+        "Função": "É o nervo da pinça e da preensão fina: comanda a oposição do polegar e a flexão dos dedos usados para segurar objetos pequenos.",
+        "Local de compressão": "Túnel do carpo, que é o local mais comum de neuropatia compressiva do corpo humano; entre as cabeças do pronador redondo; sob a arcada do flexor superficial; e no processo supracondilar, pelo ligamento de Struthers.",
+        "Sinal clínico": "Dormência noturna nos três dedos e meio laterais que faz sacudir a mão é o sintoma mais típico da síndrome do túnel do carpo. Na lesão alta, a tentativa de fechar a mão produz a mão do pregador, em que o indicador e o médio permanecem estendidos.",
+        "Na prática": "A sensibilidade da eminência tenar é poupada na síndrome do túnel do carpo, porque o ramo palmar cutâneo sai antes do retináculo e passa por fora dele. Se houver dormência na base do polegar, a lesão é mais proximal.",
+        "Localização": "Antebraço"
+      },
+      "related": ["plexo-braquial", "pronador-redondo", "flexor-superficial-dos-dedos", "flexor-profundo-dos-dedos", "flexor-radial-do-carpo", "abdutor-curto-do-polegar", "oponente-do-polegar", "lumbricais-da-mao", "retinaculo-dos-flexores-do-punho", "nervo-interosseo-anterior-do-antebraco", "bainha-comum-dos-flexores"],
+      "aliases": ["mediano", "túnel do carpo", "mão do pregador", "median nerve"]
+    },
+    {
+      "id": "nervo-ulnar",
+      "summary": "O nervo da destreza da mão; passa atrás do epicôndilo medial e comanda quase toda a musculatura intrínseca.",
+      "fields": {
+        "Raízes": "C8 e T1, com contribuição ocasional de C7.",
+        "Origem": "Fascículo medial do plexo braquial.",
+        "Trajeto": "Desce medialmente no braço, perfura o septo intermuscular medial e passa pelo sulco do nervo ulnar, atrás do epicôndilo medial, onde é subcutâneo. Entra no antebraço entre as duas cabeças do flexor ulnar do carpo e desce até o punho, atravessando o canal de Guyon, por fora do túnel do carpo.",
+        "Inerva": "Flexor ulnar do carpo e metade ulnar do flexor profundo dos dedos, no antebraço. Na mão, todos os músculos intrínsecos exceto os inervados pelo mediano: hipotenares, interósseos, terceiro e quarto lumbricais, adutor do polegar e cabeça profunda do flexor curto do polegar.",
+        "Sensibilidade": "Dedo mínimo e metade ulnar do anular, nas faces palmar e dorsal, e a região correspondente da mão.",
+        "Função": "É o nervo da destreza: comanda a abertura e o fechamento dos dedos em leque, a pinça de força e o controle fino da mão.",
+        "Local de compressão": "Túnel cubital, atrás do epicôndilo medial, que é o segundo local mais comum de neuropatia compressiva; e canal de Guyon, no punho.",
+        "Sinal clínico": "Mão em garra ulnar, com hiperextensão das metacarpofalângicas e flexão das interfalângicas do anular e do mínimo; sinal de Froment positivo; atrofia do primeiro espaço interósseo dorsal e da eminência hipotenar.",
+        "Na prática": "O paradoxo ulnar: a garra é mais evidente na lesão distal, no punho, do que na lesão alta, no cotovelo. Isso acontece porque na lesão alta o flexor profundo dos dedos também é paralisado, e sem ele as interfalângicas não conseguem fletir para formar a garra.",
+        "Localização": "Antebraço"
+      },
+      "related": ["plexo-braquial", "umero", "ulna", "flexor-ulnar-do-carpo", "flexor-profundo-dos-dedos", "interosseos-dorsais-da-mao", "interosseos-palmares", "adutor-do-polegar", "abdutor-do-dedo-minimo-da-mao", "hamato", "pisiforme", "ligamento-colateral-ulnar-do-cotovelo", "nervo-cutaneo-medial-do-antebraco"],
+      "aliases": ["ulnar", "túnel cubital", "canal de Guyon", "mão em garra", "sinal de Froment"]
+    },
+    {
+      "id": "nervo-femoral",
+      "summary": "Maior ramo do plexo lombar; comanda o quadríceps e a extensão do joelho.",
+      "fields": {
+        "Raízes": "L2, L3 e L4.",
+        "Origem": "Plexo lombar, formando-se dentro do músculo psoas maior.",
+        "Trajeto": "Emerge na borda lateral do psoas, desce no sulco entre o psoas e o ilíaco, passa sob o ligamento inguinal lateralmente à artéria femoral e se divide em ramos anteriores e posteriores no trígono femoral. Seu ramo mais longo, o nervo safeno, acompanha o canal dos adutores até o pé.",
+        "Inerva": "Ilíaco, pectíneo, sartório e todo o quadríceps femoral: reto femoral e vastos lateral, medial e intermédio.",
+        "Sensibilidade": "Face anterior e medial da coxa, pelos ramos cutâneos anteriores, e face medial da perna e do pé, pelo nervo safeno.",
+        "Função": "Comanda a extensão do joelho e participa da flexão do quadril. É o nervo que permite levantar de uma cadeira e subir escadas.",
+        "Local de compressão": "Dentro do psoas, por hematoma ou abscesso; sob o ligamento inguinal; e no canal dos adutores, para o safeno. Está em risco em cirurgias pélvicas e na posição de litotomia prolongada.",
+        "Sinal clínico": "Incapacidade de estender o joelho, com falseio e quedas ao descer escadas; reflexo patelar abolido; dormência na face anterior da coxa e medial da perna. O teste de estiramento femoral, com extensão do quadril e flexão do joelho em decúbito ventral, reproduz a dor na radiculopatia de L3 e L4.",
+        "Na prática": "Em pessoa anticoagulada com dor inguinal, quadril mantido em flexão antálgica e fraqueza de extensão do joelho, pensar em hematoma do psoas comprimindo o nervo femoral. É quadro que exige atenção imediata.",
+        "Localização": "Coxa"
+      },
+      "related": ["vertebras-lombares", "psoas-maior", "iliaco", "reto-femoral", "vasto-lateral", "vasto-medial", "vasto-intermedio", "sartorio", "pectineo", "nervo-safeno", "ligamento-inguinal", "coxofemoral", "joelho"],
+      "aliases": ["femoral", "reflexo patelar", "femoral nerve"]
+    },
+    {
+      "id": "nervo-obturatorio",
+      "summary": "Atravessa o canal obturatório e comanda os adutores da coxa.",
+      "fields": {
+        "Raízes": "L2, L3 e L4.",
+        "Origem": "Plexo lombar, emergindo na borda medial do músculo psoas maior.",
+        "Trajeto": "Desce pela parede lateral da pelve, atravessa o canal obturatório, na borda superior da membrana obturatória, e divide-se em ramo anterior, que passa à frente do adutor curto, e ramo posterior, que passa atrás dele.",
+        "Inerva": "Adutor longo, adutor curto, adutor magno na sua porção adutora, grácil, obturador externo e, em parte das pessoas, o pectíneo.",
+        "Sensibilidade": "Uma pequena área da face medial da coxa, no seu terço médio.",
+        "Função": "Comanda a adução do quadril, movimento essencial para o controle da pelve no plano frontal durante a marcha e para manter as pernas juntas.",
+        "Local de compressão": "No canal obturatório, por hérnia obturatória; e na pelve, por tumores, gestação ou cirurgia pélvica.",
+        "Sinal clínico": "Fraqueza da adução, com dificuldade de cruzar as pernas e marcha com a perna em abdução; dor na face medial da coxa que piora com a extensão e a rotação do quadril, chamada sinal de Howship-Romberg.",
+        "Na prática": "O nervo obturatório é responsável por dor referida no joelho a partir do quadril, porque também inerva a articulação coxofemoral. Criança com dor no joelho sem achados locais merece exame cuidadoso do quadril.",
+        "Localização": "Coxa"
+      },
+      "related": ["vertebras-lombares", "psoas-maior", "osso-do-quadril", "membrana-obturatoria", "adutor-longo", "adutor-curto", "adutor-magno", "gracil", "obturador-externo", "pectineo", "coxofemoral"],
+      "aliases": ["obturatório", "Howship-Romberg", "obturator nerve"]
+    },
+    {
+      "id": "nervo-ciatico",
+      "summary": "O maior e mais calibroso nervo do corpo; na verdade dois nervos dentro de uma bainha comum.",
+      "fields": {
+        "Raízes": "L4, L5, S1, S2 e S3.",
+        "Origem": "Plexo sacral, na face anterior do sacro.",
+        "Trajeto": "Sai da pelve pelo forame isquiático maior, geralmente abaixo do músculo piriforme. Desce pela face posterior da coxa, entre o túber isquiático e o trocanter maior, coberto pelo glúteo máximo e depois pelos isquiotibiais. Divide-se em nervo tibial e nervo fibular comum, em geral na parte inferior da coxa, mas essa divisão pode ocorrer bem mais alto.",
+        "Inerva": "Todos os isquiotibiais e a porção isquiocondilar do adutor magno na coxa; por seus ramos terminais, toda a musculatura da perna e do pé.",
+        "Sensibilidade": "Não inerva pele diretamente na coxa, mas seus ramos terminais fornecem toda a sensibilidade abaixo do joelho, exceto a faixa medial do nervo safeno.",
+        "Função": "É o nervo motor e sensitivo de praticamente todo o membro inferior abaixo do joelho, além dos flexores do joelho.",
+        "Local de compressão": "Espaço glúteo profundo, junto ao piriforme, na chamada síndrome do piriforme ou do glúteo profundo. A causa muito mais comum de dor ciática, porém, é a compressão radicular na coluna lombar, por hérnia de disco ou estenose.",
+        "Sinal clínico": "Dor que desce pela face posterior da coxa e da perna, com parestesias. Teste de elevação da perna estendida positivo. É essencial diferenciar a dor radicular, de origem lombar, da compressão no espaço glúteo.",
+        "Na prática": "É formado por duas divisões distintas na mesma bainha: a tibial e a fibular comum. Elas praticamente não trocam fibras, o que explica por que uma lesão pode afetar só uma delas. A divisão fibular é mais vulnerável por ser mais lateral, ter menos tecido conjuntivo protetor e estar mais fixa no colo da fíbula.",
+        "Localização": "Coxa"
+      },
+      "related": ["sacro", "vertebras-lombares", "piriforme", "gluteo-maximo", "biceps-femoral", "semitendineo", "semimembranaceo", "adutor-magno", "nervo-tibial", "nervo-fibular-comum", "nervo-cutaneo-posterior-da-coxa", "ligamento-sacrotuberal", "quadrado-femoral", "nucleo-pulposo"],
+      "aliases": ["ciático", "sciatic", "dor ciática", "síndrome do piriforme"]
+    },
+    {
+      "id": "nervo-tibial",
+      "summary": "Divisão medial do ciático; comanda a flexão plantar e toda a musculatura da planta do pé.",
+      "fields": {
+        "Raízes": "L4, L5, S1, S2 e S3, pelo nervo ciático.",
+        "Origem": "Divisão medial do nervo ciático.",
+        "Trajeto": "Desce pelo meio da fossa poplítea, superficial aos vasos poplíteos, passa sob o arco do sóleo e desce no compartimento posterior profundo da perna, entre o tibial posterior e o flexor longo do hálux. Atrás do maléolo medial, atravessa o túnel do tarso e se divide nos nervos plantar medial e plantar lateral.",
+        "Inerva": "Todo o compartimento posterior da perna: gastrocnêmio, sóleo, plantar, poplíteo, tibial posterior, flexor longo dos dedos e flexor longo do hálux. Pelos nervos plantares, toda a musculatura intrínseca do pé.",
+        "Sensibilidade": "Planta do pé, pelos nervos plantares medial e lateral; face posterolateral da perna, pelo nervo sural; e calcanhar, pelos ramos calcâneos.",
+        "Função": "Comanda a flexão plantar, a inversão e a flexão dos dedos: é o nervo da propulsão do passo e do apoio nas pontas dos pés.",
+        "Local de compressão": "Arco do sóleo, na perna proximal, e túnel do tarso, atrás do maléolo medial.",
+        "Sinal clínico": "Incapacidade de ficar na ponta dos pés, perda da flexão plantar e dos dedos, dormência na planta do pé. O reflexo aquileu, que avalia S1, depende dele. Sua lesão produz o pé calcaneovalgo.",
+        "Na prática": "Pedir para caminhar na ponta dos pés é um teste funcional rápido e sensível da raiz S1 e do nervo tibial; caminhar sobre os calcanhares testa L4 e L5 e o nervo fibular profundo.",
+        "Localização": "Perna"
+      },
+      "related": ["nervo-ciatico", "gastrocnemio", "soleo", "tibial-posterior", "flexor-longo-dos-dedos", "flexor-longo-do-halux", "popliteo", "nervo-plantar-medial", "nervo-plantar-lateral", "nervo-sural", "retinaculo-dos-flexores-do-tornozelo", "tendao-calcaneo", "joelho"],
+      "aliases": ["tibial", "túnel do tarso", "reflexo aquileu", "tibial nerve"]
+    },
+    {
+      "id": "nervo-fibular-comum",
+      "summary": "Contorna o colo da fíbula onde é muito superficial; sua lesão causa o pé caído.",
+      "fields": {
+        "Raízes": "L4, L5, S1 e S2, pelo nervo ciático.",
+        "Origem": "Divisão lateral do nervo ciático.",
+        "Trajeto": "Segue a borda medial do tendão do bíceps femoral até a cabeça da fíbula, contorna o colo da fíbula, onde fica imediatamente sob a pele, e perfura o músculo fibular longo, dividindo-se em nervo fibular superficial e nervo fibular profundo.",
+        "Inerva": "Pelo fibular superficial, os músculos fibulares longo e curto, do compartimento lateral. Pelo fibular profundo, todo o compartimento anterior: tibial anterior, extensor longo dos dedos, extensor longo do hálux, fibular terceiro e, no pé, o extensor curto dos dedos.",
+        "Sensibilidade": "Dorso do pé e face lateral da perna, pelo fibular superficial, e o primeiro espaço interdigital dorsal, pelo fibular profundo.",
+        "Função": "Comanda a dorsiflexão e a eversão do pé. É o nervo que mantém a ponta do pé levantada na fase de balanço da marcha.",
+        "Local de compressão": "No colo da fíbula, onde é o nervo mais comumente comprimido do membro inferior. Gesso apertado, posicionamento cirúrgico, perda rápida de peso, cruzar as pernas por longos períodos e trauma direto são causas frequentes.",
+        "Sinal clínico": "Pé caído, com marcha escarvante em que a pessoa eleva muito o joelho para não arrastar a ponta do pé, e o pé bate no chão no contato inicial. Dormência no dorso do pé.",
+        "Na prática": "É o nervo periférico mais vulnerável do membro inferior, pela combinação de trajeto superficial, contato direto com o osso e pouca proteção. Toda imobilização da perna deve ser checada quanto à pressão sobre a cabeça da fíbula.",
+        "Localização": "Perna"
+      },
+      "related": ["nervo-ciatico", "fibula", "biceps-femoral", "tibial-anterior", "extensor-longo-dos-dedos", "extensor-longo-do-halux", "fibular-longo", "fibular-curto", "fibular-terceiro", "extensor-curto-dos-dedos", "nervo-sural", "tibiofibular-proximal", "ligamento-colateral-fibular"],
+      "aliases": ["fibular comum", "peroneal", "pé caído", "marcha escarvante"]
+    },
+    {
+      "id": "nervo-gluteo-superior",
+      "summary": "Único nervo que sai da pelve acima do piriforme; comanda os abdutores do quadril.",
+      "fields": {
+        "Raízes": "L4, L5 e S1.",
+        "Origem": "Plexo sacral.",
+        "Trajeto": "É o único nervo que deixa a pelve pelo forame isquiático maior acima do músculo piriforme. Segue entre o glúteo médio e o glúteo mínimo, acompanhado da artéria glútea superior, até alcançar o tensor da fáscia lata.",
+        "Inerva": "Glúteo médio, glúteo mínimo e tensor da fáscia lata.",
+        "Sensibilidade": "Puramente motor. Não tem território cutâneo.",
+        "Função": "Comanda a abdução do quadril e, principalmente, a estabilização da pelve no plano frontal durante o apoio unipodal da marcha.",
+        "Local de compressão": "Na saída pélvica, acima do piriforme. Em risco em abordagens cirúrgicas laterais do quadril e em injeções intramusculares mal posicionadas.",
+        "Sinal clínico": "Sinal de Trendelenburg positivo: no apoio unipodal do lado lesado, a pelve do lado oposto cai. Na forma compensada, a pessoa inclina o tronco para o lado do apoio, produzindo a marcha de Trendelenburg ou marcha do pato quando é bilateral.",
+        "Na prática": "Acima do piriforme só passa este nervo; tudo o mais sai por baixo. Essa é a regra anatômica mais útil para organizar a região glútea profunda.",
+        "Localização": "Quadril"
+      },
+      "related": ["sacro", "osso-do-quadril", "piriforme", "gluteo-medio", "gluteo-minimo", "tensor-da-fascia-lata", "trato-iliotibial", "nervo-gluteo-inferior", "nervo-ciatico", "coxofemoral"],
+      "aliases": ["glúteo superior", "Trendelenburg", "superior gluteal nerve"]
+    }
+  ]
+}

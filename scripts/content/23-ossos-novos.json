@@ -1,0 +1,340 @@
+{
+  "new": [
+    {
+      "id": "osso-nasal",
+      "name": "Osso nasal",
+      "english": "nasal bone",
+      "kind": "ossos",
+      "region": "Cabeça e pescoço",
+      "depth": "superficial",
+      "summary": "Par de ossos retangulares que formam o dorso do nariz; o osso da face mais fraturado.",
+      "fields": {
+        "Tipo": "Plano, par.",
+        "Localização": "Cabeça e pescoço",
+        "Principais partes": "Face externa convexa, face interna côncava com o sulco etmoidal, borda superior que articula com o frontal e borda inferior que continua nas cartilagens nasais.",
+        "Função": "Forma a parte superior e rígida do dorso do nariz, protegendo a cavidade nasal e sustentando as cartilagens que dão forma à ponta.",
+        "Articula-se com": "Osso frontal, maxila do mesmo lado, osso nasal do lado oposto e lâmina perpendicular do etmoide.",
+        "Na prática": "É o osso da face mais frequentemente fraturado. Sua avaliação inclui observar desvio, palpar crepitação e verificar hematoma do septo, que é urgência.",
+        "Palpação básica": "Facilmente palpável na porção rígida e superior do dorso do nariz, entre os olhos; a transição para a parte móvel marca o início das cartilagens."
+      },
+      "related": [
+        "frontal",
+        "maxila",
+        "etmoide",
+        "lacrimal",
+        "procero",
+        "levantador-nasolabial",
+        "nasal"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "nasal bone",
+        "fratura nasal",
+        "dorso do nariz"
+      ],
+      "source_objects": [
+        "Nasal bone.l",
+        "Nasal bone.r"
+      ]
+    },
+    {
+      "id": "lacrimal",
+      "name": "Lacrimal",
+      "english": "lacrimal bone",
+      "kind": "ossos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "O menor e mais frágil osso da face; forma a fossa do saco lacrimal na parede medial da órbita.",
+      "fields": {
+        "Tipo": "Plano, par.",
+        "Localização": "Cabeça e pescoço",
+        "Principais partes": "Crista lacrimal posterior, sulco lacrimal e hâmulo lacrimal, que com a maxila delimitam a fossa do saco lacrimal.",
+        "Função": "Forma parte da parede medial da órbita e aloja o saco lacrimal, dando passagem à drenagem da lágrima para a cavidade nasal.",
+        "Articula-se com": "Osso frontal, etmoide, maxila e concha nasal inferior.",
+        "Na prática": "É o menor osso da face e um dos mais frágeis do corpo. É a via de acesso na dacriocistorrinostomia, cirurgia que trata a obstrução da drenagem lacrimal.",
+        "Palpação básica": "Não é palpável diretamente; está na parede medial da órbita, atrás da margem orbital medial."
+      },
+      "related": [
+        "frontal",
+        "etmoide",
+        "maxila",
+        "osso-nasal",
+        "concha-nasal-inferior",
+        "zigomatico"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "lacrimal bone",
+        "saco lacrimal"
+      ],
+      "source_objects": [
+        "Lacrimal bone.l",
+        "Lacrimal bone.r"
+      ]
+    },
+    {
+      "id": "palatino",
+      "name": "Palatino",
+      "english": "palatine bone",
+      "kind": "ossos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Osso em forma de L que fecha o palato duro atrás e forma parte da parede nasal lateral.",
+      "fields": {
+        "Tipo": "Irregular, par.",
+        "Localização": "Cabeça e pescoço",
+        "Principais partes": "Lâmina horizontal, que forma o terço posterior do palato duro, e lâmina perpendicular, que participa da parede lateral da cavidade nasal. Tem ainda os processos piramidal, orbital e esfenoidal.",
+        "Função": "Completa o palato duro por trás, separando as cavidades oral e nasal, e forma parte da parede lateral do nariz e do assoalho da órbita.",
+        "Articula-se com": "Maxila, esfenoide, etmoide, vômer, concha nasal inferior e palatino do lado oposto.",
+        "Na prática": "Sua falha de fusão com a maxila e com o palatino oposto participa da fenda palatina, condição que envolve equipes de fonoaudiologia, odontologia e cirurgia.",
+        "Palpação básica": "A lâmina horizontal é palpável indiretamente pelo terço posterior do palato duro, no céu da boca."
+      },
+      "related": [
+        "maxila",
+        "esfenoide",
+        "etmoide",
+        "vomer",
+        "concha-nasal-inferior",
+        "mandibula"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "palatine bone",
+        "palato duro",
+        "fenda palatina"
+      ],
+      "source_objects": [
+        "Palatine bone.l",
+        "Palatine bone.r"
+      ]
+    },
+    {
+      "id": "vomer",
+      "name": "Vômer",
+      "english": "vomer",
+      "kind": "ossos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Osso ímpar em forma de arado que forma a parte póstero-inferior do septo nasal.",
+      "fields": {
+        "Tipo": "Plano, ímpar.",
+        "Localização": "Cabeça e pescoço",
+        "Principais partes": "Asas na borda superior, que abraçam a crista do esfenoide, e borda inferior que se articula com as maxilas e os palatinos.",
+        "Função": "Forma a porção póstero-inferior do septo nasal ósseo, dividindo a cavidade nasal em duas metades.",
+        "Articula-se com": "Esfenoide, etmoide, maxilas, palatinos e a cartilagem do septo nasal.",
+        "Na prática": "Seu desvio, junto com o da lâmina perpendicular do etmoide e da cartilagem septal, é a base do desvio de septo, causa comum de obstrução nasal e de respiração bucal.",
+        "Palpação básica": "Não é palpável. Seu nome vem do latim para arado, pela semelhança de forma."
+      },
+      "related": [
+        "esfenoide",
+        "etmoide",
+        "maxila",
+        "palatino",
+        "osso-nasal",
+        "concha-nasal-inferior"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "vomer",
+        "septo nasal",
+        "desvio de septo"
+      ],
+      "source_objects": [
+        "Vomer"
+      ]
+    },
+    {
+      "id": "concha-nasal-inferior",
+      "name": "Concha nasal inferior",
+      "english": "inferior nasal concha",
+      "kind": "ossos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Único osso independente entre as conchas nasais; aumenta a superfície de aquecimento do ar inspirado.",
+      "fields": {
+        "Tipo": "Irregular, par.",
+        "Localização": "Cabeça e pescoço",
+        "Principais partes": "Lâmina óssea curva e enrolada, com processos lacrimal, maxilar e etmoidal.",
+        "Função": "Projeta-se na parede lateral da cavidade nasal e delimita o meato nasal inferior, onde desemboca o ducto nasolacrimal. Aumenta a superfície da mucosa nasal, contribuindo para aquecer, umidificar e filtrar o ar inspirado.",
+        "Articula-se com": "Maxila, lacrimal, etmoide e palatino.",
+        "Na prática": "É o único osso independente entre as conchas: as conchas superior e média fazem parte do etmoide. Sua hipertrofia, comum em rinite alérgica, causa obstrução nasal crônica e favorece a respiração bucal, que tem repercussão postural e craniofacial.",
+        "Palpação básica": "Não é palpável externamente; visualizada na rinoscopia anterior."
+      },
+      "related": [
+        "maxila",
+        "lacrimal",
+        "etmoide",
+        "palatino",
+        "vomer",
+        "osso-nasal"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "concha inferior",
+        "cornetos",
+        "respiração bucal"
+      ],
+      "source_objects": [
+        "Inferior nasal concha bone.l",
+        "Inferior nasal concha bone.r"
+      ]
+    },
+    {
+      "id": "ossiculos-da-audicao",
+      "name": "Ossículos da audição",
+      "english": "auditory ossicles",
+      "kind": "ossos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Martelo, bigorna e estribo: os três menores ossos do corpo, que amplificam o som na orelha média.",
+      "fields": {
+        "Tipo": "Irregulares, os três menores ossos do corpo humano.",
+        "Localização": "Cabeça e pescoço",
+        "Principais partes": "Martelo, com cabeça, colo, manúbrio e processos anterior e lateral. Bigorna, com corpo e ramos curto e longo. Estribo, com cabeça, dois ramos e base, que é o menor osso do corpo.",
+        "Função": "Formam uma cadeia articulada que transmite a vibração da membrana timpânica até a janela oval do vestíbulo. Por combinarem a diferença de área entre o tímpano e a janela oval com a alavanca formada pela cadeia, amplificam a pressão sonora em cerca de vinte vezes, compensando a passagem do som do ar para o líquido da orelha interna.",
+        "Articula-se com": "Martelo com a membrana timpânica e com a bigorna; bigorna com o estribo; estribo com a janela oval.",
+        "Na prática": "A fixação do estribo na janela oval, chamada otosclerose, causa perda auditiva condutiva progressiva. Os músculos tensor do tímpano e estapédio amortecem a cadeia diante de sons intensos, no chamado reflexo acústico.",
+        "Palpação básica": "Inacessíveis: estão dentro da cavidade timpânica, na orelha média."
+      },
+      "related": [
+        "temporal",
+        "esfenoide",
+        "mandibula"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "martelo",
+        "bigorna",
+        "estribo",
+        "malleus",
+        "incus",
+        "stapes",
+        "orelha média"
+      ],
+      "source_objects": [
+        "Malleus.l",
+        "Malleus.r",
+        "Incus.l",
+        "Incus.r",
+        "Stapes.l",
+        "Stapes.r"
+      ]
+    },
+    {
+      "id": "sesamoides-do-halux",
+      "name": "Sesamoides do hálux",
+      "english": "sesamoid bones of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Dois pequenos ossos sob a cabeça do primeiro metatarsal; funcionam como polias do flexor curto do hálux.",
+      "fields": {
+        "Tipo": "Sesamoides, par, alojados dentro dos tendões.",
+        "Localização": "Pé",
+        "Principais partes": "Sesamoide medial, ou tibial, geralmente maior, e sesamoide lateral, ou fibular, separados pela crista da face plantar da cabeça do primeiro metatarsal.",
+        "Função": "Alojados nos tendões do flexor curto do hálux, afastam esses tendões do eixo articular e aumentam o braço de alavanca da flexão do hálux. Também protegem o tendão do flexor longo do hálux, que passa entre eles, e distribuem a carga sob a cabeça do primeiro metatarsal.",
+        "Articula-se com": "Facetas na face plantar da cabeça do primeiro metatarsal.",
+        "Na prática": "A sesamoidite, com dor sob a cabeça do primeiro metatarsal, é comum em corredores, dançarinos e em quem usa salto alto. O sesamoide medial suporta mais carga e é o mais acometido. Fratura e bipartição congênita são diagnósticos diferenciais importantes na radiografia.",
+        "Palpação básica": "Palpáveis na face plantar, sob a cabeça do primeiro metatarsal; a dor à pressão direta, com o hálux em extensão passiva, sugere sesamoidite."
+      },
+      "related": [
+        "metatarsais",
+        "falanges-do-pe",
+        "flexor-curto-do-halux",
+        "flexor-longo-do-halux",
+        "metatarsofalangicas",
+        "ligamentos-colaterais-metatarsofalangicos",
+        "aponeurose-plantar"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "sesamoides",
+        "sesamoidite",
+        "sesamoid bones of foot"
+      ],
+      "source_objects": [
+        "Sesamoid bones of foot.l",
+        "Sesamoid bones of foot.r"
+      ]
+    },
+    {
+      "id": "cartilagens-costais",
+      "name": "Cartilagens costais",
+      "english": "costal cartilages",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Prolongamentos cartilaginosos das costelas; dão elasticidade à caixa torácica e permitem a respiração.",
+      "fields": {
+        "Tipo": "Cartilagem hialina, prolongando a extremidade anterior de cada costela.",
+        "Localização": "Tronco",
+        "Principais partes": "Cartilagens da primeira à sétima costela, que alcançam diretamente o esterno e são chamadas verdadeiras; da oitava à décima, que se unem à cartilagem acima e são chamadas falsas; a décima primeira e a décima segunda costelas não têm cartilagem e terminam livres, sendo chamadas flutuantes.",
+        "Função": "Dão elasticidade à parede torácica anterior, permitindo que a caixa torácica se expanda e retorne a cada ciclo respiratório. Sem elas, o tórax seria um anel rígido e a respiração seria impossível.",
+        "Articula-se com": "Extremidade anterior das costelas, nas articulações costocondrais, e com o esterno, nas articulações esternocostais.",
+        "Na prática": "A costocondrite, inflamação das articulações costocondrais, é causa muito comum de dor torácica anterior benigna, frequentemente confundida com dor cardíaca. A dor é reproduzida à palpação local e piora com a respiração profunda, o que ajuda a diferenciá-la.",
+        "Palpação básica": "Palpáveis como estruturas firmes mas elásticas entre a extremidade das costelas e a borda do esterno; a dor localizada à palpação é o achado central da costocondrite."
+      },
+      "related": [
+        "costelas",
+        "esterno",
+        "diafragma",
+        "intercostais-externos",
+        "intercostais-internos",
+        "transverso-do-torax",
+        "escaleno-anterior"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "cartilagem costal",
+        "costocondrite",
+        "síndrome de Tietze"
+      ],
+      "source_objects": [
+        "Costal cartilage of first rib.l",
+        "Costal cartilage of first rib.r",
+        "Costal cartilage of second rib.l",
+        "Costal cartilage of second rib.r",
+        "Costal cartilage of third rib.l",
+        "Costal cartilage of third rib.r",
+        "Costal cartilage of fourth rib.l",
+        "Costal cartilage of fourth rib.r",
+        "Costal cartilage of fifth rib.l",
+        "Costal cartilage of fifth rib.r",
+        "Costal cartilage of sixth rib.l",
+        "Costal cartilage of sixth rib.r",
+        "Costal cartilage of seventh rib.l",
+        "Costal cartilage of seventh rib.r",
+        "Costal cartilage of eighth rib.l",
+        "Costal cartilage of eighth rib.r",
+        "Costal cartilage of ninth rib.l",
+        "Costal cartilage of ninth rib.r",
+        "Costal cartilage of tenth rib.l",
+        "Costal cartilage of tenth rib.r"
+      ]
+    }
+  ]
+}

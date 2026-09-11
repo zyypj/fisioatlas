@@ -1,0 +1,246 @@
+{
+  "new": [
+    {
+      "id": "ligamentos-da-cabeca-da-fibula",
+      "name": "Ligamentos da cabeça da fíbula",
+      "english": "ligaments of fibular head",
+      "kind": "ligamentos",
+      "region": "Joelho",
+      "depth": "profunda",
+      "summary": "Reforçam a articulação tibiofibular proximal à frente e atrás; sua frouxidão limita a dorsiflexão.",
+      "fields": {
+        "Fixações": "Cabeça da fíbula até o côndilo lateral da tíbia, por uma faixa anterior e outra posterior, ambas oblíquas para cima e medialmente.",
+        "Função": "Estabilizam a articulação tibiofibular proximal, permitindo apenas o pequeno deslizamento e a rotação da fíbula que acompanham os movimentos do tornozelo. O anterior é mais largo e mais resistente que o posterior.",
+        "Tensiona em": "Dorsiflexão do tornozelo, que empurra a fíbula para cima e a gira lateralmente, e rotação da tíbia com o joelho fletido.",
+        "Teste clínico": "Mobilização ântero-posterior da cabeça da fíbula, comparando com o lado oposto; dor local à palpação.",
+        "Lesão típica": "Sua lesão produz instabilidade da tibiofibular proximal, com dor lateral no joelho e sensação de estalido. A restrição, ao contrário, limita a dorsiflexão mesmo com o tornozelo íntegro.",
+        "Na prática": "O nervo fibular comum contorna o colo da fíbula imediatamente abaixo. Qualquer avaliação ou mobilização dessa região exige checar a sensibilidade do dorso do pé e a força de dorsiflexão.",
+        "Localização": "Joelho"
+      },
+      "related": ["fibula", "tibia", "tibiofibular-proximal", "joelho", "nervo-fibular-comum", "biceps-femoral", "ligamento-colateral-fibular", "membrana-interossea-da-perna", "talocrural"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["tibiofibular proximal", "cabeça da fíbula"],
+      "source_objects": ["Anterior ligament of fibular head.l", "Anterior ligament of fibular head.r", "Posterior ligament of fibular head.l", "Posterior ligament of fibular head.r"]
+    },
+    {
+      "id": "ligamento-tibiofibular-transverso",
+      "name": "Ligamento tibiofibular transverso",
+      "english": "transverse tibiofibular ligament",
+      "kind": "ligamentos",
+      "region": "Tornozelo",
+      "depth": "profunda",
+      "summary": "Porção profunda da sindesmose posterior; funciona como um lábio que aprofunda a pinça maleolar.",
+      "fields": {
+        "Fixações": "Margem posterior da face articular inferior da tíbia até a fossa maleolar da fíbula, atravessando a parte posterior da sindesmose, profundamente ao ligamento tibiofibular posterior.",
+        "Função": "Desce além da margem óssea posterior da tíbia e funciona como um lábio fibrocartilaginoso que aprofunda a superfície articular. Impede a translação posterior do tálus e completa a contenção da pinça maleolar por trás.",
+        "Tensiona em": "Dorsiflexão do tornozelo e translação posterior forçada do tálus.",
+        "Teste clínico": "Avaliado junto com a sindesmose pelo teste de compressão da perna e pelo teste de rotação externa.",
+        "Lesão típica": "Comprometido nas entorses sindesmóticas graves e nas fraturas com envolvimento do maléolo posterior.",
+        "Na prática": "É a estrutura que explica por que a superfície articular posterior da tíbia é funcionalmente maior do que parece na radiografia: parte dela é fibrocartilagem, não osso.",
+        "Localização": "Tornozelo"
+      },
+      "related": ["tibia", "fibula", "talus", "talocrural", "ligamento-tibiofibular-posterior", "ligamento-tibiofibular-anterior", "membrana-interossea-da-perna"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["sindesmose profunda", "terceiro maléolo"],
+      "source_objects": ["Transverse tibiofibular ligament.l", "Transverse tibiofibular ligament.r"]
+    },
+    {
+      "id": "ligamento-meniscopatelar",
+      "name": "Ligamento meniscopatelar",
+      "english": "meniscopatellar ligament",
+      "kind": "ligamentos",
+      "region": "Joelho",
+      "depth": "profunda",
+      "summary": "Liga a patela às bordas dos meniscos e os traciona para a frente na extensão.",
+      "fields": {
+        "Fixações": "Bordas medial e lateral da patela até as margens anteriores dos meniscos medial e lateral.",
+        "Função": "Traciona os meniscos para a frente durante a extensão do joelho, acompanhando o deslocamento anterior dos côndilos femorais. Contribui, junto com os retináculos, para a estabilidade da patela no plano frontal.",
+        "Tensiona em": "Extensão do joelho.",
+        "Teste clínico": "Não tem teste isolado; é referência na artroscopia e no exame da instabilidade patelar.",
+        "Lesão típica": "Comprometido em luxações patelares e em lesões meniscais anteriores. Sua ruptura contribui para o deslocamento anormal dos meniscos.",
+        "Na prática": "Faz parte do sistema que sincroniza os meniscos com o movimento do fêmur. Junto com o ligamento transverso do joelho, o poplíteo e o semimembranáceo, garante que os meniscos saiam do caminho a tempo e não sejam pinçados.",
+        "Localização": "Joelho"
+      },
+      "related": ["patela", "menisco-medial", "menisco-lateral", "joelho", "ligamento-transverso-do-joelho", "ligamentos-meniscotibiais", "retinaculo-patelar-medial", "retinaculo-patelar-lateral", "coxim-adiposo-infrapatelar"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["meniscopatelar"],
+      "source_objects": ["Meniscopatellar ligament.l", "Meniscopatellar ligament.r"]
+    },
+    {
+      "id": "ligamentos-pubicos",
+      "name": "Ligamentos púbicos",
+      "english": "pubic ligaments",
+      "kind": "ligamentos",
+      "region": "Pelve",
+      "depth": "profunda",
+      "summary": "Reforçam a sínfise púbica por cima e por baixo; sobrecarregados na gestação e no esporte.",
+      "fields": {
+        "Fixações": "Ligamento púbico superior, entre os tubérculos púbicos, acima da sínfise. Ligamento púbico inferior, ou arqueado, na borda inferior da sínfise, arqueando-se sob ela entre os ramos inferiores do púbis.",
+        "Função": "Reforçam a sínfise púbica acima e abaixo, contendo o disco interpúbico. Resistem às forças de cisalhamento que surgem quando os dois lados da pelve se movem de forma assimétrica, como em cada passo da marcha.",
+        "Tensiona em": "Apoio unipodal e movimentos assimétricos da pelve, como chutar ou subir escadas.",
+        "Teste clínico": "Dor à palpação direta da sínfise e no teste de compressão e de distração pélvica; dor na adução isométrica resistida.",
+        "Lesão típica": "Osteíte púbica e disfunção da sínfise, com dor no púbis que irradia para a virilha e para a face medial da coxa. Muito frequentes no futebol, na corrida e na gestação, quando a relaxina aumenta a mobilidade da sínfise.",
+        "Na prática": "A sínfise, as sacroilíacas e os adutores formam um anel funcional: a sobrecarga de um componente repercute nos outros. Por isso o tratamento da dor púbica quase sempre inclui fortalecimento dos adutores e do transverso do abdome.",
+        "Localização": "Pelve"
+      },
+      "related": ["sinfise-pubica", "osso-do-quadril", "sacroiliaca", "adutor-longo", "reto-do-abdomen", "gracil", "pectineo", "ligamento-inguinal", "piramidal-do-abdome"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["sínfise púbica", "osteíte púbica", "pubalgia"],
+      "source_objects": ["Superior pubic ligament", "Inferior pubic ligament"]
+    },
+    {
+      "id": "ligamento-estilomandibular",
+      "name": "Ligamento estilomandibular",
+      "english": "stylomandibular ligament",
+      "kind": "ligamentos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Ligamento acessório da ATM que limita a protrusão excessiva da mandíbula.",
+      "fields": {
+        "Fixações": "Processo estiloide do osso temporal até o ângulo e a borda posterior do ramo da mandíbula.",
+        "Função": "Ligamento acessório da articulação temporomandibular. Limita a protrusão excessiva da mandíbula e separa a glândula parótida da submandibular.",
+        "Tensiona em": "Protrusão máxima da mandíbula.",
+        "Teste clínico": "Avaliado indiretamente pela amplitude de protrusão, que normalmente fica entre 6 e 9 mm.",
+        "Lesão típica": "Raramente lesionado. Sua tensão participa de quadros de dor na região do ângulo da mandíbula.",
+        "Na prática": "É um espessamento da fáscia cervical profunda, e não um ligamento capsular verdadeiro. Sua importância no controle da ATM é menor que a do ligamento temporomandibular lateral.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": ["temporal", "mandibula", "temporomandibular", "ligamento-temporomandibular-lateral", "ligamento-esfenomandibular", "ligamento-estilo-hioideo", "masseter", "pterigoideo-medial"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["estilomandibular"],
+      "source_objects": ["Stylomandibular ligament.l", "Stylomandibular ligament.r"]
+    },
+    {
+      "id": "ligamento-pterigospinhoso",
+      "name": "Ligamento pterigospinhoso",
+      "english": "pterygospinous ligament",
+      "kind": "ligamentos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Faixa entre a lâmina pterigoide e a espinha do esfenoide; pode ossificar e comprimir nervos.",
+      "fields": {
+        "Fixações": "Borda posterior da lâmina lateral do processo pterigoide até a espinha do osso esfenoide.",
+        "Função": "Faixa fibrosa que completa a parede da fossa infratemporal e delimita a passagem de ramos do nervo mandibular para os músculos da mastigação.",
+        "Tensiona em": "Não sofre variação de tensão significativa com o movimento; é uma estrutura fixa.",
+        "Teste clínico": "Não tem teste clínico direto. Sua ossificação é achado radiográfico.",
+        "Lesão típica": "Sua ossificação, chamada barra pterigospinhosa, pode estreitar a passagem dos ramos do nervo mandibular e produzir dor ou parestesia na distribuição desse nervo.",
+        "Na prática": "É referência anatômica no bloqueio do nervo mandibular. Sua variação anatômica explica alguns casos de falha na anestesia odontológica.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": ["esfenoide", "mandibula", "pterigoideo-lateral", "pterigoideo-medial", "temporomandibular", "ligamento-esfenomandibular"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["barra pterigospinhosa", "pterigospinhoso"],
+      "source_objects": ["Pterygospinous ligament.l", "Pterygospinous ligament.r"]
+    },
+    {
+      "id": "ligamentos-tireo-hioideos",
+      "name": "Ligamentos tireo-hióideos",
+      "english": "thyrohyoid ligaments",
+      "kind": "ligamentos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Suspendem a laringe no osso hioide; acompanham a elevação laríngea da deglutição.",
+      "fields": {
+        "Fixações": "Ligamento tireo-hióideo mediano, entre a incisura superior da cartilagem tireóidea e o corpo do hioide. Ligamentos tireo-hióideos laterais, entre os cornos superiores da tireóidea e os cornos maiores do hioide, como espessamentos das bordas da membrana tireo-hióidea.",
+        "Função": "Suspendem a laringe no osso hioide e mantêm a distância entre eles. Permitem o deslizamento necessário para a elevação laríngea durante a deglutição e para a variação de altura vocal.",
+        "Tensiona em": "Abaixamento da laringe e extensão cervical.",
+        "Teste clínico": "Palpação do espaço tireo-hióideo e observação da excursão da laringe durante a deglutição.",
+        "Lesão típica": "Sua rigidez reduz a mobilidade laríngea e participa de quadros de globus faríngeo e de tensão muscular vocal. Pode ser comprometida em traumas cervicais anteriores.",
+        "Na prática": "A redução do espaço tireo-hióideo, com a laringe subindo pouco, é um dos sinais avaliados na disfagia do idoso e na tensão laríngea associada à postura de cabeça anteriorizada.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": ["hioide", "tireo-hioideo", "esternotireoideo", "esterno-hioideo", "digastrico", "milo-hioideo", "ligamento-estilo-hioideo"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["membrana tireo-hióidea", "elevação laríngea", "globus"],
+      "source_objects": ["Median thyrohyoid ligament", "Lateral thyrohyoid ligament.l", "Lateral thyrohyoid ligament.r"]
+    },
+    {
+      "id": "ligamento-cricotireoideo-mediano",
+      "name": "Ligamento cricotireóideo mediano",
+      "english": "median cricothyroid ligament",
+      "kind": "ligamentos",
+      "region": "Cabeça e pescoço",
+      "depth": "superficial",
+      "summary": "Une a cartilagem cricoide à tireóidea na linha média; é o ponto da cricotireoidostomia.",
+      "fields": {
+        "Fixações": "Borda superior do arco da cartilagem cricoide até a borda inferior da cartilagem tireóidea, na linha média anterior.",
+        "Função": "Une as duas cartilagens e fecha anteriormente a articulação cricotireóidea, cujo movimento de báscula tensiona as pregas vocais e eleva a altura da voz.",
+        "Tensiona em": "Báscula da cartilagem tireóidea sobre a cricoide, na emissão de sons agudos.",
+        "Teste clínico": "Palpável na linha média do pescoço, na depressão entre a proeminência laríngea e o anel cricoide.",
+        "Lesão típica": "Não costuma ser lesionado. Sua importância é sobretudo de via de acesso.",
+        "Na prática": "É o ponto anatômico da cricotireoidostomia, a via cirúrgica de emergência para acesso à via aérea. Fica logo abaixo da proeminência laríngea, coberto apenas por pele e fáscia, o que o torna o ponto mais superficial da via aérea no pescoço.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": ["hioide", "ligamentos-tireo-hioideos", "esternotireoideo", "tireo-hioideo", "membrana-quadrangular"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["cricotireoidostomia", "membrana cricotireóidea"],
+      "source_objects": ["Median cricothyroid ligament"]
+    },
+    {
+      "id": "membrana-quadrangular",
+      "name": "Membrana quadrangular",
+      "english": "quadrangular membrane",
+      "kind": "ligamentos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Esqueleto fibroso da porção superior da laringe; sua borda inferior é a prega vestibular.",
+      "fields": {
+        "Fixações": "Borda lateral da epiglote e cartilagem tireóidea até as cartilagens aritenoide e cuneiforme, formando uma lâmina quadrilátera de cada lado do vestíbulo laríngeo.",
+        "Função": "Dá forma e sustentação à parte superior da laringe. Sua borda superior livre forma a prega ariepiglótica e a inferior forma o ligamento vestibular, coberto pela mucosa que constitui a prega vestibular, também chamada falsa prega vocal.",
+        "Tensiona em": "Fechamento do vestíbulo laríngeo durante a deglutição.",
+        "Teste clínico": "Avaliada por laringoscopia; a elevação e o fechamento do vestíbulo são observados na videofluoroscopia da deglutição.",
+        "Lesão típica": "Sua rigidez ou fraqueza compromete o fechamento da via aérea na deglutição, aumentando o risco de aspiração.",
+        "Na prática": "O fechamento em três níveis da laringe durante a deglutição, com pregas vocais, pregas vestibulares e báscula da epiglote, é o mecanismo central de proteção da via aérea e o alvo direto da reabilitação da disfagia.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": ["hioide", "ligamentos-tireo-hioideos", "ligamento-cricotireoideo-mediano", "milo-hioideo", "genio-hioideo", "digastrico", "tireo-hioideo"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["prega vestibular", "vestíbulo laríngeo", "disfagia"],
+      "source_objects": ["Quadrangular membrane.l", "Quadrangular membrane.r"]
+    },
+    {
+      "id": "ligamento-cricofaringeo",
+      "name": "Ligamento cricofaríngeo",
+      "english": "cricopharyngeal ligament",
+      "kind": "ligamentos",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Prende a faringe à cartilagem cricoide, junto ao esfíncter esofágico superior.",
+      "fields": {
+        "Fixações": "Lâmina da cartilagem cricoide até a parede posterior da faringe, na região da junção faringoesofágica.",
+        "Função": "Ancora a faringe à laringe nessa transição e participa da contenção do esfíncter esofágico superior, cuja porção muscular é o músculo cricofaríngeo.",
+        "Tensiona em": "Elevação hiolaríngea durante a deglutição, que traciona a junção faringoesofágica para a frente e para cima.",
+        "Teste clínico": "Avaliado por videofluoroscopia da deglutição, observando a abertura do esfíncter esofágico superior.",
+        "Lesão típica": "A região é a zona de fraqueza por onde se forma o divertículo de Zenker, quando o esfíncter não relaxa adequadamente e a pressão empurra a mucosa para fora.",
+        "Na prática": "A abertura do esfíncter esofágico superior depende de três fatores: relaxamento do cricofaríngeo, tração anterior pela elevação hiolaríngea e pressão do bolo. A manobra de Shaker atua justamente sobre o segundo deles.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": ["hioide", "genio-hioideo", "milo-hioideo", "digastrico", "tireo-hioideo", "ligamentos-tireo-hioideos", "membrana-quadrangular"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["esfíncter esofágico superior", "cricofaríngeo", "Zenker"],
+      "source_objects": ["Cricopharyngeal ligament.l", "Cricopharyngeal ligament.r"]
+    },
+    {
+      "id": "membranas-intercostais",
+      "name": "Membranas intercostais",
+      "english": "intercostal membranes",
+      "kind": "ligamentos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Continuam os músculos intercostais onde eles não alcançam; completam a parede torácica.",
+      "fields": {
+        "Fixações": "Membrana intercostal externa, entre as cartilagens costais, à frente, onde o músculo intercostal externo termina. Membrana intercostal interna, na porção posterior dos espaços intercostais, entre os ângulos das costelas e a coluna, onde o intercostal interno termina.",
+        "Função": "Completam a parede de cada espaço intercostal onde a porção muscular não chega, mantendo a continuidade e a rigidez da caixa torácica. Sem elas, a pressão negativa da inspiração sugaria os espaços intercostais para dentro.",
+        "Tensiona em": "Inspiração profunda e expiração forçada.",
+        "Teste clínico": "Não têm teste isolado. A retração intercostal visível na inspiração é sinal de esforço respiratório e indica que a pressão negativa venceu a resistência da parede.",
+        "Lesão típica": "Não são lesionadas isoladamente. São atravessadas na toracocentese e na drenagem torácica.",
+        "Na prática": "A regra prática é que o músculo intercostal externo vai de trás até as cartilagens, onde vira membrana externa; o interno vai da frente até os ângulos costais, onde vira membrana interna. Os dois se complementam e cobrem todo o espaço.",
+        "Localização": "Tronco"
+      },
+      "related": ["costelas", "cartilagens-costais", "intercostais-externos", "intercostais-internos", "intercostais-intimos", "esterno", "diafragma", "levantadores-das-costelas"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["membrana intercostal", "retração intercostal"],
+      "source_objects": ["External intercostal membrane.l", "External intercostal membrane.r", "Internal intercostal membrane.l", "Internal intercostal membrane.r"]
+    }
+  ]
+}

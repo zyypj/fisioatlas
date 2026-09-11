@@ -1,0 +1,290 @@
+{
+  "patches": [
+    {
+      "id": "trapezio",
+      "fields": {
+        "Grupo muscular": "Musculatura extrínseca superficial do dorso; estabilizadores escapulares.",
+        "Plano e eixo": "Elevação e abaixamento da escápula no plano frontal; retração no plano transverso; rotação superior no plano frontal.",
+        "Sinergistas": "Serrátil anterior na rotação superior da escápula; romboides e levantador da escápula na retração.",
+        "Antagonistas": "Serrátil anterior e peitoral menor na protração; romboides e levantador da escápula na rotação inferior.",
+        "Observação funcional": "Suas três porções agem de forma distinta e até oposta. Na elevação do braço, a superior eleva a clavícula e a inferior abaixa a raiz da espinha da escápula; juntas com o serrátil anterior formam o binário de forças que gira a escápula para cima. O padrão mais comum de disfunção é trapézio superior hiperativo com inferior e serrátil fracos, base da discinesia escapular.",
+        "Exemplo de exercício": "Elevação do braço em Y em decúbito ventral para a porção inferior, remada para a média e encolhimento de ombros para a superior, em contexto didático.",
+        "Palpação básica": "A porção superior é palpável do occipital ao terço lateral da clavícula; a média, entre as escápulas; a inferior, do meio das costas até a raiz da espinha da escápula. Peça movimentos diferentes de escápula para separar as três."
+      },
+      "related": ["occipital", "clavicula", "escapula", "ligamento-nucal", "serratil-anterior", "romboide-maior", "romboide-menor", "levantador-da-escapula"]
+    },
+    {
+      "id": "serratil-anterior",
+      "fields": {
+        "Grupo muscular": "Musculatura da parede torácica; estabilizadores escapulares.",
+        "Plano e eixo": "Protração da escápula no plano transverso; rotação superior no plano frontal.",
+        "Sinergistas": "Trapézio superior e inferior na rotação superior; peitoral menor na protração.",
+        "Antagonistas": "Romboides maior e menor e trapézio médio na retração; levantador da escápula na rotação inferior.",
+        "Observação funcional": "É o músculo que mantém a escápula colada ao tórax. Sua fraqueza produz a escápula alada medial, sinal que aparece ao empurrar a parede. Sem ele, a elevação do braço acima de 90° fica impossível, porque a cavidade glenoidal não gira para cima e a cabeça do úmero bate no arco coracoacromial.",
+        "Exemplo de exercício": "Empurrar a parede com protração máxima, flexão de ombro em decúbito lateral com protração e push-up plus, em contexto didático.",
+        "Palpação básica": "Suas digitações são visíveis e palpáveis na parede lateral do tórax, abaixo da axila, ao empurrar contra uma resistência com o braço à frente."
+      },
+      "related": ["nervo-toracico-longo", "costelas", "escapula", "trapezio", "romboide-maior", "peitoral-menor", "glenoumeral"]
+    },
+    {
+      "id": "peitoral-maior",
+      "fields": {
+        "Grupo muscular": "Musculatura da parede torácica anterior; adutores e rotadores mediais do braço.",
+        "Plano e eixo": "Adução no plano frontal, adução horizontal no plano transverso, flexão e extensão no plano sagital conforme a porção.",
+        "Sinergistas": "Deltoide anterior e coracobraquial na flexão, com a porção clavicular; latíssimo do dorso e redondo maior na adução e extensão, com a esternocostal.",
+        "Antagonistas": "Deltoide e supraespinal na abdução; trapézio médio e romboides na retração escapular.",
+        "Observação funcional": "Suas duas porções são antagonistas entre si no plano sagital: a clavicular flete o ombro e a esternocostal o estende a partir da flexão. Seu tendão de inserção tem torção: as fibras inferiores se inserem mais acima no úmero, arranjo que mantém a tensão constante em toda a amplitude de elevação.",
+        "Exemplo de exercício": "Supino inclinado para a porção clavicular, supino declinado e crucifixo para a esternocostal, em contexto didático.",
+        "Palpação básica": "Forma a prega anterior da axila. Peça adução horizontal resistida com o braço à frente e identifique as porções clavicular e esternocostal separadamente."
+      },
+      "related": ["nervo-peitoral-lateral", "nervo-peitoral-medial", "clavicula", "esterno", "costelas", "umero", "deltoide", "latissimo-do-dorso", "coracobraquial"]
+    },
+    {
+      "id": "peitoral-menor",
+      "fields": {
+        "Grupo muscular": "Musculatura da parede torácica anterior; estabilizadores escapulares.",
+        "Plano e eixo": "Protração, abaixamento e inclinação anterior da escápula nos planos transverso e sagital.",
+        "Sinergistas": "Serrátil anterior na protração; subclávio e trapézio inferior no abaixamento.",
+        "Antagonistas": "Trapézio superior e levantador da escápula na elevação; trapézio médio e romboides na retração; serrátil anterior na rotação superior.",
+        "Observação funcional": "Seu encurtamento inclina a escápula anteriormente e é um dos principais fatores mecânicos do ombro protraído e da síndrome do impacto. Além disso, o plexo braquial e os vasos axilares passam sob o seu tendão, no espaço coracopeitoral, um dos três pontos de compressão da síndrome do desfiladeiro torácico.",
+        "Exemplo de exercício": "Alongamento em batente de porta com o braço a 90° e exercícios de retração e rotação posterior escapular, em contexto didático.",
+        "Palpação básica": "Palpável abaixo do peitoral maior, na parede anterior da axila, seguindo do processo coracoide em direção às costelas; palpação delicada."
+      },
+      "related": ["nervo-peitoral-medial", "costelas", "escapula", "plexo-braquial", "serratil-anterior", "trapezio", "coracobraquial", "subclavio"]
+    },
+    {
+      "id": "latissimo-do-dorso",
+      "fields": {
+        "Grupo muscular": "Musculatura extrínseca superficial do dorso; adutores e extensores do braço.",
+        "Plano e eixo": "Adução no plano frontal, extensão no plano sagital e rotação medial no plano transverso.",
+        "Sinergistas": "Redondo maior, peitoral maior esternocostal e tríceps cabeça longa.",
+        "Antagonistas": "Deltoide e supraespinal na abdução; deltoide anterior e peitoral maior clavicular na flexão.",
+        "Observação funcional": "É o maior músculo do dorso e o único que liga diretamente o membro superior à pelve. Isso o torna elo mecânico entre ombro e quadril: através da fáscia toracolombar, conecta-se ao glúteo máximo contralateral, formando a cadeia oblíqua posterior usada na marcha e no arremesso.",
+        "Exemplo de exercício": "Puxada alta, barra fixa e pullover, em contexto didático.",
+        "Palpação básica": "Forma a prega posterior da axila junto com o redondo maior. Peça adução resistida com a mão no quadril e siga o ventre até a região lombar."
+      },
+      "related": ["nervo-toracodorsal", "vertebras-toracicas", "vertebras-lombares", "osso-do-quadril", "umero", "redondo-maior", "gluteo-maximo", "serratil-posterior-inferior"]
+    },
+    {
+      "id": "romboide-maior",
+      "fields": {
+        "Grupo muscular": "Musculatura extrínseca superficial do dorso; estabilizadores escapulares.",
+        "Plano e eixo": "Retração da escápula no plano transverso; rotação inferior e elevação no plano frontal.",
+        "Sinergistas": "Romboide menor, trapézio médio e levantador da escápula.",
+        "Antagonistas": "Serrátil anterior e peitoral menor na protração; trapézio superior e inferior na rotação superior.",
+        "Observação funcional": "Junto com o romboide menor e o levantador da escápula, faz a rotação inferior da escápula, movimento oposto ao do trapézio e do serrátil. O equilíbrio entre esses grupos determina a posição da cavidade glenoidal e, por consequência, o espaço subacromial disponível na elevação do braço.",
+        "Exemplo de exercício": "Remada com ênfase na retração, exercício em T em decúbito ventral e retração escapular isolada, em contexto didático.",
+        "Palpação básica": "Palpável entre a borda medial da escápula e os processos espinhosos torácicos, sob o trapézio, com a mão da pessoa apoiada nas costas."
+      },
+      "related": ["nervo-dorsal-da-escapula", "vertebras-toracicas", "escapula", "romboide-menor", "trapezio", "levantador-da-escapula", "serratil-anterior"]
+    },
+    {
+      "id": "levantador-da-escapula",
+      "fields": {
+        "Grupo muscular": "Musculatura da nuca e do dorso; estabilizadores escapulares.",
+        "Plano e eixo": "Elevação da escápula no plano frontal; rotação inferior; inclinação cervical ipsilateral no plano frontal.",
+        "Sinergistas": "Trapézio superior na elevação; romboides na rotação inferior; escalenos na inclinação cervical.",
+        "Antagonistas": "Trapézio inferior e peitoral menor no abaixamento; serrátil anterior e trapézio na rotação superior.",
+        "Observação funcional": "É um dos músculos mais frequentemente tensos na cervicalgia postural, porque trabalha continuamente para sustentar a escápula em quem passa horas com os ombros elevados ou o braço apoiado. Sua dor típica se projeta no ângulo superior da escápula e ao longo do pescoço, com limitação da rotação para o lado oposto.",
+        "Exemplo de exercício": "Alongamento cervical em flexão com rotação contralateral e a mão do mesmo lado estabilizando a escápula; treino de abaixamento escapular, em contexto didático.",
+        "Palpação básica": "Palpável no ângulo superior da escápula e ao longo do trígono posterior do pescoço, sob o trapézio superior; o ponto doloroso costuma ser exatamente na inserção escapular."
+      },
+      "related": ["nervo-dorsal-da-escapula", "vertebras-cervicais", "atlas", "axis", "escapula", "trapezio", "romboide-maior", "esplenio-do-pescoco", "escaleno-medio"]
+    },
+    {
+      "id": "esternocleidomastoideo",
+      "fields": {
+        "Grupo muscular": "Musculatura superficial do pescoço; flexores cervicais e inspiratórios acessórios.",
+        "Plano e eixo": "Flexão cervical no plano sagital; inclinação ipsilateral no plano frontal; rotação contralateral no plano transverso.",
+        "Sinergistas": "Escalenos na flexão e inclinação; longo do pescoço na flexão; esplênio da cabeça contralateral na rotação.",
+        "Antagonistas": "Extensores cervicais posteriores; esternocleidomastóideo do lado oposto na rotação.",
+        "Observação funcional": "Inclina para o mesmo lado e gira para o lado oposto: essa combinação é a base do torcicolo congênito, em que o encurtamento de um lado produz a cabeça inclinada para ele e girada para o outro. Bilateralmente, com a cabeça fixa, eleva o esterno e as clavículas, sendo inspiratório acessório importante na dispneia.",
+        "Exemplo de exercício": "Flexão craniocervical controlada, que treina os flexores profundos reduzindo o domínio do esternocleidomastóideo, em contexto didático.",
+        "Palpação básica": "É o relevo mais evidente do pescoço. Peça rotação da cabeça para o lado oposto contra resistência leve e ele salta do esterno e da clavícula até o processo mastoide."
+      },
+      "related": ["esterno", "clavicula", "temporal", "occipital", "vertebras-cervicais", "escaleno-anterior", "longo-do-pescoco", "trapezio", "platisma"]
+    },
+    {
+      "id": "masseter",
+      "fields": {
+        "Grupo muscular": "Músculos da mastigação.",
+        "Plano e eixo": "Elevação da mandíbula no plano sagital e eixo transversal; a porção profunda participa da retrusão.",
+        "Sinergistas": "Músculo temporal e pterigóideo medial na elevação.",
+        "Antagonistas": "Digástrico, milo-hióideo, gênio-hióideo e pterigóideo lateral na abertura da boca.",
+        "Observação funcional": "É o músculo mais forte do corpo em relação ao seu peso. Forma com o pterigóideo medial uma alça que envolve o ângulo da mandíbula. É o principal alvo da avaliação na disfunção temporomandibular: sua hipertrofia é visível no bruxismo e sua dor referida atinge os dentes, o ouvido e a região temporal.",
+        "Exemplo de exercício": "Exercícios de abertura controlada da boca, relaxamento dos elevadores e correção da postura de repouso da mandíbula, em contexto didático.",
+        "Palpação básica": "Palpável no ângulo da mandíbula. Peça para cerrar os dentes e o ventre salta sob os dedos; palpe também por via intraoral, com luva e consentimento."
+      },
+      "related": ["mandibula", "zigomatico", "temporomandibular", "musculo-temporal", "pterigoideo-medial", "pterigoideo-lateral", "disco-da-atm", "digastrico"]
+    },
+    {
+      "id": "musculo-temporal",
+      "fields": {
+        "Grupo muscular": "Músculos da mastigação.",
+        "Plano e eixo": "Elevação da mandíbula no plano sagital; retrusão pela porção posterior, no plano sagital.",
+        "Sinergistas": "Masseter e pterigóideo medial na elevação.",
+        "Antagonistas": "Digástrico e demais supra-hióideos na abertura; pterigóideos laterais na protrusão.",
+        "Observação funcional": "É o músculo que posiciona a mandíbula com precisão antes da mordida, enquanto o masseter fornece a força. Suas fibras posteriores, quase horizontais, são as únicas que retraem a mandíbula. Sua dor referida vai para os dentes superiores e para a região temporal, sendo causa frequente de cefaleia confundida com enxaqueca.",
+        "Exemplo de exercício": "Relaxamento dos elevadores mandibulares e exercícios de abertura com trajetória controlada, em contexto didático.",
+        "Palpação básica": "Palpável na fossa temporal, acima e à frente da orelha. Peça para cerrar os dentes e sinta o leque muscular contrair sob os dedos."
+      },
+      "related": ["temporal", "parietal", "frontal", "mandibula", "temporomandibular", "masseter", "pterigoideo-medial", "pterigoideo-lateral", "temporoparietal"]
+    },
+    {
+      "id": "reto-do-abdomen",
+      "fields": {
+        "Grupo muscular": "Parede abdominal anterior; flexores do tronco.",
+        "Plano e eixo": "Flexão do tronco no plano sagital e eixo transversal.",
+        "Sinergistas": "Oblíquos externo e interno na flexão; psoas maior na flexão do quadril associada.",
+        "Antagonistas": "Eretor da espinha, multífidos e quadrado lombar.",
+        "Observação funcional": "É atravessado por três a quatro intersecções tendíneas, que dividem o ventre no relevo característico e permitem que diferentes segmentos se contraiam com intensidades distintas. Sua bainha muda de composição na linha arqueada, abaixo da qual toda a aponeurose passa à frente do músculo, o que tem importância cirúrgica direta.",
+        "Exemplo de exercício": "Abdominal com elevação parcial do tronco e exercícios de controle da inclinação pélvica posterior, em contexto didático.",
+        "Palpação básica": "Facilmente palpável de cada lado da linha alba, entre o púbis e as cartilagens costais, ao elevar a cabeça em decúbito dorsal. A diástase é avaliada medindo a separação entre os dois ventres nessa posição."
+      },
+      "related": ["osso-do-quadril", "esterno", "costelas", "sinfise-pubica", "obliquo-externo", "obliquo-interno", "transverso-do-abdomen", "piramidal-do-abdome", "diafragma"]
+    },
+    {
+      "id": "obliquo-externo",
+      "fields": {
+        "Grupo muscular": "Parede abdominal ântero-lateral; rotadores do tronco.",
+        "Plano e eixo": "Flexão no plano sagital; inclinação ipsilateral no plano frontal; rotação contralateral no plano transverso.",
+        "Sinergistas": "Oblíquo interno do lado oposto na rotação; reto do abdome na flexão.",
+        "Antagonistas": "Eretor da espinha na extensão; oblíquo externo contralateral na rotação.",
+        "Observação funcional": "É o mais superficial e o maior dos abdominais. Suas fibras seguem a direção da mão entrando no bolso e são contínuas com as dos intercostais externos. Trabalha em par cruzado com o oblíquo interno do lado oposto: essa dupla é o motor da rotação de tronco na marcha, na corrida e no arremesso.",
+        "Exemplo de exercício": "Rotação de tronco resistida com elástico em diagonal, tipo lenhador, em contexto didático.",
+        "Palpação básica": "Palpável na parede lateral do abdome, abaixo das costelas. Peça rotação do tronco para o lado oposto contra resistência leve."
+      },
+      "related": ["costelas", "osso-do-quadril", "obliquo-interno", "transverso-do-abdomen", "reto-do-abdomen", "intercostais-externos", "ligamento-inguinal", "latissimo-do-dorso"]
+    },
+    {
+      "id": "obliquo-interno",
+      "fields": {
+        "Grupo muscular": "Parede abdominal ântero-lateral; rotadores do tronco.",
+        "Plano e eixo": "Flexão no plano sagital; inclinação ipsilateral no plano frontal; rotação ipsilateral no plano transverso.",
+        "Sinergistas": "Oblíquo externo do lado oposto na rotação; transverso do abdome no aumento da pressão intra-abdominal.",
+        "Antagonistas": "Eretor da espinha; oblíquo interno contralateral na rotação.",
+        "Observação funcional": "Suas fibras cruzam em ângulo reto com as do oblíquo externo, formando uma malha que resiste a cargas em qualquer direção. Gira o tronco para o mesmo lado, enquanto o externo gira para o lado oposto: por isso a rotação usa o interno de um lado e o externo do outro. Suas fibras inferiores formam o tendão conjunto com o transverso, reforçando a parede posterior do canal inguinal.",
+        "Exemplo de exercício": "Rotação de tronco em diagonal e prancha lateral com rotação, em contexto didático.",
+        "Palpação básica": "Profundo ao oblíquo externo; palpável de forma indireta na parede lateral do abdome, na rotação para o mesmo lado contra resistência."
+      },
+      "related": ["costelas", "osso-do-quadril", "obliquo-externo", "transverso-do-abdomen", "reto-do-abdomen", "intercostais-internos", "ligamento-inguinal", "nervo-ilioinguinal"]
+    },
+    {
+      "id": "transverso-do-abdomen",
+      "fields": {
+        "Grupo muscular": "Parede abdominal profunda; estabilizadores profundos do tronco.",
+        "Plano e eixo": "Não produz movimento de tronco significativo: comprime o abdome no plano transverso.",
+        "Sinergistas": "Diafragma, multífido lombar e assoalho pélvico, formando a unidade de estabilização profunda.",
+        "Antagonistas": "Não tem antagonista direto; opõe-se à distensão passiva da parede abdominal.",
+        "Observação funcional": "Suas fibras são horizontais, como um cinto, e por isso praticamente não movem o tronco: sua função é aumentar a pressão intra-abdominal e tensionar a fáscia toracolombar, enrijecendo a coluna antes do movimento. Em pessoas sem dor, ele se contrai antes do movimento do braço; na dor lombar, esse pré-ajuste atrasa ou desaparece.",
+        "Exemplo de exercício": "Ativação isolada com a manobra de recolher o abdome sem prender a respiração, progredindo para exercícios funcionais com controle respiratório, em contexto didático.",
+        "Palpação básica": "Palpável medialmente à espinha ilíaca ântero-superior: a contração isolada é sentida como uma tensão profunda e simétrica, sem abaulamento nem elevação das costelas."
+      },
+      "related": ["costelas", "osso-do-quadril", "vertebras-lombares", "obliquo-interno", "obliquo-externo", "diafragma", "multifido-lombar", "pubococcigeo", "transverso-do-torax"]
+    },
+    {
+      "id": "quadrado-lombar",
+      "fields": {
+        "Grupo muscular": "Parede abdominal posterior; estabilizadores lombopélvicos.",
+        "Plano e eixo": "Inclinação lateral no plano frontal e eixo ântero-posterior; extensão lombar no plano sagital.",
+        "Sinergistas": "Iliocostal lombar e oblíquos na inclinação; eretor da espinha na extensão.",
+        "Antagonistas": "Quadrado lombar contralateral; reto do abdome na flexão.",
+        "Observação funcional": "Além da inclinação, fixa a décima segunda costela durante a inspiração, dando ponto de apoio ao diafragma. Também eleva a hemipelve, movimento essencial para liberar o pé do chão na fase de balanço da marcha. É fonte comum de dor lombar unilateral profunda, com dor referida para a crista ilíaca e o quadril.",
+        "Exemplo de exercício": "Prancha lateral, elevação da hemipelve em apoio unipodal e alongamento em inclinação lateral com o braço elevado, em contexto didático.",
+        "Palpação básica": "Palpável profundamente no espaço entre a última costela e a crista ilíaca, lateralmente ao eretor da espinha, com a pessoa em decúbito lateral."
+      },
+      "related": ["costelas", "vertebras-lombares", "osso-do-quadril", "diafragma", "psoas-maior", "iliocostal-lombar", "serratil-posterior-inferior", "ligamento-iliolombar", "intertransversarios"]
+    },
+    {
+      "id": "gluteo-maximo",
+      "fields": {
+        "Grupo muscular": "Musculatura glútea superficial; extensores do quadril.",
+        "Plano e eixo": "Extensão no plano sagital e eixo transversal; rotação lateral no plano transverso; as fibras superiores fazem abdução no plano frontal.",
+        "Sinergistas": "Isquiotibiais na extensão; rotadores laterais profundos na rotação; glúteo médio nas fibras superiores.",
+        "Antagonistas": "Psoas maior e ilíaco na flexão; adutores e tensor da fáscia lata na rotação medial.",
+        "Observação funcional": "É o maior e mais potente músculo do corpo, mas fica praticamente silencioso na marcha em terreno plano: entra em ação ao subir escadas, correr, levantar de uma cadeira e agachar. Cerca de três quartos das suas fibras se inserem no trato iliotibial, e não no fêmur, o que o liga funcionalmente ao joelho. Sua fraqueza está no centro da dor femoropatelar e da dor lombar.",
+        "Exemplo de exercício": "Ponte de quadril, elevação pélvica com apoio nos ombros, agachamento e passada, em contexto didático.",
+        "Palpação básica": "Ocupa toda a região glútea. Peça extensão do quadril em decúbito ventral com o joelho fletido, para reduzir a participação dos isquiotibiais, e sinta a contração."
+      },
+      "related": ["nervo-gluteo-inferior", "osso-do-quadril", "sacro", "coccix", "femur", "trato-iliotibial", "ligamento-sacrotuberal", "gluteo-medio", "biceps-femoral", "latissimo-do-dorso"]
+    },
+    {
+      "id": "gluteo-medio",
+      "fields": {
+        "Grupo muscular": "Musculatura glútea profunda; abdutores do quadril.",
+        "Plano e eixo": "Abdução no plano frontal e eixo ântero-posterior; rotação medial pelas fibras anteriores e lateral pelas posteriores, no plano transverso.",
+        "Sinergistas": "Glúteo mínimo e tensor da fáscia lata na abdução; glúteo máximo nas fibras posteriores.",
+        "Antagonistas": "Adutores longo, curto, magno, grácil e pectíneo.",
+        "Observação funcional": "É o estabilizador pélvico mais importante no plano frontal. Durante o apoio unipodal, impede que a pelve do lado sem apoio caia. Sua fraqueza produz o sinal de Trendelenburg, com queda da pelve contralateral, ou a marcha de Trendelenburg compensada, com inclinação do tronco para o lado do apoio.",
+        "Exemplo de exercício": "Abdução em decúbito lateral, exercício da concha com elástico, ponte unilateral e agachamento com controle de valgo dinâmico, em contexto didático.",
+        "Palpação básica": "Palpável entre a crista ilíaca e o trocanter maior, acima e à frente do glúteo máximo. Peça abdução resistida em decúbito lateral."
+      },
+      "related": ["nervo-gluteo-superior", "osso-do-quadril", "femur", "coxofemoral", "gluteo-minimo", "tensor-da-fascia-lata", "gluteo-maximo", "quadrado-lombar", "trato-iliotibial"]
+    },
+    {
+      "id": "gluteo-minimo",
+      "fields": {
+        "Grupo muscular": "Musculatura glútea profunda; abdutores e rotadores mediais do quadril.",
+        "Plano e eixo": "Abdução no plano frontal e eixo ântero-posterior; rotação medial no plano transverso.",
+        "Sinergistas": "Glúteo médio e tensor da fáscia lata.",
+        "Antagonistas": "Adutores do quadril; rotadores laterais profundos na rotação lateral.",
+        "Observação funcional": "É o mais profundo e o mais anterior dos glúteos. Além de abduzir, contribui para centrar a cabeça do fêmur no acetábulo, com função análoga à do manguito rotador no ombro. Seus tendões, junto com os do glúteo médio, formam o chamado manguito rotador do quadril, cuja tendinopatia é a principal causa de dor lateral do quadril em mulheres de meia-idade.",
+        "Exemplo de exercício": "Abdução em decúbito lateral com leve rotação medial e exercícios de controle pélvico em apoio unipodal, em contexto didático.",
+        "Palpação básica": "Profundo ao glúteo médio; sua inserção no trocanter maior é palpável e costuma ser dolorosa na tendinopatia glútea."
+      },
+      "related": ["nervo-gluteo-superior", "osso-do-quadril", "femur", "coxofemoral", "gluteo-medio", "tensor-da-fascia-lata", "labio-acetabular", "piriforme"]
+    },
+    {
+      "id": "tensor-da-fascia-lata",
+      "fields": {
+        "Grupo muscular": "Musculatura anterolateral do quadril; abdutores e flexores.",
+        "Plano e eixo": "Abdução no plano frontal, flexão no plano sagital e rotação medial no plano transverso.",
+        "Sinergistas": "Glúteo médio e mínimo na abdução; reto femoral e psoas maior na flexão.",
+        "Antagonistas": "Adutores na adução; glúteo máximo na extensão e rotação lateral.",
+        "Observação funcional": "Insere-se no trato iliotibial e, através dele, alcança a tíbia. Costuma ficar hiperativo quando o glúteo médio está fraco, assumindo a abdução com um vetor mais anterior e em rotação medial. Esse padrão aumenta o valgo dinâmico do joelho e é um dos mecanismos da síndrome da banda iliotibial e da dor femoropatelar.",
+        "Exemplo de exercício": "Prioriza-se o fortalecimento do glúteo médio em posições que reduzem sua participação, como abdução com o quadril em leve extensão e rotação lateral, em contexto didático.",
+        "Palpação básica": "Palpável logo abaixo e lateralmente à espinha ilíaca ântero-superior, na face anterolateral do quadril, na flexão com abdução resistida."
+      },
+      "related": ["nervo-gluteo-superior", "osso-do-quadril", "femur", "tibia", "trato-iliotibial", "gluteo-medio", "gluteo-minimo", "gluteo-maximo", "joelho"]
+    },
+    {
+      "id": "psoas-maior",
+      "fields": {
+        "Grupo muscular": "Musculatura posterior do abdome; flexores do quadril, grupo iliopsoas.",
+        "Plano e eixo": "Flexão do quadril no plano sagital e eixo transversal; estabilização da coluna lombar em todos os planos.",
+        "Sinergistas": "Ilíaco, com quem forma o iliopsoas; reto femoral, sartório, pectíneo e tensor da fáscia lata na flexão do quadril.",
+        "Antagonistas": "Glúteo máximo e isquiotibiais na extensão do quadril.",
+        "Observação funcional": "É o único músculo que liga diretamente a coluna lombar ao fêmur. Sua função na coluna é controversa: contribui mais para a compressão e a estabilização segmentar do que para a flexão ou extensão lombar. Seu encurtamento aumenta a inclinação anterior da pelve e a lordose lombar, padrão associado à dor lombar. O nervo femoral corre dentro dele e o genitofemoral o perfura.",
+        "Exemplo de exercício": "Flexão de quadril acima de 90° em posição sentada, elevação de joelho resistida e alongamento em posição de estocada com retroversão pélvica, em contexto didático.",
+        "Palpação básica": "Palpação profunda e delicada, medialmente à espinha ilíaca ântero-superior, com o quadril em leve flexão para relaxar a parede abdominal. Região com estruturas vasculares importantes."
+      },
+      "related": ["vertebras-lombares", "femur", "osso-do-quadril", "coxofemoral", "iliaco", "nervo-femoral", "nervo-genitofemoral", "diafragma", "quadrado-lombar", "pectineo"]
+    },
+    {
+      "id": "iliaco",
+      "fields": {
+        "Grupo muscular": "Musculatura da fossa ilíaca; flexores do quadril, grupo iliopsoas.",
+        "Plano e eixo": "Flexão do quadril no plano sagital e eixo transversal.",
+        "Sinergistas": "Psoas maior, com quem forma o iliopsoas; reto femoral, sartório e pectíneo.",
+        "Antagonistas": "Glúteo máximo e isquiotibiais.",
+        "Observação funcional": "Junto com o psoas maior, forma o iliopsoas, o flexor de quadril mais potente do corpo. Diferentemente do psoas, não cruza a coluna, o que o torna um flexor puro de quadril, sem influência direta sobre a lordose lombar. O tendão comum do iliopsoas passa sobre a eminência iliopúbica, onde pode produzir o quadril em ressalto interno, com estalido audível na extensão a partir da flexão.",
+        "Exemplo de exercício": "Elevação de joelho em posição sentada, que isola melhor o ilíaco ao neutralizar a coluna lombar, em contexto didático.",
+        "Palpação básica": "Palpável na fossa ilíaca interna, logo medialmente à crista ilíaca, com palpação profunda e delicada e a pessoa em decúbito dorsal com os joelhos fletidos."
+      },
+      "related": ["osso-do-quadril", "femur", "coxofemoral", "psoas-maior", "nervo-femoral", "ligamento-inguinal", "sacroiliaca", "pectineo"]
+    },
+    {
+      "id": "piriforme",
+      "fields": {
+        "Grupo muscular": "Rotadores laterais profundos do quadril.",
+        "Plano e eixo": "Rotação lateral no plano transverso e eixo vertical; abdução no plano frontal quando o quadril está fletido a 90°.",
+        "Sinergistas": "Obturadores, gêmeos, quadrado femoral e glúteo máximo na rotação lateral.",
+        "Antagonistas": "Glúteo mínimo, fibras anteriores do glúteo médio e tensor da fáscia lata na rotação medial.",
+        "Observação funcional": "É o único músculo que sai da pelve pelo forame isquiático maior e serve de referência para todas as estruturas dessa região: quase tudo passa abaixo dele. Sua ação inverte conforme a posição: com o quadril estendido roda lateralmente; com o quadril fletido acima de 60° a 90°, passa a rodar medialmente e a abduzir. O nervo ciático passa abaixo dele na maioria das pessoas, mas em cerca de 15% o atravessa ou passa por cima, variação ligada à síndrome do piriforme.",
+        "Exemplo de exercício": "Rotação lateral resistida do quadril em decúbito ventral e alongamento em flexão com adução e rotação medial, em contexto didático.",
+        "Palpação básica": "Palpável na região glútea profunda, na linha entre a espinha ilíaca póstero-superior e o trocanter maior, no ponto médio, com a pessoa em decúbito ventral."
+      },
+      "related": ["sacro", "osso-do-quadril", "femur", "coxofemoral", "nervo-ciatico", "obturador-interno", "gemeo-superior", "gemeo-inferior", "quadrado-femoral", "gluteo-maximo", "nervo-pudendo"]
+    }
+  ]
+}

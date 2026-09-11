@@ -1,0 +1,174 @@
+{
+  "patches": [
+    {
+      "id": "nervo-cutaneo-lateral-da-coxa",
+      "summary": "Nervo sensitivo que passa sob o ligamento inguinal junto à espinha ilíaca; é o da meralgia parestésica.",
+      "fields": {
+        "Raízes": "L2 e L3.",
+        "Origem": "Plexo lombar, emergindo na borda lateral do músculo psoas maior.",
+        "Trajeto": "Cruza obliquamente o músculo ilíaco em direção à espinha ilíaca ântero-superior e passa sob o ligamento inguinal, num túnel estreito, antes de se tornar subcutâneo na coxa.",
+        "Inerva": "Não tem função motora.",
+        "Sensibilidade": "Pele da face lateral e ântero-lateral da coxa, do quadril até perto do joelho.",
+        "Função": "Sensibilidade exclusiva de uma faixa lateral da coxa.",
+        "Local de compressão": "Na passagem sob o ligamento inguinal, junto à espinha ilíaca ântero-superior. Favorecem a compressão cintos apertados, calças justas, coldres, obesidade, gestação e posturas mantidas em flexão do quadril.",
+        "Sinal clínico": "Meralgia parestésica: queimação, formigamento e dormência na face lateral da coxa, sem qualquer fraqueza e sem alteração de reflexos. Piora ao ficar de pé ou andar e melhora ao sentar com o quadril fletido.",
+        "Na prática": "A ausência de déficit motor é o que separa este quadro de uma radiculopatia L2-L3. Muitas vezes o tratamento começa por trocar a roupa e o cinto."
+      },
+      "related": ["osso-do-quadril", "psoas-maior", "iliaco", "coxofemoral", "nervo-femoral", "nervo-genitofemoral"],
+      "aliases": ["meralgia parestésica", "cutâneo femoral lateral"]
+    },
+    {
+      "id": "nervo-cutaneo-posterior-da-coxa",
+      "summary": "Nervo sensitivo do plexo sacral para a face posterior da coxa e a prega glútea.",
+      "fields": {
+        "Raízes": "S1, S2 e S3.",
+        "Origem": "Plexo sacral.",
+        "Trajeto": "Sai da pelve pelo forame isquiático maior, abaixo do músculo piriforme, medialmente ao nervo ciático. Desce sob o glúteo máximo e depois profundamente à fáscia lata, tornando-se superficial na fossa poplítea.",
+        "Inerva": "Não tem função motora.",
+        "Sensibilidade": "Pele da face posterior da coxa até a fossa poplítea, parte inferior da região glútea pelos ramos clúneos inferiores e, pelos ramos perineais, parte da região perineal e da face medial proximal da coxa.",
+        "Função": "Sensibilidade exclusiva de toda a face posterior da coxa.",
+        "Local de compressão": "No espaço glúteo profundo, junto ao piriforme e ao ciático, nas chamadas síndromes do glúteo profundo, e por pressão prolongada ao sentar.",
+        "Sinal clínico": "Dormência ou queimação na face posterior da coxa, sem fraqueza. Seu envolvimento junto com dor ciática sugere compressão proximal, na saída pélvica.",
+        "Na prática": "Ajuda a localizar o problema: dor posterior da coxa com alteração de sensibilidade que sobe até a prega glútea aponta para a região glútea profunda, não para o joelho."
+      },
+      "related": ["nervo-ciatico", "piriforme", "gluteo-maximo", "sacro", "ligamento-sacrotuberal", "nervo-pudendo"],
+      "aliases": ["cutâneo femoral posterior", "clúneos inferiores"]
+    },
+    {
+      "id": "nervo-safeno",
+      "summary": "Maior ramo sensitivo do femoral; desce pelo canal dos adutores e acompanha a veia safena magna até o pé.",
+      "fields": {
+        "Raízes": "L3 e L4.",
+        "Origem": "Maior ramo cutâneo do nervo femoral.",
+        "Trajeto": "Desce dentro do canal dos adutores, ao lado da artéria femoral, mas não atravessa o hiato dos adutores: perfura a fáscia entre o sartório e o grácil, na face medial do joelho, e desce acompanhando a veia safena magna até o maléolo medial e a borda medial do pé.",
+        "Inerva": "Não tem função motora.",
+        "Sensibilidade": "Face medial do joelho, pelo ramo infrapatelar, e face ântero-medial da perna e do tornozelo até a borda medial do pé.",
+        "Função": "Sensibilidade exclusiva do lado medial da perna. É o único ramo do nervo femoral que passa do joelho para baixo.",
+        "Local de compressão": "No canal dos adutores, onde perfura a fáscia, e na face medial do joelho.",
+        "Sinal clínico": "Dor ou dormência medial na perna sem fraqueza. Dor persistente na face medial do joelho após artroscopia ou reconstrução de ligamento cruzado costuma ser lesão do ramo infrapatelar.",
+        "Na prática": "É o nervo que explica dor residual na face medial do joelho no pós-operatório e o bloqueio do canal dos adutores, muito usado na analgesia da artroplastia de joelho justamente por poupar a força do quadríceps."
+      },
+      "related": ["nervo-femoral", "sartorio", "gracil", "adutor-longo", "joelho", "tibia", "adutor-magno"],
+      "aliases": ["safeno", "ramo infrapatelar"]
+    },
+    {
+      "id": "nervo-sural",
+      "summary": "Nervo sensitivo formado por ramos do tibial e do fibular comum; doador clássico de enxerto e local de biópsia.",
+      "fields": {
+        "Raízes": "S1 e S2.",
+        "Origem": "Formado pela união do nervo cutâneo sural medial, ramo do tibial, com o ramo comunicante fibular, vindo do nervo fibular comum. Esse padrão varia bastante entre pessoas.",
+        "Trajeto": "Desce na linha média posterior da perna, entre as cabeças do gastrocnêmio, perfura a fáscia no terço médio e passa a acompanhar a veia safena parva. Contorna por trás do maléolo lateral e segue pela borda lateral do pé.",
+        "Inerva": "Não tem função motora.",
+        "Sensibilidade": "Face póstero-lateral do terço distal da perna, região retromaleolar lateral, borda lateral do pé e dedo mínimo.",
+        "Função": "Sensibilidade exclusiva da borda lateral do pé e do tornozelo.",
+        "Local de compressão": "Atrás do maléolo lateral, por botas altas e imobilizações, e em cirurgias do tendão calcâneo por via lateral.",
+        "Sinal clínico": "Dormência na borda lateral do pé. Sinal de Tinel positivo atrás do maléolo lateral.",
+        "Na prática": "É o nervo de eleição para biópsia diagnóstica nas neuropatias periféricas e para enxerto em reconstruções nervosas, porque sua perda deixa apenas uma pequena área dormente na borda do pé."
+      },
+      "related": ["nervo-tibial", "nervo-fibular-comum", "gastrocnemio", "tendao-calcaneo", "calcaneo", "fibula"],
+      "aliases": ["sural", "cutâneo sural medial"]
+    },
+    {
+      "id": "nervo-plantar-medial",
+      "summary": "Maior ramo terminal do tibial na planta do pé; é o análogo plantar do nervo mediano.",
+      "fields": {
+        "Raízes": "S1 e S2, pelo nervo tibial.",
+        "Origem": "Ramo terminal maior do nervo tibial, formado sob o retináculo dos flexores, no túnel do tarso.",
+        "Trajeto": "Passa profundamente ao abdutor do hálux e segue para a frente entre o abdutor do hálux e o flexor curto dos dedos, dividindo-se em nervos digitais plantares.",
+        "Inerva": "Abdutor do hálux, flexor curto dos dedos, flexor curto do hálux e primeiro lumbrical.",
+        "Sensibilidade": "Pele dos três dedos e meio mediais da planta, do hálux à metade medial do quarto dedo, e a área plantar medial correspondente.",
+        "Função": "Comanda a musculatura intrínseca medial do pé, que sustenta o arco na propulsão, e a sensibilidade da parte medial da planta.",
+        "Local de compressão": "No túnel do tarso e, mais distalmente, na passagem sob o abdutor do hálux, quadro chamado de pé de corredor (jogger's foot).",
+        "Sinal clínico": "Queimação e dormência na planta medial e nos três primeiros dedos, com sinal de Tinel positivo atrás do maléolo medial.",
+        "Na prática": "É o equivalente do nervo mediano na mão, tanto na distribuição motora quanto na sensitiva: guardar esse paralelo facilita muito a memorização."
+      },
+      "related": ["nervo-tibial", "calcaneo", "talus", "flexor-longo-do-halux", "nervo-plantar-lateral", "metatarsais"],
+      "aliases": ["plantar medial", "jogger's foot"]
+    },
+    {
+      "id": "nervo-plantar-lateral",
+      "summary": "Ramo terminal do tibial que comanda quase toda a musculatura intrínseca do pé; análogo do nervo ulnar.",
+      "fields": {
+        "Raízes": "S1 e S2, pelo nervo tibial.",
+        "Origem": "Ramo terminal menor do nervo tibial, formado no túnel do tarso.",
+        "Trajeto": "Segue obliquamente para a frente e lateralmente, entre o quadrado plantar e o flexor curto dos dedos, e divide-se em ramos superficial e profundo na base do quinto metatarsal.",
+        "Inerva": "Quadrado plantar, abdutor do dedo mínimo, flexor curto do dedo mínimo, adutor do hálux, todos os interósseos e o segundo, terceiro e quarto lumbricais.",
+        "Sensibilidade": "Pele do dedo mínimo e da metade lateral do quarto dedo, com a área plantar lateral correspondente.",
+        "Função": "Comanda a maior parte dos músculos intrínsecos do pé, responsáveis pelo controle fino do apoio e pela sustentação ativa dos arcos.",
+        "Local de compressão": "No túnel do tarso e no primeiro ramo, que passa entre o abdutor do hálux e o quadrado plantar, conhecido como nervo de Baxter.",
+        "Sinal clínico": "Dor no calcanhar medial que não melhora com tratamento de fascite plantar, às vezes com atrofia do abdutor do dedo mínimo, sugere compressão do nervo de Baxter.",
+        "Na prática": "É o análogo do nervo ulnar na mão. Quando uma dor de calcanhar resiste ao tratamento convencional, vale lembrar do primeiro ramo deste nervo."
+      },
+      "related": ["nervo-tibial", "calcaneo", "nervo-plantar-medial", "metatarsais", "falanges-do-pe", "cuboide"],
+      "aliases": ["plantar lateral", "nervo de Baxter"]
+    },
+    {
+      "id": "nervo-pudendo",
+      "summary": "Nervo principal do períneo; comanda os esfíncteres e o assoalho pélvico, base da fisioterapia pélvica.",
+      "fields": {
+        "Raízes": "S2, S3 e S4. A regra clássica é que S2, 3 e 4 mantêm o assoalho no lugar.",
+        "Origem": "Plexo sacral, na face anterior do sacro.",
+        "Trajeto": "Sai da pelve pelo forame isquiático maior, abaixo do músculo piriforme, contorna a espinha isquiática passando entre os ligamentos sacroespinal e sacrotuberal, e entra de novo na pelve pelo forame isquiático menor. Segue então dentro do canal pudendo, também chamado canal de Alcock, na parede lateral da fossa isquioanal.",
+        "Inerva": "Esfíncter anal externo, esfíncter uretral externo, músculos do assoalho pélvico, incluindo levantador do ânus, e músculos superficiais do períneo.",
+        "Sensibilidade": "Pele do períneo, região perianal e genitália externa.",
+        "Função": "Controla a continência urinária e fecal, participa da função sexual e fornece a sensibilidade de todo o períneo.",
+        "Local de compressão": "Na pinça entre os ligamentos sacroespinal e sacrotuberal, ao contornar a espinha isquiática, e dentro do canal de Alcock. Ciclismo prolongado, parto vaginal e cirurgias pélvicas são fatores conhecidos.",
+        "Sinal clínico": "Neuralgia do pudendo: dor em queimação no períneo que piora ao sentar e melhora ao deitar ou ao sentar em vaso sanitário, sem dor noturna que acorde a pessoa. Pode vir com incontinência e disfunção sexual.",
+        "Na prática": "É o nervo central da fisioterapia pélvica. Sua relação com a espinha isquiática explica o bloqueio pudendo obstétrico e o exame interno em que se palpa a espinha para localizar o ponto doloroso."
+      },
+      "related": ["sacro", "ligamento-sacroespinal", "ligamento-sacrotuberal", "osso-do-quadril", "piriforme", "coccix", "nervo-cutaneo-posterior-da-coxa"],
+      "aliases": ["pudendo", "canal de Alcock", "neuralgia do pudendo"]
+    },
+    {
+      "id": "nervo-ilioinguinal",
+      "summary": "Nervo de L1 que percorre a parede abdominal e o canal inguinal; está em risco nas cirurgias de hérnia.",
+      "fields": {
+        "Raízes": "L1, com contribuição frequente de T12.",
+        "Origem": "Plexo lombar, emergindo na borda lateral do músculo psoas maior, abaixo do nervo ílio-hipogástrico.",
+        "Trajeto": "Cruza o quadrado lombar e o ilíaco, perfura o transverso do abdome e depois o oblíquo interno, percorre o canal inguinal e sai pelo anel inguinal superficial.",
+        "Inerva": "Ramos motores para as porções inferiores do transverso do abdome e do oblíquo interno, que participam do mecanismo de fechamento do canal inguinal.",
+        "Sensibilidade": "Pele da raiz da coxa, na sua face medial, e da região genital: escroto no homem e grande lábio na mulher.",
+        "Função": "Sensibilidade inguinal e genital, com participação motora na parede abdominal inferior.",
+        "Local de compressão": "Durante sua passagem pela parede abdominal e pelo canal inguinal. Causa clássica é a herniorrafia, com lesão direta ou aprisionamento na tela ou no ponto cirúrgico.",
+        "Sinal clínico": "Dor em queimação na virilha irradiando para a região genital, com piora na extensão do quadril e alívio na flexão. É a principal causa de dor inguinal crônica pós-operatória.",
+        "Na prática": "Toda dor inguinal persistente depois de cirurgia de hérnia deve considerar este nervo, junto com o ílio-hipogástrico e o ramo genital do genitofemoral."
+      },
+      "related": ["osso-do-quadril", "obliquo-interno", "transverso-do-abdomen", "quadrado-lombar", "nervo-ilio-hipogastrico", "nervo-genitofemoral", "psoas-maior"],
+      "aliases": ["ilioinguinal", "dor inguinal pós-herniorrafia"]
+    },
+    {
+      "id": "nervo-ilio-hipogastrico",
+      "summary": "Primeiro ramo do plexo lombar; inerva a parede abdominal inferior e a pele suprapúbica e glútea lateral.",
+      "fields": {
+        "Raízes": "L1, com contribuição frequente de T12.",
+        "Origem": "Primeiro ramo do plexo lombar, emergindo na borda lateral do psoas maior.",
+        "Trajeto": "Cruza a face anterior do quadrado lombar e do ilíaco, perfura o transverso do abdome perto da crista ilíaca e segue entre o transverso e o oblíquo interno, dividindo-se em ramos cutâneos lateral e anterior.",
+        "Inerva": "Porções inferiores do transverso do abdome e do oblíquo interno.",
+        "Sensibilidade": "Pele da região glútea lateral, pelo ramo cutâneo lateral, e pele suprapúbica, pelo ramo cutâneo anterior.",
+        "Função": "Contribui para a contração da parede abdominal inferior e fornece sensibilidade suprapúbica e glútea lateral.",
+        "Local de compressão": "Onde perfura o transverso do abdome, por incisões abdominais baixas, como a de Pfannenstiel, e por trocartes de laparoscopia.",
+        "Sinal clínico": "Dor e dormência na região suprapúbica e na lateral do quadril após cirurgia abdominal baixa.",
+        "Na prática": "Sua proximidade com o ilioinguinal faz com que os dois sejam bloqueados juntos, guiados por ultrassom, no plano entre o transverso e o oblíquo interno."
+      },
+      "related": ["osso-do-quadril", "transverso-do-abdomen", "obliquo-interno", "quadrado-lombar", "nervo-ilioinguinal", "psoas-maior"],
+      "aliases": ["ílio-hipogástrico", "iliohipogástrico"]
+    },
+    {
+      "id": "nervo-genitofemoral",
+      "summary": "Atravessa o psoas e se divide em ramo genital, do reflexo cremastérico, e ramo femoral.",
+      "fields": {
+        "Raízes": "L1 e L2.",
+        "Origem": "Plexo lombar, dentro da substância do músculo psoas maior.",
+        "Trajeto": "Perfura a face anterior do psoas maior, desce sobre ele coberto pelo peritônio e divide-se acima do ligamento inguinal em ramo genital, que entra no canal inguinal pelo anel profundo, e ramo femoral, que passa sob o ligamento inguinal junto com a artéria femoral.",
+        "Inerva": "Músculo cremaster, pelo ramo genital.",
+        "Sensibilidade": "Ramo genital: escroto e parte da face medial da coxa no homem, região do monte púbico e grande lábio na mulher. Ramo femoral: pele do trígono femoral, logo abaixo do ligamento inguinal.",
+        "Função": "Sensibilidade da virilha e do trígono femoral; controle do músculo cremaster.",
+        "Local de compressão": "Dentro do psoas, em hematomas e abscessos do músculo, e nas cirurgias inguinais e pélvicas.",
+        "Sinal clínico": "Perda do reflexo cremastérico, que é a elevação do testículo ao estimular a face medial da coxa, e dormência na virilha. Dor que piora na extensão do quadril.",
+        "Na prática": "É o único dos três nervos da virilha que atravessa o psoas, o que o torna vulnerável em hematomas do psoas, situação a se lembrar em pessoas anticoaguladas com dor inguinal e quadril em flexão antálgica."
+      },
+      "related": ["psoas-maior", "osso-do-quadril", "vertebras-lombares", "nervo-ilioinguinal", "nervo-cutaneo-lateral-da-coxa", "nervo-femoral"],
+      "aliases": ["genitofemoral", "reflexo cremastérico"]
+    }
+  ]
+}

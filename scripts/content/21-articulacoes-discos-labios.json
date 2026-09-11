@@ -1,0 +1,515 @@
+{
+  "new": [
+    {
+      "id": "disco-da-atm",
+      "name": "Disco articular da ATM",
+      "english": "articular disc of temporomandibular joint",
+      "kind": "articulacoes",
+      "region": "Cabeça e pescoço",
+      "depth": "profunda",
+      "summary": "Fibrocartilagem bicôncava que divide a ATM em dois compartimentos; seu deslocamento causa o estalido articular.",
+      "fields": {
+        "Classificação": "Disco fibrocartilaginoso intra-articular, sem vasos nem nervos na porção central.",
+        "Superfícies articulares": "Separa completamente a articulação em dois compartimentos: o superior, entre o disco e a fossa mandibular do temporal, onde ocorre a translação; e o inferior, entre o disco e a cabeça da mandíbula, onde ocorre a rotação.",
+        "Movimentos": "Acompanha a cabeça da mandíbula durante a abertura da boca. Nos primeiros 20 a 25 mm o movimento é sobretudo de rotação no compartimento inferior; depois disso predomina a translação no compartimento superior, com o disco e o côndilo deslizando juntos para a frente, até a eminência articular.",
+        "Estabilizadores": "Ligamentos discais medial e lateral, que o prendem ao côndilo; lâmina retrodiscal superior, rica em elastina, que o traciona de volta; e a cabeça superior do pterigóideo lateral, que se insere na sua borda anterior.",
+        "Na prática": "É a peça central da disfunção temporomandibular. Quando o disco se desloca para a frente e volta ao lugar durante a abertura, produz o estalido clássico, chamado deslocamento com redução. Quando não volta, a boca trava com abertura limitada, o deslocamento sem redução.",
+        "Função": "Melhora a congruência entre duas superfícies incompatíveis e distribui a carga na articulação. Como é bicôncavo, acomoda o côndilo em qualquer posição do movimento.",
+        "Teste clínico": "Medida da abertura bucal, observação da trajetória do mento em espelho e ausculta ou palpação dos estalidos durante a abertura e o fechamento.",
+        "Localização": "Cabeça e pescoço"
+      },
+      "related": [
+        "temporomandibular",
+        "mandibula",
+        "temporal",
+        "pterigoideo-lateral",
+        "masseter",
+        "musculo-temporal",
+        "pterigoideo-medial",
+        "ligamento-temporomandibular-lateral"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "disco da ATM",
+        "menisco da ATM",
+        "deslocamento do disco",
+        "estalido"
+      ],
+      "source_objects": [
+        "Articular disc of temporomandibular joint.l",
+        "Articular disc of temporomandibular joint.r"
+      ]
+    },
+    {
+      "id": "labio-glenoidal",
+      "name": "Lábio glenoidal",
+      "english": "glenoid labrum",
+      "kind": "articulacoes",
+      "region": "Ombro",
+      "depth": "profunda",
+      "summary": "Anel fibrocartilaginoso que aprofunda a cavidade glenoidal; sede das lesões de Bankart e SLAP.",
+      "fields": {
+        "Classificação": "Anel fibrocartilaginoso periférico, fixado à margem da cavidade glenoidal da escápula.",
+        "Superfícies articulares": "Circunda a margem da cavidade glenoidal, aumentando sua profundidade em cerca de 50% e sua área de contato com a cabeça do úmero.",
+        "Movimentos": "Não se move por si só. Acompanha as mudanças de tensão dos ligamentos glenoumerais, que nele se ancoram, e do tendão da cabeça longa do bíceps, que se continua com sua porção superior.",
+        "Estabilizadores": "Ligamentos glenoumerais superior, médio e inferior, cápsula articular e tendão da cabeça longa do bíceps braquial.",
+        "Na prática": "É a estrutura central da instabilidade do ombro. Sua avulsão ântero-inferior é a lesão de Bankart, base da luxação anterior recidivante. Sua lesão superior, envolvendo a inserção do bíceps, é a lesão SLAP, comum em atletas de arremesso.",
+        "Função": "Aprofunda a rasa cavidade glenoidal, aumenta a congruência com a cabeça umeral e serve de ancoragem aos ligamentos glenoumerais. Também vedam a articulação, contribuindo para a pressão negativa intra-articular.",
+        "Teste clínico": "Teste de apreensão e recolocação para lesões ântero-inferiores; teste de O'Brien e de compressão ativa para lesões superiores.",
+        "Localização": "Ombro"
+      },
+      "related": [
+        "glenoumeral",
+        "escapula",
+        "umero",
+        "biceps-braquial",
+        "ligamento-glenoumeral-inferior",
+        "ligamento-glenoumeral-medio",
+        "ligamento-glenoumeral-superior",
+        "bainha-intertubercular"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "lábrum glenoidal",
+        "Bankart",
+        "SLAP",
+        "glenoid labrum"
+      ],
+      "source_objects": [
+        "Glenoid labrum.l",
+        "Glenoid labrum.r"
+      ]
+    },
+    {
+      "id": "labio-acetabular",
+      "name": "Lábio acetabular",
+      "english": "acetabular labrum",
+      "kind": "articulacoes",
+      "region": "Quadril",
+      "depth": "profunda",
+      "summary": "Anel fibrocartilaginoso que veda o quadril e cria a pressão negativa que o estabiliza.",
+      "fields": {
+        "Classificação": "Anel fibrocartilaginoso fixado à margem do acetábulo, completado inferiormente pelo ligamento transverso do acetábulo.",
+        "Superfícies articulares": "Circunda a margem do acetábulo, aumentando sua profundidade e envolvendo a cabeça do fêmur além do seu equador.",
+        "Movimentos": "Não se move isoladamente. Deforma-se e desliza discretamente sobre a cabeça femoral conforme o quadril muda de posição.",
+        "Estabilizadores": "Ligamento transverso do acetábulo, cápsula articular e os ligamentos iliofemoral, pubofemoral e isquiofemoral.",
+        "Na prática": "Sua lesão é causa importante de dor inguinal em adultos jovens e atletas. O sinal do C, em que a pessoa envolve o quadril com a mão em forma de C para indicar a dor, é característico.",
+        "Função": "Aumenta a área de contato e a estabilidade da articulação. Sua função mais importante é a vedação: cria um selo hidráulico que mantém o líquido sinovial preso dentro da articulação, gerando pressão negativa e distribuindo a carga. Quando esse selo falha, a cartilagem passa a suportar picos de pressão muito maiores.",
+        "Teste clínico": "Teste FADIR, com flexão, adução e rotação interna, e teste FABER; ambos avaliam impacto femoroacetabular e lesão labral.",
+        "Localização": "Quadril"
+      },
+      "related": [
+        "coxofemoral",
+        "osso-do-quadril",
+        "femur",
+        "ligamento-transverso-do-acetabulo",
+        "ligamento-iliofemoral",
+        "ligamento-isquiofemoral",
+        "ligamento-pubofemoral",
+        "zona-orbicular"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "lábrum acetabular",
+        "acetabular labrum",
+        "impacto femoroacetabular",
+        "sinal do C"
+      ],
+      "source_objects": [
+        "Acetabular labrum.l",
+        "Acetabular labrum.r"
+      ]
+    },
+    {
+      "id": "nucleo-pulposo",
+      "name": "Núcleo pulposo",
+      "english": "nucleus pulposus",
+      "kind": "articulacoes",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Centro gelatinoso do disco intervertebral; distribui a carga e é o material que migra na hérnia de disco.",
+      "fields": {
+        "Classificação": "Núcleo gelatinoso central do disco intervertebral, rodeado pelo ânulo fibroso. Presente em todos os discos, de C2-C3 a L5-S1.",
+        "Superfícies articulares": "Ocupa a porção central do disco, entre as placas terminais cartilaginosas dos corpos vertebrais vizinhos, mais próximo da borda posterior do que da anterior.",
+        "Movimentos": "Comporta-se como uma esfera de líquido sob pressão: ao fletir a coluna, é empurrado para trás; ao estender, para a frente. Esse deslocamento permite que as vértebras rolem umas sobre as outras mantendo a distribuição de carga.",
+        "Estabilizadores": "Ânulo fibroso, com suas lamelas concêntricas de colágeno em direções alternadas, placas terminais cartilaginosas e ligamentos longitudinais anterior e posterior.",
+        "Na prática": "Na hérnia de disco, o material do núcleo atravessa fissuras do ânulo. Como o ligamento longitudinal posterior é estreito nas laterais, a migração costuma ser póstero-lateral, exatamente onde a raiz nervosa está saindo.",
+        "Função": "É formado por um gel rico em proteoglicanos que retém água e transforma a carga axial em pressão distribuída em todas as direções, que o ânulo fibroso contém. É o que permite à coluna suportar compressão e ao mesmo tempo se mover.",
+        "Teste clínico": "Testes de tensão neural, como elevação da perna estendida na lombar e teste de Spurling na cervical, avaliam a repercussão radicular; o disco em si é avaliado por ressonância.",
+        "Estudo 3D": "O modelo mostra os 23 núcleos pulposos, de C2-C3 a L5-S1. Comparar a altura e a posição de cada um ao longo da coluna ajuda a entender por que os níveis L4-L5 e L5-S1 são os mais sobrecarregados.",
+        "Localização": "Coluna vertebral"
+      },
+      "related": [
+        "intervertebrais",
+        "vertebras-cervicais",
+        "vertebras-toracicas",
+        "vertebras-lombares",
+        "sacro",
+        "ligamento-longitudinal-posterior",
+        "ligamento-longitudinal-anterior",
+        "ligamentos-amarelos"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "nucleus pulposus",
+        "hérnia de disco",
+        "disco intervertebral"
+      ],
+      "source_objects": [
+        "Nucleus pulposus C2-C3",
+        "Nucleus pulposus C3-C4",
+        "Nucleus pulposus C4-C5",
+        "Nucleus pulposus C5-C6",
+        "Nucleus pulposus C6-C7",
+        "Nucleus pulposus C7-T1",
+        "Nucleus pulposus T1-T2",
+        "Nucleus pulposus T2-T3",
+        "Nucleus pulposus T3-T4",
+        "Nucleus pulposus T4-T5",
+        "Nucleus pulposus T5-T6",
+        "Nucleus pulposus T6-T7",
+        "Nucleus pulposus T7-T8",
+        "Nucleus pulposus T8-T9",
+        "Nucleus pulposus T9-T10",
+        "Nucleus pulposus T10-T11",
+        "Nucleus pulposus T11-T12",
+        "Nucleus pulposus T12-L1",
+        "Nucleus pulposus L1-L2",
+        "Nucleus pulposus L2-L3",
+        "Nucleus pulposus L3-L4",
+        "Nucleus pulposus L4-L5",
+        "Nucleus pulposus L5-S1"
+      ]
+    },
+    {
+      "id": "tibiofibular-proximal",
+      "name": "Tibiofibular proximal",
+      "english": "superior tibiofibular joint",
+      "kind": "articulacoes",
+      "region": "Joelho",
+      "depth": "profunda",
+      "summary": "Pequena articulação sinovial entre tíbia e fíbula, vizinha do nervo fibular comum.",
+      "fields": {
+        "Classificação": "Articulação sinovial plana, entre a face articular fibular do côndilo lateral da tíbia e a face articular da cabeça da fíbula.",
+        "Superfícies articulares": "Faceta plana na face póstero-lateral do côndilo lateral da tíbia e faceta correspondente na cabeça da fíbula.",
+        "Movimentos": "Pequenos deslizamentos e rotação da fíbula. Na dorsiflexão do tornozelo, a fíbula sobe e gira lateralmente; na flexão plantar, faz o inverso. Essa mobilidade acompanha o alargamento da pinça maleolar.",
+        "Estabilizadores": "Ligamentos anterior e posterior da cabeça da fíbula, cápsula articular, tendão do bíceps femoral e ligamento colateral fibular, que reforçam a região.",
+        "Na prática": "Sua restrição limita a dorsiflexão do tornozelo, mesmo com a articulação talocrural livre. É uma das causas frequentemente esquecidas de dorsiflexão limitada.",
+        "Função": "Dissipa as forças de torção geradas no tornozelo e permite que a fíbula acompanhe os movimentos do pé. Também transmite parte da carga axial da perna.",
+        "Teste clínico": "Mobilização ântero-posterior da cabeça da fíbula comparando com o lado oposto; avaliar sempre o nervo fibular comum, que contorna o colo da fíbula logo abaixo.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "tibia",
+        "fibula",
+        "joelho",
+        "nervo-fibular-comum",
+        "biceps-femoral",
+        "ligamento-colateral-fibular",
+        "talocrural",
+        "ligamento-tibiofibular-anterior"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "tibiofibular superior",
+        "cabeça da fíbula"
+      ],
+      "source_objects": [
+        "Articular capsule of superior tibiofibular joint.l",
+        "Articular capsule of superior tibiofibular joint.r"
+      ]
+    },
+    {
+      "id": "coxim-adiposo-infrapatelar",
+      "name": "Coxim adiposo infrapatelar",
+      "english": "infrapatellar fat pad",
+      "kind": "articulacoes",
+      "region": "Joelho",
+      "depth": "profunda",
+      "summary": "Corpo adiposo de Hoffa; estrutura ricamente inervada e fonte importante de dor anterior no joelho.",
+      "fields": {
+        "Classificação": "Corpo adiposo intracapsular, mas extrassinovial, situado atrás do ligamento patelar.",
+        "Superfícies articulares": "Preenche o espaço entre o ligamento patelar, à frente, a tíbia, abaixo, e os côndilos femorais, atrás.",
+        "Movimentos": "Deforma-se a cada flexão e extensão, ocupando o espaço que muda de volume entre as superfícies articulares. Na extensão completa, é comprimido entre a patela e a tíbia.",
+        "Estabilizadores": "Ligamento patelar, retináculos patelares e ligamento mucoso, que o liga à incisura intercondilar.",
+        "Na prática": "É uma das estruturas mais inervadas do joelho e uma fonte muito subestimada de dor anterior. Seu impacto entre patela e tíbia na extensão máxima produz dor que piora ao ficar em pé com o joelho travado, e não ao agachar.",
+        "Função": "Amortece e distribui carga na região anterior do joelho, lubrifica as superfícies e ocupa espaços variáveis durante o movimento. Tem papel também na produção de mediadores inflamatórios.",
+        "Teste clínico": "Teste de Hoffa: compressão do coxim de cada lado do ligamento patelar com o joelho fletido, seguida de extensão passiva, reproduz a dor.",
+        "Localização": "Joelho"
+      },
+      "related": [
+        "joelho",
+        "patela",
+        "ligamento-patelar",
+        "tibia",
+        "femur",
+        "menisco-medial",
+        "menisco-lateral"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "corpo adiposo de Hoffa",
+        "gordura de Hoffa",
+        "Hoffa",
+        "dor anterior do joelho"
+      ],
+      "source_objects": [
+        "Infrapatellar fat pad.l",
+        "Infrapatellar fat pad.r"
+      ]
+    },
+    {
+      "id": "zona-orbicular",
+      "name": "Zona orbicular",
+      "english": "zona orbicularis",
+      "kind": "articulacoes",
+      "region": "Quadril",
+      "depth": "profunda",
+      "summary": "Anel de fibras circulares da cápsula do quadril que abraça o colo do fêmur como uma coleira.",
+      "fields": {
+        "Classificação": "Espessamento circular das fibras profundas da cápsula articular do quadril, sem fixação óssea direta.",
+        "Superfícies articulares": "Circunda o colo do fêmur na sua porção mais estreita, formando um anel completo dentro da cápsula.",
+        "Movimentos": "Não se move isoladamente; muda de tensão conforme a posição do quadril, ficando mais tenso na distração do membro.",
+        "Estabilizadores": "É parte da própria cápsula, reforçada externamente pelos ligamentos iliofemoral, pubofemoral e isquiofemoral.",
+        "Na prática": "É reconhecida como uma das principais barreiras à distração do quadril, o que tem consequência direta na artroscopia, em que a tração precisa vencê-la para abrir o espaço articular.",
+        "Função": "Funciona como uma coleira que abraça o colo femoral e resiste à tração longitudinal do membro, impedindo que a cabeça do fêmur se afaste do acetábulo. Complementa a ação do lábio acetabular na estabilidade.",
+        "Teste clínico": "Não tem teste isolado; sua resistência é percebida durante a tração axial do quadril em decúbito dorsal.",
+        "Localização": "Quadril"
+      },
+      "related": [
+        "coxofemoral",
+        "femur",
+        "osso-do-quadril",
+        "labio-acetabular",
+        "ligamento-iliofemoral",
+        "ligamento-isquiofemoral",
+        "ligamento-pubofemoral"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "zona orbicularis",
+        "anel capsular do quadril"
+      ],
+      "source_objects": [
+        "Zona orbicularis.l",
+        "Zona orbicularis.r"
+      ]
+    },
+    {
+      "id": "disco-esternoclavicular",
+      "name": "Disco articular esternoclavicular",
+      "english": "articular disc of sternoclavicular joint",
+      "kind": "articulacoes",
+      "region": "Ombro",
+      "depth": "profunda",
+      "summary": "Divide a esternoclavicular em dois compartimentos e impede o deslocamento medial da clavícula.",
+      "fields": {
+        "Classificação": "Disco fibrocartilaginoso completo, que divide a articulação esternoclavicular em duas cavidades independentes.",
+        "Superfícies articulares": "Interpõe-se entre a extremidade esternal da clavícula e a incisura clavicular do manúbrio, prendendo-se acima na clavícula e abaixo na primeira cartilagem costal.",
+        "Movimentos": "Permite que os dois compartimentos se movam de forma diferente: elevação e abaixamento ocorrem sobretudo no compartimento entre o disco e o manúbrio; protração e retração, entre o disco e a clavícula.",
+        "Estabilizadores": "Ligamentos esternoclaviculares anterior e posterior, ligamento interclavicular e ligamento costoclavicular, este último o mais importante.",
+        "Na prática": "É graças a este disco que a esternoclavicular, apesar de ter superfícies muito incongruentes, quase nunca luxa. É uma das articulações mais estáveis do corpo.",
+        "Função": "Melhora a congruência entre superfícies mal encaixadas, absorve as forças transmitidas do membro superior ao esqueleto axial e impede o deslocamento medial da clavícula sobre o esterno.",
+        "Teste clínico": "Palpação da interlinha durante elevação e protração do ombro; comparar a mobilidade e a dor com o lado oposto.",
+        "Localização": "Ombro"
+      },
+      "related": [
+        "esternoclavicular",
+        "clavicula",
+        "esterno",
+        "costelas",
+        "subclavio",
+        "acromioclavicular"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "disco esternoclavicular"
+      ],
+      "source_objects": [
+        "Articular disc of sternoclavicular joint.l",
+        "Articular disc of sternoclavicular joint.r"
+      ]
+    },
+    {
+      "id": "disco-acromioclavicular",
+      "name": "Disco articular acromioclavicular",
+      "english": "articular disc of acromioclavicular joint",
+      "kind": "articulacoes",
+      "region": "Ombro",
+      "depth": "profunda",
+      "summary": "Disco incompleto e variável dentro da articulação acromioclavicular.",
+      "fields": {
+        "Classificação": "Disco fibrocartilaginoso em geral incompleto, presente na parte superior da cavidade articular acromioclavicular.",
+        "Superfícies articulares": "Interpõe-se parcialmente entre a extremidade acromial da clavícula e a face articular do acrômio.",
+        "Movimentos": "Acompanha os pequenos movimentos de deslizamento e rotação que ocorrem entre clavícula e acrômio durante a elevação do braço.",
+        "Estabilizadores": "Ligamento acromioclavicular, que dá estabilidade horizontal, e ligamentos coracoclaviculares, conoide e trapezoide, que dão estabilidade vertical.",
+        "Na prática": "Degenera precocemente, muitas vezes já a partir da segunda década de vida. Sua degeneração participa da artrose acromioclavicular, causa frequente de dor no topo do ombro em pessoas de meia-idade.",
+        "Função": "Melhora a congruência entre as duas superfícies e absorve carga. Sua presença e tamanho variam bastante entre pessoas e diminuem com a idade.",
+        "Teste clínico": "Teste de adução horizontal do ombro e palpação direta da interlinha acromioclavicular.",
+        "Localização": "Ombro"
+      },
+      "related": [
+        "acromioclavicular",
+        "clavicula",
+        "escapula",
+        "ligamento-acromioclavicular",
+        "ligamento-conoide",
+        "ligamento-trapezoide",
+        "disco-esternoclavicular"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "disco acromioclavicular",
+        "artrose acromioclavicular"
+      ],
+      "source_objects": [
+        "Articular disc of acromioclavicular joint.l",
+        "Articular disc of acromioclavicular joint.r"
+      ]
+    },
+    {
+      "id": "sacrococcigea",
+      "name": "Sacrococcígea",
+      "english": "sacrococcygeal joint",
+      "kind": "articulacoes",
+      "region": "Pelve",
+      "depth": "profunda",
+      "summary": "Sínfise entre o ápice do sacro e o cóccix; permite o movimento do cóccix no parto e ao sentar.",
+      "fields": {
+        "Classificação": "Sínfise, articulação cartilaginosa secundária, com um disco fibrocartilaginoso entre as superfícies.",
+        "Superfícies articulares": "Ápice do sacro e base do cóccix, unidos por um disco fibrocartilaginoso semelhante a um disco intervertebral.",
+        "Movimentos": "Flexão e extensão passivas do cóccix, de pequena amplitude. O cóccix se desloca para trás ao sentar e durante a defecação, e para a frente ao levantar.",
+        "Estabilizadores": "Ligamentos sacrococcígeos anterior, posterior e laterais; ligamentos sacrotuberal e sacroespinal; músculo coccígeo e levantador do ânus.",
+        "Na prática": "A coccidínia, dor no cóccix ao sentar, é frequentemente ligada a alterações de mobilidade desta articulação, seja por hipermobilidade, seja por rigidez. Pode ocorrer após queda sentada ou parto vaginal.",
+        "Função": "Permite ao cóccix se deslocar para trás, ampliando o canal de parto na fase final do nascimento e acomodando a passagem do bolo fecal. Também distribui carga ao sentar reclinado.",
+        "Teste clínico": "Avaliação da mobilidade coccígea por toque retal, realizada apenas por profissional habilitado e com consentimento; radiografia dinâmica sentado e em pé.",
+        "Localização": "Pelve"
+      },
+      "related": [
+        "sacro",
+        "coccix",
+        "sacroiliaca",
+        "ligamento-sacrotuberal",
+        "ligamento-sacroespinal",
+        "coccigeo",
+        "nervo-pudendo",
+        "pubococcigeo"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "sínfise sacrococcígea",
+        "coccidínia"
+      ],
+      "source_objects": [
+        "Sacrococcygeal symphysis"
+      ]
+    },
+    {
+      "id": "interfalangicas-do-pe",
+      "name": "Interfalângicas do pé",
+      "english": "interphalangeal joints of foot",
+      "kind": "articulacoes",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Gínglimos entre as falanges dos dedos; sua rigidez em flexão produz o dedo em martelo.",
+      "fields": {
+        "Classificação": "Articulações sinoviais do tipo gínglimo, ou dobradiça, com um único eixo de movimento. O hálux tem apenas uma; os demais dedos têm proximal e distal.",
+        "Superfícies articulares": "Cabeça da falange proximal, em forma de polia, com a base da falange seguinte.",
+        "Movimentos": "Flexão e extensão no plano sagital. A amplitude de flexão é maior nas interfalângicas proximais; a extensão além da posição neutra é pequena.",
+        "Estabilizadores": "Ligamentos colaterais, placas plantares e as expansões extensoras dorsais, que recebem lumbricais e interósseos.",
+        "Na prática": "O desequilíbrio entre os extensores longos e a musculatura intrínseca do pé produz o dedo em martelo, com flexão da interfalângica proximal, e o dedo em garra, com flexão de ambas as interfalângicas e hiperextensão da metatarsofalângica.",
+        "Função": "Permitem que os dedos se adaptem ao solo e mantenham contato durante o apoio e a propulsão, contribuindo para o equilíbrio.",
+        "Teste clínico": "Avaliação da redutibilidade passiva da deformidade: se o dedo ainda endireita passivamente, a deformidade é flexível e responde melhor ao tratamento conservador.",
+        "Localização": "Pé"
+      },
+      "related": [
+        "falanges-do-pe",
+        "metatarsofalangicas",
+        "flexor-longo-dos-dedos",
+        "extensor-longo-dos-dedos",
+        "lumbricais-do-pe",
+        "interosseos-dorsais-do-pe",
+        "flexor-curto-dos-dedos"
+      ],
+      "sources": [
+        "openstax-joints",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "IF do pé",
+        "dedo em martelo",
+        "dedo em garra"
+      ],
+      "source_objects": [
+        "Articular capsules of proximal interphalangeal joints of foot.l",
+        "Articular capsules of proximal interphalangeal joints of foot.r",
+        "Articular capsules of distal interphalangeal joints of foot.l",
+        "Articular capsules of distal interphalangeal joints of foot.r",
+        "Articular capsule of interphalangeal joint of great toe.l",
+        "Articular capsule of interphalangeal joint of great toe.r"
+      ]
+    }
+  ],
+  "patches": [
+    {
+      "id": "radioulnar-distal",
+      "summary": "Articulação em pivô entre rádio e ulna no punho; seu disco é a fibrocartilagem triangular, peça central do TFCC.",
+      "fields": {
+        "Classificação": "Disco fibrocartilaginoso triangular, peça central do complexo da fibrocartilagem triangular, conhecido pela sigla TFCC.",
+        "Superfícies articulares": "Estende-se da borda ulnar da face articular carpal do rádio até a base do processo estiloide da ulna, interpondo-se entre a cabeça da ulna e os ossos piramidal e semilunar.",
+        "Movimentos": "Permite que o rádio gire ao redor da ulna na pronação e na supinação, mantendo a congruência articular em toda a rotação. Também acompanha os movimentos do carpo no desvio ulnar.",
+        "Estabilizadores": "Ligamentos radioulnares dorsal e palmar, bainha do extensor ulnar do carpo, ligamento ulnolunato e ligamento ulnopiramidal.",
+        "Na prática": "Sua lesão é a causa mais comum de dor ulnar crônica do punho, especialmente em quem pratica esportes com raquete ou gira o antebraço sob carga.",
+        "Função": "Separa completamente a articulação radiocarpal da radioulnar distal. Transmite cerca de 20% da carga axial do punho pelo lado ulnar e estabiliza a articulação radioulnar distal em toda a rotação do antebraço.",
+        "Teste clínico": "Teste de estresse da fóvea ulnar, teste de compressão em desvio ulnar com rotação, e teste da tecla de piano para instabilidade radioulnar distal.",
+        "Localização": "Punho"
+      },
+      "related": [
+        "radioulnar-distal",
+        "radio",
+        "ulna",
+        "piramidal",
+        "semilunar",
+        "radiocarpal",
+        "ligamento-lunopiramidal-interosseo",
+        "extensor-ulnar-do-carpo"
+      ],
+      "aliases": [
+        "fibrocartilagem triangular",
+        "TFCC",
+        "disco triangular",
+        "dor ulnar do punho"
+      ]
+    }
+  ]
+}

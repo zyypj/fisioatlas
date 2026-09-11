@@ -1,0 +1,119 @@
+{
+  "new": [
+    {
+      "id": "bolsas-do-ombro",
+      "name": "Bolsas do ombro",
+      "english": "bursae of shoulder",
+      "kind": "articulacoes",
+      "region": "Ombro",
+      "depth": "profunda",
+      "summary": "A bolsa subacromial-subdeltóidea é a maior do corpo e a sede da bursite mais comum do ombro.",
+      "fields": {
+        "Classificação": "Bolsas sinoviais: sacos de parede fina com uma película de líquido sinovial, interpostos onde há atrito entre estruturas.",
+        "Superfícies articulares": "A subacromial fica entre o arco coracoacromial e o tendão do supraespinal; a subdeltóidea, entre o deltoide e o tubérculo maior. As duas são contínuas na maioria das pessoas e formam um único saco. Há ainda a subcutânea do acrômio, a subtendínea do infraespinal, a do redondo maior, a do trapézio e a coracobraquial.",
+        "Movimentos": "Deslizam durante a elevação do braço, permitindo que o tendão do supraespinal passe sob o arco coracoacromial sem atrito. Não se movem por si: são deslizadas pelas estruturas vizinhas.",
+        "Estabilizadores": "Não estabilizam; sua função é reduzir atrito. A vedação depende da integridade do manguito rotador: uma ruptura completa faz a bolsa se comunicar com a articulação.",
+        "Na prática": "A bursite subacromial raramente é isolada. Costuma acompanhar tendinopatia do manguito e alteração do ritmo escapuloumeral, e é por isso que o tratamento eficaz combina controle de carga, fortalecimento do manguito e reeducação escapular, e não apenas repouso.",
+        "Função": "Permitem o deslizamento livre entre o manguito rotador, o deltoide e o arco coracoacromial. A subacromial-subdeltóidea é a maior bolsa do corpo humano.",
+        "Teste clínico": "Testes de impacto de Neer e Hawkins-Kennedy; arco doloroso entre 60° e 120° de abdução; dor à palpação abaixo da borda anterolateral do acrômio.",
+        "Localização": "Ombro"
+      },
+      "related": ["glenoumeral", "acromioclavicular", "escapula", "umero", "supraespinal", "deltoide", "infraespinal", "redondo-maior", "trapezio", "ligamento-coracoacromial", "coracobraquial"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["bursite subacromial", "bolsa subdeltóidea", "impacto subacromial"],
+      "source_objects": ["Subacromial bursa.l", "Subacromial bursa.r", "Subdeltoid bursa.l", "Subdeltoid bursa.r", "Subcutaneous acromial bursa.l", "Subcutaneous acromial bursa.r", "Subtendinous bursa of infraspinatus muscle.l", "Subtendinous bursa of infraspinatus muscle.r", "Subtendinous bursa of teres major muscle.l", "Subtendinous bursa of teres major muscle.r", "Subtendinous bursa of trapezius muscle.l", "Subtendinous bursa of trapezius muscle.r", "Coracobrachial bursa.l", "Coracobrachial bursa.r"]
+    },
+    {
+      "id": "bolsas-do-cotovelo",
+      "name": "Bolsas do cotovelo",
+      "english": "bursae of elbow",
+      "kind": "articulacoes",
+      "region": "Cotovelo",
+      "depth": "superficial",
+      "summary": "Incluem a bolsa do olécrano, cuja inflamação forma o inchaço característico na ponta do cotovelo.",
+      "fields": {
+        "Classificação": "Bolsas sinoviais do cotovelo: a subtendínea do tríceps braquial, entre o tendão e o olécrano, e a bicipitorradial, entre o tendão do bíceps e a tuberosidade do rádio.",
+        "Superfícies articulares": "A subtendínea do tríceps fica entre o tendão do tríceps e a face posterior do olécrano. A bicipitorradial fica entre o tendão distal do bíceps e a tuberosidade do rádio, sendo comprimida durante a pronação.",
+        "Movimentos": "Deslizam durante a flexão e a extensão do cotovelo e durante a pronação e a supinação.",
+        "Estabilizadores": "Não têm função estabilizadora.",
+        "Na prática": "A bursite do olécrano forma um inchaço bem delimitado e flutuante na ponta do cotovelo, frequentemente indolor quando não infectada. É típica de quem apoia os cotovelos em superfícies duras. A bursite bicipitorradial causa dor na fossa cubital que piora na pronação resistida e é confundida com tendinopatia distal do bíceps.",
+        "Função": "Reduzem o atrito entre os tendões e as proeminências ósseas do cotovelo.",
+        "Teste clínico": "Inspeção e palpação do olécrano; para a bicipitorradial, dor na pronação resistida e à palpação profunda da fossa cubital.",
+        "Localização": "Cotovelo"
+      },
+      "related": ["cotovelo", "ulna", "radio", "umero", "triceps-braquial", "biceps-braquial", "anconeo", "radioulnar-proximal"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["bursite do olécrano", "bolsa olecraniana", "bicipitorradial"],
+      "source_objects": ["Subtendinous bursa of triceps brachii muscle.l", "Subtendinous bursa of triceps brachii muscle.r", "Bicipitoradial bursa.l", "Bicipitoradial bursa.r"]
+    },
+    {
+      "id": "bolsas-do-quadril",
+      "name": "Bolsas do quadril",
+      "english": "bursae of hip",
+      "kind": "articulacoes",
+      "region": "Quadril",
+      "depth": "profunda",
+      "summary": "Incluem as trocantéricas e a iliopectínea; envolvidas na dor lateral do quadril e no quadril em ressalto.",
+      "fields": {
+        "Classificação": "Bolsas sinoviais do quadril: trocantéricas do glúteo máximo, médio e mínimo; subcutânea trocantérica; iliopectínea; subtendínea do ilíaco; isquiáticas do glúteo máximo e do obturador interno; subtendínea do obturador interno; bolsa do piriforme; e as intermusculares glúteas.",
+        "Superfícies articulares": "As trocantéricas ficam entre os tendões glúteos e o trocanter maior. A iliopectínea fica entre o tendão do iliopsoas e a eminência iliopúbica, e comunica-se com a articulação do quadril em cerca de 15% das pessoas. As isquiáticas ficam sobre o túber isquiático.",
+        "Movimentos": "Deslizam a cada passo, durante a flexão, a extensão e a rotação do quadril.",
+        "Estabilizadores": "Não têm função estabilizadora.",
+        "Na prática": "A dor lateral do quadril era chamada de bursite trocantérica, mas hoje se sabe que a causa principal é a tendinopatia dos glúteos médio e mínimo, com a bursa inflamada apenas de forma secundária. O nome atual é síndrome dolorosa do trocanter maior, e o tratamento é fortalecimento dos abdutores, não infiltração isolada.",
+        "Função": "Reduzem o atrito entre os tendões e as proeminências ósseas do quadril e da pelve.",
+        "Teste clínico": "Dor à palpação do trocanter maior e no teste de apoio unipodal por 30 segundos; para a iliopectínea, dor inguinal na flexão resistida do quadril e ressalto audível na extensão a partir da flexão.",
+        "Localização": "Quadril"
+      },
+      "related": ["coxofemoral", "femur", "osso-do-quadril", "gluteo-maximo", "gluteo-medio", "gluteo-minimo", "psoas-maior", "iliaco", "piriforme", "obturador-interno", "trato-iliotibial", "ligamento-sacrotuberal"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["bursite trocantérica", "síndrome dolorosa do trocanter maior", "quadril em ressalto", "iliopectínea"],
+      "source_objects": ["Trochanteric bursa of gluteus maximus muscle.l", "Trochanteric bursa of gluteus maximus muscle.r", "Trochanteric bursa of gluteus medius muscle.l", "Trochanteric bursa of gluteus medius muscle.r", "Trochanteric bursa of gluteus minimus muscle.l", "Trochanteric bursa of gluteus minimus muscle.r", "Subcutaneous trochanteric bursa.l", "Subcutaneous trochanteric bursa.r", "(Iliopectineal bursa).l", "(Iliopectineal bursa).r", "Subtendinous bursa of iliacus muscle.l", "Subtendinous bursa of iliacus muscle.r", "Sciatic bursa of gluteus maximus muscle.l", "Sciatic bursa of gluteus maximus muscle.r", "Sciatic bursa of obturator internus.l", "Sciatic bursa of obturator internus.r", "Subtendinous bursa of obturator internus.l", "Subtendinous bursa of obturator internus.r", "Bursa of piriformis muscle.l", "Bursa of piriformis muscle.r", "Intermuscular gluteal bursae.l", "Intermuscular gluteal bursae.r"]
+    },
+    {
+      "id": "bolsas-do-joelho",
+      "name": "Bolsas do joelho",
+      "english": "bursae of knee",
+      "kind": "articulacoes",
+      "region": "Joelho",
+      "depth": "profunda",
+      "summary": "O joelho tem mais bolsas que qualquer outra articulação; incluem a pré-patelar e a anserina.",
+      "fields": {
+        "Classificação": "Bolsas sinoviais do joelho: suprapatelar; pré-patelares subcutânea, subfascial e subtendínea; infrapatelares subcutânea e profunda; subcutânea da tuberosidade da tíbia; anserina; subtendínea do sartório; do semimembranáceo; subtendíneas medial e lateral do gastrocnêmio; e superior e inferior do bíceps femoral.",
+        "Superfícies articulares": "A suprapatelar fica entre o fêmur e o tendão do quadríceps e é uma extensão da cavidade articular. A pré-patelar fica à frente da patela; a infrapatelar profunda, entre o ligamento patelar e a tíbia. A anserina fica sob os tendões do sartório, grácil e semitendíneo.",
+        "Movimentos": "A suprapatelar é tracionada para cima pelo músculo articular do joelho durante a extensão, o que impede que seja pinçada.",
+        "Estabilizadores": "Não têm função estabilizadora.",
+        "Na prática": "A bursite pré-patelar é o joelho da empregada, por ajoelhar-se repetidamente; a infrapatelar é o joelho do clérigo. A bursite anserina causa dor na face medial da tíbia, cerca de 5 cm abaixo da interlinha, e é frequente em mulheres, pessoas com sobrepeso e corredores. A bolsa do semimembranáceo, quando distendida, forma o cisto de Baker na fossa poplítea.",
+        "Função": "Reduzem o atrito entre os muitos tendões que cruzam o joelho e as proeminências ósseas.",
+        "Teste clínico": "Inspeção e palpação de cada bolsa; para a anserina, dor à palpação medial abaixo da interlinha, distinguindo-a da dor do menisco medial, que é na própria interlinha.",
+        "Localização": "Joelho"
+      },
+      "related": ["joelho", "patela", "femur", "tibia", "ligamento-patelar", "reto-femoral", "sartorio", "gracil", "semitendineo", "semimembranaceo", "gastrocnemio", "biceps-femoral", "coxim-adiposo-infrapatelar", "vasto-intermedio"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["bursite pré-patelar", "bursite anserina", "cisto de Baker", "joelho da empregada", "pata de ganso"],
+      "source_objects": ["Suprapatellar bursa.l", "Suprapatellar bursa.r", "Subcutaneous prepatellar bursa.l", "Subcutaneous prepatellar bursa.r", "Subfacial prepatellar bursa.l", "Subfacial prepatellar bursa.r", "Subtendinous prepatellar bursa.l", "Subtendinous prepatellar bursa.r", "Subcutaneous infrapatellar bursa.l", "Subcutaneous infrapatellar bursa.r", "Deep infrapatellar bursa.l", "Deep infrapatellar bursa.r", "Subcutaneous bursa of tuberosity of tibia.l", "Subcutaneous bursa of tuberosity of tibia.r", "Anserine bursa.l", "Anserine bursa.r", "Subtendinous bursa of sartorius muscle.l", "Subtendinous bursa of sartorius muscle.r", "Semimembranosus bursa.l", "Semimembranosus bursa.r", "Medial subtendinous bursa of gastrocnemius muscle.l", "Medial subtendinous bursa of gastrocnemius muscle.r", "Lateral subtendinous bursa of gastrocnemius muscle.l", "Lateral subtendinous bursa of gastrocnemius muscle.r", "Superior bursa of biceps femoris muscle.l", "Superior bursa of biceps femoris muscle.r", "Inferior subtendinous bursa of biceps femoris muscle.l", "Inferior subtendinous bursa of biceps femoris muscle.r"]
+    },
+    {
+      "id": "bolsas-do-tornozelo-e-pe",
+      "name": "Bolsas do tornozelo e do pé",
+      "english": "bursae of ankle and foot",
+      "kind": "articulacoes",
+      "region": "Tornozelo",
+      "depth": "superficial",
+      "summary": "Incluem as duas bolsas do calcâneo, envolvidas na dor posterior do calcanhar.",
+      "fields": {
+        "Classificação": "Bolsas sinoviais do tornozelo: subtendínea do calcâneo, ou retrocalcânea; subcutânea do calcâneo; subcutâneas dos maléolos medial e lateral; e subtendínea do tibial anterior.",
+        "Superfícies articulares": "A retrocalcânea fica entre o tendão calcâneo e a face posterior do calcâneo. A subcutânea do calcâneo fica entre o tendão e a pele. As dos maléolos ficam entre as proeminências ósseas e a pele.",
+        "Movimentos": "Deslizam durante a dorsiflexão e a flexão plantar; a retrocalcânea é comprimida na dorsiflexão máxima.",
+        "Estabilizadores": "Não têm função estabilizadora.",
+        "Na prática": "A dor posterior do calcanhar tem três origens que precisam ser separadas: tendinopatia insercional do tendão calcâneo, bursite retrocalcânea e bursite subcutânea, esta última muitas vezes causada pelo contraforte do calçado. A combinação de proeminência do calcâneo com bursite e tendinopatia é chamada deformidade de Haglund.",
+        "Função": "Reduzem o atrito entre o tendão calcâneo, as proeminências ósseas e a pele, em uma região de grande carga e pouca cobertura de tecidos moles.",
+        "Teste clínico": "Palpação do espaço entre o tendão calcâneo e o calcâneo, com o pé em flexão plantar para relaxar o tendão; dor à compressão lateral logo à frente do tendão sugere bursite retrocalcânea.",
+        "Localização": "Tornozelo"
+      },
+      "related": ["talocrural", "calcaneo", "tibia", "fibula", "tendao-calcaneo", "gastrocnemio", "soleo", "tibial-anterior", "aponeurose-plantar", "subtalar"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["bursite retrocalcânea", "deformidade de Haglund", "dor posterior do calcanhar"],
+      "source_objects": ["Subtendinous calcaneal bursa.l", "Subtendinous calcaneal bursa.r", "Subcutaneous calcaneal bursa.l", "Subcutaneous calcaneal bursa.r", "Subcutaneous bursa of medial malleolus.l", "Subcutaneous bursa of medial malleolus.r", "Subcutaneous bursa of lateral malleolus.l", "Subcutaneous bursa of lateral malleolus.r", "Subtendinous bursa of tibialis anterior.l", "Subtendinous bursa of tibialis anterior.r"]
+    }
+  ]
+}

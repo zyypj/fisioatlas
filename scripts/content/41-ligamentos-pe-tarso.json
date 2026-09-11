@@ -1,0 +1,246 @@
+{
+  "new": [
+    {
+      "id": "ligamento-bifurcado",
+      "name": "Ligamento bifurcado",
+      "english": "bifurcate ligament",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Chave do médio-pé em forma de Y; sua avulsão é a fratura mais comum não reconhecida do pé.",
+      "fields": {
+        "Fixações": "Face dorsal do calcâneo, à frente do seio do tarso, dividindo-se em duas faixas: a calcaneonavicular, que vai ao navicular, e a calcaneocuboidea, que vai ao cuboide.",
+        "Função": "Trava dorsalmente a articulação transversa do tarso, também chamada articulação de Chopart. Resiste à adução e à flexão plantar forçada do médio-pé e mantém o alinhamento entre o retropé e o médio-pé.",
+        "Tensiona em": "Inversão com flexão plantar do médio-pé.",
+        "Teste clínico": "Dor à palpação no dorso do pé, à frente do seio do tarso, e na adução passiva do antepé com o retropé estabilizado.",
+        "Lesão típica": "Sua avulsão na borda anterior do calcâneo é uma das fraturas mais frequentemente não reconhecidas do pé, confundida com entorse lateral simples de tornozelo.",
+        "Na prática": "Dor persistente no dorso lateral do pé depois de uma entorse, sem dor no maléolo, deve levantar a suspeita de lesão de Chopart e deste ligamento.",
+        "Localização": "Pé"
+      },
+      "related": ["calcaneo", "navicular", "cuboide", "talus", "subtalar", "ligamento-talonavicular", "ligamento-calcaneocuboideo-plantar", "retinaculo-extensor-inferior-do-tornozelo"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["chave do médio-pé", "Chopart", "bifurcado"],
+      "source_objects": ["Calcaneonavicular ligament.l", "Calcaneonavicular ligament.r", "Calcaneocuboid ligament.l", "Calcaneocuboid ligament.r", "Dorsal calcaneocuboid ligament.l", "Dorsal calcaneocuboid ligament.r"]
+    },
+    {
+      "id": "ligamentos-tarsometatarsais",
+      "name": "Ligamentos tarsometatarsais",
+      "english": "tarsometatarsal ligaments",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Travam a linha de Lisfranc; incluem o ligamento de Lisfranc propriamente dito.",
+      "fields": {
+        "Fixações": "Faces dorsal, plantar e interóssea entre os cuneiformes e o cuboide, atrás, e as bases dos metatarsais, à frente. O feixe interósseo mais forte vai do cuneiforme medial à base do segundo metatarsal e é chamado ligamento de Lisfranc.",
+        "Função": "Travam a articulação tarsometatarsal, que é a linha de Lisfranc. Como não existe ligamento unindo as bases do primeiro e do segundo metatarsais, toda a estabilidade dessa transição depende do ligamento de Lisfranc.",
+        "Tensiona em": "Carga axial no antepé com rotação, especialmente com o pé em flexão plantar.",
+        "Teste clínico": "Teste de pronação e abdução do antepé com o retropé fixo; dor à compressão da base do segundo metatarsal e radiografia com carga comparando os dois pés.",
+        "Lesão típica": "Lesão de Lisfranc. O sinal mais característico é o hematoma plantar no médio-pé. É subdiagnosticada com frequência e, quando não tratada, evolui para artrose e deformidade do arco.",
+        "Na prática": "A base do segundo metatarsal é encaixada entre os cuneiformes como a pedra angular de um arco romano. É essa geometria, somada ao ligamento de Lisfranc, que sustenta o arco transverso.",
+        "Localização": "Pé"
+      },
+      "related": ["cuneiforme-medial", "cuneiforme-intermedio", "cuneiforme-lateral", "cuboide", "metatarsais", "ligamentos-metatarsais", "ligamentos-cuneonaviculares", "fibular-longo", "tibial-anterior"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["Lisfranc", "linha de Lisfranc", "hematoma plantar"],
+      "source_objects": ["Dorsal tarsometatarsal ligaments.l", "Dorsal tarsometatarsal ligaments.r", "Plantar tarsometatarsal ligaments.l", "Plantar tarsometatarsal ligaments.r", "Cuneometatarsal interosseous ligaments.l", "Cuneometatarsal interosseous ligaments.r"]
+    },
+    {
+      "id": "ligamentos-cuneonaviculares",
+      "name": "Ligamentos cuneonaviculares",
+      "english": "cuneonavicular ligaments",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Unem o navicular aos três cuneiformes, sustentando a parte alta do arco medial.",
+      "fields": {
+        "Fixações": "Faces dorsal e plantar do navicular até os três cuneiformes.",
+        "Função": "Mantêm a continuidade entre o navicular e os cuneiformes, transmitindo carga do retropé ao antepé. As fibras plantares são reforçadas por expansões do tendão do tibial posterior e sustentam o ponto mais alto do arco longitudinal medial.",
+        "Tensiona em": "Apoio do peso, quando o arco medial tende a baixar.",
+        "Teste clínico": "Dor à palpação no dorso do médio-pé e na mobilização passiva entre navicular e cuneiformes.",
+        "Lesão típica": "Sobrecarregados no pé plano adquirido do adulto, em que a queda do arco abre progressivamente essa articulação.",
+        "Na prática": "As expansões do tibial posterior que os reforçam explicam por que a disfunção desse tendão repercute em todo o médio-pé, e não só no navicular.",
+        "Localização": "Pé"
+      },
+      "related": ["navicular", "cuneiforme-medial", "cuneiforme-intermedio", "cuneiforme-lateral", "tibial-posterior", "ligamentos-tarsometatarsais", "ligamento-calcaneonavicular-plantar", "ligamentos-intercuneiformes"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["cuneonavicular"],
+      "source_objects": ["Dorsal cuneonavicular ligaments.l", "Dorsal cuneonavicular ligaments.r", "Plantar cuneonavicular ligaments.l", "Plantar cuneonavicular ligaments.r"]
+    },
+    {
+      "id": "ligamentos-cuboideonaviculares",
+      "name": "Ligamentos cuboideonaviculares",
+      "english": "cuboideonavicular ligaments",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Ligam o navicular ao cuboide, unindo as colunas medial e lateral do pé.",
+      "fields": {
+        "Fixações": "Faces dorsal e plantar do navicular até o cuboide, transversalmente.",
+        "Função": "Unem as colunas medial e lateral do médio-pé, mantendo-as solidárias durante a pronação e a supinação. Contribuem para a estabilidade do arco transverso na sua porção posterior.",
+        "Tensiona em": "Torção entre as colunas medial e lateral do pé, como ao caminhar em terreno irregular.",
+        "Teste clínico": "Dor à palpação entre navicular e cuboide e à mobilização em torção do médio-pé.",
+        "Lesão típica": "Comprometidos em entorses do médio-pé e na síndrome cuboideana.",
+        "Na prática": "Em muitas pessoas o navicular e o cuboide nem chegam a se articular diretamente, e esses ligamentos são a única ligação entre eles.",
+        "Localização": "Pé"
+      },
+      "related": ["navicular", "cuboide", "cuneiforme-lateral", "calcaneo", "ligamentos-cuneocuboideos", "ligamentos-cuneonaviculares", "fibular-longo"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["cuboideonavicular"],
+      "source_objects": ["Dorsal cuboideonavicular ligament.l", "Dorsal cuboideonavicular ligament.r", "Plantar cuboideonavicular ligament.l", "Plantar cuboideonavicular ligament.r"]
+    },
+    {
+      "id": "ligamentos-cuneocuboideos",
+      "name": "Ligamentos cuneocuboideos",
+      "english": "cuneocuboid ligaments",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Unem o cuneiforme lateral ao cuboide, fechando o arco transverso lateralmente.",
+      "fields": {
+        "Fixações": "Cuneiforme lateral até o cuboide, pelas faces dorsal, plantar e interóssea.",
+        "Função": "Fecham lateralmente o arco transverso do médio-pé e transmitem carga entre as colunas. O feixe interósseo é o mais resistente e praticamente elimina o movimento entre os dois ossos.",
+        "Tensiona em": "Carga axial no médio-pé e torção entre as colunas.",
+        "Teste clínico": "Dor à palpação dorsal entre o cuneiforme lateral e o cuboide.",
+        "Lesão típica": "Comprometidos nas lesões de Lisfranc que se estendem lateralmente.",
+        "Na prática": "Junto com os intercuneiformes, formam o conjunto de ligamentos curtos que transforma a fileira distal do tarso em um bloco, semelhante ao que acontece na fileira distal do carpo.",
+        "Localização": "Pé"
+      },
+      "related": ["cuneiforme-lateral", "cuboide", "cuneiforme-intermedio", "ligamentos-intercuneiformes", "ligamentos-tarsometatarsais", "ligamentos-cuboideonaviculares"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["cuneocuboideo"],
+      "source_objects": ["Dorsal cuneocuboid ligament.l", "Dorsal cuneocuboid ligament.r", "Plantar cuneocuboid ligament.l", "Plantar cuneocuboid ligament.r", "Cuneocuboid interosseous ligament.l", "Cuneocuboid interosseous ligament.r"]
+    },
+    {
+      "id": "ligamentos-intercuneiformes",
+      "name": "Ligamentos intercuneiformes",
+      "english": "intercuneiform ligaments",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Unem os três cuneiformes entre si e sustentam o arco transverso do médio-pé.",
+      "fields": {
+        "Fixações": "Faces adjacentes dos três cuneiformes, pelas superfícies dorsal, plantar e interóssea.",
+        "Função": "Solidarizam os cuneiformes, mantendo o encaixe em arco que sustenta o arco transverso. É essa arquitetura que permite ao médio-pé suportar carga sem colapsar lateralmente.",
+        "Tensiona em": "Carga axial que tende a achatar o arco transverso.",
+        "Teste clínico": "Dor à palpação dorsal entre os cuneiformes e à compressão transversal do médio-pé.",
+        "Lesão típica": "Comprometidos nas lesões de Lisfranc, especialmente as que envolvem divergência entre o primeiro e o segundo raio.",
+        "Na prática": "Os cuneiformes são mais estreitos embaixo e mais largos em cima, encaixando-se como as pedras de um arco. Os ligamentos intercuneiformes são a argamassa desse arco.",
+        "Localização": "Pé"
+      },
+      "related": ["cuneiforme-medial", "cuneiforme-intermedio", "cuneiforme-lateral", "ligamentos-cuneocuboideos", "ligamentos-tarsometatarsais", "ligamentos-cuneonaviculares", "fibular-longo"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["intercuneiformes", "arco transverso"],
+      "source_objects": ["Dorsal intercuneiform ligaments.l", "Dorsal intercuneiform ligaments.r", "Plantar intercuneiform ligaments.l", "Plantar intercuneiform ligaments.r", "Intercuneiform interosseous ligaments.l", "Intercuneiform interosseous ligaments.r"]
+    },
+    {
+      "id": "ligamentos-metatarsais",
+      "name": "Ligamentos metatarsais",
+      "english": "metatarsal ligaments",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Unem as bases dos metatarsais entre si, mantendo a largura e o arco do antepé.",
+      "fields": {
+        "Fixações": "Bases dos metatarsais, unidas entre si pelas faces dorsal, plantar e interóssea. Não há ligamento entre as bases do primeiro e do segundo metatarsais.",
+        "Função": "Mantêm as bases dos metatarsais alinhadas e impedem que o antepé se alargue sob carga. Junto com os tarsometatarsais, definem quanto cada raio pode se mover independentemente.",
+        "Tensiona em": "Carga axial no antepé e tentativas de separar os metatarsais.",
+        "Teste clínico": "Compressão transversal do antepé e palpação dos espaços intermetatarsais.",
+        "Lesão típica": "Comprometidos nas lesões de Lisfranc. A ausência de ligamento entre o primeiro e o segundo metatarsal é o que permite a divergência entre eles nessas lesões.",
+        "Na prática": "O primeiro raio é o mais móvel do antepé. Sua hipermobilidade contribui para o hálux valgo e para a transferência de carga aos metatarsais centrais, com metatarsalgia.",
+        "Localização": "Pé"
+      },
+      "related": ["metatarsais", "cuneiforme-medial", "cuboide", "ligamentos-tarsometatarsais", "ligamento-metatarsal-transverso-profundo", "interosseos-dorsais-do-pe", "falanges-do-pe"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["intermetatarsais", "metatarsalgia"],
+      "source_objects": ["Dorsal metatarsal ligaments.l", "Dorsal metatarsal ligaments.r", "Plantar metatarsal ligaments.l", "Plantar metatarsal ligaments.r", "Metatarsal interosseous ligaments.l", "Metatarsal interosseous ligaments.r"]
+    },
+    {
+      "id": "ligamento-metatarsal-transverso-superficial",
+      "name": "Ligamento metatarsal transverso superficial",
+      "english": "superficial transverse metatarsal ligament",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Fibras transversas da aponeurose plantar, na raiz dos dedos.",
+      "fields": {
+        "Fixações": "Fibras transversas na borda distal da aponeurose plantar, ao nível das cabeças dos metatarsais e da raiz dos dedos.",
+        "Função": "Reforça transversalmente a aponeurose plantar e delimita, com ela, os canais por onde os tendões flexores, os nervos e os vasos digitais alcançam os dedos.",
+        "Tensiona em": "Extensão dos dedos na fase de propulsão, quando a aponeurose plantar se enrola nas cabeças dos metatarsais.",
+        "Teste clínico": "Palpável como faixa firme na raiz dos dedos, na face plantar; avaliado junto com a aponeurose plantar.",
+        "Lesão típica": "Espessa com a sobrecarga crônica do antepé, contribuindo para a compressão dos nervos digitais.",
+        "Na prática": "É o equivalente plantar do ligamento metacarpal transverso superficial da mão, e participa da geometria em que o neuroma de Morton se desenvolve.",
+        "Localização": "Pé"
+      },
+      "related": ["metatarsais", "falanges-do-pe", "aponeurose-plantar", "ligamento-metatarsal-transverso-profundo", "nervo-plantar-medial", "nervo-plantar-lateral"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["natatório do pé"],
+      "source_objects": ["Superficial transverse metatarsal ligament.l", "Superficial transverse metatarsal ligament.r"]
+    },
+    {
+      "id": "placas-plantares",
+      "name": "Placas plantares",
+      "english": "plantar plates",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Fibrocartilagens no assoalho das articulações dos dedos; sua falência produz o dedo em garra.",
+      "fields": {
+        "Fixações": "Assoalho das articulações metatarsofalângicas e interfalângicas do pé. Prendem-se firmemente à base da falange e mais frouxamente ao colo do metatarsal, permitindo que deslizem para trás na extensão dos dedos.",
+        "Função": "Impedem a hiperextensão das articulações dos dedos, aumentam a área de contato e protegem as cabeças dos metatarsais da pressão direta do solo. Nas metatarsofalângicas, são unidas entre si pelo ligamento metatarsal transverso profundo.",
+        "Tensiona em": "Extensão máxima dos dedos na fase de propulsão do passo.",
+        "Teste clínico": "Teste de gaveta vertical da metatarsofalângica, ou teste de Lachman do dedo: a translação dorsal excessiva da falange indica insuficiência da placa.",
+        "Lesão típica": "A insuficiência da placa plantar do segundo dedo é causa muito comum de metatarsalgia, com dedo em garra progressivo e sensação de caroço sob a cabeça do metatarsal. No hálux, a lesão em hiperextensão é o turf toe.",
+        "Na prática": "Dor sob a cabeça do segundo metatarsal com desvio do dedo, mesmo sem trauma claro, aponta para insuficiência da placa plantar. O tratamento conservador combina alívio de carga, fortalecimento dos intrínsecos e contenção do dedo.",
+        "Localização": "Pé"
+      },
+      "related": ["metatarsais", "falanges-do-pe", "metatarsofalangicas", "interfalangicas-do-pe", "ligamento-metatarsal-transverso-profundo", "ligamentos-colaterais-metatarsofalangicos", "lumbricais-do-pe", "interosseos-plantares", "aponeurose-plantar"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["placa plantar", "turf toe", "dedo em garra", "metatarsalgia"],
+      "source_objects": ["Plantar metatarsophalangeal ligaments.l", "Plantar metatarsophalangeal ligaments.r", "Plantar interphalangeal ligaments.l", "Plantar interphalangeal ligaments.r"]
+    },
+    {
+      "id": "ligamentos-colaterais-interfalangicos-do-pe",
+      "name": "Ligamentos colaterais interfalângicos do pé",
+      "english": "collateral interphalangeal ligaments of foot",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Estabilizam lateralmente as interfalângicas dos dedos do pé.",
+      "fields": {
+        "Fixações": "Faces laterais das cabeças das falanges proximal e média até as bases das falanges seguintes, com fibras acessórias para a placa plantar.",
+        "Função": "Contêm o desvio lateral dos dedos e, com as placas plantares, limitam a hiperextensão das interfalângicas.",
+        "Tensiona em": "Flexão das interfalângicas e desvio lateral forçado dos dedos.",
+        "Teste clínico": "Estresse lateral comparativo da interfalângica e avaliação da redutibilidade passiva das deformidades.",
+        "Lesão típica": "Entorses dos dedos do pé, comuns ao tropeçar. Seu encurtamento após deformidade prolongada é o que transforma um dedo em garra flexível em rígido.",
+        "Na prática": "A redutibilidade passiva da deformidade é o que separa o tratamento conservador do cirúrgico: enquanto o dedo ainda endireita, há espaço para fortalecimento dos intrínsecos e órteses.",
+        "Localização": "Pé"
+      },
+      "related": ["falanges-do-pe", "interfalangicas-do-pe", "placas-plantares", "ligamentos-colaterais-metatarsofalangicos", "lumbricais-do-pe", "flexor-curto-dos-dedos"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["colaterais IF do pé", "dedo em garra rígido"],
+      "source_objects": ["Collateral interphalangeal ligaments of foot.l", "Collateral interphalangeal ligaments of foot.r"]
+    },
+    {
+      "id": "ligamento-intersesamoideo",
+      "name": "Ligamento intersesamoideo",
+      "english": "intersesamoid ligament",
+      "kind": "ligamentos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Une os dois sesamoides do hálux e forma o sulco por onde passa o flexor longo do hálux.",
+      "fields": {
+        "Fixações": "Une os sesamoides medial e lateral, passando por baixo da cabeça do primeiro metatarsal.",
+        "Função": "Mantém os dois sesamoides solidários e forma, entre eles, um sulco que serve de polia para o tendão do flexor longo do hálux. Faz parte do complexo sesamoide, que inclui as placas plantares e os tendões dos músculos intrínsecos do hálux.",
+        "Tensiona em": "Extensão máxima do hálux, quando os sesamoides deslizam para a frente sob a cabeça do metatarsal.",
+        "Teste clínico": "Dor à compressão direta dos sesamoides e à extensão passiva do hálux com pressão plantar.",
+        "Lesão típica": "Envolvido na sesamoidite e nas lesões de turf toe, em que a hiperextensão forçada do hálux rompe o complexo sesamoide.",
+        "Na prática": "A migração proximal dos sesamoides na radiografia é sinal de ruptura do complexo, e distingue o turf toe grave da entorse simples.",
+        "Localização": "Pé"
+      },
+      "related": ["sesamoides-do-halux", "metatarsais", "falanges-do-pe", "flexor-curto-do-halux", "flexor-longo-do-halux", "metatarsofalangicas", "placas-plantares"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["complexo sesamoide", "sesamoidite", "turf toe"],
+      "source_objects": ["Intersesamoid ligament.l", "Intersesamoid ligament.r"]
+    }
+  ]
+}

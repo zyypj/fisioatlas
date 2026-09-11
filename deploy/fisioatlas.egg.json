@@ -1,0 +1,94 @@
+{
+    "_comment": "FisioAtlas 3D — atlas de anatomia para estudo de fisioterapia. Aplicação estática (Vite + React) servida por um servidor Node sem dependências. A porta vem da alocação do painel, via SERVER_PORT.",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2026-09-11T16:12:56+00:00",
+    "name": "FisioAtlas 3D",
+    "author": "zyypjl@gmail.com",
+    "description": "Atlas de anatomia em 3D com 441 fichas de ossos, músculos, tendões, ligamentos, articulações e nervos, além de 38 movimentos animados. Servido como site estático; o build pode ser compilado a partir de um repositório Git ou enviado pronto por SFTP.",
+    "features": null,
+    "docker_images": {
+        "Node 22": "ghcr.io/pterodactyl/yolks:nodejs_22",
+        "Node 20": "ghcr.io/pterodactyl/yolks:nodejs_20",
+        "Node 18": "ghcr.io/pterodactyl/yolks:nodejs_18"
+    },
+    "file_denylist": [],
+    "startup": "node server.mjs",
+    "config": {
+        "files": "{}",
+        "startup": "{\"done\": \"[FisioAtlas] pronto\"}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!/bin/bash\n# Instalação do FisioAtlas 3D no Pterodactyl.\n#\n# Roda no contêiner instalador (node:22-bookworm-slim) com o volume do servidor\n# montado em /mnt/server. Compila em /tmp e copia só o resultado, para não\n# deixar node_modules ocupando o volume.\nset -euo pipefail\n\nSERVIDOR=/mnt/server\nCOMPILACAO=/tmp/fisioatlas\n\necho \"==========================================\"\necho \" FisioAtlas 3D — instalação\"\necho \"==========================================\"\n\nmkdir -p \"$SERVIDOR\"\n\nif [ -z \"${GIT_REPO:-}\" ]; then\n  echo\n  echo \"GIT_REPO está vazio: nada será compilado.\"\n  echo \"Envie o conteúdo de dist/ para a pasta dist/ do servidor por SFTP.\"\n  echo \"Para compilar automaticamente, preencha GIT_REPO e reinstale.\"\n  mkdir -p \"$SERVIDOR/dist\"\nelse\n  echo \"[1/5] Instalando git\"\n  export DEBIAN_FRONTEND=noninteractive\n  apt-get update -qq\n  apt-get install -y -qq git ca-certificates >/dev/null\n\n  echo \"[2/5] Clonando ${GIT_REPO} (branch ${GIT_BRANCH:-main})\"\n  rm -rf \"$COMPILACAO\"\n  if [ -n \"${GIT_USER:-}\" ] && [ -n \"${GIT_TOKEN:-}\" ]; then\n    # Repositório privado: injeta as credenciais só na URL do clone.\n    ENDERECO=$(echo \"$GIT_REPO\" | sed -E \"s#^https://#https://${GIT_USER}:${GIT_TOKEN}@#\")\n  else\n    ENDERECO=\"$GIT_REPO\"\n  fi\n  git clone --depth 1 --branch \"${GIT_BRANCH:-main}\" \"$ENDERECO\" \"$COMPILACAO\"\n\n  # O projeto pode estar numa subpasta do repositório.\n  RAIZ=\"$COMPILACAO/${PROJECT_DIR:-}\"\n  RAIZ=\"${RAIZ%/}\"\n  if [ ! -f \"$RAIZ/package.json\" ]; then\n    echo \"ERRO: package.json não encontrado em ${RAIZ}\"\n    echo \"Ajuste a variável PROJECT_DIR para a subpasta do projeto.\"\n    exit 1\n  fi\n  cd \"$RAIZ\"\n\n  echo \"[3/5] Instalando dependências\"\n  if [ -f package-lock.json ]; then\n    npm ci --no-audit --no-fund\n  else\n    npm install --no-audit --no-fund\n  fi\n\n  echo \"[4/5] Compilando\"\n  npm run build\n\n  echo \"[5/5] Copiando para o volume do servidor\"\n  rm -rf \"$SERVIDOR/dist\"\n  cp -r dist \"$SERVIDOR/dist\"\n  if [ -f deploy/server.mjs ]; then\n    cp deploy/server.mjs \"$SERVIDOR/server.mjs\"\n  fi\nfi\n\n# server.mjs vem do repositório quando existe; senão, é escrito aqui para o\n# egg funcionar sozinho, sem depender de nada externo.\nif [ ! -f \"$SERVIDOR/server.mjs\" ]; then\n  echo \"Escrevendo servidor estático embutido\"\n  cat > \"$SERVIDOR/server.mjs\" <<'FIM_DO_SERVIDOR'\n/**\n * Servidor estático do FisioAtlas, sem dependências além do Node.\n *\n * O app usa BrowserRouter, então qualquer rota que não seja arquivo precisa\n * devolver o index.html; sem isso, abrir /atlas direto ou apertar F5 dá 404.\n *\n * Uso local:      node deploy/server.mjs\n * No Pterodactyl: node server.mjs   (a porta vem de SERVER_PORT)\n */\nimport { createReadStream, existsSync, statSync } from \"node:fs\";\nimport { createServer } from \"node:http\";\nimport { extname, join, resolve, sep } from \"node:path\";\nimport { createBrotliCompress, createGzip, constants as zlib } from \"node:zlib\";\n\nconst RAIZ = resolve(process.env.WEB_ROOT || \"dist\");\nconst PORTA = Number(process.env.SERVER_PORT || process.env.PORT || 8080);\nconst HOST = process.env.SERVER_HOST || \"0.0.0.0\";\n\nconst TIPOS = {\n  \".html\": \"text/html; charset=utf-8\",\n  \".js\": \"text/javascript; charset=utf-8\",\n  \".mjs\": \"text/javascript; charset=utf-8\",\n  \".css\": \"text/css; charset=utf-8\",\n  \".json\": \"application/json; charset=utf-8\",\n  \".md\": \"text/markdown; charset=utf-8\",\n  \".txt\": \"text/plain; charset=utf-8\",\n  \".svg\": \"image/svg+xml\",\n  \".png\": \"image/png\",\n  \".jpg\": \"image/jpeg\",\n  \".jpeg\": \"image/jpeg\",\n  \".webp\": \"image/webp\",\n  \".ico\": \"image/x-icon\",\n  \".glb\": \"model/gltf-binary\",\n  \".gltf\": \"model/gltf+json\",\n  \".wasm\": \"application/wasm\",\n  \".woff2\": \"font/woff2\",\n  \".blend\": \"application/octet-stream\",\n};\n// Só vale comprimir texto. Os .glb já saem comprimidos com Meshopt: passar\n// gzip neles gasta CPU e devolve quase nada.\nconst COMPRIMIVEL = /^(text\\/|application\\/(json|wasm)|image\\/svg)/;\n\nfunction tipoDe(caminho) {\n  return TIPOS[extname(caminho).toLowerCase()] || \"application/octet-stream\";\n}\n\nfunction cacheDe(url) {\n  // Vite põe hash no nome dos arquivos de /assets: podem ser cacheados para sempre.\n  if (url.startsWith(\"/assets/\")) return \"public, max-age=31536000, immutable\";\n  if (url.startsWith(\"/models/\") || url.startsWith(\"/lessons/\"))\n    return \"public, max-age=86400\";\n  return \"no-cache\";\n}\n\n/** Resolve a URL para um arquivo dentro da raiz, barrando travessia de diretório. */\nfunction resolverArquivo(url) {\n  let caminho;\n  try {\n    caminho = decodeURIComponent(new URL(url, \"http://x\").pathname);\n  } catch {\n    return null;\n  }\n  if (caminho.endsWith(\"/\")) caminho += \"index.html\";\n  const destino = resolve(join(RAIZ, caminho));\n  if (destino !== RAIZ && !destino.startsWith(RAIZ + sep)) return null;\n  return destino;\n}\n\nfunction enviar(req, res, arquivo, status, cache) {\n  const info = statSync(arquivo);\n  const tipo = tipoDe(arquivo);\n  const etag = `W/\"${info.size}-${Number(info.mtimeMs).toString(36)}\"`;\n  const base = {\n    \"Content-Type\": tipo,\n    \"Cache-Control\": cache,\n    ETag: etag,\n    \"Last-Modified\": info.mtime.toUTCString(),\n    \"X-Content-Type-Options\": \"nosniff\",\n  };\n\n  if (req.headers[\"if-none-match\"] === etag) {\n    res.writeHead(304, base);\n    return res.end();\n  }\n\n  // Range: permite ao navegador retomar os modelos grandes.\n  const range = /^bytes=(\\d*)-(\\d*)$/.exec(req.headers.range || \"\");\n  if (range && status === 200) {\n    const inicio = range[1] ? Number(range[1]) : 0;\n    const fim = range[2] ? Number(range[2]) : info.size - 1;\n    if (inicio > fim || fim >= info.size) {\n      res.writeHead(416, { \"Content-Range\": `bytes */${info.size}` });\n      return res.end();\n    }\n    res.writeHead(206, {\n      ...base,\n      \"Content-Range\": `bytes ${inicio}-${fim}/${info.size}`,\n      \"Content-Length\": fim - inicio + 1,\n      \"Accept-Ranges\": \"bytes\",\n    });\n    if (req.method === \"HEAD\") return res.end();\n    return createReadStream(arquivo, { start: inicio, end: fim }).pipe(res);\n  }\n\n  const aceita = req.headers[\"accept-encoding\"] || \"\";\n  const comprimir = COMPRIMIVEL.test(tipo) && info.size > 1024;\n  const codec =\n    comprimir && /\\bbr\\b/.test(aceita)\n      ? [\"br\", () => createBrotliCompress({ params: { [zlib.BROTLI_PARAM_QUALITY]: 5 } })]\n      : comprimir && /\\bgzip\\b/.test(aceita)\n        ? [\"gzip\", () => createGzip({ level: 6 })]\n        : null;\n\n  if (codec) {\n    res.writeHead(status, {\n      ...base,\n      \"Content-Encoding\": codec[0],\n      Vary: \"Accept-Encoding\",\n    });\n    if (req.method === \"HEAD\") return res.end();\n    return createReadStream(arquivo).pipe(codec[1]()).pipe(res);\n  }\n\n  res.writeHead(status, { ...base, \"Content-Length\": info.size, \"Accept-Ranges\": \"bytes\" });\n  if (req.method === \"HEAD\") return res.end();\n  return createReadStream(arquivo).pipe(res);\n}\n\nconst servidor = createServer((req, res) => {\n  if (req.method !== \"GET\" && req.method !== \"HEAD\") {\n    res.writeHead(405, { Allow: \"GET, HEAD\" });\n    return res.end(\"Método não permitido\");\n  }\n  if (req.url === \"/healthz\") {\n    res.writeHead(200, { \"Content-Type\": \"text/plain; charset=utf-8\" });\n    return res.end(\"ok\");\n  }\n\n  const arquivo = resolverArquivo(req.url);\n  if (!arquivo) {\n    res.writeHead(400);\n    return res.end(\"Caminho inválido\");\n  }\n\n  try {\n    if (existsSync(arquivo) && statSync(arquivo).isFile())\n      return enviar(req, res, arquivo, 200, cacheDe(new URL(req.url, \"http://x\").pathname));\n\n    // Rota do BrowserRouter: devolve o index.html para o React resolver.\n    // Arquivo com extensão que não existe é 404 de verdade, não rota.\n    const index = join(RAIZ, \"index.html\");\n    if (!extname(arquivo) && existsSync(index))\n      return enviar(req, res, index, 200, \"no-cache\");\n\n    res.writeHead(404, { \"Content-Type\": \"text/plain; charset=utf-8\" });\n    res.end(\"Não encontrado\");\n  } catch (erro) {\n    console.error(\"[erro]\", req.url, erro.message);\n    if (!res.headersSent) res.writeHead(500);\n    res.end(\"Erro interno\");\n  }\n});\n\nif (!existsSync(join(RAIZ, \"index.html\"))) {\n  console.error(`[FisioAtlas] index.html não encontrado em ${RAIZ}`);\n  console.error(\"[FisioAtlas] Envie a pasta dist/ por SFTP ou rode a instalação com GIT_REPO.\");\n  process.exit(1);\n}\n\nservidor.listen(PORTA, HOST, () => {\n  console.log(`[FisioAtlas] servindo ${RAIZ}`);\n  console.log(`[FisioAtlas] escutando em ${HOST}:${PORTA}`);\n  console.log(\"[FisioAtlas] pronto\");\n});\n\nfor (const sinal of [\"SIGINT\", \"SIGTERM\"])\n  process.on(sinal, () => {\n    console.log(`[FisioAtlas] recebido ${sinal}, encerrando`);\n    servidor.close(() => process.exit(0));\n    setTimeout(() => process.exit(0), 5000).unref();\n  });\nFIM_DO_SERVIDOR\nfi\n\n# Modelos de uma etapa anterior do projeto que o app não carrega mais.\n# Ocupam ~10 MiB no volume sem serem servidos a ninguém.\nfor ORFAO in musculos.glb ossos.glb tendoes.glb; do\n  if [ -f \"$SERVIDOR/dist/models/$ORFAO\" ]; then\n    rm -f \"$SERVIDOR/dist/models/$ORFAO\"\n    echo \"Removido modelo órfão: $ORFAO\"\n  fi\ndone\n# Arquivo-fonte do Blender: não é usado pelo navegador.\nrm -f \"$SERVIDOR/dist/lessons/synovial.blend\" 2>/dev/null || true\n\nif [ -f \"$SERVIDOR/dist/index.html\" ]; then\n  echo\n  echo \"Pronto. Conteúdo servido: $(du -sh \"$SERVIDOR/dist\" | cut -f1)\"\nelse\n  echo\n  echo \"ATENÇÃO: dist/index.html ainda não existe.\"\n  echo \"O servidor não vai subir enquanto você não enviar o build por SFTP.\"\nfi\necho \"==========================================\"\n",
+            "container": "node:22-bookworm-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Repositório Git",
+            "description": "URL do repositório com o projeto. Deixe em branco para não compilar nada e apenas servir a pasta dist/ enviada por SFTP.",
+            "env_variable": "GIT_REPO",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:255",
+            "field_type": "text"
+        },
+        {
+            "name": "Branch",
+            "description": "Branch a clonar. Usado apenas quando há repositório configurado.",
+            "env_variable": "GIT_BRANCH",
+            "default_value": "main",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:64",
+            "field_type": "text"
+        },
+        {
+            "name": "Subpasta do projeto",
+            "description": "Caminho do projeto dentro do repositório, caso o package.json não esteja na raiz. Exemplo: fisioatlas",
+            "env_variable": "PROJECT_DIR",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:128",
+            "field_type": "text"
+        },
+        {
+            "name": "Usuário do Git",
+            "description": "Somente para repositório privado por HTTPS. Deixe em branco se for público.",
+            "env_variable": "GIT_USER",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:64",
+            "field_type": "text"
+        },
+        {
+            "name": "Token do Git",
+            "description": "Token de acesso para repositório privado. Deixe em branco se for público.",
+            "env_variable": "GIT_TOKEN",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:255",
+            "field_type": "text"
+        },
+        {
+            "name": "Pasta servida",
+            "description": "Pasta com o site compilado, relativa à raiz do servidor.",
+            "env_variable": "WEB_ROOT",
+            "default_value": "dist",
+            "user_viewable": true,
+            "user_editable": false,
+            "rules": "required|string|max:64",
+            "field_type": "text"
+        }
+    ]
+}

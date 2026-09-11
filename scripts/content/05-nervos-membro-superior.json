@@ -1,0 +1,191 @@
+{
+  "patches": [
+    {
+      "id": "nervo-dorsal-da-escapula",
+      "summary": "Nervo de C5 que inerva romboides e levantador da escápula; sua lesão deixa a borda medial escapular lateralizada.",
+      "fields": {
+        "Raízes": "C5, com contribuição ocasional de C4.",
+        "Origem": "Sai diretamente da raiz de C5, antes da formação dos troncos do plexo braquial.",
+        "Trajeto": "Perfura o músculo escaleno médio, cruza posteriormente sob o levantador da escápula e desce ao longo da borda medial da escápula, junto com a artéria dorsal da escápula.",
+        "Inerva": "Levantador da escápula (junto com ramos de C3-C4), romboide menor e romboide maior.",
+        "Sensibilidade": "Puramente motor.",
+        "Função": "Comanda a retração e a rotação inferior da escápula, movimentos essenciais para a estabilidade escapular durante o uso do braço.",
+        "Local de compressão": "Na passagem pelo escaleno médio, quadro descrito como síndrome do nervo dorsal da escápula.",
+        "Sinal clínico": "Fraqueza de retração escapular com discreto deslocamento lateral da borda medial da escápula, dor profunda entre a escápula e a coluna.",
+        "Na prática": "Dor interescapular persistente que não responde ao tratamento local vale ser investigada como origem cervical alta, e não apenas como ponto-gatilho do romboide."
+      },
+      "related": ["plexo-braquial", "romboide-maior", "levantador-da-escapula", "escapula", "vertebras-cervicais"],
+      "aliases": ["dorsal escapular", "C5 dorsal"]
+    },
+    {
+      "id": "nervo-toracico-longo",
+      "summary": "Inerva o serrátil anterior; sua lesão produz a escápula alada clássica.",
+      "fields": {
+        "Raízes": "C5, C6 e C7. A regra mnemônica clássica é que C5, 6 e 7 mantêm a escápula no lugar.",
+        "Origem": "Das raízes C5, C6 e C7, ainda antes dos troncos do plexo braquial.",
+        "Trajeto": "As fibras de C5 e C6 perfuram o escaleno médio, unem-se às de C7 e o nervo desce pela face lateral da parede torácica, superficialmente ao músculo serrátil anterior, o que o deixa muito exposto.",
+        "Inerva": "Serrátil anterior, em toda a sua extensão.",
+        "Sensibilidade": "Puramente motor.",
+        "Função": "Comanda a protração e, principalmente, a rotação superior da escápula, que mantém a cavidade glenoidal voltada para cima durante a elevação do braço.",
+        "Local de compressão": "Trajeto superficial na parede torácica lateral: mochilas pesadas, decúbito prolongado em cirurgia, esvaziamento axilar, trauma direto e neurite braquial.",
+        "Sinal clínico": "Escápula alada medial: a borda medial se afasta do tórax, pior ao empurrar a parede com os braços estendidos. A elevação do braço acima de 90° fica limitada e dolorosa.",
+        "Na prática": "É o teste mais simples do consultório: pedir para empurrar a parede. Se a escápula salta, o serrátil anterior e este nervo estão na história."
+      },
+      "related": ["plexo-braquial", "serratil-anterior", "escapula", "costelas", "nervo-dorsal-da-escapula"],
+      "aliases": ["torácico longo", "nervo de Bell", "escápula alada"]
+    },
+    {
+      "id": "nervo-toracodorsal",
+      "summary": "Ramo do cordão posterior que inerva o latíssimo do dorso; está em risco na cirurgia axilar.",
+      "fields": {
+        "Raízes": "C6, C7 e C8.",
+        "Origem": "Cordão posterior do plexo braquial, entre os nervos subescapulares superior e inferior.",
+        "Trajeto": "Desce pela parede posterior da axila, acompanhando os vasos toracodorsais, até penetrar a face profunda do latíssimo do dorso.",
+        "Inerva": "Latíssimo do dorso.",
+        "Sensibilidade": "Puramente motor.",
+        "Função": "Comanda a adução, a extensão e a rotação medial do braço, além do abaixamento do ombro contra resistência.",
+        "Local de compressão": "Raramente comprimido; o risco principal é cirúrgico, no esvaziamento axilar do câncer de mama.",
+        "Sinal clínico": "Perda de força para puxar o corpo para cima na barra, para usar muletas e para o impulso na natação. Testado com a adução resistida do braço com a mão no quadril.",
+        "Na prática": "Como o latíssimo é muito usado em reconstruções com retalho muscular, a integridade deste nervo é decisiva para o resultado funcional."
+      },
+      "related": ["plexo-braquial", "latissimo-do-dorso", "escapula", "umero", "nervo-subescapular-inferior"],
+      "aliases": ["toracodorsal"]
+    },
+    {
+      "id": "nervo-peitoral-lateral",
+      "summary": "Ramo do cordão lateral para o peitoral maior, sobretudo sua porção clavicular.",
+      "fields": {
+        "Raízes": "C5, C6 e C7.",
+        "Origem": "Cordão lateral do plexo braquial. Recebe o nome de lateral por sua origem no cordão, e não por sua posição no tórax.",
+        "Trajeto": "Cruza à frente da artéria axilar, perfura a fáscia clavipeitoral e entra na face profunda do peitoral maior. Envia uma alça comunicante ao nervo peitoral medial, que passa por diante da artéria axilar.",
+        "Inerva": "Peitoral maior, principalmente a porção clavicular; pelo ramo comunicante, contribui também para o peitoral menor.",
+        "Sensibilidade": "Puramente motor.",
+        "Função": "Comanda a flexão e a adução horizontal do braço executadas pela porção superior do peitoral maior.",
+        "Local de compressão": "Pouco frequente; pode ser lesado em cirurgias da parede torácica anterior e em traumas penetrantes da axila.",
+        "Sinal clínico": "Fraqueza na flexão do ombro contra resistência e atrofia da porção alta do peitoral, visível como perda do contorno abaixo da clavícula.",
+        "Na prática": "Entender que o lateral inerva a porção clavicular e o medial a esternocostal ajuda a interpretar atrofias parciais do peitoral."
+      },
+      "related": ["plexo-braquial", "peitoral-maior", "peitoral-menor", "nervo-peitoral-medial", "clavicula"],
+      "aliases": ["peitoral lateral"]
+    },
+    {
+      "id": "nervo-peitoral-medial",
+      "summary": "Ramo do cordão medial que inerva o peitoral menor e a porção esternocostal do peitoral maior.",
+      "fields": {
+        "Raízes": "C8 e T1.",
+        "Origem": "Cordão medial do plexo braquial.",
+        "Trajeto": "Passa entre a artéria e a veia axilares, atravessa o peitoral menor, que inerva no caminho, e alcança a face profunda do peitoral maior. Recebe a alça comunicante do nervo peitoral lateral.",
+        "Inerva": "Peitoral menor e a porção esternocostal e inferior do peitoral maior.",
+        "Sensibilidade": "Puramente motor.",
+        "Função": "Comanda a adução e a rotação medial do braço pela porção inferior do peitoral maior, além da protração e do abaixamento da escápula pelo peitoral menor.",
+        "Local de compressão": "Em risco em cirurgias mamárias e axilares; sua lesão contribui para deformidades do contorno peitoral.",
+        "Sinal clínico": "Fraqueza na adução do braço abaixo do nível do ombro e atrofia da porção inferior do peitoral.",
+        "Na prática": "Sua preservação é objetivo explícito em mastectomias com preservação muscular, para evitar atrofia e retração da parede."
+      },
+      "related": ["plexo-braquial", "peitoral-menor", "peitoral-maior", "nervo-peitoral-lateral", "escapula"],
+      "aliases": ["peitoral medial"]
+    },
+    {
+      "id": "nervo-subescapular-superior",
+      "summary": "Curto ramo do cordão posterior para a porção superior do subescapular.",
+      "fields": {
+        "Raízes": "C5 e C6.",
+        "Origem": "Cordão posterior do plexo braquial, acima da origem do nervo toracodorsal.",
+        "Trajeto": "Curto e direto: cruza para trás e entra na face anterior do músculo subescapular, na sua porção superior.",
+        "Inerva": "Porção superior do músculo subescapular.",
+        "Sensibilidade": "Puramente motor.",
+        "Função": "Participa da rotação medial do braço e, mais importante, da estabilização anterior da cabeça do úmero pelo manguito rotador.",
+        "Local de compressão": "Raro; pode ser lesado em traumas do plexo e em abordagens cirúrgicas anteriores do ombro.",
+        "Sinal clínico": "Fraqueza na rotação medial resistida e no teste de lift-off, que avalia o subescapular.",
+        "Na prática": "Como o subescapular tem dupla inervação, superior e inferior, uma lesão isolada costuma causar déficit apenas parcial."
+      },
+      "related": ["plexo-braquial", "subescapular", "escapula", "umero", "nervo-subescapular-inferior", "glenoumeral"],
+      "aliases": ["subescapular superior"]
+    },
+    {
+      "id": "nervo-subescapular-inferior",
+      "summary": "Ramo do cordão posterior para a porção inferior do subescapular e para o redondo maior.",
+      "fields": {
+        "Raízes": "C5 e C6.",
+        "Origem": "Cordão posterior do plexo braquial, abaixo da origem do nervo toracodorsal.",
+        "Trajeto": "Desce pela parede posterior da axila e se divide em ramos para a porção inferior do subescapular e para o redondo maior.",
+        "Inerva": "Porção inferior do subescapular e músculo redondo maior.",
+        "Sensibilidade": "Puramente motor.",
+        "Função": "Rotação medial e adução do braço, com participação na estabilização anterior da articulação glenoumeral.",
+        "Local de compressão": "Raro isoladamente; envolvido em lesões do cordão posterior.",
+        "Sinal clínico": "Fraqueza na rotação medial resistida, com teste de lift-off positivo quando a lesão é ampla.",
+        "Na prática": "Sua relação anatômica com o toracodorsal é a referência que o cirurgião usa para localizar os três nervos do cordão posterior na axila."
+      },
+      "related": ["plexo-braquial", "subescapular", "redondo-maior", "escapula", "nervo-subescapular-superior", "nervo-toracodorsal"],
+      "aliases": ["subescapular inferior"]
+    },
+    {
+      "id": "nervo-cutaneo-lateral-do-antebraco",
+      "summary": "Continuação sensitiva do musculocutâneo; dá sensibilidade à face lateral do antebraço.",
+      "fields": {
+        "Raízes": "C5 e C6.",
+        "Origem": "É a continuação terminal do nervo musculocutâneo, depois que ele já inervou o bíceps braquial, o braquial e o coracobraquial.",
+        "Trajeto": "Perfura a fáscia profunda lateralmente ao tendão do bíceps, logo acima da prega do cotovelo, e desce subcutaneamente pela face lateral do antebraço até o punho.",
+        "Inerva": "Não tem função motora.",
+        "Sensibilidade": "Pele da face lateral do antebraço, do cotovelo ao punho, nas faces anterior e posterior.",
+        "Função": "Sensibilidade exclusiva; é o territorio que confirma a integridade do musculocutâneo.",
+        "Local de compressão": "Pode ser comprimido onde perfura a fáscia, ao lado do tendão do bíceps, especialmente com a extensão repetida do cotovelo em pronação.",
+        "Sinal clínico": "Dormência ou queimação na face lateral do antebraço, sem qualquer fraqueza. É diagnóstico diferencial de radiculopatia C6.",
+        "Na prática": "Testar a sensibilidade aqui é a forma rápida de separar lesão do musculocutâneo de lesão isolada do bíceps, e é local frequente de punção venosa no cotovelo."
+      },
+      "related": ["nervo-musculocutaneo", "biceps-braquial", "braquial", "plexo-braquial", "radio"],
+      "aliases": ["cutâneo lateral do antebraço", "musculocutâneo terminal"]
+    },
+    {
+      "id": "nervo-cutaneo-medial-do-antebraco",
+      "summary": "Ramo sensitivo do cordão medial para a face medial do antebraço; doador clássico de enxerto nervoso.",
+      "fields": {
+        "Raízes": "C8 e T1.",
+        "Origem": "Cordão medial do plexo braquial, junto à origem do nervo ulnar.",
+        "Trajeto": "Desce medialmente à artéria braquial, perfura a fáscia no terço médio do braço junto à veia basílica e se divide em ramos anterior e ulnar, que descem pela face medial do antebraço.",
+        "Inerva": "Não tem função motora.",
+        "Sensibilidade": "Pele da face medial do antebraço, das faces anterior e posterior, do cotovelo ao punho.",
+        "Função": "Sensibilidade exclusiva. Seu território é importante na topografia das lesões do plexo braquial.",
+        "Local de compressão": "Vulnerável em punção venosa da fossa cubital, em cirurgias do cotovelo medial e na liberação do nervo ulnar.",
+        "Sinal clínico": "Dormência na face medial do antebraço. Seu acometimento indica lesão proximal, no cordão medial ou no tronco inferior, e não compressão distal do ulnar.",
+        "Na prática": "É a chave para diferenciar síndrome do desfiladeiro torácico ou lesão de tronco inferior de uma compressão ulnar no cotovelo: o ulnar não inerva a pele do antebraço, só a da mão."
+      },
+      "related": ["plexo-braquial", "nervo-ulnar", "ulna", "cotovelo", "nervo-cutaneo-lateral-do-antebraco"],
+      "aliases": ["cutâneo medial do antebraço", "braquial cutâneo interno"]
+    },
+    {
+      "id": "nervo-interosseo-anterior-do-antebraco",
+      "summary": "Ramo motor profundo do mediano; sua lesão impede fazer o sinal de OK, sem déficit sensitivo.",
+      "fields": {
+        "Raízes": "C7, C8 e T1, pelo nervo mediano.",
+        "Origem": "Ramo do nervo mediano, logo abaixo do cotovelo, após a passagem entre as cabeças do pronador redondo.",
+        "Trajeto": "Desce sobre a membrana interóssea, entre o flexor longo do polegar e o flexor profundo dos dedos, acompanhado da artéria interóssea anterior, até a face profunda do pronador quadrado.",
+        "Inerva": "Flexor longo do polegar, metade radial do flexor profundo dos dedos, que move os dedos indicador e médio, e pronador quadrado.",
+        "Sensibilidade": "Não inerva pele. Fornece apenas ramos articulares para punho e radioulnar distal.",
+        "Função": "Comanda a flexão da falange distal do polegar e do indicador, gesto da pinça fina, e a pronação com o cotovelo fletido.",
+        "Local de compressão": "Entre as cabeças do pronador redondo, sob a arcada do flexor superficial dos dedos, ou por bandas fibrosas: síndrome do interósseo anterior, também chamada de Kiloh-Nevin.",
+        "Sinal clínico": "Incapacidade de formar um círculo com polegar e indicador: em vez do OK, a pinça fica achatada, com as interfalângicas distais em extensão. Não há alteração de sensibilidade, o que a distingue da síndrome do túnel do carpo.",
+        "Na prática": "Sempre que houver fraqueza da pinça sem dormência, pedir para fazer o sinal de OK. É um teste de cinco segundos que muda o raciocínio."
+      },
+      "related": ["nervo-mediano", "flexor-profundo-dos-dedos", "pronador-quadrado", "pronador-redondo", "radio", "ulna"],
+      "aliases": ["interósseo anterior", "Kiloh-Nevin", "sinal do OK"]
+    },
+    {
+      "id": "nervo-interosseo-posterior-do-antebraco",
+      "summary": "Continuação motora do ramo profundo do radial; sua lesão causa queda dos dedos com extensão do punho preservada.",
+      "fields": {
+        "Raízes": "C7 e C8, pelo nervo radial.",
+        "Origem": "Continuação do ramo profundo do nervo radial, depois que ele atravessa o músculo supinador.",
+        "Trajeto": "Atravessa o supinador passando sob a arcada de Frohse, uma borda fibrosa da cabeça superficial do músculo, e emerge no compartimento posterior profundo do antebraço, descendo sobre a membrana interóssea até o punho.",
+        "Inerva": "Extensor dos dedos, extensor do dedo mínimo, extensor ulnar do carpo, abdutor longo do polegar, extensores curto e longo do polegar, extensor do indicador e supinador.",
+        "Sensibilidade": "Não inerva pele. Termina em um ramo articular para o dorso do punho.",
+        "Função": "Comanda a abertura da mão: extensão das metacarpofalângicas e do polegar, e a supinação com o cotovelo estendido.",
+        "Local de compressão": "Arcada de Frohse, no supinador. Quando há fraqueza, chama-se síndrome do interósseo posterior; quando há apenas dor lateral no cotovelo, é chamada síndrome do túnel radial.",
+        "Sinal clínico": "Queda dos dedos, com incapacidade de estender as metacarpofalângicas e o polegar, mas com o punho ainda estendendo em desvio radial, porque o extensor radial longo do carpo é inervado antes desse ponto. Não há perda de sensibilidade.",
+        "Na prática": "Punho que ainda estende com desvio radial e dedos que caem é a assinatura desta lesão, e a diferencia da paralisia alta do radial, em que o punho também cai."
+      },
+      "related": ["nervo-radial", "supinador", "extensor-dos-dedos", "extensor-ulnar-do-carpo", "extensor-radial-longo-do-carpo", "radio", "ulna", "cotovelo"],
+      "aliases": ["interósseo posterior", "arcada de Frohse", "túnel radial", "drop finger"]
+    }
+  ]
+}

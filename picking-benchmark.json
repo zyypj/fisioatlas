@@ -1,0 +1,15 @@
+{
+  "scenario": "CPU picking, same 699 meshes and opacity settings, 6 rays, 1 warm-up + 2 measured rounds",
+  "before": {
+    "meanMs": 93.99574166666667,
+    "maxMs": 110.11259999999993,
+    "hits": 189
+  },
+  "after": {
+    "meanMs": 0.5469666666666532,
+    "maxMs": 1.7531999999999925,
+    "hits": 99
+  },
+  "sameSelection": true,
+  "speedup": 171.8491224328155
+}

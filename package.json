@@ -1,0 +1,38 @@
+{
+  "name": "fisioatlas",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "start": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "test": "tsx --tsconfig tsconfig.tests.json --test scripts/test.tsx",
+    "models:prepare": "python scripts/rebuild_models.py",
+    "format": "prettier --write src scripts/*.{tsx,mjs}"
+  },
+  "dependencies": {
+    "lucide-react": "^1.44.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.3",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.5.0",
+    "@gltf-transform/extensions": "^4.5.0",
+    "@gltf-transform/functions": "^4.5.0",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@types/three": "^0.185.4",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "prettier": "^3.9.6",
+    "tsx": "^4.23.13",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}

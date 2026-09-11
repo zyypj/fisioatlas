@@ -1,0 +1,175 @@
+{
+  "patches": [
+    {
+      "id": "frontal",
+      "fields": {
+        "Articula-se com": "Parietais, esfenoide, etmoide, nasais, maxilas, lacrimais e zigomáticos: doze ossos ao todo.",
+        "Palpação básica": "Toda a testa e as margens supraorbitais são facilmente palpáveis. A incisura ou forame supraorbital é sentida como um entalhe no terço medial da margem supraorbital, por onde emerge o nervo supraorbital.",
+        "Marcos para o exercício": "Margem supraorbital, glabela e arco superciliar são referências na avaliação da mímica facial e na palpação do ventre frontal do occipitofrontal."
+      },
+      "related": ["parietal", "esfenoide", "etmoide", "zigomatico", "maxila", "osso-nasal", "lacrimal", "ventre-frontal-do-occipitofrontal", "corrugador-do-supercilio"]
+    },
+    {
+      "id": "parietal",
+      "fields": {
+        "Articula-se com": "Frontal, occipital, temporal, esfenoide e parietal do lado oposto: cinco ossos.",
+        "Palpação básica": "Palpável em toda a lateral e no topo do crânio. A sutura sagital é sentida como uma linha na linha média; o bregma é o ponto de encontro com a sutura coronal, correspondente à fontanela anterior do recém-nascido.",
+        "Marcos para o exercício": "As linhas temporais superior e inferior marcam o limite superior da fossa temporal e da origem do músculo temporal."
+      },
+      "related": ["frontal", "occipital", "temporal", "esfenoide", "musculo-temporal", "temporoparietal", "aponeurose-epicraniana"]
+    },
+    {
+      "id": "temporal",
+      "fields": {
+        "Articula-se com": "Parietal, occipital, esfenoide, zigomático e mandíbula, esta última na articulação temporomandibular.",
+        "Palpação básica": "O processo mastoide é palpável como uma proeminência firme atrás da orelha; o arco zigomático, como uma crista horizontal à frente dela. A articulação temporomandibular é palpada à frente do trago, pedindo que a pessoa abra e feche a boca.",
+        "Marcos para o exercício": "Processo mastoide é inserção do esternocleidomastóideo, do esplênio da cabeça e do longuíssimo da cabeça; o processo estiloide dá origem ao estilo-hióideo e ao ligamento estilo-hióideo."
+      },
+      "related": ["parietal", "occipital", "esfenoide", "zigomatico", "mandibula", "temporomandibular", "esternocleidomastoideo", "esplenio-da-cabeca", "longuissimo-da-cabeca", "ossiculos-da-audicao", "musculo-temporal"]
+    },
+    {
+      "id": "occipital",
+      "fields": {
+        "Articula-se com": "Parietais, temporais, esfenoide e atlas, este último nas articulações atlanto-occipitais.",
+        "Palpação básica": "A protuberância occipital externa, ou inion, é palpável como uma saliência na linha média posterior do crânio. A linha nucal superior estende-se lateralmente a partir dela e é a referência para a palpação dos suboccipitais.",
+        "Marcos para o exercício": "Linha nucal superior é inserção do trapézio superior, do esternocleidomastóideo e do esplênio da cabeça; a linha nucal inferior recebe os músculos suboccipitais. O forame magno dá passagem à medula espinal."
+      },
+      "related": ["parietal", "temporal", "esfenoide", "atlas", "atlanto-occipital", "trapezio", "esternocleidomastoideo", "reto-posterior-maior-da-cabeca", "reto-posterior-menor-da-cabeca", "obliquo-superior-da-cabeca", "ligamento-nucal"]
+    },
+    {
+      "id": "esfenoide",
+      "fields": {
+        "Articula-se com": "Frontal, parietais, temporais, occipital, etmoide, zigomáticos, maxilas, palatinos e vômer: articula-se com todos os demais ossos do crânio.",
+        "Palpação básica": "Apenas a asa maior é palpável, na região do pterion, na parte lateral do crânio, atrás do processo frontal do zigomático.",
+        "Marcos para o exercício": "Os processos pterigoides dão origem aos músculos pterigóideos medial e lateral, centrais na disfunção temporomandibular. A sela turca aloja a hipófise."
+      },
+      "related": ["frontal", "parietal", "temporal", "occipital", "etmoide", "zigomatico", "maxila", "palatino", "vomer", "pterigoideo-medial", "pterigoideo-lateral", "ligamento-esfenomandibular"]
+    },
+    {
+      "id": "etmoide",
+      "fields": {
+        "Articula-se com": "Frontal, esfenoide, nasais, maxilas, lacrimais, palatinos, vômer e conchas nasais inferiores.",
+        "Palpação básica": "Não é palpável externamente: situa-se profundamente, entre as órbitas e acima da cavidade nasal.",
+        "Marcos para o exercício": "A lâmina cribriforme dá passagem aos filamentos do nervo olfatório; a lâmina perpendicular forma a parte superior do septo nasal e participa do desvio de septo. A lâmina orbital, muito fina, é conhecida como lâmina papirácea e se fratura nos traumas orbitais em blowout."
+      },
+      "related": ["frontal", "esfenoide", "osso-nasal", "maxila", "lacrimal", "palatino", "vomer", "concha-nasal-inferior"]
+    },
+    {
+      "id": "zigomatico",
+      "fields": {
+        "Articula-se com": "Frontal, esfenoide, temporal e maxila.",
+        "Palpação básica": "Facilmente palpável como a proeminência da bochecha. Seu processo temporal forma o arco zigomático, palpável em toda a extensão até a orelha.",
+        "Marcos para o exercício": "Dá origem aos músculos zigomático maior e menor, essenciais na avaliação do sorriso, e ao masseter, pelo arco zigomático."
+      },
+      "related": ["frontal", "esfenoide", "temporal", "maxila", "masseter", "zigomatico-maior", "zigomatico-menor", "orbicular-do-olho", "lacrimal"]
+    },
+    {
+      "id": "maxila",
+      "fields": {
+        "Articula-se com": "Frontal, etmoide, nasal, lacrimal, zigomático, palatino, vômer, concha nasal inferior e maxila do lado oposto.",
+        "Palpação básica": "Palpável na região do lábio superior e na margem infraorbital. O forame infraorbital é sentido como um pequeno entalhe cerca de 1 cm abaixo da margem infraorbital, na linha média da pupila.",
+        "Marcos para o exercício": "Dá origem à maior parte dos músculos elevadores do lábio superior e da asa do nariz, avaliados na paralisia facial. O processo alveolar sustenta os dentes superiores."
+      },
+      "related": ["frontal", "etmoide", "osso-nasal", "lacrimal", "zigomatico", "palatino", "vomer", "concha-nasal-inferior", "levantador-do-labio-superior", "levantador-nasolabial", "bucinador", "nasal"]
+    },
+    {
+      "id": "mandibula",
+      "fields": {
+        "Articula-se com": "Ossos temporais, pelas duas articulações temporomandibulares. É o único osso móvel do crânio.",
+        "Palpação básica": "Todo o corpo, o ângulo e o ramo são palpáveis. O côndilo é sentido à frente do trago da orelha durante a abertura e o fechamento da boca. O forame mentual fica abaixo do segundo pré-molar.",
+        "Marcos para o exercício": "Ângulo e ramo recebem o masseter e o pterigóideo medial; a fossa digástrica, na face interna da sínfise, dá origem ao ventre anterior do digástrico, e a linha milo-hióidea, ao milo-hióideo. A abertura bucal normal é de 40 a 50 mm entre os incisivos."
+      },
+      "related": ["temporal", "temporomandibular", "disco-da-atm", "masseter", "musculo-temporal", "pterigoideo-medial", "pterigoideo-lateral", "digastrico", "milo-hioideo", "genio-hioideo", "platisma", "mentual"]
+    },
+    {
+      "id": "hioide",
+      "fields": {
+        "Articula-se com": "Nenhum osso. É o único osso do corpo que não se articula diretamente com outro: fica suspenso por músculos e ligamentos.",
+        "Palpação básica": "Palpável na linha média do pescoço, acima da cartilagem tireóidea, ao nível de C3. Peça que a pessoa engula e sinta o hioide subir e descer sob os dedos.",
+        "Marcos para o exercício": "Ponto de convergência dos músculos supra e infra-hióideos. Sua elevação durante a deglutição é o marcador funcional mais usado na avaliação e no tratamento da disfagia."
+      },
+      "related": ["mandibula", "temporal", "vertebras-cervicais", "digastrico", "milo-hioideo", "genio-hioideo", "estilo-hioideo", "esterno-hioideo", "tireo-hioideo", "omo-hioideo", "tendao-intermediario-do-digastrico", "ligamento-estilo-hioideo"]
+    },
+    {
+      "id": "atlas",
+      "fields": {
+        "Articula-se com": "Occipital, acima, pelas articulações atlanto-occipitais, e áxis, abaixo, pelas articulações atlantoaxiais.",
+        "Palpação básica": "Seu processo transverso é palpável como uma pequena proeminência entre o processo mastoide e o ângulo da mandíbula, logo abaixo da orelha. É o processo transverso mais lateral de toda a coluna cervical.",
+        "Marcos para o exercício": "Não tem corpo vertebral nem processo espinhoso: é um anel. O espaço que seria o corpo é ocupado pelo dente do áxis, mantido no lugar pelo ligamento transverso do atlas. O tubérculo posterior recebe o reto posterior menor da cabeça."
+      },
+      "related": ["occipital", "axis", "atlanto-occipital", "atlantoaxial", "vertebras-cervicais", "reto-posterior-menor-da-cabeca", "obliquo-superior-da-cabeca", "obliquo-inferior-da-cabeca", "reto-anterior-da-cabeca", "reto-lateral-da-cabeca", "ligamento-nucal"]
+    },
+    {
+      "id": "axis",
+      "fields": {
+        "Articula-se com": "Atlas, acima, pelas articulações atlantoaxiais, e terceira vértebra cervical, abaixo.",
+        "Palpação básica": "Seu processo espinhoso é o primeiro palpável abaixo do occipital, logo na base do crânio, sendo referência para contar as vértebras cervicais.",
+        "Marcos para o exercício": "Seu dente, ou processo odontoide, é o eixo em torno do qual o atlas e a cabeça giram. O espinhoso recebe inserções maciças do semiespinhal cervical, do reto posterior maior da cabeça e do oblíquo inferior da cabeça, o que faz dessa região um ponto de concentração de forças e de dor cervical."
+      },
+      "related": ["atlas", "vertebras-cervicais", "atlantoaxial", "occipital", "reto-posterior-maior-da-cabeca", "obliquo-inferior-da-cabeca", "semiespinhal-cervical", "espinhal-cervical", "ligamento-longitudinal-posterior"]
+    },
+    {
+      "id": "vertebras-cervicais",
+      "fields": {
+        "Articula-se com": "Entre si pelos discos intervertebrais e pelas articulações zigapofisárias; acima com o crânio, pelo atlas, e abaixo com a primeira vértebra torácica.",
+        "Palpação básica": "Os processos espinhosos são palpáveis na linha média posterior. O de C7, chamado vértebra proeminente, é o mais saliente e serve de referência para contar os demais. O tubérculo anterior de C6, ou tubérculo carotídeo, é palpável lateralmente.",
+        "Marcos para o exercício": "Têm forames transversários, por onde passa a artéria vertebral, e processos espinhosos bífidos de C3 a C6. Suas facetas articulares são orientadas a cerca de 45°, o que permite grande mobilidade em todos os planos, especialmente rotação."
+      },
+      "related": ["atlas", "axis", "vertebras-toracicas", "intervertebrais", "nucleo-pulposo", "ligamento-nucal", "escaleno-anterior", "escaleno-medio", "longo-do-pescoco", "multifido-cervical", "semiespinhal-cervical", "levantador-da-escapula", "plexo-braquial"]
+    },
+    {
+      "id": "vertebras-toracicas",
+      "fields": {
+        "Articula-se com": "Entre si pelos discos e pelas zigapofisárias; com as costelas pelas articulações costovertebrais e costotransversárias; acima com C7 e abaixo com L1.",
+        "Palpação básica": "Os processos espinhosos são longos e muito inclinados para baixo, de modo que a ponta de um espinhoso torácico médio corresponde ao corpo da vértebra seguinte. A espinha da escápula corresponde ao nível de T3 e o ângulo inferior da escápula, ao nível de T7.",
+        "Marcos para o exercício": "Suas facetas articulares orientadas no plano frontal favorecem a rotação e limitam a flexão e a extensão. As fóveas costais recebem as cabeças das costelas, ligando diretamente a coluna à mecânica respiratória."
+      },
+      "related": ["vertebras-cervicais", "vertebras-lombares", "costelas", "intervertebrais", "nucleo-pulposo", "ligamento-costotransversario", "ligamento-radiado-da-cabeca-da-costela", "multifido-toracico", "longuissimo-toracico", "iliocostal-toracico", "romboide-maior"]
+    },
+    {
+      "id": "vertebras-lombares",
+      "fields": {
+        "Articula-se com": "Entre si pelos discos e pelas zigapofisárias; acima com T12 e abaixo com o sacro, na articulação lombossacra.",
+        "Palpação básica": "Os processos espinhosos são grandes, quadrangulares e horizontais, facilmente palpáveis. A linha que une os pontos mais altos das cristas ilíacas, chamada linha de Tuffier, cruza o espaço entre L3 e L4 ou o processo espinhoso de L4.",
+        "Marcos para o exercício": "Suas facetas articulares orientadas no plano sagital favorecem a flexão e a extensão e limitam muito a rotação, que é de apenas 2° a 3° por segmento. Forçar rotação lombar é justamente o que sobrecarrega as facetas e o disco."
+      },
+      "related": ["vertebras-toracicas", "sacro", "intervertebrais", "nucleo-pulposo", "osso-do-quadril", "multifido-lombar", "quadrado-lombar", "psoas-maior", "iliocostal-lombar", "longuissimo-toracico", "ligamento-iliolombar", "ligamentos-amarelos"]
+    },
+    {
+      "id": "sacro",
+      "fields": {
+        "Articula-se com": "Quinta vértebra lombar, acima; ossos do quadril, lateralmente, pelas articulações sacroilíacas; e cóccix, abaixo.",
+        "Palpação básica": "A espinha ilíaca póstero-superior é a referência principal: corresponde ao nível de S2 e é palpada como uma depressão em cada lado da base da coluna. A crista sacral mediana é palpável na linha média.",
+        "Marcos para o exercício": "Formado pela fusão de cinco vértebras. Seu movimento de nutação, o giro anterior entre os ilíacos, é controlado pelos ligamentos sacrotuberal e sacroespinal e é peça central da avaliação lombopélvica."
+      },
+      "related": ["vertebras-lombares", "osso-do-quadril", "coccix", "sacroiliaca", "sacrococcigea", "ligamento-sacrotuberal", "ligamento-sacroespinal", "ligamento-iliolombar", "multifido-lombar", "gluteo-maximo", "piriforme", "nervo-pudendo"]
+    },
+    {
+      "id": "coccix",
+      "fields": {
+        "Articula-se com": "Sacro, pela articulação sacrococcígea.",
+        "Palpação básica": "Palpável na linha média, abaixo do sacro, entre as nádegas. A palpação é sensível e deve ser feita com explicação prévia e consentimento; a avaliação da mobilidade requer toque retal por profissional habilitado.",
+        "Marcos para o exercício": "Formado pela fusão de três a cinco vértebras rudimentares. Recebe os ligamentos sacrotuberal e sacroespinal, o músculo coccígeo, o levantador do ânus e fibras do glúteo máximo, sendo ponto de ancoragem do assoalho pélvico."
+      },
+      "related": ["sacro", "sacrococcigea", "osso-do-quadril", "coccigeo", "pubococcigeo", "iliococcigeo", "gluteo-maximo", "ligamento-sacrotuberal", "nervo-pudendo"]
+    },
+    {
+      "id": "costelas",
+      "fields": {
+        "Articula-se com": "Vértebras torácicas, atrás, pelas articulações costovertebrais e costotransversárias; e com o esterno, à frente, pelas cartilagens costais, nas sete primeiras.",
+        "Palpação básica": "Palpáveis em toda a parede torácica. A segunda costela é localizada a partir do ângulo do esterno, referência para contar as demais. A décima segunda costela é palpável como extremidade livre na região lombar lateral.",
+        "Marcos para o exercício": "Costelas de um a sete são verdadeiras, de oito a dez são falsas e onze e doze são flutuantes. Seu movimento em braço de bomba, nas superiores, e em alça de balde, nas inferiores, é a base da mecânica respiratória."
+      },
+      "related": ["vertebras-toracicas", "esterno", "cartilagens-costais", "ligamento-costotransversario", "ligamento-radiado-da-cabeca-da-costela", "diafragma", "intercostais-externos", "intercostais-internos", "escaleno-anterior", "serratil-anterior", "quadrado-lombar"]
+    },
+    {
+      "id": "esterno",
+      "fields": {
+        "Articula-se com": "Clavículas, pelas articulações esternoclaviculares, e cartilagens costais da primeira à sétima costela.",
+        "Palpação básica": "O ângulo do esterno, ou ângulo de Louis, é palpável como um degrau horizontal na junção do manúbrio com o corpo. Corresponde ao nível da segunda costela e do disco entre T4 e T5, e é a referência para contar as costelas.",
+        "Marcos para o exercício": "A incisura jugular, no topo do manúbrio, é referência para avaliar a elevação do tórax na inspiração. O processo xifoide recebe o diafragma e o reto do abdome."
+      },
+      "related": ["clavicula", "costelas", "cartilagens-costais", "esternoclavicular", "disco-esternoclavicular", "ligamentos-esternoclaviculares", "peitoral-maior", "esternocleidomastoideo", "diafragma", "reto-do-abdomen", "transverso-do-torax"]
+    }
+  ]
+}

@@ -1,0 +1,6446 @@
+{
+  "deltoide": {
+    "name": "Deltoide",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Acromial part of deltoid muscle.l",
+      "Acromial part of deltoid muscle.r",
+      "Clavicular part of deltoid muscle.l",
+      "Clavicular part of deltoid muscle.r",
+      "Scapular spinal part of deltoid muscle.l",
+      "Scapular spinal part of deltoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-b74d57488cede4",
+      "ZA-dfbfb91949824f",
+      "ZA-50e681ac8f5124",
+      "ZA-bc88f0f42d616e",
+      "ZA-0378b861a51baf",
+      "ZA-3d3652cd3db07f"
+    ]
+  },
+  "supraespinal": {
+    "name": "Supraespinal",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Supraspinatus muscle.l",
+      "Supraspinatus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-0425424460a596",
+      "ZA-01cb75938da65b"
+    ]
+  },
+  "infraespinal": {
+    "name": "Infraespinal",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Infraspinatus muscle.l",
+      "Infraspinatus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-87ff24e3a85dbd",
+      "ZA-3eade513dbf4cd"
+    ]
+  },
+  "subescapular": {
+    "name": "Subescapular",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Subscapularis muscle.l",
+      "Subscapularis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-84c7d3654da909",
+      "ZA-bb19dc35992bc5"
+    ]
+  },
+  "redondo-menor": {
+    "name": "Redondo menor",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Teres minor muscle.l",
+      "Teres minor muscle.r"
+    ],
+    "modelIds": [
+      "ZA-a9f9cad10f26f8",
+      "ZA-fd5c02294b4754"
+    ]
+  },
+  "redondo-maior": {
+    "name": "Redondo maior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Teres major muscle.l",
+      "Teres major muscle.r"
+    ],
+    "modelIds": [
+      "ZA-15bfc90dc2bd39",
+      "ZA-74df3682355934"
+    ]
+  },
+  "biceps-braquial": {
+    "name": "Bíceps braquial",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Long head of biceps brachii.l",
+      "Long head of biceps brachii.r",
+      "Short head of biceps brachii.l",
+      "Short head of biceps brachii.r"
+    ],
+    "modelIds": [
+      "ZA-e51b14c43b3ffe",
+      "ZA-9c0235353a40cc",
+      "ZA-9324b86ccce8a7",
+      "ZA-b13d4b0e56fad4"
+    ]
+  },
+  "braquial": {
+    "name": "Braquial",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Brachialis muscle.l",
+      "Brachialis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-51cf66ea75e487",
+      "ZA-96ab3ac3accfa5"
+    ]
+  },
+  "triceps-braquial": {
+    "name": "Tríceps braquial",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Lateral head of triceps brachii.l",
+      "Lateral head of triceps brachii.r",
+      "Long head of triceps brachii.l",
+      "Long head of triceps brachii.r",
+      "Medial head of triceps brachii.l",
+      "Medial head of triceps brachii.r"
+    ],
+    "modelIds": [
+      "ZA-71505881f936b2",
+      "ZA-8969933cb59704",
+      "ZA-13175c41cad935",
+      "ZA-2b9227516bdcec",
+      "ZA-f0a2b9e97a614a",
+      "ZA-57697192a9eac6"
+    ]
+  },
+  "coracobraquial": {
+    "name": "Coracobraquial",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Coracobrachialis muscle.l",
+      "Coracobrachialis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-e1db2cde54d277",
+      "ZA-355be994aa4e57"
+    ]
+  },
+  "braquiorradial": {
+    "name": "Braquiorradial",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Brachioradialis muscle.l",
+      "Brachioradialis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-5071375025581f",
+      "ZA-2d3c7dfd5f1b92"
+    ]
+  },
+  "pronador-redondo": {
+    "name": "Pronador redondo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Deep head of pronator teres.l",
+      "Deep head of pronator teres.r",
+      "Superficial head of pronator teres.l",
+      "Superficial head of pronator teres.r"
+    ],
+    "modelIds": [
+      "ZA-eb596122a8c3e5",
+      "ZA-d07e330c4242bc",
+      "ZA-26562b3e1d2386",
+      "ZA-8cbafea2128ea9"
+    ]
+  },
+  "pronador-quadrado": {
+    "name": "Pronador quadrado",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Pronator quadratus.l",
+      "Pronator quadratus.r"
+    ],
+    "modelIds": [
+      "ZA-c1d8ff0cc3b10d",
+      "ZA-e3bd723aa71aa0"
+    ]
+  },
+  "supinador": {
+    "name": "Supinador",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Supinator.l",
+      "Supinator.r"
+    ],
+    "modelIds": [
+      "ZA-bd9e49892e0377",
+      "ZA-9a89804bc59545"
+    ]
+  },
+  "flexor-radial-do-carpo": {
+    "name": "Flexor radial do carpo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Flexor carpi radialis.l",
+      "Flexor carpi radialis.r"
+    ],
+    "modelIds": [
+      "ZA-8ef971f0d5b4ee",
+      "ZA-05f25ab2d75f78"
+    ]
+  },
+  "flexor-ulnar-do-carpo": {
+    "name": "Flexor ulnar do carpo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Humeral head of flexor carpi ulnaris.l",
+      "Humeral head of flexor carpi ulnaris.r",
+      "Ulnar head of flexor carpi ulnaris.l",
+      "Ulnar head of flexor carpi ulnaris.r"
+    ],
+    "modelIds": [
+      "ZA-10a13b233ee2af",
+      "ZA-ea1579125cb62e",
+      "ZA-03222d0709174d",
+      "ZA-f33c67ca772fb9"
+    ]
+  },
+  "extensor-radial-longo-do-carpo": {
+    "name": "Extensor radial longo do carpo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor carpi radialis longus.l",
+      "Extensor carpi radialis longus.r"
+    ],
+    "modelIds": [
+      "ZA-0de3145162a4e3",
+      "ZA-a1b0d0e77e9b9e"
+    ]
+  },
+  "extensor-ulnar-do-carpo": {
+    "name": "Extensor ulnar do carpo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Humeral head of extensor carpi ulnaris.l",
+      "Humeral head of extensor carpi ulnaris.r",
+      "Ulnar head of extensor carpi ulnaris.l",
+      "Ulnar head of extensor carpi ulnaris.r"
+    ],
+    "modelIds": [
+      "ZA-8816e8e0bbcf5b",
+      "ZA-9d478abefe4531",
+      "ZA-ae069275b5e305",
+      "ZA-40b30c5dac9bbe"
+    ]
+  },
+  "flexor-superficial-dos-dedos": {
+    "name": "Flexor superficial dos dedos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Humero-ulnar head of flexor digitorum superficialis.l",
+      "Humero-ulnar head of flexor digitorum superficialis.r",
+      "Radial head of flexor digitorum superficialis.l",
+      "Radial head of flexor digitorum superficialis.r"
+    ],
+    "modelIds": [
+      "ZA-e4b54fa2c565a7",
+      "ZA-843ee51e82678d",
+      "ZA-0e74de56f3d878",
+      "ZA-3a4df4fff34796"
+    ]
+  },
+  "flexor-profundo-dos-dedos": {
+    "name": "Flexor profundo dos dedos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Flexor digitorum profundus.l",
+      "Flexor digitorum profundus.r"
+    ],
+    "modelIds": [
+      "ZA-638e4f0945e54d",
+      "ZA-3fa34f98207ff2"
+    ]
+  },
+  "extensor-dos-dedos": {
+    "name": "Extensor dos dedos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor digitorum.l",
+      "Extensor digitorum.r"
+    ],
+    "modelIds": [
+      "ZA-53d11d3111ff76",
+      "ZA-f4ebdfd665b789"
+    ]
+  },
+  "abdutor-curto-do-polegar": {
+    "name": "Abdutor curto do polegar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Abductor pollicis brevis.l",
+      "Abductor pollicis brevis.r"
+    ],
+    "modelIds": [
+      "ZA-82c962cfd877e3",
+      "ZA-6787d74597d004"
+    ]
+  },
+  "adutor-do-polegar": {
+    "name": "Adutor do polegar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Oblique head of adductor pollicis.l",
+      "Oblique head of adductor pollicis.r",
+      "Transverse head of adductor pollicis.l",
+      "Transverse head of adductor pollicis.r"
+    ],
+    "modelIds": [
+      "ZA-74b8ac7738712b",
+      "ZA-16ac69fe2ce74f",
+      "ZA-8ab5372f0478a8",
+      "ZA-4b31a03d678187"
+    ]
+  },
+  "trapezio": {
+    "name": "Trapézio",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Ascending part of trapezius muscle.l",
+      "Ascending part of trapezius muscle.r",
+      "Descending part of trapezius muscle.l",
+      "Descending part of trapezius muscle.r",
+      "Transverse part of trapezius muscle.l",
+      "Transverse part of trapezius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-03d11aa52a6f36",
+      "ZA-70cdd4466a0d05",
+      "ZA-6b8257bf0a5d54",
+      "ZA-2ba0b1feac685b",
+      "ZA-053d1ef6d803ef",
+      "ZA-a8729a66ef5355"
+    ]
+  },
+  "serratil-anterior": {
+    "name": "Serrátil anterior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Serratus anterior muscle.l",
+      "Serratus anterior muscle.r"
+    ],
+    "modelIds": [
+      "ZA-a7d56735891ac8",
+      "ZA-08403f159fbf29"
+    ]
+  },
+  "peitoral-maior": {
+    "name": "Peitoral maior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "(Abdominal part of pectoralis major muscle).l",
+      "(Abdominal part of pectoralis major muscle).r",
+      "Clavicular head of pectoralis major muscle.l",
+      "Clavicular head of pectoralis major muscle.r",
+      "Sternocostal head of pectoralis major muscle.l",
+      "Sternocostal head of pectoralis major muscle.r"
+    ],
+    "modelIds": [
+      "ZA-2b3e1cd7bf55f6",
+      "ZA-5b6bc3c090d774",
+      "ZA-3c0a9b09661fd7",
+      "ZA-9ac365e0905b0b",
+      "ZA-ef066e3635be03",
+      "ZA-33f3d0951bf3f4"
+    ]
+  },
+  "peitoral-menor": {
+    "name": "Peitoral menor",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Pectoralis minor muscle.l",
+      "Pectoralis minor muscle.r"
+    ],
+    "modelIds": [
+      "ZA-935561d80ec47d",
+      "ZA-f8d79b4464c32d"
+    ]
+  },
+  "latissimo-do-dorso": {
+    "name": "Latíssimo do dorso",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Latissimus dorsi muscle.l",
+      "Latissimus dorsi muscle.r"
+    ],
+    "modelIds": [
+      "ZA-9f9ffda6d5eaf6",
+      "ZA-bc7dbad5f9689a"
+    ]
+  },
+  "romboide-maior": {
+    "name": "Romboide maior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Rhomboid major muscle.l",
+      "Rhomboid major muscle.r"
+    ],
+    "modelIds": [
+      "ZA-9279372acee2df",
+      "ZA-8d4c18e9bb505a"
+    ]
+  },
+  "levantador-da-escapula": {
+    "name": "Levantador da escápula",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Levator scapulae.l",
+      "Levator scapulae.r"
+    ],
+    "modelIds": [
+      "ZA-2f540439b2b38f",
+      "ZA-6fedeb71037073"
+    ]
+  },
+  "esternocleidomastoideo": {
+    "name": "Esternocleidomastóideo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Sternocleidomastoid muscle.l",
+      "Sternocleidomastoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-5dd3774f022d37",
+      "ZA-93a28e6cad4a93"
+    ]
+  },
+  "masseter": {
+    "name": "Masseter",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Deep part of masseter.l",
+      "Deep part of masseter.r",
+      "Superficial part of masseter.l",
+      "Superficial part of masseter.r"
+    ],
+    "modelIds": [
+      "ZA-d8408d0c6e4008",
+      "ZA-eb2d3220a099f5",
+      "ZA-2ddfde5198e81a",
+      "ZA-4deae594679463"
+    ]
+  },
+  "musculo-temporal": {
+    "name": "Músculo temporal",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Temporalis muscle.l",
+      "Temporalis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-baa50a3291f49b",
+      "ZA-12261711ce5b53"
+    ]
+  },
+  "reto-do-abdomen": {
+    "name": "Reto do abdômen",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Rectus abdominis muscle.l",
+      "Rectus abdominis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-a45e813cd3661a",
+      "ZA-f8e80e0f249b35"
+    ]
+  },
+  "obliquo-externo": {
+    "name": "Oblíquo externo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "External abdominal oblique muscle.l",
+      "External abdominal oblique muscle.r"
+    ],
+    "modelIds": [
+      "ZA-a37e0a05a2d2d3",
+      "ZA-a0399c24465767"
+    ]
+  },
+  "obliquo-interno": {
+    "name": "Oblíquo interno",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Internal abdominal oblique muscle.l",
+      "Internal abdominal oblique muscle.r"
+    ],
+    "modelIds": [
+      "ZA-6ac5907565676c",
+      "ZA-11e8ab43abc3b1"
+    ]
+  },
+  "transverso-do-abdomen": {
+    "name": "Transverso do abdômen",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Transversus abdominis muscle.l",
+      "Transversus abdominis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-0f462c8829a0fe",
+      "ZA-67d5878d84fa06"
+    ]
+  },
+  "quadrado-lombar": {
+    "name": "Quadrado lombar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Quadratus lumborum muscle.l",
+      "Quadratus lumborum muscle.r"
+    ],
+    "modelIds": [
+      "ZA-10d019f9d6d60f",
+      "ZA-0dd9276e9e8748"
+    ]
+  },
+  "gluteo-maximo": {
+    "name": "Glúteo máximo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Gluteus maximus muscle.l",
+      "Gluteus maximus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-db4c9d48439b4b",
+      "ZA-98e8733790d12d"
+    ]
+  },
+  "gluteo-medio": {
+    "name": "Glúteo médio",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Gluteus medius muscle.l",
+      "Gluteus medius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-98cfd2e4739529",
+      "ZA-cc11824f98a0b0"
+    ]
+  },
+  "gluteo-minimo": {
+    "name": "Glúteo mínimo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Gluteus minimus muscle.l",
+      "Gluteus minimus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-021b26190ea69b",
+      "ZA-5b406d40c187e8"
+    ]
+  },
+  "tensor-da-fascia-lata": {
+    "name": "Tensor da fáscia lata",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Tensor fasciae latae.l",
+      "Tensor fasciae latae.r"
+    ],
+    "modelIds": [
+      "ZA-5de17f418d0a64",
+      "ZA-a135c9b4e2fabb"
+    ]
+  },
+  "psoas-maior": {
+    "name": "Psoas maior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Psoas major.l",
+      "Psoas major.r"
+    ],
+    "modelIds": [
+      "ZA-2b1ab0ddc94089",
+      "ZA-c4d8dae87a8547"
+    ]
+  },
+  "iliaco": {
+    "name": "Ilíaco",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Iliacus muscle.l",
+      "Iliacus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-dcb37970a81f60",
+      "ZA-8ddf23fc92a154"
+    ]
+  },
+  "piriforme": {
+    "name": "Piriforme",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Piriformis muscle.l",
+      "Piriformis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-e01a17dc1047a0",
+      "ZA-32a071677e3536"
+    ]
+  },
+  "reto-femoral": {
+    "name": "Reto femoral",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Rectus femoris muscle.l",
+      "Rectus femoris muscle.r"
+    ],
+    "modelIds": [
+      "ZA-1ad68c891597b4",
+      "ZA-fc1ad71e9ef527"
+    ]
+  },
+  "vasto-lateral": {
+    "name": "Vasto lateral",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Vastus lateralis muscle.l",
+      "Vastus lateralis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-02106c69e9423f",
+      "ZA-5657d251c01868"
+    ]
+  },
+  "vasto-medial": {
+    "name": "Vasto medial",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Vastus medialis muscle.l",
+      "Vastus medialis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-5af4352e248a08",
+      "ZA-c1d5b9fd34eeb9"
+    ]
+  },
+  "vasto-intermedio": {
+    "name": "Vasto intermédio",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Vastus intermedius muscle.l",
+      "Vastus intermedius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-29c1c959ded665",
+      "ZA-8459e75e32bc2b"
+    ]
+  },
+  "sartorio": {
+    "name": "Sartório",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Sartorius muscle.l",
+      "Sartorius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-1015b69ae07697",
+      "ZA-44581a576decae"
+    ]
+  },
+  "biceps-femoral": {
+    "name": "Bíceps femoral",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Long head of biceps femoris.l",
+      "Long head of biceps femoris.r",
+      "Short head of biceps femoris.l",
+      "Short head of biceps femoris.r"
+    ],
+    "modelIds": [
+      "ZA-4c03c18e26d3bb",
+      "ZA-abed6255478a7c",
+      "ZA-8545551153bb56",
+      "ZA-584140037c07cc"
+    ]
+  },
+  "semitendineo": {
+    "name": "Semitendíneo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Semitendinosus muscle.l",
+      "Semitendinosus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-bf84fa47e06478",
+      "ZA-f75c91427175bd"
+    ]
+  },
+  "semimembranaceo": {
+    "name": "Semimembranáceo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Semimembranosus muscle.l",
+      "Semimembranosus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-f3b2f018a17420",
+      "ZA-5e4bf6073f8713"
+    ]
+  },
+  "adutor-longo": {
+    "name": "Adutor longo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Adductor longus.l",
+      "Adductor longus.r"
+    ],
+    "modelIds": [
+      "ZA-0f672365ac7a75",
+      "ZA-ec80bdf0e3a941"
+    ]
+  },
+  "adutor-magno": {
+    "name": "Adutor magno",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Adductor magnus.l",
+      "Adductor magnus.r"
+    ],
+    "modelIds": [
+      "ZA-9b14ad7808bb5f",
+      "ZA-4f5ac4fa86d685"
+    ]
+  },
+  "gracil": {
+    "name": "Grácil",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Gracilis muscle.l",
+      "Gracilis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-a88fde0fa12861",
+      "ZA-5c744deccf6d9d"
+    ]
+  },
+  "tibial-anterior": {
+    "name": "Tibial anterior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Tibialis anterior muscle.l",
+      "Tibialis anterior muscle.r"
+    ],
+    "modelIds": [
+      "ZA-46efa603e87c8f",
+      "ZA-60d4548da007db"
+    ]
+  },
+  "gastrocnemio": {
+    "name": "Gastrocnêmio",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Lateral head of gastrocnemius.l",
+      "Lateral head of gastrocnemius.r",
+      "Medial head of gastrocnemius.l",
+      "Medial head of gastrocnemius.r"
+    ],
+    "modelIds": [
+      "ZA-653a39515c39fe",
+      "ZA-086ab68959e8d1",
+      "ZA-a5d8eb10a862e1",
+      "ZA-870e0dfdb503e2"
+    ]
+  },
+  "soleo": {
+    "name": "Sóleo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Soleus muscle.l",
+      "Soleus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-d82b0f2604b249",
+      "ZA-b922e9cb9d40db"
+    ]
+  },
+  "tibial-posterior": {
+    "name": "Tibial posterior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Tibialis posterior muscle.l",
+      "Tibialis posterior muscle.r"
+    ],
+    "modelIds": [
+      "ZA-4fd1616f1cb9c1",
+      "ZA-ad8522696b35ce"
+    ]
+  },
+  "fibular-longo": {
+    "name": "Fibular longo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Fibularis longus muscle.l",
+      "Fibularis longus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-58f67cbfb252d4",
+      "ZA-dd9e8918662d0c"
+    ]
+  },
+  "fibular-curto": {
+    "name": "Fibular curto",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Fibularis brevis muscle.l",
+      "Fibularis brevis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-5850ac09805e56",
+      "ZA-b9718ee796d5cb"
+    ]
+  },
+  "extensor-longo-dos-dedos": {
+    "name": "Extensor longo dos dedos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor digitorum longus.l",
+      "Extensor digitorum longus.r"
+    ],
+    "modelIds": [
+      "ZA-b35f882e1ad34b",
+      "ZA-4f66a6e63c310f"
+    ]
+  },
+  "flexor-longo-do-halux": {
+    "name": "Flexor longo do hálux",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Flexor hallucis longus.l",
+      "Flexor hallucis longus.r"
+    ],
+    "modelIds": [
+      "ZA-566b7fea224e58",
+      "ZA-d848095caad94b"
+    ]
+  },
+  "popliteo": {
+    "name": "Poplíteo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Popliteus muscle.l",
+      "Popliteus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-c5563073511fb2",
+      "ZA-c801457e1b47af"
+    ]
+  },
+  "frontal": {
+    "name": "Frontal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Frontal bone"
+    ],
+    "modelIds": [
+      "ZA-8e8f88fe40d45d"
+    ]
+  },
+  "parietal": {
+    "name": "Parietal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Parietal bone.l",
+      "Parietal bone.r"
+    ],
+    "modelIds": [
+      "ZA-adef6b509aa660",
+      "ZA-6196f4850bc8e3"
+    ]
+  },
+  "temporal": {
+    "name": "Temporal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Temporal bone.l",
+      "Temporal bone.r"
+    ],
+    "modelIds": [
+      "ZA-6d36daa5e52931",
+      "ZA-de51bcc0183f91"
+    ]
+  },
+  "occipital": {
+    "name": "Occipital",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Occipital bone"
+    ],
+    "modelIds": [
+      "ZA-db74fa73231269"
+    ]
+  },
+  "esfenoide": {
+    "name": "Esfenoide",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Sphenoid bone"
+    ],
+    "modelIds": [
+      "ZA-a74c6306255a95"
+    ]
+  },
+  "etmoide": {
+    "name": "Etmoide",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Ethmoid bone"
+    ],
+    "modelIds": [
+      "ZA-8dbb0bb7e413f5"
+    ]
+  },
+  "zigomatico": {
+    "name": "Zigomático",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Zygomatic bone.l",
+      "Zygomatic bone.r"
+    ],
+    "modelIds": [
+      "ZA-296f37ae760060",
+      "ZA-b4f3d68e8b78bd"
+    ]
+  },
+  "maxila": {
+    "name": "Maxila",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Maxilla.l",
+      "Maxilla.r"
+    ],
+    "modelIds": [
+      "ZA-fb13b8ec6a77c5",
+      "ZA-fe74df8d864e86"
+    ]
+  },
+  "mandibula": {
+    "name": "Mandíbula",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Mandible"
+    ],
+    "modelIds": [
+      "ZA-7a850ff504f5d0"
+    ]
+  },
+  "hioide": {
+    "name": "Hioide",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Hyoid bone"
+    ],
+    "modelIds": [
+      "ZA-0ae71842d58abc"
+    ]
+  },
+  "atlas": {
+    "name": "Atlas",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Atlas (C1)"
+    ],
+    "modelIds": [
+      "ZA-7fb5720fb1239e"
+    ]
+  },
+  "axis": {
+    "name": "Áxis",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Axis (C2)"
+    ],
+    "modelIds": [
+      "ZA-fcd977845f4183"
+    ]
+  },
+  "vertebras-cervicais": {
+    "name": "Vértebras cervicais",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra C3",
+      "Vertebra C4",
+      "Vertebra C5",
+      "Vertebra C6",
+      "Vertebra C7"
+    ],
+    "modelIds": [
+      "ZA-3e0eee8778a5f2",
+      "ZA-bff9085efefcb3",
+      "ZA-dc49017304bfab",
+      "ZA-8a947f4284315c",
+      "ZA-63fa4563c47f6b"
+    ]
+  },
+  "vertebras-toracicas": {
+    "name": "Vértebras torácicas",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T1",
+      "Vertebra T10",
+      "Vertebra T11",
+      "Vertebra T12",
+      "Vertebra T2",
+      "Vertebra T3",
+      "Vertebra T4",
+      "Vertebra T5",
+      "Vertebra T6",
+      "Vertebra T7",
+      "Vertebra T8",
+      "Vertebra T9"
+    ],
+    "modelIds": [
+      "ZA-ecb1f7dbc175da",
+      "ZA-ddbf6c72bc29c5",
+      "ZA-18b015b2b8a113",
+      "ZA-792ba4c0105fcd",
+      "ZA-e3f0a4de64962f",
+      "ZA-20e95e2499fd17",
+      "ZA-84f5b2614efc41",
+      "ZA-235aff25d47f45",
+      "ZA-fe40150f8e263b",
+      "ZA-be0449a3e41911",
+      "ZA-d0a286ba14e27b",
+      "ZA-39310f10f871f0"
+    ]
+  },
+  "vertebras-lombares": {
+    "name": "Vértebras lombares",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra L1",
+      "Vertebra L2",
+      "Vertebra L3",
+      "Vertebra L4",
+      "Vertebra L5"
+    ],
+    "modelIds": [
+      "ZA-a268f2cafbd46c",
+      "ZA-383d4717457a61",
+      "ZA-50d6b6d1e9bdae",
+      "ZA-9b3e08dcf3827b",
+      "ZA-cfb0a2a0fed8f0"
+    ]
+  },
+  "sacro": {
+    "name": "Sacro",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Sacrum"
+    ],
+    "modelIds": [
+      "ZA-2c9db76f390d97"
+    ]
+  },
+  "coccix": {
+    "name": "Cóccix",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Coccyx"
+    ],
+    "modelIds": [
+      "ZA-fc72af72135688"
+    ]
+  },
+  "costelas": {
+    "name": "Costelas",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Eighth rib.l",
+      "Eighth rib.r",
+      "Eleventh rib.l",
+      "Eleventh rib.r",
+      "Fifth rib.l",
+      "Fifth rib.r",
+      "First rib.l",
+      "First rib.r",
+      "Fourth rib.l",
+      "Fourth rib.r",
+      "Ninth rib.l",
+      "Ninth rib.r",
+      "Second rib.r",
+      "Second rib.l",
+      "Seventh rib.l",
+      "Seventh rib.r",
+      "Sixth rib.l",
+      "Sixth rib.r",
+      "Tenth rib.l",
+      "Tenth rib.r",
+      "Third rib.l",
+      "Third rib.r",
+      "Twelfth rib.l",
+      "Twelfth rib.r"
+    ],
+    "modelIds": [
+      "ZA-be538ded659c0e",
+      "ZA-10e781b42ca15c",
+      "ZA-4a8d5c3e136dd5",
+      "ZA-de22fedf8db395",
+      "ZA-22be6cf4870e79",
+      "ZA-07750711de2880",
+      "ZA-861098e2ad6d5f",
+      "ZA-5f467e0a0e22c1",
+      "ZA-f6891ad7d6ecbb",
+      "ZA-147bb1e888a9f1",
+      "ZA-ab005e833046c8",
+      "ZA-6f76b6bcc3c870",
+      "ZA-7c364a97d557e4",
+      "ZA-19f705a99deeaa",
+      "ZA-60e1d0917fd5f7",
+      "ZA-c7dda0a73f51ff",
+      "ZA-2aa5870d308142",
+      "ZA-7e86f39de90ba8",
+      "ZA-e47857b7da871d",
+      "ZA-4a79b7c42a45c3",
+      "ZA-24f1569dfcb072",
+      "ZA-cf02c4ba2331cd",
+      "ZA-9778f93d63cbe0",
+      "ZA-a6652efdcd29c6"
+    ]
+  },
+  "esterno": {
+    "name": "Esterno",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Body of sternum",
+      "Manubrium of sternum",
+      "Xiphoid process"
+    ],
+    "modelIds": [
+      "ZA-719a0a9f5096a2",
+      "ZA-3db84755bd91a2",
+      "ZA-a2b7788ebd2225"
+    ]
+  },
+  "clavicula": {
+    "name": "Clavícula",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Clavicle.l",
+      "Clavicle.r"
+    ],
+    "modelIds": [
+      "ZA-7e513ab46e08f2",
+      "ZA-68a04acb0594e7"
+    ]
+  },
+  "escapula": {
+    "name": "Escápula",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Scapula.l",
+      "Scapula.r"
+    ],
+    "modelIds": [
+      "ZA-82c423a2d9629a",
+      "ZA-cdbfb237d6bba5"
+    ]
+  },
+  "umero": {
+    "name": "Úmero",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Humerus.l",
+      "Humerus.r"
+    ],
+    "modelIds": [
+      "ZA-392caa1c00b14e",
+      "ZA-bcf4932a02405a"
+    ]
+  },
+  "radio": {
+    "name": "Rádio",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Radius.l",
+      "Radius.r"
+    ],
+    "modelIds": [
+      "ZA-5e0d97935f00d1",
+      "ZA-8a48faa6b2bf81"
+    ]
+  },
+  "ulna": {
+    "name": "Ulna",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Ulna.l",
+      "Ulna.r"
+    ],
+    "modelIds": [
+      "ZA-c187da6b8beb3b",
+      "ZA-7bf2093c9bc127"
+    ]
+  },
+  "escafoide": {
+    "name": "Escafoide",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Scaphoid bone.r",
+      "Scaphoid bone.l"
+    ],
+    "modelIds": [
+      "ZA-557649a62d5eb1",
+      "ZA-dd59a0e4f0bed3"
+    ]
+  },
+  "semilunar": {
+    "name": "Semilunar",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Lunate bone.l",
+      "Lunate bone.r"
+    ],
+    "modelIds": [
+      "ZA-e7aadf98df598e",
+      "ZA-0fb4cef4d6ede9"
+    ]
+  },
+  "piramidal": {
+    "name": "Piramidal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Triquetrum bone.l",
+      "Triquetrum bone.r"
+    ],
+    "modelIds": [
+      "ZA-e3caca12db6f5e",
+      "ZA-4ab9be69a1e584"
+    ]
+  },
+  "pisiforme": {
+    "name": "Pisiforme",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Pisiform bone.l",
+      "Pisiform bone.r"
+    ],
+    "modelIds": [
+      "ZA-2919eed4eb0590",
+      "ZA-0d7f6b67547502"
+    ]
+  },
+  "trapezio-do-carpo": {
+    "name": "Trapézio do carpo",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Trapezium bone.l",
+      "Trapezium bone.r"
+    ],
+    "modelIds": [
+      "ZA-af5fa22f78a8df",
+      "ZA-04ddba2f2d5778"
+    ]
+  },
+  "trapezoide": {
+    "name": "Trapezoide",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Trapezoid bone.l",
+      "Trapezoid bone.r"
+    ],
+    "modelIds": [
+      "ZA-7d4e33b05b4fed",
+      "ZA-467ce626607969"
+    ]
+  },
+  "capitato": {
+    "name": "Capitato",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Capitate bone.l",
+      "Capitate bone.r"
+    ],
+    "modelIds": [
+      "ZA-4975bdbe8ca25c",
+      "ZA-2f20a3e66514e9"
+    ]
+  },
+  "hamato": {
+    "name": "Hamato",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Hamate bone.l",
+      "Hamate bone.r"
+    ],
+    "modelIds": [
+      "ZA-58ce878642aa7c",
+      "ZA-bf08851726db8f"
+    ]
+  },
+  "metacarpais": {
+    "name": "Metacarpais",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Fifth metacarpal bone.l",
+      "Fifth metacarpal bone.r",
+      "First metacarpal bone.l",
+      "First metacarpal bone.r",
+      "Fourth metacarpal bone.l",
+      "Fourth metacarpal bone.r",
+      "Second metacarpal bone.l",
+      "Second metacarpal bone.r",
+      "Third metacarpal bone.l",
+      "Third metacarpal bone.r"
+    ],
+    "modelIds": [
+      "ZA-22e10f0df37ada",
+      "ZA-63f1fe6563a53b",
+      "ZA-9df38dd0067f8e",
+      "ZA-0ca27c38f6ab39",
+      "ZA-72081f4dbc2370",
+      "ZA-d885ef7d1a0584",
+      "ZA-1557e03b4112dd",
+      "ZA-2c738171c8d19f",
+      "ZA-dd7c3d15646d92",
+      "ZA-a30ca0ea41b749"
+    ]
+  },
+  "falanges-da-mao": {
+    "name": "Falanges da mão",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of fifth finger of hand.l",
+      "Distal phalanx of fifth finger of hand.r",
+      "Distal phalanx of first finger of hand.l",
+      "Distal phalanx of first finger of hand.r",
+      "Distal phalanx of fourth finger of hand.l",
+      "Distal phalanx of fourth finger of hand.r",
+      "Distal phalanx of second finger of hand.l",
+      "Distal phalanx of second finger of hand.r",
+      "Distal phalanx of third finger of hand.l",
+      "Distal phalanx of third finger of hand.r",
+      "Middle phalanx of fifth finger of hand.l",
+      "Middle phalanx of fifth finger of hand.r",
+      "Middle phalanx of fourth finger of hand.l",
+      "Middle phalanx of fourth finger of hand.r",
+      "Middle phalanx of second finger of hand.l",
+      "Middle phalanx of second finger of hand.r",
+      "Middle phalanx of third finger of hand.l",
+      "Middle phalanx of third finger of hand.r",
+      "Proximal phalanx of fifth finger of hand.l",
+      "Proximal phalanx of fifth finger of hand.r",
+      "Proximal phalanx of first finger of hand.l",
+      "Proximal phalanx of first finger of hand.r",
+      "Proximal phalanx of fourth finger of hand.l",
+      "Proximal phalanx of fourth finger of hand.r",
+      "Proximal phalanx of second finger of hand.l",
+      "Proximal phalanx of second finger of hand.r",
+      "Proximal phalanx of third finger of hand.l",
+      "Proximal phalanx of third finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-ccff27b79ec8e9",
+      "ZA-0c77c2d8ff99f2",
+      "ZA-48e48518b26bcf",
+      "ZA-5f1ee7ec033a6f",
+      "ZA-fd4f42e270065f",
+      "ZA-4ce81819884916",
+      "ZA-ab8574e540f5ad",
+      "ZA-754686312c3d29",
+      "ZA-f6f3b71c5c8c03",
+      "ZA-246f9aa59fd09a",
+      "ZA-20da467531b352",
+      "ZA-a4d46065b80672",
+      "ZA-5955d7f9c31067",
+      "ZA-4869c6ede8bd46",
+      "ZA-d7ed85a2496bb0",
+      "ZA-c60a22411ad8c0",
+      "ZA-6c214d35b4a9c7",
+      "ZA-e4e03b2db07bd1",
+      "ZA-e9effcce041423",
+      "ZA-5a47814091b922",
+      "ZA-9e49555b8e9231",
+      "ZA-e6c7801fd264ef",
+      "ZA-164e3978d46984",
+      "ZA-ce23d4b5c9b625",
+      "ZA-c36d7bb09a02c1",
+      "ZA-b7e1d81f56ce2f",
+      "ZA-c30338b26464d9",
+      "ZA-35f7092ca4daad"
+    ]
+  },
+  "osso-do-quadril": {
+    "name": "Osso do quadril",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Hip bone.l",
+      "Hip bone.r"
+    ],
+    "modelIds": [
+      "ZA-5904807f8c7d2c",
+      "ZA-43545666d49435"
+    ]
+  },
+  "femur": {
+    "name": "Fêmur",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Femur.l",
+      "Femur.r"
+    ],
+    "modelIds": [
+      "ZA-b9d73c3c84a7f6",
+      "ZA-ebb15e1f4911a8"
+    ]
+  },
+  "patela": {
+    "name": "Patela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Patella.l",
+      "Patella.r"
+    ],
+    "modelIds": [
+      "ZA-574a0a243828e9",
+      "ZA-b938e8231daf02"
+    ]
+  },
+  "tibia": {
+    "name": "Tíbia",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Tibia.l",
+      "Tibia.r"
+    ],
+    "modelIds": [
+      "ZA-28f17798255acd",
+      "ZA-adbd394e788929"
+    ]
+  },
+  "fibula": {
+    "name": "Fíbula",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Fibula.l",
+      "Fibula.r"
+    ],
+    "modelIds": [
+      "ZA-6c8b3ad8730200",
+      "ZA-33bc3ea1caf24a"
+    ]
+  },
+  "talus": {
+    "name": "Tálus",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Talus.l",
+      "Talus.r"
+    ],
+    "modelIds": [
+      "ZA-80a3138971d3ea",
+      "ZA-c1f6c7cdb515b6"
+    ]
+  },
+  "calcaneo": {
+    "name": "Calcâneo",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Calcaneus.l",
+      "Calcaneus.r"
+    ],
+    "modelIds": [
+      "ZA-d57557923d41fb",
+      "ZA-de406c692e95c9"
+    ]
+  },
+  "navicular": {
+    "name": "Navicular",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Navicular bone.l",
+      "Navicular bone.r"
+    ],
+    "modelIds": [
+      "ZA-c116f05960d005",
+      "ZA-64ab83c37785af"
+    ]
+  },
+  "cuboide": {
+    "name": "Cuboide",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Cuboid bone.l",
+      "Cuboid bone.r"
+    ],
+    "modelIds": [
+      "ZA-863be8d1262d8f",
+      "ZA-12920229909a4e"
+    ]
+  },
+  "cuneiforme-medial": {
+    "name": "Cuneiforme medial",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Medial cuneiform bone.l",
+      "Medial cuneiform bone.r"
+    ],
+    "modelIds": [
+      "ZA-9c3c0c814f099c",
+      "ZA-695e146b531271"
+    ]
+  },
+  "cuneiforme-intermedio": {
+    "name": "Cuneiforme intermédio",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Intermediate cuneiform bone.l",
+      "Intermediate cuneiform bone.r"
+    ],
+    "modelIds": [
+      "ZA-d35e2f333da0c5",
+      "ZA-9d394d4752f27a"
+    ]
+  },
+  "cuneiforme-lateral": {
+    "name": "Cuneiforme lateral",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Lateral cuneiform bone.l",
+      "Lateral cuneiform bone.r"
+    ],
+    "modelIds": [
+      "ZA-1ccf65805c9a54",
+      "ZA-25ba4e2ea96fc7"
+    ]
+  },
+  "metatarsais": {
+    "name": "Metatarsais",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Fifth metatarsal bone.l",
+      "Fifth metatarsal bone.r",
+      "First metatarsal bone.l",
+      "First metatarsal bone.r",
+      "Fourth metatarsal bone.l",
+      "Fourth metatarsal bone.r",
+      "Second metatarsal bone.r",
+      "Second metatarsal bone.l",
+      "Third metatarsal bone.l",
+      "Third metatarsal bone.r"
+    ],
+    "modelIds": [
+      "ZA-1121d2712fdac7",
+      "ZA-32252c5a8288c3",
+      "ZA-5c4831118859bc",
+      "ZA-18d651c7c4cb48",
+      "ZA-a1dbeb10397d29",
+      "ZA-ed21d2eab3634f",
+      "ZA-48e6cf5ecc82e8",
+      "ZA-661f01d69bb1de",
+      "ZA-b0bd7f9ca22f4a",
+      "ZA-d1a9c79b5c8977"
+    ]
+  },
+  "falanges-do-pe": {
+    "name": "Falanges do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of fifth finger of foot.l",
+      "Distal phalanx of fifth finger of foot.r",
+      "Distal phalanx of first finger of foot.l",
+      "Distal phalanx of first finger of foot.r",
+      "Distal phalanx of fourth finger of foot.l",
+      "Distal phalanx of fourth finger of foot.r",
+      "Distal phalanx of second finger of foot.l",
+      "Distal phalanx of second finger of foot.r",
+      "Distal phalanx of third finger of foot.l",
+      "Distal phalanx of third finger of foot.r",
+      "Middle phalanx of fifth finger of foot.l",
+      "Middle phalanx of fifth finger of foot.r",
+      "Middle phalanx of fourth finger of foot.l",
+      "Middle phalanx of fourth finger of foot.r",
+      "Middle phalanx of second finger of foot.l",
+      "Middle phalanx of second finger of foot.r",
+      "Middle phalanx of third finger of foot.l",
+      "Middle phalanx of third finger of foot.r",
+      "Proximal phalanx of fifth finger of foot.l",
+      "Proximal phalanx of fifth finger of foot.r",
+      "Proximal phalanx of first finger of foot.l",
+      "Proximal phalanx of first finger of foot.r",
+      "Proximal phalanx of fourth finger of foot.l",
+      "Proximal phalanx of fourth finger of foot.r",
+      "Proximal phalanx of second finger of foot.l",
+      "Proximal phalanx of second finger of foot.r",
+      "Proximal phalanx of third finger of foot.l",
+      "Proximal phalanx of third finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-0c8d46736cd0d0",
+      "ZA-01e1daf784598d",
+      "ZA-689f96bec92fe9",
+      "ZA-686672aa34d163",
+      "ZA-707a07d23c678e",
+      "ZA-9d3008c2cf380c",
+      "ZA-d400833c81b942",
+      "ZA-f4fea5520ea8c8",
+      "ZA-f16f0b464cfedc",
+      "ZA-b0bb4f092e61f4",
+      "ZA-c745bc67fc7867",
+      "ZA-ef3fdc0d337beb",
+      "ZA-55245cbccd638c",
+      "ZA-ec0e725e5b644c",
+      "ZA-d0a388cf29f70a",
+      "ZA-903162e237b8c4",
+      "ZA-85c811aae06a86",
+      "ZA-f6d27914d0348e",
+      "ZA-c64cb1b7ece01a",
+      "ZA-4ad33d8271cde1",
+      "ZA-ea4819f97e8c21",
+      "ZA-c07969394566b5",
+      "ZA-73d870dff5ab90",
+      "ZA-0378c0a07cd4e3",
+      "ZA-b310de8c5e1bdb",
+      "ZA-caf3052e22833f",
+      "ZA-896315e816ea4d",
+      "ZA-e9ea85158fac7e"
+    ]
+  },
+  "glenoumeral": {
+    "name": "Glenoumeral",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsule of glenohumeral joint.l",
+      "Articular capsule of glenohumeral joint.r"
+    ],
+    "modelIds": [
+      "ZA-81f96b5ef0b699",
+      "ZA-8d9180a97b73a3"
+    ]
+  },
+  "acromioclavicular": {
+    "name": "Acromioclavicular",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsule of acromioclavicular joint.l",
+      "Articular capsule of acromioclavicular joint.r"
+    ],
+    "modelIds": [
+      "ZA-dc43980918a611",
+      "ZA-369dbcbddc798a"
+    ]
+  },
+  "esternoclavicular": {
+    "name": "Esternoclavicular",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsule of sternoclavicular joint.l",
+      "Articular capsule of sternoclavicular joint.r"
+    ],
+    "modelIds": [
+      "ZA-0e2b0016acc987",
+      "ZA-6cc59e5ae79118"
+    ]
+  },
+  "cotovelo": {
+    "name": "Cotovelo",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsule of elbow joint.l",
+      "Articular capsule of elbow joint.r"
+    ],
+    "modelIds": [
+      "ZA-20b7522d0045f2",
+      "ZA-5a9cd8e0b26dd9"
+    ]
+  },
+  "radioulnar-proximal": {
+    "name": "Radioulnar proximal",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Annular ligament of radius.l",
+      "Annular ligament of radius.r"
+    ],
+    "modelIds": [
+      "ZA-f90c2966bbc1e2",
+      "ZA-2d0de32f19f80f"
+    ]
+  },
+  "radioulnar-distal": {
+    "name": "Radioulnar distal",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular disc of distal radio-ulnar joint.l",
+      "Articular disc of distal radio-ulnar joint.r"
+    ],
+    "modelIds": [
+      "ZA-76671b911ccbef",
+      "ZA-d7748ccf7a3018"
+    ]
+  },
+  "radiocarpal": {
+    "name": "Radiocarpal",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsule of radiocarpal joint.l",
+      "Articular capsule of radiocarpal joint.r"
+    ],
+    "modelIds": [
+      "ZA-b39ad4ae0d4115",
+      "ZA-5484c691a021b4"
+    ]
+  },
+  "carpometacarpal-do-polegar": {
+    "name": "Carpometacarpal do polegar",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Dorsal carpometacarpal ligaments.l",
+      "Dorsal carpometacarpal ligaments.r",
+      "Palmar carpometacarpal ligaments.l",
+      "Palmar carpometacarpal ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-43db9623b37b76",
+      "ZA-561637a3801424",
+      "ZA-2ec4aa736b5a44",
+      "ZA-6dfebb45fa60ff"
+    ]
+  },
+  "metacarpofalangicas": {
+    "name": "Metacarpofalângicas",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsules of metacarpophalangeal joints.l",
+      "Articular capsules of metacarpophalangeal joints.r"
+    ],
+    "modelIds": [
+      "ZA-698af4cc100643",
+      "ZA-eeb0cf351e832a"
+    ]
+  },
+  "interfalangicas-da-mao": {
+    "name": "Interfalângicas da mão",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsules of distal interphalangeal joints.l",
+      "Articular capsules of distal interphalangeal joints.r",
+      "Articular capsules of proximal interphalangeal joints.l",
+      "Articular capsules of proximal interphalangeal joints.r"
+    ],
+    "modelIds": [
+      "ZA-61a131d4dc768e",
+      "ZA-cff5efd645ee98",
+      "ZA-e4c8bf971dec1c",
+      "ZA-4eae4ade294d7f"
+    ]
+  },
+  "coxofemoral": {
+    "name": "Coxofemoral",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsule of hip joint.l",
+      "Articular capsule of hip joint.r"
+    ],
+    "modelIds": [
+      "ZA-ac33c90e5b4f81",
+      "ZA-327b13fb3ba125"
+    ]
+  },
+  "joelho": {
+    "name": "Joelho",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsule of knee joint.l",
+      "Articular capsule of knee joint.r"
+    ],
+    "modelIds": [
+      "ZA-861071471ec3b0",
+      "ZA-8133a26464c449"
+    ]
+  },
+  "talocrural": {
+    "name": "Talocrural",
+    "kind": "articulacoes",
+    "sourceObjects": [],
+    "modelIds": []
+  },
+  "subtalar": {
+    "name": "Subtalar",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Anterior talocalcaneal ligament.l",
+      "Anterior talocalcaneal ligament.r",
+      "Lateral talocalcaneal ligament.l",
+      "Lateral talocalcaneal ligament.r",
+      "Medial talocalcaneal ligament.l",
+      "Medial talocalcaneal ligament.r",
+      "Posterior talocalcaneal ligament.l",
+      "Posterior talocalcaneal ligament.r",
+      "Talocalcaneal interosseous ligament.l",
+      "Talocalcaneal interosseous ligament.r"
+    ],
+    "modelIds": [
+      "ZA-7b90fd48931eec",
+      "ZA-8bbdd9571d328e",
+      "ZA-8bb674930b91a2",
+      "ZA-234fc3e2687a89",
+      "ZA-76a56b7409ae34",
+      "ZA-79b3057a168b1e",
+      "ZA-e22ff25188fb9b",
+      "ZA-27e2fdd1fcca19",
+      "ZA-1d1dfc442d9836",
+      "ZA-e3c799a7a46c9a"
+    ]
+  },
+  "metatarsofalangicas": {
+    "name": "Metatarsofalângicas",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsules of metatarsophalangeal joints.l",
+      "Articular capsules of metatarsophalangeal joints.r"
+    ],
+    "modelIds": [
+      "ZA-4cd7ec615c84c1",
+      "ZA-898fb398bf6e17"
+    ]
+  },
+  "sacroiliaca": {
+    "name": "Sacroilíaca",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Anterior sacro-iliac ligament.l",
+      "Anterior sacro-iliac ligament.r",
+      "Interosseous sacro-iliac ligament.l",
+      "Interosseous sacro-iliac ligament.r",
+      "Posterior sacro-iliac ligament.l",
+      "Posterior sacro-iliac ligament.r"
+    ],
+    "modelIds": [
+      "ZA-7c0368c4ee4ec6",
+      "ZA-b191f37394b138",
+      "ZA-db3cd70cb1cbe2",
+      "ZA-d01d206b9ceb80",
+      "ZA-7ae3b960e02402",
+      "ZA-39f7c973b5a88e"
+    ]
+  },
+  "sinfise-pubica": {
+    "name": "Sínfise púbica",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Interpubic disc"
+    ],
+    "modelIds": [
+      "ZA-41340f2cfa2a1f"
+    ]
+  },
+  "temporomandibular": {
+    "name": "Temporomandibular",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsule of temporomandibular joint.l",
+      "Articular capsule of temporomandibular joint.r"
+    ],
+    "modelIds": [
+      "ZA-ce456d2708bfa7",
+      "ZA-4553e6b351cb6b"
+    ]
+  },
+  "atlanto-occipital": {
+    "name": "Atlanto-occipital",
+    "kind": "articulacoes",
+    "sourceObjects": [],
+    "modelIds": []
+  },
+  "atlantoaxial": {
+    "name": "Atlantoaxial",
+    "kind": "articulacoes",
+    "sourceObjects": [],
+    "modelIds": []
+  },
+  "intervertebrais": {
+    "name": "Intervertebrais",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Intervertebral disc C2-C3",
+      "Intervertebral disc C3-C4",
+      "Intervertebral disc C4-C5",
+      "Intervertebral disc C5-C6",
+      "Intervertebral disc C6-C7",
+      "Intervertebral disc C7-T1",
+      "Intervertebral disc L1-L2",
+      "Intervertebral disc L2-L3",
+      "Intervertebral disc L3-L4",
+      "Intervertebral disc L4-L5",
+      "Intervertebral disc L5-S1",
+      "Intervertebral disc T1-T2",
+      "Intervertebral disc T10-T11",
+      "Intervertebral disc T11-T12",
+      "Intervertebral disc T12-L1",
+      "Intervertebral disc T2-T3",
+      "Intervertebral disc T3-T4",
+      "Intervertebral disc T4-T5",
+      "Intervertebral disc T5-T6",
+      "Intervertebral disc T6-T7",
+      "Intervertebral disc T7-T8",
+      "Intervertebral disc T8-T9",
+      "Intervertebral disc T9-T10"
+    ],
+    "modelIds": [
+      "ZA-80881b125c5f6a",
+      "ZA-69f78636f0404d",
+      "ZA-27c3887ce42941",
+      "ZA-01911c95d10e1a",
+      "ZA-0d5f8ce685f8e4",
+      "ZA-45571f60ffbea1",
+      "ZA-a3bbb926e3fd52",
+      "ZA-cd3793232abc00",
+      "ZA-46af93e9af4658",
+      "ZA-72d1f10e23a9de",
+      "ZA-84f5e016a989f3",
+      "ZA-f08de41b7dae24",
+      "ZA-402cd4bab115da",
+      "ZA-79878f9175fecb",
+      "ZA-43feb2ec02857b",
+      "ZA-628c06afde34ea",
+      "ZA-6a4d43d0a8fd63",
+      "ZA-1ee6c9756fd709",
+      "ZA-ad3b7031550fad",
+      "ZA-2a68743eb63821",
+      "ZA-a870108e47e3c5",
+      "ZA-9a530b566540b6",
+      "ZA-17a94f410388b9"
+    ]
+  },
+  "ligamento-cruzado-anterior": {
+    "name": "Ligamento cruzado anterior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Anterior cruciate ligament.l",
+      "Anterior cruciate ligament.r"
+    ],
+    "modelIds": [
+      "ZA-aee00ebd66d4d2",
+      "ZA-cf17b52b27d332"
+    ]
+  },
+  "ligamento-cruzado-posterior": {
+    "name": "Ligamento cruzado posterior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Posterior cruciate ligament.l",
+      "Posterior cruciate ligament.r"
+    ],
+    "modelIds": [
+      "ZA-07d09c74bf8453",
+      "ZA-1bd0fec0ac05cb"
+    ]
+  },
+  "ligamento-colateral-tibial": {
+    "name": "Ligamento colateral tibial",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Deep part of tibial collateral ligament.l",
+      "Deep part of tibial collateral ligament.r",
+      "Superficial part of tibial collateral ligament.l",
+      "Superficial part of tibial collateral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-977645a99ac278",
+      "ZA-bcf9eab40ea135",
+      "ZA-468de45428b113",
+      "ZA-d2b3cc7cef49dd"
+    ]
+  },
+  "ligamento-colateral-fibular": {
+    "name": "Ligamento colateral fibular",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Fibular collateral ligament.l",
+      "Fibular collateral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-ce2c19273fc29f",
+      "ZA-808017fd1d68ea"
+    ]
+  },
+  "ligamento-patelar": {
+    "name": "Ligamento patelar",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Patellar ligament.ol",
+      "Patellar ligament.or",
+      "Patellar ligament.el",
+      "Patellar ligament.er"
+    ],
+    "modelIds": [
+      "ZA-98820ffe72f9e8",
+      "ZA-50b3f70149e7c1",
+      "ZA-adeef06dd5b1b5",
+      "ZA-940bb40e55c73c"
+    ]
+  },
+  "ligamento-talofibular-anterior": {
+    "name": "Ligamento talofibular anterior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Anterior talofibular ligament.l",
+      "Anterior talofibular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-acb77fda82d003",
+      "ZA-975efd6a59c50d"
+    ]
+  },
+  "ligamento-calcaneofibular": {
+    "name": "Ligamento calcaneofibular",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Calcaneofibular ligament.l",
+      "Calcaneofibular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-ee5019dbe021b3",
+      "ZA-95cebea24bd446"
+    ]
+  },
+  "ligamento-deltoide": {
+    "name": "Ligamento deltoide",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Posterior tibiotalar ligament.l",
+      "Posterior tibiotalar ligament.r",
+      "Tibiocalcaneal ligament.l",
+      "Tibiocalcaneal ligament.r",
+      "Tibionavicular ligament.l",
+      "Tibionavicular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-c8579e6843b147",
+      "ZA-3b4d2873e901fa",
+      "ZA-fcf6a6c465fcbf",
+      "ZA-da00a3aabe3071",
+      "ZA-a2fdc4f48eee1e",
+      "ZA-3b72654027e385"
+    ]
+  },
+  "ligamento-iliofemoral": {
+    "name": "Ligamento iliofemoral",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Descending part of iliofemoral ligament.l",
+      "Descending part of iliofemoral ligament.r",
+      "Transverse part of iliofemoral ligament.l",
+      "Transverse part of iliofemoral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-8a0594f54357ae",
+      "ZA-36a55ba74a3045",
+      "ZA-b5ed7f616f9a63",
+      "ZA-863e05c9b36e89"
+    ]
+  },
+  "menisco-medial": {
+    "name": "Menisco medial",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Medial meniscus.l",
+      "Medial meniscus.r"
+    ],
+    "modelIds": [
+      "ZA-0105cde6fea640",
+      "ZA-0dd9fdff38f4ae"
+    ]
+  },
+  "menisco-lateral": {
+    "name": "Menisco lateral",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Lateral meniscus.l",
+      "Lateral meniscus.r"
+    ],
+    "modelIds": [
+      "ZA-91af724307e9d0",
+      "ZA-2a8842e9c3dbbc"
+    ]
+  },
+  "tendao-calcaneo": {
+    "name": "Tendão calcâneo",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Calcaneal tendon.l",
+      "Calcaneal tendon.r"
+    ],
+    "modelIds": [
+      "ZA-77f8d358d003dd",
+      "ZA-aa63722034ac75"
+    ]
+  },
+  "nervo-musculocutaneo": {
+    "name": "Nervo musculocutâneo",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Musculocutaneous nerve.l",
+      "Musculocutaneous nerve.r"
+    ],
+    "modelIds": [
+      "ZA-2bd063fffd71c9",
+      "ZA-e54c267cf109f8"
+    ]
+  },
+  "nervo-axilar": {
+    "name": "Nervo axilar",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Axillary nerve.l",
+      "Axillary nerve.r",
+      "Muscular branches of axillary nerve.l",
+      "Muscular branches of axillary nerve.r",
+      "Superior lateral brachial cutaneous nerve.l",
+      "Superior lateral brachial cutaneous nerve.r"
+    ],
+    "modelIds": [
+      "ZA-4393c285794e70",
+      "ZA-2d5924e1f7178f",
+      "ZA-f6ad7cf625b693",
+      "ZA-5cd0c50808bb60",
+      "ZA-a74b30be7feff0",
+      "ZA-35011307f939d8"
+    ]
+  },
+  "nervo-supraescapular": {
+    "name": "Nervo supraescapular",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Suprascapular nerve.l",
+      "Suprascapular nerve.r"
+    ],
+    "modelIds": [
+      "ZA-1465ecc0cd5a59",
+      "ZA-5a7843b18d84bd"
+    ]
+  },
+  "nervo-radial": {
+    "name": "Nervo radial",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Radial nerve.l",
+      "Radial nerve.r",
+      "Deep branch of radial nerve.l",
+      "Deep branch of radial nerve.r",
+      "Dorsal digital branches of radial nerve.l",
+      "Dorsal digital branches of radial nerve.r",
+      "Inferior lateral brachial cutaneous nerve.l",
+      "Inferior lateral brachial cutaneous nerve.r",
+      "Muscular branches of radial nerve.l",
+      "Muscular branches of radial nerve.r",
+      "Posterior antebrachial cutaneous nerve.l",
+      "Posterior antebrachial cutaneous nerve.r",
+      "Superficial branch of radial nerve.l",
+      "Superficial branch of radial nerve.r"
+    ],
+    "modelIds": [
+      "ZA-2bf7afbb018f98",
+      "ZA-4ba0adbac9724c",
+      "ZA-4360db1973196e",
+      "ZA-c412b99240c557",
+      "ZA-03e11ae9369884",
+      "ZA-b1dee35e63885c",
+      "ZA-e46ad0e7fd1c34",
+      "ZA-b63bd63f4f92a9",
+      "ZA-25c6dcb7d09d0b",
+      "ZA-f4e81f92c45a01",
+      "ZA-01ffcba3ec4970",
+      "ZA-6233240033b910",
+      "ZA-455066fc14ebf3",
+      "ZA-9cfc6360be2bf0"
+    ]
+  },
+  "nervo-mediano": {
+    "name": "Nervo mediano",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Median nerve.l",
+      "Median nerve.r",
+      "(Communicating branch of median nerve with ulnar nerve).l",
+      "(Communicating branch of median nerve with ulnar nerve).r",
+      "Common palmar digital branches of median nerve.l",
+      "Common palmar digital branches of median nerve.r",
+      "Muscular branches of median nerve.l",
+      "Muscular branches of median nerve.r",
+      "Palmar branch of median nerve.l",
+      "Palmar branch of median nerve.r",
+      "Proper palmar digital branches of median nerve.l",
+      "Proper palmar digital branches of median nerve.r"
+    ],
+    "modelIds": [
+      "ZA-6ac62e71c26955",
+      "ZA-c8bdfee1019bd5",
+      "ZA-544d9833883861",
+      "ZA-70dccdd4fcc2e5",
+      "ZA-c363b7ef899c6d",
+      "ZA-f330157c91bf35",
+      "ZA-b987864f1805aa",
+      "ZA-f387ec1b242d6f",
+      "ZA-3e66ecb4a51e84",
+      "ZA-8ac3b9ff749e67",
+      "ZA-c491767c440c07",
+      "ZA-f59b02745b5696"
+    ]
+  },
+  "nervo-ulnar": {
+    "name": "Nervo ulnar",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Ulnar nerve.l",
+      "Ulnar nerve.r",
+      "Common palmar digital branches of ulnar nerve.l",
+      "Common palmar digital branches of ulnar nerve.r",
+      "Deep branch of ulnar nerve.l",
+      "Deep branch of ulnar nerve.r",
+      "Dorsal branch of ulnar nerve.l",
+      "Dorsal branch of ulnar nerve.r",
+      "Dorsal digital branches of ulnar nerve.l",
+      "Dorsal digital branches of ulnar nerve.r",
+      "Muscular branches of ulnar nerve.l",
+      "Muscular branches of ulnar nerve.r",
+      "Palmar branch of ulnar nerve.l",
+      "Palmar branch of ulnar nerve.r",
+      "Proper palmar digital branches of ulnar nerve.l",
+      "Proper palmar digital branches of ulnar nerve.r",
+      "Superficial branch of ulnar nerve.l",
+      "Superficial branch of ulnar nerve.r"
+    ],
+    "modelIds": [
+      "ZA-6e355adbbd2298",
+      "ZA-f473c14b471786",
+      "ZA-e51d82f125aa9c",
+      "ZA-f49ae7b8927523",
+      "ZA-8cc5c44093a563",
+      "ZA-2beb20c290d1d4",
+      "ZA-e67133d81ba282",
+      "ZA-5eeb4ebd77356e",
+      "ZA-9179af5d309ff2",
+      "ZA-d789562762a922",
+      "ZA-838845db108ce6",
+      "ZA-fe28850ef97673",
+      "ZA-546fdb01b0eb5b",
+      "ZA-6e0bf3b88ba371",
+      "ZA-09a588d059e061",
+      "ZA-be79ef174b78e3",
+      "ZA-3c406a04aa1b38",
+      "ZA-55fedd4605b178"
+    ]
+  },
+  "nervo-femoral": {
+    "name": "Nervo femoral",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Femoral nerve.l",
+      "Femoral nerve.r",
+      "Anterior cutaneous branches of femoral nerve.l",
+      "Anterior cutaneous branches of femoral nerve.r"
+    ],
+    "modelIds": [
+      "ZA-7c17d5e5c5b45b",
+      "ZA-6836d065cd9af7",
+      "ZA-402a2833f58095",
+      "ZA-22e94f99a02f68"
+    ]
+  },
+  "nervo-obturatorio": {
+    "name": "Nervo obturatório",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Obturator nerve.l",
+      "Obturator nerve.r",
+      "Anterior branch of obturator nerve.l",
+      "Anterior branch of obturator nerve.r",
+      "Posterior branch of obturator nerve.l",
+      "Posterior branch of obturator nerve.r"
+    ],
+    "modelIds": [
+      "ZA-c35f4f9e1e30ef",
+      "ZA-fef326fd735644",
+      "ZA-5f72512f26ad11",
+      "ZA-2421b9ded43c3b",
+      "ZA-ba49be6350b0d8",
+      "ZA-449ef87027877f"
+    ]
+  },
+  "nervo-ciatico": {
+    "name": "Nervo ciático",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Sciatic nerve.l",
+      "Sciatic nerve.r",
+      "Common plantar digital branches of lateral plantar nerve.l",
+      "Common plantar digital branches of lateral plantar nerve.r",
+      "Common plantar digital branches of medial plantar nerve.l",
+      "Deep fibular nerve.l",
+      "Deep fibular nerve.r",
+      "Dorsal digital branches of deep fibular nerve.l",
+      "Dorsal digital branches of deep fibular nerve.r",
+      "Dorsal digital branches of superficial fibular nerve.l",
+      "Dorsal digital branches of superficial fibular nerve.r",
+      "Intermediate dorsal cutaneous nerve of foot.l",
+      "Intermediate dorsal cutaneous nerve of foot.r",
+      "Medial dorsal cutaneous nerve of foot.l",
+      "Medial dorsal cutaneous nerve of foot.r",
+      "Medial sural cutaneous nerve.l",
+      "Medial sural cutaneous nerve.r",
+      "Muscular branches of deep fibular nerve.l",
+      "Muscular branches of deep fibular nerve.r",
+      "Nerve to piriformis muscle.l",
+      "Nerve to piriformis muscle.r",
+      "Proper plantar digital branches of lateral plantar nerve.l",
+      "Proper plantar digital branches of lateral plantar nerve.r",
+      "Proper plantar digital branches of medial plantar nerve.l",
+      "Proper plantar digital branches of medial plantar nerve.r",
+      "Common plantar digital branches of medial plantar nerve",
+      "Superficial fibular nerve.l",
+      "Superficial fibular nerve.r",
+      "Sural communicating branch of common fibular nerve.l",
+      "Sural communicating branch of common fibular nerve.r"
+    ],
+    "modelIds": [
+      "ZA-252b39f05350ea",
+      "ZA-c85282deea82f1",
+      "ZA-fe3332d75f3d85",
+      "ZA-f83ec8f1f0d68a",
+      "ZA-de9652fcd20e12",
+      "ZA-3aeeeb403b6cab",
+      "ZA-e4d6cac8821c27",
+      "ZA-c1934fcd3c2f1f",
+      "ZA-5713fbcfbd88e1",
+      "ZA-2c8d9d778460d2",
+      "ZA-86f5a500ab1428",
+      "ZA-861708d3ea68a7",
+      "ZA-ef889b6e663249",
+      "ZA-004a96db9ef1e1",
+      "ZA-4271c44572e8c3",
+      "ZA-cd10086c924722",
+      "ZA-34642fc0ed80ee",
+      "ZA-0a2883a31ef69f",
+      "ZA-44f29f15add517",
+      "ZA-aaaa5454cc8707",
+      "ZA-74e36e1acb8181",
+      "ZA-be57856923e594",
+      "ZA-669d532f6edbf1",
+      "ZA-e3be93e929c94a",
+      "ZA-396871274caf9f",
+      "ZA-7ef8e6e96f9ef6",
+      "ZA-f652a64c8ecb16",
+      "ZA-c5fff782165024",
+      "ZA-bedd408cb3ab23",
+      "ZA-5fcebe95679065"
+    ]
+  },
+  "nervo-tibial": {
+    "name": "Nervo tibial",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Tibial nerve.l",
+      "Tibial nerve.r"
+    ],
+    "modelIds": [
+      "ZA-8c99086546f923",
+      "ZA-a1c369d50bfbb7"
+    ]
+  },
+  "nervo-fibular-comum": {
+    "name": "Nervo fibular comum",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Common fibular nerve.l",
+      "Common fibular nerve.r"
+    ],
+    "modelIds": [
+      "ZA-ab0df5928f3b4e",
+      "ZA-89aa6dc0468c6b"
+    ]
+  },
+  "nervo-gluteo-superior": {
+    "name": "Nervo glúteo superior",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Superior gluteal nerve.l",
+      "Superior gluteal nerve.r"
+    ],
+    "modelIds": [
+      "ZA-236f6cdaeec3bf",
+      "ZA-97321eddbc8068"
+    ]
+  },
+  "nervo-gluteo-inferior": {
+    "name": "Nervo glúteo inferior",
+    "kind": "nervos",
+    "sourceObjects": [],
+    "modelIds": []
+  },
+  "plexo-braquial": {
+    "name": "Plexo braquial",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Anterior division of inferior trunk of brachial plexus.l",
+      "Anterior division of inferior trunk of brachial plexus.r",
+      "Anterior division of middle trunk of brachial plexus.l",
+      "Anterior division of middle trunk of brachial plexus.r",
+      "Anterior division of superior trunk of brachial plexus.l",
+      "Anterior division of superior trunk of brachial plexus.r",
+      "Inferior trunk of brachial plexus.l",
+      "Inferior trunk of brachial plexus.r",
+      "Middle trunk of brachial plexus.l",
+      "Middle trunk of brachial plexus.r",
+      "Posterior cord of brachial plexus.l",
+      "Posterior cord of brachial plexus.r",
+      "Posterior division of inferior trunk of brachial plexus.l",
+      "Posterior division of inferior trunk of brachial plexus.r",
+      "Posterior division of middle trunk of brachial plexus.l",
+      "Posterior division of middle trunk of brachial plexus.r",
+      "Posterior division of superior trunk of brachial plexus.l",
+      "Posterior division of superior trunk of brachial plexus.r",
+      "Roots of brachial plexus.l",
+      "Roots of brachial plexus.r",
+      "Superior trunk of brachial plexus.l",
+      "Superior trunk of brachial plexus.r"
+    ],
+    "modelIds": [
+      "ZA-41fb1bee1d3d7b",
+      "ZA-099cb29b80c967",
+      "ZA-efa0dadb1d2a92",
+      "ZA-686f957fd7b6b9",
+      "ZA-a9324987643c04",
+      "ZA-da6fce5b31c182",
+      "ZA-a82ee957572c26",
+      "ZA-987bcbc091445a",
+      "ZA-8fecb348b5aa53",
+      "ZA-1540dd2ef8c90f",
+      "ZA-4c0d357b3344be",
+      "ZA-ed6b2bb51d358e",
+      "ZA-7acc5509ca8f99",
+      "ZA-8240576158da69",
+      "ZA-7d955a91fe7aa8",
+      "ZA-58054ba03cddbd",
+      "ZA-b9df4d2e810393",
+      "ZA-6da1076fca637b",
+      "ZA-33bc64f942d762",
+      "ZA-6e843c4da6ddd2",
+      "ZA-2b68a47eabf081",
+      "ZA-036a7e079a39ce"
+    ]
+  },
+  "ligamento-acromioclavicular": {
+    "name": "Ligamento acromioclavicular",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Acromioclavicular ligament.l",
+      "Acromioclavicular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-4258d76a5bf3fb",
+      "ZA-6dcf1d82fdd124"
+    ]
+  },
+  "ligamento-conoide": {
+    "name": "Ligamento conoide",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Conoid ligament.l",
+      "Conoid ligament.r"
+    ],
+    "modelIds": [
+      "ZA-82c88656d0edc8",
+      "ZA-69f883880fcc9b"
+    ]
+  },
+  "ligamento-trapezoide": {
+    "name": "Ligamento trapezoide",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Trapezoid ligament.l",
+      "Trapezoid ligament.r"
+    ],
+    "modelIds": [
+      "ZA-454ddfe09a836c",
+      "ZA-75bb28c4b2b076"
+    ]
+  },
+  "ligamento-coracoacromial": {
+    "name": "Ligamento coracoacromial",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Coraco-acromial ligament.l",
+      "Coraco-acromial ligament.r"
+    ],
+    "modelIds": [
+      "ZA-9f3f9651bd6827",
+      "ZA-f264d27f2365ff"
+    ]
+  },
+  "ligamento-coracoumeral": {
+    "name": "Ligamento coracoumeral",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Coracohumeral ligament.l",
+      "Coracohumeral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-44058d7c44286a",
+      "ZA-e15e0b7074965e"
+    ]
+  },
+  "ligamento-glenoumeral-superior": {
+    "name": "Ligamento glenoumeral superior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Superior glenohumeral ligament.l",
+      "Superior glenohumeral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-c18537df26e1ff",
+      "ZA-6255af043f9df9"
+    ]
+  },
+  "ligamento-glenoumeral-medio": {
+    "name": "Ligamento glenoumeral médio",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Middle glenohumeral ligament.l",
+      "Middle glenohumeral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-68c149b618cb55",
+      "ZA-ab5ea55870e235"
+    ]
+  },
+  "ligamento-glenoumeral-inferior": {
+    "name": "Ligamento glenoumeral inferior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Inferior glenohumeral ligament.l",
+      "Inferior glenohumeral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-363848940c762e",
+      "ZA-da4e4b098d9600"
+    ]
+  },
+  "ligamento-colateral-radial-do-cotovelo": {
+    "name": "Ligamento colateral radial do cotovelo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Radial collateral ligament.l",
+      "Radial collateral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-e540fbdbe1b944",
+      "ZA-facef774dff4d7"
+    ]
+  },
+  "ligamento-colateral-ulnar-do-cotovelo": {
+    "name": "Ligamento colateral ulnar do cotovelo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Ulnar collateral ligament.l",
+      "Ulnar collateral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-b9586019831d60",
+      "ZA-14e9f4107a447e"
+    ]
+  },
+  "ligamento-quadrado": {
+    "name": "Ligamento quadrado",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Quadrate ligament.l",
+      "Quadrate ligament.r"
+    ],
+    "modelIds": [
+      "ZA-cb2ae6e21a15f6",
+      "ZA-61a784c9d924d1"
+    ]
+  },
+  "ligamento-radiocarpal-dorsal": {
+    "name": "Ligamento radiocarpal dorsal",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Dorsal radiocarpal ligament.l",
+      "Dorsal radiocarpal ligament.r"
+    ],
+    "modelIds": [
+      "ZA-f1ae6098c7b2bb",
+      "ZA-ab8c832925a2ec"
+    ]
+  },
+  "ligamento-escafolunar-interosseo": {
+    "name": "Ligamento escafolunar interósseo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Scapholunate interosseous ligament.l",
+      "Scapholunate interosseous ligament.r"
+    ],
+    "modelIds": [
+      "ZA-c8a0ea89cdd55b",
+      "ZA-7a4c02566ebfce"
+    ]
+  },
+  "ligamento-lunopiramidal-interosseo": {
+    "name": "Ligamento lunopiramidal interósseo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Lunotriquetral interosseous ligament.l",
+      "Lunotriquetral interosseous ligament.r"
+    ],
+    "modelIds": [
+      "ZA-29555ee30c6631",
+      "ZA-01bc1733667f88"
+    ]
+  },
+  "ligamentos-colaterais-metacarpofalangicos": {
+    "name": "Ligamentos colaterais metacarpofalângicos",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Collateral metacarpophalangeal ligaments.l",
+      "Collateral metacarpophalangeal ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-183a98a19476b6",
+      "ZA-66783f4880f6c3"
+    ]
+  },
+  "ligamentos-colaterais-interfalangicos-da-mao": {
+    "name": "Ligamentos colaterais interfalângicos da mão",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Collateral interphalangeal ligaments of hand.l",
+      "Collateral interphalangeal ligaments of hand.r"
+    ],
+    "modelIds": [
+      "ZA-56366035c1010e",
+      "ZA-f9c10983be3a02"
+    ]
+  },
+  "ligamento-da-cabeca-do-femur": {
+    "name": "Ligamento da cabeça do fêmur",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Ligament of head of femur.l",
+      "Ligament of head of femur.r"
+    ],
+    "modelIds": [
+      "ZA-e94cbd97aa7bdb",
+      "ZA-8c4856bd852fc0"
+    ]
+  },
+  "ligamento-transverso-do-acetabulo": {
+    "name": "Ligamento transverso do acetábulo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Transverse acetabular ligament.l",
+      "Transverse acetabular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-29fca6c3f3de9b",
+      "ZA-afb6900fdf287c"
+    ]
+  },
+  "ligamento-sacrotuberal": {
+    "name": "Ligamento sacrotuberal",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Sacrotuberous ligament.l",
+      "Sacrotuberous ligament.r"
+    ],
+    "modelIds": [
+      "ZA-0ed907906a5205",
+      "ZA-62f9fde33e153e"
+    ]
+  },
+  "ligamento-sacroespinal": {
+    "name": "Ligamento sacroespinal",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Sacrospinous ligament.l",
+      "Sacrospinous ligament.r"
+    ],
+    "modelIds": [
+      "ZA-3f8b0c2aee2907",
+      "ZA-8003ef37176386"
+    ]
+  },
+  "ligamento-popliteo-obliquo": {
+    "name": "Ligamento poplíteo oblíquo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Oblique popliteal ligament.l",
+      "Oblique popliteal ligament.r"
+    ],
+    "modelIds": [
+      "ZA-e6f5a0d20b1639",
+      "ZA-1b66c3ed065c7c"
+    ]
+  },
+  "ligamento-popliteo-arqueado": {
+    "name": "Ligamento poplíteo arqueado",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Arcuate popliteal ligament.l",
+      "Arcuate popliteal ligament.r"
+    ],
+    "modelIds": [
+      "ZA-e3216b1fed30ac",
+      "ZA-f102662ed61dbd"
+    ]
+  },
+  "ligamento-popliteofibular": {
+    "name": "Ligamento popliteofibular",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Popliteofibular ligament.l",
+      "Popliteofibular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-6657959e34a900",
+      "ZA-a3b5ea5cc1c091"
+    ]
+  },
+  "ligamento-transverso-do-joelho": {
+    "name": "Ligamento transverso do joelho",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Transverse ligament of knee.l",
+      "Transverse ligament of knee.r"
+    ],
+    "modelIds": [
+      "ZA-9f2a0220b764cd",
+      "ZA-d8712122913db6"
+    ]
+  },
+  "ligamento-talofibular-posterior": {
+    "name": "Ligamento talofibular posterior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Posterior talofibular ligament.l",
+      "Posterior talofibular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-66a480b2e4fea2",
+      "ZA-3de9db0db26bdc"
+    ]
+  },
+  "ligamento-tibiofibular-anterior": {
+    "name": "Ligamento tibiofibular anterior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Anterior tibiofibular ligament.l",
+      "Anterior tibiofibular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-69dfc134de780e",
+      "ZA-e9bcb47d7f8eab"
+    ]
+  },
+  "ligamento-tibiofibular-posterior": {
+    "name": "Ligamento tibiofibular posterior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Posterior tibiofibular ligament.l",
+      "Posterior tibiofibular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-decb6bc3cee5cc",
+      "ZA-5f00622d8fe1e1"
+    ]
+  },
+  "ligamento-plantar-longo": {
+    "name": "Ligamento plantar longo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Long plantar ligament.l",
+      "Long plantar ligament.r"
+    ],
+    "modelIds": [
+      "ZA-f8fcf757201791",
+      "ZA-9ba6f2d7153434"
+    ]
+  },
+  "ligamento-calcaneonavicular-plantar": {
+    "name": "Ligamento calcaneonavicular plantar",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Plantar calcaneonavicular ligament.l",
+      "Plantar calcaneonavicular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-13481ad327494f",
+      "ZA-7aa8b2351da7e9"
+    ]
+  },
+  "ligamento-calcaneocuboideo-plantar": {
+    "name": "Ligamento calcaneocuboideo plantar",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Plantar calcaneocuboid ligament.l",
+      "Plantar calcaneocuboid ligament.r"
+    ],
+    "modelIds": [
+      "ZA-9d82d78b1d9f8f",
+      "ZA-4512401ac261b7"
+    ]
+  },
+  "ligamentos-colaterais-metatarsofalangicos": {
+    "name": "Ligamentos colaterais metatarsofalângicos",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Collateral metatarsophalangeal ligaments.l",
+      "Collateral metatarsophalangeal ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-6fd18dd24e7cc0",
+      "ZA-41c0645544a85a"
+    ]
+  },
+  "ligamento-longitudinal-anterior": {
+    "name": "Ligamento longitudinal anterior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Anterior longitudinal ligament"
+    ],
+    "modelIds": [
+      "ZA-a3e8f6d97e3a95"
+    ]
+  },
+  "ligamento-longitudinal-posterior": {
+    "name": "Ligamento longitudinal posterior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Posterior longitudinal ligament"
+    ],
+    "modelIds": [
+      "ZA-d3d9ed7aa2811b"
+    ]
+  },
+  "ligamentos-amarelos": {
+    "name": "Ligamentos amarelos",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Ligamenta flava"
+    ],
+    "modelIds": [
+      "ZA-d5b4d41410d07c"
+    ]
+  },
+  "ligamento-supraespinal": {
+    "name": "Ligamento supraespinal",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Supraspinous ligament"
+    ],
+    "modelIds": [
+      "ZA-4f6e3b057d4b5e"
+    ]
+  },
+  "ligamentos-interespinais": {
+    "name": "Ligamentos interespinais",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Interspinous ligaments"
+    ],
+    "modelIds": [
+      "ZA-cdcd714581b8cc"
+    ]
+  },
+  "ligamento-nucal": {
+    "name": "Ligamento nucal",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Nuchal ligament"
+    ],
+    "modelIds": [
+      "ZA-a5e6d90d77b96d"
+    ]
+  },
+  "nervo-dorsal-da-escapula": {
+    "name": "Nervo dorsal da escápula",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Dorsal scapular nerve.l",
+      "Dorsal scapular nerve.r"
+    ],
+    "modelIds": [
+      "ZA-b1041bdfdfd8a3",
+      "ZA-b0aa8ad1e3e666"
+    ]
+  },
+  "nervo-toracico-longo": {
+    "name": "Nervo torácico longo",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Long thoracic nerve.l",
+      "Long thoracic nerve.r"
+    ],
+    "modelIds": [
+      "ZA-59356aa0f29bad",
+      "ZA-e68c5d0167858d"
+    ]
+  },
+  "nervo-toracodorsal": {
+    "name": "Nervo toracodorsal",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Thoracodorsal nerve.r",
+      "Thoracodorsal nerve.l"
+    ],
+    "modelIds": [
+      "ZA-fdbdf25fb9f08d",
+      "ZA-49b36fbca85cd1"
+    ]
+  },
+  "nervo-peitoral-lateral": {
+    "name": "Nervo peitoral lateral",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Lateral pectoral nerve.l",
+      "Lateral pectoral nerve.r"
+    ],
+    "modelIds": [
+      "ZA-e082ca404001ce",
+      "ZA-907c5e4990c4fc"
+    ]
+  },
+  "nervo-peitoral-medial": {
+    "name": "Nervo peitoral medial",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Medial pectoral nerve.l",
+      "Medial pectoral nerve.r"
+    ],
+    "modelIds": [
+      "ZA-a69b9a7197ba83",
+      "ZA-61e10d70d37bc9"
+    ]
+  },
+  "nervo-subescapular-superior": {
+    "name": "Nervo subescapular superior",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Superior subscapular nerve.l",
+      "Superior subscapular nerve.r"
+    ],
+    "modelIds": [
+      "ZA-160e42440d35bb",
+      "ZA-9049dc40aca90a"
+    ]
+  },
+  "nervo-subescapular-inferior": {
+    "name": "Nervo subescapular inferior",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Inferior subscapular nerve.l",
+      "Inferior subscapular nerve.r"
+    ],
+    "modelIds": [
+      "ZA-e9c5dce4c3d283",
+      "ZA-4dae25505675cd"
+    ]
+  },
+  "nervo-cutaneo-lateral-do-antebraco": {
+    "name": "Nervo cutâneo lateral do antebraço",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Lateral antebrachial cutaneous nerve.l",
+      "Lateral antebrachial cutaneous nerve.r"
+    ],
+    "modelIds": [
+      "ZA-a58d4d854ea966",
+      "ZA-d77db8d0ec2a7c"
+    ]
+  },
+  "nervo-cutaneo-medial-do-antebraco": {
+    "name": "Nervo cutâneo medial do antebraço",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Medial antebrachial cutaneous nerve.l",
+      "Medial antebrachial cutaneous nerve.r",
+      "Anterior branch of medial antebrachial cutaneous nerve.l",
+      "Anterior branch of medial antebrachial cutaneous nerve.r",
+      "Posterior branch of medial antebrachial cutaneous nerve.l",
+      "Posterior branch of medial antebrachial cutaneous nerve.r"
+    ],
+    "modelIds": [
+      "ZA-779549eca6895b",
+      "ZA-f6d10d6eac0a7c",
+      "ZA-cc3dd345fc79c6",
+      "ZA-7b9329321e8817",
+      "ZA-c7c03ab1a41875",
+      "ZA-e3e0d1eddcc247"
+    ]
+  },
+  "nervo-interosseo-anterior-do-antebraco": {
+    "name": "Nervo interósseo anterior do antebraço",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Anterior interosseous nerve of forearm.l",
+      "Anterior interosseous nerve of forearm.r"
+    ],
+    "modelIds": [
+      "ZA-b6664b69690c81",
+      "ZA-83a21f91fdd1a9"
+    ]
+  },
+  "nervo-interosseo-posterior-do-antebraco": {
+    "name": "Nervo interósseo posterior do antebraço",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Posterior interosseous nerve of forearm.l",
+      "Posterior interosseous nerve of forearm.r"
+    ],
+    "modelIds": [
+      "ZA-4e153c13e4abd4",
+      "ZA-2c70041bf0a108"
+    ]
+  },
+  "nervo-cutaneo-lateral-da-coxa": {
+    "name": "Nervo cutâneo lateral da coxa",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Lateral femoral cutaneous nerve.l",
+      "Lateral femoral cutaneous nerve.r"
+    ],
+    "modelIds": [
+      "ZA-1fb5cfe4ef87b7",
+      "ZA-6918c6f57ead25"
+    ]
+  },
+  "nervo-cutaneo-posterior-da-coxa": {
+    "name": "Nervo cutâneo posterior da coxa",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Posterior femoral cutaneous nerve.r",
+      "Posterior femoral cutaneous nerve.l"
+    ],
+    "modelIds": [
+      "ZA-826b3276493ec4",
+      "ZA-1928292f99cd61"
+    ]
+  },
+  "nervo-safeno": {
+    "name": "Nervo safeno",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Saphenous nerve.l",
+      "Saphenous nerve.r",
+      "Infrapatellar branch of saphenous nerve.l",
+      "Infrapatellar branch of saphenous nerve.r",
+      "Medial crural cutaneous branches of saphenous nerve.l",
+      "Medial crural cutaneous branches of saphenous nerve.r"
+    ],
+    "modelIds": [
+      "ZA-22e938aea045b3",
+      "ZA-03ae5f4eeb3b2e",
+      "ZA-b42bfba0c9a58d",
+      "ZA-43d61aec71e83b",
+      "ZA-08103adb5b3570",
+      "ZA-c5a75a8ddc6306"
+    ]
+  },
+  "nervo-sural": {
+    "name": "Nervo sural",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Sural nerve.l",
+      "Sural nerve.r"
+    ],
+    "modelIds": [
+      "ZA-812371fb08e6c6",
+      "ZA-833bd3204344f0"
+    ]
+  },
+  "nervo-plantar-medial": {
+    "name": "Nervo plantar medial",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Medial plantar nerve.l",
+      "Medial plantar nerve.r"
+    ],
+    "modelIds": [
+      "ZA-2cd2382467607c",
+      "ZA-5bf177d0b85b7a"
+    ]
+  },
+  "nervo-plantar-lateral": {
+    "name": "Nervo plantar lateral",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Lateral plantar nerve.l",
+      "Lateral plantar nerve.r"
+    ],
+    "modelIds": [
+      "ZA-5b6a9f0c696abf",
+      "ZA-a538e30a68d39f"
+    ]
+  },
+  "nervo-pudendo": {
+    "name": "Nervo pudendo",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Pudendal nerve.l",
+      "Pudendal nerve.r"
+    ],
+    "modelIds": [
+      "ZA-145f112d82883d",
+      "ZA-0c18537bb0c66e"
+    ]
+  },
+  "nervo-ilioinguinal": {
+    "name": "Nervo ilioinguinal",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Ilio-inguinal nerve.l",
+      "Ilio-inguinal nerve.r"
+    ],
+    "modelIds": [
+      "ZA-1bbdc568db893b",
+      "ZA-60ca183bab5833"
+    ]
+  },
+  "nervo-ilio-hipogastrico": {
+    "name": "Nervo ilio-hipogástrico",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Iliohypogastric nerve.l",
+      "Iliohypogastric nerve.r"
+    ],
+    "modelIds": [
+      "ZA-ba90def3dd4c4b",
+      "ZA-b102a1a72ed56a"
+    ]
+  },
+  "nervo-genitofemoral": {
+    "name": "Nervo genitofemoral",
+    "kind": "nervos",
+    "sourceObjects": [
+      "Genitofemoral nerve.l",
+      "Genitofemoral nerve.r"
+    ],
+    "modelIds": [
+      "ZA-1fd6c34e2e0e40",
+      "ZA-e9a488ffc53537"
+    ]
+  },
+  "tendao-do-extensor-longo-dos-dedos": {
+    "name": "Tendão do extensor longo dos dedos",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Tendon of extensor digitorum longus.l",
+      "Tendon of extensor digitorum longus.r"
+    ],
+    "modelIds": [
+      "ZA-73dd25f4efd3a9",
+      "ZA-4406bd006fd22b"
+    ]
+  },
+  "tendao-intermediario-do-digastrico": {
+    "name": "Tendão intermediário do digástrico",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Intermediate tendon of digastric muscle.l",
+      "Intermediate tendon of digastric muscle.r"
+    ],
+    "modelIds": [
+      "ZA-09d8674ed113ef",
+      "ZA-d64d3d420b6c49"
+    ]
+  },
+  "iliocostal-lombar": {
+    "name": "Iliocostal lombar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Iliocostalis lumborum muscle.l",
+      "Iliocostalis lumborum muscle.r"
+    ],
+    "modelIds": [
+      "ZA-aaf2d09625d4eb",
+      "ZA-25db3825fa42a0"
+    ]
+  },
+  "iliocostal-toracico": {
+    "name": "Iliocostal torácico",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Iliocostalis thoracis muscle.l",
+      "Iliocostalis thoracis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-324ebc574d790d",
+      "ZA-b4bec7145684fd"
+    ]
+  },
+  "iliocostal-cervical": {
+    "name": "Iliocostal cervical",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Iliocostalis colli muscle",
+      "Iliocostalis colli muscle.r"
+    ],
+    "modelIds": [
+      "ZA-ad4d8464ab4150",
+      "ZA-07e8fccea637a8"
+    ]
+  },
+  "longuissimo-toracico": {
+    "name": "Longuíssimo torácico",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Longissimus thoracis muscle.l",
+      "Longissimus thoracis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-b57bdaf590761d",
+      "ZA-f08db2401b5ac3"
+    ]
+  },
+  "longuissimo-cervical": {
+    "name": "Longuíssimo cervical",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Longissimus colli muscle.l",
+      "Longissimus colli muscle.r"
+    ],
+    "modelIds": [
+      "ZA-75e184db2f932d",
+      "ZA-aa2dad20c9fea8"
+    ]
+  },
+  "longuissimo-da-cabeca": {
+    "name": "Longuíssimo da cabeça",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Longissimus capitis muscle.l",
+      "Longissimus capitis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-03f22370733bff",
+      "ZA-c2666971286785"
+    ]
+  },
+  "espinhal-toracico": {
+    "name": "Espinhal torácico",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Spinalis thoracis muscle.l",
+      "Spinalis thoracis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-99f2d3d83068c6",
+      "ZA-f209b2bc0b38a7"
+    ]
+  },
+  "espinhal-cervical": {
+    "name": "Espinhal cervical",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Spinalis colli muscle.l",
+      "Spinalis colli muscle.r"
+    ],
+    "modelIds": [
+      "ZA-82c25d53b10b53",
+      "ZA-a113e29caa5af3"
+    ]
+  },
+  "espinhal-da-cabeca": {
+    "name": "Espinhal da cabeça",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Spinalis capitis muscle.l",
+      "Spinalis capitis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-ad194d5f032cf5",
+      "ZA-1bb56769e28e7a"
+    ]
+  },
+  "multifido-lombar": {
+    "name": "Multífido lombar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Multifidus lumborum muscle.l",
+      "Multifidus lumborum muscle.r"
+    ],
+    "modelIds": [
+      "ZA-116a0a2ac09b6a",
+      "ZA-ca0bbafaf77178"
+    ]
+  },
+  "multifido-toracico": {
+    "name": "Multífido torácico",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Multifidus thoracis muscle.l",
+      "Multifidus thoracis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-5b0c21f69dc4df",
+      "ZA-e388be43010391"
+    ]
+  },
+  "multifido-cervical": {
+    "name": "Multífido cervical",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Multifidus colli muscle.l",
+      "Multifidus colli muscle.r"
+    ],
+    "modelIds": [
+      "ZA-4181c89ecc3abf",
+      "ZA-1ce5f83b20f135"
+    ]
+  },
+  "semiespinhal-toracico": {
+    "name": "Semiespinhal torácico",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Semispinalis thoracis muscle.l",
+      "Semispinalis thoracis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-e7054e469297f1",
+      "ZA-d80fe2ee0f4b04"
+    ]
+  },
+  "semiespinhal-cervical": {
+    "name": "Semiespinhal cervical",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Semispinalis colli muscle.l",
+      "Semispinalis colli muscle.r"
+    ],
+    "modelIds": [
+      "ZA-00a91a0bbec8ea",
+      "ZA-51f4044077f9ad"
+    ]
+  },
+  "rotadores": {
+    "name": "Rotadores",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Rotatores.l",
+      "Rotatores.r"
+    ],
+    "modelIds": [
+      "ZA-1216a7f2f61936",
+      "ZA-6c12c4f108a2f5"
+    ]
+  },
+  "esplenio-da-cabeca": {
+    "name": "Esplênio da cabeça",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Splenius capitis muscle.l",
+      "Splenius capitis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-bc99b34153b28a",
+      "ZA-6d57fcfb776c8b"
+    ]
+  },
+  "esplenio-do-pescoco": {
+    "name": "Esplênio do pescoço",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Splenius colli muscle.l",
+      "Splenius colli muscle.r"
+    ],
+    "modelIds": [
+      "ZA-4761270a220b40",
+      "ZA-5879425ffa9dc3"
+    ]
+  },
+  "reto-posterior-maior-da-cabeca": {
+    "name": "Reto posterior maior da cabeça",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Rectus posterior major capitis muscle.l",
+      "Rectus posterior major capitis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-0d40ec91fd7301",
+      "ZA-65cef8409c1287"
+    ]
+  },
+  "reto-posterior-menor-da-cabeca": {
+    "name": "Reto posterior menor da cabeça",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Rectus posterior minor capitis muscle.l",
+      "Rectus posterior minor capitis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-64b72f4ef2b3fa",
+      "ZA-d67398f574ba9c"
+    ]
+  },
+  "obliquo-superior-da-cabeca": {
+    "name": "Oblíquo superior da cabeça",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Obliquus superior capitis muscle.l",
+      "Obliquus superior capitis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-1a3de8e6fc2c34",
+      "ZA-1cf4c0c5d1328d"
+    ]
+  },
+  "obliquo-inferior-da-cabeca": {
+    "name": "Oblíquo inferior da cabeça",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Obliquus inferior capitis muscle.l",
+      "Obliquus inferior capitis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-4691e6c4bc69ae",
+      "ZA-4c5e8e8d5a591d"
+    ]
+  },
+  "escaleno-anterior": {
+    "name": "Escaleno anterior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Scalenus anterior muscle.l",
+      "Scalenus anterior muscle.r"
+    ],
+    "modelIds": [
+      "ZA-db393a427ee51d",
+      "ZA-d1c0757277e8b5"
+    ]
+  },
+  "escaleno-medio": {
+    "name": "Escaleno médio",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Scalenus medius muscle.l",
+      "Scalenus medius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-40ff348acfed89",
+      "ZA-95c403a6df62d1"
+    ]
+  },
+  "escaleno-posterior": {
+    "name": "Escaleno posterior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Scalenus posterior muscle.l",
+      "Scalenus posterior muscle.r"
+    ],
+    "modelIds": [
+      "ZA-7d9ad47730eeb6",
+      "ZA-16fb140b89513c"
+    ]
+  },
+  "longo-do-pescoco": {
+    "name": "Longo do pescoço",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Longus colli muscle.l",
+      "Longus colli muscle.r"
+    ],
+    "modelIds": [
+      "ZA-edc7e6c5c874fa",
+      "ZA-4639b12ce8f663"
+    ]
+  },
+  "longo-da-cabeca": {
+    "name": "Longo da cabeça",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Longus capitis muscle.l",
+      "Longus capitis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-fdb102b94d64d1",
+      "ZA-29a0d6bc1f74e0"
+    ]
+  },
+  "diafragma": {
+    "name": "Diafragma",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Diaphragm"
+    ],
+    "modelIds": [
+      "ZA-5ea68b460e9262"
+    ]
+  },
+  "intercostais-externos": {
+    "name": "Intercostais externos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "External intercostal muscles.l",
+      "External intercostal muscles.r"
+    ],
+    "modelIds": [
+      "ZA-90d8387528a29d",
+      "ZA-73b23d4bcf4fd3"
+    ]
+  },
+  "intercostais-internos": {
+    "name": "Intercostais internos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Internal intercostal muscles.l",
+      "Internal intercostal muscles.r"
+    ],
+    "modelIds": [
+      "ZA-798b5d1d0f1f1e",
+      "ZA-977add753a94e4"
+    ]
+  },
+  "intercostais-intimos": {
+    "name": "Intercostais íntimos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Innermost intercostal muscles.l",
+      "Innermost intercostal muscles.r"
+    ],
+    "modelIds": [
+      "ZA-8e353dc3919ed6",
+      "ZA-b927ab4a5cef43"
+    ]
+  },
+  "transverso-do-torax": {
+    "name": "Transverso do tórax",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Transversus thoracis muscle.l",
+      "Transversus thoracis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-1b3debc6f05755",
+      "ZA-2a64fa6a9cfd41"
+    ]
+  },
+  "levantadores-das-costelas": {
+    "name": "Levantadores das costelas",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Levatores breves costarum.l",
+      "Levatores breves costarum.r",
+      "Levatores longi costarum.l",
+      "Levatores longi costarum.r"
+    ],
+    "modelIds": [
+      "ZA-aa6df2fa0c8466",
+      "ZA-c5394a10af2870",
+      "ZA-99047a4c53c97e",
+      "ZA-0b8001929ef912"
+    ]
+  },
+  "serratil-posterior-superior": {
+    "name": "Serrátil posterior superior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Serratus posterior superior muscle.l",
+      "Serratus posterior superior muscle.r"
+    ],
+    "modelIds": [
+      "ZA-84c5ea2ff5263a",
+      "ZA-c6b422b89d3063"
+    ]
+  },
+  "serratil-posterior-inferior": {
+    "name": "Serrátil posterior inferior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Serratus posterior inferior muscle.l",
+      "Serratus posterior inferior muscle.r"
+    ],
+    "modelIds": [
+      "ZA-e0f384f5534af3",
+      "ZA-5642029f2e91b0"
+    ]
+  },
+  "piramidal-do-abdome": {
+    "name": "Piramidal do abdome",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Pyramidalis muscle.l",
+      "Pyramidalis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-203083d0ac9caa",
+      "ZA-0621a260a88007"
+    ]
+  },
+  "pubococcigeo": {
+    "name": "Pubococcígeo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Pubococcygeus muscle.l",
+      "Pubococcygeus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-bdd7cd4e0e78b0",
+      "ZA-8cbf694759885d"
+    ]
+  },
+  "puboanal": {
+    "name": "Puboanal",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Pubo-analis muscle.l",
+      "Pubo-analis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-b2cc0737ed0fcc",
+      "ZA-bfafa0a1be0b07"
+    ]
+  },
+  "iliococcigeo": {
+    "name": "Iliococcígeo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Iliococcygeus muscle.l",
+      "Iliococcygeus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-678e64823020d4",
+      "ZA-96385f94336b71"
+    ]
+  },
+  "coccigeo": {
+    "name": "Coccígeo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Coccygeus muscle.l",
+      "Coccygeus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-a34e7b708ce8e4",
+      "ZA-d2c13101f09368"
+    ]
+  },
+  "esfincter-anal-externo": {
+    "name": "Esfíncter anal externo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "External anal sphincter.l",
+      "External anal sphincter.r"
+    ],
+    "modelIds": [
+      "ZA-e944b797fb1ac1",
+      "ZA-79d72af619230f"
+    ]
+  },
+  "interespinais": {
+    "name": "Interespinais",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Interspinales colli muscles.l",
+      "Interspinales colli muscles.r",
+      "Interspinales thoracis muscles.l",
+      "Interspinales thoracis muscles.r",
+      "Interspinales lumborum muscles.l",
+      "Interspinales lumborum muscles.r"
+    ],
+    "modelIds": [
+      "ZA-c19f946a611d4a",
+      "ZA-d18a825cff78aa",
+      "ZA-bd5983f5c8fca4",
+      "ZA-15e8dbe9fcb45a",
+      "ZA-2f36143448548a",
+      "ZA-c6d75915ec5e36"
+    ]
+  },
+  "intertransversarios": {
+    "name": "Intertransversários",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Dorsal parts of lateral intertransversarii lumborum muscles.l",
+      "Dorsal parts of lateral intertransversarii lumborum muscles.r",
+      "Ventral parts of lateral intertransversarii lumborum muscles.l",
+      "Ventral parts of lateral intertransversarii lumborum muscles.r"
+    ],
+    "modelIds": [
+      "ZA-331d65c1c22632",
+      "ZA-964b905279234f",
+      "ZA-76108407663ec8",
+      "ZA-4997e67cf3d441"
+    ]
+  },
+  "obturador-interno": {
+    "name": "Obturador interno",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Obturator internus.l",
+      "Obturator internus.r"
+    ],
+    "modelIds": [
+      "ZA-211a9d8cc4c13c",
+      "ZA-b324cf5a401ccb"
+    ]
+  },
+  "obturador-externo": {
+    "name": "Obturador externo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Obturator externus.l",
+      "Obturator externus.r"
+    ],
+    "modelIds": [
+      "ZA-df13ca13b73725",
+      "ZA-b7371c94e2864d"
+    ]
+  },
+  "gemeo-superior": {
+    "name": "Gêmeo superior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Superior gemellus muscle.l",
+      "Superior gemellus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-37fef1f99a52a3",
+      "ZA-5ae8af216d96ff"
+    ]
+  },
+  "gemeo-inferior": {
+    "name": "Gêmeo inferior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Inferior gemellus muscle.l",
+      "Inferior gemellus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-f4449addffbdf9",
+      "ZA-a4c01feb0c1b33"
+    ]
+  },
+  "quadrado-femoral": {
+    "name": "Quadrado femoral",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Quadratus femoris muscle.l",
+      "Quadratus femoris muscle.r"
+    ],
+    "modelIds": [
+      "ZA-1f8bcf2fcd1557",
+      "ZA-246a530dacf9b6"
+    ]
+  },
+  "pectineo": {
+    "name": "Pectíneo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Pectineus muscle.l",
+      "Pectineus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-ca854ecababae8",
+      "ZA-67587a3f80f0a9"
+    ]
+  },
+  "adutor-curto": {
+    "name": "Adutor curto",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Adductor brevis.l",
+      "Adductor brevis.r"
+    ],
+    "modelIds": [
+      "ZA-712c14ff27e717",
+      "ZA-aedcebca63c888"
+    ]
+  },
+  "adutor-minimo": {
+    "name": "Adutor mínimo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "(Adductor minimus).l",
+      "(Adductor minimus).r"
+    ],
+    "modelIds": [
+      "ZA-3e8d810d40c1c3",
+      "ZA-7d1aed4604fdbb"
+    ]
+  },
+  "trato-iliotibial": {
+    "name": "Trato iliotibial",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Iliotibial tract.l",
+      "Iliotibial tract.r"
+    ],
+    "modelIds": [
+      "ZA-119decb9d97ffa",
+      "ZA-c50e8a3180cf5f"
+    ]
+  },
+  "extensor-longo-do-halux": {
+    "name": "Extensor longo do hálux",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor hallucis longus.l",
+      "Extensor hallucis longus.r"
+    ],
+    "modelIds": [
+      "ZA-f41079ad058d79",
+      "ZA-bcacc28f9a35a0"
+    ]
+  },
+  "flexor-longo-dos-dedos": {
+    "name": "Flexor longo dos dedos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Flexor digitorum longus.l",
+      "Flexor digitorum longus.r"
+    ],
+    "modelIds": [
+      "ZA-1ab22f1d0a4ad3",
+      "ZA-c3355a103bdcf0"
+    ]
+  },
+  "plantar": {
+    "name": "Plantar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Plantaris muscle.l",
+      "Plantaris muscle.r"
+    ],
+    "modelIds": [
+      "ZA-ba512d65f83056",
+      "ZA-f70dc9dbfdabe8"
+    ]
+  },
+  "fibular-terceiro": {
+    "name": "Fibular terceiro",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Fibularis tertius muscle.l",
+      "Fibularis tertius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-66bfbbc784423e",
+      "ZA-158b6e63a82bc9"
+    ]
+  },
+  "extensor-curto-dos-dedos": {
+    "name": "Extensor curto dos dedos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor digitorum brevis.l",
+      "Extensor digitorum brevis.r"
+    ],
+    "modelIds": [
+      "ZA-7e66f776ffc4f7",
+      "ZA-ef8fe376d96230"
+    ]
+  },
+  "extensor-curto-do-halux": {
+    "name": "Extensor curto do hálux",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor hallucis brevis.l",
+      "Extensor hallucis brevis.r"
+    ],
+    "modelIds": [
+      "ZA-aaa32014193168",
+      "ZA-7b98e95b56f2ce"
+    ]
+  },
+  "abdutor-do-halux": {
+    "name": "Abdutor do hálux",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Abductor hallucis.l",
+      "Abductor hallucis.r"
+    ],
+    "modelIds": [
+      "ZA-0ac8007145efc1",
+      "ZA-190fa69ffd942c"
+    ]
+  },
+  "flexor-curto-dos-dedos": {
+    "name": "Flexor curto dos dedos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Flexor digitorum brevis.l",
+      "Flexor digitorum brevis.r"
+    ],
+    "modelIds": [
+      "ZA-44f1a2fe8f63ff",
+      "ZA-a7a78589d6adb5"
+    ]
+  },
+  "abdutor-do-dedo-minimo-do-pe": {
+    "name": "Abdutor do dedo mínimo do pé",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Abductor digiti minimi of foot.l",
+      "Abductor digiti minimi of foot.r"
+    ],
+    "modelIds": [
+      "ZA-ecd9fd97ddefe0",
+      "ZA-a192f85fdc3e5a"
+    ]
+  },
+  "quadrado-plantar": {
+    "name": "Quadrado plantar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Quadratus plantae muscle.l",
+      "Quadratus plantae muscle.r"
+    ],
+    "modelIds": [
+      "ZA-1233f9afe8dba9",
+      "ZA-646e3a060dead0"
+    ]
+  },
+  "lumbricais-do-pe": {
+    "name": "Lumbricais do pé",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Lumbrical muscles of foot.l",
+      "Lumbrical muscles of foot.r"
+    ],
+    "modelIds": [
+      "ZA-30002c9af1ad72",
+      "ZA-879fb706db7354"
+    ]
+  },
+  "flexor-curto-do-halux": {
+    "name": "Flexor curto do hálux",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Medial head of flexor hallucis brevis.l",
+      "Medial head of flexor hallucis brevis.r",
+      "Lateral head of flexor hallucis brevis.l",
+      "Lateral head of flexor hallucis brevis.r"
+    ],
+    "modelIds": [
+      "ZA-4cad67cac3c20d",
+      "ZA-b922dbd691287c",
+      "ZA-e27a5032afa44d",
+      "ZA-b2fc8d0e352fa6"
+    ]
+  },
+  "adutor-do-halux": {
+    "name": "Adutor do hálux",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Oblique head of adductor hallucis.l",
+      "Oblique head of adductor hallucis.r",
+      "Transverse head of adductor hallucis.l",
+      "Transverse head of adductor hallucis.r"
+    ],
+    "modelIds": [
+      "ZA-19c431b38d9848",
+      "ZA-e9e4b6882609c3",
+      "ZA-8af89a2e84fcd1",
+      "ZA-a421aaaf4d5209"
+    ]
+  },
+  "flexor-do-dedo-minimo-do-pe": {
+    "name": "Flexor curto do dedo mínimo do pé",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Flexor digiti minimi of foot.l",
+      "Flexor digiti minimi of foot.r"
+    ],
+    "modelIds": [
+      "ZA-0594168bc7e043",
+      "ZA-a71914347fd5e7"
+    ]
+  },
+  "oponente-do-dedo-minimo-do-pe": {
+    "name": "Oponente do dedo mínimo do pé",
+    "kind": "musculos",
+    "sourceObjects": [
+      "(Opponens digiti minimi muscle of foot).l",
+      "(Opponens digiti minimi muscle of foot).r"
+    ],
+    "modelIds": [
+      "ZA-548db57670a7b1",
+      "ZA-701504cc134f94"
+    ]
+  },
+  "interosseos-dorsais-do-pe": {
+    "name": "Interósseos dorsais do pé",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Dorsal interossei muscles of foot.l",
+      "Dorsal interossei muscles of foot.r"
+    ],
+    "modelIds": [
+      "ZA-a0c8f206d41e20",
+      "ZA-0d74f095aecd6a"
+    ]
+  },
+  "interosseos-plantares": {
+    "name": "Interósseos plantares",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Plantar interossei muscles.l",
+      "Plantar interossei muscles.r"
+    ],
+    "modelIds": [
+      "ZA-9428c9257edb40",
+      "ZA-a62fc8e97c7e93"
+    ]
+  },
+  "aponeurose-plantar": {
+    "name": "Aponeurose plantar",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Plantar aponeurosis.l",
+      "Plantar aponeurosis.r"
+    ],
+    "modelIds": [
+      "ZA-6ee77d44563fa9",
+      "ZA-7057856192119a"
+    ]
+  },
+  "aponeurose-palmar": {
+    "name": "Aponeurose palmar",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Palmar aponeurosis.l",
+      "Palmar aponeurosis.r"
+    ],
+    "modelIds": [
+      "ZA-58ede7f0af81b5",
+      "ZA-aa3a7733c88a6c"
+    ]
+  },
+  "aponeurose-epicraniana": {
+    "name": "Aponeurose epicraniana",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Epicranial aponeurosis.l",
+      "Epicranial aponeurosis.r"
+    ],
+    "modelIds": [
+      "ZA-6758c46ff35da5",
+      "ZA-1ef48e94649f87"
+    ]
+  },
+  "tendao-comum-dos-extensores": {
+    "name": "Tendão comum dos extensores",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Common extensor tendon.ol",
+      "Common extensor tendon.or"
+    ],
+    "modelIds": [
+      "ZA-fe6928aa43e1ce",
+      "ZA-61087d34164412"
+    ]
+  },
+  "tendao-comum-dos-flexores": {
+    "name": "Tendão comum dos flexores",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Common flexor tendon.ol",
+      "Common flexor tendon.or"
+    ],
+    "modelIds": [
+      "ZA-f700eed177e48b",
+      "ZA-0ede9794bd1d62"
+    ]
+  },
+  "retinaculo-dos-flexores-do-punho": {
+    "name": "Retináculo dos flexores do punho",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Flexor retinaculum of wrist.l",
+      "Flexor retinaculum of wrist.r"
+    ],
+    "modelIds": [
+      "ZA-7c5e88a1ec9adf",
+      "ZA-b31c0ddb48b97f"
+    ]
+  },
+  "retinaculo-dos-extensores-do-punho": {
+    "name": "Retináculo dos extensores do punho",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Extensor retinaculum of wrist.l",
+      "Extensor retinaculum of wrist.r"
+    ],
+    "modelIds": [
+      "ZA-e52cdaf27c0654",
+      "ZA-a777e1eb8ac244"
+    ]
+  },
+  "retinaculo-dos-flexores-do-tornozelo": {
+    "name": "Retináculo dos flexores do tornozelo",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Flexor retinaculum of ankle.l",
+      "Flexor retinaculum of ankle.r"
+    ],
+    "modelIds": [
+      "ZA-1021f91732ce4b",
+      "ZA-34aa2f8dc60b64"
+    ]
+  },
+  "retinaculo-extensor-superior-do-tornozelo": {
+    "name": "Retináculo extensor superior do tornozelo",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Superior extensor retinaculum of ankle.l",
+      "Superior extensor retinaculum of ankle.r"
+    ],
+    "modelIds": [
+      "ZA-70c3c44b17a6af",
+      "ZA-007976f72a5c4d"
+    ]
+  },
+  "retinaculo-extensor-inferior-do-tornozelo": {
+    "name": "Retináculo extensor inferior do tornozelo",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Inferior extensor retinaculum of ankle.l",
+      "Inferior extensor retinaculum of ankle.r"
+    ],
+    "modelIds": [
+      "ZA-b30399e80ad15a",
+      "ZA-784ea5bbf05670"
+    ]
+  },
+  "retinaculo-fibular-superior": {
+    "name": "Retináculo fibular superior",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Superior fibular retinaculum.l",
+      "Superior fibular retinaculum.r"
+    ],
+    "modelIds": [
+      "ZA-2c0e5ad53857c6",
+      "ZA-9b541b82627c97"
+    ]
+  },
+  "retinaculo-fibular-inferior": {
+    "name": "Retináculo fibular inferior",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Inferior fibular retinaculum.l",
+      "Inferior fibular retinaculum.r"
+    ],
+    "modelIds": [
+      "ZA-88bf34d9ac762e",
+      "ZA-0ca4403455726e"
+    ]
+  },
+  "bainha-intertubercular": {
+    "name": "Bainha intertubercular",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Intertubercular tendon sheath.l",
+      "Intertubercular tendon sheath.r"
+    ],
+    "modelIds": [
+      "ZA-c9b6d9964e58c2",
+      "ZA-565068d4ee7974"
+    ]
+  },
+  "bainha-comum-dos-flexores": {
+    "name": "Bainha comum dos flexores",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Common flexor tendon sheath.l",
+      "Common flexor tendon sheath.r"
+    ],
+    "modelIds": [
+      "ZA-52507ae6b6ccf8",
+      "ZA-564d290be04870"
+    ]
+  },
+  "bainha-comum-dos-fibulares": {
+    "name": "Bainha comum dos fibulares",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Common tendon sheath of fibularis muscles.l",
+      "Common tendon sheath of fibularis muscles.r"
+    ],
+    "modelIds": [
+      "ZA-037028f291e16b",
+      "ZA-360a600a8fd55a"
+    ]
+  },
+  "extensor-radial-curto-do-carpo": {
+    "name": "Extensor radial curto do carpo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor carpi radialis brevis.l",
+      "Extensor carpi radialis brevis.r"
+    ],
+    "modelIds": [
+      "ZA-47a2490791fea5",
+      "ZA-470f08670831a3"
+    ]
+  },
+  "palmar-longo": {
+    "name": "Palmar longo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Palmaris longus muscle.l",
+      "Palmaris longus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-d9c040c6490078",
+      "ZA-10ee0da80d3f84"
+    ]
+  },
+  "anconeo": {
+    "name": "Ancôneo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Anconeus muscle.l",
+      "Anconeus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-336c80450ab61c",
+      "ZA-e5072c12e9855e"
+    ]
+  },
+  "flexor-longo-do-polegar": {
+    "name": "Flexor longo do polegar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Flexor pollicis longus.l",
+      "Flexor pollicis longus.r"
+    ],
+    "modelIds": [
+      "ZA-91699ebb0dceca",
+      "ZA-89e2ca7b60e58d"
+    ]
+  },
+  "abdutor-longo-do-polegar": {
+    "name": "Abdutor longo do polegar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Abductor pollicis longus.l",
+      "Abductor pollicis longus.r"
+    ],
+    "modelIds": [
+      "ZA-ee25387a1624f4",
+      "ZA-f51fba62b25177"
+    ]
+  },
+  "extensor-curto-do-polegar": {
+    "name": "Extensor curto do polegar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor pollicis brevis.l",
+      "Extensor pollicis brevis.r"
+    ],
+    "modelIds": [
+      "ZA-e83791cbf57167",
+      "ZA-d88f2247ca5bc3"
+    ]
+  },
+  "extensor-longo-do-polegar": {
+    "name": "Extensor longo do polegar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor pollicis longus.l",
+      "Extensor pollicis longus.r"
+    ],
+    "modelIds": [
+      "ZA-a966dea83e7128",
+      "ZA-cd37e9c12210b5"
+    ]
+  },
+  "extensor-do-indicador": {
+    "name": "Extensor do indicador",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor indicis.l",
+      "Extensor indicis.r"
+    ],
+    "modelIds": [
+      "ZA-08d2efe52d1965",
+      "ZA-8ec4eed0ec3e77"
+    ]
+  },
+  "extensor-do-dedo-minimo": {
+    "name": "Extensor do dedo mínimo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Extensor digiti minimi.l",
+      "Extensor digiti minimi.r"
+    ],
+    "modelIds": [
+      "ZA-d9f1d582317fad",
+      "ZA-2c3b9ed0fe270c"
+    ]
+  },
+  "romboide-menor": {
+    "name": "Romboide menor",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Rhomboid minor muscle.l",
+      "Rhomboid minor muscle.r"
+    ],
+    "modelIds": [
+      "ZA-52dfd085df8489",
+      "ZA-2dc23802e8ed07"
+    ]
+  },
+  "subclavio": {
+    "name": "Subclávio",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Subclavius muscle.l",
+      "Subclavius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-0f2b65d113cfac",
+      "ZA-178d8d0d193aaf"
+    ]
+  },
+  "oponente-do-polegar": {
+    "name": "Oponente do polegar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Opponens pollicis muscle.l",
+      "Opponens pollicis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-0591b4ee2c76c9",
+      "ZA-fa8cbe62aff33f"
+    ]
+  },
+  "flexor-curto-do-polegar": {
+    "name": "Flexor curto do polegar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Superficial head of flexor pollicis brevis.l",
+      "Superficial head of flexor pollicis brevis.r",
+      "Deep head of flexor pollicis brevis.l",
+      "Deep head of flexor pollicis brevis.r"
+    ],
+    "modelIds": [
+      "ZA-ae39a8c0154c9a",
+      "ZA-1f1fbd1ed3dfde",
+      "ZA-497404d921a202",
+      "ZA-391b9ebb61a67c"
+    ]
+  },
+  "abdutor-do-dedo-minimo-da-mao": {
+    "name": "Abdutor do dedo mínimo da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Abductor digiti minimi of hand.l",
+      "Abductor digiti minimi of hand.r"
+    ],
+    "modelIds": [
+      "ZA-1ecd1a1e01d30e",
+      "ZA-32a67b11196d3a"
+    ]
+  },
+  "flexor-do-dedo-minimo-da-mao": {
+    "name": "Flexor curto do dedo mínimo da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Flexor digiti minimi of hand.l",
+      "Flexor digiti minimi of hand.r"
+    ],
+    "modelIds": [
+      "ZA-71903207e4317d",
+      "ZA-39aeb2912d7509"
+    ]
+  },
+  "oponente-do-dedo-minimo-da-mao": {
+    "name": "Oponente do dedo mínimo da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Opponens digiti minimi muscle of hand.l",
+      "Opponens digiti minimi muscle of hand.r"
+    ],
+    "modelIds": [
+      "ZA-93bd1f69230424",
+      "ZA-9359974e0be03c"
+    ]
+  },
+  "lumbricais-da-mao": {
+    "name": "Lumbricais da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Lumbrical muscles of hand.l",
+      "Lumbrical muscles of hand.r"
+    ],
+    "modelIds": [
+      "ZA-435ad9b7eb2c63",
+      "ZA-b6ef88b93cc825"
+    ]
+  },
+  "interosseos-dorsais-da-mao": {
+    "name": "Interósseos dorsais da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Dorsal interossei muscles of hand.l",
+      "Dorsal interossei muscles of hand.r"
+    ],
+    "modelIds": [
+      "ZA-744f36fb8914c1",
+      "ZA-abc9c249e1304a"
+    ]
+  },
+  "interosseos-palmares": {
+    "name": "Interósseos palmares",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Palmar interossei muscles.l",
+      "Palmar interossei muscles.r"
+    ],
+    "modelIds": [
+      "ZA-7f8fa7250da4d8",
+      "ZA-faa2fafd8d068b"
+    ]
+  },
+  "pterigoideo-medial": {
+    "name": "Pterigóideo medial",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Medial pterygoid muscle.l",
+      "Medial pterygoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-e8c01f01b7977e",
+      "ZA-68c1bc357201e5"
+    ]
+  },
+  "pterigoideo-lateral": {
+    "name": "Pterigóideo lateral",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Superior head of lateral pterygoid muscle.l",
+      "Superior head of lateral pterygoid muscle.r",
+      "Inferior head of lateral pterygoid muscle.l",
+      "Inferior head of lateral pterygoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-1841069185d1e6",
+      "ZA-1f31a1321b8547",
+      "ZA-29d15e56516fcb",
+      "ZA-092942e79339ca"
+    ]
+  },
+  "digastrico": {
+    "name": "Digástrico",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Anterior belly of digastric muscle.l",
+      "Anterior belly of digastric muscle.r",
+      "Posterior belly of digastric muscle.l",
+      "Posterior belly of digastric muscle.r"
+    ],
+    "modelIds": [
+      "ZA-90ebac6b530bd4",
+      "ZA-70dba3b47f03f2",
+      "ZA-2580449cdd70cd",
+      "ZA-07a7d535beb388"
+    ]
+  },
+  "milo-hioideo": {
+    "name": "Milo-hióideo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Mylohyoid muscle.l",
+      "Mylohyoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-70a0a8d506111c",
+      "ZA-588f01873ed1dd"
+    ]
+  },
+  "genio-hioideo": {
+    "name": "Gênio-hióideo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Geniohyoid muscle.l",
+      "Geniohyoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-eae9cef1d497c5",
+      "ZA-32492ee0d1c32f"
+    ]
+  },
+  "estilo-hioideo": {
+    "name": "Estilo-hióideo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Stylohyoid muscle.l",
+      "Stylohyoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-41aa819d0b5149",
+      "ZA-37c5573b2c3bd0"
+    ]
+  },
+  "esterno-hioideo": {
+    "name": "Esterno-hióideo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Sternohyoid muscle.l",
+      "Sternohyoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-57208c02adad3e",
+      "ZA-ca2dd6808be68e"
+    ]
+  },
+  "esternotireoideo": {
+    "name": "Esternotireóideo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Sternothyroid muscle.l",
+      "Sternothyroid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-4c707356e5129a",
+      "ZA-8deebdd0844edb"
+    ]
+  },
+  "tireo-hioideo": {
+    "name": "Tireo-hióideo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Thyrohyoid muscle.l",
+      "Thyrohyoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-a1c60a10e94cad",
+      "ZA-22f0a40ed088e0"
+    ]
+  },
+  "omo-hioideo": {
+    "name": "Omo-hióideo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Omohyoid muscle.l",
+      "Omohyoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-fd2e5fad77ab91",
+      "ZA-2eebd552f5b58a"
+    ]
+  },
+  "platisma": {
+    "name": "Platisma",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Platysma.l",
+      "Platysma.r"
+    ],
+    "modelIds": [
+      "ZA-8329b91f3f6683",
+      "ZA-981cc629c9126f"
+    ]
+  },
+  "reto-anterior-da-cabeca": {
+    "name": "Reto anterior da cabeça",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Rectus anterior capitis muscle.l",
+      "Rectus anterior capitis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-8a75f8a243b42d",
+      "ZA-9af49805a8e313"
+    ]
+  },
+  "reto-lateral-da-cabeca": {
+    "name": "Reto lateral da cabeça",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Rectus lateralis capitis muscle.l",
+      "Rectus lateralis capitis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-772a142f41a76d",
+      "ZA-0f8b2bf9a6108b"
+    ]
+  },
+  "ventre-frontal-do-occipitofrontal": {
+    "name": "Ventre frontal do occipitofrontal",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Frontalis muscle.l",
+      "Frontalis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-f3dba599bfa483",
+      "ZA-3b6e1d04764c48"
+    ]
+  },
+  "ventre-occipital-do-occipitofrontal": {
+    "name": "Ventre occipital do occipitofrontal",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Occipitalis muscle.l",
+      "Occipitalis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-abc74f6a1f4178",
+      "ZA-04ee24e8ee7c4c"
+    ]
+  },
+  "orbicular-do-olho": {
+    "name": "Orbicular do olho",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Orbital part of orbicularis oculi.l",
+      "Orbital part of orbicularis oculi.r",
+      "Palpebral part of orbicularis oculi.l",
+      "Palpebral part of orbicularis oculi.r"
+    ],
+    "modelIds": [
+      "ZA-bf646586600ac0",
+      "ZA-29b7f43f8aa7be",
+      "ZA-16d7e34e4153cd",
+      "ZA-a5fa3f5d011bab"
+    ]
+  },
+  "orbicular-da-boca": {
+    "name": "Orbicular da boca",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Orbicularis oris muscle.l",
+      "Orbicularis oris muscle.r"
+    ],
+    "modelIds": [
+      "ZA-e5566e08378597",
+      "ZA-6911b87e4adcad"
+    ]
+  },
+  "zigomatico-maior": {
+    "name": "Zigomático maior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Zygomaticus major muscle.l",
+      "Zygomaticus major muscle.r"
+    ],
+    "modelIds": [
+      "ZA-b4b7394d987c0a",
+      "ZA-5a121b84ee031b"
+    ]
+  },
+  "zigomatico-menor": {
+    "name": "Zigomático menor",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Zygomaticus minor muscle.l",
+      "Zygomaticus minor muscle.r"
+    ],
+    "modelIds": [
+      "ZA-f8eaf556698785",
+      "ZA-bb6361e80ae852"
+    ]
+  },
+  "levantador-do-labio-superior": {
+    "name": "Levantador do lábio superior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Levator labii superioris.l",
+      "Levator labii superioris.r"
+    ],
+    "modelIds": [
+      "ZA-556e510c0a5d69",
+      "ZA-edf15c8fb3134b"
+    ]
+  },
+  "levantador-nasolabial": {
+    "name": "Levantador nasolabial",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Levator nasolabialis.l",
+      "Levator nasolabialis.r"
+    ],
+    "modelIds": [
+      "ZA-1c5d1e7d5c294a",
+      "ZA-bdf5cd4d46cf48"
+    ]
+  },
+  "levantador-do-angulo-da-boca": {
+    "name": "Levantador do ângulo da boca",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Levator anguli oris.l",
+      "Levator anguli oris.r"
+    ],
+    "modelIds": [
+      "ZA-7315144dcf7ff7",
+      "ZA-ffa1378d13a3a0"
+    ]
+  },
+  "depressor-do-angulo-da-boca": {
+    "name": "Depressor do ângulo da boca",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Depressor anguli oris.l",
+      "Depressor anguli oris.r"
+    ],
+    "modelIds": [
+      "ZA-1a3d4fe5b0423b",
+      "ZA-f5764a0b5a6592"
+    ]
+  },
+  "depressor-do-labio-inferior": {
+    "name": "Depressor do lábio inferior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Depressor labii inferioris.l",
+      "Depressor labii inferioris.r"
+    ],
+    "modelIds": [
+      "ZA-9a927687dd0a6a",
+      "ZA-3867538a8650bd"
+    ]
+  },
+  "mentual": {
+    "name": "Mentual",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Mentalis muscle.l",
+      "Mentalis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-a6e479ce1c1285",
+      "ZA-f706396f469f04"
+    ]
+  },
+  "bucinador": {
+    "name": "Bucinador",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Bucinator.l",
+      "Bucinator.r"
+    ],
+    "modelIds": [
+      "ZA-13ac05d8d27f66",
+      "ZA-ac2287df247e98"
+    ]
+  },
+  "risorio": {
+    "name": "Risório",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Risorius muscle.l",
+      "Risorius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-6b85aa4d89ecd9",
+      "ZA-f0f8c56e2bac12"
+    ]
+  },
+  "procero": {
+    "name": "Prócero",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Procerus muscle.l",
+      "Procerus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-ca9c43b31448f8",
+      "ZA-0fb6711a8ee131"
+    ]
+  },
+  "corrugador-do-supercilio": {
+    "name": "Corrugador do supercílio",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Corrugator supercilii.l",
+      "Corrugator supercilii.r"
+    ],
+    "modelIds": [
+      "ZA-0da69982c49115",
+      "ZA-a0e2f686f649e5"
+    ]
+  },
+  "nasal": {
+    "name": "Nasal",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Nasalis muscle.l",
+      "Nasalis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-5c6186fd412fd8",
+      "ZA-5627d84f5fe5ae"
+    ]
+  },
+  "depressor-do-septo-nasal": {
+    "name": "Depressor do septo nasal",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Depressor septi nasi.l",
+      "Depressor septi nasi.r"
+    ],
+    "modelIds": [
+      "ZA-aceda29658af65",
+      "ZA-e1bcca01c624c1"
+    ]
+  },
+  "temporoparietal": {
+    "name": "Temporoparietal",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Temporoparietalis muscle.l",
+      "Temporoparietalis muscle.r"
+    ],
+    "modelIds": [
+      "ZA-49aa2bae716033",
+      "ZA-33f95c74522852"
+    ]
+  },
+  "disco-da-atm": {
+    "name": "Disco articular da ATM",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular disc of temporomandibular joint.l",
+      "Articular disc of temporomandibular joint.r"
+    ],
+    "modelIds": [
+      "ZA-1947be5cb589df",
+      "ZA-fccfaee394131d"
+    ]
+  },
+  "labio-glenoidal": {
+    "name": "Lábio glenoidal",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Glenoid labrum.l",
+      "Glenoid labrum.r"
+    ],
+    "modelIds": [
+      "ZA-723b5b39790b2b",
+      "ZA-a04ee14caa0c17"
+    ]
+  },
+  "labio-acetabular": {
+    "name": "Lábio acetabular",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Acetabular labrum.l",
+      "Acetabular labrum.r"
+    ],
+    "modelIds": [
+      "ZA-84f58f8d4cfa5f",
+      "ZA-7d133108dfa40b"
+    ]
+  },
+  "nucleo-pulposo": {
+    "name": "Núcleo pulposo",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Nucleus pulposus C2-C3",
+      "Nucleus pulposus C3-C4",
+      "Nucleus pulposus C4-C5",
+      "Nucleus pulposus C5-C6",
+      "Nucleus pulposus C6-C7",
+      "Nucleus pulposus C7-T1",
+      "Nucleus pulposus T1-T2",
+      "Nucleus pulposus T2-T3",
+      "Nucleus pulposus T3-T4",
+      "Nucleus pulposus T4-T5",
+      "Nucleus pulposus T5-T6",
+      "Nucleus pulposus T6-T7",
+      "Nucleus pulposus T7-T8",
+      "Nucleus pulposus T8-T9",
+      "Nucleus pulposus T9-T10",
+      "Nucleus pulposus T10-T11",
+      "Nucleus pulposus T11-T12",
+      "Nucleus pulposus T12-L1",
+      "Nucleus pulposus L1-L2",
+      "Nucleus pulposus L2-L3",
+      "Nucleus pulposus L3-L4",
+      "Nucleus pulposus L4-L5",
+      "Nucleus pulposus L5-S1"
+    ],
+    "modelIds": [
+      "ZA-cd0b135af77676",
+      "ZA-2abce26333be5d",
+      "ZA-a97ff3215c1aad",
+      "ZA-b733d3def22e46",
+      "ZA-1dd756b69273a0",
+      "ZA-aba4074d7be1e5",
+      "ZA-08cce35f96cd23",
+      "ZA-a02555bb333825",
+      "ZA-7cdaa498176bb4",
+      "ZA-8ea5c188c2bc5c",
+      "ZA-0e98a5d0cef062",
+      "ZA-e158122eb64629",
+      "ZA-740df4b8e7d5b4",
+      "ZA-365db4dee2299e",
+      "ZA-6d87892efff9c3",
+      "ZA-573f607febfea3",
+      "ZA-806edd7e48fac7",
+      "ZA-72168a8ea5de8d",
+      "ZA-246fce4ea5b52b",
+      "ZA-951183137082bd",
+      "ZA-775f0056f5a63f",
+      "ZA-fc7b8130f2a1c7",
+      "ZA-f80c62b204c84f"
+    ]
+  },
+  "tibiofibular-proximal": {
+    "name": "Tibiofibular proximal",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsule of superior tibiofibular joint.l",
+      "Articular capsule of superior tibiofibular joint.r"
+    ],
+    "modelIds": [
+      "ZA-475b3e1ed1bf32",
+      "ZA-8636a5bd144593"
+    ]
+  },
+  "coxim-adiposo-infrapatelar": {
+    "name": "Coxim adiposo infrapatelar",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Infrapatellar fat pad.l",
+      "Infrapatellar fat pad.r"
+    ],
+    "modelIds": [
+      "ZA-c840decc45ad52",
+      "ZA-eb02e9a87bbc7f"
+    ]
+  },
+  "zona-orbicular": {
+    "name": "Zona orbicular",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Zona orbicularis.l",
+      "Zona orbicularis.r"
+    ],
+    "modelIds": [
+      "ZA-211667e38ec851",
+      "ZA-9f70568f53991e"
+    ]
+  },
+  "disco-esternoclavicular": {
+    "name": "Disco articular esternoclavicular",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular disc of sternoclavicular joint.l",
+      "Articular disc of sternoclavicular joint.r"
+    ],
+    "modelIds": [
+      "ZA-eb3a5b3df5ad7d",
+      "ZA-f6dee78bae208f"
+    ]
+  },
+  "disco-acromioclavicular": {
+    "name": "Disco articular acromioclavicular",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular disc of acromioclavicular joint.l",
+      "Articular disc of acromioclavicular joint.r"
+    ],
+    "modelIds": [
+      "ZA-c173131168019a",
+      "ZA-41a7661225ac83"
+    ]
+  },
+  "sacrococcigea": {
+    "name": "Sacrococcígea",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Sacrococcygeal symphysis"
+    ],
+    "modelIds": [
+      "ZA-303b7d7ec33a86"
+    ]
+  },
+  "interfalangicas-do-pe": {
+    "name": "Interfalângicas do pé",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Articular capsules of proximal interphalangeal joints of foot.l",
+      "Articular capsules of proximal interphalangeal joints of foot.r",
+      "Articular capsules of distal interphalangeal joints of foot.l",
+      "Articular capsules of distal interphalangeal joints of foot.r",
+      "Articular capsule of interphalangeal joint of great toe.l",
+      "Articular capsule of interphalangeal joint of great toe.r"
+    ],
+    "modelIds": [
+      "ZA-e0facdef9a3a4f",
+      "ZA-e2d5896b62a627",
+      "ZA-1177ba8cf26c3a",
+      "ZA-934c8082ee6819",
+      "ZA-52a2ecf1ecd8b3",
+      "ZA-ab9c98622a1979"
+    ]
+  },
+  "ligamento-isquiofemoral": {
+    "name": "Ligamento isquiofemoral",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Ischiofemoral ligament.l",
+      "Ischiofemoral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-649f97bebf579c",
+      "ZA-cd69ed96f64b21"
+    ]
+  },
+  "ligamento-pubofemoral": {
+    "name": "Ligamento pubofemoral",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Pubofemoral ligament.l",
+      "Pubofemoral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-ec0411b0567973",
+      "ZA-c3fe4751d1df1a"
+    ]
+  },
+  "membrana-interossea-do-antebraco": {
+    "name": "Membrana interóssea do antebraço",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Interosseous membrane of forearm.l",
+      "Interosseous membrane of forearm.r"
+    ],
+    "modelIds": [
+      "ZA-706e50e8b9adcf",
+      "ZA-4b99332098ac0d"
+    ]
+  },
+  "membrana-interossea-da-perna": {
+    "name": "Membrana interóssea da perna",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Interosseous membrane of leg.l",
+      "Interosseous membrane of leg.r"
+    ],
+    "modelIds": [
+      "ZA-660bf0f56ec369",
+      "ZA-c4d4c1832dd6ac"
+    ]
+  },
+  "ligamento-temporomandibular-lateral": {
+    "name": "Ligamento temporomandibular lateral",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Lateral temporomandibular ligament.l",
+      "Lateral temporomandibular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-b484a60c2197eb",
+      "ZA-6b8422984fe260"
+    ]
+  },
+  "ligamento-esfenomandibular": {
+    "name": "Ligamento esfenomandibular",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Sphenomandibular ligament.l",
+      "Sphenomandibular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-a3be020bbbc542",
+      "ZA-7bcd3e50e9f3da"
+    ]
+  },
+  "ligamento-estilo-hioideo": {
+    "name": "Ligamento estilo-hióideo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Stylohyoid ligament.l",
+      "Stylohyoid ligament.r"
+    ],
+    "modelIds": [
+      "ZA-4af9e58ee0fc35",
+      "ZA-7e3af84e7d1d80"
+    ]
+  },
+  "ligamento-iliolombar": {
+    "name": "Ligamento iliolombar",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Iliolumbar ligament.l",
+      "Iliolumbar ligament.r"
+    ],
+    "modelIds": [
+      "ZA-f1cdb1de418fb4",
+      "ZA-cceee8f27e09b3"
+    ]
+  },
+  "ligamento-inguinal": {
+    "name": "Ligamento inguinal",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Inguinal ligament.l",
+      "Inguinal ligament.r"
+    ],
+    "modelIds": [
+      "ZA-c9a9538880f58d",
+      "ZA-5b24187025609d"
+    ]
+  },
+  "ligamento-costotransversario": {
+    "name": "Ligamento costotransversário",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Costotransverse ligament.l",
+      "Costotransverse ligament.r"
+    ],
+    "modelIds": [
+      "ZA-68572d77fca4c0",
+      "ZA-ae37d65217f11e"
+    ]
+  },
+  "ligamento-radiado-da-cabeca-da-costela": {
+    "name": "Ligamento radiado da cabeça da costela",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Radiate ligament of head of rib.l",
+      "Radiate ligament of head of rib.r",
+      "Intra-articular ligament of head of rib",
+      "Intra-articular ligament of head of rib.r"
+    ],
+    "modelIds": [
+      "ZA-a538653ce15c6b",
+      "ZA-3b0b294ac1998b",
+      "ZA-5e590f3614ede6",
+      "ZA-785300283e8283"
+    ]
+  },
+  "ligamentos-intertransversarios": {
+    "name": "Ligamentos intertransversários",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Intertransverse ligaments.l",
+      "Intertransverse ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-00388a1811839b",
+      "ZA-86eda458816434"
+    ]
+  },
+  "membrana-obturatoria": {
+    "name": "Membrana obturatória",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Obturator membrane.l",
+      "Obturator membrane.r"
+    ],
+    "modelIds": [
+      "ZA-c73748fedec6f4",
+      "ZA-36586ce52b5c7e"
+    ]
+  },
+  "retinaculo-patelar-medial": {
+    "name": "Retináculo patelar medial",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Medial patellar retinaculum.l",
+      "Medial patellar retinaculum.r"
+    ],
+    "modelIds": [
+      "ZA-47822c5f104b2f",
+      "ZA-8d8730af1e3660"
+    ]
+  },
+  "retinaculo-patelar-lateral": {
+    "name": "Retináculo patelar lateral",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Lateral patellar retinaculum.l",
+      "Lateral patellar retinaculum.r"
+    ],
+    "modelIds": [
+      "ZA-f9a2eed970d7f2",
+      "ZA-403e9298acabb2"
+    ]
+  },
+  "ligamentos-meniscotibiais": {
+    "name": "Ligamentos meniscotibiais",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Anterior meniscotibial ligament (Medial meniscus).l",
+      "Anterior meniscotibial ligament (Medial meniscus).r",
+      "Posterior meniscotibial ligament (Medial meniscus).l",
+      "Posterior meniscotibial ligament (Medial meniscus).r",
+      "Anterior meniscotibial ligament (Lateral meniscus).l",
+      "Anterior meniscotibial ligament (Lateral meniscus).r",
+      "Posterior meniscotibial ligament (Lateral meniscus).l",
+      "Posterior meniscotibial ligament (Lateral meniscus).r"
+    ],
+    "modelIds": [
+      "ZA-a91b2397472dd7",
+      "ZA-ebb4ecec922ba2",
+      "ZA-7de24ffe8f3523",
+      "ZA-6da570f349f03d",
+      "ZA-22de09eb0935bf",
+      "ZA-95ec1b96339f4f",
+      "ZA-20bb01324fc250",
+      "ZA-594423a4261936"
+    ]
+  },
+  "ligamento-transverso-do-umero": {
+    "name": "Ligamento transverso do úmero",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Transverse humeral ligament.l",
+      "Transverse humeral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-788d65be7b2f25",
+      "ZA-2ea4da44273112"
+    ]
+  },
+  "ligamentos-transversos-da-escapula": {
+    "name": "Ligamentos transversos da escápula",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Superior transverse scapular ligament.l",
+      "Superior transverse scapular ligament.r",
+      "Inferior transverse scapular ligament.l",
+      "Inferior transverse scapular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-0fda6b150e1917",
+      "ZA-ae617a439f60c6",
+      "ZA-71774bbd5ed5dd",
+      "ZA-d20098e09a849e"
+    ]
+  },
+  "ligamentos-esternoclaviculares": {
+    "name": "Ligamentos esternoclaviculares",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Anterior sternoclavicular ligament.l",
+      "Anterior sternoclavicular ligament.r",
+      "Posterior sternoclavicular ligament.l",
+      "Posterior sternoclavicular ligament.r",
+      "Interclavicular ligament.l",
+      "Interclavicular ligament.r",
+      "Costoclavicular ligament.l",
+      "Costoclavicular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-0218bfa16d2d3c",
+      "ZA-9b34d41ceb172f",
+      "ZA-9fe1de3c3e601e",
+      "ZA-dec3754f411bde",
+      "ZA-aa67b043dcc7d4",
+      "ZA-fe9880256b812b",
+      "ZA-80b0096589be97",
+      "ZA-4d19d6f8e5a863"
+    ]
+  },
+  "ligamento-metacarpal-transverso-profundo": {
+    "name": "Ligamento metacarpal transverso profundo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Deep transverse metacarpal ligament.l",
+      "Deep transverse metacarpal ligament.r"
+    ],
+    "modelIds": [
+      "ZA-18ded0dc3d21f5",
+      "ZA-23342420a726c1"
+    ]
+  },
+  "ligamento-metatarsal-transverso-profundo": {
+    "name": "Ligamento metatarsal transverso profundo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Deep transverse metatarsal ligament.l",
+      "Deep transverse metatarsal ligament.r"
+    ],
+    "modelIds": [
+      "ZA-5364be1c3fdebc",
+      "ZA-82adfa25b22bb6"
+    ]
+  },
+  "ligamento-talonavicular": {
+    "name": "Ligamento talonavicular",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Talonavicular ligament.l",
+      "Talonavicular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-80ca46049224a4",
+      "ZA-14b0054167cea6"
+    ]
+  },
+  "osso-nasal": {
+    "name": "Osso nasal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Nasal bone.l",
+      "Nasal bone.r"
+    ],
+    "modelIds": [
+      "ZA-9809d0aa12e651",
+      "ZA-30c3ccf9c5916d"
+    ]
+  },
+  "lacrimal": {
+    "name": "Lacrimal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Lacrimal bone.l",
+      "Lacrimal bone.r"
+    ],
+    "modelIds": [
+      "ZA-5036012603fee6",
+      "ZA-5a1dc2b05b9631"
+    ]
+  },
+  "palatino": {
+    "name": "Palatino",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Palatine bone.l",
+      "Palatine bone.r"
+    ],
+    "modelIds": [
+      "ZA-aa436d2f192498",
+      "ZA-7144427aebbe17"
+    ]
+  },
+  "vomer": {
+    "name": "Vômer",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vomer"
+    ],
+    "modelIds": [
+      "ZA-bcfc7448ea8a69"
+    ]
+  },
+  "concha-nasal-inferior": {
+    "name": "Concha nasal inferior",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Inferior nasal concha bone.l",
+      "Inferior nasal concha bone.r"
+    ],
+    "modelIds": [
+      "ZA-5a335db4d317b3",
+      "ZA-ffe676dbde55f8"
+    ]
+  },
+  "ossiculos-da-audicao": {
+    "name": "Ossículos da audição",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Malleus.l",
+      "Malleus.r",
+      "Incus.l",
+      "Incus.r",
+      "Stapes.l",
+      "Stapes.r"
+    ],
+    "modelIds": [
+      "ZA-10f2c1a15abafe",
+      "ZA-50540cb01ab348",
+      "ZA-19742863899ff4",
+      "ZA-e46b0a42e10f77",
+      "ZA-c229f1b12e4649",
+      "ZA-37ff1b0324d2f0"
+    ]
+  },
+  "sesamoides-do-halux": {
+    "name": "Sesamoides do hálux",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Sesamoid bones of foot.l",
+      "Sesamoid bones of foot.r"
+    ],
+    "modelIds": [
+      "ZA-a5bd69eab41144",
+      "ZA-ef3778f7941fc1"
+    ]
+  },
+  "cartilagens-costais": {
+    "name": "Cartilagens costais",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Costal cartilage of first rib.l",
+      "Costal cartilage of first rib.r",
+      "Costal cartilage of second rib.l",
+      "Costal cartilage of second rib.r",
+      "Costal cartilage of third rib.l",
+      "Costal cartilage of third rib.r",
+      "Costal cartilage of fourth rib.l",
+      "Costal cartilage of fourth rib.r",
+      "Costal cartilage of fifth rib.l",
+      "Costal cartilage of fifth rib.r",
+      "Costal cartilage of sixth rib.l",
+      "Costal cartilage of sixth rib.r",
+      "Costal cartilage of seventh rib.l",
+      "Costal cartilage of seventh rib.r",
+      "Costal cartilage of eighth rib.l",
+      "Costal cartilage of eighth rib.r",
+      "Costal cartilage of ninth rib.l",
+      "Costal cartilage of ninth rib.r",
+      "Costal cartilage of tenth rib.l",
+      "Costal cartilage of tenth rib.r"
+    ],
+    "modelIds": [
+      "ZA-69adeba52863fe",
+      "ZA-bc0af66939a0fd",
+      "ZA-6926a0d3ac4fc5",
+      "ZA-0fd88f0ce84743",
+      "ZA-71b86e83f63d30",
+      "ZA-2a54134ad08dfb",
+      "ZA-50dc66aa122c78",
+      "ZA-b7aeaa2e72648c",
+      "ZA-b6db86b657e893",
+      "ZA-ec45a227f80940",
+      "ZA-50ba98f51d376b",
+      "ZA-3821a88e93ce9f",
+      "ZA-3f48cf0e0ef07c",
+      "ZA-1e5c9d5678d444",
+      "ZA-7eb664747f3889",
+      "ZA-876fb154a26ebe",
+      "ZA-db058d9c11008f",
+      "ZA-d85f5535e4db84",
+      "ZA-1c378e1d6da121",
+      "ZA-b318306600656f"
+    ]
+  },
+  "ligamentos-radiocarpais-palmares": {
+    "name": "Ligamentos radiocarpais palmares",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Radioscaphocapitate ligament.l",
+      "Radioscaphocapitate ligament.r",
+      "Radiocapitate ligament.l",
+      "Radiocapitate ligament.r",
+      "Radiate carpal ligament.l",
+      "Radiate carpal ligament.r"
+    ],
+    "modelIds": [
+      "ZA-5e71ac969e81f9",
+      "ZA-1804e21458263e",
+      "ZA-6e529470c8aa42",
+      "ZA-431c8390ec3ca6",
+      "ZA-1da73a655b2859",
+      "ZA-ba2ec456cea9b3"
+    ]
+  },
+  "ligamentos-ulnocarpais": {
+    "name": "Ligamentos ulnocarpais",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Ulnolunate ligament.l",
+      "Ulnolunate ligament.r",
+      "Ulnotriquetral ligament.l",
+      "Ulnotriquetral ligament.r",
+      "Ulnocapitate ligament.l",
+      "Ulnocapitate ligament.r",
+      "Dorsal ulnocarpal ligament.l",
+      "Dorsal ulnocarpal ligament.r",
+      "Ulnopisiform ligament",
+      "Ulnopisiform ligament.l"
+    ],
+    "modelIds": [
+      "ZA-ba409702cebf71",
+      "ZA-22f070124ef800",
+      "ZA-f6a9e207aa8a5e",
+      "ZA-3d62d06b63c39c",
+      "ZA-e9907869d809fa",
+      "ZA-892c60f46edafb",
+      "ZA-03f4f1b702cfd5",
+      "ZA-d915b46c55a442",
+      "ZA-ef71d29b63c0d1",
+      "ZA-c0d361b230dc07"
+    ]
+  },
+  "ligamentos-radioulnares-distais": {
+    "name": "Ligamentos radioulnares distais",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Dorsal radio-ulnar ligament.l",
+      "Dorsal radio-ulnar ligament.r",
+      "Palmar radio-ulnar ligament.l",
+      "Palmar radio-ulnar ligament.r"
+    ],
+    "modelIds": [
+      "ZA-9a105fd9dc3d5c",
+      "ZA-62deecfc5fc11e",
+      "ZA-d777327b172ba6",
+      "ZA-0663d65edb9c73"
+    ]
+  },
+  "ligamento-colateral-radial-do-punho": {
+    "name": "Ligamento colateral radial do punho",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Radial collateral ligament of wrist joint.l",
+      "Radial collateral ligament of wrist joint.r"
+    ],
+    "modelIds": [
+      "ZA-9eb02d8e759dce",
+      "ZA-292023af0b502e"
+    ]
+  },
+  "ligamento-colateral-ulnar-do-punho": {
+    "name": "Ligamento colateral ulnar do punho",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Ulnar collateral ligament of wrist joint.l",
+      "Ulnar collateral ligament of wrist joint.r"
+    ],
+    "modelIds": [
+      "ZA-fc029b83e6ef0c",
+      "ZA-e9299cc04ee9cf"
+    ]
+  },
+  "ligamentos-intercarpais-dorsais": {
+    "name": "Ligamentos intercarpais dorsais",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Dorsal intercarpal ligaments.l",
+      "Dorsal intercarpal ligaments.r",
+      "Dorsal scaphotriquetral ligament.l",
+      "Dorsal scaphotriquetral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-be200f5128cabf",
+      "ZA-c70058b9e5fc7a",
+      "ZA-da4fe9dcbae71f",
+      "ZA-2c8f52e93fc434"
+    ]
+  },
+  "ligamentos-intercarpais-palmares": {
+    "name": "Ligamentos intercarpais palmares",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Palmar scaphotriquetral ligament.l",
+      "Palmar scaphotriquetral ligament.r",
+      "Palmar lunotriquetral ligament.l",
+      "Palmar lunotriquetral ligament.r",
+      "Palmar capitohamate ligament.l",
+      "Palmar capitohamate ligament.r",
+      "Palmar trapezoideocapitate ligament.l",
+      "Palmar trapezoideocapitate ligament.r",
+      "Scaphocapitate ligament.l",
+      "Scaphocapitate ligament.r",
+      "Scaphotrapeziotrapezoidal ligament.l",
+      "Scaphotrapeziotrapezoidal ligament.r",
+      "Triquetrocapitate ligament.l",
+      "Triquetrocapitate ligament.r",
+      "Triquetrohamate ligament.l",
+      "Triquetrohamate ligament.r"
+    ],
+    "modelIds": [
+      "ZA-79989ac613d3b1",
+      "ZA-2d36af10b0ab9d",
+      "ZA-a614e46121be45",
+      "ZA-4226deb51ba083",
+      "ZA-5cd27d35f33a4c",
+      "ZA-9aaf5f2ad2245c",
+      "ZA-07b0b221a0934a",
+      "ZA-187a39e40cdde9",
+      "ZA-851049b7e5560f",
+      "ZA-5d442a13feaf8c",
+      "ZA-6f378f4cb711d8",
+      "ZA-4bf8acf5245b0d",
+      "ZA-4c32b582c168f6",
+      "ZA-2e0677e472c522",
+      "ZA-5684548b7147ee",
+      "ZA-3664b03d74a539"
+    ]
+  },
+  "ligamentos-interosseos-do-carpo": {
+    "name": "Ligamentos interósseos do carpo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Capitohamate interosseous ligament.l",
+      "Capitohamate interosseous ligament.r",
+      "Trapeziotrapezoidal interosseous ligament.l",
+      "Trapeziotrapezoidal interosseous ligament.r",
+      "Trapezoideocapitate interosseous ligament.l",
+      "Trapezoideocapitate interosseous ligament.r"
+    ],
+    "modelIds": [
+      "ZA-b931df985d7327",
+      "ZA-afa715ed6c977d",
+      "ZA-daa46eb27d94f5",
+      "ZA-cc5c50231b4618",
+      "ZA-7a314d13201c4a",
+      "ZA-a883eab2cf2a0d"
+    ]
+  },
+  "ligamentos-do-pisiforme": {
+    "name": "Ligamentos do pisiforme",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Pisohamate ligament.l",
+      "Pisohamate ligament.r",
+      "Pisometacarpal ligament.l",
+      "Pisometacarpal ligament.r",
+      "Pisotriquetral ligament.l",
+      "Pisotriquetral ligament.r"
+    ],
+    "modelIds": [
+      "ZA-80d1cf7687dd3a",
+      "ZA-699e1c32f11a3d",
+      "ZA-a65f9402a58ccf",
+      "ZA-eb77203a0b06db",
+      "ZA-4de320f19471d7",
+      "ZA-1ec9e308724569"
+    ]
+  },
+  "ligamentos-metacarpais": {
+    "name": "Ligamentos metacarpais",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Dorsal metacarpal ligaments.l",
+      "Dorsal metacarpal ligaments.r",
+      "Palmar metacarpal ligaments.l",
+      "Palmar metacarpal ligaments.r",
+      "Interosseous metacarpal ligaments.l",
+      "Interosseous metacarpal ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-69588b7d8986b0",
+      "ZA-2f7a6c18ebb1c9",
+      "ZA-d7d8b2ab13f73f",
+      "ZA-85429825c5d8e2",
+      "ZA-8c8ac0e7ea236c",
+      "ZA-c87a9f430ea93a"
+    ]
+  },
+  "ligamento-metacarpal-transverso-superficial": {
+    "name": "Ligamento metacarpal transverso superficial",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Superficial transverse metacarpal ligament.l",
+      "Superficial transverse metacarpal ligament.r"
+    ],
+    "modelIds": [
+      "ZA-d2ac3625b564ec",
+      "ZA-e4945e76463b5e"
+    ]
+  },
+  "placas-palmares-da-mao": {
+    "name": "Placas palmares da mão",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Palmar interphalangeal ligaments.l",
+      "Palmar interphalangeal ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-419f896c360b60",
+      "ZA-66bbaef1ab9748"
+    ]
+  },
+  "ligamento-bifurcado": {
+    "name": "Ligamento bifurcado",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Calcaneonavicular ligament.l",
+      "Calcaneonavicular ligament.r",
+      "Calcaneocuboid ligament.l",
+      "Calcaneocuboid ligament.r",
+      "Dorsal calcaneocuboid ligament.l",
+      "Dorsal calcaneocuboid ligament.r"
+    ],
+    "modelIds": [
+      "ZA-daa3742a234809",
+      "ZA-6befaf7bc54a6b",
+      "ZA-2ae1c11b90d8ab",
+      "ZA-b5dbbe130e430f",
+      "ZA-5e9e78413cd7d6",
+      "ZA-8b8a8f0e404eaa"
+    ]
+  },
+  "ligamentos-tarsometatarsais": {
+    "name": "Ligamentos tarsometatarsais",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Dorsal tarsometatarsal ligaments.l",
+      "Dorsal tarsometatarsal ligaments.r",
+      "Plantar tarsometatarsal ligaments.l",
+      "Plantar tarsometatarsal ligaments.r",
+      "Cuneometatarsal interosseous ligaments.l",
+      "Cuneometatarsal interosseous ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-dd8c695be5fe86",
+      "ZA-c8a74ae2a83b78",
+      "ZA-fc7a3d880f2699",
+      "ZA-5600a40da2a43b",
+      "ZA-5b579ff550be80",
+      "ZA-ee051803ba430f"
+    ]
+  },
+  "ligamentos-cuneonaviculares": {
+    "name": "Ligamentos cuneonaviculares",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Dorsal cuneonavicular ligaments.l",
+      "Dorsal cuneonavicular ligaments.r",
+      "Plantar cuneonavicular ligaments.l",
+      "Plantar cuneonavicular ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-7851226bea59b6",
+      "ZA-4afb0fdde9b8e2",
+      "ZA-3a52c88833642d",
+      "ZA-9a302679458bae"
+    ]
+  },
+  "ligamentos-cuboideonaviculares": {
+    "name": "Ligamentos cuboideonaviculares",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Dorsal cuboideonavicular ligament.l",
+      "Dorsal cuboideonavicular ligament.r",
+      "Plantar cuboideonavicular ligament.l",
+      "Plantar cuboideonavicular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-d58fff38e4f263",
+      "ZA-44937403db48a0",
+      "ZA-fdb2dd86d913fa",
+      "ZA-7283da01166ec5"
+    ]
+  },
+  "ligamentos-cuneocuboideos": {
+    "name": "Ligamentos cuneocuboideos",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Dorsal cuneocuboid ligament.l",
+      "Dorsal cuneocuboid ligament.r",
+      "Plantar cuneocuboid ligament.l",
+      "Plantar cuneocuboid ligament.r",
+      "Cuneocuboid interosseous ligament.l",
+      "Cuneocuboid interosseous ligament.r"
+    ],
+    "modelIds": [
+      "ZA-9ac93b79cc7236",
+      "ZA-41ffc2ef8ceede",
+      "ZA-84a25355bdd9e2",
+      "ZA-7257a844d61c20",
+      "ZA-89d356e18ef472",
+      "ZA-b67b5bcbeebbca"
+    ]
+  },
+  "ligamentos-intercuneiformes": {
+    "name": "Ligamentos intercuneiformes",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Dorsal intercuneiform ligaments.l",
+      "Dorsal intercuneiform ligaments.r",
+      "Plantar intercuneiform ligaments.l",
+      "Plantar intercuneiform ligaments.r",
+      "Intercuneiform interosseous ligaments.l",
+      "Intercuneiform interosseous ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-d1e2f0db5b18db",
+      "ZA-5cca870d4913e6",
+      "ZA-423b104ef10839",
+      "ZA-7c4e7850f392cd",
+      "ZA-cd8e5f2be1e1b4",
+      "ZA-1e6a9e2bfe65cc"
+    ]
+  },
+  "ligamentos-metatarsais": {
+    "name": "Ligamentos metatarsais",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Dorsal metatarsal ligaments.l",
+      "Dorsal metatarsal ligaments.r",
+      "Plantar metatarsal ligaments.l",
+      "Plantar metatarsal ligaments.r",
+      "Metatarsal interosseous ligaments.l",
+      "Metatarsal interosseous ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-76e077324c308d",
+      "ZA-814971c0127fc3",
+      "ZA-e1e4766258dfa2",
+      "ZA-ceb020927daeb5",
+      "ZA-245861b25ca1c4",
+      "ZA-2daffab369da11"
+    ]
+  },
+  "ligamento-metatarsal-transverso-superficial": {
+    "name": "Ligamento metatarsal transverso superficial",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Superficial transverse metatarsal ligament.l",
+      "Superficial transverse metatarsal ligament.r"
+    ],
+    "modelIds": [
+      "ZA-88c20d2f4a9822",
+      "ZA-1a31f95f7331b6"
+    ]
+  },
+  "placas-plantares": {
+    "name": "Placas plantares",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Plantar metatarsophalangeal ligaments.l",
+      "Plantar metatarsophalangeal ligaments.r",
+      "Plantar interphalangeal ligaments.l",
+      "Plantar interphalangeal ligaments.r"
+    ],
+    "modelIds": [
+      "ZA-b519e8fdf9290a",
+      "ZA-6ea43c98b41f54",
+      "ZA-f968451901ce35",
+      "ZA-8490012c53875d"
+    ]
+  },
+  "ligamentos-colaterais-interfalangicos-do-pe": {
+    "name": "Ligamentos colaterais interfalângicos do pé",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Collateral interphalangeal ligaments of foot.l",
+      "Collateral interphalangeal ligaments of foot.r"
+    ],
+    "modelIds": [
+      "ZA-f3b50805c212c1",
+      "ZA-f7dd05fca17513"
+    ]
+  },
+  "ligamento-intersesamoideo": {
+    "name": "Ligamento intersesamoideo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Intersesamoid ligament.l",
+      "Intersesamoid ligament.r"
+    ],
+    "modelIds": [
+      "ZA-58503f4a6ce2e3",
+      "ZA-61dfdb6f27826e"
+    ]
+  },
+  "ligamentos-da-cabeca-da-fibula": {
+    "name": "Ligamentos da cabeça da fíbula",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Anterior ligament of fibular head.l",
+      "Anterior ligament of fibular head.r",
+      "Posterior ligament of fibular head.l",
+      "Posterior ligament of fibular head.r"
+    ],
+    "modelIds": [
+      "ZA-8efd708d9f4b0a",
+      "ZA-3668be867da909",
+      "ZA-2a6faaa2aac0bd",
+      "ZA-98c4f79a5e376f"
+    ]
+  },
+  "ligamento-tibiofibular-transverso": {
+    "name": "Ligamento tibiofibular transverso",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Transverse tibiofibular ligament.l",
+      "Transverse tibiofibular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-c163b033ca035a",
+      "ZA-d43a7d7130f405"
+    ]
+  },
+  "ligamento-meniscopatelar": {
+    "name": "Ligamento meniscopatelar",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Meniscopatellar ligament.l",
+      "Meniscopatellar ligament.r"
+    ],
+    "modelIds": [
+      "ZA-9dce1aa85ef952",
+      "ZA-8e0f9dc6d7d418"
+    ]
+  },
+  "ligamentos-pubicos": {
+    "name": "Ligamentos púbicos",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Superior pubic ligament",
+      "Inferior pubic ligament"
+    ],
+    "modelIds": [
+      "ZA-84abcf7407dfef",
+      "ZA-4a0a1d4729c329"
+    ]
+  },
+  "ligamento-estilomandibular": {
+    "name": "Ligamento estilomandibular",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Stylomandibular ligament.l",
+      "Stylomandibular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-423f50dec1e0ba",
+      "ZA-5d605a9bf70b18"
+    ]
+  },
+  "ligamento-pterigospinhoso": {
+    "name": "Ligamento pterigospinhoso",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Pterygospinous ligament.l",
+      "Pterygospinous ligament.r"
+    ],
+    "modelIds": [
+      "ZA-5d0c37d19f3791",
+      "ZA-fa2248fabc8c30"
+    ]
+  },
+  "ligamentos-tireo-hioideos": {
+    "name": "Ligamentos tireo-hióideos",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Median thyrohyoid ligament",
+      "Lateral thyrohyoid ligament.l",
+      "Lateral thyrohyoid ligament.r"
+    ],
+    "modelIds": [
+      "ZA-826e9edb7a26fb",
+      "ZA-0bba72a90041e6",
+      "ZA-b580720e8796cb"
+    ]
+  },
+  "ligamento-cricotireoideo-mediano": {
+    "name": "Ligamento cricotireóideo mediano",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Median cricothyroid ligament"
+    ],
+    "modelIds": [
+      "ZA-50c67a7825758b"
+    ]
+  },
+  "membrana-quadrangular": {
+    "name": "Membrana quadrangular",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Quadrangular membrane.l",
+      "Quadrangular membrane.r"
+    ],
+    "modelIds": [
+      "ZA-9253c6979b9d40",
+      "ZA-4733e5bf598c43"
+    ]
+  },
+  "ligamento-cricofaringeo": {
+    "name": "Ligamento cricofaríngeo",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Cricopharyngeal ligament.l",
+      "Cricopharyngeal ligament.r"
+    ],
+    "modelIds": [
+      "ZA-8fb5ae1bbc7ded",
+      "ZA-c600cd3356abdd"
+    ]
+  },
+  "membranas-intercostais": {
+    "name": "Membranas intercostais",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "External intercostal membrane.l",
+      "External intercostal membrane.r",
+      "Internal intercostal membrane.l",
+      "Internal intercostal membrane.r"
+    ],
+    "modelIds": [
+      "ZA-be120fd8fdab28",
+      "ZA-99bbd1fad9bf57",
+      "ZA-3d9ccdd91ac3b7",
+      "ZA-231268f98394bc"
+    ]
+  },
+  "bolsas-do-ombro": {
+    "name": "Bolsas do ombro",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Subacromial bursa.l",
+      "Subacromial bursa.r",
+      "Subdeltoid bursa.l",
+      "Subdeltoid bursa.r",
+      "Subcutaneous acromial bursa.l",
+      "Subcutaneous acromial bursa.r",
+      "Subtendinous bursa of infraspinatus muscle.l",
+      "Subtendinous bursa of infraspinatus muscle.r",
+      "Subtendinous bursa of teres major muscle.l",
+      "Subtendinous bursa of teres major muscle.r",
+      "Subtendinous bursa of trapezius muscle.l",
+      "Subtendinous bursa of trapezius muscle.r",
+      "Coracobrachial bursa.l",
+      "Coracobrachial bursa.r"
+    ],
+    "modelIds": [
+      "ZA-9fdb41ced3b07d",
+      "ZA-a6661f9fa65189",
+      "ZA-4f66edafc8f4b1",
+      "ZA-75d445e02e39f2",
+      "ZA-316f41f3e03480",
+      "ZA-e09b7cf5693183",
+      "ZA-a948d37d76e6e6",
+      "ZA-454f95a2241656",
+      "ZA-0284424347ccb1",
+      "ZA-5f29b3d055dd26",
+      "ZA-865e3d6ac15f69",
+      "ZA-e980626ca2cbb8",
+      "ZA-92f9cc31b2b545",
+      "ZA-6625b1050576c9"
+    ]
+  },
+  "bolsas-do-cotovelo": {
+    "name": "Bolsas do cotovelo",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Subtendinous bursa of triceps brachii muscle.l",
+      "Subtendinous bursa of triceps brachii muscle.r",
+      "Bicipitoradial bursa.l",
+      "Bicipitoradial bursa.r"
+    ],
+    "modelIds": [
+      "ZA-778a12ebb9a58c",
+      "ZA-69bcf3323d6ef9",
+      "ZA-494cb19ccb6bbf",
+      "ZA-26fab3ab3bdb51"
+    ]
+  },
+  "bolsas-do-quadril": {
+    "name": "Bolsas do quadril",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Trochanteric bursa of gluteus maximus muscle.l",
+      "Trochanteric bursa of gluteus maximus muscle.r",
+      "Trochanteric bursa of gluteus medius muscle.l",
+      "Trochanteric bursa of gluteus medius muscle.r",
+      "Trochanteric bursa of gluteus minimus muscle.l",
+      "Trochanteric bursa of gluteus minimus muscle.r",
+      "Subcutaneous trochanteric bursa.l",
+      "Subcutaneous trochanteric bursa.r",
+      "(Iliopectineal bursa).l",
+      "(Iliopectineal bursa).r",
+      "Subtendinous bursa of iliacus muscle.l",
+      "Subtendinous bursa of iliacus muscle.r",
+      "Sciatic bursa of gluteus maximus muscle.l",
+      "Sciatic bursa of gluteus maximus muscle.r",
+      "Sciatic bursa of obturator internus.l",
+      "Sciatic bursa of obturator internus.r",
+      "Subtendinous bursa of obturator internus.l",
+      "Subtendinous bursa of obturator internus.r",
+      "Bursa of piriformis muscle.l",
+      "Bursa of piriformis muscle.r",
+      "Intermuscular gluteal bursae.l",
+      "Intermuscular gluteal bursae.r"
+    ],
+    "modelIds": [
+      "ZA-950ab1ff943452",
+      "ZA-fc9549d09988a9",
+      "ZA-a565b531ec9443",
+      "ZA-9690365a987cb9",
+      "ZA-1d79cd08fed134",
+      "ZA-fd2828b766d715",
+      "ZA-279493841a221e",
+      "ZA-8f7d4b1f4e2c89",
+      "ZA-fa7765c9555e65",
+      "ZA-76e7c9568c42d2",
+      "ZA-28b06b37ac5bb8",
+      "ZA-ab4ad1a641843d",
+      "ZA-e8e7144df8df2a",
+      "ZA-8060b3488a16b9",
+      "ZA-23c6bc090c1b6d",
+      "ZA-e84e5478ef30ea",
+      "ZA-54619a42b06d4f",
+      "ZA-f308074123f5cd",
+      "ZA-b1e6946644b388",
+      "ZA-c828ceb58e5fa3",
+      "ZA-2e411aa8164793",
+      "ZA-4db9f2e9781805"
+    ]
+  },
+  "bolsas-do-joelho": {
+    "name": "Bolsas do joelho",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Suprapatellar bursa.l",
+      "Suprapatellar bursa.r",
+      "Subcutaneous prepatellar bursa.l",
+      "Subcutaneous prepatellar bursa.r",
+      "Subfacial prepatellar bursa.l",
+      "Subfacial prepatellar bursa.r",
+      "Subtendinous prepatellar bursa.l",
+      "Subtendinous prepatellar bursa.r",
+      "Subcutaneous infrapatellar bursa.l",
+      "Subcutaneous infrapatellar bursa.r",
+      "Deep infrapatellar bursa.l",
+      "Deep infrapatellar bursa.r",
+      "Subcutaneous bursa of tuberosity of tibia.l",
+      "Subcutaneous bursa of tuberosity of tibia.r",
+      "Anserine bursa.l",
+      "Anserine bursa.r",
+      "Subtendinous bursa of sartorius muscle.l",
+      "Subtendinous bursa of sartorius muscle.r",
+      "Semimembranosus bursa.l",
+      "Semimembranosus bursa.r",
+      "Medial subtendinous bursa of gastrocnemius muscle.l",
+      "Medial subtendinous bursa of gastrocnemius muscle.r",
+      "Lateral subtendinous bursa of gastrocnemius muscle.l",
+      "Lateral subtendinous bursa of gastrocnemius muscle.r",
+      "Superior bursa of biceps femoris muscle.l",
+      "Superior bursa of biceps femoris muscle.r",
+      "Inferior subtendinous bursa of biceps femoris muscle.l",
+      "Inferior subtendinous bursa of biceps femoris muscle.r"
+    ],
+    "modelIds": [
+      "ZA-7568faac6a3f03",
+      "ZA-300663fcb7cb5d",
+      "ZA-cf206b954789ac",
+      "ZA-605c99db80eb98",
+      "ZA-9c30a057408b62",
+      "ZA-36c1325d2bb2aa",
+      "ZA-733485197af997",
+      "ZA-d27515e93438ad",
+      "ZA-179445dd255f07",
+      "ZA-81011a2486c2d8",
+      "ZA-9eba10523786c9",
+      "ZA-1cb3ac696bb11b",
+      "ZA-9c1994cf9c73c2",
+      "ZA-47116c38ddf73d",
+      "ZA-0d8753faebf215",
+      "ZA-a1445f6f7d7005",
+      "ZA-d704248efc9b67",
+      "ZA-72a54dfe39aa0c",
+      "ZA-01a488c6e51544",
+      "ZA-1821979f1d2d04",
+      "ZA-e70ca6ec781f80",
+      "ZA-b83d715e1d1a4a",
+      "ZA-0d9793700f42a3",
+      "ZA-1659cc5c4d5679",
+      "ZA-86ae43c2fe6bd6",
+      "ZA-157e01b81b3493",
+      "ZA-deae0d2aa69d37",
+      "ZA-529a086c877698"
+    ]
+  },
+  "bolsas-do-tornozelo-e-pe": {
+    "name": "Bolsas do tornozelo e do pé",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Subtendinous calcaneal bursa.l",
+      "Subtendinous calcaneal bursa.r",
+      "Subcutaneous calcaneal bursa.l",
+      "Subcutaneous calcaneal bursa.r",
+      "Subcutaneous bursa of medial malleolus.l",
+      "Subcutaneous bursa of medial malleolus.r",
+      "Subcutaneous bursa of lateral malleolus.l",
+      "Subcutaneous bursa of lateral malleolus.r",
+      "Subtendinous bursa of tibialis anterior.l",
+      "Subtendinous bursa of tibialis anterior.r"
+    ],
+    "modelIds": [
+      "ZA-f84527384878b2",
+      "ZA-0c725180a29ce0",
+      "ZA-8e9a76d77b2cb6",
+      "ZA-dc126b9d81373f",
+      "ZA-7651b0dfdbaf80",
+      "ZA-e3f151b1d30f52",
+      "ZA-c745c64bb6b757",
+      "ZA-0d5651b6a17f46",
+      "ZA-7a507344c5b9a3",
+      "ZA-3d2533b0c9744f"
+    ]
+  },
+  "fascia-toracolombar": {
+    "name": "Fáscia toracolombar",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Posterior layer of thoracolumbar fascia.l",
+      "Posterior layer of thoracolumbar fascia.r",
+      "Middle layer of thoracolumbar fascia.l",
+      "Middle layer of thoracolumbar fascia.r",
+      "Anterior layer of thoracolumbar fascia.l",
+      "Anterior layer of thoracolumbar fascia.r"
+    ],
+    "modelIds": [
+      "ZA-5f8bad9216abc5",
+      "ZA-e240c70c998660",
+      "ZA-41dd74ef063641",
+      "ZA-e5f2046e2fc702",
+      "ZA-7f995042bf8367",
+      "ZA-653fd38bce5aa5"
+    ]
+  },
+  "fascia-lata": {
+    "name": "Fáscia lata",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Fascia lata.l",
+      "Fascia lata.r"
+    ],
+    "modelIds": [
+      "ZA-4ddf98f6babeba",
+      "ZA-2f35cff7dd3c09"
+    ]
+  },
+  "septos-intermusculares": {
+    "name": "Septos intermusculares",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Anterior intermuscular septum of leg.l",
+      "Anterior intermuscular septum of leg.r",
+      "Posterior intermuscular septum of leg.l",
+      "Posterior intermuscular septum of leg.r",
+      "Transverse intermuscular septum of leg.l",
+      "Transverse intermuscular septum of leg.r",
+      "Lateral femoral intermuscular septum.l",
+      "Lateral femoral intermuscular septum.r",
+      "Medial femoral intermuscular septum.l",
+      "Medial femoral intermuscular septum.r",
+      "Lateral intermuscular septum of arm.l",
+      "Lateral intermuscular septum of arm.r",
+      "Medial intermuscular septum of arm.l",
+      "Medial intermuscular septum of arm.r"
+    ],
+    "modelIds": [
+      "ZA-c6a3df341c3d54",
+      "ZA-5d5aa5ef42c4bd",
+      "ZA-8d3ddbab99ec64",
+      "ZA-7082ed11be26a2",
+      "ZA-6f5bcfb64b2da9",
+      "ZA-a11b1442469abd",
+      "ZA-42930766e55b16",
+      "ZA-457d3a4f097ce5",
+      "ZA-076b192424edfc",
+      "ZA-1a274e63a4c5ac",
+      "ZA-edae88ee9925c3",
+      "ZA-4b77e80f55de8a",
+      "ZA-28f75bfdb8581e",
+      "ZA-0bb646aa8e1115"
+    ]
+  },
+  "fascias-do-membro-superior": {
+    "name": "Fáscias do membro superior",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Brachial fascia.l",
+      "Brachial fascia.r",
+      "Antebrachial fascia.l",
+      "Antebrachial fascia.r",
+      "Deltoid fascia.l",
+      "Deltoid fascia.r",
+      "Pectoral fascia.l",
+      "Pectoral fascia.r",
+      "Clavipectoral fascia.l",
+      "Clavipectoral fascia.r",
+      "Dorsal fascia of hand.l",
+      "Dorsal fascia of hand.r"
+    ],
+    "modelIds": [
+      "ZA-81e573ac5b01fb",
+      "ZA-bf74252c868882",
+      "ZA-988c712dde94b5",
+      "ZA-88abb64d46686d",
+      "ZA-efdb0afe712125",
+      "ZA-52e57ac59233c7",
+      "ZA-4e96004f27d182",
+      "ZA-182443e0f28ff4",
+      "ZA-6900eece38b9a1",
+      "ZA-99c5e4b75c1ed5",
+      "ZA-71c3acd3b1b399",
+      "ZA-902cd04905d3ed"
+    ]
+  },
+  "fascias-do-membro-inferior": {
+    "name": "Fáscias do membro inferior",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Crural fascia.l",
+      "Crural fascia.r",
+      "Popliteal fascia.l",
+      "Popliteal fascia.r",
+      "Iliopsoas fascia.l",
+      "Iliopsoas fascia.r",
+      "Piriformis fascia.l",
+      "Piriformis fascia.r"
+    ],
+    "modelIds": [
+      "ZA-44fa1052d9e0d0",
+      "ZA-c35104b56b74e8",
+      "ZA-8d92a4b0eafabd",
+      "ZA-d0449cae16906b",
+      "ZA-38c9ff2d7c1120",
+      "ZA-414b4649fc9b06",
+      "ZA-e5a670ee85afed",
+      "ZA-82f46ad8e17e69"
+    ]
+  },
+  "fascias-do-tronco": {
+    "name": "Fáscias do abdome e do tórax",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Transversalis fascia",
+      "Investing abdominal fascia.l",
+      "Investing abdominal fascia.r",
+      "Iliopectineal arch.l",
+      "Iliopectineal arch.r",
+      "Diaphragmatic fascia"
+    ],
+    "modelIds": [
+      "ZA-3ba3b76e67cbc8",
+      "ZA-cc6677377d942e",
+      "ZA-28dd58098135a6",
+      "ZA-6c23e9a06cdf6e",
+      "ZA-e162c93777dfbb",
+      "ZA-3f66534648dcbf"
+    ]
+  },
+  "fascias-da-cabeca-e-pescoco": {
+    "name": "Fáscias da cabeça e do pescoço",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Superficial investing cervical fascia.l",
+      "Superficial investing cervical fascia.r",
+      "Superficial layer of temporal fascia.l",
+      "Superficial layer of temporal fascia.r",
+      "Masseteric fascia.l",
+      "Masseteric fascia.r"
+    ],
+    "modelIds": [
+      "ZA-a977839783334c",
+      "ZA-fdeec9923b8b45",
+      "ZA-60a91687f8a78e",
+      "ZA-6a392e55504792",
+      "ZA-380d7215225a5c",
+      "ZA-b70520c47328da"
+    ]
+  },
+  "arco-tendineo-do-levantador-do-anus": {
+    "name": "Arco tendíneo do levantador do ânus",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Tendinous arch of levator ani.l",
+      "Tendinous arch of levator ani.r"
+    ],
+    "modelIds": [
+      "ZA-48c972934a09d0",
+      "ZA-241ffaf4a05873"
+    ]
+  },
+  "bainhas-tendineas-do-punho": {
+    "name": "Bainhas tendíneas do punho e da mão",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Tendon sheath - abd. pollicis longus - ext. pollicis brevis.l",
+      "Tendon sheath - abd. pollicis longus - ext. pollicis brevis.r",
+      "Tendon sheath of extensors carpi radialis.l",
+      "Tendon sheath of extensors carpi radialis.r",
+      "Tendon sheath of extensor pollicis longus.l",
+      "Tendon sheath of extensor pollicis longus.r",
+      "Tendon sheath of extensor digitorum and extensor indicis.l",
+      "Tendon sheath of extensor digitorum and extensor indicis.r",
+      "Tendon sheath of extensor digiti minimi manus.l",
+      "Tendon sheath of extensor digiti minimi manus.r",
+      "Tendon sheath of extensor carpi ulnaris.l",
+      "Tendon sheath of extensor carpi ulnaris.r",
+      "Tendon sheath of flexor carpi radialis.l",
+      "Tendon sheath of flexor carpi radialis.r",
+      "Tendon sheath of flexor pollicis longus.l",
+      "Tendon sheath of flexor pollicis longus.r",
+      "Synovial sheaths of digits of hand.l",
+      "Synovial sheaths of digits of hand.r",
+      "Cruciform part of fibrous sheath of digit of hand.l",
+      "Cruciform part of fibrous sheath of digit of hand.r"
+    ],
+    "modelIds": [
+      "ZA-33578d63bfa1b1",
+      "ZA-8d166b5ff50608",
+      "ZA-268f19ec4f4ac9",
+      "ZA-a250b6a53af7f1",
+      "ZA-e8ddfbff7624fd",
+      "ZA-7cf2f44e2b334b",
+      "ZA-a7a340943a8e0c",
+      "ZA-cb1020ae922651",
+      "ZA-02f5d939c0d9d9",
+      "ZA-1630485efb2fae",
+      "ZA-f93fc3d30bedcb",
+      "ZA-ef5af5b96408ec",
+      "ZA-0bb6996ea8185a",
+      "ZA-7b461c35982a8a",
+      "ZA-02697887b931b4",
+      "ZA-86bd20372ca56c",
+      "ZA-3c2af4ecfd94f0",
+      "ZA-311c2f3ee2db1d",
+      "ZA-edff4513a32426",
+      "ZA-2e8895257049be"
+    ]
+  },
+  "bainhas-tendineas-do-tornozelo": {
+    "name": "Bainhas tendíneas do tornozelo",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Tendon sheath of tibialis posterior muscle.l",
+      "Tendon sheath of tibialis posterior muscle.r",
+      "Tendon sheath of tibialis anterior.l",
+      "Tendon sheath of tibialis anterior.r",
+      "Tendon sheath of flexor digitorum longus.l",
+      "Tendon sheath of flexor digitorum longus.r",
+      "Tendon sheath of flexor hallucis longus.l",
+      "Tendon sheath of flexor hallucis longus.r",
+      "Tendon sheath of extensor digitorum longus.l",
+      "Tendon sheath of extensor digitorum longus.r",
+      "Tendon sheath of extensor hallucis longus.l",
+      "Tendon sheath of extensor hallucis longus.r",
+      "Plantar tendon sheath of fibularis longus muscle.l",
+      "Plantar tendon sheath of fibularis longus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-8414e64682893a",
+      "ZA-bfb4bb3694f267",
+      "ZA-c92558a0067c7c",
+      "ZA-643f059453d247",
+      "ZA-7436577e41c3b7",
+      "ZA-419f3fa0261014",
+      "ZA-cca8fb9004fecf",
+      "ZA-7af4b34461dfe7",
+      "ZA-d52aee04bdaa04",
+      "ZA-3fb8ff08acb4bb",
+      "ZA-1697093d532bf7",
+      "ZA-a3817367bfe76a",
+      "ZA-c8ec12c032a72a",
+      "ZA-70a7bdabb2f65a"
+    ]
+  },
+  "linha-alba": {
+    "name": "Linha alba",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Linea alba"
+    ],
+    "modelIds": [
+      "ZA-aee7d26d67eba3"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "patches": [
+    {
+      "id": "ligamento-acromioclavicular",
+      "summary": "Reforça superiormente a cápsula acromioclavicular e controla a translação ântero-posterior entre clavícula e acrômio.",
+      "fields": {
+        "Fixações": "Extremidade acromial da clavícula até a face medial do acrômio, espessando a parte superior da cápsula.",
+        "Função": "Estabilizador horizontal da articulação acromioclavicular: resiste ao deslizamento ântero-posterior da clavícula sobre o acrômio. A estabilidade vertical fica a cargo dos ligamentos coracoclaviculares.",
+        "Tensiona em": "Adução horizontal do ombro e protração ou retração escapular.",
+        "Teste clínico": "Adução horizontal (cross-body) e palpação direta da interlinha acromioclavicular.",
+        "Lesão típica": "Luxação acromioclavicular por queda sobre o ombro ou sobre a mão espalmada. No grau I de Rockwood só este ligamento é distendido; nos graus mais altos os coracoclaviculares também rompem.",
+        "Na prática": "Dor que a pessoa aponta com a ponta de um dedo no topo do ombro, típica de queda de bicicleta ou de contato no esporte."
+      },
+      "related": ["acromioclavicular", "clavicula", "escapula", "ligamento-conoide", "ligamento-trapezoide"],
+      "aliases": ["ligamento AC", "acromioclavicular superior"]
+    },
+    {
+      "id": "ligamento-conoide",
+      "summary": "Porção medial e posterior do ligamento coracoclavicular; principal freio ao deslocamento superior da clavícula.",
+      "fields": {
+        "Fixações": "Base do processo coracoide até o tubérculo conoide, na face inferior da clavícula. Tem formato de cone invertido, com o vértice embaixo.",
+        "Função": "Com o trapezoide forma o ligamento coracoclavicular, a verdadeira suspensão da escápula na clavícula. O conoide resiste sobretudo ao deslocamento superior da clavícula e conduz a rotação posterior da clavícula durante a elevação do braço.",
+        "Tensiona em": "Elevação do braço acima de 90° e tração para baixo do membro superior, como ao carregar peso na mão.",
+        "Teste clínico": "Avaliado indiretamente pela distância coracoclavicular na radiografia e pelo grau de degrau clavicular à inspeção.",
+        "Lesão típica": "Rompe nas luxações acromioclaviculares de grau III em diante, quando surge o degrau visível na ponta do ombro.",
+        "Na prática": "É o ligamento que mantém a escápula pendurada na clavícula; quando ele falha, o membro cai e a clavícula parece subir."
+      },
+      "related": ["acromioclavicular", "clavicula", "escapula", "ligamento-trapezoide", "ligamento-acromioclavicular"],
+      "aliases": ["coracoclavicular conoide"]
+    },
+    {
+      "id": "ligamento-trapezoide",
+      "summary": "Porção lateral e anterior do ligamento coracoclavicular; resiste à compressão axial e ao recuo da escápula.",
+      "fields": {
+        "Fixações": "Face superior do processo coracoide até a linha trapezoide, na face inferior da clavícula. É quadrilátero e mais anterior que o conoide.",
+        "Função": "Segundo componente do ligamento coracoclavicular. Resiste à compressão axial transmitida pela clavícula e limita o deslocamento posterior da escápula sob a clavícula.",
+        "Tensiona em": "Protração escapular e cargas axiais aplicadas pelo membro superior, como apoiar-se em muletas.",
+        "Teste clínico": "Avaliado em conjunto com o conoide pelo grau de instabilidade acromioclavicular.",
+        "Lesão típica": "Rompe junto com o conoide nas luxações acromioclaviculares graves.",
+        "Na prática": "Trabalha em dupla com o conoide: o conoide segura para cima, o trapezoide segura para trás."
+      },
+      "related": ["acromioclavicular", "clavicula", "escapula", "ligamento-conoide", "ligamento-acromioclavicular"],
+      "aliases": ["coracoclavicular trapezoide"]
+    },
+    {
+      "id": "ligamento-coracoacromial",
+      "summary": "Forma o teto do espaço subacromial junto com o acrômio e o coracoide; impede a subida da cabeça do úmero.",
+      "fields": {
+        "Fixações": "Borda lateral do processo coracoide até a ponta e a borda anterior do acrômio, em faixa triangular.",
+        "Função": "Completa o arco coracoacromial, que é o teto do espaço subacromial. Contém o deslocamento superior da cabeça do úmero e protege o manguito rotador por cima.",
+        "Tensiona em": "Tentativas de translação superior da cabeça umeral, principalmente quando o manguito rotador está deficiente.",
+        "Teste clínico": "Testes de impacto subacromial: Neer e Hawkins-Kennedy.",
+        "Lesão típica": "Não costuma romper: espessa e se torna rígido, estreitando o espaço por onde passam o supraespinal e a bolsa subacromial.",
+        "Na prática": "É o telhado sob o qual o tendão do supraespinal desliza a cada elevação do braço. Quando esse espaço diminui aparece o arco doloroso entre 60° e 120°."
+      },
+      "related": ["escapula", "supraespinal", "glenoumeral", "umero", "acromioclavicular"],
+      "aliases": ["arco coracoacromial"]
+    },
+    {
+      "id": "ligamento-coracoumeral",
+      "summary": "Suspende a cabeça do úmero com o braço pendente e limita a rotação lateral em adução; retrai no ombro congelado.",
+      "fields": {
+        "Fixações": "Base e borda lateral do processo coracoide até os tubérculos maior e menor do úmero, cruzando por cima do sulco intertubercular.",
+        "Função": "Sustenta passivamente a cabeça do úmero contra a gravidade quando o braço está pendente e limita a rotação lateral com o braço em adução. Faz parte do intervalo rotador, junto com o glenoumeral superior.",
+        "Tensiona em": "Rotação lateral com o braço junto ao corpo e tração inferior do braço.",
+        "Teste clínico": "Perda precoce de rotação lateral passiva com o braço em adução; sinal do sulco quando há frouxidão.",
+        "Lesão típica": "Espessa e se retrai na capsulite adesiva (ombro congelado), sendo a principal causa mecânica da perda inicial de rotação lateral.",
+        "Na prática": "No ombro congelado é o primeiro movimento a sumir: a pessoa não consegue mais girar o braço para fora com o cotovelo colado no corpo."
+      },
+      "related": ["glenoumeral", "umero", "escapula", "ligamento-glenoumeral-superior", "supraespinal", "subescapular"],
+      "aliases": ["coracoumeral", "intervalo rotador"]
+    },
+    {
+      "id": "ligamento-glenoumeral-superior",
+      "summary": "Com o coracoumeral, impede a descida da cabeça do úmero com o braço em repouso.",
+      "fields": {
+        "Fixações": "Tubérculo supraglenoidal e lábio glenoidal superior até o colo anatômico do úmero, junto ao topo do tubérculo menor.",
+        "Função": "Principal freio à translação inferior da cabeça umeral com o braço em adução e limitador da rotação lateral nessa posição. Compõe o intervalo rotador com o ligamento coracoumeral.",
+        "Tensiona em": "Tração inferior do braço pendente e rotação lateral em adução.",
+        "Teste clínico": "Sinal do sulco: a tração no braço pendente cria um degrau abaixo do acrômio quando este ligamento está frouxo.",
+        "Lesão típica": "Frouxidão nas instabilidades multidirecionais e nas hiperfrouxidões constitucionais.",
+        "Na prática": "É o que segura o ombro no lugar quando se carrega uma sacola pesada com o braço estendido."
+      },
+      "related": ["glenoumeral", "escapula", "umero", "ligamento-coracoumeral", "ligamento-glenoumeral-medio", "ligamento-glenoumeral-inferior"],
+      "aliases": ["LGU superior", "LGUS"]
+    },
+    {
+      "id": "ligamento-glenoumeral-medio",
+      "summary": "Limita a rotação lateral e a translação anterior da cabeça do úmero na abdução intermediária.",
+      "fields": {
+        "Fixações": "Lábio glenoidal ântero-superior até a face anterior do colo anatômico, medial ao tubérculo menor, passando por trás do tendão do subescapular.",
+        "Função": "Freio anterior da articulação entre aproximadamente 45° e 60° de abdução, faixa em que o glenoumeral inferior ainda não está tenso. Limita também a rotação lateral nessa amplitude.",
+        "Tensiona em": "Abdução intermediária associada à rotação lateral.",
+        "Teste clínico": "Avaliado na gaveta anterior do ombro em abdução intermediária.",
+        "Lesão típica": "Pode ser muito delgado ou ausente em parte da população; sua variação em cordão (complexo de Buford) é achado normal e não deve ser confundida com lesão labral.",
+        "Na prática": "Cobre a faixa média do movimento, entre o que o superior e o inferior seguram."
+      },
+      "related": ["glenoumeral", "escapula", "umero", "subescapular", "ligamento-glenoumeral-superior", "ligamento-glenoumeral-inferior"],
+      "aliases": ["LGU médio", "LGUM"]
+    },
+    {
+      "id": "ligamento-glenoumeral-inferior",
+      "summary": "Principal estabilizador anterior do ombro em 90° de abdução com rotação lateral; sua avulsão é a lesão de Bankart.",
+      "fields": {
+        "Fixações": "Lábio glenoidal ântero-inferior e póstero-inferior até a borda inferior do colo anatômico e cirúrgico do úmero. Forma um complexo em rede, com banda anterior, banda posterior e o recesso axilar entre elas.",
+        "Função": "É o estabilizador estático mais importante do ombro na posição de armar o arremesso, com 90° de abdução e rotação lateral máxima. A banda anterior tensiona em rotação lateral e a posterior em rotação medial, como uma rede que se desloca conforme o giro.",
+        "Tensiona em": "Abdução a 90° com rotação lateral, na posição de armar um saque ou um arremesso.",
+        "Teste clínico": "Teste de apreensão e teste de recolocação (relocation), com o braço a 90° de abdução e rotação lateral.",
+        "Lesão típica": "Sua avulsão do lábio glenoidal ântero-inferior é a lesão de Bankart, base da luxação anterior recidivante do ombro.",
+        "Na prática": "É o ligamento da instabilidade anterior. Quem já luxou o ombro sente medo exatamente na posição em que ele deveria estar segurando."
+      },
+      "related": ["glenoumeral", "escapula", "umero", "ligamento-glenoumeral-medio", "ligamento-glenoumeral-superior", "subescapular"],
+      "aliases": ["LGU inferior", "LGUI", "complexo ligamentar glenoumeral inferior", "Bankart"]
+    },
+    {
+      "id": "ligamento-colateral-radial-do-cotovelo",
+      "summary": "Estabilizador lateral do cotovelo contra o estresse em varo, do epicôndilo lateral ao ligamento anular.",
+      "fields": {
+        "Fixações": "Epicôndilo lateral do úmero, abrindo-se em leque até se fundir com o ligamento anular do rádio e com a crista do supinador na ulna.",
+        "Função": "Resiste ao estresse em varo e mantém a congruência lateral em todo o arco de flexão e extensão. Por se inserir próximo ao eixo de rotação, sua tensão varia pouco com a flexão.",
+        "Tensiona em": "Estresse em varo e supinação forçada com o cotovelo em extensão.",
+        "Teste clínico": "Estresse em varo a 20°-30° de flexão; gaveta póstero-lateral e pivot-shift lateral quando há suspeita de instabilidade rotatória.",
+        "Lesão típica": "A lesão do seu componente ulnar (colateral ulnar lateral) produz instabilidade rotatória póstero-lateral, causa comum de dor lateral persistente após luxação do cotovelo.",
+        "Na prática": "Complementa o colateral ulnar: um segura o lado de fora, o outro o lado de dentro."
+      },
+      "related": ["cotovelo", "umero", "radio", "ulna", "ligamento-colateral-ulnar-do-cotovelo", "ligamento-quadrado", "radioulnar-proximal"],
+      "aliases": ["colateral lateral do cotovelo", "LCR do cotovelo"]
+    },
+    {
+      "id": "ligamento-colateral-ulnar-do-cotovelo",
+      "summary": "Principal freio ao valgo do cotovelo; a banda anterior é o ligamento do arremessador.",
+      "fields": {
+        "Fixações": "Epicôndilo medial do úmero até o processo coronoide (banda anterior) e até o olécrano (banda posterior), com uma banda transversa unindo as duas na ulna.",
+        "Função": "Resiste ao estresse em valgo. A banda anterior é o principal estabilizador entre 20° e 120° de flexão, justamente a faixa usada no arremesso; a posterior contribui acima de 90°.",
+        "Tensiona em": "Estresse em valgo, sobretudo na fase de aceleração do arremesso acima da cabeça.",
+        "Teste clínico": "Estresse em valgo a 20°-30° de flexão e moving valgus stress test.",
+        "Lesão típica": "Lesão clássica do arremessador em esportes de overhead, tratada cirurgicamente pela reconstrução conhecida como cirurgia de Tommy John. No adolescente o equivalente é a lesão do núcleo do epicôndilo medial.",
+        "Na prática": "É o ligamento que segura o cotovelo do jogador de beisebol e de handebol; dor medial no arremesso pede avaliação dele."
+      },
+      "related": ["cotovelo", "umero", "ulna", "nervo-ulnar", "ligamento-colateral-radial-do-cotovelo", "flexor-ulnar-do-carpo"],
+      "aliases": ["colateral medial do cotovelo", "LCU do cotovelo", "ligamento de Tommy John"]
+    },
+    {
+      "id": "ligamento-quadrado",
+      "summary": "Reforça por baixo a cápsula radioulnar proximal e freia os extremos de pronação e supinação.",
+      "fields": {
+        "Fixações": "Borda inferior da incisura radial da ulna até o colo do rádio, formando uma lâmina quadrilátera abaixo do ligamento anular.",
+        "Função": "Fecha inferiormente a articulação radioulnar proximal e limita a rotação excessiva do rádio no fim da pronação e da supinação, protegendo a cápsula.",
+        "Tensiona em": "Fim da pronação, pelas fibras posteriores, e fim da supinação, pelas anteriores.",
+        "Teste clínico": "Avaliado indiretamente pela dor no extremo passivo de pronação e supinação.",
+        "Lesão típica": "Comprometido em traumas com rotação forçada do antebraço e em subluxações da cabeça do rádio.",
+        "Na prática": "Também chamado de ligamento de Denucé; trabalha junto com o anular para manter a cabeça do rádio na incisura."
+      },
+      "related": ["radioulnar-proximal", "radio", "ulna", "cotovelo", "supinador", "pronador-redondo"],
+      "aliases": ["ligamento de Denucé"]
+    }
+  ]
+}

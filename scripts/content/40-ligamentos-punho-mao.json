@@ -1,0 +1,268 @@
+{
+  "new": [
+    {
+      "id": "ligamentos-radiocarpais-palmares",
+      "name": "Ligamentos radiocarpais palmares",
+      "english": "palmar radiocarpal ligaments",
+      "kind": "ligamentos",
+      "region": "Punho",
+      "depth": "profunda",
+      "summary": "Leque palmar que vai do rádio ao carpo; é o conjunto mais forte do punho e freia a extensão.",
+      "fields": {
+        "Fixações": "Borda palmar do rádio distal, abrindo-se em leque para o escafoide, o capitato e o semilunar. Inclui os feixes radioescafocapitato, radiocapitato e o ligamento radiado do carpo.",
+        "Função": "São os ligamentos mais resistentes do punho. Limitam a extensão e a translação ulnar do carpo, e conduzem o deslizamento da fileira proximal durante o desvio radial e ulnar. O radioescafocapitato funciona como eixo em torno do qual o escafoide gira.",
+        "Tensiona em": "Extensão do punho e desvio ulnar.",
+        "Teste clínico": "Dor palmar reproduzida na extensão passiva máxima do punho; avaliados junto com os testes de instabilidade do carpo.",
+        "Lesão típica": "Distendidos em quedas sobre a mão espalmada. O espaço entre o radioescafocapitato e o feixe radiolunato, chamado espaço de Poirier, é uma zona de fraqueza por onde ocorre a luxação perilunar.",
+        "Na prática": "São muito mais resistentes que os ligamentos dorsais. Por isso a maior parte das instabilidades do carpo começa com falha dorsal ou interóssea, e não palmar.",
+        "Localização": "Punho"
+      },
+      "related": ["radio", "escafoide", "semilunar", "capitato", "radiocarpal", "ligamento-radiocarpal-dorsal", "ligamento-escafolunar-interosseo", "retinaculo-dos-flexores-do-punho"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["radioescafocapitato", "espaço de Poirier", "luxação perilunar"],
+      "source_objects": ["Radioscaphocapitate ligament.l", "Radioscaphocapitate ligament.r", "Radiocapitate ligament.l", "Radiocapitate ligament.r", "Radiate carpal ligament.l", "Radiate carpal ligament.r"]
+    },
+    {
+      "id": "ligamentos-ulnocarpais",
+      "name": "Ligamentos ulnocarpais",
+      "english": "ulnocarpal ligaments",
+      "kind": "ligamentos",
+      "region": "Punho",
+      "depth": "profunda",
+      "summary": "Ligam a ulna e o disco triangular ao carpo; parte do complexo da fibrocartilagem triangular.",
+      "fields": {
+        "Fixações": "Fóvea e processo estiloide da ulna e borda palmar do disco articular até o semilunar, o piramidal, o capitato e o pisiforme. Inclui os feixes ulnolunato, ulnopiramidal, ulnocapitato, ulnopisiforme e o ulnocarpal dorsal.",
+        "Função": "Estabilizam o lado ulnar do punho e fazem parte do complexo da fibrocartilagem triangular. Limitam a translação do carpo e contribuem para a estabilidade da articulação radioulnar distal na rotação do antebraço.",
+        "Tensiona em": "Desvio radial do punho, supinação e extensão.",
+        "Teste clínico": "Teste de estresse da fóvea ulnar, em que a pressão entre o estiloide da ulna e o flexor ulnar do carpo reproduz a dor; teste de compressão em desvio ulnar.",
+        "Lesão típica": "Sua lesão acompanha as rupturas do complexo da fibrocartilagem triangular e é causa frequente de dor ulnar crônica do punho, especialmente em esportes de raquete e ginástica.",
+        "Na prática": "Dor no lado do dedo mínimo ao apoiar a mão ou girar o antebraço com carga pede avaliação conjunta destes ligamentos, do disco articular e da estabilidade radioulnar distal.",
+        "Localização": "Punho"
+      },
+      "related": ["ulna", "semilunar", "piramidal", "pisiforme", "capitato", "radioulnar-distal", "radiocarpal", "ligamento-lunopiramidal-interosseo", "extensor-ulnar-do-carpo"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["ulnolunato", "ulnopiramidal", "TFCC", "dor ulnar do punho"],
+      "source_objects": ["Ulnolunate ligament.l", "Ulnolunate ligament.r", "Ulnotriquetral ligament.l", "Ulnotriquetral ligament.r", "Ulnocapitate ligament.l", "Ulnocapitate ligament.r", "Dorsal ulnocarpal ligament.l", "Dorsal ulnocarpal ligament.r", "Ulnopisiform ligament", "Ulnopisiform ligament.l"]
+    },
+    {
+      "id": "ligamentos-radioulnares-distais",
+      "name": "Ligamentos radioulnares distais",
+      "english": "distal radio-ulnar ligaments",
+      "kind": "ligamentos",
+      "region": "Punho",
+      "depth": "profunda",
+      "summary": "Bordas dorsal e palmar do disco triangular; principais estabilizadores da radioulnar distal.",
+      "fields": {
+        "Fixações": "Bordas dorsal e palmar da incisura ulnar do rádio até a fóvea e o processo estiloide da ulna, formando as margens espessas do disco articular.",
+        "Função": "São os principais estabilizadores da articulação radioulnar distal. Trabalham de forma recíproca: o palmar tensiona na supinação e o dorsal na pronação, mantendo a cabeça da ulna encaixada durante toda a rotação do antebraço.",
+        "Tensiona em": "Supinação máxima, para o palmar, e pronação máxima, para o dorsal.",
+        "Teste clínico": "Teste da tecla de piano, em que a cabeça da ulna se move excessivamente para dorsal, e teste de estresse radioulnar em pronação e supinação.",
+        "Lesão típica": "Sua ruptura produz instabilidade da radioulnar distal, com estalido e dor na rotação do antebraço sob carga, frequentemente após fratura do rádio distal.",
+        "Na prática": "Após fratura de Colles, a persistência de dor ulnar e de estalido na rotação deve levantar a suspeita de lesão desses ligamentos, e não apenas de consolidação viciosa.",
+        "Localização": "Punho"
+      },
+      "related": ["radio", "ulna", "radioulnar-distal", "radiocarpal", "ligamentos-ulnocarpais", "membrana-interossea-do-antebraco", "pronador-quadrado"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["radioulnar dorsal", "radioulnar palmar", "tecla de piano"],
+      "source_objects": ["Dorsal radio-ulnar ligament.l", "Dorsal radio-ulnar ligament.r", "Palmar radio-ulnar ligament.l", "Palmar radio-ulnar ligament.r"]
+    },
+    {
+      "id": "ligamento-colateral-radial-do-punho",
+      "name": "Ligamento colateral radial do punho",
+      "english": "radial collateral ligament of wrist",
+      "kind": "ligamentos",
+      "region": "Punho",
+      "depth": "profunda",
+      "summary": "Reforço lateral do punho, do estiloide do rádio ao escafoide e ao trapézio.",
+      "fields": {
+        "Fixações": "Processo estiloide do rádio até a face lateral do escafoide, com fibras que continuam até o trapézio.",
+        "Função": "Limita o desvio ulnar do punho e reforça a face lateral da articulação radiocarpal.",
+        "Tensiona em": "Desvio ulnar do punho.",
+        "Teste clínico": "Estresse em desvio ulnar comparativo e dor à palpação sobre o estiloide radial.",
+        "Lesão típica": "Comprometido em quedas sobre a mão espalmada. Sua região é também a da tenossinovite de De Quervain, o que exige cuidado no diagnóstico diferencial.",
+        "Na prática": "É menos definido que os colaterais do cotovelo ou do joelho, porque no punho a estabilidade vem principalmente dos ligamentos palmares e interósseos.",
+        "Localização": "Punho"
+      },
+      "related": ["radio", "escafoide", "trapezio-do-carpo", "radiocarpal", "ligamento-colateral-ulnar-do-punho", "abdutor-longo-do-polegar", "retinaculo-dos-extensores-do-punho"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["colateral radial do punho"],
+      "source_objects": ["Radial collateral ligament of wrist joint.l", "Radial collateral ligament of wrist joint.r"]
+    },
+    {
+      "id": "ligamento-colateral-ulnar-do-punho",
+      "name": "Ligamento colateral ulnar do punho",
+      "english": "ulnar collateral ligament of wrist",
+      "kind": "ligamentos",
+      "region": "Punho",
+      "depth": "profunda",
+      "summary": "Reforço medial do punho, do estiloide da ulna ao piramidal e ao pisiforme.",
+      "fields": {
+        "Fixações": "Processo estiloide da ulna até o piramidal e o pisiforme.",
+        "Função": "Limita o desvio radial do punho e reforça a face medial da articulação radiocarpal, junto com o complexo da fibrocartilagem triangular.",
+        "Tensiona em": "Desvio radial do punho.",
+        "Teste clínico": "Estresse em desvio radial comparativo e palpação entre o estiloide da ulna e o piramidal.",
+        "Lesão típica": "Envolvido nas lesões do complexo da fibrocartilagem triangular e nas instabilidades do lado ulnar do punho.",
+        "Na prática": "Como o desvio ulnar tem maior amplitude que o radial, este ligamento é solicitado com menos frequência que o colateral radial nos extremos de movimento.",
+        "Localização": "Punho"
+      },
+      "related": ["ulna", "piramidal", "pisiforme", "radiocarpal", "radioulnar-distal", "ligamento-colateral-radial-do-punho", "ligamentos-ulnocarpais", "extensor-ulnar-do-carpo"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["colateral ulnar do punho"],
+      "source_objects": ["Ulnar collateral ligament of wrist joint.l", "Ulnar collateral ligament of wrist joint.r"]
+    },
+    {
+      "id": "ligamentos-intercarpais-dorsais",
+      "name": "Ligamentos intercarpais dorsais",
+      "english": "dorsal intercarpal ligaments",
+      "kind": "ligamentos",
+      "region": "Punho",
+      "depth": "profunda",
+      "summary": "Formam com o radiocarpal dorsal um V que estabiliza o carpo pelo dorso.",
+      "fields": {
+        "Fixações": "Face dorsal do piramidal até o escafoide, o trapézio e o trapezoide, incluindo o feixe escafopiramidal dorsal.",
+        "Função": "Ligam transversalmente os ossos do carpo pelo dorso. Com o ligamento radiocarpal dorsal formam um V com vértice no piramidal, arranjo que estabiliza o escafoide indiretamente e mantém o alinhamento do carpo em qualquer posição do punho.",
+        "Tensiona em": "Flexão do punho e desvio radial.",
+        "Teste clínico": "Dor dorsal difusa na flexão passiva máxima; avaliados no conjunto dos testes de instabilidade do carpo.",
+        "Lesão típica": "Sua insuficiência contribui para a instabilidade escafolunar, mesmo quando o ligamento escafolunar interósseo está parcialmente íntegro.",
+        "Na prática": "São chamados de estabilizadores secundários do escafoide. Em reconstruções do ligamento escafolunar, essa rede dorsal é parte do que se procura restaurar.",
+        "Localização": "Punho"
+      },
+      "related": ["escafoide", "piramidal", "trapezio-do-carpo", "trapezoide", "radiocarpal", "ligamento-radiocarpal-dorsal", "ligamento-escafolunar-interosseo", "retinaculo-dos-extensores-do-punho"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["intercarpal dorsal", "escafopiramidal dorsal"],
+      "source_objects": ["Dorsal intercarpal ligaments.l", "Dorsal intercarpal ligaments.r", "Dorsal scaphotriquetral ligament.l", "Dorsal scaphotriquetral ligament.r"]
+    },
+    {
+      "id": "ligamentos-intercarpais-palmares",
+      "name": "Ligamentos intercarpais palmares",
+      "english": "palmar intercarpal ligaments",
+      "kind": "ligamentos",
+      "region": "Punho",
+      "depth": "profunda",
+      "summary": "Rede palmar que une os ossos do carpo entre si e forma o arco do túnel do carpo.",
+      "fields": {
+        "Fixações": "Faces palmares dos ossos do carpo, unindo-os entre si. Inclui os feixes escafocapitato, escafotrapeziotrapezoidal, escafopiramidal palmar, lunopiramidal palmar, capito-hamato palmar, trapezoideocapitato palmar, piramidocapitato e piramidohamato.",
+        "Função": "Formam uma rede que solidariza as duas fileiras do carpo e mantém a concavidade palmar, que é a base óssea do túnel do carpo. Transmitem carga entre os ossos e limitam a extensão.",
+        "Tensiona em": "Extensão do punho.",
+        "Teste clínico": "Avaliados indiretamente pelos testes de instabilidade mediocarpal, como o teste de deslocamento mediocarpal.",
+        "Lesão típica": "Sua frouxidão produz a instabilidade mediocarpal, com estalido audível ao passar do desvio radial para o ulnar, quadro comum em pessoas com hiperfrouxidão constitucional.",
+        "Na prática": "O ligamento escafotrapeziotrapezoidal é o mais estudado do grupo, por estabilizar o polo distal do escafoide e estar envolvido tanto na instabilidade escafolunar quanto na artrose da base do polegar.",
+        "Localização": "Punho"
+      },
+      "related": ["escafoide", "semilunar", "piramidal", "capitato", "hamato", "trapezio-do-carpo", "trapezoide", "radiocarpal", "retinaculo-dos-flexores-do-punho", "ligamentos-intercarpais-dorsais"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["escafotrapeziotrapezoidal", "instabilidade mediocarpal", "intercarpais palmares"],
+      "source_objects": ["Palmar scaphotriquetral ligament.l", "Palmar scaphotriquetral ligament.r", "Palmar lunotriquetral ligament.l", "Palmar lunotriquetral ligament.r", "Palmar capitohamate ligament.l", "Palmar capitohamate ligament.r", "Palmar trapezoideocapitate ligament.l", "Palmar trapezoideocapitate ligament.r", "Scaphocapitate ligament.l", "Scaphocapitate ligament.r", "Scaphotrapeziotrapezoidal ligament.l", "Scaphotrapeziotrapezoidal ligament.r", "Triquetrocapitate ligament.l", "Triquetrocapitate ligament.r", "Triquetrohamate ligament.l", "Triquetrohamate ligament.r"]
+    },
+    {
+      "id": "ligamentos-interosseos-do-carpo",
+      "name": "Ligamentos interósseos do carpo",
+      "english": "interosseous carpal ligaments",
+      "kind": "ligamentos",
+      "region": "Punho",
+      "depth": "profunda",
+      "summary": "Pontes curtas entre os ossos da fileira distal, que os tornam praticamente um bloco único.",
+      "fields": {
+        "Fixações": "Faces adjacentes dos ossos da fileira distal do carpo: capito-hamato, trapezio-trapezoidal e trapezoideocapitato.",
+        "Função": "Unem tão firmemente trapézio, trapezoide, capitato e hamato que a fileira distal se comporta como uma unidade rígida. Isso permite que a fileira proximal, muito mais móvel, funcione como um segmento intercalado entre o rádio e esse bloco distal.",
+        "Tensiona em": "Cargas axiais e de torção aplicadas pelos metacarpais.",
+        "Teste clínico": "Não têm teste isolado; sua integridade é avaliada pela ausência de movimento anormal entre os ossos da fileira distal.",
+        "Lesão típica": "Raramente lesionados de forma isolada, por serem curtos e muito resistentes. Comprometidos em traumas de alta energia do carpo.",
+        "Na prática": "Explicam por que a instabilidade do carpo quase sempre acontece na fileira proximal ou entre as duas fileiras, e quase nunca dentro da fileira distal.",
+        "Localização": "Punho"
+      },
+      "related": ["capitato", "hamato", "trapezio-do-carpo", "trapezoide", "radiocarpal", "metacarpais", "ligamentos-intercarpais-palmares"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["interósseos do carpo", "fileira distal"],
+      "source_objects": ["Capitohamate interosseous ligament.l", "Capitohamate interosseous ligament.r", "Trapeziotrapezoidal interosseous ligament.l", "Trapeziotrapezoidal interosseous ligament.r", "Trapezoideocapitate interosseous ligament.l", "Trapezoideocapitate interosseous ligament.r"]
+    },
+    {
+      "id": "ligamentos-do-pisiforme",
+      "name": "Ligamentos do pisiforme",
+      "english": "pisiform ligaments",
+      "kind": "ligamentos",
+      "region": "Punho",
+      "depth": "profunda",
+      "summary": "Prolongam a tração do flexor ulnar do carpo além do pisiforme e formam a parede do canal de Guyon.",
+      "fields": {
+        "Fixações": "Pisiforme até o hâmulo do hamato, pelo ligamento piso-hamato; até a base do quinto metacarpal, pelo pisometacarpal; e até o piramidal, pelo pisopiramidal, que é a própria cápsula da articulação.",
+        "Função": "Transmitem a força do flexor ulnar do carpo para além do pisiforme, que é um osso sesamoide dentro do seu tendão. Formam com o retináculo dos flexores as paredes do canal de Guyon.",
+        "Tensiona em": "Flexão do punho com desvio ulnar resistidos.",
+        "Teste clínico": "Dor e crepitação ao mobilizar o pisiforme lateralmente contra o piramidal sugerem artrose pisopiramidal, causa frequente de dor palmar ulnar.",
+        "Lesão típica": "A artrose pisopiramidal e a sobrecarga do piso-hamato são causas de dor na base da eminência hipotenar, comuns em ciclistas e em quem usa ferramentas com pressão na palma.",
+        "Na prática": "O ramo profundo do nervo ulnar passa entre o pisiforme e o hâmulo do hamato. Por isso a sobrecarga desses ligamentos costuma vir acompanhada de sintomas ulnares, quadro conhecido como paralisia do ciclista.",
+        "Localização": "Punho"
+      },
+      "related": ["pisiforme", "hamato", "piramidal", "metacarpais", "flexor-ulnar-do-carpo", "nervo-ulnar", "retinaculo-dos-flexores-do-punho", "abdutor-do-dedo-minimo-da-mao"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["piso-hamato", "pisometacarpal", "canal de Guyon", "paralisia do ciclista"],
+      "source_objects": ["Pisohamate ligament.l", "Pisohamate ligament.r", "Pisometacarpal ligament.l", "Pisometacarpal ligament.r", "Pisotriquetral ligament.l", "Pisotriquetral ligament.r"]
+    },
+    {
+      "id": "ligamentos-metacarpais",
+      "name": "Ligamentos metacarpais",
+      "english": "metacarpal ligaments",
+      "kind": "ligamentos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "Unem as bases dos metacarpais entre si e ao carpo, definindo a rigidez de cada raio da mão.",
+      "fields": {
+        "Fixações": "Bases dos metacarpais, unidas entre si pelas faces dorsal, palmar e interóssea, e ao carpo pelos ligamentos carpometacarpais dorsais e palmares.",
+        "Função": "Determinam quanto cada raio da mão pode se mover. Prendem rigidamente o segundo e o terceiro metacarpais ao carpo, formando o pilar fixo da mão, e deixam o quarto e o quinto com alguma mobilidade, o que permite à palma se fechar em concha.",
+        "Tensiona em": "Tentativas de afastar ou girar as bases dos metacarpais entre si.",
+        "Teste clínico": "Mobilização comparativa das bases dos metacarpais; a fratura-luxação carpometacarpal é avaliada pela dor e pela deformidade dorsal da base.",
+        "Lesão típica": "Fratura-luxação carpometacarpal, comum em trauma com o punho fechado, frequentemente subdiagnosticada nas radiografias iniciais.",
+        "Na prática": "Entender que os raios central e radial são rígidos e os ulnares são móveis explica por que a mão consegue ao mesmo tempo dar um soco firme e envolver um objeto arredondado.",
+        "Localização": "Mão"
+      },
+      "related": ["metacarpais", "capitato", "hamato", "trapezoide", "trapezio-do-carpo", "carpometacarpal-do-polegar", "ligamento-metacarpal-transverso-profundo", "oponente-do-dedo-minimo-da-mao"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["carpometacarpais", "intermetacarpais", "pilar fixo da mão"],
+      "source_objects": ["Dorsal metacarpal ligaments.l", "Dorsal metacarpal ligaments.r", "Palmar metacarpal ligaments.l", "Palmar metacarpal ligaments.r", "Interosseous metacarpal ligaments.l", "Interosseous metacarpal ligaments.r"]
+    },
+    {
+      "id": "ligamento-metacarpal-transverso-superficial",
+      "name": "Ligamento metacarpal transverso superficial",
+      "english": "superficial transverse metacarpal ligament",
+      "kind": "ligamentos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "Fibras transversas da aponeurose palmar, na raiz dos dedos.",
+      "fields": {
+        "Fixações": "Fibras transversas na borda distal da aponeurose palmar, ao nível das pregas digitais, atravessando a raiz dos dedos.",
+        "Função": "Reforça transversalmente a aponeurose palmar e forma, com ela, os arcos por onde passam os tendões flexores, os nervos e os vasos digitais em direção aos dedos.",
+        "Tensiona em": "Abertura forçada da mão e extensão dos dedos.",
+        "Teste clínico": "Palpável como uma faixa transversal firme na base dos dedos; avaliado no exame da contratura de Dupuytren.",
+        "Lesão típica": "Não rompe. Espessa e retrai na contratura de Dupuytren, contribuindo para a deformidade.",
+        "Na prática": "É a estrutura que delimita as comissuras digitais e serve de referência na abordagem cirúrgica da palma.",
+        "Localização": "Mão"
+      },
+      "related": ["metacarpais", "falanges-da-mao", "aponeurose-palmar", "ligamento-metacarpal-transverso-profundo", "metacarpofalangicas", "nervo-mediano"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["ligamento natatório", "Dupuytren"],
+      "source_objects": ["Superficial transverse metacarpal ligament.l", "Superficial transverse metacarpal ligament.r"]
+    },
+    {
+      "id": "placas-palmares-da-mao",
+      "name": "Placas palmares da mão",
+      "english": "palmar plates of hand",
+      "kind": "ligamentos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "Fibrocartilagens no assoalho das articulações dos dedos; impedem a hiperextensão.",
+      "fields": {
+        "Fixações": "Assoalho das articulações interfalângicas e metacarpofalângicas. Prendem-se firmemente à base da falange distal e mais frouxamente ao colo da falange proximal, o que permite que se dobrem como uma sanfona na flexão.",
+        "Função": "Formam um piso fibrocartilaginoso que impede a hiperextensão dos dedos e aumenta a congruência articular. Nas metacarpofalângicas, são unidas entre si pelo ligamento metacarpal transverso profundo.",
+        "Tensiona em": "Extensão máxima das articulações dos dedos.",
+        "Teste clínico": "Teste de hiperextensão passiva comparativa e gaveta dorsal da articulação; a instabilidade indica ruptura da placa.",
+        "Lesão típica": "Sua avulsão na hiperextensão do dedo produz a lesão de placa palmar, muito comum em esportes com bola. A cicatrização com encurtamento leva à deformidade em pseudo-boutonnière, com a interfalângica proximal fixa em flexão.",
+        "Na prática": "É a razão de nunca se imobilizar um dedo lesionado em extensão total: a placa retrai e o dedo perde definitivamente a extensão. A imobilização correta é em leve flexão, com mobilização precoce.",
+        "Localização": "Mão"
+      },
+      "related": ["falanges-da-mao", "metacarpais", "interfalangicas-da-mao", "metacarpofalangicas", "ligamentos-colaterais-interfalangicos-da-mao", "ligamento-metacarpal-transverso-profundo", "flexor-superficial-dos-dedos"],
+      "sources": ["openstax-joints", "z-anatomy"],
+      "aliases": ["placa volar", "lesão de placa palmar", "pseudo-boutonnière"],
+      "source_objects": ["Palmar interphalangeal ligaments.l", "Palmar interphalangeal ligaments.r"]
+    }
+  ]
+}

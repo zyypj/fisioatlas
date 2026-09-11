@@ -1,0 +1,29 @@
+{
+  "new": [
+    {
+      "id": "linha-alba",
+      "name": "Linha alba",
+      "english": "linea alba",
+      "kind": "tendoes",
+      "region": "Tronco",
+      "depth": "superficial",
+      "summary": "Rafe fibrosa na linha média do abdome onde as aponeuroses dos dois lados se entrelaçam; sede da diástase.",
+      "fields": {
+        "Músculo": "Formada pelo entrelaçamento das aponeuroses do oblíquo externo, do oblíquo interno e do transverso do abdome dos dois lados.",
+        "Trajeto": "Estende-se do processo xifoide do esterno até a sínfise púbica, na linha média anterior do abdome, separando os dois ventres do reto do abdome.",
+        "Inserção": "Processo xifoide, acima, e sínfise púbica e crista púbica, abaixo. O umbigo é uma abertura na sua extensão.",
+        "Função": "Funciona como uma âncora central onde a musculatura dos dois lados se encontra. Permite que a contração de um lado transmita tensão ao outro e distribui a carga da parede abdominal. Sua largura normal é de poucos milímetros abaixo do umbigo e maior acima dele.",
+        "Lesão típica": "Diástase dos retos do abdome: o alargamento e o afinamento da linha alba afastam os ventres do reto do abdome. É fisiológica na gestação a partir do segundo trimestre e costuma reduzir espontaneamente nos primeiros meses do pós-parto. Quando persiste, compromete a capacidade da parede de gerar e transmitir tensão.",
+        "Palpação": "Palpável na linha média, entre os dois ventres do reto. Para avaliar a diástase, a pessoa fica em decúbito dorsal com os joelhos fletidos e eleva a cabeça: mede-se com os dedos a distância entre as bordas mediais dos retos, acima, ao nível e abaixo do umbigo.",
+        "Teste clínico": "Medida da distância interretos com os dedos ou com ultrassonografia, avaliada em três níveis. Mais importante que a distância é observar se a linha alba consegue gerar tensão: um abaulamento em cúpula durante o esforço indica que ela não está sustentando a carga.",
+        "Na prática": "A conduta atual na diástase dá menos peso ao fechamento da distância e mais à capacidade de gerar tensão na linha alba, com trabalho coordenado de transverso do abdome, diafragma e assoalho pélvico, e progressão de carga. Exercícios que provocam abaulamento em cúpula são ajustados, não necessariamente proibidos.",
+        "Localização": "Tronco",
+        "Camada de estudo": "Superficial"
+      },
+      "related": ["reto-do-abdomen", "obliquo-externo", "obliquo-interno", "transverso-do-abdomen", "piramidal-do-abdome", "esterno", "sinfise-pubica", "osso-do-quadril", "diafragma", "pubococcigeo", "fascias-do-tronco"],
+      "sources": ["openstax-muscles", "z-anatomy"],
+      "aliases": ["linea alba", "diástase dos retos", "diástase abdominal", "distância interretos"],
+      "source_objects": ["Linea alba"]
+    }
+  ]
+}
