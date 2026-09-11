@@ -2,18 +2,34 @@
 # Instalação do FisioAtlas 3D no Pterodactyl.
 #
 # Roda no contêiner instalador (node:22-bookworm-slim) com o volume do servidor
-# montado em /mnt/server. Compila em /tmp e copia só o resultado, para não
-# deixar node_modules ocupando o volume.
+# montado em /mnt/server. Compila numa pasta temporária dentro do próprio
+# volume e publica só o resultado, apagando a área de compilação no final.
 set -euo pipefail
 
 SERVIDOR=/mnt/server
-COMPILACAO=/tmp/fisioatlas
+# Compilar dentro do volume do servidor, e não em /tmp.
+#
+# O Wings monta /tmp do contêiner instalador como tmpfs, com 100 MiB por padrão
+# (docker.tmpfs_size no config.yml). O node_modules deste projeto passa de 300
+# MiB, então compilar em /tmp estoura com ENOSPC mesmo havendo dezenas de GB
+# livres na VPS: o tmpfs não enxerga o disco. O volume do servidor tem o
+# tamanho definido na alocação, e é apagado ao final.
+COMPILACAO="$SERVIDOR/.build"
 
 echo "=========================================="
 echo " FisioAtlas 3D — instalação"
 echo "=========================================="
 
 mkdir -p "$SERVIDOR"
+
+# Sobra de uma instalação anterior que falhou no meio.
+rm -rf "$COMPILACAO"
+# Não deixar centenas de MiB para trás se algo quebrar no caminho.
+trap 'rm -rf "$COMPILACAO"' EXIT
+
+echo "Espaço disponível:"
+df -h "$SERVIDOR" /tmp 2>/dev/null | sed 's/^/  /' || true
+echo
 
 if [ -z "${GIT_REPO:-}" ]; then
   echo
@@ -48,6 +64,9 @@ else
   cd "$RAIZ"
 
   echo "[3/5] Instalando dependências"
+  # O cache do npm vai junto para o volume: /root/.npm fica na camada
+  # gravável do contêiner, que também é apertada.
+  export npm_config_cache="$COMPILACAO/.npm-cache"
   if [ -f package-lock.json ]; then
     npm ci --no-audit --no-fund
   else
@@ -57,12 +76,18 @@ else
   echo "[4/5] Compilando"
   npm run build
 
-  echo "[5/5] Copiando para o volume do servidor"
+  echo "[5/5] Publicando o build"
   rm -rf "$SERVIDOR/dist"
   cp -r dist "$SERVIDOR/dist"
   if [ -f deploy/server.mjs ]; then
     cp deploy/server.mjs "$SERVIDOR/server.mjs"
   fi
+
+  # node_modules, cache e fontes já cumpriram seu papel. Sem isso, sobrariam
+  # centenas de MiB no volume sem nenhum uso em produção.
+  cd "$SERVIDOR"
+  rm -rf "$COMPILACAO"
+  echo "Área de compilação removida."
 fi
 
 # server.mjs vem do repositório quando existe; senão, é escrito aqui para o

@@ -126,6 +126,45 @@ function enviar(req, res, arquivo, status, cache) {
   return createReadStream(arquivo).pipe(res);
 }
 
+/** Página mostrada enquanto dist/ ainda não tem o build.
+ *
+ *  Sair com erro aqui faria o painel marcar o servidor como "crashed" e
+ *  esconder o motivo real, que é só falta de arquivo. Melhor subir e explicar. */
+function paginaSemBuild() {
+  return `<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FisioAtlas — aguardando o build</title>
+<style>
+ :root{color-scheme:light dark}
+ body{margin:0;min-height:100vh;display:grid;place-items:center;
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;
+      background:#f7f7f5;color:#22201d}
+ @media(prefers-color-scheme:dark){body{background:#17171a;color:#e9e6e1}}
+ main{max-width:44rem;padding:2rem}
+ h1{font-size:1.5rem;margin:0 0 .5rem}
+ p{margin:.75rem 0}
+ code{background:rgba(128,128,128,.18);padding:.15em .4em;border-radius:.25rem}
+ pre{background:rgba(128,128,128,.14);padding:1rem;border-radius:.5rem;overflow-x:auto}
+ ol{padding-left:1.25rem}
+</style></head><body><main>
+<h1>O servidor está no ar, mas ainda não há site para servir</h1>
+<p>O FisioAtlas está rodando e escutando nesta porta. Falta o conteúdo
+compilado: não encontrei <code>index.html</code> em <code>${RAIZ}</code>.</p>
+<p>Para resolver, escolha um caminho:</p>
+<ol>
+<li><strong>Enviar o build pronto.</strong> Na sua máquina, rode
+<pre>npm run build</pre>
+e envie o conteúdo da pasta <code>dist/</code> para a pasta <code>dist/</code>
+deste servidor, por SFTP.</li>
+<li><strong>Compilar aqui.</strong> Preencha a variável
+<code>GIT_REPO</code> nas configurações do servidor e reinstale.</li>
+</ol>
+<p>Assim que os arquivos chegarem, basta atualizar esta página: o servidor
+passa a servir o atlas sem precisar reiniciar.</p>
+</main></body></html>`;
+}
+
 const servidor = createServer((req, res) => {
   if (req.method !== "GET" && req.method !== "HEAD") {
     res.writeHead(405, { Allow: "GET, HEAD" });
@@ -149,8 +188,25 @@ const servidor = createServer((req, res) => {
     // Rota do BrowserRouter: devolve o index.html para o React resolver.
     // Arquivo com extensão que não existe é 404 de verdade, não rota.
     const index = join(RAIZ, "index.html");
-    if (!extname(arquivo) && existsSync(index))
+    const temBuild = existsSync(index);
+    // "/" já virou "/index.html" no resolverArquivo e por isso tem extensão:
+    // sem contar esse caso, a raiz do site cairia no 404 em vez da rota.
+    const querDocumento = !extname(arquivo) || arquivo === index;
+    if (querDocumento && temBuild)
       return enviar(req, res, index, 200, "no-cache");
+
+    // Sem build ainda: explica o que falta em vez de devolver um 404 seco.
+    // A checagem é por requisição, então o site aparece assim que o dist/
+    // chegar, sem reiniciar.
+    if (!temBuild && querDocumento) {
+      const corpo = paginaSemBuild();
+      res.writeHead(503, {
+        "Content-Type": "text/html; charset=utf-8",
+        "Cache-Control": "no-store",
+        "Retry-After": "30",
+      });
+      return res.end(req.method === "HEAD" ? undefined : corpo);
+    }
 
     res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
     res.end("Não encontrado");
@@ -162,9 +218,9 @@ const servidor = createServer((req, res) => {
 });
 
 if (!existsSync(join(RAIZ, "index.html"))) {
-  console.error(`[FisioAtlas] index.html não encontrado em ${RAIZ}`);
-  console.error("[FisioAtlas] Envie a pasta dist/ por SFTP ou rode a instalação com GIT_REPO.");
-  process.exit(1);
+  console.warn(`[FisioAtlas] ATENÇÃO: index.html não encontrado em ${RAIZ}`);
+  console.warn("[FisioAtlas] Envie a pasta dist/ por SFTP ou reinstale com GIT_REPO preenchido.");
+  console.warn("[FisioAtlas] O servidor vai subir e mostrar uma página explicando isso.");
 }
 
 servidor.listen(PORTA, HOST, () => {

@@ -31,13 +31,23 @@ chega ao servidor pela variável `SERVER_PORT`, e o processo escuta em
    sudo ufw allow 1028/tcp
    ```
    Se o nó estiver atrás de NAT, redirecione a 1028 também no roteador.
-5. **Iniciar.** O console deve terminar com:
+5. **Imagem do Docker.** Em *Startup* → *Docker Image*, deixe **Node 20**
+   (`ghcr.io/pterodactyl/yolks:nodejs_20`). Não existe `nodejs_22` no yolks: o
+   repositório do Pterodactyl vai até o `nodejs_20` e o do parkervcp até o
+   `nodejs_21`. Pedir uma tag inexistente faz o pull falhar na hora de subir.
+6. **Iniciar.** O console deve terminar com:
    ```
    [FisioAtlas] escutando em 0.0.0.0:1028
    [FisioAtlas] pronto
    ```
 
 Depois é só abrir `http://151.244.40.191:1028`.
+
+Se ainda não houver build lá, o servidor sobe assim mesmo e a página explica o
+que falta, em vez de cair em erro. Isso é de propósito: um servidor que morre
+faz o painel marcar *crashed* e esconder o motivo real, que é só arquivo
+faltando. Assim que o `dist/` chegar, basta atualizar a página — não precisa
+reiniciar.
 
 ## Duas formas de colocar o build lá
 
@@ -60,9 +70,32 @@ Preencha **Repositório Git** com a URL. Se o `package.json` não estiver na rai
 do repositório, preencha **Subpasta do projeto** (no seu caso, provavelmente
 `fisioatlas`). Para repositório privado, preencha usuário e token.
 
-A instalação clona, roda `npm ci`, compila e copia só o `dist/` para o volume —
-o `node_modules` fica no contêiner temporário e não ocupa espaço no servidor.
+A instalação clona, roda `npm ci`, compila e publica só o `dist/`, apagando a
+área de compilação no final. O volume fica com **17 MiB**: `dist/` e
+`server.mjs`.
+
+A compilação acontece numa pasta `.build` dentro do próprio volume do servidor,
+e **não em `/tmp`**. O Wings monta o `/tmp` do contêiner instalador como tmpfs
+de 100 MiB por padrão (`docker.tmpfs_size` no `config.yml` do Wings), e o
+`node_modules` deste projeto precisa de ~246 MiB. Compilar em `/tmp` dá
+`ENOSPC` mesmo com dezenas de GB livres na VPS, porque o tmpfs não enxerga o
+disco — ele vive na RAM.
+
 Reinstalar (*Settings* → *Reinstall Server*) puxa a versão mais nova.
+
+## Testado onde vai rodar
+
+A instalação e a execução foram verificadas nos contêineres reais, com o mesmo
+limite de tmpfs que o Wings aplica:
+
+```
+docker run --tmpfs /tmp:size=100m -v volume:/mnt/server   --entrypoint bash node:22-bookworm-slim /mnt/install/install.sh
+docker run -v volume:/home/container -e SERVER_PORT=1028   --entrypoint sh ghcr.io/pterodactyl/yolks:nodejs_20 -c "node server.mjs"
+```
+
+Resultado: build completo, volume com 17 MiB, e `/`, `/atlas`,
+`/movimentos/flexao-de-tronco` e `/anatomia/musculos/diafragma` respondendo 200,
+com os modelos em `model/gltf-binary`.
 
 ## Peso
 
@@ -105,17 +138,21 @@ depender de nada externo. Depois de mexer em `deploy/server.mjs` ou
 `deploy/install.sh`, rode:
 
 ```bash
-python scripts/make_egg.py
+python scripts/make_egg.py --verificar
 ```
 
-O gerador confere que o JSON é válido e que o servidor embutido bate byte a byte
-com o arquivo real.
+O gerador confere que o JSON é válido, que o servidor embutido bate byte a byte
+com o arquivo real e — com `--verificar` — que toda imagem citada existe mesmo
+no registro. Vale usar a flag antes de publicar: um egg com tag inexistente
+importa sem reclamar e só falha quando alguém tenta subir o servidor.
 
 ## Se não abrir
 
 | Sintoma | Provável causa |
 |---|---|
-| Console para em `index.html não encontrado` | `dist/` vazio: envie o build por SFTP ou configure `GIT_REPO` |
+| `failed to pull ... not found` ao iniciar | Imagem inexistente. Use **Node 20**; não há `nodejs_22` no yolks |
+| Página diz "ainda não há site para servir" | `dist/` vazio: envie o build por SFTP ou configure `GIT_REPO` |
 | Abre a home, mas F5 em `/atlas` dá 404 | Não é este servidor; algum proxy na frente sem fallback de SPA |
 | Corpo 3D não aparece, console do navegador reclama de MIME | Idem: proxy servindo `.glb` como `application/octet-stream` |
+| `ENOSPC: no space left on device` durante `npm ci` | Compilação caindo em `/tmp`, que é tmpfs de 100 MiB. Esta versão do egg compila no volume; se persistir, aumente `docker.tmpfs_size` no Wings |
 | Nada responde de fora, mas `/healthz` responde no host | Firewall ou NAT bloqueando a 1028 |

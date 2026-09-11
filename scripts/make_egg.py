@@ -7,12 +7,62 @@ entre o arquivo real e a cópia embutida, e resolve o escape do JSON.
 Uso: python scripts/make_egg.py
 """
 import json
+import sys
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
 DEPLOY = RAIZ / "deploy"
 MARCADOR = "__SERVIDOR__"
+
+
+def tags_ghcr(repositorio):
+    """Lista as tags publicadas de um repositório público no ghcr.io."""
+    token = json.load(
+        urllib.request.urlopen(
+            f"https://ghcr.io/token?scope=repository%3A{repositorio.replace('/', '%2F')}%3Apull"
+            "&service=ghcr.io",
+            timeout=20,
+        )
+    )["token"]
+    pedido = urllib.request.Request(
+        f"https://ghcr.io/v2/{repositorio}/tags/list",
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    return set(json.load(urllib.request.urlopen(pedido, timeout=20)).get("tags", []))
+
+
+def verificar_imagens(egg):
+    """Confere no registro que toda imagem citada existe.
+
+    Um egg com tag inexistente passa na importação e só falha na hora de subir
+    o servidor, com erro de pull. Vale conferir antes de publicar.
+    """
+    print("Verificando imagens no registro...")
+    cache = {}
+    problemas = []
+    for rotulo, imagem in egg["docker_images"].items():
+        repositorio, tag = imagem.removeprefix("ghcr.io/").rsplit(":", 1)
+        if repositorio not in cache:
+            cache[repositorio] = tags_ghcr(repositorio)
+        existe = tag in cache[repositorio]
+        print(f"  [{'ok' if existe else 'FALTA'}] {rotulo}: {imagem}")
+        if not existe:
+            problemas.append(imagem)
+
+    instalador = egg["scripts"]["installation"]["container"]
+    nome, tag = instalador.rsplit(":", 1)
+    url = f"https://hub.docker.com/v2/repositories/library/{nome}/tags/{tag}/"
+    try:
+        urllib.request.urlopen(url, timeout=20)
+        print(f"  [ok] instalador: {instalador}")
+    except Exception:
+        print(f"  [FALTA] instalador: {instalador}")
+        problemas.append(instalador)
+
+    if problemas:
+        raise SystemExit("Imagens inexistentes: " + ", ".join(problemas))
 
 
 def variavel(nome, descricao, env, padrao, regras, editavel=True, visivel=True):
@@ -58,9 +108,13 @@ def main():
             "repositório Git ou enviado pronto por SFTP."
         ),
         "features": None,
+        # Só tags que existem de fato no registro. O yolks do Pterodactyl para
+        # no nodejs_20 e o do parkervcp no nodejs_21; não há nodejs_22. A
+        # primeira da lista é a padrão. O servidor usa apenas APIs nativas do
+        # Node, então qualquer uma dessas serve.
         "docker_images": {
-            "Node 22": "ghcr.io/pterodactyl/yolks:nodejs_22",
             "Node 20": "ghcr.io/pterodactyl/yolks:nodejs_20",
+            "Node 21 (parkervcp)": "ghcr.io/parkervcp/yolks:nodejs_21",
             "Node 18": "ghcr.io/pterodactyl/yolks:nodejs_18",
         },
         "file_denylist": [],
@@ -126,6 +180,9 @@ def main():
             ),
         ],
     }
+
+    if "--verificar" in sys.argv:
+        verificar_imagens(egg)
 
     destino = DEPLOY / "fisioatlas.egg.json"
     destino.write_text(json.dumps(egg, ensure_ascii=False, indent=4) + "\n", encoding="utf8")
