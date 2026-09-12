@@ -6442,5 +6442,247 @@
     "modelIds": [
       "ZA-aee7d26d67eba3"
     ]
+  },
+  "reto-lateral-do-olho": {
+    "name": "Reto lateral do olho",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Lateral rectus muscle.l",
+      "Lateral rectus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-a2c723b4db15a1",
+      "ZA-cf9fb2aff4ebd6"
+    ]
+  },
+  "reto-medial-do-olho": {
+    "name": "Reto medial do olho",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Medial rectus muscle.l",
+      "Medial rectus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-781d3da03600c6",
+      "ZA-a5e294f1dd9097"
+    ]
+  },
+  "reto-superior-do-olho": {
+    "name": "Reto superior do olho",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Superior rectus muscle.l",
+      "Superior rectus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-4c799a83290dbd",
+      "ZA-1c08e887889641"
+    ]
+  },
+  "reto-inferior-do-olho": {
+    "name": "Reto inferior do olho",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Inferior rectus muscle.l",
+      "Inferior rectus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-ca9498dbeccca5",
+      "ZA-d8e345dda7511a"
+    ]
+  },
+  "obliquo-superior-do-olho": {
+    "name": "Oblíquo superior do olho",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Superior oblique muscle.l",
+      "Superior oblique muscle.r",
+      "Trochlea of superior oblique muscle.l",
+      "Trochlea of superior oblique muscle.r"
+    ],
+    "modelIds": [
+      "ZA-69ab9da5db6c78",
+      "ZA-a89e2836ed7179",
+      "ZA-d035fdf1a29f0c",
+      "ZA-87ea7339242f65"
+    ]
+  },
+  "obliquo-inferior-do-olho": {
+    "name": "Oblíquo inferior do olho",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Inferior oblique muscle.l",
+      "Inferior oblique muscle.r"
+    ],
+    "modelIds": [
+      "ZA-45b1899b5e6c20",
+      "ZA-795b2fc6873be2"
+    ]
+  },
+  "levantador-da-palpebra-superior": {
+    "name": "Levantador da pálpebra superior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Levator palpebrae superioris.l",
+      "Levator palpebrae superioris.r"
+    ],
+    "modelIds": [
+      "ZA-bcb50f11cf4b55",
+      "ZA-cd8fea9c508cf3"
+    ]
+  },
+  "genioglosso": {
+    "name": "Genioglosso",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Genioglossus muscle.l",
+      "Genioglossus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-58a225262e4d75",
+      "ZA-1520fcaa8dde51"
+    ]
+  },
+  "hioglosso": {
+    "name": "Hioglosso",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Hyoglossus muscle.l",
+      "Hyoglossus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-413e7394dbb947",
+      "ZA-c56ad02dbb1eb6"
+    ]
+  },
+  "constritor-superior-da-faringe": {
+    "name": "Constritor superior da faringe",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Superior pharyngeal constrictor.l",
+      "Superior pharyngeal constrictor.r"
+    ],
+    "modelIds": [
+      "ZA-9e9faf1f240bd5",
+      "ZA-f72ebf99ec528a"
+    ]
+  },
+  "constritor-medio-da-faringe": {
+    "name": "Constritor médio da faringe",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Middle pharyngeal constrictor.l",
+      "Middle pharyngeal constrictor.r"
+    ],
+    "modelIds": [
+      "ZA-47363e88e4859b",
+      "ZA-68785e0437ecce"
+    ]
+  },
+  "constritor-inferior-da-faringe": {
+    "name": "Constritor inferior da faringe",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Inferior pharyngeal constrictor.l",
+      "Inferior pharyngeal constrictor.r"
+    ],
+    "modelIds": [
+      "ZA-4f39dc07034e14",
+      "ZA-57b99495c1b933"
+    ]
+  },
+  "estilofaringeo": {
+    "name": "Estilofaríngeo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Stylopharyngeus muscle.l",
+      "Stylopharyngeus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-7d0daee785813d",
+      "ZA-eb2a565eca2b00"
+    ]
+  },
+  "palatofaringeo": {
+    "name": "Palatofaríngeo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Palatopharyngeus muscle.l",
+      "Palatopharyngeus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-71cc4d76b2f055",
+      "ZA-060cee0a14679b"
+    ]
+  },
+  "cricotireoideo": {
+    "name": "Cricotireóideo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Straight part of cricothyroid muscle.l",
+      "Straight part of cricothyroid muscle.r",
+      "Oblique part of cricothyroid muscle.l",
+      "Oblique part of cricothyroid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-2a35fadb4b38ba",
+      "ZA-47ea5970d8d1c7",
+      "ZA-9f1ebf44ca8b88",
+      "ZA-faf705c40cdb35"
+    ]
+  },
+  "cricoaritenoideo-posterior": {
+    "name": "Cricoaritenóideo posterior",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Posterior crico-arytenoid muscle.l",
+      "Posterior crico-arytenoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-e759d4784472bd",
+      "ZA-422d3eb973d3c1"
+    ]
+  },
+  "cricoaritenoideo-lateral": {
+    "name": "Cricoaritenóideo lateral",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Lateral crico-arytenoid muscle.l",
+      "Lateral crico-arytenoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-53c21450e0e873",
+      "ZA-2c067ee097aa43"
+    ]
+  },
+  "aritenoideos": {
+    "name": "Aritenóideos",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Transverse arytenoid muscle",
+      "Ary-epiglottic part of oblique arytenoid muscle.l",
+      "Ary-epiglottic part of oblique arytenoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-aca66740b7e078",
+      "ZA-ad46dc5477484f",
+      "ZA-9e1e4ba8ec60e1"
+    ]
+  },
+  "tireoaritenoideo": {
+    "name": "Tireoaritenóideo",
+    "kind": "musculos",
+    "sourceObjects": [
+      "External part of thyro-arytenoid muscle.l",
+      "External part of thyro-arytenoid muscle.r",
+      "Thyro-epiglottic part of thyro-arytenoid muscle.l",
+      "Thyro-epiglottic part of thyro-arytenoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-b62e0f0be052fc",
+      "ZA-3c606501e3fc01",
+      "ZA-b8a521f62f63ec",
+      "ZA-6e5a1685144c68"
+    ]
   }
 }

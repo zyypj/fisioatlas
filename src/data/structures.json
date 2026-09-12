@@ -5945,7 +5945,8 @@
     ],
     "depth": "superficial",
     "sources": [
-      "openstax-joints"
+      "openstax-joints",
+      "z-anatomy"
     ],
     "aliases": [
       "trapeziometacarpal",
@@ -6769,7 +6770,8 @@
     ],
     "depth": "superficial",
     "sources": [
-      "openstax-joints"
+      "openstax-joints",
+      "z-anatomy"
     ],
     "aliases": [
       "tendão patelar",
@@ -22397,5 +22399,981 @@
       "Linea alba"
     ],
     "modelSource": "z-anatomy"
+  },
+  {
+    "id": "reto-lateral-do-olho",
+    "name": "Reto lateral do olho",
+    "english": "lateral rectus muscle",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Único abdutor do olho; inervado pelo nervo abducente, sua paralisia impede olhar para o lado e causa estrabismo convergente.",
+    "fields": {
+      "Origem": "Anel tendíneo comum, ou anel de Zinn, no ápice da órbita, ao redor do canal óptico.",
+      "Inserção": "Face lateral da esclera, à frente do equador do globo ocular.",
+      "Inervação": "Nervo abducente, o sexto nervo craniano (NC VI).",
+      "Ação": "Abduz o olho, girando a pupila lateralmente, para fora. É o único responsável por esse movimento.",
+      "Na prática": "É o músculo do olhar para o lado. Sua paralisia, por lesão do nervo abducente, deixa o olho desviado para dentro (estrabismo convergente) e a pessoa com visão dupla ao olhar para o lado afetado.",
+      "Grupo muscular": "Músculos extraoculares; retos.",
+      "Plano e eixo": "Abdução no plano horizontal e eixo vertical.",
+      "Sinergistas": "Reto lateral do olho oposto no olhar conjugado para o mesmo lado.",
+      "Antagonistas": "Reto medial do mesmo olho.",
+      "Observação funcional": "A regra clássica de inervação é NC VI para o reto lateral, NC IV para o oblíquo superior e NC III para todos os demais. Sua avaliação faz parte do teste dos movimentos oculares em H, usado tanto na neurologia quanto na reabilitação vestibular.",
+      "Exemplo de exercício": "Exercícios de estabilização do olhar e de perseguição horizontal na reabilitação vestibular, em contexto didático.",
+      "Palpação básica": "Não é palpável: situa-se dentro da órbita. Avaliado observando a abdução do olho no teste das posições cardinais do olhar.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "esfenoide",
+      "reto-medial-do-olho",
+      "reto-superior-do-olho",
+      "reto-inferior-do-olho",
+      "obliquo-superior-do-olho",
+      "obliquo-inferior-do-olho"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "lateral rectus",
+      "reto externo",
+      "abducente",
+      "NC VI"
+    ],
+    "modelIds": [
+      "ZA-a2c723b4db15a1",
+      "ZA-cf9fb2aff4ebd6"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Lateral rectus muscle.l",
+      "Lateral rectus muscle.r"
+    ]
+  },
+  {
+    "id": "reto-medial-do-olho",
+    "name": "Reto medial do olho",
+    "english": "medial rectus muscle",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Principal adutor do olho; peça central da convergência ao fixar algo próximo.",
+    "fields": {
+      "Origem": "Anel tendíneo comum, no ápice da órbita.",
+      "Inserção": "Face medial da esclera, à frente do equador do globo ocular.",
+      "Inervação": "Nervo oculomotor, o terceiro nervo craniano (NC III).",
+      "Ação": "Aduz o olho, girando a pupila medialmente, em direção ao nariz.",
+      "Na prática": "É o motor da convergência: quando os dois retos mediais contraem juntos, os olhos convergem para focar um objeto próximo, como ao ler. A insuficiência de convergência é queixa comum de fadiga visual e alvo de exercícios ortópticos.",
+      "Grupo muscular": "Músculos extraoculares; retos.",
+      "Plano e eixo": "Adução no plano horizontal e eixo vertical.",
+      "Sinergistas": "Reto medial do olho oposto na convergência; reto lateral contralateral no olhar conjugado.",
+      "Antagonistas": "Reto lateral do mesmo olho.",
+      "Observação funcional": "É o mais forte dos músculos extraoculares. Na oftalmoplegia internuclear, um distúrbio de conexão no tronco encefálico visto na esclerose múltipla, o reto medial falha na adução do olhar conjugado mas ainda funciona na convergência, sinal que localiza a lesão.",
+      "Exemplo de exercício": "Exercícios de convergência, como aproximar lentamente um lápis do nariz mantendo a imagem única, em contexto didático.",
+      "Palpação básica": "Não é palpável. Avaliado pela adução e pelo teste de convergência.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "esfenoide",
+      "reto-lateral-do-olho",
+      "reto-superior-do-olho",
+      "reto-inferior-do-olho",
+      "obliquo-inferior-do-olho"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "medial rectus",
+      "reto interno",
+      "convergência",
+      "NC III"
+    ],
+    "modelIds": [
+      "ZA-781d3da03600c6",
+      "ZA-a5e294f1dd9097"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Medial rectus muscle.l",
+      "Medial rectus muscle.r"
+    ]
+  },
+  {
+    "id": "reto-superior-do-olho",
+    "name": "Reto superior do olho",
+    "english": "superior rectus muscle",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Principal elevador do olho; sua ação pura é testada com o olho em abdução.",
+    "fields": {
+      "Origem": "Anel tendíneo comum, no ápice da órbita.",
+      "Inserção": "Face superior da esclera, à frente do equador do globo ocular.",
+      "Inervação": "Nervo oculomotor, o terceiro nervo craniano (NC III).",
+      "Ação": "Eleva o olho. Como puxa obliquamente, também aduz e faz intorsão, mas a elevação é máxima e mais pura quando o olho já está abduzido cerca de 23°.",
+      "Na prática": "É o músculo do olhar para cima. No teste das posições cardinais, pede-se para o olhar seguir a letra H: a elevação em abdução isola o reto superior, e essa é a posição avaliada.",
+      "Grupo muscular": "Músculos extraoculares; retos.",
+      "Plano e eixo": "Elevação no plano vertical; componentes de adução e intorsão no plano transverso.",
+      "Sinergistas": "Oblíquo inferior do mesmo olho na elevação; reto superior contralateral no olhar conjugado para cima.",
+      "Antagonistas": "Reto inferior e oblíquo superior do mesmo olho.",
+      "Observação funcional": "Passa por cima do globo, ligado ao levantador da pálpebra superior por uma bainha comum: por isso o olhar para cima acompanha a elevação da pálpebra. Ambos são inervados pelo NC III.",
+      "Exemplo de exercício": "Perseguição vertical e estabilização do olhar para cima na reabilitação vestibular, em contexto didático.",
+      "Palpação básica": "Não é palpável. Avaliado pela elevação do olho em abdução no teste em H.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "esfenoide",
+      "levantador-da-palpebra-superior",
+      "reto-inferior-do-olho",
+      "obliquo-inferior-do-olho",
+      "obliquo-superior-do-olho"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "superior rectus",
+      "NC III"
+    ],
+    "modelIds": [
+      "ZA-4c799a83290dbd",
+      "ZA-1c08e887889641"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Superior rectus muscle.l",
+      "Superior rectus muscle.r"
+    ]
+  },
+  {
+    "id": "reto-inferior-do-olho",
+    "name": "Reto inferior do olho",
+    "english": "inferior rectus muscle",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Principal depressor do olho; frequentemente preso nas fraturas do assoalho da órbita.",
+    "fields": {
+      "Origem": "Anel tendíneo comum, no ápice da órbita.",
+      "Inserção": "Face inferior da esclera, à frente do equador do globo ocular.",
+      "Inervação": "Nervo oculomotor, o terceiro nervo craniano (NC III).",
+      "Ação": "Abaixa o olho. Também aduz e faz extorsão; a depressão é máxima e mais pura com o olho abduzido cerca de 23°.",
+      "Na prática": "É o músculo do olhar para baixo. Nas fraturas do assoalho da órbita, chamadas blowout, ele ou a gordura ao seu redor podem ficar presos no traço de fratura, travando o olhar para cima e causando visão dupla.",
+      "Grupo muscular": "Músculos extraoculares; retos.",
+      "Plano e eixo": "Depressão no plano vertical; componentes de adução e extorsão no plano transverso.",
+      "Sinergistas": "Oblíquo superior do mesmo olho na depressão; reto inferior contralateral no olhar conjugado para baixo.",
+      "Antagonistas": "Reto superior e oblíquo inferior do mesmo olho.",
+      "Observação funcional": "Liga-se à pálpebra inferior por expansões, de modo que o olhar para baixo acompanha o abaixamento discreto da pálpebra. É o músculo mais afetado na orbitopatia da doença de Graves, por fibrose, o que restringe a elevação.",
+      "Exemplo de exercício": "Perseguição vertical para baixo e estabilização do olhar na reabilitação vestibular, em contexto didático.",
+      "Palpação básica": "Não é palpável. Avaliado pela depressão do olho em abdução no teste em H.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "esfenoide",
+      "maxila",
+      "reto-superior-do-olho",
+      "obliquo-superior-do-olho",
+      "obliquo-inferior-do-olho"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "inferior rectus",
+      "fratura blowout",
+      "NC III"
+    ],
+    "modelIds": [
+      "ZA-ca9498dbeccca5",
+      "ZA-d8e345dda7511a"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Inferior rectus muscle.l",
+      "Inferior rectus muscle.r"
+    ]
+  },
+  {
+    "id": "obliquo-superior-do-olho",
+    "name": "Oblíquo superior do olho",
+    "english": "superior oblique muscle",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Abaixa o olho aduzido e usa a tróclea como polia; sua paralisia inclina a cabeça e atrapalha descer escadas.",
+    "fields": {
+      "Origem": "Corpo do osso esfenoide, acima e medialmente ao anel tendíneo comum. Seu tendão passa por uma polia fibrocartilaginosa, a tróclea, presa ao osso frontal, e muda de direção antes de se inserir.",
+      "Inserção": "Face súpero-lateral da esclera, atrás do equador do globo, depois de contornar a tróclea.",
+      "Inervação": "Nervo troclear, o quarto nervo craniano (NC IV).",
+      "Ação": "Faz intorsão, depressão e abdução do olho. A depressão é máxima e mais pura quando o olho está aduzido, olhando em direção ao nariz.",
+      "Na prática": "É o músculo que abaixa o olho quando ele está voltado para dentro, gesto usado ao descer escadas ou ler algo perto do peito. Na paralisia do nervo troclear, a pessoa vê duplo ao olhar para baixo e inclina a cabeça para o lado oposto para compensar, sinal de Bielschowsky.",
+      "Grupo muscular": "Músculos extraoculares; oblíquos.",
+      "Plano e eixo": "Intorsão no eixo ântero-posterior; depressão no plano vertical; abdução no plano horizontal.",
+      "Sinergistas": "Reto inferior do mesmo olho na depressão.",
+      "Antagonistas": "Oblíquo inferior do mesmo olho.",
+      "Observação funcional": "É o único músculo extraocular inervado pelo nervo troclear e o único cujo tendão usa uma polia para mudar de direção. Por isso sua ação depende da posição do olho, o que torna sua avaliação a mais confusa dos extraoculares. A tróclea é a referência da tróclea, incluída aqui como parte do seu mecanismo.",
+      "Exemplo de exercício": "Perseguição do olhar para baixo e para dentro na reabilitação vestibular, em contexto didático.",
+      "Palpação básica": "Não é palpável. Avaliado pela depressão do olho em adução no teste em H.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "esfenoide",
+      "frontal",
+      "reto-inferior-do-olho",
+      "obliquo-inferior-do-olho",
+      "reto-superior-do-olho"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "superior oblique",
+      "tróclea",
+      "troclear",
+      "NC IV",
+      "sinal de Bielschowsky"
+    ],
+    "modelIds": [
+      "ZA-69ab9da5db6c78",
+      "ZA-a89e2836ed7179",
+      "ZA-d035fdf1a29f0c",
+      "ZA-87ea7339242f65"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Superior oblique muscle.l",
+      "Superior oblique muscle.r",
+      "Trochlea of superior oblique muscle.l",
+      "Trochlea of superior oblique muscle.r"
+    ]
+  },
+  {
+    "id": "obliquo-inferior-do-olho",
+    "name": "Oblíquo inferior do olho",
+    "english": "inferior oblique muscle",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Único extraocular que não nasce no ápice da órbita; eleva o olho aduzido.",
+    "fields": {
+      "Origem": "Assoalho da órbita, na face orbital da maxila, junto à fossa do saco lacrimal. É o único extraocular que não nasce no anel tendíneo comum.",
+      "Inserção": "Face ínfero-lateral da esclera, atrás do equador do globo ocular.",
+      "Inervação": "Nervo oculomotor, o terceiro nervo craniano (NC III).",
+      "Ação": "Faz extorsão, elevação e abdução do olho. A elevação é máxima e mais pura quando o olho está aduzido.",
+      "Na prática": "É o músculo que eleva o olho quando ele está voltado para dentro, gesto de olhar para cima na direção do canto interno. Sua ação é testada pedindo o olhar para cima e para o lado oposto ao olho examinado.",
+      "Grupo muscular": "Músculos extraoculares; oblíquos.",
+      "Plano e eixo": "Extorsão no eixo ântero-posterior; elevação no plano vertical; abdução no plano horizontal.",
+      "Sinergistas": "Reto superior do mesmo olho na elevação.",
+      "Antagonistas": "Oblíquo superior do mesmo olho.",
+      "Observação funcional": "Sua origem anterior, no assoalho da órbita, o torna vulnerável nas fraturas do assoalho e nas cirurgias de estrabismo. Forma par com o reto superior na elevação: um eleva em abdução, o outro em adução, e juntos cobrem toda a elevação.",
+      "Exemplo de exercício": "Perseguição do olhar para cima e para dentro na reabilitação vestibular, em contexto didático.",
+      "Palpação básica": "Não é palpável. Avaliado pela elevação do olho em adução no teste em H.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "maxila",
+      "lacrimal",
+      "reto-superior-do-olho",
+      "obliquo-superior-do-olho",
+      "reto-inferior-do-olho"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "inferior oblique",
+      "NC III"
+    ],
+    "modelIds": [
+      "ZA-45b1899b5e6c20",
+      "ZA-795b2fc6873be2"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Inferior oblique muscle.l",
+      "Inferior oblique muscle.r"
+    ]
+  },
+  {
+    "id": "levantador-da-palpebra-superior",
+    "name": "Levantador da pálpebra superior",
+    "english": "levator palpebrae superioris",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Abre o olho elevando a pálpebra superior; sua falha causa a ptose palpebral.",
+    "fields": {
+      "Origem": "Asa menor do osso esfenoide, acima do anel tendíneo comum, no ápice da órbita.",
+      "Inserção": "Pele e placa tarsal da pálpebra superior. Uma lâmina profunda de músculo liso, o músculo tarsal superior de Müller, prende-se separadamente ao tarso.",
+      "Inervação": "Nervo oculomotor, o terceiro nervo craniano (NC III), para a parte estriada. O músculo tarsal de Müller é inervado pelo sistema nervoso simpático.",
+      "Ação": "Eleva a pálpebra superior, abrindo a fenda palpebral. Atua em oposição ao orbicular do olho, que a fecha.",
+      "Na prática": "É o músculo que mantém os olhos abertos. Sua falha causa ptose, a queda da pálpebra. Uma ptose completa aponta para lesão do nervo oculomotor; uma ptose parcial, com pupila miótica, aponta para a síndrome de Horner, por perda da inervação simpática do músculo de Müller.",
+      "Grupo muscular": "Músculos extraoculares; elevador palpebral.",
+      "Plano e eixo": "Elevação da pálpebra no plano vertical.",
+      "Sinergistas": "Reto superior do mesmo olho, ligado por bainha comum; músculo tarsal superior de Müller.",
+      "Antagonistas": "Orbicular do olho.",
+      "Observação funcional": "A ptose que melhora com repouso e piora ao longo do dia, junto com fadiga ao olhar para cima mantido, é sinal clássico de miastenia gravis, doença da junção neuromuscular. É um bom exemplo de como um único músculo ajuda a separar causas neurológicas, simpáticas e musculares.",
+      "Exemplo de exercício": "Não é treinado isoladamente; sua função é observada na abertura ocular e na fadiga ao olhar para cima.",
+      "Palpação básica": "Não é palpável. Avaliado medindo a fenda palpebral e a excursão da pálpebra superior.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "esfenoide",
+      "frontal",
+      "reto-superior-do-olho",
+      "orbicular-do-olho"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "levator palpebrae",
+      "ptose",
+      "músculo de Müller",
+      "síndrome de Horner"
+    ],
+    "modelIds": [
+      "ZA-bcb50f11cf4b55",
+      "ZA-cd8fea9c508cf3"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Levator palpebrae superioris.l",
+      "Levator palpebrae superioris.r"
+    ]
+  },
+  {
+    "id": "genioglosso",
+    "name": "Genioglosso",
+    "english": "genioglossus",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Músculo em leque que forma o corpo da língua; protrai a língua e mantém a via aérea aberta no sono.",
+    "fields": {
+      "Origem": "Espinha mentual superior, na face interna da sínfise da mandíbula.",
+      "Inserção": "Abre-se em leque por todo o dorso da língua, da ponta à base, e no corpo do osso hioide.",
+      "Inervação": "Nervo hipoglosso, o décimo segundo nervo craniano (NC XII).",
+      "Ação": "Protrai a língua, colocando-a para fora, e abaixa seu centro, formando o sulco central. Suas fibras posteriores a puxam para a frente.",
+      "Na prática": "É o músculo que põe a língua para fora e, mais importante, o que a mantém para a frente durante o sono, deixando a via aérea aberta. Sua perda de tônus é fator central na apneia obstrutiva do sono. Na lesão do nervo hipoglosso, a língua desvia para o lado paralisado ao ser protraída.",
+      "Grupo muscular": "Músculos extrínsecos da língua.",
+      "Plano e eixo": "Protrusão no plano sagital.",
+      "Sinergistas": "Genioglosso do lado oposto na protrusão central; hioglosso e estiloglosso no controle da língua.",
+      "Antagonistas": "Estiloglosso e fibras que retraem a língua.",
+      "Observação funcional": "É o mais forte dos músculos da língua. A protrusão da língua é usada como teste do nervo hipoglosso: o desvio para um lado indica fraqueza daquele lado, porque o genioglosso sadio empurra a língua para o lado doente. Tem papel direto na terapia miofuncional e no tratamento da apneia do sono.",
+      "Exemplo de exercício": "Exercícios de protrusão e posicionamento da língua na terapia miofuncional orofacial, em contexto didático.",
+      "Palpação básica": "Palpável indiretamente no assoalho da boca; sua função é avaliada pela protrusão da língua e pela observação de desvios.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "mandibula",
+      "hioide",
+      "hioglosso",
+      "genio-hioideo",
+      "milo-hioideo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "genioglossus",
+      "apneia do sono",
+      "hipoglosso",
+      "NC XII"
+    ],
+    "modelIds": [
+      "ZA-58a225262e4d75",
+      "ZA-1520fcaa8dde51"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Genioglossus muscle.l",
+      "Genioglossus muscle.r"
+    ]
+  },
+  {
+    "id": "hioglosso",
+    "name": "Hioglosso",
+    "english": "hyoglossus",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Liga o hioide à língua; abaixa e retrai a língua e é referência anatômica de estruturas do pescoço.",
+    "fields": {
+      "Origem": "Corpo e corno maior do osso hioide.",
+      "Inserção": "Faces laterais da língua, entre o estiloglosso e o genioglosso.",
+      "Inervação": "Nervo hipoglosso, o décimo segundo nervo craniano (NC XII).",
+      "Ação": "Abaixa a língua e retrai sua parte elevada, ajudando a movê-la para trás e para baixo na deglutição.",
+      "Na prática": "Trabalha com o genioglosso no controle fino da língua durante a mastigação, a deglutição e a fala. É alvo, junto com os demais músculos da língua, da terapia miofuncional.",
+      "Grupo muscular": "Músculos extrínsecos da língua.",
+      "Plano e eixo": "Abaixamento e retração da língua no plano sagital.",
+      "Sinergistas": "Genioglosso, no abaixamento; estiloglosso é antagonista parcial.",
+      "Antagonistas": "Estiloglosso e palatoglosso na elevação da língua.",
+      "Observação funcional": "É uma referência anatômica importante do pescoço: o nervo hipoglosso, o nervo lingual e o ducto submandibular cruzam sua face lateral, o que o torna ponto de orientação em cirurgias do assoalho da boca.",
+      "Exemplo de exercício": "Exercícios de mobilidade e força da língua na terapia miofuncional, em contexto didático.",
+      "Palpação básica": "Não é isolável à palpação; avaliado pela mobilidade da língua.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "hioide",
+      "genioglosso",
+      "mandibula",
+      "estilo-hioideo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "hyoglossus",
+      "NC XII"
+    ],
+    "modelIds": [
+      "ZA-413e7394dbb947",
+      "ZA-c56ad02dbb1eb6"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Hyoglossus muscle.l",
+      "Hyoglossus muscle.r"
+    ]
+  },
+  {
+    "id": "constritor-superior-da-faringe",
+    "name": "Constritor superior da faringe",
+    "english": "superior pharyngeal constrictor",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Estreita a parte alta da faringe na deglutição; forma o anel de contato do reflexo faríngeo.",
+    "fields": {
+      "Origem": "Lâmina medial do processo pterigoide, rafe pterigomandibular, mandíbula e língua.",
+      "Inserção": "Rafe faríngea mediana posterior, encontrando o músculo do lado oposto, e tubérculo faríngeo do occipital.",
+      "Inervação": "Plexo faríngeo, com fibras do nervo vago, o décimo nervo craniano (NC X).",
+      "Ação": "Estreita a parte superior da faringe, empurrando o bolo alimentar para baixo na fase faríngea da deglutição.",
+      "Na prática": "É a musculatura que impulsiona o alimento da boca para o esôfago. Sua coordenação com os demais constritores é central na deglutição; a falha desse mecanismo é a disfagia orofaríngea, avaliada e tratada em reabilitação.",
+      "Grupo muscular": "Músculos constritores da faringe.",
+      "Plano e eixo": "Constrição circular da faringe no plano transverso.",
+      "Sinergistas": "Constritores médio e inferior, em onda descendente; elevadores da faringe.",
+      "Antagonistas": "Não tem antagonista direto; opõe-se ao relaxamento de repouso.",
+      "Observação funcional": "Os três constritores se sobrepõem como copos empilhados e disparam em sequência, de cima para baixo, produzindo a onda peristáltica que leva o bolo à faringe. É o arco reflexo do reflexo do vômito, ou gag, testado em avaliação de nervos cranianos.",
+      "Exemplo de exercício": "Manobras de deglutição, como a deglutição com esforço, em reabilitação da disfagia, em contexto didático.",
+      "Palpação básica": "Não é palpável; sua função é avaliada por exame da deglutição e testes de nervos cranianos.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "esfenoide",
+      "mandibula",
+      "occipital",
+      "constritor-medio-da-faringe",
+      "constritor-inferior-da-faringe",
+      "estilofaringeo",
+      "palatofaringeo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "superior pharyngeal constrictor",
+      "disfagia",
+      "reflexo do vômito",
+      "NC X"
+    ],
+    "modelIds": [
+      "ZA-9e9faf1f240bd5",
+      "ZA-f72ebf99ec528a"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Superior pharyngeal constrictor.l",
+      "Superior pharyngeal constrictor.r"
+    ]
+  },
+  {
+    "id": "constritor-medio-da-faringe",
+    "name": "Constritor médio da faringe",
+    "english": "middle pharyngeal constrictor",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Porção média da musculatura que impulsiona o bolo na deglutição; nasce do hioide.",
+    "fields": {
+      "Origem": "Cornos maior e menor do osso hioide e ligamento estilo-hióideo.",
+      "Inserção": "Rafe faríngea mediana posterior, encontrando o músculo do lado oposto.",
+      "Inervação": "Plexo faríngeo, com fibras do nervo vago (NC X).",
+      "Ação": "Estreita a parte média da faringe, continuando a onda peristáltica da deglutição.",
+      "Na prática": "É o elo intermediário da onda que leva o alimento à faringe. Sua ação depende da elevação do hioide, o que liga a deglutição eficiente à força dos músculos supra-hióideos.",
+      "Grupo muscular": "Músculos constritores da faringe.",
+      "Plano e eixo": "Constrição circular da faringe no plano transverso.",
+      "Sinergistas": "Constritores superior e inferior; supra-hióideos, que elevam o hioide.",
+      "Antagonistas": "Não tem antagonista direto.",
+      "Observação funcional": "Como nasce do hioide, seu trabalho está acoplado à elevação hiolaríngea. Por isso o treino dos supra-hióideos, como a manobra de Shaker, melhora indiretamente a eficiência de toda a fase faríngea.",
+      "Exemplo de exercício": "Manobras de deglutição e treino dos supra-hióideos na reabilitação da disfagia, em contexto didático.",
+      "Palpação básica": "Não é palpável; avaliado por exame da deglutição.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "hioide",
+      "constritor-superior-da-faringe",
+      "constritor-inferior-da-faringe",
+      "estilofaringeo",
+      "ligamento-estilo-hioideo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "middle pharyngeal constrictor",
+      "NC X"
+    ],
+    "modelIds": [
+      "ZA-47363e88e4859b",
+      "ZA-68785e0437ecce"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Middle pharyngeal constrictor.l",
+      "Middle pharyngeal constrictor.r"
+    ]
+  },
+  {
+    "id": "constritor-inferior-da-faringe",
+    "name": "Constritor inferior da faringe",
+    "english": "inferior pharyngeal constrictor",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "O mais espesso dos constritores; sua parte cricofaríngea é o esfíncter esofágico superior.",
+    "fields": {
+      "Origem": "Cartilagens tireóidea e cricóidea da laringe.",
+      "Inserção": "Rafe faríngea mediana posterior; a parte cricofaríngea circunda a junção com o esôfago sem rafe.",
+      "Inervação": "Plexo faríngeo e ramos do nervo laríngeo recorrente, do nervo vago (NC X).",
+      "Ação": "Estreita a parte inferior da faringe. Sua porção cricofaríngea funciona como esfíncter esofágico superior, mantendo-se fechada em repouso e relaxando para deixar o bolo passar.",
+      "Na prática": "A parte cricofaríngea é decisiva na disfagia: quando não relaxa a tempo, o alimento se acumula acima dela, o que favorece a aspiração e a formação do divertículo de Zenker, uma bolsa na parede posterior da faringe.",
+      "Grupo muscular": "Músculos constritores da faringe.",
+      "Plano e eixo": "Constrição circular da faringe no plano transverso.",
+      "Sinergistas": "Constritores superior e médio na onda peristáltica.",
+      "Antagonistas": "O relaxamento coordenado da parte cricofaríngea permite a passagem do bolo.",
+      "Observação funcional": "A porção cricofaríngea é uma das poucas do corpo que fica tonicamente contraída e precisa relaxar para funcionar, como os esfíncteres. Sua disfunção, a barra cricofaríngea, é alvo de tratamento específico na disfagia, incluindo manobras, dilatação e toxina botulínica.",
+      "Exemplo de exercício": "Manobras de abertura do esfíncter esofágico superior, como a manobra de Shaker e a de Mendelsohn, em reabilitação da disfagia, em contexto didático.",
+      "Palpação básica": "Não é palpável; avaliado por videofluoroscopia e exame endoscópico da deglutição.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "hioide",
+      "constritor-superior-da-faringe",
+      "constritor-medio-da-faringe",
+      "cricotireoideo",
+      "esternotireoideo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "inferior pharyngeal constrictor",
+      "cricofaríngeo",
+      "esfíncter esofágico superior",
+      "divertículo de Zenker"
+    ],
+    "modelIds": [
+      "ZA-4f39dc07034e14",
+      "ZA-57b99495c1b933"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Inferior pharyngeal constrictor.l",
+      "Inferior pharyngeal constrictor.r"
+    ]
+  },
+  {
+    "id": "estilofaringeo",
+    "name": "Estilofaríngeo",
+    "english": "stylopharyngeus",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Eleva e alarga a faringe e a laringe na deglutição; único músculo inervado pelo nervo glossofaríngeo.",
+    "fields": {
+      "Origem": "Processo estiloide do osso temporal.",
+      "Inserção": "Parede lateral da faringe e borda superior da cartilagem tireóidea, entre os constritores superior e médio.",
+      "Inervação": "Nervo glossofaríngeo, o nono nervo craniano (NC IX). É o único músculo por ele inervado.",
+      "Ação": "Eleva e alarga a faringe e a laringe, criando espaço para o bolo descer e ajudando a proteger a via aérea na deglutição.",
+      "Na prática": "É um dos elevadores da laringe que fecham a entrada da via aérea durante o engolir. Seu papel é lembrado na avaliação do glossofaríngeo, já que é o único músculo desse nervo.",
+      "Grupo muscular": "Músculos elevadores da faringe.",
+      "Plano e eixo": "Elevação da faringe e da laringe no plano vertical.",
+      "Sinergistas": "Palatofaríngeo e supra-hióideos na elevação hiolaríngea.",
+      "Antagonistas": "Infra-hióideos, que abaixam a laringe.",
+      "Observação funcional": "A elevação da laringe é o que leva a epiglote a cobrir a via aérea e proteger contra a aspiração. Por isso o treino da elevação hiolaríngea é central na reabilitação da disfagia.",
+      "Exemplo de exercício": "Manobras de elevação laríngea, como a deglutição de esforço, em contexto didático.",
+      "Palpação básica": "Não é palpável; profundo, na parede lateral da faringe.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "temporal",
+      "hioide",
+      "constritor-superior-da-faringe",
+      "constritor-medio-da-faringe",
+      "palatofaringeo",
+      "ligamento-estilo-hioideo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "stylopharyngeus",
+      "glossofaríngeo",
+      "NC IX"
+    ],
+    "modelIds": [
+      "ZA-7d0daee785813d",
+      "ZA-eb2a565eca2b00"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Stylopharyngeus muscle.l",
+      "Stylopharyngeus muscle.r"
+    ]
+  },
+  {
+    "id": "palatofaringeo",
+    "name": "Palatofaríngeo",
+    "english": "palatopharyngeus",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Eleva a faringe e forma o arco palatofaríngeo; ajuda a fechar a nasofaringe na deglutição.",
+    "fields": {
+      "Origem": "Palato mole e lâmina da cartilagem tireóidea.",
+      "Inserção": "Parede lateral da faringe, formando o arco palatofaríngeo, a prega posterior que delimita a tonsila palatina.",
+      "Inervação": "Plexo faríngeo, com fibras do nervo vago (NC X).",
+      "Ação": "Eleva a faringe e a laringe e aproxima os arcos palatofaríngeos, ajudando a fechar a passagem para a nasofaringe durante a deglutição.",
+      "Na prática": "Participa do fechamento velofaríngeo, que impede o alimento e o ar de subirem para o nariz ao engolir e ao falar. Sua falha causa refluxo nasal de líquidos e voz hipernasal, sinais avaliados em disfagia e em distúrbios da fala.",
+      "Grupo muscular": "Músculos do palato mole e da faringe.",
+      "Plano e eixo": "Elevação da faringe no plano vertical; aproximação dos arcos no plano transverso.",
+      "Sinergistas": "Estilofaríngeo na elevação; demais músculos do palato no fechamento velofaríngeo.",
+      "Antagonistas": "Infra-hióideos na relação com a laringe.",
+      "Observação funcional": "Forma o arco palatofaríngeo, referência visível ao abrir a boca. A elevação simétrica do palato ao dizer a vogal A é usada para testar o nervo vago; o desvio da úvula para um lado indica fraqueza do lado oposto.",
+      "Exemplo de exercício": "Exercícios de fechamento velofaríngeo e de fala na reabilitação, em contexto didático.",
+      "Palpação básica": "Visível como o arco posterior da garganta ao abrir a boca; não é palpável em profundidade.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "hioide",
+      "estilofaringeo",
+      "constritor-superior-da-faringe",
+      "constritor-inferior-da-faringe"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "palatopharyngeus",
+      "arco palatofaríngeo",
+      "fechamento velofaríngeo",
+      "NC X"
+    ],
+    "modelIds": [
+      "ZA-71cc4d76b2f055",
+      "ZA-060cee0a14679b"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Palatopharyngeus muscle.l",
+      "Palatopharyngeus muscle.r"
+    ]
+  },
+  {
+    "id": "cricotireoideo",
+    "name": "Cricotireóideo",
+    "english": "cricothyroid",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Único músculo da laringe que tensiona as pregas vocais; o único inervado pelo laríngeo externo, não pelo recorrente.",
+    "fields": {
+      "Origem": "Arco da cartilagem cricóidea, por uma parte reta e uma parte oblíqua.",
+      "Inserção": "Borda inferior e corno inferior da cartilagem tireóidea.",
+      "Inervação": "Ramo externo do nervo laríngeo superior, do nervo vago (NC X). É o único músculo intrínseco da laringe que não é inervado pelo nervo laríngeo recorrente.",
+      "Ação": "Inclina a cartilagem tireóidea para a frente e para baixo, alongando e tensionando as pregas vocais. É o principal ajuste da altura da voz, subindo o tom.",
+      "Na prática": "É o músculo do agudo: ao esticar as pregas vocais, eleva a frequência do som. Sua lesão, por comprometimento do nervo laríngeo superior, tira a capacidade de produzir tons altos e fatiga a voz, queixa relevante em cantores e professores.",
+      "Grupo muscular": "Músculos intrínsecos da laringe; tensores.",
+      "Plano e eixo": "Inclinação da cartilagem tireóidea no plano sagital.",
+      "Sinergistas": "Parte vocal do tireoaritenóideo no ajuste fino da tensão.",
+      "Antagonistas": "Tireoaritenóideo, que encurta as pregas vocais.",
+      "Observação funcional": "Por ser o único poupado nas lesões do nervo laríngeo recorrente, é o que dá o padrão residual de movimento da laringe nessas paralisias. É alvo direto da terapia vocal.",
+      "Exemplo de exercício": "Exercícios de variação de altura vocal na terapia da voz, em contexto didático.",
+      "Palpação básica": "A interlinha cricotireóidea é palpável na linha média do pescoço, abaixo do pomo de adão.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "hioide",
+      "tireoaritenoideo",
+      "cricoaritenoideo-posterior",
+      "cricoaritenoideo-lateral",
+      "constritor-inferior-da-faringe",
+      "tireo-hioideo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "cricothyroid",
+      "laríngeo superior",
+      "tensor das pregas vocais",
+      "NC X"
+    ],
+    "modelIds": [
+      "ZA-2a35fadb4b38ba",
+      "ZA-47ea5970d8d1c7",
+      "ZA-9f1ebf44ca8b88",
+      "ZA-faf705c40cdb35"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Straight part of cricothyroid muscle.l",
+      "Straight part of cricothyroid muscle.r",
+      "Oblique part of cricothyroid muscle.l",
+      "Oblique part of cricothyroid muscle.r"
+    ]
+  },
+  {
+    "id": "cricoaritenoideo-posterior",
+    "name": "Cricoaritenóideo posterior",
+    "english": "posterior cricoarytenoid",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Único músculo que abre as pregas vocais; sem ele a via aérea fecha. É o músculo que mantém você respirando.",
+    "fields": {
+      "Origem": "Face posterior da lâmina da cartilagem cricóidea.",
+      "Inserção": "Processo muscular da cartilagem aritenóidea.",
+      "Inervação": "Nervo laríngeo recorrente, do nervo vago (NC X).",
+      "Ação": "Gira a cartilagem aritenóidea de modo a afastar as pregas vocais, abrindo a glote. É o único abdutor das pregas vocais.",
+      "Na prática": "É o único músculo que abre a via aérea ao nível das pregas vocais. Sua paralisia bilateral fecha a glote e é emergência respiratória; por isso costuma ser chamado de o músculo que mantém a pessoa viva.",
+      "Grupo muscular": "Músculos intrínsecos da laringe; abdutor.",
+      "Plano e eixo": "Rotação da aritenóidea no plano transverso, abrindo a glote.",
+      "Sinergistas": "Não tem: é o único abdutor.",
+      "Antagonistas": "Cricoaritenóideo lateral, aritenóideos e tireoaritenóideo, todos adutores.",
+      "Observação funcional": "Toda a laringe fecha a glote, para proteger a via aérea e produzir voz; apenas este músculo a abre. Na lesão do nervo laríngeo recorrente, sua falha deixa a prega vocal em posição paramediana, com voz soprosa e risco de aspiração.",
+      "Exemplo de exercício": "Exercícios respiratórios e de coordenação glótica na reabilitação vocal e respiratória, em contexto didático.",
+      "Palpação básica": "Não é palpável; avaliado por laringoscopia observando a abertura da glote na inspiração.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "hioide",
+      "cricoaritenoideo-lateral",
+      "aritenoideos",
+      "tireoaritenoideo",
+      "cricotireoideo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "posterior cricoarytenoid",
+      "abdutor das pregas vocais",
+      "laríngeo recorrente",
+      "NC X"
+    ],
+    "modelIds": [
+      "ZA-e759d4784472bd",
+      "ZA-422d3eb973d3c1"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Posterior crico-arytenoid muscle.l",
+      "Posterior crico-arytenoid muscle.r"
+    ]
+  },
+  {
+    "id": "cricoaritenoideo-lateral",
+    "name": "Cricoaritenóideo lateral",
+    "english": "lateral cricoarytenoid",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Fecha as pregas vocais girando a aritenóidea; adutor essencial da fonação.",
+    "fields": {
+      "Origem": "Borda superior do arco da cartilagem cricóidea.",
+      "Inserção": "Processo muscular da cartilagem aritenóidea.",
+      "Inervação": "Nervo laríngeo recorrente, do nervo vago (NC X).",
+      "Ação": "Gira a aritenóidea no sentido oposto ao do cricoaritenóideo posterior, aproximando as pregas vocais e fechando a glote. É adutor.",
+      "Na prática": "Fecha as pregas vocais para a fala e para proteger a via aérea. Trabalha em oposição direta ao cricoaritenóideo posterior: um abre, o outro fecha.",
+      "Grupo muscular": "Músculos intrínsecos da laringe; adutores.",
+      "Plano e eixo": "Rotação da aritenóidea no plano transverso, fechando a glote.",
+      "Sinergistas": "Aritenóideos e tireoaritenóideo no fechamento glótico.",
+      "Antagonistas": "Cricoaritenóideo posterior.",
+      "Observação funcional": "Junto com os aritenóideos, produz o fechamento firme das pregas vocais necessário para tossir com força e para a manobra de esforço glótico, que estabiliza o tronco. É por isso que a voz e a força do core têm relação com a competência glótica.",
+      "Exemplo de exercício": "Exercícios de adução vocal e de tosse eficaz na reabilitação vocal e respiratória, em contexto didático.",
+      "Palpação básica": "Não é palpável; avaliado por laringoscopia.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "hioide",
+      "cricoaritenoideo-posterior",
+      "aritenoideos",
+      "tireoaritenoideo",
+      "cricotireoideo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "lateral cricoarytenoid",
+      "adutor das pregas vocais",
+      "NC X"
+    ],
+    "modelIds": [
+      "ZA-53c21450e0e873",
+      "ZA-2c067ee097aa43"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Lateral crico-arytenoid muscle.l",
+      "Lateral crico-arytenoid muscle.r"
+    ]
+  },
+  {
+    "id": "aritenoideos",
+    "name": "Aritenóideos",
+    "english": "arytenoid muscles",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Transverso e oblíquo; aproximam as duas cartilagens aritenóideas e fecham a parte posterior da glote.",
+    "fields": {
+      "Origem": "Aritenóideo transverso, na face posterior de uma cartilagem aritenóidea; aritenóideo oblíquo, no processo muscular de uma aritenóidea, cruzando para o ápice da outra e continuando como parte ariepiglótica.",
+      "Inserção": "Cartilagem aritenóidea do lado oposto; a parte ariepiglótica alcança a epiglote.",
+      "Inervação": "Nervo laríngeo recorrente, do nervo vago (NC X).",
+      "Ação": "Aproximam as duas cartilagens aritenóideas, fechando a porção posterior da glote. A parte ariepiglótica ajuda a estreitar a entrada da laringe.",
+      "Na prática": "Completam o fechamento glótico por trás, onde os cricoaritenóideos laterais não alcançam. Esse fechamento posterior é essencial para uma tosse eficaz e para proteger a via aérea na deglutição.",
+      "Grupo muscular": "Músculos intrínsecos da laringe; adutores.",
+      "Plano e eixo": "Aproximação das aritenóideas no plano transverso.",
+      "Sinergistas": "Cricoaritenóideo lateral e tireoaritenóideo no fechamento glótico.",
+      "Antagonistas": "Cricoaritenóideo posterior.",
+      "Observação funcional": "O aritenóideo transverso é o único músculo ímpar da laringe, ligando as duas cartilagens diretamente. A parte ariepiglótica funciona como um esfíncter da entrada da laringe, importante na proteção contra a aspiração.",
+      "Exemplo de exercício": "Exercícios de fechamento glótico e de proteção da via aérea na reabilitação da disfagia, em contexto didático.",
+      "Palpação básica": "Não é palpável; avaliado por laringoscopia.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "hioide",
+      "cricoaritenoideo-lateral",
+      "cricoaritenoideo-posterior",
+      "tireoaritenoideo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "arytenoid",
+      "aritenóideo transverso",
+      "aritenóideo oblíquo",
+      "ariepiglótico",
+      "NC X"
+    ],
+    "modelIds": [
+      "ZA-aca66740b7e078",
+      "ZA-ad46dc5477484f",
+      "ZA-9e1e4ba8ec60e1"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Transverse arytenoid muscle",
+      "Ary-epiglottic part of oblique arytenoid muscle.l",
+      "Ary-epiglottic part of oblique arytenoid muscle.r"
+    ]
+  },
+  {
+    "id": "tireoaritenoideo",
+    "name": "Tireoaritenóideo",
+    "english": "thyroarytenoid",
+    "kind": "musculos",
+    "region": "Cabeça e pescoço",
+    "summary": "Forma o corpo da prega vocal; sua parte interna é o músculo vocal, que faz o ajuste fino do som.",
+    "fields": {
+      "Origem": "Face interna da cartilagem tireóidea, junto à proeminência laríngea.",
+      "Inserção": "Cartilagem aritenóidea. Sua parte medial e profunda, o músculo vocal, insere-se no processo vocal e forma o corpo da prega vocal.",
+      "Inervação": "Nervo laríngeo recorrente, do nervo vago (NC X).",
+      "Ação": "Encurta e relaxa as pregas vocais e ajusta sua tensão e espessura. A parte vocal faz o controle fino que modula o som, atuando em oposição ao cricotireóideo.",
+      "Na prática": "É o músculo que dá corpo à prega vocal e permite o controle fino da voz. Sua fadiga ou tensão excessiva participa dos distúrbios vocais de professores e cantores; sua atrofia, no idoso, deixa a voz fraca e soprosa, a presbifonia.",
+      "Grupo muscular": "Músculos intrínsecos da laringe; relaxadores e ajuste fino.",
+      "Plano e eixo": "Encurtamento das pregas vocais no plano sagital.",
+      "Sinergistas": "Cricoaritenóideo lateral e aritenóideos na adução.",
+      "Antagonistas": "Cricotireóideo, que alonga e tensiona as pregas vocais.",
+      "Observação funcional": "A parte medial, o músculo vocal, é a única do corpo capaz de mudar a própria rigidez segmento a segmento para afinar o som, o que dá à voz humana sua enorme gama de altura e timbre. É o alvo central da terapia vocal.",
+      "Exemplo de exercício": "Exercícios de trato vocal semiocluído, como o som em canudo, na terapia da voz, em contexto didático.",
+      "Palpação básica": "Não é palpável; avaliado por laringoscopia e análise da voz.",
+      "Localização": "Cabeça e pescoço",
+      "Camada de estudo": "Profunda"
+    },
+    "related": [
+      "hioide",
+      "cricotireoideo",
+      "cricoaritenoideo-lateral",
+      "aritenoideos",
+      "cricoaritenoideo-posterior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "thyroarytenoid",
+      "músculo vocal",
+      "vocalis",
+      "presbifonia",
+      "NC X"
+    ],
+    "modelIds": [
+      "ZA-b62e0f0be052fc",
+      "ZA-3c606501e3fc01",
+      "ZA-b8a521f62f63ec",
+      "ZA-6e5a1685144c68"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "External part of thyro-arytenoid muscle.l",
+      "External part of thyro-arytenoid muscle.r",
+      "Thyro-epiglottic part of thyro-arytenoid muscle.l",
+      "Thyro-epiglottic part of thyro-arytenoid muscle.r"
+    ]
   }
 ]
