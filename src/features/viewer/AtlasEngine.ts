@@ -118,6 +118,13 @@ export class AtlasEngine {
       this.events.view("livre");
     });
     this.controls.addEventListener('end', () => { this.interacting = false; });
+    // A rolagem do mouse é tratada dentro do próprio OrbitControls, que já chama
+    // update() e zera a escala antes do próximo quadro. O update() do loop então
+    // retornava false e o render sob demanda descartava o quadro — o zoom só
+    // aparecia no clique seguinte. Marcar como sujo a cada 'change' resolve.
+    this.controls.addEventListener("change", () => {
+      this.dirty = true;
+    });
     this.scene.add(new THREE.HemisphereLight(0xffffff, 0x777469, 2.4));
     const key = new THREE.DirectionalLight(0xfff8ee, 3.8);
     key.position.set(-2, 3, 4);
@@ -655,10 +662,13 @@ export class AtlasEngine {
       this.lastMechanicsReport=time;
     }
     const selected = this.state.selected ? byId[this.state.selected] : null;
-    const highlighted =
-      this.state.agonists && this.state.movement
-        ? this.state.movement.agonists
-        : [];
+    // Modo "papéis musculares": agonistas em rosa, antagonistas em azul, o
+    // resto da musculatura apagado. Deixar os dois grupos visíveis ao mesmo
+    // tempo é o que torna a dupla agonista/antagonista legível no modelo.
+    const roleMove =
+      this.state.agonists && this.state.movement ? this.state.movement : null;
+    const highlighted = roleMove ? roleMove.agonists : [];
+    const opposing = roleMove ? roleMove.antagonists : [];
     for (const mesh of this.meshes) {
       const s = byId[mesh.userData.structureId];
       let opacity = this.state.layers[s.kind] / 100;
@@ -671,6 +681,7 @@ export class AtlasEngine {
       if (this.state.transparent.includes(s.id)) opacity *= 0.15;
       const isSelected = s.id === selected?.id;
       const isAgonist = highlighted.includes(s.id);
+      const isAntagonist = opposing.includes(s.id);
       const relatedBone =
         selected?.kind === "articulacoes" &&
         selected.related.includes(s.id) &&
@@ -695,7 +706,7 @@ export class AtlasEngine {
       if ((selected?.kind === "nervos" || selected?.kind === "ligamentos") && s.kind === "articulacoes") opacity *= 0.12;
       if (selected?.kind === "ligamentos" && s.kind === "ossos") opacity *= 0.24;
       if (selected?.kind === "nervos" && s.kind === "ossos") opacity *= 0.5;
-      if (highlighted.length && s.kind === "musculos" && !isAgonist)
+      if (roleMove && s.kind === "musculos" && !isAgonist && !isAntagonist)
         opacity *= 0.12;
       if (this.state.movement && !this.state.agonists && this.state.motionMode === "bones")
         opacity =
@@ -709,10 +720,13 @@ export class AtlasEngine {
       }
       mesh.material.depthWrite = mesh.material.opacity > 0.8;
       mesh.visible = mesh.material.opacity > 0.015;
+      const roleHighlight =
+        isSelected || isAgonist || isAntagonist || relatedBone;
       const color =
-        (isSelected || isAgonist || relatedBone) &&
-        (!this.state.movement || this.state.agonists)
-          ? "#2a9e94"
+        roleHighlight && (!this.state.movement || this.state.agonists)
+          ? isAntagonist && !isSelected
+            ? "#4f88a6"
+            : "#d2749a"
           : colors[s.kind];
       mesh.material.color.set(color);
       const reading:TissueReading|null=mesh.userData.mechanicalReading;
@@ -720,7 +734,7 @@ export class AtlasEngine {
         const signal=reading.kind==='musculos'?reading.activation:reading.kind==='nervos'?reading.strain/0.1:reading.force/2;
         mesh.material.color.lerp(this.heatColor,THREE.MathUtils.clamp(signal,0,1));
       }
-      mesh.material.emissive.set(isSelected ? "#074e49" : "#000000");
+      mesh.material.emissive.set(isSelected ? "#4a1b2c" : "#000000");
       mesh.material.emissiveIntensity = isSelected ? 0.18 : 0;
     }
     if (this.targetCamera && this.targetLook) {

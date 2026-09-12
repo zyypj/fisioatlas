@@ -145,7 +145,7 @@ export default function JointLesson() {
       m.transparent = !!selected && !active;
       m.opacity = selected && !active ? 0.16 : 1;
       m.depthWrite = !m.transparent;
-      m.emissive.set(active && selected ? "#134a40" : "#000000");
+      m.emissive.set(active && selected ? "#4a1b2c" : "#000000");
     }
   }, [selected, ready]);
   return (

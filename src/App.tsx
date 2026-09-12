@@ -12,6 +12,7 @@ import {
   ChevronRight,
   CircleHelp,
   GraduationCap,
+  Heart,
   Layers3,
   Menu,
   Move3D,
@@ -233,6 +234,15 @@ export function AtlasApp() {
     };
     window.addEventListener("keydown", fn);
     return () => window.removeEventListener("keydown", fn);
+  }, []);
+  // Na primeira visita o tutorial abre sozinho: quem chega sem conhecer o atlas
+  // não tem como adivinhar o botão "?". Marcamos como visto na abertura, para
+  // que qualquer forma de fechar (Esc, backdrop, X) encerre de vez.
+  useEffect(() => {
+    if (!store.study.onboarded) {
+      setHelp(true);
+      store.onboard();
+    }
   }, []);
   const effectiveLayers = deepOnly ? { ...layers, musculos: 100 } : layers;
   const state: ViewerState = {
@@ -464,6 +474,13 @@ export function AtlasApp() {
           >
             <BookOpen size={16} /> Fontes e referências
           </button>
+          <p className="dedication">
+            <Heart size={13} fill="currentColor" />
+            <span>
+              Para <strong>Maria Vitória</strong>
+            </span>
+            <small>Feito com amor, por Samuel</small>
+          </p>
         </div>
       </aside>
       <main
@@ -978,11 +995,21 @@ export function AtlasApp() {
               </li>
             </ol>
             <div className="simple-box">
-              <span>PARA EXPLORAR</span>
+              <span>PARA EXPLORAR O MODELO</span>
               <p>
-                Arraste para girar; role para aproximar. Clique para abrir uma
-                ficha ou dê dois cliques para isolar. No teclado, use as setas
-                sobre o modelo, + / − para zoom e 0 para redefinir.
+                <b>Arraste</b> para girar · <b>role o mouse</b> para aproximar ·{" "}
+                <b>um clique</b> abre a ficha da estrutura · <b>dois cliques</b>{" "}
+                isolam ela do resto. No teclado: setas sobre o modelo, + / − para
+                zoom e 0 para voltar ao início.
+              </p>
+            </div>
+            <div className="simple-box">
+              <span>NO LABORATÓRIO DE MOVIMENTO</span>
+              <p>
+                Em <b>Movimentos</b>, escolha a articulação e o movimento, aperte
+                Reproduzir e arraste a linha do tempo para parar em qualquer
+                ângulo. O botão <b>Ver agonistas e antagonistas</b> pinta de rosa
+                quem produz o movimento e de azul quem o freia.
               </p>
             </div>
             <button

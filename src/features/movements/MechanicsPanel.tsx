@@ -67,8 +67,8 @@ export function MechanicsPanel({movement,options,report,active,onChange,onFocus}
         {reading.limited&&<p className="mechanics-limit" role="status">Fora da faixa didática adotada. As hipóteses ou o trajeto podem ser inadequados nesta posição; não interprete como limite de lesão.</p>}
         <figure className="mechanics-curve">
           <svg viewBox="0 0 280 128" role="img" aria-label={kind==='musculos'?'Curva força-comprimento em velocidade zero':kind==='nervos'?'Curva de alongamento residual após deslizamento':'Curva elástica força-alongamento'}>
-            <path d="M24 18V106H264" fill="none" stroke="#bdcdbf" />
-            <polyline points={points} fill="none" stroke="#287e79" strokeWidth="2.5" />
+            <path d="M24 18V106H264" fill="none" stroke="#edccd9" />
+            <polyline points={points} fill="none" stroke="#b04a72" strokeWidth="2.5" />
             <circle cx={dotX} cy={106-response(Math.min(xMax,Math.max(xMin,currentX)))/yMax*80} r="4" fill="#dc6248" />
             <text x="24" y="121">{kind==='musculos'?'0,5 Lótimo':'0'}</text><text x="212" y="121">{kind==='musculos'?'1,6 Lótimo':kind==='nervos'?'20 mm':'12%'}</text>
           </svg>

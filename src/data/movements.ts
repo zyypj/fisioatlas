@@ -641,4 +641,24 @@ export const terminology = [
     "Rotação do tronco",
     "Gira a região torácica em relação à pelve, principalmente no plano transversal.",
   ],
+  [
+    "Agonista",
+    "Músculo que produz o movimento: encurta em contração concêntrica e puxa o osso na direção desejada. Também chamado de motor primário.",
+  ],
+  [
+    "Antagonista",
+    "Músculo do lado oposto da articulação, que alonga enquanto o agonista encurta. Não se opõe ao movimento: freia-o, controla a velocidade e protege o fim da amplitude.",
+  ],
+  [
+    "Par agonista/antagonista",
+    "Os papéis são relativos ao movimento, não fixos ao músculo. No movimento inverso, os dois trocam de função — como bíceps e tríceps na flexão e na extensão do cotovelo.",
+  ],
+  [
+    "Sinergista",
+    "Músculo que auxilia o agonista, somando força ou anulando um componente indesejado do movimento.",
+  ],
+  [
+    "Fixador (estabilizador)",
+    "Músculo que estabiliza a origem do agonista para que a força se converta em movimento do segmento distal, e não da base.",
+  ],
 ];

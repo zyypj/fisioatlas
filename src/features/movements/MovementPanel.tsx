@@ -27,6 +27,15 @@ interface Props {
 }
 export function MovementPanel(p: Props) {
   const m = p.movement;
+  const nameOf = (id: string) => byId[id]?.name ?? id;
+  // Par recíproco: movimento da mesma articulação cujos agonistas são os
+  // antagonistas deste. É nele que os dois papéis se invertem.
+  const opposite = movements.find(
+    (x) =>
+      x.joint === m.joint &&
+      x.id !== m.id &&
+      x.agonists.some((id) => m.antagonists.includes(id)),
+  );
   return (
     <aside className="info-panel movement-panel">
       <span className="eyebrow">LABORATÓRIO DE MOVIMENTO</span>
@@ -142,6 +151,37 @@ export function MovementPanel(p: Props) {
           <output>{p.layers[kind as Kind]}%</output>
         </label>)}
       </fieldset>}
+      <div className="roles-box">
+        <span>AGONISTA × ANTAGONISTA</span>
+        <p>
+          <i className="role-dot agonist" />
+          <span>
+            O <strong>agonista</strong> é quem produz o movimento: ele encurta e
+            puxa o osso. Aqui, o principal é o <b>{nameOf(m.agonists[0])}</b>.
+          </span>
+        </p>
+        <p>
+          <i className="role-dot antagonist" />
+          <span>
+            O <strong>antagonista</strong> fica do lado oposto da articulação.
+            Ele alonga enquanto o outro encurta, freando o movimento e
+            controlando a velocidade até o fim da amplitude. Aqui, o{" "}
+            <b>{nameOf(m.antagonists[0])}</b>.
+          </span>
+        </p>
+        {opposite && (
+          <small>
+            Os papéis não são fixos:{" "}
+            <button
+              className="inline-link"
+              onClick={() => p.onMovement(opposite.id)}
+            >
+              veja a {opposite.name.toLowerCase()}
+            </button>{" "}
+            e eles se invertem — quem freava passa a puxar.
+          </small>
+        )}
+      </div>
       <button
         className={`secondary full ${p.agonists ? "selected" : ""}`}
         onClick={p.onAgonists}
@@ -149,10 +189,22 @@ export function MovementPanel(p: Props) {
         <Users size={16} />
         {p.agonists
           ? "Voltar ao movimento"
-          : "Mostre-me quem faz esse movimento"}
+          : "Ver agonistas e antagonistas no modelo"}
       </button>
+      {p.agonists && (
+        <p className="role-legend">
+          <span>
+            <i className="role-dot agonist" /> Agonistas
+          </span>
+          <span>
+            <i className="role-dot antagonist" /> Antagonistas
+          </span>
+        </p>
+      )}
       <section className="related">
-        <h3>Principais agonistas</h3>
+        <h3>
+          <i className="role-dot agonist" /> Agonistas — produzem o movimento
+        </h3>
         <div>
           {m.agonists.map((id) => (
             <button key={id} onClick={() => p.onSelect(id)}>
@@ -160,7 +212,10 @@ export function MovementPanel(p: Props) {
             </button>
           ))}
         </div>
-        <h3>Antagonistas</h3>
+        <h3>
+          <i className="role-dot antagonist" /> Antagonistas — freiam e
+          controlam
+        </h3>
         <div>
           {m.antagonists.map((id) => (
             <button key={id} onClick={() => p.onSelect(id)}>

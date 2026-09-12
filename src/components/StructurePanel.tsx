@@ -80,6 +80,10 @@ export function StructurePanel({ selected: s, ...p }: Props) {
   const relatedMoves = movements.filter(
     (m) => m.agonists.includes(s.id) || m.joint === s.id,
   );
+  // O papel é do músculo *naquele* movimento, não uma propriedade fixa dele:
+  // o mesmo músculo puxa num sentido e freia no sentido oposto.
+  const asAgonist = movements.filter((m) => m.agonists.includes(s.id));
+  const asAntagonist = movements.filter((m) => m.antagonists.includes(s.id));
   const fields = Object.entries(s.fields);
   const visible =
     tab === "detalhes"
@@ -227,6 +231,49 @@ export function StructurePanel({ selected: s, ...p }: Props) {
           </small>
         </div>
       )}
+      {s.kind === "musculos" && !!(asAgonist.length || asAntagonist.length) && (
+        <section className="related muscle-roles">
+          <h3>Papel no movimento</h3>
+          {!!asAgonist.length && (
+            <>
+              <p className="role-line">
+                <i className="role-dot agonist" />
+                <span>
+                  <strong>Agonista</strong> — encurta e produz:
+                </span>
+              </p>
+              <div>
+                {asAgonist.map((m) => (
+                  <button key={m.id} onClick={() => p.onMovement(m.id)}>
+                    {m.name} ▸
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+          {!!asAntagonist.length && (
+            <>
+              <p className="role-line">
+                <i className="role-dot antagonist" />
+                <span>
+                  <strong>Antagonista</strong> — alonga e freia:
+                </span>
+              </p>
+              <div>
+                {asAntagonist.map((m) => (
+                  <button key={m.id} onClick={() => p.onMovement(m.id)}>
+                    {m.name} ▸
+                  </button>
+                ))}
+              </div>
+            </>
+          )}
+          <small>
+            O papel não é fixo: o mesmo músculo puxa num sentido e freia no
+            sentido oposto.
+          </small>
+        </section>
+      )}
       {!!relatedMoves.length && (
         <div className="panel-actions">
           {relatedMoves.slice(0, 2).map((m) => (
@@ -312,7 +359,7 @@ function MouseAnatomy() {
         strokeWidth="1.5"
         strokeLinecap="round"
       />
-      <circle cx="34" cy="25" r="5" fill="#f2f7f4" stroke="currentColor" />
+      <circle cx="34" cy="25" r="5" fill="#fdf0f5" stroke="currentColor" />
     </svg>
   );
 }
