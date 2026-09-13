@@ -10,7 +10,11 @@ from collections import defaultdict
 ROOT=Path(__file__).resolve().parents[1];RAW=ROOT.parent/'scratch';DEST=ROOT/'public/models'
 mapping=json.loads((RAW/'z-mapping.json').read_text(encoding='utf8'))
 catalog=json.loads((ROOT/'src/data/structures.json').read_text(encoding='utf8'))
-bpy.ops.wm.open_mainfile(filepath=str(RAW/'z-anatomy/Z-Anatomy/Startup.blend'),load_ui=False,use_scripts=False)
+# Prefere o Startup-split.blend, que tem as malhas de grupo (interosseos, lumbricais)
+# separadas em musculos individuais por scripts/split_muscle_islands.py.
+_blend=RAW/'z-anatomy/Z-Anatomy/Startup-split.blend'
+if not _blend.exists():_blend=RAW/'z-anatomy/Z-Anatomy/Startup.blend'
+bpy.ops.wm.open_mainfile(filepath=str(_blend),load_ui=False,use_scripts=False)
 # Keep geometry modifiers, including thickness and curves. Cap display subdivision
 # only to preserve a practical interactive triangle budget.
 for o in bpy.data.objects:

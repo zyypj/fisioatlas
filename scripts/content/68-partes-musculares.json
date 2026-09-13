@@ -1,0 +1,260 @@
+{
+  "patches": [
+    {
+      "id": "trapezio",
+      "name": "Trapézio (visão geral)",
+      "summary": "Grande músculo da nuca e do dorso, com três porções de ação distinta: superior, média e inferior.",
+      "fields": {
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. As três porções têm a sua: abra o trapézio superior, médio e inferior para ver a orientação das fibras e a ação de cada uma."
+      },
+      "related": ["trapezio-superior", "trapezio-medio", "trapezio-inferior"],
+      "source_objects": []
+    },
+    {
+      "id": "deltoide",
+      "name": "Deltoide (visão geral)",
+      "summary": "Músculo do contorno do ombro, com três porções: anterior, média e posterior, cada uma com sua ação.",
+      "fields": {
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. As três porções têm a sua: abra o deltoide anterior, médio e posterior para comparar flexão, abdução e extensão."
+      },
+      "related": ["deltoide-anterior", "deltoide-medio", "deltoide-posterior"],
+      "source_objects": []
+    },
+    {
+      "id": "peitoral-maior",
+      "name": "Peitoral maior (visão geral)",
+      "summary": "Grande músculo do peito, com porção clavicular (superior) e esternocostal (inferior), de ações complementares.",
+      "fields": {
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. As porções têm a sua: abra o peitoral clavicular e o esternocostal para ver as fibras que sobem e as que descem o braço."
+      },
+      "related": ["peitoral-clavicular", "peitoral-esternocostal"],
+      "source_objects": []
+    }
+  ],
+  "new": [
+    {
+      "id": "trapezio-superior",
+      "name": "Trapézio superior (fibras descendentes)",
+      "english": "descending part of trapezius muscle",
+      "kind": "musculos",
+      "region": "Tronco",
+      "depth": "superficial",
+      "summary": "As fibras que 'encolhem o ombro'; elevam a escápula e ajudam na rotação superior.",
+      "fields": {
+        "Origem": "Protuberância occipital externa, linha nucal superior e ligamento nucal, até os processos espinhosos cervicais.",
+        "Inserção": "Terço lateral da clavícula.",
+        "Inervação": "Nervo acessório (XI), com aferências proprioceptivas de C3-C4.",
+        "Ação": "Eleva a escápula e contribui para a rotação superior da glenoide; estende e inclina a cabeça e o pescoço.",
+        "Na prática": "É a porção do 'encolher de ombros'. Vive tensa e encurtada em quem passa horas ao computador e na cervicalgia tensional; na discinesia escapular fica hiperativa enquanto o trapézio inferior está fraco. Reequilibrar os dois é a base da reabilitação do ritmo escapuloumeral.",
+        "Localização": "Nuca e borda superior do ombro",
+        "Camada de estudo": "superficial",
+        "Grupo muscular": "Cintura escapular (fixadores da escápula)",
+        "Plano e eixo": "Eleva a escápula no plano frontal e participa da rotação superior.",
+        "Sinergistas": "Levantador da escápula e rombóides (elevação); trapézio inferior e serrátil anterior (rotação superior).",
+        "Antagonistas": "Trapézio inferior e latíssimo do dorso (depressão da escápula).",
+        "Exemplo de exercício": "Encolhimento de ombros (shrug) e remada alta.",
+        "Palpação básica": "Palpável na borda superior do ombro, entre a nuca e o acrômio."
+      },
+      "related": ["trapezio", "occipital", "clavicula", "escapula", "ligamento-nucal", "levantador-da-escapula", "serratil-anterior"],
+      "sources": ["openstax-muscles", "z-anatomy"],
+      "aliases": ["trapézio descendente", "fibras superiores do trapézio", "upper trapezius"],
+      "source_objects": ["Descending part of trapezius muscle.l", "Descending part of trapezius muscle.r"]
+    },
+    {
+      "id": "trapezio-medio",
+      "name": "Trapézio médio (fibras transversas)",
+      "english": "transverse part of trapezius muscle",
+      "kind": "musculos",
+      "region": "Tronco",
+      "depth": "superficial",
+      "summary": "As fibras horizontais; principal retrator (adução) da escápula.",
+      "fields": {
+        "Origem": "Processos espinhosos de C7 a T3 e ligamento supraespinhoso.",
+        "Inserção": "Acrômio e borda superior da espinha da escápula.",
+        "Inervação": "Nervo acessório (XI).",
+        "Ação": "Retração (adução) da escápula, aproximando-a da coluna.",
+        "Na prática": "É o principal retrator escapular. Quando fraco e alongado, contribui para a postura de ombros protraídos e caídos; é alvo direto das remadas e do trabalho de estabilização da escápula na dor de ombro e de pescoço.",
+        "Localização": "Dorso superior, entre a coluna e a escápula",
+        "Camada de estudo": "superficial",
+        "Grupo muscular": "Cintura escapular (fixadores da escápula)",
+        "Plano e eixo": "Adução da escápula no plano horizontal.",
+        "Sinergistas": "Rombóides maior e menor; trapézio superior e inferior.",
+        "Antagonistas": "Serrátil anterior e peitoral menor (protração).",
+        "Exemplo de exercício": "Remada sentada e face pull.",
+        "Palpação básica": "Palpável entre a borda medial da escápula e a coluna torácica alta."
+      },
+      "related": ["trapezio", "escapula", "romboide-maior", "romboide-menor", "serratil-anterior"],
+      "sources": ["openstax-muscles", "z-anatomy"],
+      "aliases": ["trapézio transverso", "fibras médias do trapézio", "middle trapezius"],
+      "source_objects": ["Transverse part of trapezius muscle.l", "Transverse part of trapezius muscle.r"]
+    },
+    {
+      "id": "trapezio-inferior",
+      "name": "Trapézio inferior (fibras ascendentes)",
+      "english": "ascending part of trapezius muscle",
+      "kind": "musculos",
+      "region": "Tronco",
+      "depth": "superficial",
+      "summary": "As fibras que deprimem a escápula e são chave da rotação superior da glenoide.",
+      "fields": {
+        "Origem": "Processos espinhosos de T4 a T12.",
+        "Inserção": "Tubérculo na raiz medial da espinha da escápula.",
+        "Inervação": "Nervo acessório (XI).",
+        "Ação": "Deprime a escápula e é um dos principais rotadores superiores da glenoide, junto com o serrátil anterior.",
+        "Na prática": "Costuma estar fraco e inibido na dor de ombro, o que sobrecarrega o trapézio superior. Exercícios como o 'Y' no banco inclinado focam exatamente essa porção; a depressão ativa da escápula é peça central da reabilitação do impacto subacromial.",
+        "Localização": "Dorso médio, abaixo da escápula",
+        "Camada de estudo": "superficial",
+        "Grupo muscular": "Cintura escapular (fixadores da escápula)",
+        "Plano e eixo": "Deprime a escápula no plano frontal e participa da rotação superior.",
+        "Sinergistas": "Serrátil anterior (rotação superior); latíssimo do dorso (depressão).",
+        "Antagonistas": "Trapézio superior e levantador da escápula (elevação).",
+        "Exemplo de exercício": "Exercício em Y em prono ou no banco inclinado.",
+        "Palpação básica": "Palpável abaixo da espinha da escápula, sobre o dorso médio."
+      },
+      "related": ["trapezio", "escapula", "serratil-anterior", "latissimo-do-dorso"],
+      "sources": ["openstax-muscles", "z-anatomy"],
+      "aliases": ["trapézio ascendente", "fibras inferiores do trapézio", "lower trapezius"],
+      "source_objects": ["Ascending part of trapezius muscle.l", "Ascending part of trapezius muscle.r"]
+    },
+    {
+      "id": "deltoide-anterior",
+      "name": "Deltoide anterior (porção clavicular)",
+      "english": "clavicular part of deltoid muscle",
+      "kind": "musculos",
+      "region": "Ombro",
+      "depth": "superficial",
+      "summary": "A porção da frente do ombro; flete e roda o braço para dentro.",
+      "fields": {
+        "Origem": "Terço lateral da clavícula.",
+        "Inserção": "Tuberosidade deltoidea do úmero.",
+        "Inervação": "Nervo axilar (C5-C6).",
+        "Ação": "Flexão e rotação medial do ombro; adução horizontal.",
+        "Na prática": "É a porção trabalhada no desenvolvimento frontal e ativada no supino, como sinergista do peitoral na adução horizontal. Tende a ficar dominante em quem faz muito 'empurrar', desequilibrando com o deltoide posterior e favorecendo a anteriorização do ombro.",
+        "Localização": "Face anterior do ombro",
+        "Camada de estudo": "superficial",
+        "Grupo muscular": "Ombro (deltoide)",
+        "Plano e eixo": "Flexão no plano sagital; adução no plano horizontal.",
+        "Sinergistas": "Peitoral maior (porção clavicular), coracobraquial.",
+        "Antagonistas": "Deltoide posterior e latíssimo do dorso.",
+        "Exemplo de exercício": "Desenvolvimento frontal e elevação frontal.",
+        "Palpação básica": "Palpável na frente do ombro, logo abaixo da clavícula lateral."
+      },
+      "related": ["deltoide", "nervo-axilar", "clavicula", "umero", "peitoral-maior", "glenoumeral"],
+      "sources": ["openstax-muscles", "z-anatomy"],
+      "aliases": ["porção clavicular do deltoide", "deltoide clavicular", "anterior deltoid"],
+      "source_objects": ["Clavicular part of deltoid muscle.l", "Clavicular part of deltoid muscle.r"]
+    },
+    {
+      "id": "deltoide-medio",
+      "name": "Deltoide médio (porção acromial)",
+      "english": "acromial part of deltoid muscle",
+      "kind": "musculos",
+      "region": "Ombro",
+      "depth": "superficial",
+      "summary": "A porção lateral e mais volumosa; principal abdutora do ombro.",
+      "fields": {
+        "Origem": "Margem lateral e face superior do acrômio.",
+        "Inserção": "Tuberosidade deltoidea do úmero.",
+        "Inervação": "Nervo axilar (C5-C6).",
+        "Ação": "Abdução do ombro, sobretudo de cerca de 15° até acima de 90°.",
+        "Na prática": "Assume a abdução depois que o supraespinhoso inicia o movimento nos primeiros 15°. É multipenado, o que lhe dá força; a elevação lateral é seu exercício direto. A dor no arco de 60° a 120° costuma indicar impacto sob o acrômio, onde ele atua.",
+        "Localização": "Face lateral do ombro",
+        "Camada de estudo": "superficial",
+        "Grupo muscular": "Ombro (deltoide)",
+        "Plano e eixo": "Abdução no plano frontal.",
+        "Sinergistas": "Supraespinal (início da abdução).",
+        "Antagonistas": "Peitoral maior e latíssimo do dorso (adução).",
+        "Exemplo de exercício": "Elevação lateral.",
+        "Palpação básica": "Palpável na face lateral do ombro, abaixo do acrômio."
+      },
+      "related": ["deltoide", "nervo-axilar", "umero", "supraespinal", "glenoumeral"],
+      "sources": ["openstax-muscles", "z-anatomy"],
+      "aliases": ["porção acromial do deltoide", "deltoide lateral", "middle deltoid"],
+      "source_objects": ["Acromial part of deltoid muscle.l", "Acromial part of deltoid muscle.r"]
+    },
+    {
+      "id": "deltoide-posterior",
+      "name": "Deltoide posterior (porção espinal)",
+      "english": "scapular spinal part of deltoid muscle",
+      "kind": "musculos",
+      "region": "Ombro",
+      "depth": "superficial",
+      "summary": "A porção de trás do ombro; estende e roda o braço para fora.",
+      "fields": {
+        "Origem": "Espinha da escápula.",
+        "Inserção": "Tuberosidade deltoidea do úmero.",
+        "Inervação": "Nervo axilar (C5-C6).",
+        "Ação": "Extensão e rotação lateral do ombro; abdução horizontal.",
+        "Na prática": "Costuma ser a porção mais fraca e negligenciada. Fortalecê-la, com crucifixo invertido e face pull, equilibra o ombro dominado pelo 'empurrar', melhora a postura e protege o manguito rotador e a articulação glenoumeral.",
+        "Localização": "Face posterior do ombro",
+        "Camada de estudo": "superficial",
+        "Grupo muscular": "Ombro (deltoide)",
+        "Plano e eixo": "Extensão no plano sagital; abdução horizontal no plano transverso.",
+        "Sinergistas": "Infraespinhoso e redondo menor (rotação lateral e abdução horizontal).",
+        "Antagonistas": "Deltoide anterior e peitoral maior.",
+        "Exemplo de exercício": "Crucifixo invertido e face pull.",
+        "Palpação básica": "Palpável atrás do ombro, abaixo da espinha da escápula."
+      },
+      "related": ["deltoide", "nervo-axilar", "escapula", "umero", "glenoumeral"],
+      "sources": ["openstax-muscles", "z-anatomy"],
+      "aliases": ["porção espinal do deltoide", "deltoide posterior", "posterior deltoid"],
+      "source_objects": ["Scapular spinal part of deltoid muscle.l", "Scapular spinal part of deltoid muscle.r"]
+    },
+    {
+      "id": "peitoral-clavicular",
+      "name": "Peitoral maior — porção clavicular",
+      "english": "clavicular head of pectoralis major muscle",
+      "kind": "musculos",
+      "region": "Tronco",
+      "depth": "superficial",
+      "summary": "As fibras superiores do peito; levam o braço de baixo para cima.",
+      "fields": {
+        "Origem": "Metade medial da face anterior da clavícula.",
+        "Inserção": "Crista do tubérculo maior do úmero (lábio lateral do sulco intertubercular).",
+        "Inervação": "Nervo peitoral lateral (C5-C7).",
+        "Ação": "Flexão do ombro, adução horizontal e rotação medial; leva o braço de baixo para cima.",
+        "Na prática": "É a porção do supino inclinado. Como suas fibras sobem em direção ao ombro, respondem melhor a movimentos que elevam o braço à frente; costuma ficar menos desenvolvida em quem treina só supino reto.",
+        "Localização": "Parte superior do peito, abaixo da clavícula",
+        "Camada de estudo": "superficial",
+        "Grupo muscular": "Peito (peitoral maior)",
+        "Plano e eixo": "Flexão no plano sagital; adução no plano horizontal.",
+        "Sinergistas": "Deltoide anterior; coracobraquial.",
+        "Antagonistas": "Latíssimo do dorso e deltoide posterior.",
+        "Exemplo de exercício": "Supino inclinado e crucifixo inclinado.",
+        "Palpação básica": "Palpável na parte alta do peito, seguindo as fibras da clavícula ao ombro."
+      },
+      "related": ["peitoral-maior", "nervo-peitoral-lateral", "clavicula", "umero", "deltoide-anterior"],
+      "sources": ["openstax-muscles", "z-anatomy"],
+      "aliases": ["porção clavicular do peitoral", "peitoral superior", "upper chest"],
+      "source_objects": ["Clavicular head of pectoralis major muscle.l", "Clavicular head of pectoralis major muscle.r"]
+    },
+    {
+      "id": "peitoral-esternocostal",
+      "name": "Peitoral maior — porção esternocostal",
+      "english": "sternocostal head of pectoralis major muscle",
+      "kind": "musculos",
+      "region": "Tronco",
+      "depth": "superficial",
+      "summary": "A maior porção do peito, incluindo a parte abdominal; leva o braço de cima para baixo.",
+      "fields": {
+        "Origem": "Esterno, cartilagens costais da 1ª à 6ª e aponeurose do oblíquo externo do abdome (parte abdominal).",
+        "Inserção": "Crista do tubérculo maior do úmero; as fibras inferiores inserem-se mais acima, num arranjo torcido.",
+        "Inervação": "Nervos peitoral lateral e medial (C6-T1).",
+        "Ação": "Adução e rotação medial do braço; leva o braço de cima para baixo, estendendo-o a partir da flexão.",
+        "Na prática": "É a maior porção do peito, trabalhada no supino reto e nos crossovers de cima para baixo. A parte abdominal, das fibras mais baixas, ajuda na descida do braço e em gestos como o pullover e o arremesso.",
+        "Localização": "Parte média e inferior do peito",
+        "Camada de estudo": "superficial",
+        "Grupo muscular": "Peito (peitoral maior)",
+        "Plano e eixo": "Adução no plano horizontal; extensão a partir da flexão no plano sagital.",
+        "Sinergistas": "Latíssimo do dorso e redondo maior (extensão e adução); peitoral clavicular (adução horizontal).",
+        "Antagonistas": "Deltoide (abdução e flexão); trapézio.",
+        "Exemplo de exercício": "Supino reto, crossover descendente e mergulho nas paralelas.",
+        "Palpação básica": "Palpável no corpo do peito, das cartilagens costais e do esterno até a axila."
+      },
+      "related": ["peitoral-maior", "nervo-peitoral-lateral", "nervo-peitoral-medial", "esterno", "umero", "latissimo-do-dorso"],
+      "sources": ["openstax-muscles", "z-anatomy"],
+      "aliases": ["porção esternocostal do peitoral", "peitoral inferior", "parte abdominal do peitoral"],
+      "source_objects": ["Sternocostal head of pectoralis major muscle.l", "Sternocostal head of pectoralis major muscle.r", "(Abdominal part of pectoralis major muscle).l", "(Abdominal part of pectoralis major muscle).r"]
+    }
+  ]
+}

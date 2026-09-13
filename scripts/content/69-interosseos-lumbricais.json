@@ -1,0 +1,665 @@
+{
+  "patches": [
+    {
+      "id": "interosseos-dorsais-da-mao",
+      "name": "Interósseos dorsais da mão (visão geral)",
+      "summary": "Os quatro músculos que afastam os dedos (DAB); cada um tem ficha própria, do 1º ao 4º.",
+      "fields": {
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada interósseo dorsal tem a sua: abra do 1º ao 4º para ver de quais metacarpais nasce e qual dedo afasta."
+      },
+      "related": [
+        "primeiro-interosseo-dorsal-da-mao",
+        "segundo-interosseo-dorsal-da-mao",
+        "terceiro-interosseo-dorsal-da-mao",
+        "quarto-interosseo-dorsal-da-mao"
+      ],
+      "source_objects": []
+    },
+    {
+      "id": "lumbricais-da-mao",
+      "name": "Lumbricais da mão (visão geral)",
+      "summary": "Os quatro lumbricais; ligam os tendões flexores aos extensores e têm ficha própria, do 1º ao 4º.",
+      "fields": {
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada lumbrical tem a sua: abra do 1º ao 4º; lembre que os dois radiais são do mediano e os dois ulnares, do ulnar."
+      },
+      "related": [
+        "primeiro-lumbrical-da-mao",
+        "segundo-lumbrical-da-mao",
+        "terceiro-lumbrical-da-mao",
+        "quarto-lumbrical-da-mao"
+      ],
+      "source_objects": []
+    },
+    {
+      "id": "interosseos-dorsais-do-pe",
+      "name": "Interósseos dorsais do pé (visão geral)",
+      "summary": "Os quatro músculos que afastam os dedos do pé (DAB); cada um tem ficha própria, do 1º ao 4º.",
+      "fields": {
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada interósseo dorsal do pé tem a sua: abra do 1º ao 4º."
+      },
+      "related": [
+        "primeiro-interosseo-dorsal-do-pe",
+        "segundo-interosseo-dorsal-do-pe",
+        "terceiro-interosseo-dorsal-do-pe",
+        "quarto-interosseo-dorsal-do-pe"
+      ],
+      "source_objects": []
+    },
+    {
+      "id": "interosseos-plantares",
+      "name": "Interósseos plantares (visão geral)",
+      "summary": "Os três músculos que aproximam os dedos do pé (PAD); cada um tem ficha própria, do 1º ao 3º.",
+      "fields": {
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada interósseo plantar tem a sua: abra do 1º ao 3º."
+      },
+      "related": [
+        "primeiro-interosseo-plantar",
+        "segundo-interosseo-plantar",
+        "terceiro-interosseo-plantar"
+      ],
+      "source_objects": []
+    }
+  ],
+  "new": [
+    {
+      "id": "primeiro-interosseo-dorsal-da-mao",
+      "name": "1º interósseo dorsal da mão",
+      "english": "First dorsal interosseous of hand",
+      "kind": "musculos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "O maior e mais palpável dos interósseos; forma o relevo do primeiro espaço, entre o polegar e o indicador.",
+      "fields": {
+        "Origem": "Faces adjacentes do 1º e do 2º metacarpais (músculo bipenado).",
+        "Inserção": "Base da falange proximal do indicador, no lado radial, e capuz extensor.",
+        "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+        "Ação": "Abduz o indicador (lado radial), afastando-o do eixo da mão; auxilia a flexão da metacarpofalângica e a extensão das interfalângicas.",
+        "Na prática": "O maior e mais palpável dos interósseos; forma o relevo do primeiro espaço, entre o polegar e o indicador. Sua atrofia é o sinal mais precoce e visível de lesão do nervo ulnar, e ele participa da pinça, avaliada no sinal de Froment.",
+        "Localização": "Dorso da mão, entre os metacarpais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos da mão (interósseos dorsais)",
+        "Sinergistas": "Demais interósseos dorsais e lumbricais.",
+        "Antagonistas": "Interósseos palmares (adução dos dedos).",
+        "Exemplo de exercício": "Abrir os dedos contra a resistência de um elástico ao redor deles.",
+        "Palpação básica": "Palpável no dorso, no espaço entre os dois metacarpais de origem."
+      },
+      "related": [
+        "interosseos-dorsais-da-mao",
+        "nervo-ulnar",
+        "primeiro-metacarpal",
+        "segundo-metacarpal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "1º interósseo dorsal",
+        "DAB"
+      ],
+      "source_objects": [
+        "First dorsal interosseous of hand.l",
+        "First dorsal interosseous of hand.r"
+      ]
+    },
+    {
+      "id": "segundo-interosseo-dorsal-da-mao",
+      "name": "2º interósseo dorsal da mão",
+      "english": "Second dorsal interosseous of hand",
+      "kind": "musculos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "Afasta o dedo médio para o lado radial.",
+      "fields": {
+        "Origem": "Faces adjacentes do 2º e do 3º metacarpais (músculo bipenado).",
+        "Inserção": "Base da falange proximal do dedo médio, no lado radial, e capuz extensor.",
+        "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+        "Ação": "Abduz o dedo médio (lado radial), afastando-o do eixo da mão; auxilia a flexão da metacarpofalângica e a extensão das interfalângicas.",
+        "Na prática": "Afasta o dedo médio para o lado radial. Junto com os lumbricais faz o movimento intrínseco-plus, com a metacarpofalângica fletida e as interfalângicas estendidas.",
+        "Localização": "Dorso da mão, entre os metacarpais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos da mão (interósseos dorsais)",
+        "Sinergistas": "Demais interósseos dorsais e lumbricais.",
+        "Antagonistas": "Interósseos palmares (adução dos dedos).",
+        "Exemplo de exercício": "Abrir os dedos contra a resistência de um elástico ao redor deles.",
+        "Palpação básica": "Palpável no dorso, no espaço entre os dois metacarpais de origem."
+      },
+      "related": [
+        "interosseos-dorsais-da-mao",
+        "nervo-ulnar",
+        "segundo-metacarpal",
+        "terceiro-metacarpal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "2º interósseo dorsal",
+        "DAB"
+      ],
+      "source_objects": [
+        "Second dorsal interosseous of hand.l",
+        "Second dorsal interosseous of hand.r"
+      ]
+    },
+    {
+      "id": "terceiro-interosseo-dorsal-da-mao",
+      "name": "3º interósseo dorsal da mão",
+      "english": "Third dorsal interosseous of hand",
+      "kind": "musculos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "Afasta o dedo médio para o lado ulnar.",
+      "fields": {
+        "Origem": "Faces adjacentes do 3º e do 4º metacarpais (músculo bipenado).",
+        "Inserção": "Base da falange proximal do dedo médio, no lado ulnar, e capuz extensor.",
+        "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+        "Ação": "Abduz o dedo médio (lado ulnar), afastando-o do eixo da mão; auxilia a flexão da metacarpofalângica e a extensão das interfalângicas.",
+        "Na prática": "Afasta o dedo médio para o lado ulnar. A fraqueza dos interósseos, na lesão do ulnar, produz a garra e a dificuldade de abrir os dedos.",
+        "Localização": "Dorso da mão, entre os metacarpais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos da mão (interósseos dorsais)",
+        "Sinergistas": "Demais interósseos dorsais e lumbricais.",
+        "Antagonistas": "Interósseos palmares (adução dos dedos).",
+        "Exemplo de exercício": "Abrir os dedos contra a resistência de um elástico ao redor deles.",
+        "Palpação básica": "Palpável no dorso, no espaço entre os dois metacarpais de origem."
+      },
+      "related": [
+        "interosseos-dorsais-da-mao",
+        "nervo-ulnar",
+        "terceiro-metacarpal",
+        "quarto-metacarpal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "3º interósseo dorsal",
+        "DAB"
+      ],
+      "source_objects": [
+        "Third dorsal interosseous of hand.l",
+        "Third dorsal interosseous of hand.r"
+      ]
+    },
+    {
+      "id": "quarto-interosseo-dorsal-da-mao",
+      "name": "4º interósseo dorsal da mão",
+      "english": "Fourth dorsal interosseous of hand",
+      "kind": "musculos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "Afasta o dedo anelar para o lado ulnar.",
+      "fields": {
+        "Origem": "Faces adjacentes do 4º e do 5º metacarpais (músculo bipenado).",
+        "Inserção": "Base da falange proximal do dedo anelar, no lado ulnar, e capuz extensor.",
+        "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+        "Ação": "Abduz o dedo anelar (lado ulnar), afastando-o do eixo da mão; auxilia a flexão da metacarpofalângica e a extensão das interfalângicas.",
+        "Na prática": "Afasta o dedo anelar para o lado ulnar. Perde força cedo na neuropatia ulnar, contribuindo para a mão em garra.",
+        "Localização": "Dorso da mão, entre os metacarpais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos da mão (interósseos dorsais)",
+        "Sinergistas": "Demais interósseos dorsais e lumbricais.",
+        "Antagonistas": "Interósseos palmares (adução dos dedos).",
+        "Exemplo de exercício": "Abrir os dedos contra a resistência de um elástico ao redor deles.",
+        "Palpação básica": "Palpável no dorso, no espaço entre os dois metacarpais de origem."
+      },
+      "related": [
+        "interosseos-dorsais-da-mao",
+        "nervo-ulnar",
+        "quarto-metacarpal",
+        "quinto-metacarpal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "4º interósseo dorsal",
+        "DAB"
+      ],
+      "source_objects": [
+        "Fourth dorsal interosseous of hand.l",
+        "Fourth dorsal interosseous of hand.r"
+      ]
+    },
+    {
+      "id": "primeiro-lumbrical-da-mao",
+      "name": "1º lumbrical da mão",
+      "english": "First lumbrical of hand",
+      "kind": "musculos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever.",
+      "fields": {
+        "Origem": "Tendão do flexor profundo dos dedos destinado ao indicador, na palma (unipenado).",
+        "Inserção": "Lado radial do capuz extensor (aparelho extensor) do indicador.",
+        "Inervação": "Nervo mediano (C8-T1).",
+        "Ação": "Flete a metacarpofalângica e estende as interfalângicas do indicador.",
+        "Na prática": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever. Os dois radiais, do indicador e do médio, são inervados pelo mediano.",
+        "Localização": "Palma da mão, ao lado dos tendões flexores",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos da mão (lumbricais)",
+        "Sinergistas": "Interósseos (movimento intrínseco-plus).",
+        "Antagonistas": "Flexor profundo dos dedos (na flexão das interfalângicas).",
+        "Exemplo de exercício": "Fazer a 'garra invertida': dobrar só as metacarpofalângicas com os dedos retos.",
+        "Palpação básica": "Difícil de palpar isoladamente; profundo na palma, junto aos tendões flexores."
+      },
+      "related": [
+        "lumbricais-da-mao",
+        "flexor-profundo-dos-dedos",
+        "nervo-mediano"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "1º lumbrical"
+      ],
+      "source_objects": [
+        "First lumbrical of hand.l",
+        "First lumbrical of hand.r"
+      ]
+    },
+    {
+      "id": "segundo-lumbrical-da-mao",
+      "name": "2º lumbrical da mão",
+      "english": "Second lumbrical of hand",
+      "kind": "musculos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever.",
+      "fields": {
+        "Origem": "Tendão do flexor profundo dos dedos destinado ao dedo médio, na palma (unipenado).",
+        "Inserção": "Lado radial do capuz extensor (aparelho extensor) do dedo médio.",
+        "Inervação": "Nervo mediano (C8-T1).",
+        "Ação": "Flete a metacarpofalângica e estende as interfalângicas do dedo médio.",
+        "Na prática": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever. Os dois radiais, do indicador e do médio, são inervados pelo mediano.",
+        "Localização": "Palma da mão, ao lado dos tendões flexores",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos da mão (lumbricais)",
+        "Sinergistas": "Interósseos (movimento intrínseco-plus).",
+        "Antagonistas": "Flexor profundo dos dedos (na flexão das interfalângicas).",
+        "Exemplo de exercício": "Fazer a 'garra invertida': dobrar só as metacarpofalângicas com os dedos retos.",
+        "Palpação básica": "Difícil de palpar isoladamente; profundo na palma, junto aos tendões flexores."
+      },
+      "related": [
+        "lumbricais-da-mao",
+        "flexor-profundo-dos-dedos",
+        "nervo-mediano"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "2º lumbrical"
+      ],
+      "source_objects": [
+        "Second lumbrical of hand.l",
+        "Second lumbrical of hand.r"
+      ]
+    },
+    {
+      "id": "terceiro-lumbrical-da-mao",
+      "name": "3º lumbrical da mão",
+      "english": "Third lumbrical of hand",
+      "kind": "musculos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever.",
+      "fields": {
+        "Origem": "Tendão do flexor profundo dos dedos destinado ao dedo anelar, na palma (bipenado).",
+        "Inserção": "Lado radial do capuz extensor (aparelho extensor) do dedo anelar.",
+        "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+        "Ação": "Flete a metacarpofalângica e estende as interfalângicas do dedo anelar.",
+        "Na prática": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever. Os dois ulnares, do anelar e do mínimo, são inervados pelo ulnar, o que explica a garra parcial na lesão desse nervo.",
+        "Localização": "Palma da mão, ao lado dos tendões flexores",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos da mão (lumbricais)",
+        "Sinergistas": "Interósseos (movimento intrínseco-plus).",
+        "Antagonistas": "Flexor profundo dos dedos (na flexão das interfalângicas).",
+        "Exemplo de exercício": "Fazer a 'garra invertida': dobrar só as metacarpofalângicas com os dedos retos.",
+        "Palpação básica": "Difícil de palpar isoladamente; profundo na palma, junto aos tendões flexores."
+      },
+      "related": [
+        "lumbricais-da-mao",
+        "flexor-profundo-dos-dedos",
+        "nervo-ulnar"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "3º lumbrical"
+      ],
+      "source_objects": [
+        "Third lumbrical of hand.l",
+        "Third lumbrical of hand.r"
+      ]
+    },
+    {
+      "id": "quarto-lumbrical-da-mao",
+      "name": "4º lumbrical da mão",
+      "english": "Fourth lumbrical of hand",
+      "kind": "musculos",
+      "region": "Mão",
+      "depth": "profunda",
+      "summary": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever.",
+      "fields": {
+        "Origem": "Tendão do flexor profundo dos dedos destinado ao dedo mínimo, na palma (bipenado).",
+        "Inserção": "Lado radial do capuz extensor (aparelho extensor) do dedo mínimo.",
+        "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+        "Ação": "Flete a metacarpofalângica e estende as interfalângicas do dedo mínimo.",
+        "Na prática": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever. Os dois ulnares, do anelar e do mínimo, são inervados pelo ulnar, o que explica a garra parcial na lesão desse nervo.",
+        "Localização": "Palma da mão, ao lado dos tendões flexores",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos da mão (lumbricais)",
+        "Sinergistas": "Interósseos (movimento intrínseco-plus).",
+        "Antagonistas": "Flexor profundo dos dedos (na flexão das interfalângicas).",
+        "Exemplo de exercício": "Fazer a 'garra invertida': dobrar só as metacarpofalângicas com os dedos retos.",
+        "Palpação básica": "Difícil de palpar isoladamente; profundo na palma, junto aos tendões flexores."
+      },
+      "related": [
+        "lumbricais-da-mao",
+        "flexor-profundo-dos-dedos",
+        "nervo-ulnar"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "4º lumbrical"
+      ],
+      "source_objects": [
+        "Fourth lumbrical of hand.l",
+        "Fourth lumbrical of hand.r"
+      ]
+    },
+    {
+      "id": "primeiro-interosseo-dorsal-do-pe",
+      "name": "1º interósseo dorsal do pé",
+      "english": "First dorsal interosseous of foot",
+      "kind": "musculos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio.",
+      "fields": {
+        "Origem": "Faces adjacentes do 1º e do 2º metatarsais (bipenado).",
+        "Inserção": "Base da falange proximal do 2º dedo, no lado medial, e expansão extensora.",
+        "Inervação": "Nervo plantar lateral (S2-S3); o 1º e o 2º recebem também ramos do nervo fibular profundo.",
+        "Ação": "Abduz o 2º dedo em relação ao eixo do 2º dedo; flete a metatarsofalângica e ajuda a estabilizar o antepé.",
+        "Na prática": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio. Trabalham com os lumbricais e os interósseos plantares para segurar os dedos no chão; sua fraqueza acompanha os dedos em garra.",
+        "Localização": "Dorso do pé, entre os metatarsais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos do pé (interósseos dorsais)",
+        "Sinergistas": "Lumbricais do pé e interósseos plantares.",
+        "Antagonistas": "Interósseos plantares (adução dos dedos).",
+        "Exemplo de exercício": "Afastar os dedos do pé no chão, treino de controle intrínseco.",
+        "Palpação básica": "Palpável no dorso do pé, no espaço entre os metatarsais de origem."
+      },
+      "related": [
+        "interosseos-dorsais-do-pe",
+        "nervo-plantar-lateral",
+        "primeiro-metatarsal",
+        "segundo-metatarsal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "1º interósseo dorsal do pé"
+      ],
+      "source_objects": [
+        "First dorsal interosseous of foot.l",
+        "First dorsal interosseous of foot.r"
+      ]
+    },
+    {
+      "id": "segundo-interosseo-dorsal-do-pe",
+      "name": "2º interósseo dorsal do pé",
+      "english": "Second dorsal interosseous of foot",
+      "kind": "musculos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio.",
+      "fields": {
+        "Origem": "Faces adjacentes do 2º e do 3º metatarsais (bipenado).",
+        "Inserção": "Base da falange proximal do 2º dedo, no lado lateral, e expansão extensora.",
+        "Inervação": "Nervo plantar lateral (S2-S3); o 1º e o 2º recebem também ramos do nervo fibular profundo.",
+        "Ação": "Abduz o 2º dedo em relação ao eixo do 2º dedo; flete a metatarsofalângica e ajuda a estabilizar o antepé.",
+        "Na prática": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio. Trabalham com os lumbricais e os interósseos plantares para segurar os dedos no chão; sua fraqueza acompanha os dedos em garra.",
+        "Localização": "Dorso do pé, entre os metatarsais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos do pé (interósseos dorsais)",
+        "Sinergistas": "Lumbricais do pé e interósseos plantares.",
+        "Antagonistas": "Interósseos plantares (adução dos dedos).",
+        "Exemplo de exercício": "Afastar os dedos do pé no chão, treino de controle intrínseco.",
+        "Palpação básica": "Palpável no dorso do pé, no espaço entre os metatarsais de origem."
+      },
+      "related": [
+        "interosseos-dorsais-do-pe",
+        "nervo-plantar-lateral",
+        "segundo-metatarsal",
+        "terceiro-metatarsal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "2º interósseo dorsal do pé"
+      ],
+      "source_objects": [
+        "Second dorsal interosseous of foot.l",
+        "Second dorsal interosseous of foot.r"
+      ]
+    },
+    {
+      "id": "terceiro-interosseo-dorsal-do-pe",
+      "name": "3º interósseo dorsal do pé",
+      "english": "Third dorsal interosseous of foot",
+      "kind": "musculos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio.",
+      "fields": {
+        "Origem": "Faces adjacentes do 3º e do 4º metatarsais (bipenado).",
+        "Inserção": "Base da falange proximal do 3º dedo, no lado lateral, e expansão extensora.",
+        "Inervação": "Nervo plantar lateral (S2-S3); o 1º e o 2º recebem também ramos do nervo fibular profundo.",
+        "Ação": "Abduz o 3º dedo em relação ao eixo do 2º dedo; flete a metatarsofalângica e ajuda a estabilizar o antepé.",
+        "Na prática": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio. Trabalham com os lumbricais e os interósseos plantares para segurar os dedos no chão; sua fraqueza acompanha os dedos em garra.",
+        "Localização": "Dorso do pé, entre os metatarsais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos do pé (interósseos dorsais)",
+        "Sinergistas": "Lumbricais do pé e interósseos plantares.",
+        "Antagonistas": "Interósseos plantares (adução dos dedos).",
+        "Exemplo de exercício": "Afastar os dedos do pé no chão, treino de controle intrínseco.",
+        "Palpação básica": "Palpável no dorso do pé, no espaço entre os metatarsais de origem."
+      },
+      "related": [
+        "interosseos-dorsais-do-pe",
+        "nervo-plantar-lateral",
+        "terceiro-metatarsal",
+        "quarto-metatarsal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "3º interósseo dorsal do pé"
+      ],
+      "source_objects": [
+        "Third dorsal interosseous of foot.l",
+        "Third dorsal interosseous of foot.r"
+      ]
+    },
+    {
+      "id": "quarto-interosseo-dorsal-do-pe",
+      "name": "4º interósseo dorsal do pé",
+      "english": "Fourth dorsal interosseous of foot",
+      "kind": "musculos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio.",
+      "fields": {
+        "Origem": "Faces adjacentes do 4º e do 5º metatarsais (bipenado).",
+        "Inserção": "Base da falange proximal do 4º dedo, no lado lateral, e expansão extensora.",
+        "Inervação": "Nervo plantar lateral (S2-S3); o 1º e o 2º recebem também ramos do nervo fibular profundo.",
+        "Ação": "Abduz o 4º dedo em relação ao eixo do 2º dedo; flete a metatarsofalângica e ajuda a estabilizar o antepé.",
+        "Na prática": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio. Trabalham com os lumbricais e os interósseos plantares para segurar os dedos no chão; sua fraqueza acompanha os dedos em garra.",
+        "Localização": "Dorso do pé, entre os metatarsais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos do pé (interósseos dorsais)",
+        "Sinergistas": "Lumbricais do pé e interósseos plantares.",
+        "Antagonistas": "Interósseos plantares (adução dos dedos).",
+        "Exemplo de exercício": "Afastar os dedos do pé no chão, treino de controle intrínseco.",
+        "Palpação básica": "Palpável no dorso do pé, no espaço entre os metatarsais de origem."
+      },
+      "related": [
+        "interosseos-dorsais-do-pe",
+        "nervo-plantar-lateral",
+        "quarto-metatarsal",
+        "quinto-metatarsal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "4º interósseo dorsal do pé"
+      ],
+      "source_objects": [
+        "Fourth dorsal interosseous of foot.l",
+        "Fourth dorsal interosseous of foot.r"
+      ]
+    },
+    {
+      "id": "primeiro-interosseo-plantar",
+      "name": "1º interósseo plantar",
+      "english": "First plantar interosseous",
+      "kind": "musculos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas.",
+      "fields": {
+        "Origem": "Base e face medial do 3º metatarsal (unipenado).",
+        "Inserção": "Lado medial da base da falange proximal do 3º dedo e expansão extensora.",
+        "Inervação": "Nervo plantar lateral (S2-S3).",
+        "Ação": "Aduz o 3º dedo em direção ao eixo do 2º dedo; flete a metatarsofalângica.",
+        "Na prática": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas. Junto com os interósseos dorsais formam o controle fino do antepé; a perda desse controle está por trás dos dedos em garra e em martelo.",
+        "Localização": "Face plantar do antepé, entre os metatarsais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos do pé (interósseos plantares)",
+        "Sinergistas": "Demais interósseos plantares.",
+        "Antagonistas": "Interósseos dorsais do pé (abdução dos dedos).",
+        "Exemplo de exercício": "Juntar os dedos do pé, aproximando-os, no chão.",
+        "Palpação básica": "Muito profundo; não é palpável isoladamente na planta."
+      },
+      "related": [
+        "interosseos-plantares",
+        "nervo-plantar-lateral",
+        "terceiro-metatarsal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "1º interósseo plantar",
+        "PAD"
+      ],
+      "source_objects": [
+        "First plantar interosseous.l",
+        "First plantar interosseous.r"
+      ]
+    },
+    {
+      "id": "segundo-interosseo-plantar",
+      "name": "2º interósseo plantar",
+      "english": "Second plantar interosseous",
+      "kind": "musculos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas.",
+      "fields": {
+        "Origem": "Base e face medial do 4º metatarsal (unipenado).",
+        "Inserção": "Lado medial da base da falange proximal do 4º dedo e expansão extensora.",
+        "Inervação": "Nervo plantar lateral (S2-S3).",
+        "Ação": "Aduz o 4º dedo em direção ao eixo do 2º dedo; flete a metatarsofalângica.",
+        "Na prática": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas. Junto com os interósseos dorsais formam o controle fino do antepé; a perda desse controle está por trás dos dedos em garra e em martelo.",
+        "Localização": "Face plantar do antepé, entre os metatarsais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos do pé (interósseos plantares)",
+        "Sinergistas": "Demais interósseos plantares.",
+        "Antagonistas": "Interósseos dorsais do pé (abdução dos dedos).",
+        "Exemplo de exercício": "Juntar os dedos do pé, aproximando-os, no chão.",
+        "Palpação básica": "Muito profundo; não é palpável isoladamente na planta."
+      },
+      "related": [
+        "interosseos-plantares",
+        "nervo-plantar-lateral",
+        "quarto-metatarsal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "2º interósseo plantar",
+        "PAD"
+      ],
+      "source_objects": [
+        "Second plantar interosseous.l",
+        "Second plantar interosseous.r"
+      ]
+    },
+    {
+      "id": "terceiro-interosseo-plantar",
+      "name": "3º interósseo plantar",
+      "english": "Third plantar interosseous",
+      "kind": "musculos",
+      "region": "Pé",
+      "depth": "profunda",
+      "summary": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas.",
+      "fields": {
+        "Origem": "Base e face medial do 5º metatarsal (unipenado).",
+        "Inserção": "Lado medial da base da falange proximal do 5º dedo e expansão extensora.",
+        "Inervação": "Nervo plantar lateral (S2-S3).",
+        "Ação": "Aduz o 5º dedo em direção ao eixo do 2º dedo; flete a metatarsofalângica.",
+        "Na prática": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas. Junto com os interósseos dorsais formam o controle fino do antepé; a perda desse controle está por trás dos dedos em garra e em martelo.",
+        "Localização": "Face plantar do antepé, entre os metatarsais",
+        "Camada de estudo": "profunda",
+        "Grupo muscular": "Intrínsecos do pé (interósseos plantares)",
+        "Sinergistas": "Demais interósseos plantares.",
+        "Antagonistas": "Interósseos dorsais do pé (abdução dos dedos).",
+        "Exemplo de exercício": "Juntar os dedos do pé, aproximando-os, no chão.",
+        "Palpação básica": "Muito profundo; não é palpável isoladamente na planta."
+      },
+      "related": [
+        "interosseos-plantares",
+        "nervo-plantar-lateral",
+        "quinto-metatarsal"
+      ],
+      "sources": [
+        "openstax-muscles",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "3º interósseo plantar",
+        "PAD"
+      ],
+      "source_objects": [
+        "Third plantar interosseous.l",
+        "Third plantar interosseous.r"
+      ]
+    }
+  ]
+}

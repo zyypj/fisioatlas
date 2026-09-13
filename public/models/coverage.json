@@ -1,23 +1,9 @@
 {
   "deltoide": {
-    "name": "Deltoide",
+    "name": "Deltoide (visão geral)",
     "kind": "musculos",
-    "sourceObjects": [
-      "Acromial part of deltoid muscle.l",
-      "Acromial part of deltoid muscle.r",
-      "Clavicular part of deltoid muscle.l",
-      "Clavicular part of deltoid muscle.r",
-      "Scapular spinal part of deltoid muscle.l",
-      "Scapular spinal part of deltoid muscle.r"
-    ],
-    "modelIds": [
-      "ZA-b74d57488cede4",
-      "ZA-dfbfb91949824f",
-      "ZA-50e681ac8f5124",
-      "ZA-bc88f0f42d616e",
-      "ZA-0378b861a51baf",
-      "ZA-3d3652cd3db07f"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "supraespinal": {
     "name": "Supraespinal",
@@ -316,24 +302,10 @@
     ]
   },
   "trapezio": {
-    "name": "Trapézio",
+    "name": "Trapézio (visão geral)",
     "kind": "musculos",
-    "sourceObjects": [
-      "Ascending part of trapezius muscle.l",
-      "Ascending part of trapezius muscle.r",
-      "Descending part of trapezius muscle.l",
-      "Descending part of trapezius muscle.r",
-      "Transverse part of trapezius muscle.l",
-      "Transverse part of trapezius muscle.r"
-    ],
-    "modelIds": [
-      "ZA-03d11aa52a6f36",
-      "ZA-70cdd4466a0d05",
-      "ZA-6b8257bf0a5d54",
-      "ZA-2ba0b1feac685b",
-      "ZA-053d1ef6d803ef",
-      "ZA-a8729a66ef5355"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "serratil-anterior": {
     "name": "Serrátil anterior",
@@ -348,24 +320,10 @@
     ]
   },
   "peitoral-maior": {
-    "name": "Peitoral maior",
+    "name": "Peitoral maior (visão geral)",
     "kind": "musculos",
-    "sourceObjects": [
-      "(Abdominal part of pectoralis major muscle).l",
-      "(Abdominal part of pectoralis major muscle).r",
-      "Clavicular head of pectoralis major muscle.l",
-      "Clavicular head of pectoralis major muscle.r",
-      "Sternocostal head of pectoralis major muscle.l",
-      "Sternocostal head of pectoralis major muscle.r"
-    ],
-    "modelIds": [
-      "ZA-2b3e1cd7bf55f6",
-      "ZA-5b6bc3c090d774",
-      "ZA-3c0a9b09661fd7",
-      "ZA-9ac365e0905b0b",
-      "ZA-ef066e3635be03",
-      "ZA-33f3d0951bf3f4"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "peitoral-menor": {
     "name": "Peitoral menor",
@@ -3720,28 +3678,16 @@
     ]
   },
   "interosseos-dorsais-do-pe": {
-    "name": "Interósseos dorsais do pé",
+    "name": "Interósseos dorsais do pé (visão geral)",
     "kind": "musculos",
-    "sourceObjects": [
-      "Dorsal interossei muscles of foot.l",
-      "Dorsal interossei muscles of foot.r"
-    ],
-    "modelIds": [
-      "ZA-a0c8f206d41e20",
-      "ZA-0d74f095aecd6a"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "interosseos-plantares": {
-    "name": "Interósseos plantares",
+    "name": "Interósseos plantares (visão geral)",
     "kind": "musculos",
-    "sourceObjects": [
-      "Plantar interossei muscles.l",
-      "Plantar interossei muscles.r"
-    ],
-    "modelIds": [
-      "ZA-9428c9257edb40",
-      "ZA-a62fc8e97c7e93"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "aponeurose-plantar": {
     "name": "Aponeurose plantar",
@@ -4120,28 +4066,16 @@
     ]
   },
   "lumbricais-da-mao": {
-    "name": "Lumbricais da mão",
+    "name": "Lumbricais da mão (visão geral)",
     "kind": "musculos",
-    "sourceObjects": [
-      "Lumbrical muscles of hand.l",
-      "Lumbrical muscles of hand.r"
-    ],
-    "modelIds": [
-      "ZA-435ad9b7eb2c63",
-      "ZA-b6ef88b93cc825"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "interosseos-dorsais-da-mao": {
-    "name": "Interósseos dorsais da mão",
+    "name": "Interósseos dorsais da mão (visão geral)",
     "kind": "musculos",
-    "sourceObjects": [
-      "Dorsal interossei muscles of hand.l",
-      "Dorsal interossei muscles of hand.r"
-    ],
-    "modelIds": [
-      "ZA-744f36fb8914c1",
-      "ZA-abc9c249e1304a"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "interosseos-palmares": {
     "name": "Interósseos palmares",
@@ -7243,6 +7177,286 @@
     "modelIds": [
       "ZA-0c8d46736cd0d0",
       "ZA-01e1daf784598d"
+    ]
+  },
+  "trapezio-superior": {
+    "name": "Trapézio superior (fibras descendentes)",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Descending part of trapezius muscle.l",
+      "Descending part of trapezius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-6b8257bf0a5d54",
+      "ZA-2ba0b1feac685b"
+    ]
+  },
+  "trapezio-medio": {
+    "name": "Trapézio médio (fibras transversas)",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Transverse part of trapezius muscle.l",
+      "Transverse part of trapezius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-053d1ef6d803ef",
+      "ZA-a8729a66ef5355"
+    ]
+  },
+  "trapezio-inferior": {
+    "name": "Trapézio inferior (fibras ascendentes)",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Ascending part of trapezius muscle.l",
+      "Ascending part of trapezius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-03d11aa52a6f36",
+      "ZA-70cdd4466a0d05"
+    ]
+  },
+  "deltoide-anterior": {
+    "name": "Deltoide anterior (porção clavicular)",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Clavicular part of deltoid muscle.l",
+      "Clavicular part of deltoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-50e681ac8f5124",
+      "ZA-bc88f0f42d616e"
+    ]
+  },
+  "deltoide-medio": {
+    "name": "Deltoide médio (porção acromial)",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Acromial part of deltoid muscle.l",
+      "Acromial part of deltoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-b74d57488cede4",
+      "ZA-dfbfb91949824f"
+    ]
+  },
+  "deltoide-posterior": {
+    "name": "Deltoide posterior (porção espinal)",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Scapular spinal part of deltoid muscle.l",
+      "Scapular spinal part of deltoid muscle.r"
+    ],
+    "modelIds": [
+      "ZA-0378b861a51baf",
+      "ZA-3d3652cd3db07f"
+    ]
+  },
+  "peitoral-clavicular": {
+    "name": "Peitoral maior — porção clavicular",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Clavicular head of pectoralis major muscle.l",
+      "Clavicular head of pectoralis major muscle.r"
+    ],
+    "modelIds": [
+      "ZA-3c0a9b09661fd7",
+      "ZA-9ac365e0905b0b"
+    ]
+  },
+  "peitoral-esternocostal": {
+    "name": "Peitoral maior — porção esternocostal",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Sternocostal head of pectoralis major muscle.l",
+      "Sternocostal head of pectoralis major muscle.r",
+      "(Abdominal part of pectoralis major muscle).l",
+      "(Abdominal part of pectoralis major muscle).r"
+    ],
+    "modelIds": [
+      "ZA-ef066e3635be03",
+      "ZA-33f3d0951bf3f4",
+      "ZA-2b3e1cd7bf55f6",
+      "ZA-5b6bc3c090d774"
+    ]
+  },
+  "primeiro-interosseo-dorsal-da-mao": {
+    "name": "1º interósseo dorsal da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "First dorsal interosseous of hand.l",
+      "First dorsal interosseous of hand.r"
+    ],
+    "modelIds": [
+      "ZA-2abbab9ae24d13",
+      "ZA-ede6436d94642e"
+    ]
+  },
+  "segundo-interosseo-dorsal-da-mao": {
+    "name": "2º interósseo dorsal da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Second dorsal interosseous of hand.l",
+      "Second dorsal interosseous of hand.r"
+    ],
+    "modelIds": [
+      "ZA-c94c101633f85c",
+      "ZA-8c6834c0e42001"
+    ]
+  },
+  "terceiro-interosseo-dorsal-da-mao": {
+    "name": "3º interósseo dorsal da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Third dorsal interosseous of hand.l",
+      "Third dorsal interosseous of hand.r"
+    ],
+    "modelIds": [
+      "ZA-0dbbc36b8ecbab",
+      "ZA-9471f6174e75a8"
+    ]
+  },
+  "quarto-interosseo-dorsal-da-mao": {
+    "name": "4º interósseo dorsal da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Fourth dorsal interosseous of hand.l",
+      "Fourth dorsal interosseous of hand.r"
+    ],
+    "modelIds": [
+      "ZA-a64f1f109647b0",
+      "ZA-9324d5d496ac77"
+    ]
+  },
+  "primeiro-lumbrical-da-mao": {
+    "name": "1º lumbrical da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "First lumbrical of hand.l",
+      "First lumbrical of hand.r"
+    ],
+    "modelIds": [
+      "ZA-4bc93b881bb3c6",
+      "ZA-29e7f1bd7335f0"
+    ]
+  },
+  "segundo-lumbrical-da-mao": {
+    "name": "2º lumbrical da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Second lumbrical of hand.l",
+      "Second lumbrical of hand.r"
+    ],
+    "modelIds": [
+      "ZA-cee40496dfe6e5",
+      "ZA-4c10b8c4af8581"
+    ]
+  },
+  "terceiro-lumbrical-da-mao": {
+    "name": "3º lumbrical da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Third lumbrical of hand.l",
+      "Third lumbrical of hand.r"
+    ],
+    "modelIds": [
+      "ZA-73ab1128adf0d3",
+      "ZA-6de28805b2d459"
+    ]
+  },
+  "quarto-lumbrical-da-mao": {
+    "name": "4º lumbrical da mão",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Fourth lumbrical of hand.l",
+      "Fourth lumbrical of hand.r"
+    ],
+    "modelIds": [
+      "ZA-74696d51adc2ed",
+      "ZA-4a9fb7e91a34a4"
+    ]
+  },
+  "primeiro-interosseo-dorsal-do-pe": {
+    "name": "1º interósseo dorsal do pé",
+    "kind": "musculos",
+    "sourceObjects": [
+      "First dorsal interosseous of foot.l",
+      "First dorsal interosseous of foot.r"
+    ],
+    "modelIds": [
+      "ZA-9c849d1550adeb",
+      "ZA-23986f2edee313"
+    ]
+  },
+  "segundo-interosseo-dorsal-do-pe": {
+    "name": "2º interósseo dorsal do pé",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Second dorsal interosseous of foot.l",
+      "Second dorsal interosseous of foot.r"
+    ],
+    "modelIds": [
+      "ZA-2e47ca755f1fc7",
+      "ZA-d21f187889fbee"
+    ]
+  },
+  "terceiro-interosseo-dorsal-do-pe": {
+    "name": "3º interósseo dorsal do pé",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Third dorsal interosseous of foot.l",
+      "Third dorsal interosseous of foot.r"
+    ],
+    "modelIds": [
+      "ZA-2cb34041238837",
+      "ZA-a3a311144e35c3"
+    ]
+  },
+  "quarto-interosseo-dorsal-do-pe": {
+    "name": "4º interósseo dorsal do pé",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Fourth dorsal interosseous of foot.l",
+      "Fourth dorsal interosseous of foot.r"
+    ],
+    "modelIds": [
+      "ZA-0b7ac2d8a1e19f",
+      "ZA-5405ddc2ae9311"
+    ]
+  },
+  "primeiro-interosseo-plantar": {
+    "name": "1º interósseo plantar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "First plantar interosseous.l",
+      "First plantar interosseous.r"
+    ],
+    "modelIds": [
+      "ZA-7715e7f5b3d20f",
+      "ZA-bb5dba814eb4ac"
+    ]
+  },
+  "segundo-interosseo-plantar": {
+    "name": "2º interósseo plantar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Second plantar interosseous.l",
+      "Second plantar interosseous.r"
+    ],
+    "modelIds": [
+      "ZA-f036a69551ed86",
+      "ZA-b833c2cbff00f9"
+    ]
+  },
+  "terceiro-interosseo-plantar": {
+    "name": "3º interósseo plantar",
+    "kind": "musculos",
+    "sourceObjects": [
+      "Third plantar interosseous.l",
+      "Third plantar interosseous.r"
+    ],
+    "modelIds": [
+      "ZA-6aa20717b412bb",
+      "ZA-965ff35d9cb18e"
     ]
   }
 }

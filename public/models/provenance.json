@@ -5,8 +5,8 @@
     {
       "kind": "musculos",
       "url": "/models/z-musculos.glb",
-      "bytes": 13065548,
-      "meshes": 466
+      "bytes": 13099044,
+      "meshes": 488
     },
     {
       "kind": "ossos",
@@ -40,6 +40,18 @@
     }
   ],
   "unmapped": [
+    [
+      "Deltoide (visão geral)",
+      "deltoid"
+    ],
+    [
+      "Trapézio (visão geral)",
+      "trapezius"
+    ],
+    [
+      "Peitoral maior (visão geral)",
+      "pectoralis major"
+    ],
     [
       "Vértebras cervicais (visão geral)",
       "cervical vertebra"
@@ -87,6 +99,22 @@
     [
       "Nervo glúteo inferior",
       "inferior gluteal nerve"
+    ],
+    [
+      "Interósseos dorsais do pé (visão geral)",
+      "dorsal interossei of foot"
+    ],
+    [
+      "Interósseos plantares (visão geral)",
+      "plantar interossei"
+    ],
+    [
+      "Lumbricais da mão (visão geral)",
+      "lumbrical muscles of hand"
+    ],
+    [
+      "Interósseos dorsais da mão (visão geral)",
+      "dorsal interossei of hand"
     ]
   ],
   "converted": "2026-09-10",

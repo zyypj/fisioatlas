@@ -1,11 +1,11 @@
 [
   {
     "id": "deltoide",
-    "name": "Deltoide",
+    "name": "Deltoide (visão geral)",
     "english": "deltoid",
     "kind": "musculos",
     "region": "Ombro",
-    "summary": "Abduz o braço; fibras anteriores auxiliam flexão e rotação medial; posteriores, extensão e rotação lateral.",
+    "summary": "Músculo do contorno do ombro, com três porções: anterior, média e posterior, cada uma com sua ação.",
     "fields": {
       "Origem": "Terço lateral da clavícula, acrômio e espinha da escápula.",
       "Inserção": "Tuberosidade deltoidea do úmero.",
@@ -20,7 +20,8 @@
       "Antagonistas": "Peitoral maior e latíssimo do dorso na adução; as próprias fibras anteriores e posteriores são antagonistas entre si na rotação.",
       "Observação funcional": "É um músculo multipenado com três porções que podem agir de forma independente e até opostas. Para que o deltoide eleve o braço sem que a cabeça do úmero suba e bata no acrômio, o manguito rotador precisa deprimir e centrar a cabeça ao mesmo tempo: esse é o binário de forças do ombro. Quando o manguito falha, o deltoide sozinho produz a migração superior da cabeça.",
       "Exemplo de exercício": "Elevação lateral para as fibras acromiais, elevação frontal para as claviculares e crucifixo invertido para as escapulares, em contexto didático.",
-      "Palpação básica": "Fácil de identificar: cobre toda a região do ombro como uma ombreira. Peça abdução, flexão e extensão resistidas para sentir cada porção contrair separadamente."
+      "Palpação básica": "Fácil de identificar: cobre toda a região do ombro como uma ombreira. Peça abdução, flexão e extensão resistidas para sentir cada porção contrair separadamente.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. As três porções têm a sua: abra o deltoide anterior, médio e posterior para comparar flexão, abdução e extensão."
     },
     "related": [
       "glenoumeral",
@@ -29,7 +30,10 @@
       "acromioclavicular",
       "peitoral-maior",
       "latissimo-do-dorso",
-      "trapezio"
+      "trapezio",
+      "deltoide-anterior",
+      "deltoide-medio",
+      "deltoide-posterior"
     ],
     "depth": "superficial",
     "sources": [
@@ -37,23 +41,9 @@
       "z-anatomy"
     ],
     "aliases": [],
-    "modelIds": [
-      "ZA-b74d57488cede4",
-      "ZA-dfbfb91949824f",
-      "ZA-50e681ac8f5124",
-      "ZA-bc88f0f42d616e",
-      "ZA-0378b861a51baf",
-      "ZA-3d3652cd3db07f"
-    ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "Acromial part of deltoid muscle.l",
-      "Acromial part of deltoid muscle.r",
-      "Clavicular part of deltoid muscle.l",
-      "Clavicular part of deltoid muscle.r",
-      "Scapular spinal part of deltoid muscle.l",
-      "Scapular spinal part of deltoid muscle.r"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "supraespinal",
@@ -1169,11 +1159,11 @@
   },
   {
     "id": "trapezio",
-    "name": "Trapézio",
+    "name": "Trapézio (visão geral)",
     "english": "trapezius",
     "kind": "musculos",
     "region": "Tronco",
-    "summary": "Elevação, retração, depressão e rotação superior da escápula, conforme as fibras.",
+    "summary": "Grande músculo da nuca e do dorso, com três porções de ação distinta: superior, média e inferior.",
     "fields": {
       "Origem": "Occipital, ligamento nucal e processos espinhosos C7–T12.",
       "Inserção": "Clavícula lateral, acrômio e espinha da escápula.",
@@ -1188,7 +1178,8 @@
       "Antagonistas": "Serrátil anterior e peitoral menor na protração; romboides e levantador da escápula na rotação inferior.",
       "Observação funcional": "Suas três porções agem de forma distinta e até oposta. Na elevação do braço, a superior eleva a clavícula e a inferior abaixa a raiz da espinha da escápula; juntas com o serrátil anterior formam o binário de forças que gira a escápula para cima. O padrão mais comum de disfunção é trapézio superior hiperativo com inferior e serrátil fracos, base da discinesia escapular.",
       "Exemplo de exercício": "Elevação do braço em Y em decúbito ventral para a porção inferior, remada para a média e encolhimento de ombros para a superior, em contexto didático.",
-      "Palpação básica": "A porção superior é palpável do occipital ao terço lateral da clavícula; a média, entre as escápulas; a inferior, do meio das costas até a raiz da espinha da escápula. Peça movimentos diferentes de escápula para separar as três."
+      "Palpação básica": "A porção superior é palpável do occipital ao terço lateral da clavícula; a média, entre as escápulas; a inferior, do meio das costas até a raiz da espinha da escápula. Peça movimentos diferentes de escápula para separar as três.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. As três porções têm a sua: abra o trapézio superior, médio e inferior para ver a orientação das fibras e a ação de cada uma."
     },
     "related": [
       "occipital",
@@ -1198,7 +1189,10 @@
       "serratil-anterior",
       "romboide-maior",
       "romboide-menor",
-      "levantador-da-escapula"
+      "levantador-da-escapula",
+      "trapezio-superior",
+      "trapezio-medio",
+      "trapezio-inferior"
     ],
     "depth": "superficial",
     "sources": [
@@ -1206,23 +1200,9 @@
       "z-anatomy"
     ],
     "aliases": [],
-    "modelIds": [
-      "ZA-03d11aa52a6f36",
-      "ZA-70cdd4466a0d05",
-      "ZA-6b8257bf0a5d54",
-      "ZA-2ba0b1feac685b",
-      "ZA-053d1ef6d803ef",
-      "ZA-a8729a66ef5355"
-    ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "Ascending part of trapezius muscle.l",
-      "Ascending part of trapezius muscle.r",
-      "Descending part of trapezius muscle.l",
-      "Descending part of trapezius muscle.r",
-      "Transverse part of trapezius muscle.l",
-      "Transverse part of trapezius muscle.r"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "serratil-anterior",
@@ -1274,11 +1254,11 @@
   },
   {
     "id": "peitoral-maior",
-    "name": "Peitoral maior",
+    "name": "Peitoral maior (visão geral)",
     "english": "pectoralis major",
     "kind": "musculos",
     "region": "Tronco",
-    "summary": "Adução e rotação medial; fibras claviculares auxiliam flexão do ombro.",
+    "summary": "Grande músculo do peito, com porção clavicular (superior) e esternocostal (inferior), de ações complementares.",
     "fields": {
       "Origem": "Metade medial da clavícula, esterno, cartilagens costais superiores e aponeurose do oblíquo externo.",
       "Inserção": "Lábio lateral do sulco intertubercular do úmero.",
@@ -1293,7 +1273,8 @@
       "Antagonistas": "Deltoide e supraespinal na abdução; trapézio médio e romboides na retração escapular.",
       "Observação funcional": "Suas duas porções são antagonistas entre si no plano sagital: a clavicular flete o ombro e a esternocostal o estende a partir da flexão. Seu tendão de inserção tem torção: as fibras inferiores se inserem mais acima no úmero, arranjo que mantém a tensão constante em toda a amplitude de elevação.",
       "Exemplo de exercício": "Supino inclinado para a porção clavicular, supino declinado e crucifixo para a esternocostal, em contexto didático.",
-      "Palpação básica": "Forma a prega anterior da axila. Peça adução horizontal resistida com o braço à frente e identifique as porções clavicular e esternocostal separadamente."
+      "Palpação básica": "Forma a prega anterior da axila. Peça adução horizontal resistida com o braço à frente e identifique as porções clavicular e esternocostal separadamente.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. As porções têm a sua: abra o peitoral clavicular e o esternocostal para ver as fibras que sobem e as que descem o braço."
     },
     "related": [
       "nervo-peitoral-lateral",
@@ -1304,7 +1285,9 @@
       "umero",
       "deltoide",
       "latissimo-do-dorso",
-      "coracobraquial"
+      "coracobraquial",
+      "peitoral-clavicular",
+      "peitoral-esternocostal"
     ],
     "depth": "superficial",
     "sources": [
@@ -1312,23 +1295,9 @@
       "z-anatomy"
     ],
     "aliases": [],
-    "modelIds": [
-      "ZA-2b3e1cd7bf55f6",
-      "ZA-5b6bc3c090d774",
-      "ZA-3c0a9b09661fd7",
-      "ZA-9ac365e0905b0b",
-      "ZA-ef066e3635be03",
-      "ZA-33f3d0951bf3f4"
-    ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "(Abdominal part of pectoralis major muscle).l",
-      "(Abdominal part of pectoralis major muscle).r",
-      "Clavicular head of pectoralis major muscle.l",
-      "Clavicular head of pectoralis major muscle.r",
-      "Sternocostal head of pectoralis major muscle.l",
-      "Sternocostal head of pectoralis major muscle.r"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "peitoral-menor",
@@ -14016,11 +13985,11 @@
   },
   {
     "id": "interosseos-dorsais-do-pe",
-    "name": "Interósseos dorsais do pé",
+    "name": "Interósseos dorsais do pé (visão geral)",
     "english": "dorsal interossei of foot",
     "kind": "musculos",
     "region": "Pé",
-    "summary": "Quatro músculos bipenados que afastam os dedos a partir do eixo do segundo dedo.",
+    "summary": "Os quatro músculos que afastam os dedos do pé (DAB); cada um tem ficha própria, do 1º ao 4º.",
     "fields": {
       "Origem": "Faces adjacentes de dois metatarsais vizinhos, em cada um dos quatro espaços interósseos; são bipenados.",
       "Inserção": "Bases das falanges proximais do segundo ao quarto dedo e expansões extensoras correspondentes.",
@@ -14035,7 +14004,8 @@
       "Exemplo de exercício": "Exercícios de abertura e dissociação ativa dos dedos do pé, em contexto didático.",
       "Palpação básica": "Palpáveis nos espaços entre os metatarsais, no dorso do pé, ao tentar separar os dedos.",
       "Localização": "Pé",
-      "Camada de estudo": "Profunda"
+      "Camada de estudo": "Profunda",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada interósseo dorsal do pé tem a sua: abra do 1º ao 4º."
     },
     "related": [
       "metatarsais",
@@ -14043,7 +14013,11 @@
       "nervo-plantar-lateral",
       "interosseos-plantares",
       "lumbricais-do-pe",
-      "metatarsofalangicas"
+      "metatarsofalangicas",
+      "primeiro-interosseo-dorsal-do-pe",
+      "segundo-interosseo-dorsal-do-pe",
+      "terceiro-interosseo-dorsal-do-pe",
+      "quarto-interosseo-dorsal-do-pe"
     ],
     "depth": "profunda",
     "sources": [
@@ -14054,23 +14028,17 @@
       "dorsal interossei pedis",
       "interósseos dorsais"
     ],
-    "modelIds": [
-      "ZA-a0c8f206d41e20",
-      "ZA-0d74f095aecd6a"
-    ],
-    "modelComponents": [
-      "Dorsal interossei muscles of foot.l",
-      "Dorsal interossei muscles of foot.r"
-    ],
-    "modelSource": "z-anatomy"
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "interosseos-plantares",
-    "name": "Interósseos plantares",
+    "name": "Interósseos plantares (visão geral)",
     "english": "plantar interossei",
     "kind": "musculos",
     "region": "Pé",
-    "summary": "Três músculos unipenados que aproximam os dedos do eixo do segundo dedo.",
+    "summary": "Os três músculos que aproximam os dedos do pé (PAD); cada um tem ficha própria, do 1º ao 3º.",
     "fields": {
       "Origem": "Faces mediais dos corpos do terceiro, quarto e quinto metatarsais; são unipenados, com uma única cabeça.",
       "Inserção": "Faces mediais das bases das falanges proximais do terceiro ao quinto dedo e expansões extensoras correspondentes.",
@@ -14085,7 +14053,8 @@
       "Exemplo de exercício": "Exercícios de aproximação ativa dos dedos, apertando um objeto fino entre eles, em contexto didático.",
       "Palpação básica": "Muito profundos, na face plantar entre os metatarsais; não são isoláveis à palpação.",
       "Localização": "Pé",
-      "Camada de estudo": "Profunda"
+      "Camada de estudo": "Profunda",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada interósseo plantar tem a sua: abra do 1º ao 3º."
     },
     "related": [
       "metatarsais",
@@ -14093,7 +14062,10 @@
       "nervo-plantar-lateral",
       "interosseos-dorsais-do-pe",
       "lumbricais-do-pe",
-      "adutor-do-halux"
+      "adutor-do-halux",
+      "primeiro-interosseo-plantar",
+      "segundo-interosseo-plantar",
+      "terceiro-interosseo-plantar"
     ],
     "depth": "profunda",
     "sources": [
@@ -14104,15 +14076,9 @@
       "plantar interossei",
       "interósseos plantares"
     ],
-    "modelIds": [
-      "ZA-9428c9257edb40",
-      "ZA-a62fc8e97c7e93"
-    ],
-    "modelComponents": [
-      "Plantar interossei muscles.l",
-      "Plantar interossei muscles.r"
-    ],
-    "modelSource": "z-anatomy"
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "aponeurose-plantar",
@@ -15679,11 +15645,11 @@
   },
   {
     "id": "lumbricais-da-mao",
-    "name": "Lumbricais da mão",
+    "name": "Lumbricais da mão (visão geral)",
     "english": "lumbrical muscles of hand",
     "kind": "musculos",
     "region": "Mão",
-    "summary": "Únicos músculos que nascem de um tendão e se inserem em outro; produzem a posição intrínseca-plus.",
+    "summary": "Os quatro lumbricais; ligam os tendões flexores aos extensores e têm ficha própria, do 1º ao 4º.",
     "fields": {
       "Origem": "Tendões do flexor profundo dos dedos, na palma. O primeiro e o segundo são unipenados; o terceiro e o quarto, bipenados.",
       "Inserção": "Face lateral das expansões extensoras dorsais do segundo ao quinto dedo.",
@@ -15698,7 +15664,8 @@
       "Exemplo de exercício": "Exercício de posição intrínseca-plus, fletindo as metacarpofalângicas com os dedos retos, em contexto didático.",
       "Palpação básica": "Não são palpáveis individualmente; sua função é avaliada observando o padrão de flexão dos dedos.",
       "Localização": "Mão",
-      "Camada de estudo": "Profunda"
+      "Camada de estudo": "Profunda",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada lumbrical tem a sua: abra do 1º ao 4º; lembre que os dois radiais são do mediano e os dois ulnares, do ulnar."
     },
     "related": [
       "metacarpais",
@@ -15708,7 +15675,11 @@
       "nervo-ulnar",
       "interosseos-dorsais-da-mao",
       "interosseos-palmares",
-      "ligamentos-colaterais-metacarpofalangicos"
+      "ligamentos-colaterais-metacarpofalangicos",
+      "primeiro-lumbrical-da-mao",
+      "segundo-lumbrical-da-mao",
+      "terceiro-lumbrical-da-mao",
+      "quarto-lumbrical-da-mao"
     ],
     "depth": "profunda",
     "sources": [
@@ -15720,23 +15691,17 @@
       "intrínseca-plus",
       "garra ulnar"
     ],
-    "modelIds": [
-      "ZA-435ad9b7eb2c63",
-      "ZA-b6ef88b93cc825"
-    ],
-    "modelComponents": [
-      "Lumbrical muscles of hand.l",
-      "Lumbrical muscles of hand.r"
-    ],
-    "modelSource": "z-anatomy"
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "interosseos-dorsais-da-mao",
-    "name": "Interósseos dorsais da mão",
+    "name": "Interósseos dorsais da mão (visão geral)",
     "english": "dorsal interossei of hand",
     "kind": "musculos",
     "region": "Mão",
-    "summary": "Quatro músculos bipenados que afastam os dedos a partir do eixo do terceiro dedo.",
+    "summary": "Os quatro músculos que afastam os dedos (DAB); cada um tem ficha própria, do 1º ao 4º.",
     "fields": {
       "Origem": "Faces adjacentes de dois metacarpais vizinhos, em cada um dos quatro espaços interósseos; todos bipenados, com duas cabeças.",
       "Inserção": "Bases das falanges proximais do segundo, terceiro e quarto dedos e respectivas expansões extensoras. O terceiro dedo recebe dois interósseos dorsais, um de cada lado.",
@@ -15751,7 +15716,8 @@
       "Exemplo de exercício": "Abdução resistida dos dedos com elástico ao redor deles, em contexto didático.",
       "Palpação básica": "O primeiro interósseo dorsal é facilmente palpável no dorso da mão, entre o polegar e o indicador, ao afastar o indicador com força.",
       "Localização": "Mão",
-      "Camada de estudo": "Profunda"
+      "Camada de estudo": "Profunda",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada interósseo dorsal tem a sua: abra do 1º ao 4º para ver de quais metacarpais nasce e qual dedo afasta."
     },
     "related": [
       "metacarpais",
@@ -15760,7 +15726,11 @@
       "interosseos-palmares",
       "lumbricais-da-mao",
       "adutor-do-polegar",
-      "metacarpofalangicas"
+      "metacarpofalangicas",
+      "primeiro-interosseo-dorsal-da-mao",
+      "segundo-interosseo-dorsal-da-mao",
+      "terceiro-interosseo-dorsal-da-mao",
+      "quarto-interosseo-dorsal-da-mao"
     ],
     "depth": "profunda",
     "sources": [
@@ -15772,15 +15742,9 @@
       "DAB",
       "primeiro interósseo dorsal"
     ],
-    "modelIds": [
-      "ZA-744f36fb8914c1",
-      "ZA-abc9c249e1304a"
-    ],
-    "modelComponents": [
-      "Dorsal interossei muscles of hand.l",
-      "Dorsal interossei muscles of hand.r"
-    ],
-    "modelSource": "z-anatomy"
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "interosseos-palmares",
@@ -24971,11 +24935,11 @@
       "ZA-9e49555b8e9231",
       "ZA-e6c7801fd264ef"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Proximal phalanx of first finger of hand.l",
       "Proximal phalanx of first finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-distal-do-polegar",
@@ -25014,11 +24978,11 @@
       "ZA-48e48518b26bcf",
       "ZA-5f1ee7ec033a6f"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Distal phalanx of first finger of hand.l",
       "Distal phalanx of first finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-proximal-do-indicador",
@@ -25058,11 +25022,11 @@
       "ZA-c36d7bb09a02c1",
       "ZA-b7e1d81f56ce2f"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Proximal phalanx of second finger of hand.l",
       "Proximal phalanx of second finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-media-do-indicador",
@@ -25101,11 +25065,11 @@
       "ZA-d7ed85a2496bb0",
       "ZA-c60a22411ad8c0"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Middle phalanx of second finger of hand.l",
       "Middle phalanx of second finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-distal-do-indicador",
@@ -25145,11 +25109,11 @@
       "ZA-ab8574e540f5ad",
       "ZA-754686312c3d29"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Distal phalanx of second finger of hand.l",
       "Distal phalanx of second finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-proximal-do-medio",
@@ -25189,11 +25153,11 @@
       "ZA-c30338b26464d9",
       "ZA-35f7092ca4daad"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Proximal phalanx of third finger of hand.l",
       "Proximal phalanx of third finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-media-do-medio",
@@ -25231,11 +25195,11 @@
       "ZA-6c214d35b4a9c7",
       "ZA-e4e03b2db07bd1"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Middle phalanx of third finger of hand.l",
       "Middle phalanx of third finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-distal-do-medio",
@@ -25273,11 +25237,11 @@
       "ZA-f6f3b71c5c8c03",
       "ZA-246f9aa59fd09a"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Distal phalanx of third finger of hand.l",
       "Distal phalanx of third finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-proximal-do-anelar",
@@ -25318,11 +25282,11 @@
       "ZA-164e3978d46984",
       "ZA-ce23d4b5c9b625"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Proximal phalanx of fourth finger of hand.l",
       "Proximal phalanx of fourth finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-media-do-anelar",
@@ -25360,11 +25324,11 @@
       "ZA-5955d7f9c31067",
       "ZA-4869c6ede8bd46"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Middle phalanx of fourth finger of hand.l",
       "Middle phalanx of fourth finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-distal-do-anelar",
@@ -25404,11 +25368,11 @@
       "ZA-fd4f42e270065f",
       "ZA-4ce81819884916"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Distal phalanx of fourth finger of hand.l",
       "Distal phalanx of fourth finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-proximal-do-minimo",
@@ -25448,11 +25412,11 @@
       "ZA-e9effcce041423",
       "ZA-5a47814091b922"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Proximal phalanx of fifth finger of hand.l",
       "Proximal phalanx of fifth finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-media-do-minimo",
@@ -25490,11 +25454,11 @@
       "ZA-20da467531b352",
       "ZA-a4d46065b80672"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Middle phalanx of fifth finger of hand.l",
       "Middle phalanx of fifth finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-distal-do-minimo",
@@ -25532,11 +25496,11 @@
       "ZA-ccff27b79ec8e9",
       "ZA-0c77c2d8ff99f2"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Distal phalanx of fifth finger of hand.l",
       "Distal phalanx of fifth finger of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "primeiro-metatarsal",
@@ -25799,11 +25763,11 @@
       "ZA-ea4819f97e8c21",
       "ZA-c07969394566b5"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Proximal phalanx of first finger of foot.l",
       "Proximal phalanx of first finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-distal-do-halux",
@@ -25841,11 +25805,11 @@
       "ZA-689f96bec92fe9",
       "ZA-686672aa34d163"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Distal phalanx of first finger of foot.l",
       "Distal phalanx of first finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-proximal-do-segundo-dedo-do-pe",
@@ -25887,11 +25851,11 @@
       "ZA-b310de8c5e1bdb",
       "ZA-caf3052e22833f"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Proximal phalanx of second finger of foot.l",
       "Proximal phalanx of second finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-media-do-segundo-dedo-do-pe",
@@ -25929,11 +25893,11 @@
       "ZA-d0a388cf29f70a",
       "ZA-903162e237b8c4"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Middle phalanx of second finger of foot.l",
       "Middle phalanx of second finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-distal-do-segundo-dedo-do-pe",
@@ -25971,11 +25935,11 @@
       "ZA-d400833c81b942",
       "ZA-f4fea5520ea8c8"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Distal phalanx of second finger of foot.l",
       "Distal phalanx of second finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-proximal-do-terceiro-dedo-do-pe",
@@ -26015,11 +25979,11 @@
       "ZA-896315e816ea4d",
       "ZA-e9ea85158fac7e"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Proximal phalanx of third finger of foot.l",
       "Proximal phalanx of third finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-media-do-terceiro-dedo-do-pe",
@@ -26057,11 +26021,11 @@
       "ZA-85c811aae06a86",
       "ZA-f6d27914d0348e"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Middle phalanx of third finger of foot.l",
       "Middle phalanx of third finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-distal-do-terceiro-dedo-do-pe",
@@ -26099,11 +26063,11 @@
       "ZA-f16f0b464cfedc",
       "ZA-b0bb4f092e61f4"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Distal phalanx of third finger of foot.l",
       "Distal phalanx of third finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-proximal-do-quarto-dedo-do-pe",
@@ -26143,11 +26107,11 @@
       "ZA-73d870dff5ab90",
       "ZA-0378c0a07cd4e3"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Proximal phalanx of fourth finger of foot.l",
       "Proximal phalanx of fourth finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-media-do-quarto-dedo-do-pe",
@@ -26185,11 +26149,11 @@
       "ZA-55245cbccd638c",
       "ZA-ec0e725e5b644c"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Middle phalanx of fourth finger of foot.l",
       "Middle phalanx of fourth finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-distal-do-quarto-dedo-do-pe",
@@ -26227,11 +26191,11 @@
       "ZA-707a07d23c678e",
       "ZA-9d3008c2cf380c"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Distal phalanx of fourth finger of foot.l",
       "Distal phalanx of fourth finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-proximal-do-quinto-dedo-do-pe",
@@ -26271,11 +26235,11 @@
       "ZA-c64cb1b7ece01a",
       "ZA-4ad33d8271cde1"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Proximal phalanx of fifth finger of foot.l",
       "Proximal phalanx of fifth finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-media-do-quinto-dedo-do-pe",
@@ -26314,11 +26278,11 @@
       "ZA-c745bc67fc7867",
       "ZA-ef3fdc0d337beb"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Middle phalanx of fifth finger of foot.l",
       "Middle phalanx of fifth finger of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "falange-distal-do-quinto-dedo-do-pe",
@@ -26356,10 +26320,1084 @@
       "ZA-0c8d46736cd0d0",
       "ZA-01e1daf784598d"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Distal phalanx of fifth finger of foot.l",
       "Distal phalanx of fifth finger of foot.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "trapezio-superior",
+    "name": "Trapézio superior (fibras descendentes)",
+    "english": "descending part of trapezius muscle",
+    "kind": "musculos",
+    "region": "Tronco",
+    "summary": "As fibras que 'encolhem o ombro'; elevam a escápula e ajudam na rotação superior.",
+    "fields": {
+      "Origem": "Protuberância occipital externa, linha nucal superior e ligamento nucal, até os processos espinhosos cervicais.",
+      "Inserção": "Terço lateral da clavícula.",
+      "Inervação": "Nervo acessório (XI), com aferências proprioceptivas de C3-C4.",
+      "Ação": "Eleva a escápula e contribui para a rotação superior da glenoide; estende e inclina a cabeça e o pescoço.",
+      "Na prática": "É a porção do 'encolher de ombros'. Vive tensa e encurtada em quem passa horas ao computador e na cervicalgia tensional; na discinesia escapular fica hiperativa enquanto o trapézio inferior está fraco. Reequilibrar os dois é a base da reabilitação do ritmo escapuloumeral.",
+      "Localização": "Nuca e borda superior do ombro",
+      "Camada de estudo": "superficial",
+      "Grupo muscular": "Cintura escapular (fixadores da escápula)",
+      "Plano e eixo": "Eleva a escápula no plano frontal e participa da rotação superior.",
+      "Sinergistas": "Levantador da escápula e rombóides (elevação); trapézio inferior e serrátil anterior (rotação superior).",
+      "Antagonistas": "Trapézio inferior e latíssimo do dorso (depressão da escápula).",
+      "Exemplo de exercício": "Encolhimento de ombros (shrug) e remada alta.",
+      "Palpação básica": "Palpável na borda superior do ombro, entre a nuca e o acrômio."
+    },
+    "related": [
+      "trapezio",
+      "occipital",
+      "clavicula",
+      "escapula",
+      "ligamento-nucal",
+      "levantador-da-escapula",
+      "serratil-anterior"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "trapézio descendente",
+      "fibras superiores do trapézio",
+      "upper trapezius"
+    ],
+    "modelIds": [
+      "ZA-6b8257bf0a5d54",
+      "ZA-2ba0b1feac685b"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Descending part of trapezius muscle.l",
+      "Descending part of trapezius muscle.r"
+    ]
+  },
+  {
+    "id": "trapezio-medio",
+    "name": "Trapézio médio (fibras transversas)",
+    "english": "transverse part of trapezius muscle",
+    "kind": "musculos",
+    "region": "Tronco",
+    "summary": "As fibras horizontais; principal retrator (adução) da escápula.",
+    "fields": {
+      "Origem": "Processos espinhosos de C7 a T3 e ligamento supraespinhoso.",
+      "Inserção": "Acrômio e borda superior da espinha da escápula.",
+      "Inervação": "Nervo acessório (XI).",
+      "Ação": "Retração (adução) da escápula, aproximando-a da coluna.",
+      "Na prática": "É o principal retrator escapular. Quando fraco e alongado, contribui para a postura de ombros protraídos e caídos; é alvo direto das remadas e do trabalho de estabilização da escápula na dor de ombro e de pescoço.",
+      "Localização": "Dorso superior, entre a coluna e a escápula",
+      "Camada de estudo": "superficial",
+      "Grupo muscular": "Cintura escapular (fixadores da escápula)",
+      "Plano e eixo": "Adução da escápula no plano horizontal.",
+      "Sinergistas": "Rombóides maior e menor; trapézio superior e inferior.",
+      "Antagonistas": "Serrátil anterior e peitoral menor (protração).",
+      "Exemplo de exercício": "Remada sentada e face pull.",
+      "Palpação básica": "Palpável entre a borda medial da escápula e a coluna torácica alta."
+    },
+    "related": [
+      "trapezio",
+      "escapula",
+      "romboide-maior",
+      "romboide-menor",
+      "serratil-anterior"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "trapézio transverso",
+      "fibras médias do trapézio",
+      "middle trapezius"
+    ],
+    "modelIds": [
+      "ZA-053d1ef6d803ef",
+      "ZA-a8729a66ef5355"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Transverse part of trapezius muscle.l",
+      "Transverse part of trapezius muscle.r"
+    ]
+  },
+  {
+    "id": "trapezio-inferior",
+    "name": "Trapézio inferior (fibras ascendentes)",
+    "english": "ascending part of trapezius muscle",
+    "kind": "musculos",
+    "region": "Tronco",
+    "summary": "As fibras que deprimem a escápula e são chave da rotação superior da glenoide.",
+    "fields": {
+      "Origem": "Processos espinhosos de T4 a T12.",
+      "Inserção": "Tubérculo na raiz medial da espinha da escápula.",
+      "Inervação": "Nervo acessório (XI).",
+      "Ação": "Deprime a escápula e é um dos principais rotadores superiores da glenoide, junto com o serrátil anterior.",
+      "Na prática": "Costuma estar fraco e inibido na dor de ombro, o que sobrecarrega o trapézio superior. Exercícios como o 'Y' no banco inclinado focam exatamente essa porção; a depressão ativa da escápula é peça central da reabilitação do impacto subacromial.",
+      "Localização": "Dorso médio, abaixo da escápula",
+      "Camada de estudo": "superficial",
+      "Grupo muscular": "Cintura escapular (fixadores da escápula)",
+      "Plano e eixo": "Deprime a escápula no plano frontal e participa da rotação superior.",
+      "Sinergistas": "Serrátil anterior (rotação superior); latíssimo do dorso (depressão).",
+      "Antagonistas": "Trapézio superior e levantador da escápula (elevação).",
+      "Exemplo de exercício": "Exercício em Y em prono ou no banco inclinado.",
+      "Palpação básica": "Palpável abaixo da espinha da escápula, sobre o dorso médio."
+    },
+    "related": [
+      "trapezio",
+      "escapula",
+      "serratil-anterior",
+      "latissimo-do-dorso"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "trapézio ascendente",
+      "fibras inferiores do trapézio",
+      "lower trapezius"
+    ],
+    "modelIds": [
+      "ZA-03d11aa52a6f36",
+      "ZA-70cdd4466a0d05"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Ascending part of trapezius muscle.l",
+      "Ascending part of trapezius muscle.r"
+    ]
+  },
+  {
+    "id": "deltoide-anterior",
+    "name": "Deltoide anterior (porção clavicular)",
+    "english": "clavicular part of deltoid muscle",
+    "kind": "musculos",
+    "region": "Ombro",
+    "summary": "A porção da frente do ombro; flete e roda o braço para dentro.",
+    "fields": {
+      "Origem": "Terço lateral da clavícula.",
+      "Inserção": "Tuberosidade deltoidea do úmero.",
+      "Inervação": "Nervo axilar (C5-C6).",
+      "Ação": "Flexão e rotação medial do ombro; adução horizontal.",
+      "Na prática": "É a porção trabalhada no desenvolvimento frontal e ativada no supino, como sinergista do peitoral na adução horizontal. Tende a ficar dominante em quem faz muito 'empurrar', desequilibrando com o deltoide posterior e favorecendo a anteriorização do ombro.",
+      "Localização": "Face anterior do ombro",
+      "Camada de estudo": "superficial",
+      "Grupo muscular": "Ombro (deltoide)",
+      "Plano e eixo": "Flexão no plano sagital; adução no plano horizontal.",
+      "Sinergistas": "Peitoral maior (porção clavicular), coracobraquial.",
+      "Antagonistas": "Deltoide posterior e latíssimo do dorso.",
+      "Exemplo de exercício": "Desenvolvimento frontal e elevação frontal.",
+      "Palpação básica": "Palpável na frente do ombro, logo abaixo da clavícula lateral."
+    },
+    "related": [
+      "deltoide",
+      "nervo-axilar",
+      "clavicula",
+      "umero",
+      "peitoral-maior",
+      "glenoumeral"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "porção clavicular do deltoide",
+      "deltoide clavicular",
+      "anterior deltoid"
+    ],
+    "modelIds": [
+      "ZA-50e681ac8f5124",
+      "ZA-bc88f0f42d616e"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Clavicular part of deltoid muscle.l",
+      "Clavicular part of deltoid muscle.r"
+    ]
+  },
+  {
+    "id": "deltoide-medio",
+    "name": "Deltoide médio (porção acromial)",
+    "english": "acromial part of deltoid muscle",
+    "kind": "musculos",
+    "region": "Ombro",
+    "summary": "A porção lateral e mais volumosa; principal abdutora do ombro.",
+    "fields": {
+      "Origem": "Margem lateral e face superior do acrômio.",
+      "Inserção": "Tuberosidade deltoidea do úmero.",
+      "Inervação": "Nervo axilar (C5-C6).",
+      "Ação": "Abdução do ombro, sobretudo de cerca de 15° até acima de 90°.",
+      "Na prática": "Assume a abdução depois que o supraespinhoso inicia o movimento nos primeiros 15°. É multipenado, o que lhe dá força; a elevação lateral é seu exercício direto. A dor no arco de 60° a 120° costuma indicar impacto sob o acrômio, onde ele atua.",
+      "Localização": "Face lateral do ombro",
+      "Camada de estudo": "superficial",
+      "Grupo muscular": "Ombro (deltoide)",
+      "Plano e eixo": "Abdução no plano frontal.",
+      "Sinergistas": "Supraespinal (início da abdução).",
+      "Antagonistas": "Peitoral maior e latíssimo do dorso (adução).",
+      "Exemplo de exercício": "Elevação lateral.",
+      "Palpação básica": "Palpável na face lateral do ombro, abaixo do acrômio."
+    },
+    "related": [
+      "deltoide",
+      "nervo-axilar",
+      "umero",
+      "supraespinal",
+      "glenoumeral"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "porção acromial do deltoide",
+      "deltoide lateral",
+      "middle deltoid"
+    ],
+    "modelIds": [
+      "ZA-b74d57488cede4",
+      "ZA-dfbfb91949824f"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Acromial part of deltoid muscle.l",
+      "Acromial part of deltoid muscle.r"
+    ]
+  },
+  {
+    "id": "deltoide-posterior",
+    "name": "Deltoide posterior (porção espinal)",
+    "english": "scapular spinal part of deltoid muscle",
+    "kind": "musculos",
+    "region": "Ombro",
+    "summary": "A porção de trás do ombro; estende e roda o braço para fora.",
+    "fields": {
+      "Origem": "Espinha da escápula.",
+      "Inserção": "Tuberosidade deltoidea do úmero.",
+      "Inervação": "Nervo axilar (C5-C6).",
+      "Ação": "Extensão e rotação lateral do ombro; abdução horizontal.",
+      "Na prática": "Costuma ser a porção mais fraca e negligenciada. Fortalecê-la, com crucifixo invertido e face pull, equilibra o ombro dominado pelo 'empurrar', melhora a postura e protege o manguito rotador e a articulação glenoumeral.",
+      "Localização": "Face posterior do ombro",
+      "Camada de estudo": "superficial",
+      "Grupo muscular": "Ombro (deltoide)",
+      "Plano e eixo": "Extensão no plano sagital; abdução horizontal no plano transverso.",
+      "Sinergistas": "Infraespinhoso e redondo menor (rotação lateral e abdução horizontal).",
+      "Antagonistas": "Deltoide anterior e peitoral maior.",
+      "Exemplo de exercício": "Crucifixo invertido e face pull.",
+      "Palpação básica": "Palpável atrás do ombro, abaixo da espinha da escápula."
+    },
+    "related": [
+      "deltoide",
+      "nervo-axilar",
+      "escapula",
+      "umero",
+      "glenoumeral"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "porção espinal do deltoide",
+      "deltoide posterior",
+      "posterior deltoid"
+    ],
+    "modelIds": [
+      "ZA-0378b861a51baf",
+      "ZA-3d3652cd3db07f"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Scapular spinal part of deltoid muscle.l",
+      "Scapular spinal part of deltoid muscle.r"
+    ]
+  },
+  {
+    "id": "peitoral-clavicular",
+    "name": "Peitoral maior — porção clavicular",
+    "english": "clavicular head of pectoralis major muscle",
+    "kind": "musculos",
+    "region": "Tronco",
+    "summary": "As fibras superiores do peito; levam o braço de baixo para cima.",
+    "fields": {
+      "Origem": "Metade medial da face anterior da clavícula.",
+      "Inserção": "Crista do tubérculo maior do úmero (lábio lateral do sulco intertubercular).",
+      "Inervação": "Nervo peitoral lateral (C5-C7).",
+      "Ação": "Flexão do ombro, adução horizontal e rotação medial; leva o braço de baixo para cima.",
+      "Na prática": "É a porção do supino inclinado. Como suas fibras sobem em direção ao ombro, respondem melhor a movimentos que elevam o braço à frente; costuma ficar menos desenvolvida em quem treina só supino reto.",
+      "Localização": "Parte superior do peito, abaixo da clavícula",
+      "Camada de estudo": "superficial",
+      "Grupo muscular": "Peito (peitoral maior)",
+      "Plano e eixo": "Flexão no plano sagital; adução no plano horizontal.",
+      "Sinergistas": "Deltoide anterior; coracobraquial.",
+      "Antagonistas": "Latíssimo do dorso e deltoide posterior.",
+      "Exemplo de exercício": "Supino inclinado e crucifixo inclinado.",
+      "Palpação básica": "Palpável na parte alta do peito, seguindo as fibras da clavícula ao ombro."
+    },
+    "related": [
+      "peitoral-maior",
+      "nervo-peitoral-lateral",
+      "clavicula",
+      "umero",
+      "deltoide-anterior"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "porção clavicular do peitoral",
+      "peitoral superior",
+      "upper chest"
+    ],
+    "modelIds": [
+      "ZA-3c0a9b09661fd7",
+      "ZA-9ac365e0905b0b"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Clavicular head of pectoralis major muscle.l",
+      "Clavicular head of pectoralis major muscle.r"
+    ]
+  },
+  {
+    "id": "peitoral-esternocostal",
+    "name": "Peitoral maior — porção esternocostal",
+    "english": "sternocostal head of pectoralis major muscle",
+    "kind": "musculos",
+    "region": "Tronco",
+    "summary": "A maior porção do peito, incluindo a parte abdominal; leva o braço de cima para baixo.",
+    "fields": {
+      "Origem": "Esterno, cartilagens costais da 1ª à 6ª e aponeurose do oblíquo externo do abdome (parte abdominal).",
+      "Inserção": "Crista do tubérculo maior do úmero; as fibras inferiores inserem-se mais acima, num arranjo torcido.",
+      "Inervação": "Nervos peitoral lateral e medial (C6-T1).",
+      "Ação": "Adução e rotação medial do braço; leva o braço de cima para baixo, estendendo-o a partir da flexão.",
+      "Na prática": "É a maior porção do peito, trabalhada no supino reto e nos crossovers de cima para baixo. A parte abdominal, das fibras mais baixas, ajuda na descida do braço e em gestos como o pullover e o arremesso.",
+      "Localização": "Parte média e inferior do peito",
+      "Camada de estudo": "superficial",
+      "Grupo muscular": "Peito (peitoral maior)",
+      "Plano e eixo": "Adução no plano horizontal; extensão a partir da flexão no plano sagital.",
+      "Sinergistas": "Latíssimo do dorso e redondo maior (extensão e adução); peitoral clavicular (adução horizontal).",
+      "Antagonistas": "Deltoide (abdução e flexão); trapézio.",
+      "Exemplo de exercício": "Supino reto, crossover descendente e mergulho nas paralelas.",
+      "Palpação básica": "Palpável no corpo do peito, das cartilagens costais e do esterno até a axila."
+    },
+    "related": [
+      "peitoral-maior",
+      "nervo-peitoral-lateral",
+      "nervo-peitoral-medial",
+      "esterno",
+      "umero",
+      "latissimo-do-dorso"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "porção esternocostal do peitoral",
+      "peitoral inferior",
+      "parte abdominal do peitoral"
+    ],
+    "modelIds": [
+      "ZA-ef066e3635be03",
+      "ZA-33f3d0951bf3f4",
+      "ZA-2b3e1cd7bf55f6",
+      "ZA-5b6bc3c090d774"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Sternocostal head of pectoralis major muscle.l",
+      "Sternocostal head of pectoralis major muscle.r",
+      "(Abdominal part of pectoralis major muscle).l",
+      "(Abdominal part of pectoralis major muscle).r"
+    ]
+  },
+  {
+    "id": "primeiro-interosseo-dorsal-da-mao",
+    "name": "1º interósseo dorsal da mão",
+    "english": "First dorsal interosseous of hand",
+    "kind": "musculos",
+    "region": "Mão",
+    "summary": "O maior e mais palpável dos interósseos; forma o relevo do primeiro espaço, entre o polegar e o indicador.",
+    "fields": {
+      "Origem": "Faces adjacentes do 1º e do 2º metacarpais (músculo bipenado).",
+      "Inserção": "Base da falange proximal do indicador, no lado radial, e capuz extensor.",
+      "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+      "Ação": "Abduz o indicador (lado radial), afastando-o do eixo da mão; auxilia a flexão da metacarpofalângica e a extensão das interfalângicas.",
+      "Na prática": "O maior e mais palpável dos interósseos; forma o relevo do primeiro espaço, entre o polegar e o indicador. Sua atrofia é o sinal mais precoce e visível de lesão do nervo ulnar, e ele participa da pinça, avaliada no sinal de Froment.",
+      "Localização": "Dorso da mão, entre os metacarpais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos da mão (interósseos dorsais)",
+      "Sinergistas": "Demais interósseos dorsais e lumbricais.",
+      "Antagonistas": "Interósseos palmares (adução dos dedos).",
+      "Exemplo de exercício": "Abrir os dedos contra a resistência de um elástico ao redor deles.",
+      "Palpação básica": "Palpável no dorso, no espaço entre os dois metacarpais de origem."
+    },
+    "related": [
+      "interosseos-dorsais-da-mao",
+      "nervo-ulnar",
+      "primeiro-metacarpal",
+      "segundo-metacarpal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "1º interósseo dorsal",
+      "DAB"
+    ],
+    "modelIds": [
+      "ZA-2abbab9ae24d13",
+      "ZA-ede6436d94642e"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "First dorsal interosseous of hand.l",
+      "First dorsal interosseous of hand.r"
+    ]
+  },
+  {
+    "id": "segundo-interosseo-dorsal-da-mao",
+    "name": "2º interósseo dorsal da mão",
+    "english": "Second dorsal interosseous of hand",
+    "kind": "musculos",
+    "region": "Mão",
+    "summary": "Afasta o dedo médio para o lado radial.",
+    "fields": {
+      "Origem": "Faces adjacentes do 2º e do 3º metacarpais (músculo bipenado).",
+      "Inserção": "Base da falange proximal do dedo médio, no lado radial, e capuz extensor.",
+      "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+      "Ação": "Abduz o dedo médio (lado radial), afastando-o do eixo da mão; auxilia a flexão da metacarpofalângica e a extensão das interfalângicas.",
+      "Na prática": "Afasta o dedo médio para o lado radial. Junto com os lumbricais faz o movimento intrínseco-plus, com a metacarpofalângica fletida e as interfalângicas estendidas.",
+      "Localização": "Dorso da mão, entre os metacarpais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos da mão (interósseos dorsais)",
+      "Sinergistas": "Demais interósseos dorsais e lumbricais.",
+      "Antagonistas": "Interósseos palmares (adução dos dedos).",
+      "Exemplo de exercício": "Abrir os dedos contra a resistência de um elástico ao redor deles.",
+      "Palpação básica": "Palpável no dorso, no espaço entre os dois metacarpais de origem."
+    },
+    "related": [
+      "interosseos-dorsais-da-mao",
+      "nervo-ulnar",
+      "segundo-metacarpal",
+      "terceiro-metacarpal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "2º interósseo dorsal",
+      "DAB"
+    ],
+    "modelIds": [
+      "ZA-c94c101633f85c",
+      "ZA-8c6834c0e42001"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Second dorsal interosseous of hand.l",
+      "Second dorsal interosseous of hand.r"
+    ]
+  },
+  {
+    "id": "terceiro-interosseo-dorsal-da-mao",
+    "name": "3º interósseo dorsal da mão",
+    "english": "Third dorsal interosseous of hand",
+    "kind": "musculos",
+    "region": "Mão",
+    "summary": "Afasta o dedo médio para o lado ulnar.",
+    "fields": {
+      "Origem": "Faces adjacentes do 3º e do 4º metacarpais (músculo bipenado).",
+      "Inserção": "Base da falange proximal do dedo médio, no lado ulnar, e capuz extensor.",
+      "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+      "Ação": "Abduz o dedo médio (lado ulnar), afastando-o do eixo da mão; auxilia a flexão da metacarpofalângica e a extensão das interfalângicas.",
+      "Na prática": "Afasta o dedo médio para o lado ulnar. A fraqueza dos interósseos, na lesão do ulnar, produz a garra e a dificuldade de abrir os dedos.",
+      "Localização": "Dorso da mão, entre os metacarpais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos da mão (interósseos dorsais)",
+      "Sinergistas": "Demais interósseos dorsais e lumbricais.",
+      "Antagonistas": "Interósseos palmares (adução dos dedos).",
+      "Exemplo de exercício": "Abrir os dedos contra a resistência de um elástico ao redor deles.",
+      "Palpação básica": "Palpável no dorso, no espaço entre os dois metacarpais de origem."
+    },
+    "related": [
+      "interosseos-dorsais-da-mao",
+      "nervo-ulnar",
+      "terceiro-metacarpal",
+      "quarto-metacarpal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "3º interósseo dorsal",
+      "DAB"
+    ],
+    "modelIds": [
+      "ZA-0dbbc36b8ecbab",
+      "ZA-9471f6174e75a8"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Third dorsal interosseous of hand.l",
+      "Third dorsal interosseous of hand.r"
+    ]
+  },
+  {
+    "id": "quarto-interosseo-dorsal-da-mao",
+    "name": "4º interósseo dorsal da mão",
+    "english": "Fourth dorsal interosseous of hand",
+    "kind": "musculos",
+    "region": "Mão",
+    "summary": "Afasta o dedo anelar para o lado ulnar.",
+    "fields": {
+      "Origem": "Faces adjacentes do 4º e do 5º metacarpais (músculo bipenado).",
+      "Inserção": "Base da falange proximal do dedo anelar, no lado ulnar, e capuz extensor.",
+      "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+      "Ação": "Abduz o dedo anelar (lado ulnar), afastando-o do eixo da mão; auxilia a flexão da metacarpofalângica e a extensão das interfalângicas.",
+      "Na prática": "Afasta o dedo anelar para o lado ulnar. Perde força cedo na neuropatia ulnar, contribuindo para a mão em garra.",
+      "Localização": "Dorso da mão, entre os metacarpais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos da mão (interósseos dorsais)",
+      "Sinergistas": "Demais interósseos dorsais e lumbricais.",
+      "Antagonistas": "Interósseos palmares (adução dos dedos).",
+      "Exemplo de exercício": "Abrir os dedos contra a resistência de um elástico ao redor deles.",
+      "Palpação básica": "Palpável no dorso, no espaço entre os dois metacarpais de origem."
+    },
+    "related": [
+      "interosseos-dorsais-da-mao",
+      "nervo-ulnar",
+      "quarto-metacarpal",
+      "quinto-metacarpal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "4º interósseo dorsal",
+      "DAB"
+    ],
+    "modelIds": [
+      "ZA-a64f1f109647b0",
+      "ZA-9324d5d496ac77"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Fourth dorsal interosseous of hand.l",
+      "Fourth dorsal interosseous of hand.r"
+    ]
+  },
+  {
+    "id": "primeiro-lumbrical-da-mao",
+    "name": "1º lumbrical da mão",
+    "english": "First lumbrical of hand",
+    "kind": "musculos",
+    "region": "Mão",
+    "summary": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever.",
+    "fields": {
+      "Origem": "Tendão do flexor profundo dos dedos destinado ao indicador, na palma (unipenado).",
+      "Inserção": "Lado radial do capuz extensor (aparelho extensor) do indicador.",
+      "Inervação": "Nervo mediano (C8-T1).",
+      "Ação": "Flete a metacarpofalângica e estende as interfalângicas do indicador.",
+      "Na prática": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever. Os dois radiais, do indicador e do médio, são inervados pelo mediano.",
+      "Localização": "Palma da mão, ao lado dos tendões flexores",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos da mão (lumbricais)",
+      "Sinergistas": "Interósseos (movimento intrínseco-plus).",
+      "Antagonistas": "Flexor profundo dos dedos (na flexão das interfalângicas).",
+      "Exemplo de exercício": "Fazer a 'garra invertida': dobrar só as metacarpofalângicas com os dedos retos.",
+      "Palpação básica": "Difícil de palpar isoladamente; profundo na palma, junto aos tendões flexores."
+    },
+    "related": [
+      "lumbricais-da-mao",
+      "flexor-profundo-dos-dedos",
+      "nervo-mediano"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "1º lumbrical"
+    ],
+    "modelIds": [
+      "ZA-4bc93b881bb3c6",
+      "ZA-29e7f1bd7335f0"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "First lumbrical of hand.l",
+      "First lumbrical of hand.r"
+    ]
+  },
+  {
+    "id": "segundo-lumbrical-da-mao",
+    "name": "2º lumbrical da mão",
+    "english": "Second lumbrical of hand",
+    "kind": "musculos",
+    "region": "Mão",
+    "summary": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever.",
+    "fields": {
+      "Origem": "Tendão do flexor profundo dos dedos destinado ao dedo médio, na palma (unipenado).",
+      "Inserção": "Lado radial do capuz extensor (aparelho extensor) do dedo médio.",
+      "Inervação": "Nervo mediano (C8-T1).",
+      "Ação": "Flete a metacarpofalângica e estende as interfalângicas do dedo médio.",
+      "Na prática": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever. Os dois radiais, do indicador e do médio, são inervados pelo mediano.",
+      "Localização": "Palma da mão, ao lado dos tendões flexores",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos da mão (lumbricais)",
+      "Sinergistas": "Interósseos (movimento intrínseco-plus).",
+      "Antagonistas": "Flexor profundo dos dedos (na flexão das interfalângicas).",
+      "Exemplo de exercício": "Fazer a 'garra invertida': dobrar só as metacarpofalângicas com os dedos retos.",
+      "Palpação básica": "Difícil de palpar isoladamente; profundo na palma, junto aos tendões flexores."
+    },
+    "related": [
+      "lumbricais-da-mao",
+      "flexor-profundo-dos-dedos",
+      "nervo-mediano"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "2º lumbrical"
+    ],
+    "modelIds": [
+      "ZA-cee40496dfe6e5",
+      "ZA-4c10b8c4af8581"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Second lumbrical of hand.l",
+      "Second lumbrical of hand.r"
+    ]
+  },
+  {
+    "id": "terceiro-lumbrical-da-mao",
+    "name": "3º lumbrical da mão",
+    "english": "Third lumbrical of hand",
+    "kind": "musculos",
+    "region": "Mão",
+    "summary": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever.",
+    "fields": {
+      "Origem": "Tendão do flexor profundo dos dedos destinado ao dedo anelar, na palma (bipenado).",
+      "Inserção": "Lado radial do capuz extensor (aparelho extensor) do dedo anelar.",
+      "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+      "Ação": "Flete a metacarpofalângica e estende as interfalângicas do dedo anelar.",
+      "Na prática": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever. Os dois ulnares, do anelar e do mínimo, são inervados pelo ulnar, o que explica a garra parcial na lesão desse nervo.",
+      "Localização": "Palma da mão, ao lado dos tendões flexores",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos da mão (lumbricais)",
+      "Sinergistas": "Interósseos (movimento intrínseco-plus).",
+      "Antagonistas": "Flexor profundo dos dedos (na flexão das interfalângicas).",
+      "Exemplo de exercício": "Fazer a 'garra invertida': dobrar só as metacarpofalângicas com os dedos retos.",
+      "Palpação básica": "Difícil de palpar isoladamente; profundo na palma, junto aos tendões flexores."
+    },
+    "related": [
+      "lumbricais-da-mao",
+      "flexor-profundo-dos-dedos",
+      "nervo-ulnar"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "3º lumbrical"
+    ],
+    "modelIds": [
+      "ZA-73ab1128adf0d3",
+      "ZA-6de28805b2d459"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Third lumbrical of hand.l",
+      "Third lumbrical of hand.r"
+    ]
+  },
+  {
+    "id": "quarto-lumbrical-da-mao",
+    "name": "4º lumbrical da mão",
+    "english": "Fourth lumbrical of hand",
+    "kind": "musculos",
+    "region": "Mão",
+    "summary": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever.",
+    "fields": {
+      "Origem": "Tendão do flexor profundo dos dedos destinado ao dedo mínimo, na palma (bipenado).",
+      "Inserção": "Lado radial do capuz extensor (aparelho extensor) do dedo mínimo.",
+      "Inervação": "Ramo profundo do nervo ulnar (C8-T1).",
+      "Ação": "Flete a metacarpofalângica e estende as interfalângicas do dedo mínimo.",
+      "Na prática": "Os lumbricais são únicos por ligar um tendão flexor a um tendão extensor: fletem a metacarpofalângica e estendem as interfalângicas, a posição de escrever. Os dois ulnares, do anelar e do mínimo, são inervados pelo ulnar, o que explica a garra parcial na lesão desse nervo.",
+      "Localização": "Palma da mão, ao lado dos tendões flexores",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos da mão (lumbricais)",
+      "Sinergistas": "Interósseos (movimento intrínseco-plus).",
+      "Antagonistas": "Flexor profundo dos dedos (na flexão das interfalângicas).",
+      "Exemplo de exercício": "Fazer a 'garra invertida': dobrar só as metacarpofalângicas com os dedos retos.",
+      "Palpação básica": "Difícil de palpar isoladamente; profundo na palma, junto aos tendões flexores."
+    },
+    "related": [
+      "lumbricais-da-mao",
+      "flexor-profundo-dos-dedos",
+      "nervo-ulnar"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "4º lumbrical"
+    ],
+    "modelIds": [
+      "ZA-74696d51adc2ed",
+      "ZA-4a9fb7e91a34a4"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Fourth lumbrical of hand.l",
+      "Fourth lumbrical of hand.r"
+    ]
+  },
+  {
+    "id": "primeiro-interosseo-dorsal-do-pe",
+    "name": "1º interósseo dorsal do pé",
+    "english": "First dorsal interosseous of foot",
+    "kind": "musculos",
+    "region": "Pé",
+    "summary": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio.",
+    "fields": {
+      "Origem": "Faces adjacentes do 1º e do 2º metatarsais (bipenado).",
+      "Inserção": "Base da falange proximal do 2º dedo, no lado medial, e expansão extensora.",
+      "Inervação": "Nervo plantar lateral (S2-S3); o 1º e o 2º recebem também ramos do nervo fibular profundo.",
+      "Ação": "Abduz o 2º dedo em relação ao eixo do 2º dedo; flete a metatarsofalângica e ajuda a estabilizar o antepé.",
+      "Na prática": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio. Trabalham com os lumbricais e os interósseos plantares para segurar os dedos no chão; sua fraqueza acompanha os dedos em garra.",
+      "Localização": "Dorso do pé, entre os metatarsais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos do pé (interósseos dorsais)",
+      "Sinergistas": "Lumbricais do pé e interósseos plantares.",
+      "Antagonistas": "Interósseos plantares (adução dos dedos).",
+      "Exemplo de exercício": "Afastar os dedos do pé no chão, treino de controle intrínseco.",
+      "Palpação básica": "Palpável no dorso do pé, no espaço entre os metatarsais de origem."
+    },
+    "related": [
+      "interosseos-dorsais-do-pe",
+      "nervo-plantar-lateral",
+      "primeiro-metatarsal",
+      "segundo-metatarsal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "1º interósseo dorsal do pé"
+    ],
+    "modelIds": [
+      "ZA-9c849d1550adeb",
+      "ZA-23986f2edee313"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "First dorsal interosseous of foot.l",
+      "First dorsal interosseous of foot.r"
+    ]
+  },
+  {
+    "id": "segundo-interosseo-dorsal-do-pe",
+    "name": "2º interósseo dorsal do pé",
+    "english": "Second dorsal interosseous of foot",
+    "kind": "musculos",
+    "region": "Pé",
+    "summary": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio.",
+    "fields": {
+      "Origem": "Faces adjacentes do 2º e do 3º metatarsais (bipenado).",
+      "Inserção": "Base da falange proximal do 2º dedo, no lado lateral, e expansão extensora.",
+      "Inervação": "Nervo plantar lateral (S2-S3); o 1º e o 2º recebem também ramos do nervo fibular profundo.",
+      "Ação": "Abduz o 2º dedo em relação ao eixo do 2º dedo; flete a metatarsofalângica e ajuda a estabilizar o antepé.",
+      "Na prática": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio. Trabalham com os lumbricais e os interósseos plantares para segurar os dedos no chão; sua fraqueza acompanha os dedos em garra.",
+      "Localização": "Dorso do pé, entre os metatarsais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos do pé (interósseos dorsais)",
+      "Sinergistas": "Lumbricais do pé e interósseos plantares.",
+      "Antagonistas": "Interósseos plantares (adução dos dedos).",
+      "Exemplo de exercício": "Afastar os dedos do pé no chão, treino de controle intrínseco.",
+      "Palpação básica": "Palpável no dorso do pé, no espaço entre os metatarsais de origem."
+    },
+    "related": [
+      "interosseos-dorsais-do-pe",
+      "nervo-plantar-lateral",
+      "segundo-metatarsal",
+      "terceiro-metatarsal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "2º interósseo dorsal do pé"
+    ],
+    "modelIds": [
+      "ZA-2e47ca755f1fc7",
+      "ZA-d21f187889fbee"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Second dorsal interosseous of foot.l",
+      "Second dorsal interosseous of foot.r"
+    ]
+  },
+  {
+    "id": "terceiro-interosseo-dorsal-do-pe",
+    "name": "3º interósseo dorsal do pé",
+    "english": "Third dorsal interosseous of foot",
+    "kind": "musculos",
+    "region": "Pé",
+    "summary": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio.",
+    "fields": {
+      "Origem": "Faces adjacentes do 3º e do 4º metatarsais (bipenado).",
+      "Inserção": "Base da falange proximal do 3º dedo, no lado lateral, e expansão extensora.",
+      "Inervação": "Nervo plantar lateral (S2-S3); o 1º e o 2º recebem também ramos do nervo fibular profundo.",
+      "Ação": "Abduz o 3º dedo em relação ao eixo do 2º dedo; flete a metatarsofalângica e ajuda a estabilizar o antepé.",
+      "Na prática": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio. Trabalham com os lumbricais e os interósseos plantares para segurar os dedos no chão; sua fraqueza acompanha os dedos em garra.",
+      "Localização": "Dorso do pé, entre os metatarsais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos do pé (interósseos dorsais)",
+      "Sinergistas": "Lumbricais do pé e interósseos plantares.",
+      "Antagonistas": "Interósseos plantares (adução dos dedos).",
+      "Exemplo de exercício": "Afastar os dedos do pé no chão, treino de controle intrínseco.",
+      "Palpação básica": "Palpável no dorso do pé, no espaço entre os metatarsais de origem."
+    },
+    "related": [
+      "interosseos-dorsais-do-pe",
+      "nervo-plantar-lateral",
+      "terceiro-metatarsal",
+      "quarto-metatarsal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "3º interósseo dorsal do pé"
+    ],
+    "modelIds": [
+      "ZA-2cb34041238837",
+      "ZA-a3a311144e35c3"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Third dorsal interosseous of foot.l",
+      "Third dorsal interosseous of foot.r"
+    ]
+  },
+  {
+    "id": "quarto-interosseo-dorsal-do-pe",
+    "name": "4º interósseo dorsal do pé",
+    "english": "Fourth dorsal interosseous of foot",
+    "kind": "musculos",
+    "region": "Pé",
+    "summary": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio.",
+    "fields": {
+      "Origem": "Faces adjacentes do 4º e do 5º metatarsais (bipenado).",
+      "Inserção": "Base da falange proximal do 4º dedo, no lado lateral, e expansão extensora.",
+      "Inervação": "Nervo plantar lateral (S2-S3); o 1º e o 2º recebem também ramos do nervo fibular profundo.",
+      "Ação": "Abduz o 4º dedo em relação ao eixo do 2º dedo; flete a metatarsofalângica e ajuda a estabilizar o antepé.",
+      "Na prática": "Os interósseos dorsais do pé afastam os dedos do eixo do 2º dedo (DAB) e ajudam a estabilizar o antepé no apoio. Trabalham com os lumbricais e os interósseos plantares para segurar os dedos no chão; sua fraqueza acompanha os dedos em garra.",
+      "Localização": "Dorso do pé, entre os metatarsais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos do pé (interósseos dorsais)",
+      "Sinergistas": "Lumbricais do pé e interósseos plantares.",
+      "Antagonistas": "Interósseos plantares (adução dos dedos).",
+      "Exemplo de exercício": "Afastar os dedos do pé no chão, treino de controle intrínseco.",
+      "Palpação básica": "Palpável no dorso do pé, no espaço entre os metatarsais de origem."
+    },
+    "related": [
+      "interosseos-dorsais-do-pe",
+      "nervo-plantar-lateral",
+      "quarto-metatarsal",
+      "quinto-metatarsal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "4º interósseo dorsal do pé"
+    ],
+    "modelIds": [
+      "ZA-0b7ac2d8a1e19f",
+      "ZA-5405ddc2ae9311"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Fourth dorsal interosseous of foot.l",
+      "Fourth dorsal interosseous of foot.r"
+    ]
+  },
+  {
+    "id": "primeiro-interosseo-plantar",
+    "name": "1º interósseo plantar",
+    "english": "First plantar interosseous",
+    "kind": "musculos",
+    "region": "Pé",
+    "summary": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas.",
+    "fields": {
+      "Origem": "Base e face medial do 3º metatarsal (unipenado).",
+      "Inserção": "Lado medial da base da falange proximal do 3º dedo e expansão extensora.",
+      "Inervação": "Nervo plantar lateral (S2-S3).",
+      "Ação": "Aduz o 3º dedo em direção ao eixo do 2º dedo; flete a metatarsofalângica.",
+      "Na prática": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas. Junto com os interósseos dorsais formam o controle fino do antepé; a perda desse controle está por trás dos dedos em garra e em martelo.",
+      "Localização": "Face plantar do antepé, entre os metatarsais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos do pé (interósseos plantares)",
+      "Sinergistas": "Demais interósseos plantares.",
+      "Antagonistas": "Interósseos dorsais do pé (abdução dos dedos).",
+      "Exemplo de exercício": "Juntar os dedos do pé, aproximando-os, no chão.",
+      "Palpação básica": "Muito profundo; não é palpável isoladamente na planta."
+    },
+    "related": [
+      "interosseos-plantares",
+      "nervo-plantar-lateral",
+      "terceiro-metatarsal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "1º interósseo plantar",
+      "PAD"
+    ],
+    "modelIds": [
+      "ZA-7715e7f5b3d20f",
+      "ZA-bb5dba814eb4ac"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "First plantar interosseous.l",
+      "First plantar interosseous.r"
+    ]
+  },
+  {
+    "id": "segundo-interosseo-plantar",
+    "name": "2º interósseo plantar",
+    "english": "Second plantar interosseous",
+    "kind": "musculos",
+    "region": "Pé",
+    "summary": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas.",
+    "fields": {
+      "Origem": "Base e face medial do 4º metatarsal (unipenado).",
+      "Inserção": "Lado medial da base da falange proximal do 4º dedo e expansão extensora.",
+      "Inervação": "Nervo plantar lateral (S2-S3).",
+      "Ação": "Aduz o 4º dedo em direção ao eixo do 2º dedo; flete a metatarsofalângica.",
+      "Na prática": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas. Junto com os interósseos dorsais formam o controle fino do antepé; a perda desse controle está por trás dos dedos em garra e em martelo.",
+      "Localização": "Face plantar do antepé, entre os metatarsais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos do pé (interósseos plantares)",
+      "Sinergistas": "Demais interósseos plantares.",
+      "Antagonistas": "Interósseos dorsais do pé (abdução dos dedos).",
+      "Exemplo de exercício": "Juntar os dedos do pé, aproximando-os, no chão.",
+      "Palpação básica": "Muito profundo; não é palpável isoladamente na planta."
+    },
+    "related": [
+      "interosseos-plantares",
+      "nervo-plantar-lateral",
+      "quarto-metatarsal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "2º interósseo plantar",
+      "PAD"
+    ],
+    "modelIds": [
+      "ZA-f036a69551ed86",
+      "ZA-b833c2cbff00f9"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Second plantar interosseous.l",
+      "Second plantar interosseous.r"
+    ]
+  },
+  {
+    "id": "terceiro-interosseo-plantar",
+    "name": "3º interósseo plantar",
+    "english": "Third plantar interosseous",
+    "kind": "musculos",
+    "region": "Pé",
+    "summary": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas.",
+    "fields": {
+      "Origem": "Base e face medial do 5º metatarsal (unipenado).",
+      "Inserção": "Lado medial da base da falange proximal do 5º dedo e expansão extensora.",
+      "Inervação": "Nervo plantar lateral (S2-S3).",
+      "Ação": "Aduz o 5º dedo em direção ao eixo do 2º dedo; flete a metatarsofalângica.",
+      "Na prática": "Os interósseos plantares aproximam os dedos 3 a 5 do eixo do 2º dedo (PAD) e fletem as metatarsofalângicas. Junto com os interósseos dorsais formam o controle fino do antepé; a perda desse controle está por trás dos dedos em garra e em martelo.",
+      "Localização": "Face plantar do antepé, entre os metatarsais",
+      "Camada de estudo": "profunda",
+      "Grupo muscular": "Intrínsecos do pé (interósseos plantares)",
+      "Sinergistas": "Demais interósseos plantares.",
+      "Antagonistas": "Interósseos dorsais do pé (abdução dos dedos).",
+      "Exemplo de exercício": "Juntar os dedos do pé, aproximando-os, no chão.",
+      "Palpação básica": "Muito profundo; não é palpável isoladamente na planta."
+    },
+    "related": [
+      "interosseos-plantares",
+      "nervo-plantar-lateral",
+      "quinto-metatarsal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-muscles",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "3º interósseo plantar",
+      "PAD"
+    ],
+    "modelIds": [
+      "ZA-6aa20717b412bb",
+      "ZA-965ff35d9cb18e"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Third plantar interosseous.l",
+      "Third plantar interosseous.r"
     ]
   }
 ]
