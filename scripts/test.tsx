@@ -167,16 +167,18 @@ test("GLB: decodificação Meshopt, geometria, nomes e tamanho do manifesto", as
     {assert.ok(actual.has(s.id), `Ficha anuncia malha inexistente: ${s.id}`);
     for(const element of s.modelIds) assert.ok(elements.has(element), element);}
   assert.deepEqual(manifest.map((x: {kind:string})=>x.kind).sort(),["articulacoes","ligamentos","musculos","nervos","ossos","tendoes"]);
-  // O catálogo passou de 220 para mais de 440 fichas e de 699 para mais de 1400
-  // malhas: praticamente o dobro de conteúdo. Graças à simplificação com erro
-  // limitado, o peso total subiu de 11,91 MiB para cerca de 14 MiB, ou seja,
-  // cerca de 17%. O limite abaixo protege esse orçamento de carregamento, e a
-  // contagem de malhas garante que ele não seja respeitado às custas de
-  // conteúdo removido.
+  // A etapa de simplificação foi removida do pipeline a pedido, para privilegiar
+  // a fidelidade das malhas no estudo: ela descartava 43% dos triângulos para
+  // economizar 8,4 MiB. O peso subiu de 14,6 para cerca de 23 MiB, com
+  // 3,43 milhões de triângulos em vez de 1,97 milhão. O modelo é carregado por
+  // camada, sob demanda, e não de uma vez. O limite abaixo continua guardando o
+  // orçamento, agora no novo patamar, e a contagem de malhas garante que ele não
+  // seja respeitado às custas de conteúdo removido.
   assert.ok(count > 1400);
+  assert.ok(triangles > 3_000_000, `triângulos: ${triangles}`);
   assert.ok(
     manifest.reduce((n: number, x: { bytes: number }) => n + x.bytes, 0) <
-      15 * 1024 * 1024,
+      26 * 1024 * 1024,
   );
   console.log(
     `${actual.size} estruturas, ${count} malhas, ${triangles} triângulos.`,
@@ -192,8 +194,10 @@ test("Novas camadas: representação identificada e registro de cobertura consis
   assert.ok(byId['nervo-mediano'].modelIds.length>2,'Ramos do nervo mediano preservados');
   assert.ok(byId.joelho.modelNote?.includes('cápsula'));
 });
-test("Higgsfield: esquema local com oito componentes e sem dependências externas", async () => {
-  const doc=await new NodeIO().registerExtensions(ALL_EXTENSIONS).read('public/lessons/synovial.glb');
+test("Lição de articulação sinovial: oito componentes locais, sem dependências externas", async () => {
+  const doc=await new NodeIO().registerExtensions(ALL_EXTENSIONS)
+    .registerDependencies({"meshopt.decoder": MeshoptDecoder})
+    .read('public/lessons/synovial.glb');
   const names=doc.getRoot().listNodes().filter(n=>n.getMesh()).map(n=>n.getName());
   assert.equal(names.length,8);
   for(const prefix of ['Osso','Cartilagem','Capsula','Membrana','Ligamento'])assert.ok(names.some(n=>n.startsWith(prefix)),prefix);
@@ -390,7 +394,11 @@ test("Rigs de movimento: eixo resolvível, segmento distal não vazio e linha m�
   // porque as vértebras são malhas únicas centradas no plano mediano.
   for (const nome of ["spine", "cervical", "jaw"] as const)
     assert.ok(rigs[nome].bilateral, `${nome} deveria ser bilateral`);
-  const vertebra = meshes.find((x) => x.userData.structureId === "vertebras-toracicas")!;
+  // As vértebras passaram a ter ficha individual; "vertebras-toracicas" virou
+  // uma visão geral sem malha própria. T6 é a torácica típica e serve de
+  // amostra da linha média.
+  const vertebra = meshes.find((x) => x.userData.structureId === "vertebra-t6");
+  assert.ok(vertebra, "Malha de vertebra-t6 não encontrada");
   assert.ok(Math.abs(vertebra.userData.center.x) < 0.02, "Vértebra fora da linha média");
   assert.ok(
     onAnimatedSide(rigs.cervical, vertebra.userData.center.x),

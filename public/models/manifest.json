@@ -2,37 +2,37 @@
   {
     "kind": "musculos",
     "url": "/models/z-musculos.glb",
-    "bytes": 8201032,
+    "bytes": 13065548,
     "meshes": 466
   },
   {
     "kind": "ossos",
     "url": "/models/z-ossos.glb",
-    "bytes": 2586776,
+    "bytes": 4432152,
     "meshes": 230
   },
   {
     "kind": "articulacoes",
     "url": "/models/z-articulacoes.glb",
-    "bytes": 1653440,
+    "bytes": 1716104,
     "meshes": 200
   },
   {
     "kind": "ligamentos",
     "url": "/models/z-ligamentos.glb",
-    "bytes": 1107776,
+    "bytes": 1709712,
     "meshes": 296
   },
   {
     "kind": "tendoes",
     "url": "/models/z-tendoes.glb",
-    "bytes": 999852,
+    "bytes": 1853776,
     "meshes": 127
   },
   {
     "kind": "nervos",
     "url": "/models/z-nervos.glb",
-    "bytes": 775784,
+    "bytes": 1382224,
     "meshes": 172
   }
 ]

@@ -1,0 +1,140 @@
+{
+  "patches": [
+    {
+      "id": "metacarpais",
+      "name": "Metacarpais (visão geral)",
+      "summary": "Os cinco ossos longos da palma; cada um tem ficha própria, do primeiro ao quinto.",
+      "fields": {
+        "Tipo": "Visão geral do grupo. Cada metacarpal tem ficha própria, do 1º ao 5º.",
+        "Localização": "Mão",
+        "Principais partes": "Cada osso tem base proximal, corpo e cabeça distal. As cabeças formam os nós dos dedos com a mão fechada.",
+        "Função": "Cinco ossos longos que formam o esqueleto da palma e ligam o carpo às falanges.",
+        "Articula-se com": "Fileira distal do carpo, proximalmente, nas carpometacarpais; entre si, nas intermetacarpais; e com as falanges proximais, nas metacarpofalângicas.",
+        "Na prática": "O 2º e o 3º são fixos e formam o pilar rígido da mão; o 4º e o 5º são móveis e deixam a palma fazer concha; o 1º é o mais móvel de todos, pela articulação em sela. Essa gradação de mobilidade é a base do movimento de preensão.",
+        "Palpação básica": "Palpáveis em toda a extensão no dorso da mão. As cabeças aparecem como os nós dos dedos ao fechar o punho.",
+        "Marcos para o exercício": "Abra as fichas do 1º ao 5º metacarpal para comparar a mobilidade crescente da radial para a ulnar e as fraturas típicas de cada raio.",
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada metacarpal tem a sua: abra do 1º ao 5º para ver o eixo do pilar fixo e o afastamento do polegar."
+      },
+      "related": ["primeiro-metacarpal", "segundo-metacarpal", "terceiro-metacarpal", "quarto-metacarpal", "quinto-metacarpal", "falanges-da-mao", "metacarpofalangicas", "carpometacarpal-do-polegar"],
+      "aliases": ["metacarpo", "ossos da palma"],
+      "source_objects": []
+    }
+  ],
+  "new": [
+    {
+      "id": "primeiro-metacarpal",
+      "name": "1º metacarpal (do polegar)",
+      "english": "first metacarpal bone",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "O metacarpal mais curto e mais móvel; sua base forma a articulação em sela do polegar.",
+      "fields": {
+        "Tipo": "Longo, curto e robusto.",
+        "Localização": "Mão",
+        "Principais partes": "Base em sela, corpo achatado e cabeça com dois sesamoides na face palmar.",
+        "Função": "Sustenta o polegar e, pela articulação em sela com o trapézio, permite a oposição, movimento que define a preensão humana.",
+        "Articula-se com": "Trapézio, na carpometacarpal do polegar; e com a falange proximal do polegar, na metacarpofalângica.",
+        "Na prática": "A carpometacarpal do polegar é o local mais comum de artrose sintomática da mão, a rizartrose, que dói ao pinçar e girar chaves. A fratura de Bennett é intra-articular na base e costuma precisar de redução, porque o abdutor longo do polegar desloca o fragmento.",
+        "Palpação básica": "A base é palpável na tabaqueira anatômica; o corpo, no dorso da eminência tenar.",
+        "Marcos para o exercício": "O abdutor longo do polegar traciona a base; a rizartrose e a tendinopatia de De Quervain compartilham essa região e entram no diagnóstico diferencial da dor na base do polegar."
+      },
+      "related": ["metacarpais", "trapezio-do-carpo", "carpometacarpal-do-polegar", "oponente-do-polegar", "abdutor-longo-do-polegar"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["primeiro metacarpo", "metacarpal do polegar", "rizartrose", "fratura de Bennett"],
+      "source_objects": ["First metacarpal bone.l", "First metacarpal bone.r"]
+    },
+    {
+      "id": "segundo-metacarpal",
+      "name": "2º metacarpal",
+      "english": "second metacarpal bone",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "O metacarpal mais longo; forma, com o terceiro, o pilar fixo da mão.",
+      "fields": {
+        "Tipo": "Longo.",
+        "Localização": "Mão",
+        "Principais partes": "Base entalhada que encaixa no trapezoide, corpo longo e cabeça arredondada.",
+        "Função": "É o pilar radial fixo da mão: quase não se move em relação ao carpo, o que dá estabilidade à preensão de força.",
+        "Articula-se com": "Trapezoide, principalmente, e também trapézio e capitato; com o 3º metacarpal ao lado; e com a falange proximal do indicador.",
+        "Na prática": "A base fixa serve de âncora para o extensor radial longo do carpo, que estende e desvia o punho para o lado radial. Por ser fixo, absorve pouca energia em quedas e é mais sujeito a fraturas de corpo do que os raios móveis.",
+        "Palpação básica": "A base é palpável logo distal ao tubérculo do trapézio; o corpo, ao longo do dorso radial da palma.",
+        "Marcos para o exercício": "Ponto de referência para exercícios de desvio radial do punho, pela inserção do extensor radial longo do carpo na sua base."
+      },
+      "related": ["metacarpais", "trapezoide", "primeiro-metacarpal", "terceiro-metacarpal", "extensor-radial-longo-do-carpo"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["segundo metacarpo", "metacarpal do indicador", "pilar fixo"],
+      "source_objects": ["Second metacarpal bone.l", "Second metacarpal bone.r"]
+    },
+    {
+      "id": "terceiro-metacarpal",
+      "name": "3º metacarpal",
+      "english": "third metacarpal bone",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "O eixo da mão, com processo estiloide na base; referência da abdução e adução dos dedos.",
+      "fields": {
+        "Tipo": "Longo.",
+        "Localização": "Mão",
+        "Principais partes": "Base com um processo estiloide dorsal característico, corpo e cabeça. O eixo do dedo médio é a linha de referência dos movimentos dos dedos.",
+        "Função": "Completa, com o 2º, o pilar fixo da mão. A abdução e a adução dos dedos são definidas em relação ao seu eixo.",
+        "Articula-se com": "Capitato, na base; com o 2º e o 4º metacarpais ao lado; e com a falange proximal do dedo médio.",
+        "Na prática": "O extensor radial curto do carpo insere-se na sua base e é o principal extensor puro do punho. O processo estiloide dorsal pode fraturar por avulsão e simular um cisto no dorso da mão.",
+        "Palpação básica": "O processo estiloide é palpável como uma saliência óssea no dorso da base, alinhada com o dedo médio.",
+        "Marcos para o exercício": "Referência para descrever abdução e adução dos dedos e para orientar exercícios de extensão pura do punho, pela inserção do extensor radial curto do carpo."
+      },
+      "related": ["metacarpais", "capitato", "segundo-metacarpal", "quarto-metacarpal", "extensor-radial-curto-do-carpo", "interosseos-dorsais-da-mao"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["terceiro metacarpo", "metacarpal do dedo médio", "eixo da mão"],
+      "source_objects": ["Third metacarpal bone.l", "Third metacarpal bone.r"]
+    },
+    {
+      "id": "quarto-metacarpal",
+      "name": "4º metacarpal",
+      "english": "fourth metacarpal bone",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "Raio móvel medial; junto com o quinto, deixa a palma fechar em concha.",
+      "fields": {
+        "Tipo": "Longo, mais delgado que os radiais.",
+        "Localização": "Mão",
+        "Principais partes": "Base pequena, corpo estreito e cabeça. A articulação com o hamato tem alguma mobilidade.",
+        "Função": "É um dos dois raios móveis mediais. Sua mobilidade permite que a palma faça concha para segurar objetos arredondados.",
+        "Articula-se com": "Hamato, na base; com o 3º e o 5º metacarpais ao lado; e com a falange proximal do dedo anelar.",
+        "Na prática": "A mobilidade das carpometacarpais do 4º e 5º dedos é o que permite a oposição relativa do mínimo e o fechamento da mão em torno de um cabo. Perder essa concavidade, por rigidez ou edema, reduz muito a força de preensão.",
+        "Palpação básica": "Palpável no dorso ulnar da palma, entre o 3º e o 5º metacarpais.",
+        "Marcos para o exercício": "Trabalhar a concavidade palmar, o arco transverso da mão, envolve mobilizar os raios do 4º e 5º metacarpais."
+      },
+      "related": ["metacarpais", "hamato", "terceiro-metacarpal", "quinto-metacarpal", "interosseos-palmares"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["quarto metacarpo", "metacarpal do anelar", "arco transverso"],
+      "source_objects": ["Fourth metacarpal bone.l", "Fourth metacarpal bone.r"]
+    },
+    {
+      "id": "quinto-metacarpal",
+      "name": "5º metacarpal",
+      "english": "fifth metacarpal bone",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "O mais móvel dos raios mediais; o colo é o local da fratura do boxeador.",
+      "fields": {
+        "Tipo": "Longo, o mais delgado.",
+        "Localização": "Mão",
+        "Principais partes": "Base com um tubérculo para o extensor ulnar do carpo, corpo, colo e cabeça.",
+        "Função": "É o raio mais móvel do lado ulnar e leva o mínimo para a oposição, ajudando a fechar a mão em concha.",
+        "Articula-se com": "Hamato, na base; com o 4º metacarpal ao lado; e com a falange proximal do dedo mínimo.",
+        "Na prática": "A fratura do colo do 5º metacarpal é a fratura do boxeador, causada por soco com a mão fechada. Costuma consolidar com algum grau de angulação, tolerável porque a mobilidade da carpometacarpal compensa.",
+        "Palpação básica": "A base e o tubérculo são palpáveis no bordo ulnar do punho; a cabeça é o nó do dedo mínimo.",
+        "Marcos para o exercício": "O extensor ulnar do carpo insere-se na base e faz extensão com desvio ulnar do punho; o oponente do dedo mínimo traciona o corpo na oposição."
+      },
+      "related": ["metacarpais", "hamato", "quarto-metacarpal", "extensor-ulnar-do-carpo", "oponente-do-dedo-minimo-da-mao"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["quinto metacarpo", "metacarpal do mínimo", "fratura do boxeador"],
+      "source_objects": ["Fifth metacarpal bone.l", "Fifth metacarpal bone.r"]
+    }
+  ]
+}

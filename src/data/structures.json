@@ -3836,19 +3836,21 @@
   },
   {
     "id": "vertebras-cervicais",
-    "name": "Vértebras cervicais",
+    "name": "Vértebras cervicais (visão geral)",
     "english": "cervical vertebra",
     "kind": "ossos",
     "region": "Coluna vertebral",
-    "summary": "São sete vértebras que sustentam o pescoço e protegem a medula cervical.",
+    "summary": "O que define uma vértebra cervical: corpo pequeno, forame transversário e processo espinhoso bífido.",
     "fields": {
-      "Tipo": "Irregulares",
+      "Tipo": "Visão geral do grupo. As sete vértebras cervicais têm ficha própria: atlas, áxis e de C3 a C7.",
       "Localização": "Coluna vertebral",
-      "Principais partes": "Corpo; arco; forames transversários; processos articulares.",
-      "Função": "São sete vértebras que sustentam o pescoço e protegem a medula cervical.",
-      "Articula-se com": "Entre si pelos discos intervertebrais e pelas articulações zigapofisárias; acima com o crânio, pelo atlas, e abaixo com a primeira vértebra torácica.",
-      "Palpação básica": "Os processos espinhosos são palpáveis na linha média posterior. O de C7, chamado vértebra proeminente, é o mais saliente e serve de referência para contar os demais. O tubérculo anterior de C6, ou tubérculo carotídeo, é palpável lateralmente.",
-      "Marcos para o exercício": "Têm forames transversários, por onde passa a artéria vertebral, e processos espinhosos bífidos de C3 a C6. Suas facetas articulares são orientadas a cerca de 45°, o que permite grande mobilidade em todos os planos, especialmente rotação."
+      "Principais partes": "Corpo pequeno e largo no sentido transversal; forame vertebral grande e triangular; forame transversário em cada processo transverso; processo espinhoso curto e bífido de C3 a C6; processos articulares orientados a cerca de 45°.",
+      "Função": "Sustentam a cabeça e permitem a maior mobilidade de toda a coluna, em todos os planos. O corpo pequeno reflete a carga leve; o forame vertebral grande abriga o alargamento cervical da medula.",
+      "Articula-se com": "Entre si pelos discos e pelas zigapofisárias; acima com o crânio, pelo atlas; abaixo com T1.",
+      "Palpação básica": "Os processos espinhosos são palpáveis na linha média posterior; o de C7, a vértebra proeminente, é o mais saliente e serve para contar os demais. O tubérculo anterior de C6, ou tubérculo carotídeo, é palpável lateralmente.",
+      "Marcos para o exercício": "O forame transversário dá passagem à artéria vertebral, de C6 a C1, o que exige cuidado em manobras cervicais de alta velocidade. As únicas cervicais sem processo espinhoso bífido são C7 e, em geral, C6.",
+      "Na prática": "A orientação das facetas a 45° é o que permite tanta rotação e inclinação, mas também o que deixa a região vulnerável ao traumatismo em chicote. Cerca de metade da rotação total acontece só entre atlas e áxis.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria: cada vértebra cervical tem a sua. Abra atlas, áxis ou de C3 a C7 para ver e comparar os ossos individualmente."
     },
     "related": [
       "atlas",
@@ -3863,45 +3865,44 @@
       "multifido-cervical",
       "semiespinhal-cervical",
       "levantador-da-escapula",
-      "plexo-braquial"
+      "plexo-braquial",
+      "vertebra-c3",
+      "vertebra-c4",
+      "vertebra-c5",
+      "vertebra-c6",
+      "vertebra-c7"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
       "z-anatomy"
     ],
-    "aliases": [],
-    "modelIds": [
-      "ZA-3e0eee8778a5f2",
-      "ZA-bff9085efefcb3",
-      "ZA-dc49017304bfab",
-      "ZA-8a947f4284315c",
-      "ZA-63fa4563c47f6b"
+    "aliases": [
+      "cervical",
+      "C1 a C7",
+      "coluna cervical"
     ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "Vertebra C3",
-      "Vertebra C4",
-      "Vertebra C5",
-      "Vertebra C6",
-      "Vertebra C7"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "vertebras-toracicas",
-    "name": "Vértebras torácicas",
+    "name": "Vértebras torácicas (visão geral)",
     "english": "thoracic vertebra",
     "kind": "ossos",
     "region": "Coluna vertebral",
-    "summary": "São doze vértebras que se articulam com as costelas.",
+    "summary": "O que define uma vértebra torácica: fóveas costais, facetas frontais e espinhoso longo e inclinado.",
     "fields": {
-      "Tipo": "Irregulares",
+      "Tipo": "Visão geral do grupo. As doze vértebras torácicas têm ficha própria, de T1 a T12.",
       "Localização": "Coluna vertebral",
-      "Principais partes": "Fóveas costais; corpo; processos espinhosos.",
-      "Função": "São doze vértebras que se articulam com as costelas.",
+      "Principais partes": "Corpo em forma de coração, com fóveas costais para a cabeça da costela; fóvea costal no processo transverso, para o tubérculo da costela; forame vertebral pequeno e circular; processo espinhoso longo e muito inclinado para baixo; facetas articulares orientadas no plano frontal.",
+      "Função": "Formam a parte da coluna presa à caixa torácica. As facetas frontais favorecem a rotação e limitam a flexão e a extensão; as costelas limitam ainda mais o movimento.",
       "Articula-se com": "Entre si pelos discos e pelas zigapofisárias; com as costelas pelas articulações costovertebrais e costotransversárias; acima com C7 e abaixo com L1.",
-      "Palpação básica": "Os processos espinhosos são longos e muito inclinados para baixo, de modo que a ponta de um espinhoso torácico médio corresponde ao corpo da vértebra seguinte. A espinha da escápula corresponde ao nível de T3 e o ângulo inferior da escápula, ao nível de T7.",
-      "Marcos para o exercício": "Suas facetas articulares orientadas no plano frontal favorecem a rotação e limitam a flexão e a extensão. As fóveas costais recebem as cabeças das costelas, ligando diretamente a coluna à mecânica respiratória."
+      "Palpação básica": "A espinha da escápula está no nível de T3 e o ângulo inferior da escápula no nível de T7, referências rápidas para contar.",
+      "Marcos para o exercício": "A maior parte da rotação do tronco acontece aqui, não na lombar. Devolver mobilidade torácica costuma aliviar demanda sobre a cervical e a lombar.",
+      "Na prática": "A regra dos espinhosos é útil na palpação: de T1 a T3 a ponta do espinhoso está no nível do próprio corpo; de T4 a T6, um nível abaixo; de T7 a T9, dois níveis abaixo; de T10 a T12 volta a subir.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria: cada vértebra torácica tem a sua. Abra de T1 a T12 para comparar as fóveas costais e ver a transição para a forma lombar."
     },
     "related": [
       "vertebras-cervicais",
@@ -3914,59 +3915,43 @@
       "multifido-toracico",
       "longuissimo-toracico",
       "iliocostal-toracico",
-      "romboide-maior"
+      "romboide-maior",
+      "vertebra-t1",
+      "vertebra-t6",
+      "vertebra-t12"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
       "z-anatomy"
     ],
-    "aliases": [],
-    "modelIds": [
-      "ZA-ecb1f7dbc175da",
-      "ZA-ddbf6c72bc29c5",
-      "ZA-18b015b2b8a113",
-      "ZA-792ba4c0105fcd",
-      "ZA-e3f0a4de64962f",
-      "ZA-20e95e2499fd17",
-      "ZA-84f5b2614efc41",
-      "ZA-235aff25d47f45",
-      "ZA-fe40150f8e263b",
-      "ZA-be0449a3e41911",
-      "ZA-d0a286ba14e27b",
-      "ZA-39310f10f871f0"
+    "aliases": [
+      "torácica",
+      "T1 a T12",
+      "coluna torácica",
+      "dorsal"
     ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "Vertebra T1",
-      "Vertebra T10",
-      "Vertebra T11",
-      "Vertebra T12",
-      "Vertebra T2",
-      "Vertebra T3",
-      "Vertebra T4",
-      "Vertebra T5",
-      "Vertebra T6",
-      "Vertebra T7",
-      "Vertebra T8",
-      "Vertebra T9"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "vertebras-lombares",
-    "name": "Vértebras lombares",
+    "name": "Vértebras lombares (visão geral)",
     "english": "lumbar vertebra",
     "kind": "ossos",
     "region": "Coluna vertebral",
-    "summary": "São cinco vértebras de corpos volumosos relacionadas ao suporte de carga.",
+    "summary": "O que define uma vértebra lombar: corpo maciço, facetas sagitais e processo espinhoso quadrangular.",
     "fields": {
-      "Tipo": "Irregulares",
+      "Tipo": "Visão geral do grupo. As cinco vértebras lombares têm ficha própria, de L1 a L5.",
       "Localização": "Coluna vertebral",
-      "Principais partes": "Corpo; pedículos; lâminas; processos articulares.",
-      "Função": "São cinco vértebras de corpos volumosos relacionadas ao suporte de carga.",
-      "Articula-se com": "Entre si pelos discos e pelas zigapofisárias; acima com T12 e abaixo com o sacro, na articulação lombossacra.",
-      "Palpação básica": "Os processos espinhosos são grandes, quadrangulares e horizontais, facilmente palpáveis. A linha que une os pontos mais altos das cristas ilíacas, chamada linha de Tuffier, cruza o espaço entre L3 e L4 ou o processo espinhoso de L4.",
-      "Marcos para o exercício": "Suas facetas articulares orientadas no plano sagital favorecem a flexão e a extensão e limitam muito a rotação, que é de apenas 2° a 3° por segmento. Forçar rotação lombar é justamente o que sobrecarrega as facetas e o disco."
+      "Principais partes": "Corpo grande e maciço, mais largo que alto; forame vertebral triangular; processo espinhoso curto, largo e quadrangular, horizontal; processos transversos longos e finos, na verdade processos costiformes; processos mamilares e acessórios.",
+      "Função": "Suportam a maior carga axial de toda a coluna. Permitem boa flexão e extensão e muito pouca rotação.",
+      "Articula-se com": "Entre si pelos discos e pelas zigapofisárias; acima com T12; abaixo com o sacro.",
+      "Palpação básica": "Processos espinhosos grandes e facilmente palpáveis. A linha entre os pontos mais altos das cristas ilíacas, a linha de Tuffier, cruza o espaço L3-L4 ou o espinhoso de L4.",
+      "Marcos para o exercício": "O multífido lombar, o transverso do abdome, o diafragma e o assoalho pélvico formam a unidade de estabilização profunda desta região. O processo mamilar é a origem do multífido.",
+      "Na prática": "As facetas orientadas no plano sagital travam a rotação: são apenas 2° a 3° por segmento. Forçar rotação lombar é o que sobrecarrega faceta e disco, e essa é a base de boa parte da orientação de movimento na lombalgia.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria: cada vértebra lombar tem a sua. Abra de L1 a L5 para comparar o tamanho crescente dos corpos e a mudança de orientação das facetas."
     },
     "related": [
       "vertebras-toracicas",
@@ -3980,29 +3965,26 @@
       "iliocostal-lombar",
       "longuissimo-toracico",
       "ligamento-iliolombar",
-      "ligamentos-amarelos"
+      "ligamentos-amarelos",
+      "vertebra-l1",
+      "vertebra-l2",
+      "vertebra-l3",
+      "vertebra-l4",
+      "vertebra-l5"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
       "z-anatomy"
     ],
-    "aliases": [],
-    "modelIds": [
-      "ZA-a268f2cafbd46c",
-      "ZA-383d4717457a61",
-      "ZA-50d6b6d1e9bdae",
-      "ZA-9b3e08dcf3827b",
-      "ZA-cfb0a2a0fed8f0"
+    "aliases": [
+      "lombar",
+      "L1 a L5",
+      "coluna lombar"
     ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "Vertebra L1",
-      "Vertebra L2",
-      "Vertebra L3",
-      "Vertebra L4",
-      "Vertebra L5"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "sacro",
@@ -4091,19 +4073,21 @@
   },
   {
     "id": "costelas",
-    "name": "Costelas",
+    "name": "Costelas (visão geral)",
     "english": "rib",
     "kind": "ossos",
     "region": "Tronco",
-    "summary": "Formam a caixa torácica e participam da mecânica respiratória.",
+    "summary": "O que define uma costela típica e por que a 1ª, a 2ª, a 11ª e a 12ª são atípicas.",
     "fields": {
-      "Tipo": "Planos e curvos",
+      "Tipo": "Visão geral do grupo. As doze costelas têm ficha própria, da primeira à décima segunda.",
       "Localização": "Tronco",
-      "Principais partes": "Cabeça; colo; tubérculo; ângulo; sulco costal.",
-      "Função": "Formam a caixa torácica e participam da mecânica respiratória.",
-      "Articula-se com": "Vértebras torácicas, atrás, pelas articulações costovertebrais e costotransversárias; e com o esterno, à frente, pelas cartilagens costais, nas sete primeiras.",
-      "Palpação básica": "Palpáveis em toda a parede torácica. A segunda costela é localizada a partir do ângulo do esterno, referência para contar as demais. A décima segunda costela é palpável como extremidade livre na região lombar lateral.",
-      "Marcos para o exercício": "Costelas de um a sete são verdadeiras, de oito a dez são falsas e onze e doze são flutuantes. Seu movimento em braço de bomba, nas superiores, e em alça de balde, nas inferiores, é a base da mecânica respiratória."
+      "Principais partes": "Numa costela típica: cabeça com duas facetas, colo, tubérculo com faceta articular, ângulo, corpo e sulco da costela na borda inferior, onde corre o feixe vasculonervoso.",
+      "Função": "Formam a caixa torácica, protegem coração e pulmões e transformam a contração muscular em mudança de volume torácico. São doze pares.",
+      "Articula-se com": "Vértebras torácicas, atrás, pelas articulações costovertebrais e costotransversárias; à frente, com o esterno pelas cartilagens costais, nas sete primeiras.",
+      "Palpação básica": "A segunda costela é localizada a partir do ângulo do esterno e serve para contar as demais. A décima segunda é palpável como extremidade livre na região lombar lateral.",
+      "Marcos para o exercício": "Dor torácica que piora à respiração profunda e é reproduzida à palpação costal costuma ser mecânica, e não cardíaca. Restrição costal limita a inspiração e sobrecarrega acessórios do pescoço.",
+      "Na prática": "Costelas de 1 a 7 são verdadeiras, ligadas diretamente ao esterno; de 8 a 10 são falsas, ligadas à cartilagem de cima; 11 e 12 são flutuantes, terminam livres. As superiores se movem em braço de bomba, elevando o esterno; as inferiores em alça de balde, alargando o tórax.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria: cada costela tem a sua. Abra da primeira à décima segunda para comparar a forma, o comprimento e a inclinação."
     },
     "related": [
       "vertebras-toracicas",
@@ -4116,67 +4100,26 @@
       "intercostais-internos",
       "escaleno-anterior",
       "serratil-anterior",
-      "quadrado-lombar"
+      "quadrado-lombar",
+      "primeira-costela",
+      "segunda-costela",
+      "setima-costela",
+      "decima-primeira-costela",
+      "decima-segunda-costela"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
       "z-anatomy"
     ],
-    "aliases": [],
-    "modelIds": [
-      "ZA-be538ded659c0e",
-      "ZA-10e781b42ca15c",
-      "ZA-4a8d5c3e136dd5",
-      "ZA-de22fedf8db395",
-      "ZA-22be6cf4870e79",
-      "ZA-07750711de2880",
-      "ZA-861098e2ad6d5f",
-      "ZA-5f467e0a0e22c1",
-      "ZA-f6891ad7d6ecbb",
-      "ZA-147bb1e888a9f1",
-      "ZA-ab005e833046c8",
-      "ZA-6f76b6bcc3c870",
-      "ZA-7c364a97d557e4",
-      "ZA-19f705a99deeaa",
-      "ZA-60e1d0917fd5f7",
-      "ZA-c7dda0a73f51ff",
-      "ZA-2aa5870d308142",
-      "ZA-7e86f39de90ba8",
-      "ZA-e47857b7da871d",
-      "ZA-4a79b7c42a45c3",
-      "ZA-24f1569dfcb072",
-      "ZA-cf02c4ba2331cd",
-      "ZA-9778f93d63cbe0",
-      "ZA-a6652efdcd29c6"
+    "aliases": [
+      "costela",
+      "caixa torácica",
+      "gradil costal"
     ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "Eighth rib.l",
-      "Eighth rib.r",
-      "Eleventh rib.l",
-      "Eleventh rib.r",
-      "Fifth rib.l",
-      "Fifth rib.r",
-      "First rib.l",
-      "First rib.r",
-      "Fourth rib.l",
-      "Fourth rib.r",
-      "Ninth rib.l",
-      "Ninth rib.r",
-      "Second rib.r",
-      "Second rib.l",
-      "Seventh rib.l",
-      "Seventh rib.r",
-      "Sixth rib.l",
-      "Sixth rib.r",
-      "Tenth rib.l",
-      "Tenth rib.r",
-      "Third rib.l",
-      "Third rib.r",
-      "Twelfth rib.l",
-      "Twelfth rib.r"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "esterno",
@@ -4806,19 +4749,21 @@
   },
   {
     "id": "metacarpais",
-    "name": "Metacarpais",
+    "name": "Metacarpais (visão geral)",
     "english": "metacarpal bone",
     "kind": "ossos",
     "region": "Mão",
-    "summary": "Cinco ossos formam a base óssea da palma.",
+    "summary": "Os cinco ossos longos da palma; cada um tem ficha própria, do primeiro ao quinto.",
     "fields": {
-      "Tipo": "Longos",
+      "Tipo": "Visão geral do grupo. Cada metacarpal tem ficha própria, do 1º ao 5º.",
       "Localização": "Mão",
-      "Principais partes": "Bases; corpos; cabeças.",
-      "Função": "Cinco ossos formam a base óssea da palma.",
-      "Articula-se com": "Ossos da fileira distal do carpo, proximalmente, nas articulações carpometacarpais; entre si, pelas articulações intermetacarpais; e com as falanges proximais, nas metacarpofalângicas.",
-      "Palpação básica": "Palpáveis em toda a extensão no dorso da mão. As cabeças formam os nós dos dedos quando a mão é fechada.",
-      "Marcos para o exercício": "O segundo e o terceiro são fixos e formam o pilar rígido da mão; o quarto e o quinto são móveis, permitindo que a palma se feche em concha; o primeiro é o mais móvel de todos, graças à articulação em sela. A fratura do colo do quinto metacarpal é a fratura do boxeador."
+      "Principais partes": "Cada osso tem base proximal, corpo e cabeça distal. As cabeças formam os nós dos dedos com a mão fechada.",
+      "Função": "Cinco ossos longos que formam o esqueleto da palma e ligam o carpo às falanges.",
+      "Articula-se com": "Fileira distal do carpo, proximalmente, nas carpometacarpais; entre si, nas intermetacarpais; e com as falanges proximais, nas metacarpofalângicas.",
+      "Palpação básica": "Palpáveis em toda a extensão no dorso da mão. As cabeças aparecem como os nós dos dedos ao fechar o punho.",
+      "Marcos para o exercício": "Abra as fichas do 1º ao 5º metacarpal para comparar a mobilidade crescente da radial para a ulnar e as fraturas típicas de cada raio.",
+      "Na prática": "O 2º e o 3º são fixos e formam o pilar rígido da mão; o 4º e o 5º são móveis e deixam a palma fazer concha; o 1º é o mais móvel de todos, pela articulação em sela. Essa gradação de mobilidade é a base do movimento de preensão.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada metacarpal tem a sua: abra do 1º ao 5º para ver o eixo do pilar fixo e o afastamento do polegar."
     },
     "related": [
       "trapezio-do-carpo",
@@ -4831,55 +4776,43 @@
       "interosseos-dorsais-da-mao",
       "interosseos-palmares",
       "ligamento-metacarpal-transverso-profundo",
-      "oponente-do-polegar"
+      "oponente-do-polegar",
+      "primeiro-metacarpal",
+      "segundo-metacarpal",
+      "terceiro-metacarpal",
+      "quarto-metacarpal",
+      "quinto-metacarpal"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
       "z-anatomy"
     ],
-    "aliases": [],
-    "modelIds": [
-      "ZA-22e10f0df37ada",
-      "ZA-63f1fe6563a53b",
-      "ZA-9df38dd0067f8e",
-      "ZA-0ca27c38f6ab39",
-      "ZA-72081f4dbc2370",
-      "ZA-d885ef7d1a0584",
-      "ZA-1557e03b4112dd",
-      "ZA-2c738171c8d19f",
-      "ZA-dd7c3d15646d92",
-      "ZA-a30ca0ea41b749"
+    "aliases": [
+      "metacarpo",
+      "ossos da palma"
     ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "Fifth metacarpal bone.l",
-      "Fifth metacarpal bone.r",
-      "First metacarpal bone.l",
-      "First metacarpal bone.r",
-      "Fourth metacarpal bone.l",
-      "Fourth metacarpal bone.r",
-      "Second metacarpal bone.l",
-      "Second metacarpal bone.r",
-      "Third metacarpal bone.l",
-      "Third metacarpal bone.r"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "falanges-da-mao",
-    "name": "Falanges da mão",
+    "name": "Falanges da mão (visão geral)",
     "english": "phalanx of hand",
     "kind": "ossos",
     "region": "Mão",
-    "summary": "Formam os dedos; o polegar possui duas, e os demais, três.",
+    "summary": "Os 14 ossos dos dedos de cada mão; cada falange tem ficha própria, por dedo e por fileira.",
     "fields": {
-      "Tipo": "Longos",
+      "Tipo": "Visão geral do grupo. Cada falange tem ficha própria, por dedo e por fileira.",
       "Localização": "Mão",
-      "Principais partes": "Bases; corpos; cabeças.",
-      "Função": "Formam os dedos; o polegar possui duas, e os demais, três.",
-      "Articula-se com": "Metacarpais, nas articulações metacarpofalângicas, e entre si, nas interfalângicas. O polegar tem duas falanges; os demais dedos, três.",
-      "Palpação básica": "Palpáveis em toda a extensão. As articulações interfalângicas são facilmente delimitadas pelas pregas cutâneas dorsais.",
-      "Marcos para o exercício": "As falanges distais têm a tuberosidade que sustenta a polpa digital. O sistema de polias fibrosas dos flexores corre na face palmar: a polia A1 é onde ocorre o dedo em gatilho, com o nódulo tendíneo travando ao passar por ela."
+      "Principais partes": "Cada falange tem base, corpo e cabeça. O polegar tem duas falanges, proximal e distal; os outros quatro dedos têm as três.",
+      "Função": "Formam o esqueleto dos dedos e são movidas pelos flexores e extensores para a preensão fina.",
+      "Articula-se com": "Metacarpais, nas metacarpofalângicas, e entre si, nas interfalângicas.",
+      "Palpação básica": "Palpáveis em toda a extensão; as pregas cutâneas dorsais marcam as interfalângicas.",
+      "Marcos para o exercício": "Abra as fichas individuais de cada dedo, da proximal à distal, para comparar comprimento e função.",
+      "Na prática": "São 14 falanges em cada mão. Abra a ficha de cada dedo para ver as diferenças: polegar do esquiador, dedo em gatilho, dedo em martelo e jersey finger têm cada um o seu lugar.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada falange tem a sua: abra-as para ver todos os ossos dos dedos das duas mãos."
     },
     "related": [
       "metacarpais",
@@ -4890,75 +4823,26 @@
       "extensor-dos-dedos",
       "lumbricais-da-mao",
       "ligamentos-colaterais-interfalangicos-da-mao",
-      "aponeurose-palmar"
+      "aponeurose-palmar",
+      "falange-proximal-do-polegar",
+      "falange-distal-do-polegar",
+      "falange-proximal-do-indicador",
+      "falange-proximal-do-medio",
+      "falange-proximal-do-anelar",
+      "falange-proximal-do-minimo"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
       "z-anatomy"
     ],
-    "aliases": [],
-    "modelIds": [
-      "ZA-ccff27b79ec8e9",
-      "ZA-0c77c2d8ff99f2",
-      "ZA-48e48518b26bcf",
-      "ZA-5f1ee7ec033a6f",
-      "ZA-fd4f42e270065f",
-      "ZA-4ce81819884916",
-      "ZA-ab8574e540f5ad",
-      "ZA-754686312c3d29",
-      "ZA-f6f3b71c5c8c03",
-      "ZA-246f9aa59fd09a",
-      "ZA-20da467531b352",
-      "ZA-a4d46065b80672",
-      "ZA-5955d7f9c31067",
-      "ZA-4869c6ede8bd46",
-      "ZA-d7ed85a2496bb0",
-      "ZA-c60a22411ad8c0",
-      "ZA-6c214d35b4a9c7",
-      "ZA-e4e03b2db07bd1",
-      "ZA-e9effcce041423",
-      "ZA-5a47814091b922",
-      "ZA-9e49555b8e9231",
-      "ZA-e6c7801fd264ef",
-      "ZA-164e3978d46984",
-      "ZA-ce23d4b5c9b625",
-      "ZA-c36d7bb09a02c1",
-      "ZA-b7e1d81f56ce2f",
-      "ZA-c30338b26464d9",
-      "ZA-35f7092ca4daad"
+    "aliases": [
+      "falanges dos dedos da mão",
+      "dedos"
     ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "Distal phalanx of fifth finger of hand.l",
-      "Distal phalanx of fifth finger of hand.r",
-      "Distal phalanx of first finger of hand.l",
-      "Distal phalanx of first finger of hand.r",
-      "Distal phalanx of fourth finger of hand.l",
-      "Distal phalanx of fourth finger of hand.r",
-      "Distal phalanx of second finger of hand.l",
-      "Distal phalanx of second finger of hand.r",
-      "Distal phalanx of third finger of hand.l",
-      "Distal phalanx of third finger of hand.r",
-      "Middle phalanx of fifth finger of hand.l",
-      "Middle phalanx of fifth finger of hand.r",
-      "Middle phalanx of fourth finger of hand.l",
-      "Middle phalanx of fourth finger of hand.r",
-      "Middle phalanx of second finger of hand.l",
-      "Middle phalanx of second finger of hand.r",
-      "Middle phalanx of third finger of hand.l",
-      "Middle phalanx of third finger of hand.r",
-      "Proximal phalanx of fifth finger of hand.l",
-      "Proximal phalanx of fifth finger of hand.r",
-      "Proximal phalanx of first finger of hand.l",
-      "Proximal phalanx of first finger of hand.r",
-      "Proximal phalanx of fourth finger of hand.l",
-      "Proximal phalanx of fourth finger of hand.r",
-      "Proximal phalanx of second finger of hand.l",
-      "Proximal phalanx of second finger of hand.r",
-      "Proximal phalanx of third finger of hand.l",
-      "Proximal phalanx of third finger of hand.r"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "osso-do-quadril",
@@ -5485,19 +5369,21 @@
   },
   {
     "id": "metatarsais",
-    "name": "Metatarsais",
+    "name": "Metatarsais (visão geral)",
     "english": "metatarsal bone",
     "kind": "ossos",
     "region": "Pé",
-    "summary": "Cinco ossos conectam o tarso aos dedos e ajudam a formar os arcos.",
+    "summary": "Os cinco ossos longos do médio-pé; cada um tem ficha própria, do primeiro ao quinto.",
     "fields": {
-      "Tipo": "Longos",
+      "Tipo": "Visão geral do grupo. Cada metatarsal tem ficha própria, do 1º ao 5º.",
       "Localização": "Pé",
-      "Principais partes": "Bases; corpos; cabeças; tuberosidade do quinto metatarsal.",
-      "Função": "Cinco ossos conectam o tarso aos dedos e ajudam a formar os arcos.",
-      "Articula-se com": "Cuneiformes e cuboide, atrás, nas articulações tarsometatarsais; entre si, nas intermetatarsais; e com as falanges proximais, nas metatarsofalângicas.",
-      "Palpação básica": "Palpáveis no dorso do pé em toda a extensão. A base do quinto metatarsal é uma proeminência evidente na borda lateral do pé e referência clínica frequente.",
-      "Marcos para o exercício": "A linha das articulações tarsometatarsais é a articulação de Lisfranc, cuja lesão é grave e subdiagnosticada. O primeiro metatarsal é curto e robusto e recebe cerca do dobro da carga dos demais; o segundo é o mais longo e o mais sujeito a fratura por estresse."
+      "Principais partes": "Cada osso tem base proximal, corpo e cabeça distal. As cabeças formam a região que apoia o antepé no chão.",
+      "Função": "Cinco ossos longos que ligam o tarso às falanges e distribuem a carga do peso pelo antepé.",
+      "Articula-se com": "Cuneiformes e cuboide, proximalmente, nas tarsometatarsais; entre si, nas intermetatarsais; e com as falanges proximais, nas metatarsofalângicas.",
+      "Palpação básica": "Palpáveis em toda a extensão no dorso do pé; as cabeças, na planta, sob a prega dos dedos.",
+      "Marcos para o exercício": "Abra as fichas do 1º ao 5º metatarsal para comparar a função de apoio e as fraturas típicas de cada raio.",
+      "Na prática": "As cabeças dos metatarsais formam os pontos de apoio do antepé. Sobrecarga sob uma cabeça, a metatarsalgia, é queixa comum e muda conforme o raio. O 1º e o 5º são os mais individualizados clinicamente.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada metatarsal tem a sua: abra do 1º ao 5º para ver a base recuada do 2º e a tuberosidade do 5º."
     },
     "related": [
       "cuneiforme-medial",
@@ -5511,55 +5397,44 @@
       "fibular-longo",
       "tibial-anterior",
       "ligamento-metatarsal-transverso-profundo",
-      "interosseos-dorsais-do-pe"
+      "interosseos-dorsais-do-pe",
+      "primeiro-metatarsal",
+      "segundo-metatarsal",
+      "terceiro-metatarsal",
+      "quarto-metatarsal",
+      "quinto-metatarsal",
+      "ligamentos-tarsometatarsais"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
       "z-anatomy"
     ],
-    "aliases": [],
-    "modelIds": [
-      "ZA-1121d2712fdac7",
-      "ZA-32252c5a8288c3",
-      "ZA-5c4831118859bc",
-      "ZA-18d651c7c4cb48",
-      "ZA-a1dbeb10397d29",
-      "ZA-ed21d2eab3634f",
-      "ZA-48e6cf5ecc82e8",
-      "ZA-661f01d69bb1de",
-      "ZA-b0bd7f9ca22f4a",
-      "ZA-d1a9c79b5c8977"
+    "aliases": [
+      "metatarso",
+      "ossos do antepé"
     ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "Fifth metatarsal bone.l",
-      "Fifth metatarsal bone.r",
-      "First metatarsal bone.l",
-      "First metatarsal bone.r",
-      "Fourth metatarsal bone.l",
-      "Fourth metatarsal bone.r",
-      "Second metatarsal bone.r",
-      "Second metatarsal bone.l",
-      "Third metatarsal bone.l",
-      "Third metatarsal bone.r"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "falanges-do-pe",
-    "name": "Falanges do pé",
+    "name": "Falanges do pé (visão geral)",
     "english": "phalanx of foot",
     "kind": "ossos",
     "region": "Pé",
-    "summary": "Formam os dedos; o hálux possui duas, e os demais, três.",
+    "summary": "Os 14 ossos dos dedos de cada pé; cada falange tem ficha própria, por dedo e por fileira.",
     "fields": {
-      "Tipo": "Longos",
+      "Tipo": "Visão geral do grupo. Cada falange tem ficha própria, por dedo e por fileira.",
       "Localização": "Pé",
-      "Principais partes": "Bases; corpos; cabeças.",
-      "Função": "Formam os dedos; o hálux possui duas, e os demais, três.",
-      "Articula-se com": "Metatarsais, nas metatarsofalângicas, e entre si, nas interfalângicas. O hálux tem duas falanges; os demais dedos, três.",
-      "Palpação básica": "Palpáveis em toda a extensão, com as articulações delimitadas pelas pregas cutâneas dorsais.",
-      "Marcos para o exercício": "A metatarsofalângica do hálux precisa de cerca de 60° a 70° de extensão para o desprendimento normal do passo. Sua limitação é o hálux rígido, que altera toda a mecânica da propulsão e sobrecarrega os demais raios."
+      "Principais partes": "Cada falange tem base, corpo e cabeça. O hálux tem duas falanges, proximal e distal; os outros quatro dedos têm as três, embora curtas.",
+      "Função": "Formam o esqueleto dos dedos do pé e estabilizam o antepé no impulso da marcha.",
+      "Articula-se com": "Metatarsais, nas metatarsofalângicas, e entre si, nas interfalângicas.",
+      "Palpação básica": "Palpáveis no dorso de cada dedo; as interfalângicas, pelas pregas cutâneas.",
+      "Marcos para o exercício": "Abra as fichas individuais de cada dedo, da proximal à distal, para comparar o hálux robusto com os dedos menores.",
+      "Na prática": "São 14 falanges em cada pé. As do hálux sustentam carga no impulso; as dos dedos menores são pequenas e frequentemente deformadas em garra ou martelo.",
+      "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada falange tem a sua: abra-as para ver todos os ossos dos dedos dos dois pés."
     },
     "related": [
       "metatarsais",
@@ -5571,75 +5446,26 @@
       "abdutor-do-halux",
       "lumbricais-do-pe",
       "ligamentos-colaterais-metatarsofalangicos",
-      "aponeurose-plantar"
+      "aponeurose-plantar",
+      "falange-proximal-do-halux",
+      "falange-distal-do-halux",
+      "falange-proximal-do-segundo-dedo-do-pe",
+      "falange-proximal-do-terceiro-dedo-do-pe",
+      "falange-proximal-do-quarto-dedo-do-pe",
+      "falange-proximal-do-quinto-dedo-do-pe"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
       "z-anatomy"
     ],
-    "aliases": [],
-    "modelIds": [
-      "ZA-0c8d46736cd0d0",
-      "ZA-01e1daf784598d",
-      "ZA-689f96bec92fe9",
-      "ZA-686672aa34d163",
-      "ZA-707a07d23c678e",
-      "ZA-9d3008c2cf380c",
-      "ZA-d400833c81b942",
-      "ZA-f4fea5520ea8c8",
-      "ZA-f16f0b464cfedc",
-      "ZA-b0bb4f092e61f4",
-      "ZA-c745bc67fc7867",
-      "ZA-ef3fdc0d337beb",
-      "ZA-55245cbccd638c",
-      "ZA-ec0e725e5b644c",
-      "ZA-d0a388cf29f70a",
-      "ZA-903162e237b8c4",
-      "ZA-85c811aae06a86",
-      "ZA-f6d27914d0348e",
-      "ZA-c64cb1b7ece01a",
-      "ZA-4ad33d8271cde1",
-      "ZA-ea4819f97e8c21",
-      "ZA-c07969394566b5",
-      "ZA-73d870dff5ab90",
-      "ZA-0378c0a07cd4e3",
-      "ZA-b310de8c5e1bdb",
-      "ZA-caf3052e22833f",
-      "ZA-896315e816ea4d",
-      "ZA-e9ea85158fac7e"
+    "aliases": [
+      "falanges dos dedos do pé",
+      "dedos do pé"
     ],
-    "modelSource": "z-anatomy",
-    "modelComponents": [
-      "Distal phalanx of fifth finger of foot.l",
-      "Distal phalanx of fifth finger of foot.r",
-      "Distal phalanx of first finger of foot.l",
-      "Distal phalanx of first finger of foot.r",
-      "Distal phalanx of fourth finger of foot.l",
-      "Distal phalanx of fourth finger of foot.r",
-      "Distal phalanx of second finger of foot.l",
-      "Distal phalanx of second finger of foot.r",
-      "Distal phalanx of third finger of foot.l",
-      "Distal phalanx of third finger of foot.r",
-      "Middle phalanx of fifth finger of foot.l",
-      "Middle phalanx of fifth finger of foot.r",
-      "Middle phalanx of fourth finger of foot.l",
-      "Middle phalanx of fourth finger of foot.r",
-      "Middle phalanx of second finger of foot.l",
-      "Middle phalanx of second finger of foot.r",
-      "Middle phalanx of third finger of foot.l",
-      "Middle phalanx of third finger of foot.r",
-      "Proximal phalanx of fifth finger of foot.l",
-      "Proximal phalanx of fifth finger of foot.r",
-      "Proximal phalanx of first finger of foot.l",
-      "Proximal phalanx of first finger of foot.r",
-      "Proximal phalanx of fourth finger of foot.l",
-      "Proximal phalanx of fourth finger of foot.r",
-      "Proximal phalanx of second finger of foot.l",
-      "Proximal phalanx of second finger of foot.r",
-      "Proximal phalanx of third finger of foot.l",
-      "Proximal phalanx of third finger of foot.r"
-    ]
+    "modelIds": [],
+    "modelSource": null,
+    "modelComponents": []
   },
   {
     "id": "glenoumeral",
@@ -22446,11 +22272,11 @@
       "ZA-a2c723b4db15a1",
       "ZA-cf9fb2aff4ebd6"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Lateral rectus muscle.l",
       "Lateral rectus muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "reto-medial-do-olho",
@@ -22497,11 +22323,11 @@
       "ZA-781d3da03600c6",
       "ZA-a5e294f1dd9097"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Medial rectus muscle.l",
       "Medial rectus muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "reto-superior-do-olho",
@@ -22546,11 +22372,11 @@
       "ZA-4c799a83290dbd",
       "ZA-1c08e887889641"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Superior rectus muscle.l",
       "Superior rectus muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "reto-inferior-do-olho",
@@ -22596,11 +22422,11 @@
       "ZA-ca9498dbeccca5",
       "ZA-d8e345dda7511a"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Inferior rectus muscle.l",
       "Inferior rectus muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "obliquo-superior-do-olho",
@@ -22650,13 +22476,13 @@
       "ZA-d035fdf1a29f0c",
       "ZA-87ea7339242f65"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Superior oblique muscle.l",
       "Superior oblique muscle.r",
       "Trochlea of superior oblique muscle.l",
       "Trochlea of superior oblique muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "obliquo-inferior-do-olho",
@@ -22701,11 +22527,11 @@
       "ZA-45b1899b5e6c20",
       "ZA-795b2fc6873be2"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Inferior oblique muscle.l",
       "Inferior oblique muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "levantador-da-palpebra-superior",
@@ -22751,11 +22577,11 @@
       "ZA-bcb50f11cf4b55",
       "ZA-cd8fea9c508cf3"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Levator palpebrae superioris.l",
       "Levator palpebrae superioris.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "genioglosso",
@@ -22802,11 +22628,11 @@
       "ZA-58a225262e4d75",
       "ZA-1520fcaa8dde51"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Genioglossus muscle.l",
       "Genioglossus muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "hioglosso",
@@ -22850,11 +22676,11 @@
       "ZA-413e7394dbb947",
       "ZA-c56ad02dbb1eb6"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Hyoglossus muscle.l",
       "Hyoglossus muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "constritor-superior-da-faringe",
@@ -22903,11 +22729,11 @@
       "ZA-9e9faf1f240bd5",
       "ZA-f72ebf99ec528a"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Superior pharyngeal constrictor.l",
       "Superior pharyngeal constrictor.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "constritor-medio-da-faringe",
@@ -22952,11 +22778,11 @@
       "ZA-47363e88e4859b",
       "ZA-68785e0437ecce"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Middle pharyngeal constrictor.l",
       "Middle pharyngeal constrictor.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "constritor-inferior-da-faringe",
@@ -23003,11 +22829,11 @@
       "ZA-4f39dc07034e14",
       "ZA-57b99495c1b933"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Inferior pharyngeal constrictor.l",
       "Inferior pharyngeal constrictor.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "estilofaringeo",
@@ -23054,11 +22880,11 @@
       "ZA-7d0daee785813d",
       "ZA-eb2a565eca2b00"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Stylopharyngeus muscle.l",
       "Stylopharyngeus muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "palatofaringeo",
@@ -23104,11 +22930,11 @@
       "ZA-71cc4d76b2f055",
       "ZA-060cee0a14679b"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Palatopharyngeus muscle.l",
       "Palatopharyngeus muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "cricotireoideo",
@@ -23158,13 +22984,13 @@
       "ZA-9f1ebf44ca8b88",
       "ZA-faf705c40cdb35"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Straight part of cricothyroid muscle.l",
       "Straight part of cricothyroid muscle.r",
       "Oblique part of cricothyroid muscle.l",
       "Oblique part of cricothyroid muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "cricoaritenoideo-posterior",
@@ -23211,11 +23037,11 @@
       "ZA-e759d4784472bd",
       "ZA-422d3eb973d3c1"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Posterior crico-arytenoid muscle.l",
       "Posterior crico-arytenoid muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "cricoaritenoideo-lateral",
@@ -23261,11 +23087,11 @@
       "ZA-53c21450e0e873",
       "ZA-2c067ee097aa43"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Lateral crico-arytenoid muscle.l",
       "Lateral crico-arytenoid muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "aritenoideos",
@@ -23313,12 +23139,12 @@
       "ZA-ad46dc5477484f",
       "ZA-9e1e4ba8ec60e1"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Transverse arytenoid muscle",
       "Ary-epiglottic part of oblique arytenoid muscle.l",
       "Ary-epiglottic part of oblique arytenoid muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "tireoaritenoideo",
@@ -23368,12 +23194,3172 @@
       "ZA-b8a521f62f63ec",
       "ZA-6e5a1685144c68"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "External part of thyro-arytenoid muscle.l",
       "External part of thyro-arytenoid muscle.r",
       "Thyro-epiglottic part of thyro-arytenoid muscle.l",
       "Thyro-epiglottic part of thyro-arytenoid muscle.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-c3",
+    "name": "Vértebra C3",
+    "english": "third cervical vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Primeira vértebra cervical típica; serve de modelo para entender C3 a C6.",
+    "fields": {
+      "Tipo": "Irregular, cervical típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo pequeno, mais largo que profundo, com processos uncinados nas bordas laterais superiores; forame transversário; processo espinhoso curto e bífido; facetas articulares superiores voltadas para cima e para trás.",
+      "Função": "Transmite carga leve e permite grande amplitude de flexão, extensão, inclinação e rotação. É a primeira das cervicais típicas, abaixo do complexo atlas-áxis.",
+      "Articula-se com": "Áxis, acima, e C4, abaixo, pelo disco intervertebral e pelas articulações zigapofisárias e uncovertebrais.",
+      "Na prática": "Marca a transição entre a coluna cervical alta, especializada em rotação, e a cervical baixa, que trabalha em conjunto. Dor referida a partir da faceta C2-C3 costuma projetar-se na região occipital e participa da cefaleia cervicogênica.",
+      "Palpação básica": "Processo espinhoso palpável na linha média, logo abaixo do espinhoso proeminente do áxis; costuma ser mais difícil de sentir por ser curto e bífido.",
+      "Marcos para o exercício": "Os processos uncinados formam as articulações uncovertebrais, exclusivas da cervical, que guiam o movimento e limitam o deslizamento lateral. Sua artrose estreita o forame intervertebral e comprime a raiz."
+    },
+    "related": [
+      "axis",
+      "vertebra-c4",
+      "vertebras-cervicais",
+      "intervertebrais",
+      "nucleo-pulposo",
+      "multifido-cervical",
+      "longo-do-pescoco"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "C3",
+      "terceira cervical"
+    ],
+    "modelIds": [
+      "ZA-3e0eee8778a5f2"
+    ],
+    "modelComponents": [
+      "Vertebra C3"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-c4",
+    "name": "Vértebra C4",
+    "english": "fourth cervical vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Cervical típica no nível da cartilagem tireóidea; referência do nível medular do nervo frênico.",
+    "fields": {
+      "Tipo": "Irregular, cervical típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo pequeno com processos uncinados; forame transversário; processo espinhoso curto e bífido; facetas articulares a cerca de 45°.",
+      "Função": "Sustenta a carga da cabeça e participa do movimento combinado da cervical baixa.",
+      "Articula-se com": "C3, acima, e C5, abaixo, pelo disco e pelas zigapofisárias e uncovertebrais.",
+      "Na prática": "Está no nível da cartilagem tireóidea e da bifurcação da artéria carótida comum, referências de superfície úteis no exame do pescoço. O nervo frênico nasce sobretudo de C4, o que faz desse nível um divisor de águas na lesão medular: acima dele, a respiração espontânea é perdida.",
+      "Palpação básica": "Processo espinhoso palpável na linha média; a cartilagem tireóidea, à frente, marca o mesmo nível.",
+      "Marcos para o exercício": "A regra clássica é que C3, C4 e C5 mantêm o diafragma vivo. Lesões acima de C4 comprometem a ventilação espontânea."
+    },
+    "related": [
+      "vertebra-c3",
+      "vertebra-c5",
+      "vertebras-cervicais",
+      "diafragma",
+      "intervertebrais",
+      "escaleno-anterior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "C4",
+      "quarta cervical",
+      "nervo frênico"
+    ],
+    "modelIds": [
+      "ZA-bff9085efefcb3"
+    ],
+    "modelComponents": [
+      "Vertebra C4"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-c5",
+    "name": "Vértebra C5",
+    "english": "fifth cervical vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Cervical típica no ápice da lordose; nível de maior mobilidade e de degeneração discal frequente.",
+    "fields": {
+      "Tipo": "Irregular, cervical típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo pequeno com processos uncinados proeminentes; forame transversário; processo espinhoso curto e bífido.",
+      "Função": "Fica próxima do ápice da lordose cervical e participa dos segmentos de maior mobilidade da coluna.",
+      "Articula-se com": "C4, acima, e C6, abaixo.",
+      "Na prática": "O segmento C5-C6 é um dos que mais se movem e um dos que mais degeneram. A radiculopatia de C5 produz fraqueza de abdução do ombro e de flexão do cotovelo, com alteração do reflexo bicipital.",
+      "Palpação básica": "Processo espinhoso palpável na linha média, na parte média do pescoço.",
+      "Marcos para o exercício": "A raiz C5 inerva deltoide e bíceps braquial. Testar abdução do ombro resistida é o rastreio motor mais rápido desse nível."
+    },
+    "related": [
+      "vertebra-c4",
+      "vertebra-c6",
+      "vertebras-cervicais",
+      "deltoide",
+      "biceps-braquial",
+      "plexo-braquial",
+      "nucleo-pulposo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "C5",
+      "quinta cervical",
+      "radiculopatia C5"
+    ],
+    "modelIds": [
+      "ZA-dc49017304bfab"
+    ],
+    "modelComponents": [
+      "Vertebra C5"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-c6",
+    "name": "Vértebra C6",
+    "english": "sixth cervical vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Tem o tubérculo carotídeo, referência palpável; último nível com forame transversário atravessado pela artéria vertebral.",
+    "fields": {
+      "Tipo": "Irregular, cervical típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo pequeno com processos uncinados; tubérculo anterior do processo transverso muito desenvolvido, chamado tubérculo carotídeo ou de Chassaignac; forame transversário; processo espinhoso curto, bífido de forma variável.",
+      "Função": "Participa do segmento cervical de maior mobilidade e transição para a cervical baixa.",
+      "Articula-se com": "C5, acima, e C7, abaixo.",
+      "Na prática": "O tubérculo carotídeo é referência clássica: a artéria carótida comum pode ser comprimida contra ele, e ele orienta o bloqueio do gânglio estrelado. A artéria vertebral entra no forame transversário em C6 na maioria das pessoas, subindo daí até o crânio.",
+      "Palpação básica": "O tubérculo carotídeo é palpável lateralmente, no nível da cartilagem cricóidea. Palpação firme e cuidadosa, pela proximidade da carótida.",
+      "Marcos para o exercício": "A raiz C6 dá sensibilidade ao polegar e ao lado radial do antebraço, e inerva os extensores do punho. O reflexo braquiorradial testa esse nível."
+    },
+    "related": [
+      "vertebra-c5",
+      "vertebra-c7",
+      "vertebras-cervicais",
+      "braquiorradial",
+      "extensor-radial-longo-do-carpo",
+      "plexo-braquial",
+      "escaleno-anterior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "C6",
+      "sexta cervical",
+      "tubérculo carotídeo",
+      "Chassaignac"
+    ],
+    "modelIds": [
+      "ZA-8a947f4284315c"
+    ],
+    "modelComponents": [
+      "Vertebra C6"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-c7",
+    "name": "Vértebra C7",
+    "english": "seventh cervical vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "A vértebra proeminente; seu processo espinhoso longo e não bífido é a referência para contar a coluna.",
+    "fields": {
+      "Tipo": "Irregular, cervical atípica, de transição para a torácica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Processo espinhoso longo, horizontal e não bífido, que termina num tubérculo único; forame transversário pequeno, que em geral não dá passagem à artéria vertebral, apenas à veia; processos transversos grandes.",
+      "Função": "Faz a transição entre a coluna cervical e a torácica, tanto na forma quanto na mecânica.",
+      "Articula-se com": "C6, acima, e T1, abaixo.",
+      "Na prática": "É a referência anatômica mais usada da coluna: o espinhoso proeminente na base do pescoço permite contar as demais vértebras. Para diferenciá-lo de T1, peça extensão cervical: o espinhoso de C7 se move e some sob os dedos, o de T1 permanece.",
+      "Palpação básica": "Facilmente palpável e muitas vezes visível como a saliência na base do pescoço, com a pessoa em flexão cervical.",
+      "Marcos para o exercício": "Dá inserção ao ligamento nucal, ao trapézio, ao romboide menor e ao serrátil posterior superior. A costela cervical, uma variação que surge do seu processo transverso, é causa reconhecida de síndrome do desfiladeiro torácico."
+    },
+    "related": [
+      "vertebra-c6",
+      "vertebras-toracicas",
+      "vertebras-cervicais",
+      "ligamento-nucal",
+      "trapezio",
+      "romboide-menor",
+      "plexo-braquial",
+      "escaleno-medio"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "C7",
+      "vértebra proeminente",
+      "sétima cervical",
+      "costela cervical"
+    ],
+    "modelIds": [
+      "ZA-63fa4563c47f6b"
+    ],
+    "modelComponents": [
+      "Vertebra C7"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-l1",
+    "name": "Vértebra L1",
+    "english": "first lumbar vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Primeira lombar; nível onde a medula espinal termina e começa a cauda equina.",
+    "fields": {
+      "Tipo": "Irregular, lombar.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo maciço; processo espinhoso quadrangular e horizontal; processos costiformes longos; facetas articulares orientadas no plano sagital.",
+      "Função": "Faz a transição entre a coluna torácica, rígida e ligada às costelas, e a lombar, móvel em flexão e extensão.",
+      "Articula-se com": "T12, acima, e L2, abaixo.",
+      "Na prática": "É o nível mais importante da coluna para a neurologia: o cone medular, extremidade da medula espinal, termina em geral entre L1 e L2. Abaixo disso o canal contém apenas a cauda equina, o que muda completamente o quadro de uma lesão nesse ponto.",
+      "Palpação básica": "Processo espinhoso palpável na linha média, cerca de três níveis acima da linha das cristas ilíacas.",
+      "Marcos para o exercício": "A punção lombar é feita abaixo de L2, justamente para não atingir a medula. A junção toracolombar, entre T12 e L1, concentra forças por ser a passagem entre um segmento rígido e um móvel, e é local frequente de fratura por compressão."
+    },
+    "related": [
+      "vertebras-toracicas",
+      "vertebra-l2",
+      "vertebras-lombares",
+      "psoas-maior",
+      "diafragma",
+      "quadrado-lombar",
+      "nucleo-pulposo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "L1",
+      "primeira lombar",
+      "cone medular",
+      "junção toracolombar"
+    ],
+    "modelIds": [
+      "ZA-a268f2cafbd46c"
+    ],
+    "modelComponents": [
+      "Vertebra L1"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-l2",
+    "name": "Vértebra L2",
+    "english": "second lumbar vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Limite inferior habitual da medula espinal; abaixo dela o canal só tem cauda equina.",
+    "fields": {
+      "Tipo": "Irregular, lombar.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo maciço; processo espinhoso quadrangular; processos costiformes longos; processos mamilares nos processos articulares superiores.",
+      "Função": "Suporta carga axial elevada e participa da flexão e extensão lombar.",
+      "Articula-se com": "L1, acima, e L3, abaixo.",
+      "Na prática": "É a referência de segurança da punção lombar: como a medula termina em geral acima de L2, a agulha entra abaixo desse nível, entre L3-L4 ou L4-L5, encontrando só as raízes da cauda equina, que se afastam da ponta.",
+      "Palpação básica": "Processo espinhoso palpável na linha média, dois níveis acima da linha das cristas ilíacas.",
+      "Marcos para o exercício": "O psoas maior nasce dos corpos e discos de T12 a L5, incluindo L2. A raiz L2 participa da flexão do quadril e da sensibilidade da face anterior da coxa."
+    },
+    "related": [
+      "vertebra-l1",
+      "vertebra-l3",
+      "vertebras-lombares",
+      "psoas-maior",
+      "nervo-femoral",
+      "nervo-genitofemoral",
+      "multifido-lombar"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "L2",
+      "segunda lombar",
+      "cauda equina"
+    ],
+    "modelIds": [
+      "ZA-383d4717457a61"
+    ],
+    "modelComponents": [
+      "Vertebra L2"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-l3",
+    "name": "Vértebra L3",
+    "english": "third lumbar vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Vértebra central da lombar, com os processos costiformes mais longos; nível usual da punção lombar.",
+    "fields": {
+      "Tipo": "Irregular, lombar.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo maciço; processos costiformes os mais longos de toda a coluna lombar; processo espinhoso quadrangular e horizontal.",
+      "Função": "Ocupa o centro da lordose lombar e é um dos níveis de maior mobilidade em flexão e extensão.",
+      "Articula-se com": "L2, acima, e L4, abaixo.",
+      "Na prática": "O espaço L3-L4 é um dos escolhidos para punção lombar e anestesia raquidiana, por estar abaixo do fim da medula e ser facilmente localizado pela linha das cristas ilíacas.",
+      "Palpação básica": "Processo espinhoso palpável na linha média, logo acima da linha que une as cristas ilíacas.",
+      "Marcos para o exercício": "Os processos costiformes longos dão inserção ao quadrado lombar e ao psoas. A raiz L3 participa da extensão do joelho e da sensibilidade da face anterior da coxa; o reflexo patelar avalia sobretudo L3 e L4."
+    },
+    "related": [
+      "vertebra-l2",
+      "vertebra-l4",
+      "vertebras-lombares",
+      "quadrado-lombar",
+      "psoas-maior",
+      "nervo-femoral",
+      "reto-femoral"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "L3",
+      "terceira lombar",
+      "punção lombar"
+    ],
+    "modelIds": [
+      "ZA-50d6b6d1e9bdae"
+    ],
+    "modelComponents": [
+      "Vertebra L3"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-l4",
+    "name": "Vértebra L4",
+    "english": "fourth lumbar vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Marcada pela linha das cristas ilíacas; L4-L5 é um dos discos que mais herniam.",
+    "fields": {
+      "Tipo": "Irregular, lombar.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo maciço; processo espinhoso quadrangular; processos costiformes um pouco mais curtos que os de L3; facetas sagitais.",
+      "Função": "Suporta carga elevada na parte baixa da lordose e participa da flexão e extensão.",
+      "Articula-se com": "L3, acima, e L5, abaixo.",
+      "Na prática": "O disco L4-L5 é, junto com L5-S1, o que mais hernia. A radiculopatia de L4 produz fraqueza de extensão do joelho e de dorsiflexão do tornozelo pelo tibial anterior, com reflexo patelar diminuído e dormência na face medial da perna.",
+      "Palpação básica": "Seu processo espinhoso costuma estar exatamente na linha que une os pontos mais altos das cristas ilíacas, a linha de Tuffier. É a referência mais usada para contar a lombar de baixo para cima.",
+      "Marcos para o exercício": "A bifurcação da aorta em artérias ilíacas comuns ocorre no nível de L4. Teste de elevação da perna estendida e o exame de força do tibial anterior fazem parte da avaliação desse nível."
+    },
+    "related": [
+      "vertebra-l3",
+      "vertebra-l5",
+      "vertebras-lombares",
+      "osso-do-quadril",
+      "nucleo-pulposo",
+      "tibial-anterior",
+      "nervo-femoral",
+      "ligamento-iliolombar"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "L4",
+      "quarta lombar",
+      "linha de Tuffier",
+      "hérnia L4-L5"
+    ],
+    "modelIds": [
+      "ZA-9b3e08dcf3827b"
+    ],
+    "modelComponents": [
+      "Vertebra L4"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-l5",
+    "name": "Vértebra L5",
+    "english": "fifth lumbar vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "A maior vértebra móvel; corpo em cunha e local clássico da espondilólise e da espondilolistese.",
+    "fields": {
+      "Tipo": "Irregular, lombar, atípica pela forma em cunha.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "O maior corpo vertebral do esqueleto móvel, nitidamente mais alto à frente que atrás, o que produz a forma em cunha; processos costiformes curtos e robustos; processo espinhoso o menor da lombar.",
+      "Função": "Faz a transição entre a coluna móvel e o sacro fixo, transmitindo toda a carga do tronco à pelve.",
+      "Articula-se com": "L4, acima, e o sacro, abaixo, na articulação lombossacra.",
+      "Na prática": "A base do sacro é inclinada, o que cria uma força de cisalhamento que empurra L5 para a frente. A parte interarticular de L5 é o ponto mais sobrecarregado: sua fratura por estresse é a espondilólise, comum em ginastas e jogadores que fazem hiperextensão repetida, e sua falência bilateral permite o escorregamento, a espondilolistese.",
+      "Palpação básica": "Processo espinhoso pequeno, palpável logo abaixo de L4 e acima do sulco do sacro; às vezes difícil de sentir por ser curto.",
+      "Marcos para o exercício": "O ligamento iliolombar ancora L5 ao ilíaco e é a principal estrutura que resiste a esse escorregamento. A radiculopatia de L5 produz fraqueza de extensão do hálux, o teste motor mais sensível desse nível."
+    },
+    "related": [
+      "vertebra-l4",
+      "sacro",
+      "vertebras-lombares",
+      "ligamento-iliolombar",
+      "osso-do-quadril",
+      "extensor-longo-do-halux",
+      "nervo-ciatico",
+      "sacroiliaca",
+      "nucleo-pulposo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "L5",
+      "quinta lombar",
+      "espondilólise",
+      "espondilolistese",
+      "junção lombossacra"
+    ],
+    "modelIds": [
+      "ZA-cfb0a2a0fed8f0"
+    ],
+    "modelComponents": [
+      "Vertebra L5"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t1",
+    "name": "Vértebra T1",
+    "english": "first thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Torácica atípica: tem fóvea costal inteira para a 1ª costela e espinhoso quase horizontal, como o de C7.",
+    "fields": {
+      "Tipo": "Irregular, torácica atípica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Fóvea costal superior inteira, que recebe sozinha a cabeça da primeira costela, e uma hemifóvea inferior para a segunda; corpo mais largo, parecido com o cervical; processo espinhoso longo, espesso e quase horizontal.",
+      "Função": "Faz a transição entre a cervical móvel e a torácica presa às costelas, e ancora a primeira costela.",
+      "Articula-se com": "C7, acima, T2, abaixo, e a primeira e segunda costelas.",
+      "Na prática": "Seu espinhoso é quase tão proeminente quanto o de C7 e costuma confundir na contagem. Para diferenciar, peça extensão cervical: o de C7 desliza para dentro, o de T1 permanece. A raiz T1 participa da inervação da musculatura intrínseca da mão.",
+      "Palpação básica": "Palpável logo abaixo da vértebra proeminente; é o primeiro espinhoso que não se move na extensão do pescoço.",
+      "Marcos para o exercício": "O tronco inferior do plexo braquial, de C8 e T1, cruza a primeira costela. A síndrome do desfiladeiro torácico envolve justamente essa região."
+    },
+    "related": [
+      "vertebra-c7",
+      "vertebra-t2",
+      "vertebras-toracicas",
+      "costelas",
+      "plexo-braquial",
+      "escaleno-medio",
+      "ligamento-costotransversario"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T1",
+      "primeira torácica"
+    ],
+    "modelIds": [
+      "ZA-ecb1f7dbc175da"
+    ],
+    "modelComponents": [
+      "Vertebra T1"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t2",
+    "name": "Vértebra T2",
+    "english": "second thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Torácica alta no nível do ângulo do esterno; espinhoso longo e inclinado.",
+    "fields": {
+      "Tipo": "Irregular, torácica típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Hemifóveas costais superior e inferior no corpo, que recebem metade da cabeça de uma costela cada; fóvea costal no processo transverso; espinhoso longo e inclinado.",
+      "Função": "Sustenta a parte alta do tórax e participa da rotação torácica.",
+      "Articula-se com": "T1, acima, T3, abaixo, e as costelas correspondentes.",
+      "Na prática": "O ângulo do esterno, referência palpável na frente, corresponde ao disco entre T4 e T5; T2 fica logo acima dessa faixa, na região que mais enrijece em quem trabalha sentado.",
+      "Palpação básica": "Espinhoso palpável na linha média, dois níveis abaixo da vértebra proeminente.",
+      "Marcos para o exercício": "A rigidez torácica alta obriga a cervical e o ombro a compensarem. Mobilidade de extensão nessa faixa é alvo comum na dor cervical e no impacto do ombro."
+    },
+    "related": [
+      "vertebra-t1",
+      "vertebra-t3",
+      "vertebras-toracicas",
+      "costelas",
+      "esterno",
+      "romboide-menor"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T2",
+      "segunda torácica"
+    ],
+    "modelIds": [
+      "ZA-e3f0a4de64962f"
+    ],
+    "modelComponents": [
+      "Vertebra T2"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t3",
+    "name": "Vértebra T3",
+    "english": "third thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Está no nível da espinha da escápula, uma das referências mais usadas para contar a torácica.",
+    "fields": {
+      "Tipo": "Irregular, torácica típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo em forma de coração com hemifóveas costais; fóvea costal transversa; espinhoso longo e inclinado para baixo.",
+      "Função": "Participa da sustentação do tórax e da rotação do tronco.",
+      "Articula-se com": "T2, acima, T4, abaixo, e as costelas correspondentes.",
+      "Na prática": "A raiz da espinha da escápula está no nível de T3. É a referência de superfície mais rápida para localizar a torácica alta no exame.",
+      "Palpação básica": "Siga a espinha da escápula até a coluna: o espinhoso encontrado ali é o de T3.",
+      "Marcos para o exercício": "Nível usado como ponto de partida para mobilizações torácicas e para avaliar o ritmo escapulotorácico."
+    },
+    "related": [
+      "vertebra-t2",
+      "vertebra-t4",
+      "vertebras-toracicas",
+      "escapula",
+      "costelas",
+      "trapezio",
+      "romboide-maior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T3",
+      "terceira torácica",
+      "espinha da escápula"
+    ],
+    "modelIds": [
+      "ZA-20e95e2499fd17"
+    ],
+    "modelComponents": [
+      "Vertebra T3"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t4",
+    "name": "Vértebra T4",
+    "english": "fourth thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Nível do ângulo do esterno e da bifurcação da traqueia; marca o plano transverso do tórax.",
+    "fields": {
+      "Tipo": "Irregular, torácica típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo em coração com hemifóveas costais; fóvea costal transversa; espinhoso longo e inclinado.",
+      "Função": "Sustenta o tórax e participa da rotação.",
+      "Articula-se com": "T3, acima, T5, abaixo, e as costelas correspondentes.",
+      "Na prática": "O disco entre T4 e T5 fica no plano do ângulo do esterno, onde a traqueia se bifurca e o arco da aorta começa e termina. É a referência que liga a coluna às estruturas do mediastino.",
+      "Palpação básica": "Espinhoso palpável; o ângulo do esterno, à frente, marca o mesmo plano.",
+      "Marcos para o exercício": "A partir de T4 os espinhosos ficam mais inclinados: a ponta do espinhoso passa a corresponder ao corpo da vértebra de baixo."
+    },
+    "related": [
+      "vertebra-t3",
+      "vertebra-t5",
+      "vertebras-toracicas",
+      "esterno",
+      "costelas",
+      "cartilagens-costais"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T4",
+      "quarta torácica",
+      "ângulo do esterno"
+    ],
+    "modelIds": [
+      "ZA-84f5b2614efc41"
+    ],
+    "modelComponents": [
+      "Vertebra T4"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t5",
+    "name": "Vértebra T5",
+    "english": "fifth thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Torácica típica no ápice da cifose; região de menor mobilidade da coluna.",
+    "fields": {
+      "Tipo": "Irregular, torácica típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo em coração com hemifóveas; fóvea costal transversa; espinhoso longo, cuja ponta chega ao nível do corpo de T6.",
+      "Função": "Fica próxima do ápice da cifose torácica, onde a caixa torácica mais restringe o movimento.",
+      "Articula-se com": "T4, acima, T6, abaixo, e as costelas correspondentes.",
+      "Na prática": "A faixa de T4 a T8 é a mais rígida da coluna, porque as costelas estão presas ao esterno de forma direta. É onde a mobilização torácica costuma dar mais ganho percebido.",
+      "Palpação básica": "Espinhoso palpável na linha média, entre a espinha e o ângulo inferior da escápula.",
+      "Marcos para o exercício": "Extensão torácica sobre rolo e rotações em decúbito lateral têm essa faixa como alvo principal."
+    },
+    "related": [
+      "vertebra-t4",
+      "vertebra-t6",
+      "vertebras-toracicas",
+      "costelas",
+      "espinhal-toracico",
+      "semiespinhal-toracico"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T5",
+      "quinta torácica",
+      "ápice da cifose"
+    ],
+    "modelIds": [
+      "ZA-235aff25d47f45"
+    ],
+    "modelComponents": [
+      "Vertebra T5"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t6",
+    "name": "Vértebra T6",
+    "english": "sixth thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Torácica típica; exemplo mais puro da forma torácica clássica.",
+    "fields": {
+      "Tipo": "Irregular, torácica típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo em coração com hemifóveas costais superior e inferior; fóvea costal no processo transverso; espinhoso longo e muito inclinado; facetas no plano frontal.",
+      "Função": "É o modelo da vértebra torácica típica, com todas as características do grupo bem definidas.",
+      "Articula-se com": "T5, acima, T7, abaixo, e as costelas correspondentes.",
+      "Na prática": "É a vértebra usada como exemplo em qualquer descrição do grupo: cada uma das suas hemifóveas recebe metade da cabeça de uma costela, e a costela se apoia no disco entre as duas vértebras.",
+      "Palpação básica": "Espinhoso palpável na linha média, acima do ângulo inferior da escápula.",
+      "Marcos para o exercício": "Para entender a mecânica costal, este é o melhor nível para estudar: a costela gira em torno do eixo definido pelas duas articulações, a costovertebral e a costotransversária."
+    },
+    "related": [
+      "vertebra-t5",
+      "vertebra-t7",
+      "vertebras-toracicas",
+      "costelas",
+      "ligamento-costotransversario",
+      "ligamento-radiado-da-cabeca-da-costela"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T6",
+      "sexta torácica",
+      "torácica típica"
+    ],
+    "modelIds": [
+      "ZA-fe40150f8e263b"
+    ],
+    "modelComponents": [
+      "Vertebra T6"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t7",
+    "name": "Vértebra T7",
+    "english": "seventh thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Nível do ângulo inferior da escápula; espinhoso mais inclinado de toda a coluna.",
+    "fields": {
+      "Tipo": "Irregular, torácica típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo em coração com hemifóveas; fóvea costal transversa; espinhoso longo e com a maior inclinação da coluna, cuja ponta chega ao nível do corpo de T9.",
+      "Função": "Sustenta o tórax médio e participa da rotação.",
+      "Articula-se com": "T6, acima, T8, abaixo, e as costelas correspondentes.",
+      "Na prática": "O ângulo inferior da escápula está no nível de T7 com o braço ao lado do corpo. É a segunda referência mais usada para contar a torácica, junto com a espinha da escápula em T3.",
+      "Palpação básica": "Trace uma linha horizontal a partir do ângulo inferior da escápula até a coluna: o espinhoso ali é o de T7.",
+      "Marcos para o exercício": "A inclinação máxima dos espinhosos nesta faixa é o que torna a palpação segmentar torácica mais difícil que a lombar: a ponta que você sente não corresponde ao corpo do mesmo nível."
+    },
+    "related": [
+      "vertebra-t6",
+      "vertebra-t8",
+      "vertebras-toracicas",
+      "escapula",
+      "costelas",
+      "latissimo-do-dorso"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T7",
+      "sétima torácica",
+      "ângulo inferior da escápula"
+    ],
+    "modelIds": [
+      "ZA-be0449a3e41911"
+    ],
+    "modelComponents": [
+      "Vertebra T7"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t8",
+    "name": "Vértebra T8",
+    "english": "eighth thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Torácica típica no nível em que a veia cava inferior atravessa o diafragma.",
+    "fields": {
+      "Tipo": "Irregular, torácica típica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo em coração com hemifóveas; fóvea costal transversa; espinhoso longo e inclinado.",
+      "Função": "Sustenta o tórax médio e participa da rotação e da mecânica costal.",
+      "Articula-se com": "T7, acima, T9, abaixo, e as costelas correspondentes.",
+      "Na prática": "O forame da veia cava atravessa o centro tendíneo do diafragma no nível de T8. Os três grandes orifícios do diafragma seguem uma sequência fácil de lembrar: veia cava em T8, esôfago em T10 e aorta em T12.",
+      "Palpação básica": "Espinhoso palpável na linha média, logo abaixo do nível do ângulo inferior da escápula.",
+      "Marcos para o exercício": "É o começo da transição: daqui para baixo as costelas deixam de se ligar diretamente ao esterno e o tórax vai ficando mais móvel."
+    },
+    "related": [
+      "vertebra-t7",
+      "vertebra-t9",
+      "vertebras-toracicas",
+      "diafragma",
+      "costelas",
+      "cartilagens-costais"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T8",
+      "oitava torácica",
+      "forame da veia cava"
+    ],
+    "modelIds": [
+      "ZA-d0a286ba14e27b"
+    ],
+    "modelComponents": [
+      "Vertebra T8"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t9",
+    "name": "Vértebra T9",
+    "english": "ninth thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Começa a transição torácica baixa; muitas vezes já sem a hemifóvea inferior.",
+    "fields": {
+      "Tipo": "Irregular, torácica de transição.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Corpo em coração; costuma ter apenas a hemifóvea superior, já sem a inferior, porque a décima costela passa a se articular só com o próprio corpo; espinhoso longo.",
+      "Função": "Faz a passagem entre a torácica típica e a torácica baixa, mais parecida com a lombar.",
+      "Articula-se com": "T8, acima, T10, abaixo, e a nona costela.",
+      "Na prática": "É onde começa a mudar o padrão de articulação costal: das costelas 1 a 9 a cabeça se apoia em duas vértebras; da 10 à 12, em uma só.",
+      "Palpação básica": "Espinhoso palpável na linha média da região torácica baixa.",
+      "Marcos para o exercício": "A transição costal daqui para baixo é o que permite maior expansão das costelas inferiores na respiração diafragmática."
+    },
+    "related": [
+      "vertebra-t8",
+      "vertebra-t10",
+      "vertebras-toracicas",
+      "costelas",
+      "serratil-posterior-inferior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T9",
+      "nona torácica"
+    ],
+    "modelIds": [
+      "ZA-39310f10f871f0"
+    ],
+    "modelComponents": [
+      "Vertebra T9"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t10",
+    "name": "Vértebra T10",
+    "english": "tenth thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Tem fóvea costal inteira para a 10ª costela; nível do hiato esofágico do diafragma.",
+    "fields": {
+      "Tipo": "Irregular, torácica atípica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Fóvea costal inteira, e não hemifóvea, porque a décima costela se articula só com ela; espinhoso menos inclinado que os anteriores.",
+      "Função": "Continua a transição para a forma e a mecânica lombares.",
+      "Articula-se com": "T9, acima, T11, abaixo, e a décima costela.",
+      "Na prática": "O hiato esofágico atravessa a porção muscular do diafragma no nível de T10, acompanhado dos troncos vagais. É o nível lembrado na hérnia de hiato.",
+      "Palpação básica": "Espinhoso palpável na região torácica baixa, onde a inclinação já começa a diminuir.",
+      "Marcos para o exercício": "Daqui para baixo os espinhosos voltam a ficar mais horizontais, o que facilita a palpação segmentar comparada à torácica média."
+    },
+    "related": [
+      "vertebra-t9",
+      "vertebra-t11",
+      "vertebras-toracicas",
+      "diafragma",
+      "costelas"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T10",
+      "décima torácica",
+      "hiato esofágico"
+    ],
+    "modelIds": [
+      "ZA-ddbf6c72bc29c5"
+    ],
+    "modelComponents": [
+      "Vertebra T10"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t11",
+    "name": "Vértebra T11",
+    "english": "eleventh thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "Atípica: fóvea costal inteira e processo transverso sem fóvea, porque a 11ª costela é flutuante.",
+    "fields": {
+      "Tipo": "Irregular, torácica atípica.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Fóvea costal inteira e grande no corpo; processo transverso curto e sem fóvea costal, já que a décima primeira costela não tem tubérculo articulado; corpo já com aspecto lombar; espinhoso curto e quase horizontal.",
+      "Função": "Transição avançada para a forma lombar, com mobilidade crescente.",
+      "Articula-se com": "T10, acima, T12, abaixo, e a décima primeira costela.",
+      "Na prática": "A ausência de articulação costotransversária é o que libera as costelas flutuantes e permite maior expansão lateral do abdome superior na respiração.",
+      "Palpação básica": "Espinhoso curto e horizontal, palpável na transição toracolombar.",
+      "Marcos para o exercício": "A décima primeira costela é palpável como extremidade livre na parede lateral; serve de referência para o quadrado lombar e o diafragma."
+    },
+    "related": [
+      "vertebra-t10",
+      "vertebra-t12",
+      "vertebras-toracicas",
+      "costelas",
+      "quadrado-lombar",
+      "diafragma"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T11",
+      "décima primeira torácica",
+      "costela flutuante"
+    ],
+    "modelIds": [
+      "ZA-18b015b2b8a113"
+    ],
+    "modelComponents": [
+      "Vertebra T11"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "vertebra-t12",
+    "name": "Vértebra T12",
+    "english": "twelfth thoracic vertebra",
+    "kind": "ossos",
+    "region": "Coluna vertebral",
+    "summary": "A vértebra de transição do corpo: facetas superiores torácicas e inferiores já lombares.",
+    "fields": {
+      "Tipo": "Irregular, torácica atípica, de transição.",
+      "Localização": "Coluna vertebral",
+      "Principais partes": "Fóvea costal inteira para a décima segunda costela; processo transverso rudimentar, com processos mamilar e acessório como os da lombar; facetas articulares superiores no plano frontal, como as torácicas, e inferiores no plano sagital, como as lombares.",
+      "Função": "É onde a coluna muda de regime: de um segmento que roda para um que flete e estende.",
+      "Articula-se com": "T11, acima, L1, abaixo, e a décima segunda costela.",
+      "Na prática": "Essa mudança de orientação das facetas dentro de uma mesma vértebra concentra tensão na junção toracolombar. T12 e L1 formam a região de fratura por compressão mais frequente da coluna, e a faixa mais sensível a carga axial com flexão.",
+      "Palpação básica": "Espinhoso curto e horizontal, palpável na transição entre a torácica e a lombar.",
+      "Marcos para o exercício": "O hiato aórtico atravessa o diafragma atrás dele, no nível de T12. Os pilares do diafragma descem daqui até L2 e L3, ligando a respiração diretamente à coluna lombar."
+    },
+    "related": [
+      "vertebra-t11",
+      "vertebra-l1",
+      "vertebras-toracicas",
+      "vertebras-lombares",
+      "costelas",
+      "diafragma",
+      "quadrado-lombar",
+      "psoas-maior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "T12",
+      "décima segunda torácica",
+      "junção toracolombar",
+      "hiato aórtico"
+    ],
+    "modelIds": [
+      "ZA-792ba4c0105fcd"
+    ],
+    "modelComponents": [
+      "Vertebra T12"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "primeira-costela",
+    "name": "Primeira costela",
+    "english": "first rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "A mais curta, larga e curva; forma o assoalho do desfiladeiro torácico.",
+    "fields": {
+      "Tipo": "Osso plano, costela atípica.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com uma única faceta, para T1; tubérculo do escaleno anterior na face superior, separando o sulco da veia subclávia, à frente, do sulco da artéria subclávia, atrás; corpo largo e achatado no plano horizontal.",
+      "Função": "Ancora a parte superior do tórax e serve de apoio para a cintura escapular. Move-se pouco, elevando o esterno na inspiração.",
+      "Articula-se com": "Corpo e processo transverso de T1, atrás; manúbrio do esterno, à frente, pela primeira cartilagem costal; e a clavícula, indiretamente, pelo ligamento costoclavicular.",
+      "Na prática": "É a peça central da síndrome do desfiladeiro torácico: o plexo braquial e a artéria subclávia passam entre o escaleno anterior e o médio, logo acima dela, e depois entre ela e a clavícula. Sua elevação, por tensão dos escalenos, estreita esses espaços.",
+      "Palpação básica": "Difícil de palpar por estar sob a clavícula; acessível na fossa supraclavicular, com pressão profunda e cuidadosa.",
+      "Marcos para o exercício": "Técnicas de abaixamento da primeira costela e reeducação respiratória para reduzir o uso dos escalenos são parte do tratamento do desfiladeiro torácico."
+    },
+    "related": [
+      "vertebra-t1",
+      "esterno",
+      "clavicula",
+      "escaleno-anterior",
+      "escaleno-medio",
+      "plexo-braquial",
+      "subclavio",
+      "segunda-costela",
+      "ligamentos-esternoclaviculares"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "1ª costela",
+      "desfiladeiro torácico",
+      "tubérculo do escaleno"
+    ],
+    "modelIds": [
+      "ZA-861098e2ad6d5f",
+      "ZA-5f467e0a0e22c1"
+    ],
+    "modelComponents": [
+      "First rib.l",
+      "First rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "segunda-costela",
+    "name": "Segunda costela",
+    "english": "second rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "Costela atípica com a tuberosidade do serrátil anterior; referência para contar todas as demais.",
+    "fields": {
+      "Tipo": "Osso plano, costela atípica.",
+      "Localização": "Tronco",
+      "Principais partes": "Cerca do dobro do comprimento da primeira; tuberosidade para o músculo serrátil anterior na face externa; cabeça com duas facetas, para T1 e T2.",
+      "Função": "Continua a formação da parede torácica superior e dá origem à primeira digitação do serrátil anterior.",
+      "Articula-se com": "T1 e T2, atrás; esterno, à frente, na altura do ângulo do esterno.",
+      "Na prática": "É a referência mais confiável para contar costelas: o ângulo do esterno, palpável como um degrau, marca exatamente a articulação da segunda costela. A partir dela, conta-se para baixo.",
+      "Palpação básica": "Localize o ângulo do esterno com o dedo e deslize lateralmente: a costela que você encontra é a segunda.",
+      "Marcos para o exercício": "A tuberosidade do serrátil anterior liga esta costela diretamente à mecânica escapular, o que conecta a respiração ao movimento do ombro."
+    },
+    "related": [
+      "vertebra-t1",
+      "vertebra-t2",
+      "esterno",
+      "primeira-costela",
+      "terceira-costela",
+      "serratil-anterior",
+      "escaleno-posterior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "2ª costela",
+      "ângulo do esterno",
+      "ângulo de Louis"
+    ],
+    "modelIds": [
+      "ZA-19f705a99deeaa",
+      "ZA-7c364a97d557e4"
+    ],
+    "modelComponents": [
+      "Second rib.l",
+      "Second rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "terceira-costela",
+    "name": "Terceira costela",
+    "english": "third rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "Primeira costela típica: cabeça com duas facetas, tubérculo articulado e sulco na borda inferior.",
+    "fields": {
+      "Tipo": "Osso plano, costela típica, verdadeira.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com duas facetas, que se apoiam em duas vértebras e no disco entre elas; colo; tubérculo com faceta para o processo transverso; ângulo, onde o corpo muda de direção; sulco da costela na borda inferior interna.",
+      "Função": "Forma a parede torácica e participa da mecânica respiratória, com movimento tanto em braço de bomba quanto em alça de balde.",
+      "Articula-se com": "T2 e T3, atrás; esterno, à frente, pela terceira cartilagem costal.",
+      "Na prática": "É o primeiro exemplo da costela típica, o modelo para entender as demais. O sulco da costela abriga a veia, a artéria e o nervo intercostais, nessa ordem de cima para baixo.",
+      "Palpação básica": "Palpável na parede torácica anterior, uma costela abaixo da segunda, e no dorso junto ao ângulo costal.",
+      "Marcos para o exercício": "Por causa do feixe no sulco, a punção pleural é feita rente à borda superior da costela de baixo, longe dos vasos e do nervo."
+    },
+    "related": [
+      "vertebra-t2",
+      "vertebra-t3",
+      "esterno",
+      "segunda-costela",
+      "quarta-costela",
+      "cartilagens-costais",
+      "intercostais-internos"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "3ª costela",
+      "costela típica",
+      "sulco da costela"
+    ],
+    "modelIds": [
+      "ZA-24f1569dfcb072",
+      "ZA-cf02c4ba2331cd"
+    ],
+    "modelComponents": [
+      "Third rib.l",
+      "Third rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "quarta-costela",
+    "name": "Quarta costela",
+    "english": "fourth rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "Costela típica verdadeira; seu nível marca o plano do mamilo no homem.",
+    "fields": {
+      "Tipo": "Osso plano, costela típica, verdadeira.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com duas facetas; colo, tubérculo, ângulo e corpo; sulco da costela na borda inferior.",
+      "Função": "Participa da parede torácica e da expansão do tórax na inspiração.",
+      "Articula-se com": "T3 e T4, atrás; esterno, à frente, pela quarta cartilagem costal.",
+      "Na prática": "O quarto espaço intercostal é referência para procedimentos torácicos, e o nível da quarta costela corresponde aproximadamente ao plano do mamilo em homens adultos.",
+      "Palpação básica": "Palpável na parede anterior do tórax, contando a partir do ângulo do esterno.",
+      "Marcos para o exercício": "A faixa entre a terceira e a sexta costela é onde as costelas estão mais presas ao esterno, e por isso a menos móvel do gradil."
+    },
+    "related": [
+      "vertebra-t3",
+      "vertebra-t4",
+      "esterno",
+      "terceira-costela",
+      "quinta-costela",
+      "cartilagens-costais",
+      "peitoral-maior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "4ª costela"
+    ],
+    "modelIds": [
+      "ZA-f6891ad7d6ecbb",
+      "ZA-147bb1e888a9f1"
+    ],
+    "modelComponents": [
+      "Fourth rib.l",
+      "Fourth rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "quinta-costela",
+    "name": "Quinta costela",
+    "english": "fifth rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "Costela típica verdadeira; o quinto espaço intercostal é onde se ausculta o ictus cordis.",
+    "fields": {
+      "Tipo": "Osso plano, costela típica, verdadeira.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com duas facetas; colo, tubérculo, ângulo e corpo; sulco da costela.",
+      "Função": "Compõe a parede torácica média e participa da respiração.",
+      "Articula-se com": "T4 e T5, atrás; esterno, à frente, pela quinta cartilagem costal.",
+      "Na prática": "O quinto espaço intercostal, na linha hemiclavicular, é onde se palpa e ausculta o ictus cordis, o choque da ponta do coração. É referência clássica do exame físico.",
+      "Palpação básica": "Palpável na parede anterior do tórax; o espaço abaixo dela é o quinto espaço intercostal.",
+      "Marcos para o exercício": "É também a referência para a drenagem torácica, feita no quinto espaço, na linha axilar média."
+    },
+    "related": [
+      "vertebra-t4",
+      "vertebra-t5",
+      "esterno",
+      "quarta-costela",
+      "sexta-costela",
+      "cartilagens-costais",
+      "serratil-anterior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "5ª costela",
+      "ictus cordis"
+    ],
+    "modelIds": [
+      "ZA-22be6cf4870e79",
+      "ZA-07750711de2880"
+    ],
+    "modelComponents": [
+      "Fifth rib.l",
+      "Fifth rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "sexta-costela",
+    "name": "Sexta costela",
+    "english": "sixth rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "Costela típica verdadeira; última digitação do peitoral maior e transição para a parede abdominal.",
+    "fields": {
+      "Tipo": "Osso plano, costela típica, verdadeira.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com duas facetas; colo, tubérculo, ângulo e corpo; sulco da costela.",
+      "Função": "Compõe a parede torácica e serve de origem a músculos abdominais e torácicos.",
+      "Articula-se com": "T5 e T6, atrás; esterno, à frente, pela sexta cartilagem costal.",
+      "Na prática": "A partir dela, as costelas passam a dar origem às digitações do oblíquo externo do abdome, que se entrelaçam com as do serrátil anterior na parede lateral.",
+      "Palpação básica": "Palpável na parede ântero-lateral do tórax; suas digitações musculares ficam visíveis em pessoas magras.",
+      "Marcos para o exercício": "A partir daqui as costelas ficam progressivamente mais móveis, e a expansão em alça de balde ganha importância na respiração."
+    },
+    "related": [
+      "vertebra-t5",
+      "vertebra-t6",
+      "esterno",
+      "quinta-costela",
+      "setima-costela",
+      "obliquo-externo",
+      "peitoral-maior",
+      "serratil-anterior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "6ª costela"
+    ],
+    "modelIds": [
+      "ZA-2aa5870d308142",
+      "ZA-7e86f39de90ba8"
+    ],
+    "modelComponents": [
+      "Sixth rib.l",
+      "Sixth rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "setima-costela",
+    "name": "Sétima costela",
+    "english": "seventh rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "A última costela verdadeira; a mais longa e o ponto mais baixo do esterno.",
+    "fields": {
+      "Tipo": "Osso plano, costela típica, verdadeira. É a mais longa.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com duas facetas; colo, tubérculo, ângulo e corpo longo; sulco da costela.",
+      "Função": "Fecha a série das costelas verdadeiras, que alcançam o esterno por cartilagem própria.",
+      "Articula-se com": "T6 e T7, atrás; esterno, à frente, pela sétima cartilagem costal, na junção do corpo com o processo xifoide.",
+      "Na prática": "Marca o limite inferior do esterno e o início do ângulo infraesternal, formado pelas cartilagens costais de baixo. É uma referência para localizar o rebordo costal.",
+      "Palpação básica": "Siga o rebordo costal para cima e para dentro: a sétima cartilagem é a última que chega ao esterno.",
+      "Marcos para o exercício": "O ângulo infraesternal é usado para avaliar a posição das costelas inferiores e o padrão respiratório; ângulos muito abertos ou fechados mudam a mecânica do diafragma."
+    },
+    "related": [
+      "vertebra-t6",
+      "vertebra-t7",
+      "esterno",
+      "sexta-costela",
+      "oitava-costela",
+      "cartilagens-costais",
+      "diafragma",
+      "reto-do-abdomen"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "7ª costela",
+      "ângulo infraesternal",
+      "rebordo costal"
+    ],
+    "modelIds": [
+      "ZA-60e1d0917fd5f7",
+      "ZA-c7dda0a73f51ff"
+    ],
+    "modelComponents": [
+      "Seventh rib.l",
+      "Seventh rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "oitava-costela",
+    "name": "Oitava costela",
+    "english": "eighth rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "Primeira costela falsa: sua cartilagem se liga à da sétima, não ao esterno.",
+    "fields": {
+      "Tipo": "Osso plano, costela falsa.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com duas facetas; colo, tubérculo, ângulo e corpo; sulco da costela.",
+      "Função": "Compõe a parte inferior da caixa torácica, com fixação indireta ao esterno.",
+      "Articula-se com": "T7 e T8, atrás; à frente, com a cartilagem da sétima costela, e não diretamente com o esterno.",
+      "Na prática": "É onde começam as costelas falsas. A ligação indireta ao esterno dá a essa faixa mais mobilidade, o que é bom para a respiração mas também permite a síndrome da costela deslizante, em que a cartilagem escorrega e causa dor em fisgada.",
+      "Palpação básica": "Palpável ao longo do rebordo costal, lateralmente ao ponto onde a sétima cartilagem chega ao esterno.",
+      "Marcos para o exercício": "A expansão das costelas inferiores é o alvo da respiração diafragmática; esta faixa é onde se coloca a mão para dar feedback ao paciente."
+    },
+    "related": [
+      "vertebra-t7",
+      "vertebra-t8",
+      "setima-costela",
+      "nona-costela",
+      "cartilagens-costais",
+      "diafragma",
+      "obliquo-externo"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "8ª costela",
+      "costela falsa",
+      "costela deslizante"
+    ],
+    "modelIds": [
+      "ZA-be538ded659c0e",
+      "ZA-10e781b42ca15c"
+    ],
+    "modelComponents": [
+      "Eighth rib.l",
+      "Eighth rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "nona-costela",
+    "name": "Nona costela",
+    "english": "ninth rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "Costela falsa; última que se apoia em duas vértebras pela cabeça.",
+    "fields": {
+      "Tipo": "Osso plano, costela falsa.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com duas facetas, a última da série a ter duas; colo, tubérculo e corpo; sulco da costela pouco marcado.",
+      "Função": "Compõe a parede torácica inferior e dá inserção ao diafragma e aos músculos abdominais.",
+      "Articula-se com": "T8 e T9, atrás; à frente, com a cartilagem da oitava costela.",
+      "Na prática": "Da décima costela em diante, a cabeça passa a se apoiar numa única vértebra. A nona é a última do padrão clássico de duas facetas.",
+      "Palpação básica": "Palpável no rebordo costal, na parede lateral do tronco.",
+      "Marcos para o exercício": "Fraturas das costelas inferiores exigem atenção ao baço, à esquerda, e ao fígado, à direita, que ficam logo abaixo."
+    },
+    "related": [
+      "vertebra-t8",
+      "vertebra-t9",
+      "oitava-costela",
+      "decima-costela",
+      "cartilagens-costais",
+      "diafragma",
+      "serratil-posterior-inferior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "9ª costela"
+    ],
+    "modelIds": [
+      "ZA-ab005e833046c8",
+      "ZA-6f76b6bcc3c870"
+    ],
+    "modelComponents": [
+      "Ninth rib.l",
+      "Ninth rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "decima-costela",
+    "name": "Décima costela",
+    "english": "tenth rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "Costela falsa atípica: cabeça com faceta única, apoiada só em T10.",
+    "fields": {
+      "Tipo": "Osso plano, costela falsa, atípica.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com uma única faceta, que se apoia só no corpo de T10; tubérculo ainda presente, articulado com o processo transverso; corpo curto.",
+      "Função": "Fecha a série de costelas que ainda alcançam o rebordo costal.",
+      "Articula-se com": "T10, atrás, por uma faceta só; à frente, com a cartilagem da nona costela.",
+      "Na prática": "É a última costela ligada ao rebordo costal. As duas seguintes terminam livres, o que muda completamente a mecânica da parede lateral do abdome.",
+      "Palpação básica": "Sua cartilagem é a última do rebordo costal; siga a borda inferior das costelas até onde ela termina.",
+      "Marcos para o exercício": "A transição para as flutuantes nesta altura é o que permite a expansão lateral inferior do tronco na respiração profunda."
+    },
+    "related": [
+      "vertebra-t10",
+      "nona-costela",
+      "decima-primeira-costela",
+      "cartilagens-costais",
+      "diafragma",
+      "quadrado-lombar"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "10ª costela"
+    ],
+    "modelIds": [
+      "ZA-e47857b7da871d",
+      "ZA-4a79b7c42a45c3"
+    ],
+    "modelComponents": [
+      "Tenth rib.l",
+      "Tenth rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "decima-primeira-costela",
+    "name": "Décima primeira costela",
+    "english": "eleventh rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "Costela flutuante: sem tubérculo, sem ângulo e sem ligação à frente.",
+    "fields": {
+      "Tipo": "Osso plano, costela flutuante, atípica.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com faceta única; sem colo definido, sem tubérculo e sem ângulo; corpo curto que termina numa ponta cartilaginosa livre.",
+      "Função": "Dá inserção a músculos da parede abdominal e ao diafragma, sem fechar a caixa torácica à frente.",
+      "Articula-se com": "Apenas T11, atrás. Não tem articulação costotransversária nem ligação anterior.",
+      "Na prática": "Termina livre na musculatura da parede abdominal. Por não ter ponto fixo à frente, acompanha o movimento do tronco e é ponto de referência para o quadrado lombar.",
+      "Palpação básica": "Palpável como extremidade livre na parede lateral do tronco, abaixo do rebordo costal.",
+      "Marcos para o exercício": "A distância entre a última costela e a crista ilíaca é medida usada para avaliar encurtamento do quadrado lombar e inclinação lateral do tronco."
+    },
+    "related": [
+      "vertebra-t11",
+      "decima-costela",
+      "decima-segunda-costela",
+      "quadrado-lombar",
+      "diafragma",
+      "obliquo-interno"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "11ª costela",
+      "costela flutuante"
+    ],
+    "modelIds": [
+      "ZA-4a8d5c3e136dd5",
+      "ZA-de22fedf8db395"
+    ],
+    "modelComponents": [
+      "Eleventh rib.l",
+      "Eleventh rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "decima-segunda-costela",
+    "name": "Décima segunda costela",
+    "english": "twelfth rib",
+    "kind": "ossos",
+    "region": "Tronco",
+    "summary": "A menor e mais variável; costela flutuante que ancora o quadrado lombar e o diafragma.",
+    "fields": {
+      "Tipo": "Osso plano, costela flutuante, atípica. A mais curta de todas.",
+      "Localização": "Tronco",
+      "Principais partes": "Cabeça com faceta única; sem tubérculo, sem ângulo e sem sulco da costela; corpo muito curto, de comprimento bastante variável entre pessoas.",
+      "Função": "Serve de ponto de ancoragem para o diafragma, pelo ligamento arqueado lateral, e para o quadrado lombar.",
+      "Articula-se com": "Apenas T12, atrás.",
+      "Na prática": "O quadrado lombar a fixa durante a inspiração, dando ponto de apoio ao diafragma. Sua palpação é referência para localizar o ângulo costovertebral, usado na pesquisa de dor renal pela punho-percussão.",
+      "Palpação básica": "Palpável como extremidade livre na região lombar lateral, logo abaixo da décima primeira; em algumas pessoas é tão curta que quase não se sente.",
+      "Marcos para o exercício": "É o elo direto entre respiração e coluna lombar: o diafragma se insere nela e o quadrado lombar a estabiliza, o que liga o padrão respiratório ao controle lombopélvico."
+    },
+    "related": [
+      "vertebra-t12",
+      "decima-primeira-costela",
+      "quadrado-lombar",
+      "diafragma",
+      "serratil-posterior-inferior",
+      "vertebras-lombares"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "12ª costela",
+      "costela flutuante",
+      "ângulo costovertebral"
+    ],
+    "modelIds": [
+      "ZA-9778f93d63cbe0",
+      "ZA-a6652efdcd29c6"
+    ],
+    "modelComponents": [
+      "Twelfth rib.l",
+      "Twelfth rib.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "primeiro-metacarpal",
+    "name": "1º metacarpal (do polegar)",
+    "english": "first metacarpal bone",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "O metacarpal mais curto e mais móvel; sua base forma a articulação em sela do polegar.",
+    "fields": {
+      "Tipo": "Longo, curto e robusto.",
+      "Localização": "Mão",
+      "Principais partes": "Base em sela, corpo achatado e cabeça com dois sesamoides na face palmar.",
+      "Função": "Sustenta o polegar e, pela articulação em sela com o trapézio, permite a oposição, movimento que define a preensão humana.",
+      "Articula-se com": "Trapézio, na carpometacarpal do polegar; e com a falange proximal do polegar, na metacarpofalângica.",
+      "Na prática": "A carpometacarpal do polegar é o local mais comum de artrose sintomática da mão, a rizartrose, que dói ao pinçar e girar chaves. A fratura de Bennett é intra-articular na base e costuma precisar de redução, porque o abdutor longo do polegar desloca o fragmento.",
+      "Palpação básica": "A base é palpável na tabaqueira anatômica; o corpo, no dorso da eminência tenar.",
+      "Marcos para o exercício": "O abdutor longo do polegar traciona a base; a rizartrose e a tendinopatia de De Quervain compartilham essa região e entram no diagnóstico diferencial da dor na base do polegar."
+    },
+    "related": [
+      "metacarpais",
+      "trapezio-do-carpo",
+      "carpometacarpal-do-polegar",
+      "oponente-do-polegar",
+      "abdutor-longo-do-polegar"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "primeiro metacarpo",
+      "metacarpal do polegar",
+      "rizartrose",
+      "fratura de Bennett"
+    ],
+    "modelIds": [
+      "ZA-9df38dd0067f8e",
+      "ZA-0ca27c38f6ab39"
+    ],
+    "modelComponents": [
+      "First metacarpal bone.l",
+      "First metacarpal bone.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "segundo-metacarpal",
+    "name": "2º metacarpal",
+    "english": "second metacarpal bone",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "O metacarpal mais longo; forma, com o terceiro, o pilar fixo da mão.",
+    "fields": {
+      "Tipo": "Longo.",
+      "Localização": "Mão",
+      "Principais partes": "Base entalhada que encaixa no trapezoide, corpo longo e cabeça arredondada.",
+      "Função": "É o pilar radial fixo da mão: quase não se move em relação ao carpo, o que dá estabilidade à preensão de força.",
+      "Articula-se com": "Trapezoide, principalmente, e também trapézio e capitato; com o 3º metacarpal ao lado; e com a falange proximal do indicador.",
+      "Na prática": "A base fixa serve de âncora para o extensor radial longo do carpo, que estende e desvia o punho para o lado radial. Por ser fixo, absorve pouca energia em quedas e é mais sujeito a fraturas de corpo do que os raios móveis.",
+      "Palpação básica": "A base é palpável logo distal ao tubérculo do trapézio; o corpo, ao longo do dorso radial da palma.",
+      "Marcos para o exercício": "Ponto de referência para exercícios de desvio radial do punho, pela inserção do extensor radial longo do carpo na sua base."
+    },
+    "related": [
+      "metacarpais",
+      "trapezoide",
+      "primeiro-metacarpal",
+      "terceiro-metacarpal",
+      "extensor-radial-longo-do-carpo"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "segundo metacarpo",
+      "metacarpal do indicador",
+      "pilar fixo"
+    ],
+    "modelIds": [
+      "ZA-1557e03b4112dd",
+      "ZA-2c738171c8d19f"
+    ],
+    "modelComponents": [
+      "Second metacarpal bone.l",
+      "Second metacarpal bone.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "terceiro-metacarpal",
+    "name": "3º metacarpal",
+    "english": "third metacarpal bone",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "O eixo da mão, com processo estiloide na base; referência da abdução e adução dos dedos.",
+    "fields": {
+      "Tipo": "Longo.",
+      "Localização": "Mão",
+      "Principais partes": "Base com um processo estiloide dorsal característico, corpo e cabeça. O eixo do dedo médio é a linha de referência dos movimentos dos dedos.",
+      "Função": "Completa, com o 2º, o pilar fixo da mão. A abdução e a adução dos dedos são definidas em relação ao seu eixo.",
+      "Articula-se com": "Capitato, na base; com o 2º e o 4º metacarpais ao lado; e com a falange proximal do dedo médio.",
+      "Na prática": "O extensor radial curto do carpo insere-se na sua base e é o principal extensor puro do punho. O processo estiloide dorsal pode fraturar por avulsão e simular um cisto no dorso da mão.",
+      "Palpação básica": "O processo estiloide é palpável como uma saliência óssea no dorso da base, alinhada com o dedo médio.",
+      "Marcos para o exercício": "Referência para descrever abdução e adução dos dedos e para orientar exercícios de extensão pura do punho, pela inserção do extensor radial curto do carpo."
+    },
+    "related": [
+      "metacarpais",
+      "capitato",
+      "segundo-metacarpal",
+      "quarto-metacarpal",
+      "extensor-radial-curto-do-carpo",
+      "interosseos-dorsais-da-mao"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "terceiro metacarpo",
+      "metacarpal do dedo médio",
+      "eixo da mão"
+    ],
+    "modelIds": [
+      "ZA-dd7c3d15646d92",
+      "ZA-a30ca0ea41b749"
+    ],
+    "modelComponents": [
+      "Third metacarpal bone.l",
+      "Third metacarpal bone.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "quarto-metacarpal",
+    "name": "4º metacarpal",
+    "english": "fourth metacarpal bone",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "Raio móvel medial; junto com o quinto, deixa a palma fechar em concha.",
+    "fields": {
+      "Tipo": "Longo, mais delgado que os radiais.",
+      "Localização": "Mão",
+      "Principais partes": "Base pequena, corpo estreito e cabeça. A articulação com o hamato tem alguma mobilidade.",
+      "Função": "É um dos dois raios móveis mediais. Sua mobilidade permite que a palma faça concha para segurar objetos arredondados.",
+      "Articula-se com": "Hamato, na base; com o 3º e o 5º metacarpais ao lado; e com a falange proximal do dedo anelar.",
+      "Na prática": "A mobilidade das carpometacarpais do 4º e 5º dedos é o que permite a oposição relativa do mínimo e o fechamento da mão em torno de um cabo. Perder essa concavidade, por rigidez ou edema, reduz muito a força de preensão.",
+      "Palpação básica": "Palpável no dorso ulnar da palma, entre o 3º e o 5º metacarpais.",
+      "Marcos para o exercício": "Trabalhar a concavidade palmar, o arco transverso da mão, envolve mobilizar os raios do 4º e 5º metacarpais."
+    },
+    "related": [
+      "metacarpais",
+      "hamato",
+      "terceiro-metacarpal",
+      "quinto-metacarpal",
+      "interosseos-palmares"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "quarto metacarpo",
+      "metacarpal do anelar",
+      "arco transverso"
+    ],
+    "modelIds": [
+      "ZA-72081f4dbc2370",
+      "ZA-d885ef7d1a0584"
+    ],
+    "modelComponents": [
+      "Fourth metacarpal bone.l",
+      "Fourth metacarpal bone.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "quinto-metacarpal",
+    "name": "5º metacarpal",
+    "english": "fifth metacarpal bone",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "O mais móvel dos raios mediais; o colo é o local da fratura do boxeador.",
+    "fields": {
+      "Tipo": "Longo, o mais delgado.",
+      "Localização": "Mão",
+      "Principais partes": "Base com um tubérculo para o extensor ulnar do carpo, corpo, colo e cabeça.",
+      "Função": "É o raio mais móvel do lado ulnar e leva o mínimo para a oposição, ajudando a fechar a mão em concha.",
+      "Articula-se com": "Hamato, na base; com o 4º metacarpal ao lado; e com a falange proximal do dedo mínimo.",
+      "Na prática": "A fratura do colo do 5º metacarpal é a fratura do boxeador, causada por soco com a mão fechada. Costuma consolidar com algum grau de angulação, tolerável porque a mobilidade da carpometacarpal compensa.",
+      "Palpação básica": "A base e o tubérculo são palpáveis no bordo ulnar do punho; a cabeça é o nó do dedo mínimo.",
+      "Marcos para o exercício": "O extensor ulnar do carpo insere-se na base e faz extensão com desvio ulnar do punho; o oponente do dedo mínimo traciona o corpo na oposição."
+    },
+    "related": [
+      "metacarpais",
+      "hamato",
+      "quarto-metacarpal",
+      "extensor-ulnar-do-carpo",
+      "oponente-do-dedo-minimo-da-mao"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "quinto metacarpo",
+      "metacarpal do mínimo",
+      "fratura do boxeador"
+    ],
+    "modelIds": [
+      "ZA-22e10f0df37ada",
+      "ZA-63f1fe6563a53b"
+    ],
+    "modelComponents": [
+      "Fifth metacarpal bone.l",
+      "Fifth metacarpal bone.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "falange-proximal-do-polegar",
+    "name": "Falange proximal do polegar",
+    "english": "proximal phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "Na base da falange proximal do polegar inserem-se os ligamentos colaterais da metacarpofalângica.",
+    "fields": {
+      "Tipo": "Longo, a maior falange do dedo.",
+      "Localização": "Mão",
+      "Principais partes": "Base côncava para a cabeça do metacarpal, corpo e cabeça em tróclea.",
+      "Função": "Forma o primeiro segmento do polegar e é movida pelos músculos intrínsecos e pelos tendões longos.",
+      "Articula-se com": "Cabeça do 1º metacarpal, na metacarpofalângica, e a falange distal, na interfalângica (única do dedo).",
+      "Na prática": "Na base da falange proximal do polegar inserem-se os ligamentos colaterais da metacarpofalângica. A ruptura do colateral ulnar aí é o polegar do esquiador, ou do guarda-caça, que desestabiliza a pinça e a preensão de chave.",
+      "Palpação básica": "Palpável no dorso do polegar, logo distal à cabeça do metacarpal.",
+      "Marcos para o exercício": "Base para trabalhar a metacarpofalângica do polegar e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "primeiro-metacarpal",
+      "metacarpofalangicas",
+      "falange-distal-do-polegar",
+      "interfalangicas-da-mao",
+      "extensor-longo-do-polegar",
+      "extensor-curto-do-polegar"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange proximal do polegar",
+      "polegar do esquiador",
+      "gamekeeper"
+    ],
+    "modelIds": [
+      "ZA-9e49555b8e9231",
+      "ZA-e6c7801fd264ef"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Proximal phalanx of first finger of hand.l",
+      "Proximal phalanx of first finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-distal-do-polegar",
+    "name": "Falange distal do polegar",
+    "english": "distal phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "O flexor longo do polegar insere-se na base palmar e flete a interfalângica; o extensor longo do polegar, na base dorsal.",
+    "fields": {
+      "Tipo": "Longo, a menor falange.",
+      "Localização": "Mão",
+      "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+      "Função": "Forma a extremidade do polegar e ancora os tendões que dão o último apoio da ponta.",
+      "Articula-se com": "Falange proximal, na interfalângica (única do dedo).",
+      "Na prática": "O flexor longo do polegar insere-se na base palmar e flete a interfalângica; o extensor longo do polegar, na base dorsal. O polegar responde por perto de metade da função da mão, e perder a flexão da IP compromete a pinça de força.",
+      "Palpação básica": "Tuberosidade palpável sob a polpa do polegar.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "falange-proximal-do-polegar",
+      "interfalangicas-da-mao",
+      "flexor-longo-do-polegar",
+      "extensor-longo-do-polegar"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange distal do polegar",
+      "IP do polegar"
+    ],
+    "modelIds": [
+      "ZA-48e48518b26bcf",
+      "ZA-5f1ee7ec033a6f"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Distal phalanx of first finger of hand.l",
+      "Distal phalanx of first finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-proximal-do-indicador",
+    "name": "Falange proximal do indicador",
+    "english": "proximal phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "O indicador tem extensão independente, pelo extensor do indicador, o que permite apontar com os demais dedos fechados.",
+    "fields": {
+      "Tipo": "Longo, a maior falange do dedo.",
+      "Localização": "Mão",
+      "Principais partes": "Base côncava para a cabeça do metacarpal, corpo e cabeça em tróclea.",
+      "Função": "Forma o primeiro segmento do indicador e é movida pelos músculos intrínsecos e pelos tendões longos.",
+      "Articula-se com": "Cabeça do 2º metacarpal, na metacarpofalângica, e a falange média, na interfalângica proximal.",
+      "Na prática": "O indicador tem extensão independente, pelo extensor do indicador, o que permite apontar com os demais dedos fechados. A base recebe o primeiro interósseo dorsal, importante na pinça lateral.",
+      "Palpação básica": "Palpável no dorso do indicador, logo distal à cabeça do metacarpal.",
+      "Marcos para o exercício": "Base para trabalhar a metacarpofalângica do indicador e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "segundo-metacarpal",
+      "metacarpofalangicas",
+      "falange-media-do-indicador",
+      "interfalangicas-da-mao",
+      "extensor-do-indicador",
+      "interosseos-dorsais-da-mao"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange proximal do indicador"
+    ],
+    "modelIds": [
+      "ZA-c36d7bb09a02c1",
+      "ZA-b7e1d81f56ce2f"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Proximal phalanx of second finger of hand.l",
+      "Proximal phalanx of second finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-media-do-indicador",
+    "name": "Falange média do indicador",
+    "english": "middle phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "O dedo em gatilho é frequente no indicador e no médio: o nódulo do tendão flexor trava ao passar pela polia A1, na raiz do dedo, e o dedo salta ao estender.",
+    "fields": {
+      "Tipo": "Longo, intermediário em tamanho.",
+      "Localização": "Mão",
+      "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+      "Função": "Forma o segmento médio do indicador, entre as duas interfalângicas.",
+      "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+      "Na prática": "O dedo em gatilho é frequente no indicador e no médio: o nódulo do tendão flexor trava ao passar pela polia A1, na raiz do dedo, e o dedo salta ao estender.",
+      "Palpação básica": "Palpável no dorso do indicador, entre as pregas interfalângicas.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "falange-proximal-do-indicador",
+      "falange-distal-do-indicador",
+      "interfalangicas-da-mao",
+      "flexor-superficial-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange média do indicador",
+      "dedo em gatilho"
+    ],
+    "modelIds": [
+      "ZA-d7ed85a2496bb0",
+      "ZA-c60a22411ad8c0"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Middle phalanx of second finger of hand.l",
+      "Middle phalanx of second finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-distal-do-indicador",
+    "name": "Falange distal do indicador",
+    "english": "distal phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "A ruptura do tendão extensor terminal na base dorsal causa o dedo em martelo, com a ponta caída e sem extensão ativa da interfalângica distal.",
+    "fields": {
+      "Tipo": "Longo, a menor falange.",
+      "Localização": "Mão",
+      "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+      "Função": "Forma a extremidade do indicador e ancora os tendões que dão o último apoio da ponta.",
+      "Articula-se com": "Falange média, na interfalângica distal.",
+      "Na prática": "A ruptura do tendão extensor terminal na base dorsal causa o dedo em martelo, com a ponta caída e sem extensão ativa da interfalângica distal.",
+      "Palpação básica": "Tuberosidade palpável sob a polpa do indicador.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "falange-media-do-indicador",
+      "interfalangicas-da-mao",
+      "flexor-profundo-dos-dedos",
+      "extensor-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange distal do indicador",
+      "dedo em martelo",
+      "mallet finger"
+    ],
+    "modelIds": [
+      "ZA-ab8574e540f5ad",
+      "ZA-754686312c3d29"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Distal phalanx of second finger of hand.l",
+      "Distal phalanx of second finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-proximal-do-medio",
+    "name": "Falange proximal do dedo médio",
+    "english": "proximal phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "O dedo médio é o mais longo e serve de eixo de referência para a abdução e a adução dos dedos, medidas em relação a ele.",
+    "fields": {
+      "Tipo": "Longo, a maior falange do dedo.",
+      "Localização": "Mão",
+      "Principais partes": "Base côncava para a cabeça do metacarpal, corpo e cabeça em tróclea.",
+      "Função": "Forma o primeiro segmento do dedo médio e é movida pelos músculos intrínsecos e pelos tendões longos.",
+      "Articula-se com": "Cabeça do 3º metacarpal, na metacarpofalângica, e a falange média, na interfalângica proximal.",
+      "Na prática": "O dedo médio é o mais longo e serve de eixo de referência para a abdução e a adução dos dedos, medidas em relação a ele.",
+      "Palpação básica": "Palpável no dorso do dedo médio, logo distal à cabeça do metacarpal.",
+      "Marcos para o exercício": "Base para trabalhar a metacarpofalângica do dedo médio e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "terceiro-metacarpal",
+      "metacarpofalangicas",
+      "falange-media-do-medio",
+      "interfalangicas-da-mao",
+      "interosseos-dorsais-da-mao",
+      "lumbricais-da-mao"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange proximal do dedo médio"
+    ],
+    "modelIds": [
+      "ZA-c30338b26464d9",
+      "ZA-35f7092ca4daad"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Proximal phalanx of third finger of hand.l",
+      "Proximal phalanx of third finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-media-do-medio",
+    "name": "Falange média do dedo médio",
+    "english": "middle phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "Segmento médio do dedo mais longo.",
+    "fields": {
+      "Tipo": "Longo, intermediário em tamanho.",
+      "Localização": "Mão",
+      "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+      "Função": "Forma o segmento médio do dedo médio, entre as duas interfalângicas.",
+      "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+      "Na prática": "Segmento médio do dedo mais longo. O flexor superficial dos dedos insere-se aqui; testá-lo isoladamente, com os outros dedos estendidos, avalia a integridade desse tendão.",
+      "Palpação básica": "Palpável no dorso do dedo médio, entre as pregas interfalângicas.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "falange-proximal-do-medio",
+      "falange-distal-do-medio",
+      "interfalangicas-da-mao",
+      "flexor-superficial-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange média do dedo médio"
+    ],
+    "modelIds": [
+      "ZA-6c214d35b4a9c7",
+      "ZA-e4e03b2db07bd1"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Middle phalanx of third finger of hand.l",
+      "Middle phalanx of third finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-distal-do-medio",
+    "name": "Falange distal do dedo médio",
+    "english": "distal phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "O flexor profundo dos dedos insere-se na base e é o único flexor da interfalângica distal; travar as outras articulações isola essa ação no exame.",
+    "fields": {
+      "Tipo": "Longo, a menor falange.",
+      "Localização": "Mão",
+      "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+      "Função": "Forma a extremidade do dedo médio e ancora os tendões que dão o último apoio da ponta.",
+      "Articula-se com": "Falange média, na interfalângica distal.",
+      "Na prática": "O flexor profundo dos dedos insere-se na base e é o único flexor da interfalângica distal; travar as outras articulações isola essa ação no exame.",
+      "Palpação básica": "Tuberosidade palpável sob a polpa do dedo médio.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "falange-media-do-medio",
+      "interfalangicas-da-mao",
+      "flexor-profundo-dos-dedos",
+      "extensor-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange distal do dedo médio"
+    ],
+    "modelIds": [
+      "ZA-f6f3b71c5c8c03",
+      "ZA-246f9aa59fd09a"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Distal phalanx of third finger of hand.l",
+      "Distal phalanx of third finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-proximal-do-anelar",
+    "name": "Falange proximal do dedo anelar",
+    "english": "proximal phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "Os raios do anelar e do mínimo são os mais afetados pela contratura de Dupuytren, que espessa a fáscia palmar e puxa o dedo para a palma em flexão fixa.",
+    "fields": {
+      "Tipo": "Longo, a maior falange do dedo.",
+      "Localização": "Mão",
+      "Principais partes": "Base côncava para a cabeça do metacarpal, corpo e cabeça em tróclea.",
+      "Função": "Forma o primeiro segmento do dedo anelar e é movida pelos músculos intrínsecos e pelos tendões longos.",
+      "Articula-se com": "Cabeça do 4º metacarpal, na metacarpofalângica, e a falange média, na interfalângica proximal.",
+      "Na prática": "Os raios do anelar e do mínimo são os mais afetados pela contratura de Dupuytren, que espessa a fáscia palmar e puxa o dedo para a palma em flexão fixa.",
+      "Palpação básica": "Palpável no dorso do dedo anelar, logo distal à cabeça do metacarpal.",
+      "Marcos para o exercício": "Base para trabalhar a metacarpofalângica do dedo anelar e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "quarto-metacarpal",
+      "metacarpofalangicas",
+      "falange-media-do-anelar",
+      "interfalangicas-da-mao",
+      "interosseos-palmares",
+      "lumbricais-da-mao"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange proximal do dedo anelar",
+      "Dupuytren"
+    ],
+    "modelIds": [
+      "ZA-164e3978d46984",
+      "ZA-ce23d4b5c9b625"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Proximal phalanx of fourth finger of hand.l",
+      "Proximal phalanx of fourth finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-media-do-anelar",
+    "name": "Falange média do dedo anelar",
+    "english": "middle phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "Segmento médio do anelar.",
+    "fields": {
+      "Tipo": "Longo, intermediário em tamanho.",
+      "Localização": "Mão",
+      "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+      "Função": "Forma o segmento médio do dedo anelar, entre as duas interfalângicas.",
+      "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+      "Na prática": "Segmento médio do anelar. A rigidez da interfalângica proximal aqui é comum após trauma e limita o fechamento completo da mão.",
+      "Palpação básica": "Palpável no dorso do dedo anelar, entre as pregas interfalângicas.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "falange-proximal-do-anelar",
+      "falange-distal-do-anelar",
+      "interfalangicas-da-mao",
+      "flexor-superficial-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange média do dedo anelar"
+    ],
+    "modelIds": [
+      "ZA-5955d7f9c31067",
+      "ZA-4869c6ede8bd46"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Middle phalanx of fourth finger of hand.l",
+      "Middle phalanx of fourth finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-distal-do-anelar",
+    "name": "Falange distal do dedo anelar",
+    "english": "distal phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "A avulsão do flexor profundo, o jersey finger, ocorre classicamente no anelar, ao agarrar a camisa de um adversário: o tendão arranca-se da base da falange distal e o dedo perde a flexão da ponta.",
+    "fields": {
+      "Tipo": "Longo, a menor falange.",
+      "Localização": "Mão",
+      "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+      "Função": "Forma a extremidade do dedo anelar e ancora os tendões que dão o último apoio da ponta.",
+      "Articula-se com": "Falange média, na interfalângica distal.",
+      "Na prática": "A avulsão do flexor profundo, o jersey finger, ocorre classicamente no anelar, ao agarrar a camisa de um adversário: o tendão arranca-se da base da falange distal e o dedo perde a flexão da ponta.",
+      "Palpação básica": "Tuberosidade palpável sob a polpa do dedo anelar.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "falange-media-do-anelar",
+      "interfalangicas-da-mao",
+      "flexor-profundo-dos-dedos",
+      "extensor-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange distal do dedo anelar",
+      "jersey finger",
+      "avulsão do flexor profundo"
+    ],
+    "modelIds": [
+      "ZA-fd4f42e270065f",
+      "ZA-4ce81819884916"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Distal phalanx of fourth finger of hand.l",
+      "Distal phalanx of fourth finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-proximal-do-minimo",
+    "name": "Falange proximal do dedo mínimo",
+    "english": "proximal phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "O abdutor do dedo mínimo afasta o mínimo e estabiliza a borda ulnar da mão; a base da falange proximal é sua inserção.",
+    "fields": {
+      "Tipo": "Longo, a maior falange do dedo.",
+      "Localização": "Mão",
+      "Principais partes": "Base côncava para a cabeça do metacarpal, corpo e cabeça em tróclea.",
+      "Função": "Forma o primeiro segmento do dedo mínimo e é movida pelos músculos intrínsecos e pelos tendões longos.",
+      "Articula-se com": "Cabeça do 5º metacarpal, na metacarpofalângica, e a falange média, na interfalângica proximal.",
+      "Na prática": "O abdutor do dedo mínimo afasta o mínimo e estabiliza a borda ulnar da mão; a base da falange proximal é sua inserção.",
+      "Palpação básica": "Palpável no dorso do dedo mínimo, logo distal à cabeça do metacarpal.",
+      "Marcos para o exercício": "Base para trabalhar a metacarpofalângica do dedo mínimo e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "quinto-metacarpal",
+      "metacarpofalangicas",
+      "falange-media-do-minimo",
+      "interfalangicas-da-mao",
+      "abdutor-do-dedo-minimo-da-mao",
+      "interosseos-palmares"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange proximal do dedo mínimo"
+    ],
+    "modelIds": [
+      "ZA-e9effcce041423",
+      "ZA-5a47814091b922"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Proximal phalanx of fifth finger of hand.l",
+      "Proximal phalanx of fifth finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-media-do-minimo",
+    "name": "Falange média do dedo mínimo",
+    "english": "middle phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "Segmento médio do dedo mínimo, o menor dos dedos longos.",
+    "fields": {
+      "Tipo": "Longo, intermediário em tamanho.",
+      "Localização": "Mão",
+      "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+      "Função": "Forma o segmento médio do dedo mínimo, entre as duas interfalângicas.",
+      "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+      "Na prática": "Segmento médio do dedo mínimo, o menor dos dedos longos. Participa do fechamento da mão em concha, junto com o quarto raio.",
+      "Palpação básica": "Palpável no dorso do dedo mínimo, entre as pregas interfalângicas.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "falange-proximal-do-minimo",
+      "falange-distal-do-minimo",
+      "interfalangicas-da-mao",
+      "flexor-superficial-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange média do dedo mínimo"
+    ],
+    "modelIds": [
+      "ZA-20da467531b352",
+      "ZA-a4d46065b80672"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Middle phalanx of fifth finger of hand.l",
+      "Middle phalanx of fifth finger of hand.r"
+    ]
+  },
+  {
+    "id": "falange-distal-do-minimo",
+    "name": "Falange distal do dedo mínimo",
+    "english": "distal phalanx of hand",
+    "kind": "ossos",
+    "region": "Mão",
+    "summary": "Ponta do dedo mínimo.",
+    "fields": {
+      "Tipo": "Longo, a menor falange.",
+      "Localização": "Mão",
+      "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+      "Função": "Forma a extremidade do dedo mínimo e ancora os tendões que dão o último apoio da ponta.",
+      "Articula-se com": "Falange média, na interfalângica distal.",
+      "Na prática": "Ponta do dedo mínimo. Como nos demais dedos, o flexor profundo flete a interfalângica distal e o tendão extensor terminal a estende; sua ruptura causa dedo em martelo.",
+      "Palpação básica": "Tuberosidade palpável sob a polpa do dedo mínimo.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+    },
+    "related": [
+      "falanges-da-mao",
+      "falange-media-do-minimo",
+      "interfalangicas-da-mao",
+      "flexor-profundo-dos-dedos",
+      "extensor-do-dedo-minimo"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange distal do dedo mínimo"
+    ],
+    "modelIds": [
+      "ZA-ccff27b79ec8e9",
+      "ZA-0c77c2d8ff99f2"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Distal phalanx of fifth finger of hand.l",
+      "Distal phalanx of fifth finger of hand.r"
+    ]
+  },
+  {
+    "id": "primeiro-metatarsal",
+    "name": "1º metatarsal (do hálux)",
+    "english": "first metatarsal bone",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "O mais curto e mais grosso; sustenta a maior parte da carga do antepé, com dois sesamoides sob a cabeça.",
+    "fields": {
+      "Tipo": "Longo, curto e robusto.",
+      "Localização": "Pé",
+      "Principais partes": "Base para o cuneiforme medial, corpo forte e cabeça larga, com dois sesamoides na face plantar.",
+      "Função": "Forma a coluna medial do pé e recebe a maior parte da carga do antepé no impulso da marcha.",
+      "Articula-se com": "Cuneiforme medial, na base, e a falange proximal do hálux, na metatarsofalângica.",
+      "Na prática": "O desvio do hálux para fora com proeminência medial da cabeça é o hálux valgo, o joanete. Os dois sesamoides sob a cabeça funcionam como polia dos flexores e são local de sesamoidite e dor sob o hálux. A insuficiência do 1º raio joga carga para os metatarsais vizinhos.",
+      "Palpação básica": "A cabeça é a proeminência medial na base do hálux; os sesamoides são palpáveis na planta, sob ela.",
+      "Marcos para o exercício": "O tibial anterior insere-se na base medial e o fibular longo na base plantar-lateral; juntos controlam o apoio do 1º raio. Ativar o flexor curto do hálux e o abdutor do hálux faz parte da reabilitação do joanete."
+    },
+    "related": [
+      "metatarsais",
+      "cuneiforme-medial",
+      "sesamoides-do-halux",
+      "tibial-anterior",
+      "fibular-longo",
+      "abdutor-do-halux",
+      "flexor-curto-do-halux"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "primeiro metatarso",
+      "metatarsal do hálux",
+      "hálux valgo",
+      "joanete"
+    ],
+    "modelIds": [
+      "ZA-5c4831118859bc",
+      "ZA-18d651c7c4cb48"
+    ],
+    "modelComponents": [
+      "First metatarsal bone.l",
+      "First metatarsal bone.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "segundo-metatarsal",
+    "name": "2º metatarsal",
+    "english": "second metatarsal bone",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "O mais longo; sua base recuada é a chave de encaixe do médio-pé e o local clássico da fratura de estresse.",
+    "fields": {
+      "Tipo": "Longo, o mais comprido dos metatarsais.",
+      "Localização": "Pé",
+      "Principais partes": "Base encaixada entre os três cuneiformes, num recesso profundo, corpo longo e cabeça.",
+      "Função": "É a pedra angular do arco transverso e do médio-pé: a base recuada trava o 2º raio, tornando-o rígido e estável.",
+      "Articula-se com": "Principalmente o cuneiforme intermédio, mais os cuneiformes medial e lateral, e os metatarsais vizinhos; distalmente, a falange proximal do 2º dedo.",
+      "Na prática": "Por ser rígido, o 2º metatarsal sofre a fratura de estresse clássica, a fratura da marcha, comum em recrutas e corredores. Sua base é o ponto de referência da articulação de Lisfranc: uma lesão nesse encaixe desalinha todo o médio-pé e é fácil de subestimar.",
+      "Palpação básica": "A base é palpável no ponto mais alto do dorso do médio-pé; o corpo, ao longo do dorso do antepé.",
+      "Marcos para o exercício": "Referência para reconhecer dor de fratura de estresse no atleta e para avaliar a estabilidade do médio-pé após entorses do mediopé."
+    },
+    "related": [
+      "metatarsais",
+      "cuneiforme-intermedio",
+      "primeiro-metatarsal",
+      "terceiro-metatarsal",
+      "ligamentos-tarsometatarsais"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "segundo metatarso",
+      "fratura da marcha",
+      "Lisfranc",
+      "pedra angular"
+    ],
+    "modelIds": [
+      "ZA-661f01d69bb1de",
+      "ZA-48e6cf5ecc82e8"
+    ],
+    "modelComponents": [
+      "Second metatarsal bone.l",
+      "Second metatarsal bone.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "terceiro-metatarsal",
+    "name": "3º metatarsal",
+    "english": "third metatarsal bone",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Metatarsal central da coluna medial; articula-se com o cuneiforme lateral.",
+    "fields": {
+      "Tipo": "Longo.",
+      "Localização": "Pé",
+      "Principais partes": "Base para o cuneiforme lateral, corpo e cabeça.",
+      "Função": "Completa a coluna medial rígida do pé, junto com o 1º e o 2º raios, participando do apoio central do antepé.",
+      "Articula-se com": "Cuneiforme lateral, na base; com o 2º e o 4º metatarsais ao lado; e com a falange proximal do 3º dedo.",
+      "Na prática": "Divide com o 2º metatarsal as fraturas de estresse do antepé. A cabeça do 2º e do 3º metatarsais é onde a metatarsalgia central mais aparece, muitas vezes ligada a um 1º raio insuficiente que não sustenta sua parte da carga.",
+      "Palpação básica": "Palpável no centro do dorso do antepé, entre o 2º e o 4º metatarsais.",
+      "Marcos para o exercício": "As cabeças do 2º e 3º são o ponto de descarga a proteger na metatarsalgia, com palmilhas de alívio retrocapital."
+    },
+    "related": [
+      "metatarsais",
+      "cuneiforme-lateral",
+      "segundo-metatarsal",
+      "quarto-metatarsal",
+      "metatarsofalangicas"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "terceiro metatarso",
+      "metatarsalgia central"
+    ],
+    "modelIds": [
+      "ZA-b0bd7f9ca22f4a",
+      "ZA-d1a9c79b5c8977"
+    ],
+    "modelComponents": [
+      "Third metatarsal bone.l",
+      "Third metatarsal bone.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "quarto-metatarsal",
+    "name": "4º metatarsal",
+    "english": "fourth metatarsal bone",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Início da coluna lateral, mais móvel; sua base já se articula com o cuboide.",
+    "fields": {
+      "Tipo": "Longo.",
+      "Localização": "Pé",
+      "Principais partes": "Base para o cuboide, corpo e cabeça.",
+      "Função": "Faz a transição para a coluna lateral do pé, mais móvel, que se adapta ao terreno irregular.",
+      "Articula-se com": "Cuboide, na base; com o 3º e o 5º metatarsais ao lado; e com a falange proximal do 4º dedo.",
+      "Na prática": "A coluna lateral, do 4º e 5º metatarsais com o cuboide, tem mais mobilidade que a medial. Essa mobilidade é o que permite ao pé se moldar a superfícies irregulares; perdê-la, por rigidez, transfere carga e sobrecarrega os raios vizinhos.",
+      "Palpação básica": "Palpável no dorso lateral do antepé, entre o 3º e o 5º metatarsais.",
+      "Marcos para o exercício": "Referência para avaliar a mobilidade da coluna lateral do pé em pés rígidos ou pós-imobilização."
+    },
+    "related": [
+      "metatarsais",
+      "cuboide",
+      "terceiro-metatarsal",
+      "quinto-metatarsal"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "quarto metatarso",
+      "coluna lateral do pé"
+    ],
+    "modelIds": [
+      "ZA-a1dbeb10397d29",
+      "ZA-ed21d2eab3634f"
+    ],
+    "modelComponents": [
+      "Fourth metatarsal bone.l",
+      "Fourth metatarsal bone.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "quinto-metatarsal",
+    "name": "5º metatarsal",
+    "english": "fifth metatarsal bone",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Tem uma tuberosidade proeminente na base; sede das fraturas por avulsão e de Jones.",
+    "fields": {
+      "Tipo": "Longo.",
+      "Localização": "Pé",
+      "Principais partes": "Base com uma tuberosidade lateral saliente, corpo e cabeça.",
+      "Função": "Forma a borda lateral do antepé e recebe o fibular curto na tuberosidade, que everte e estabiliza a coluna lateral.",
+      "Articula-se com": "Cuboide, na base; com o 4º metatarsal ao lado; e com a falange proximal do 5º dedo.",
+      "Na prática": "A base do 5º metatarsal tem duas fraturas famosas: a avulsão da tuberosidade, quando o fibular curto arranca um fragmento numa entorse em inversão, que costuma consolidar bem; e a fratura de Jones, um pouco mais distal, na junção metáfise-diáfise, de má vascularização e alto risco de não consolidar. Distingui-las muda o tratamento.",
+      "Palpação básica": "A tuberosidade é a saliência óssea fácil de achar no meio da borda lateral do pé.",
+      "Marcos para o exercício": "O fibular curto insere-se na tuberosidade; após entorse em inversão, dor exatamente aí sugere fratura de avulsão e não só lesão ligamentar."
+    },
+    "related": [
+      "metatarsais",
+      "cuboide",
+      "quarto-metatarsal",
+      "fibular-curto",
+      "fibular-terceiro"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "quinto metatarso",
+      "fratura de Jones",
+      "tuberosidade do 5º metatarsal"
+    ],
+    "modelIds": [
+      "ZA-1121d2712fdac7",
+      "ZA-32252c5a8288c3"
+    ],
+    "modelComponents": [
+      "Fifth metatarsal bone.l",
+      "Fifth metatarsal bone.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "falange-proximal-do-halux",
+    "name": "Falange proximal do hálux",
+    "english": "proximal phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "A metatarsofalângica do hálux é a articulação do impulso.",
+    "fields": {
+      "Tipo": "Longo, a maior falange do dedo.",
+      "Localização": "Pé",
+      "Principais partes": "Base côncava para a cabeça do metatarsal, corpo e cabeça em tróclea.",
+      "Função": "Forma o primeiro segmento do hálux e é movida pelos músculos intrínsecos e pelos tendões longos.",
+      "Articula-se com": "Cabeça do 1º metatarsal, na metatarsofalângica, e a falange distal, na interfalângica (única do dedo).",
+      "Na prática": "A metatarsofalângica do hálux é a articulação do impulso. Sua hiperextensão forçada lesa a placa plantar, o turf toe; a perda de extensão por artrose é o hallux rigidus, que dói ao subir rampa e na fase final do passo.",
+      "Palpação básica": "Palpável no dorso do hálux, logo distal à cabeça do metatarsal.",
+      "Marcos para o exercício": "Base para trabalhar a metatarsofalângica do hálux e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "primeiro-metatarsal",
+      "metatarsofalangicas",
+      "falange-distal-do-halux",
+      "interfalangicas-do-pe",
+      "extensor-longo-do-halux",
+      "abdutor-do-halux"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange proximal do hálux",
+      "turf toe",
+      "hallux rigidus"
+    ],
+    "modelIds": [
+      "ZA-ea4819f97e8c21",
+      "ZA-c07969394566b5"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Proximal phalanx of first finger of foot.l",
+      "Proximal phalanx of first finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-distal-do-halux",
+    "name": "Falange distal do hálux",
+    "english": "distal phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "O flexor longo do hálux insere-se na base plantar e dá a propulsão final do passo; o extensor longo do hálux, na base dorsal.",
+    "fields": {
+      "Tipo": "Longo, a menor falange.",
+      "Localização": "Pé",
+      "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+      "Função": "Forma a extremidade do hálux e ancora os tendões que dão o último apoio da ponta.",
+      "Articula-se com": "Falange proximal, na interfalângica (única do dedo).",
+      "Na prática": "O flexor longo do hálux insere-se na base plantar e dá a propulsão final do passo; o extensor longo do hálux, na base dorsal. A falange distal larga sustenta a unha, local de hematoma subungueal no corredor.",
+      "Palpação básica": "Tuberosidade palpável sob a polpa do hálux.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "falange-proximal-do-halux",
+      "interfalangicas-do-pe",
+      "flexor-longo-do-halux",
+      "extensor-longo-do-halux"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange distal do hálux"
+    ],
+    "modelIds": [
+      "ZA-689f96bec92fe9",
+      "ZA-686672aa34d163"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Distal phalanx of first finger of foot.l",
+      "Distal phalanx of first finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-proximal-do-segundo-dedo-do-pe",
+    "name": "Falange proximal do segundo dedo do pé",
+    "english": "proximal phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "O segundo dedo é o mais sujeito ao dedo em garra e ao dedo em martelo, com a falange proximal hiperestendida na metatarsofalângica e as interfalângicas flexionadas, gerando calo dorsal.",
+    "fields": {
+      "Tipo": "Longo, a maior falange do dedo.",
+      "Localização": "Pé",
+      "Principais partes": "Base côncava para a cabeça do metatarsal, corpo e cabeça em tróclea.",
+      "Função": "Forma o primeiro segmento do segundo dedo do pé e é movida pelos músculos intrínsecos e pelos tendões longos.",
+      "Articula-se com": "Cabeça do 2º metatarsal, na metatarsofalângica, e a falange média, na interfalângica proximal.",
+      "Na prática": "O segundo dedo é o mais sujeito ao dedo em garra e ao dedo em martelo, com a falange proximal hiperestendida na metatarsofalângica e as interfalângicas flexionadas, gerando calo dorsal.",
+      "Palpação básica": "Palpável no dorso do segundo dedo do pé, logo distal à cabeça do metatarsal.",
+      "Marcos para o exercício": "Base para trabalhar a metatarsofalângica do segundo dedo do pé e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "segundo-metatarsal",
+      "metatarsofalangicas",
+      "falange-media-do-segundo-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "extensor-longo-dos-dedos",
+      "interosseos-dorsais-do-pe"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange proximal do segundo dedo do pé",
+      "dedo em garra",
+      "dedo em martelo"
+    ],
+    "modelIds": [
+      "ZA-b310de8c5e1bdb",
+      "ZA-caf3052e22833f"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Proximal phalanx of second finger of foot.l",
+      "Proximal phalanx of second finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-media-do-segundo-dedo-do-pe",
+    "name": "Falange média do segundo dedo do pé",
+    "english": "middle phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Segmento médio de um dedo menor.",
+    "fields": {
+      "Tipo": "Longo, intermediário em tamanho.",
+      "Localização": "Pé",
+      "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+      "Função": "Forma o segmento médio do segundo dedo do pé, entre as duas interfalângicas.",
+      "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+      "Na prática": "Segmento médio de um dedo menor. A rigidez da interfalângica proximal aqui fixa o dedo em martelo e cria atrito com o calçado.",
+      "Palpação básica": "Palpável no dorso do segundo dedo do pé, entre as pregas interfalângicas.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "falange-proximal-do-segundo-dedo-do-pe",
+      "falange-distal-do-segundo-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "flexor-curto-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange média do segundo dedo do pé"
+    ],
+    "modelIds": [
+      "ZA-d0a388cf29f70a",
+      "ZA-903162e237b8c4"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Middle phalanx of second finger of foot.l",
+      "Middle phalanx of second finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-distal-do-segundo-dedo-do-pe",
+    "name": "Falange distal do segundo dedo do pé",
+    "english": "distal phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Ponta do segundo dedo.",
+    "fields": {
+      "Tipo": "Longo, a menor falange.",
+      "Localização": "Pé",
+      "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+      "Função": "Forma a extremidade do segundo dedo do pé e ancora os tendões que dão o último apoio da ponta.",
+      "Articula-se com": "Falange média, na interfalângica distal.",
+      "Na prática": "Ponta do segundo dedo. O flexor longo dos dedos flete a interfalângica distal; a deformidade em martelo pode acabar em calo doloroso na polpa.",
+      "Palpação básica": "Tuberosidade palpável sob a polpa do segundo dedo do pé.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "falange-media-do-segundo-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "flexor-longo-dos-dedos",
+      "extensor-longo-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange distal do segundo dedo do pé"
+    ],
+    "modelIds": [
+      "ZA-d400833c81b942",
+      "ZA-f4fea5520ea8c8"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Distal phalanx of second finger of foot.l",
+      "Distal phalanx of second finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-proximal-do-terceiro-dedo-do-pe",
+    "name": "Falange proximal do terceiro dedo do pé",
+    "english": "proximal phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Terceiro dedo, semelhante ao segundo.",
+    "fields": {
+      "Tipo": "Longo, a maior falange do dedo.",
+      "Localização": "Pé",
+      "Principais partes": "Base côncava para a cabeça do metatarsal, corpo e cabeça em tróclea.",
+      "Função": "Forma o primeiro segmento do terceiro dedo do pé e é movida pelos músculos intrínsecos e pelos tendões longos.",
+      "Articula-se com": "Cabeça do 3º metatarsal, na metatarsofalângica, e a falange média, na interfalângica proximal.",
+      "Na prática": "Terceiro dedo, semelhante ao segundo. Participa do apoio dos dedos menores no fim do impulso e sofre as mesmas deformidades em garra e martelo.",
+      "Palpação básica": "Palpável no dorso do terceiro dedo do pé, logo distal à cabeça do metatarsal.",
+      "Marcos para o exercício": "Base para trabalhar a metatarsofalângica do terceiro dedo do pé e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "terceiro-metatarsal",
+      "metatarsofalangicas",
+      "falange-media-do-terceiro-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "interosseos-dorsais-do-pe",
+      "lumbricais-do-pe"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange proximal do terceiro dedo do pé"
+    ],
+    "modelIds": [
+      "ZA-896315e816ea4d",
+      "ZA-e9ea85158fac7e"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Proximal phalanx of third finger of foot.l",
+      "Proximal phalanx of third finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-media-do-terceiro-dedo-do-pe",
+    "name": "Falange média do terceiro dedo do pé",
+    "english": "middle phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Segmento médio do terceiro dedo, curto e de pouca mobilidade própria.",
+    "fields": {
+      "Tipo": "Longo, intermediário em tamanho.",
+      "Localização": "Pé",
+      "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+      "Função": "Forma o segmento médio do terceiro dedo do pé, entre as duas interfalângicas.",
+      "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+      "Na prática": "Segmento médio do terceiro dedo, curto e de pouca mobilidade própria.",
+      "Palpação básica": "Palpável no dorso do terceiro dedo do pé, entre as pregas interfalângicas.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "falange-proximal-do-terceiro-dedo-do-pe",
+      "falange-distal-do-terceiro-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "flexor-curto-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange média do terceiro dedo do pé"
+    ],
+    "modelIds": [
+      "ZA-85c811aae06a86",
+      "ZA-f6d27914d0348e"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Middle phalanx of third finger of foot.l",
+      "Middle phalanx of third finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-distal-do-terceiro-dedo-do-pe",
+    "name": "Falange distal do terceiro dedo do pé",
+    "english": "distal phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Ponta do terceiro dedo; ancora o flexor longo dos dedos e o extensor longo dos dedos.",
+    "fields": {
+      "Tipo": "Longo, a menor falange.",
+      "Localização": "Pé",
+      "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+      "Função": "Forma a extremidade do terceiro dedo do pé e ancora os tendões que dão o último apoio da ponta.",
+      "Articula-se com": "Falange média, na interfalângica distal.",
+      "Na prática": "Ponta do terceiro dedo; ancora o flexor longo dos dedos e o extensor longo dos dedos.",
+      "Palpação básica": "Tuberosidade palpável sob a polpa do terceiro dedo do pé.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "falange-media-do-terceiro-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "flexor-longo-dos-dedos",
+      "extensor-longo-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange distal do terceiro dedo do pé"
+    ],
+    "modelIds": [
+      "ZA-f16f0b464cfedc",
+      "ZA-b0bb4f092e61f4"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Distal phalanx of third finger of foot.l",
+      "Distal phalanx of third finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-proximal-do-quarto-dedo-do-pe",
+    "name": "Falange proximal do quarto dedo do pé",
+    "english": "proximal phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Quarto dedo, na coluna lateral mais móvel do pé.",
+    "fields": {
+      "Tipo": "Longo, a maior falange do dedo.",
+      "Localização": "Pé",
+      "Principais partes": "Base côncava para a cabeça do metatarsal, corpo e cabeça em tróclea.",
+      "Função": "Forma o primeiro segmento do quarto dedo do pé e é movida pelos músculos intrínsecos e pelos tendões longos.",
+      "Articula-se com": "Cabeça do 4º metatarsal, na metatarsofalângica, e a falange média, na interfalângica proximal.",
+      "Na prática": "Quarto dedo, na coluna lateral mais móvel do pé. As deformidades em garra transferem carga para a cabeça do metatarsal correspondente e geram metatarsalgia.",
+      "Palpação básica": "Palpável no dorso do quarto dedo do pé, logo distal à cabeça do metatarsal.",
+      "Marcos para o exercício": "Base para trabalhar a metatarsofalângica do quarto dedo do pé e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "quarto-metatarsal",
+      "metatarsofalangicas",
+      "falange-media-do-quarto-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "interosseos-plantares",
+      "lumbricais-do-pe"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange proximal do quarto dedo do pé"
+    ],
+    "modelIds": [
+      "ZA-73d870dff5ab90",
+      "ZA-0378c0a07cd4e3"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Proximal phalanx of fourth finger of foot.l",
+      "Proximal phalanx of fourth finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-media-do-quarto-dedo-do-pe",
+    "name": "Falange média do quarto dedo do pé",
+    "english": "middle phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Segmento médio do quarto dedo, muito curto.",
+    "fields": {
+      "Tipo": "Longo, intermediário em tamanho.",
+      "Localização": "Pé",
+      "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+      "Função": "Forma o segmento médio do quarto dedo do pé, entre as duas interfalângicas.",
+      "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+      "Na prática": "Segmento médio do quarto dedo, muito curto.",
+      "Palpação básica": "Palpável no dorso do quarto dedo do pé, entre as pregas interfalângicas.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "falange-proximal-do-quarto-dedo-do-pe",
+      "falange-distal-do-quarto-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "flexor-curto-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange média do quarto dedo do pé"
+    ],
+    "modelIds": [
+      "ZA-55245cbccd638c",
+      "ZA-ec0e725e5b644c"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Middle phalanx of fourth finger of foot.l",
+      "Middle phalanx of fourth finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-distal-do-quarto-dedo-do-pe",
+    "name": "Falange distal do quarto dedo do pé",
+    "english": "distal phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Ponta do quarto dedo; a deformidade em garra apoia a polpa no chão e forma calo.",
+    "fields": {
+      "Tipo": "Longo, a menor falange.",
+      "Localização": "Pé",
+      "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+      "Função": "Forma a extremidade do quarto dedo do pé e ancora os tendões que dão o último apoio da ponta.",
+      "Articula-se com": "Falange média, na interfalângica distal.",
+      "Na prática": "Ponta do quarto dedo; a deformidade em garra apoia a polpa no chão e forma calo.",
+      "Palpação básica": "Tuberosidade palpável sob a polpa do quarto dedo do pé.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "falange-media-do-quarto-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "flexor-longo-dos-dedos",
+      "extensor-longo-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange distal do quarto dedo do pé"
+    ],
+    "modelIds": [
+      "ZA-707a07d23c678e",
+      "ZA-9d3008c2cf380c"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Distal phalanx of fourth finger of foot.l",
+      "Distal phalanx of fourth finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-proximal-do-quinto-dedo-do-pe",
+    "name": "Falange proximal do quinto dedo do pé",
+    "english": "proximal phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Quinto dedo.",
+    "fields": {
+      "Tipo": "Longo, a maior falange do dedo.",
+      "Localização": "Pé",
+      "Principais partes": "Base côncava para a cabeça do metatarsal, corpo e cabeça em tróclea.",
+      "Função": "Forma o primeiro segmento do quinto dedo do pé e é movida pelos músculos intrínsecos e pelos tendões longos.",
+      "Articula-se com": "Cabeça do 5º metatarsal, na metatarsofalângica, e a falange média, na interfalângica proximal.",
+      "Na prática": "Quinto dedo. O quinto dedo em varo com metatarsalgia lateral e o calo entre o 4º e o 5º dedos, o cravo interdigital, são queixas frequentes; no calçado apertado o 5º é o mais comprimido.",
+      "Palpação básica": "Palpável no dorso do quinto dedo do pé, logo distal à cabeça do metatarsal.",
+      "Marcos para o exercício": "Base para trabalhar a metatarsofalângica do quinto dedo do pé e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "quinto-metatarsal",
+      "metatarsofalangicas",
+      "falange-media-do-quinto-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "abdutor-do-dedo-minimo-do-pe",
+      "interosseos-plantares"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange proximal do quinto dedo do pé"
+    ],
+    "modelIds": [
+      "ZA-c64cb1b7ece01a",
+      "ZA-4ad33d8271cde1"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Proximal phalanx of fifth finger of foot.l",
+      "Proximal phalanx of fifth finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-media-do-quinto-dedo-do-pe",
+    "name": "Falange média do quinto dedo do pé",
+    "english": "middle phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "No quinto dedo a falange média costuma estar fundida à distal, um achado normal que reduz o número de peças móveis.",
+    "fields": {
+      "Tipo": "Longo, intermediário em tamanho.",
+      "Localização": "Pé",
+      "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+      "Função": "Forma o segmento médio do quinto dedo do pé, entre as duas interfalângicas.",
+      "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+      "Na prática": "No quinto dedo a falange média costuma estar fundida à distal, um achado normal que reduz o número de peças móveis.",
+      "Palpação básica": "Palpável no dorso do quinto dedo do pé, entre as pregas interfalângicas.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "falange-proximal-do-quinto-dedo-do-pe",
+      "falange-distal-do-quinto-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "flexor-curto-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange média do quinto dedo do pé",
+      "falange fundida"
+    ],
+    "modelIds": [
+      "ZA-c745bc67fc7867",
+      "ZA-ef3fdc0d337beb"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Middle phalanx of fifth finger of foot.l",
+      "Middle phalanx of fifth finger of foot.r"
+    ]
+  },
+  {
+    "id": "falange-distal-do-quinto-dedo-do-pe",
+    "name": "Falange distal do quinto dedo do pé",
+    "english": "distal phalanx of foot",
+    "kind": "ossos",
+    "region": "Pé",
+    "summary": "Ponta do quinto dedo, a menor de todas as falanges; sustenta uma unha pequena, muitas vezes acometida por onicomicose e trauma de calçado.",
+    "fields": {
+      "Tipo": "Longo, a menor falange.",
+      "Localização": "Pé",
+      "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+      "Função": "Forma a extremidade do quinto dedo do pé e ancora os tendões que dão o último apoio da ponta.",
+      "Articula-se com": "Falange média, na interfalângica distal.",
+      "Na prática": "Ponta do quinto dedo, a menor de todas as falanges; sustenta uma unha pequena, muitas vezes acometida por onicomicose e trauma de calçado.",
+      "Palpação básica": "Tuberosidade palpável sob a polpa do quinto dedo do pé.",
+      "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+    },
+    "related": [
+      "falanges-do-pe",
+      "falange-media-do-quinto-dedo-do-pe",
+      "interfalangicas-do-pe",
+      "flexor-longo-dos-dedos",
+      "extensor-longo-dos-dedos"
+    ],
+    "depth": "superficial",
+    "sources": [
+      "openstax-bones",
+      "z-anatomy"
+    ],
+    "aliases": [
+      "falange distal do quinto dedo do pé"
+    ],
+    "modelIds": [
+      "ZA-0c8d46736cd0d0",
+      "ZA-01e1daf784598d"
+    ],
+    "modelSource": "z-anatomy",
+    "modelComponents": [
+      "Distal phalanx of fifth finger of foot.l",
+      "Distal phalanx of fifth finger of foot.r"
     ]
   }
 ]

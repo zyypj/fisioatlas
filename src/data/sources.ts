@@ -12,10 +12,10 @@ export const sources = [
     note: "Base do corpo atual: ossos, músculos, cápsulas, discos, ligamentos e nervos. Autores: Gauthier Kervyn, Marcin Zielinski e colaboradores; base original BodyParts3D de Kousaku Okubo / DBCLS. Derivações das malhas distribuídas sob CC BY-SA 4.0, com atribuições adicionais preservadas no arquivo de licença.",
   },
   {
-    id: "higgsfield-joint",
-    name: "Higgsfield 3D Jutsu — esquema de articulação sinovial",
-    url: "https://higgsfield.ai/3d-jutsu/7d5ee5e8-869c-40f7-9c82-86a2c6d4f0ba",
-    note: "Modelo original construído no Blender do Higgsfield: oito peças editáveis. Esquema genérico em corte; não representa uma articulação específica nem substitui as malhas do atlas.",
+    id: "esquema-sinovial",
+    name: "Esquema de articulação sinovial — modelo próprio",
+    url: "/lessons/README.md",
+    note: "Oito peças geradas por script no Blender, em scripts/lesson_synovial.py: cada uma é uma superfície de revolução com perfil descrito por funções. Esquema genérico e ampliado, feito para explicar a organização de uma articulação sinovial; não representa joelho, ombro ou qualquer articulação específica, e não substitui as malhas anatômicas do atlas.",
   },
   {
     id: "bodyparts",

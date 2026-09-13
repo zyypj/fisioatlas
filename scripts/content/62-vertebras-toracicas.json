@@ -1,0 +1,301 @@
+{
+  "patches": [
+    {
+      "id": "vertebras-toracicas",
+      "name": "Vértebras torácicas (visão geral)",
+      "summary": "O que define uma vértebra torácica: fóveas costais, facetas frontais e espinhoso longo e inclinado.",
+      "fields": {
+        "Tipo": "Visão geral do grupo. As doze vértebras torácicas têm ficha própria, de T1 a T12.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo em forma de coração, com fóveas costais para a cabeça da costela; fóvea costal no processo transverso, para o tubérculo da costela; forame vertebral pequeno e circular; processo espinhoso longo e muito inclinado para baixo; facetas articulares orientadas no plano frontal.",
+        "Função": "Formam a parte da coluna presa à caixa torácica. As facetas frontais favorecem a rotação e limitam a flexão e a extensão; as costelas limitam ainda mais o movimento.",
+        "Articula-se com": "Entre si pelos discos e pelas zigapofisárias; com as costelas pelas articulações costovertebrais e costotransversárias; acima com C7 e abaixo com L1.",
+        "Na prática": "A regra dos espinhosos é útil na palpação: de T1 a T3 a ponta do espinhoso está no nível do próprio corpo; de T4 a T6, um nível abaixo; de T7 a T9, dois níveis abaixo; de T10 a T12 volta a subir.",
+        "Palpação básica": "A espinha da escápula está no nível de T3 e o ângulo inferior da escápula no nível de T7, referências rápidas para contar.",
+        "Marcos para o exercício": "A maior parte da rotação do tronco acontece aqui, não na lombar. Devolver mobilidade torácica costuma aliviar demanda sobre a cervical e a lombar.",
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria: cada vértebra torácica tem a sua. Abra de T1 a T12 para comparar as fóveas costais e ver a transição para a forma lombar."
+      },
+      "related": ["vertebra-t1", "vertebra-t6", "vertebra-t12", "vertebras-cervicais", "vertebras-lombares", "costelas", "ligamento-costotransversario", "multifido-toracico"],
+      "aliases": ["torácica", "T1 a T12", "coluna torácica", "dorsal"],
+      "source_objects": []
+    }
+  ],
+  "new": [
+    {
+      "id": "vertebra-t1",
+      "name": "Vértebra T1",
+      "english": "first thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Torácica atípica: tem fóvea costal inteira para a 1ª costela e espinhoso quase horizontal, como o de C7.",
+      "fields": {
+        "Tipo": "Irregular, torácica atípica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Fóvea costal superior inteira, que recebe sozinha a cabeça da primeira costela, e uma hemifóvea inferior para a segunda; corpo mais largo, parecido com o cervical; processo espinhoso longo, espesso e quase horizontal.",
+        "Função": "Faz a transição entre a cervical móvel e a torácica presa às costelas, e ancora a primeira costela.",
+        "Articula-se com": "C7, acima, T2, abaixo, e a primeira e segunda costelas.",
+        "Na prática": "Seu espinhoso é quase tão proeminente quanto o de C7 e costuma confundir na contagem. Para diferenciar, peça extensão cervical: o de C7 desliza para dentro, o de T1 permanece. A raiz T1 participa da inervação da musculatura intrínseca da mão.",
+        "Palpação básica": "Palpável logo abaixo da vértebra proeminente; é o primeiro espinhoso que não se move na extensão do pescoço.",
+        "Marcos para o exercício": "O tronco inferior do plexo braquial, de C8 e T1, cruza a primeira costela. A síndrome do desfiladeiro torácico envolve justamente essa região."
+      },
+      "related": ["vertebra-c7", "vertebra-t2", "vertebras-toracicas", "costelas", "plexo-braquial", "escaleno-medio", "ligamento-costotransversario"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T1", "primeira torácica"],
+      "source_objects": ["Vertebra T1"]
+    },
+    {
+      "id": "vertebra-t2",
+      "name": "Vértebra T2",
+      "english": "second thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Torácica alta no nível do ângulo do esterno; espinhoso longo e inclinado.",
+      "fields": {
+        "Tipo": "Irregular, torácica típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Hemifóveas costais superior e inferior no corpo, que recebem metade da cabeça de uma costela cada; fóvea costal no processo transverso; espinhoso longo e inclinado.",
+        "Função": "Sustenta a parte alta do tórax e participa da rotação torácica.",
+        "Articula-se com": "T1, acima, T3, abaixo, e as costelas correspondentes.",
+        "Na prática": "O ângulo do esterno, referência palpável na frente, corresponde ao disco entre T4 e T5; T2 fica logo acima dessa faixa, na região que mais enrijece em quem trabalha sentado.",
+        "Palpação básica": "Espinhoso palpável na linha média, dois níveis abaixo da vértebra proeminente.",
+        "Marcos para o exercício": "A rigidez torácica alta obriga a cervical e o ombro a compensarem. Mobilidade de extensão nessa faixa é alvo comum na dor cervical e no impacto do ombro."
+      },
+      "related": ["vertebra-t1", "vertebra-t3", "vertebras-toracicas", "costelas", "esterno", "romboide-menor"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T2", "segunda torácica"],
+      "source_objects": ["Vertebra T2"]
+    },
+    {
+      "id": "vertebra-t3",
+      "name": "Vértebra T3",
+      "english": "third thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Está no nível da espinha da escápula, uma das referências mais usadas para contar a torácica.",
+      "fields": {
+        "Tipo": "Irregular, torácica típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo em forma de coração com hemifóveas costais; fóvea costal transversa; espinhoso longo e inclinado para baixo.",
+        "Função": "Participa da sustentação do tórax e da rotação do tronco.",
+        "Articula-se com": "T2, acima, T4, abaixo, e as costelas correspondentes.",
+        "Na prática": "A raiz da espinha da escápula está no nível de T3. É a referência de superfície mais rápida para localizar a torácica alta no exame.",
+        "Palpação básica": "Siga a espinha da escápula até a coluna: o espinhoso encontrado ali é o de T3.",
+        "Marcos para o exercício": "Nível usado como ponto de partida para mobilizações torácicas e para avaliar o ritmo escapulotorácico."
+      },
+      "related": ["vertebra-t2", "vertebra-t4", "vertebras-toracicas", "escapula", "costelas", "trapezio", "romboide-maior"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T3", "terceira torácica", "espinha da escápula"],
+      "source_objects": ["Vertebra T3"]
+    },
+    {
+      "id": "vertebra-t4",
+      "name": "Vértebra T4",
+      "english": "fourth thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Nível do ângulo do esterno e da bifurcação da traqueia; marca o plano transverso do tórax.",
+      "fields": {
+        "Tipo": "Irregular, torácica típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo em coração com hemifóveas costais; fóvea costal transversa; espinhoso longo e inclinado.",
+        "Função": "Sustenta o tórax e participa da rotação.",
+        "Articula-se com": "T3, acima, T5, abaixo, e as costelas correspondentes.",
+        "Na prática": "O disco entre T4 e T5 fica no plano do ângulo do esterno, onde a traqueia se bifurca e o arco da aorta começa e termina. É a referência que liga a coluna às estruturas do mediastino.",
+        "Palpação básica": "Espinhoso palpável; o ângulo do esterno, à frente, marca o mesmo plano.",
+        "Marcos para o exercício": "A partir de T4 os espinhosos ficam mais inclinados: a ponta do espinhoso passa a corresponder ao corpo da vértebra de baixo."
+      },
+      "related": ["vertebra-t3", "vertebra-t5", "vertebras-toracicas", "esterno", "costelas", "cartilagens-costais"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T4", "quarta torácica", "ângulo do esterno"],
+      "source_objects": ["Vertebra T4"]
+    },
+    {
+      "id": "vertebra-t5",
+      "name": "Vértebra T5",
+      "english": "fifth thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Torácica típica no ápice da cifose; região de menor mobilidade da coluna.",
+      "fields": {
+        "Tipo": "Irregular, torácica típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo em coração com hemifóveas; fóvea costal transversa; espinhoso longo, cuja ponta chega ao nível do corpo de T6.",
+        "Função": "Fica próxima do ápice da cifose torácica, onde a caixa torácica mais restringe o movimento.",
+        "Articula-se com": "T4, acima, T6, abaixo, e as costelas correspondentes.",
+        "Na prática": "A faixa de T4 a T8 é a mais rígida da coluna, porque as costelas estão presas ao esterno de forma direta. É onde a mobilização torácica costuma dar mais ganho percebido.",
+        "Palpação básica": "Espinhoso palpável na linha média, entre a espinha e o ângulo inferior da escápula.",
+        "Marcos para o exercício": "Extensão torácica sobre rolo e rotações em decúbito lateral têm essa faixa como alvo principal."
+      },
+      "related": ["vertebra-t4", "vertebra-t6", "vertebras-toracicas", "costelas", "espinhal-toracico", "semiespinhal-toracico"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T5", "quinta torácica", "ápice da cifose"],
+      "source_objects": ["Vertebra T5"]
+    },
+    {
+      "id": "vertebra-t6",
+      "name": "Vértebra T6",
+      "english": "sixth thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Torácica típica; exemplo mais puro da forma torácica clássica.",
+      "fields": {
+        "Tipo": "Irregular, torácica típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo em coração com hemifóveas costais superior e inferior; fóvea costal no processo transverso; espinhoso longo e muito inclinado; facetas no plano frontal.",
+        "Função": "É o modelo da vértebra torácica típica, com todas as características do grupo bem definidas.",
+        "Articula-se com": "T5, acima, T7, abaixo, e as costelas correspondentes.",
+        "Na prática": "É a vértebra usada como exemplo em qualquer descrição do grupo: cada uma das suas hemifóveas recebe metade da cabeça de uma costela, e a costela se apoia no disco entre as duas vértebras.",
+        "Palpação básica": "Espinhoso palpável na linha média, acima do ângulo inferior da escápula.",
+        "Marcos para o exercício": "Para entender a mecânica costal, este é o melhor nível para estudar: a costela gira em torno do eixo definido pelas duas articulações, a costovertebral e a costotransversária."
+      },
+      "related": ["vertebra-t5", "vertebra-t7", "vertebras-toracicas", "costelas", "ligamento-costotransversario", "ligamento-radiado-da-cabeca-da-costela"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T6", "sexta torácica", "torácica típica"],
+      "source_objects": ["Vertebra T6"]
+    },
+    {
+      "id": "vertebra-t7",
+      "name": "Vértebra T7",
+      "english": "seventh thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Nível do ângulo inferior da escápula; espinhoso mais inclinado de toda a coluna.",
+      "fields": {
+        "Tipo": "Irregular, torácica típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo em coração com hemifóveas; fóvea costal transversa; espinhoso longo e com a maior inclinação da coluna, cuja ponta chega ao nível do corpo de T9.",
+        "Função": "Sustenta o tórax médio e participa da rotação.",
+        "Articula-se com": "T6, acima, T8, abaixo, e as costelas correspondentes.",
+        "Na prática": "O ângulo inferior da escápula está no nível de T7 com o braço ao lado do corpo. É a segunda referência mais usada para contar a torácica, junto com a espinha da escápula em T3.",
+        "Palpação básica": "Trace uma linha horizontal a partir do ângulo inferior da escápula até a coluna: o espinhoso ali é o de T7.",
+        "Marcos para o exercício": "A inclinação máxima dos espinhosos nesta faixa é o que torna a palpação segmentar torácica mais difícil que a lombar: a ponta que você sente não corresponde ao corpo do mesmo nível."
+      },
+      "related": ["vertebra-t6", "vertebra-t8", "vertebras-toracicas", "escapula", "costelas", "latissimo-do-dorso"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T7", "sétima torácica", "ângulo inferior da escápula"],
+      "source_objects": ["Vertebra T7"]
+    },
+    {
+      "id": "vertebra-t8",
+      "name": "Vértebra T8",
+      "english": "eighth thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Torácica típica no nível em que a veia cava inferior atravessa o diafragma.",
+      "fields": {
+        "Tipo": "Irregular, torácica típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo em coração com hemifóveas; fóvea costal transversa; espinhoso longo e inclinado.",
+        "Função": "Sustenta o tórax médio e participa da rotação e da mecânica costal.",
+        "Articula-se com": "T7, acima, T9, abaixo, e as costelas correspondentes.",
+        "Na prática": "O forame da veia cava atravessa o centro tendíneo do diafragma no nível de T8. Os três grandes orifícios do diafragma seguem uma sequência fácil de lembrar: veia cava em T8, esôfago em T10 e aorta em T12.",
+        "Palpação básica": "Espinhoso palpável na linha média, logo abaixo do nível do ângulo inferior da escápula.",
+        "Marcos para o exercício": "É o começo da transição: daqui para baixo as costelas deixam de se ligar diretamente ao esterno e o tórax vai ficando mais móvel."
+      },
+      "related": ["vertebra-t7", "vertebra-t9", "vertebras-toracicas", "diafragma", "costelas", "cartilagens-costais"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T8", "oitava torácica", "forame da veia cava"],
+      "source_objects": ["Vertebra T8"]
+    },
+    {
+      "id": "vertebra-t9",
+      "name": "Vértebra T9",
+      "english": "ninth thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Começa a transição torácica baixa; muitas vezes já sem a hemifóvea inferior.",
+      "fields": {
+        "Tipo": "Irregular, torácica de transição.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo em coração; costuma ter apenas a hemifóvea superior, já sem a inferior, porque a décima costela passa a se articular só com o próprio corpo; espinhoso longo.",
+        "Função": "Faz a passagem entre a torácica típica e a torácica baixa, mais parecida com a lombar.",
+        "Articula-se com": "T8, acima, T10, abaixo, e a nona costela.",
+        "Na prática": "É onde começa a mudar o padrão de articulação costal: das costelas 1 a 9 a cabeça se apoia em duas vértebras; da 10 à 12, em uma só.",
+        "Palpação básica": "Espinhoso palpável na linha média da região torácica baixa.",
+        "Marcos para o exercício": "A transição costal daqui para baixo é o que permite maior expansão das costelas inferiores na respiração diafragmática."
+      },
+      "related": ["vertebra-t8", "vertebra-t10", "vertebras-toracicas", "costelas", "serratil-posterior-inferior"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T9", "nona torácica"],
+      "source_objects": ["Vertebra T9"]
+    },
+    {
+      "id": "vertebra-t10",
+      "name": "Vértebra T10",
+      "english": "tenth thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Tem fóvea costal inteira para a 10ª costela; nível do hiato esofágico do diafragma.",
+      "fields": {
+        "Tipo": "Irregular, torácica atípica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Fóvea costal inteira, e não hemifóvea, porque a décima costela se articula só com ela; espinhoso menos inclinado que os anteriores.",
+        "Função": "Continua a transição para a forma e a mecânica lombares.",
+        "Articula-se com": "T9, acima, T11, abaixo, e a décima costela.",
+        "Na prática": "O hiato esofágico atravessa a porção muscular do diafragma no nível de T10, acompanhado dos troncos vagais. É o nível lembrado na hérnia de hiato.",
+        "Palpação básica": "Espinhoso palpável na região torácica baixa, onde a inclinação já começa a diminuir.",
+        "Marcos para o exercício": "Daqui para baixo os espinhosos voltam a ficar mais horizontais, o que facilita a palpação segmentar comparada à torácica média."
+      },
+      "related": ["vertebra-t9", "vertebra-t11", "vertebras-toracicas", "diafragma", "costelas"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T10", "décima torácica", "hiato esofágico"],
+      "source_objects": ["Vertebra T10"]
+    },
+    {
+      "id": "vertebra-t11",
+      "name": "Vértebra T11",
+      "english": "eleventh thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Atípica: fóvea costal inteira e processo transverso sem fóvea, porque a 11ª costela é flutuante.",
+      "fields": {
+        "Tipo": "Irregular, torácica atípica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Fóvea costal inteira e grande no corpo; processo transverso curto e sem fóvea costal, já que a décima primeira costela não tem tubérculo articulado; corpo já com aspecto lombar; espinhoso curto e quase horizontal.",
+        "Função": "Transição avançada para a forma lombar, com mobilidade crescente.",
+        "Articula-se com": "T10, acima, T12, abaixo, e a décima primeira costela.",
+        "Na prática": "A ausência de articulação costotransversária é o que libera as costelas flutuantes e permite maior expansão lateral do abdome superior na respiração.",
+        "Palpação básica": "Espinhoso curto e horizontal, palpável na transição toracolombar.",
+        "Marcos para o exercício": "A décima primeira costela é palpável como extremidade livre na parede lateral; serve de referência para o quadrado lombar e o diafragma."
+      },
+      "related": ["vertebra-t10", "vertebra-t12", "vertebras-toracicas", "costelas", "quadrado-lombar", "diafragma"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T11", "décima primeira torácica", "costela flutuante"],
+      "source_objects": ["Vertebra T11"]
+    },
+    {
+      "id": "vertebra-t12",
+      "name": "Vértebra T12",
+      "english": "twelfth thoracic vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "A vértebra de transição do corpo: facetas superiores torácicas e inferiores já lombares.",
+      "fields": {
+        "Tipo": "Irregular, torácica atípica, de transição.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Fóvea costal inteira para a décima segunda costela; processo transverso rudimentar, com processos mamilar e acessório como os da lombar; facetas articulares superiores no plano frontal, como as torácicas, e inferiores no plano sagital, como as lombares.",
+        "Função": "É onde a coluna muda de regime: de um segmento que roda para um que flete e estende.",
+        "Articula-se com": "T11, acima, L1, abaixo, e a décima segunda costela.",
+        "Na prática": "Essa mudança de orientação das facetas dentro de uma mesma vértebra concentra tensão na junção toracolombar. T12 e L1 formam a região de fratura por compressão mais frequente da coluna, e a faixa mais sensível a carga axial com flexão.",
+        "Palpação básica": "Espinhoso curto e horizontal, palpável na transição entre a torácica e a lombar.",
+        "Marcos para o exercício": "O hiato aórtico atravessa o diafragma atrás dele, no nível de T12. Os pilares do diafragma descem daqui até L2 e L3, ligando a respiração diretamente à coluna lombar."
+      },
+      "related": ["vertebra-t11", "vertebra-l1", "vertebras-toracicas", "vertebras-lombares", "costelas", "diafragma", "quadrado-lombar", "psoas-maior"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["T12", "décima segunda torácica", "junção toracolombar", "hiato aórtico"],
+      "source_objects": ["Vertebra T12"]
+    }
+  ]
+}

@@ -1,10 +1,9 @@
 import { NodeIO } from "@gltf-transform/core";
 import { ALL_EXTENSIONS } from "@gltf-transform/extensions";
-import { dedup, prune, weld, meshopt, simplify } from "@gltf-transform/functions";
-import { MeshoptEncoder, MeshoptDecoder, MeshoptSimplifier } from "meshoptimizer";
+import { dedup, prune, weld, meshopt } from "@gltf-transform/functions";
+import { MeshoptEncoder, MeshoptDecoder } from "meshoptimizer";
 import { readFile, writeFile, stat } from "node:fs/promises";
 await MeshoptEncoder.ready;
-await MeshoptSimplifier.ready;
 const io = new NodeIO()
   .registerExtensions(ALL_EXTENSIONS)
   .registerDependencies({
@@ -25,7 +24,6 @@ for (const asset of manifest) {
     // intercostais e o trato iliotibial, colapsam bastante; malhas pequenas e
     // detalhadas, como ligamentos do carpo, quase não mudam. O limite de erro
     // é o que mantém a forma anatômica; nenhuma geometria é criada.
-    simplify({ simplifier: MeshoptSimplifier, ratio: 0.2, error: 0.0008 }),
     prune(),
     meshopt({ encoder: MeshoptEncoder, level: "medium" }),
   );
@@ -35,6 +33,24 @@ for (const asset of manifest) {
     `${asset.kind}: ${(asset.bytes / 1048576).toFixed(2)} → ${(bytes / 1048576).toFixed(2)} MiB`,
   );
   asset.bytes = bytes;
+}
+// O esquema de articulação sinovial de /fundamentos não está no manifesto,
+// mas também é servido ao navegador e merece a mesma compressão.
+{
+  const file = "public/lessons/synovial.glb";
+  const antes = (await stat(file)).size;
+  const document = await io.read(file);
+  await document.transform(
+    dedup(),
+    weld(),
+    prune(),
+    meshopt({ encoder: MeshoptEncoder, level: "medium" }),
+  );
+  await io.write(file, document);
+  const bytes = (await stat(file)).size;
+  console.log(
+    `licao sinovial: ${(antes / 1048576).toFixed(2)} → ${(bytes / 1048576).toFixed(2)} MiB`,
+  );
 }
 await writeFile(
   "public/models/manifest.json",

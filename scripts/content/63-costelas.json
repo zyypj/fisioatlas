@@ -1,0 +1,301 @@
+{
+  "patches": [
+    {
+      "id": "costelas",
+      "name": "Costelas (visão geral)",
+      "summary": "O que define uma costela típica e por que a 1ª, a 2ª, a 11ª e a 12ª são atípicas.",
+      "fields": {
+        "Tipo": "Visão geral do grupo. As doze costelas têm ficha própria, da primeira à décima segunda.",
+        "Localização": "Tronco",
+        "Principais partes": "Numa costela típica: cabeça com duas facetas, colo, tubérculo com faceta articular, ângulo, corpo e sulco da costela na borda inferior, onde corre o feixe vasculonervoso.",
+        "Função": "Formam a caixa torácica, protegem coração e pulmões e transformam a contração muscular em mudança de volume torácico. São doze pares.",
+        "Articula-se com": "Vértebras torácicas, atrás, pelas articulações costovertebrais e costotransversárias; à frente, com o esterno pelas cartilagens costais, nas sete primeiras.",
+        "Na prática": "Costelas de 1 a 7 são verdadeiras, ligadas diretamente ao esterno; de 8 a 10 são falsas, ligadas à cartilagem de cima; 11 e 12 são flutuantes, terminam livres. As superiores se movem em braço de bomba, elevando o esterno; as inferiores em alça de balde, alargando o tórax.",
+        "Palpação básica": "A segunda costela é localizada a partir do ângulo do esterno e serve para contar as demais. A décima segunda é palpável como extremidade livre na região lombar lateral.",
+        "Marcos para o exercício": "Dor torácica que piora à respiração profunda e é reproduzida à palpação costal costuma ser mecânica, e não cardíaca. Restrição costal limita a inspiração e sobrecarrega acessórios do pescoço.",
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria: cada costela tem a sua. Abra da primeira à décima segunda para comparar a forma, o comprimento e a inclinação."
+      },
+      "related": ["primeira-costela", "segunda-costela", "setima-costela", "decima-primeira-costela", "decima-segunda-costela", "vertebras-toracicas", "esterno", "cartilagens-costais", "diafragma", "intercostais-externos"],
+      "aliases": ["costela", "caixa torácica", "gradil costal"],
+      "source_objects": []
+    }
+  ],
+  "new": [
+    {
+      "id": "primeira-costela",
+      "name": "Primeira costela",
+      "english": "first rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "A mais curta, larga e curva; forma o assoalho do desfiladeiro torácico.",
+      "fields": {
+        "Tipo": "Osso plano, costela atípica.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com uma única faceta, para T1; tubérculo do escaleno anterior na face superior, separando o sulco da veia subclávia, à frente, do sulco da artéria subclávia, atrás; corpo largo e achatado no plano horizontal.",
+        "Função": "Ancora a parte superior do tórax e serve de apoio para a cintura escapular. Move-se pouco, elevando o esterno na inspiração.",
+        "Articula-se com": "Corpo e processo transverso de T1, atrás; manúbrio do esterno, à frente, pela primeira cartilagem costal; e a clavícula, indiretamente, pelo ligamento costoclavicular.",
+        "Na prática": "É a peça central da síndrome do desfiladeiro torácico: o plexo braquial e a artéria subclávia passam entre o escaleno anterior e o médio, logo acima dela, e depois entre ela e a clavícula. Sua elevação, por tensão dos escalenos, estreita esses espaços.",
+        "Palpação básica": "Difícil de palpar por estar sob a clavícula; acessível na fossa supraclavicular, com pressão profunda e cuidadosa.",
+        "Marcos para o exercício": "Técnicas de abaixamento da primeira costela e reeducação respiratória para reduzir o uso dos escalenos são parte do tratamento do desfiladeiro torácico."
+      },
+      "related": ["vertebra-t1", "esterno", "clavicula", "escaleno-anterior", "escaleno-medio", "plexo-braquial", "subclavio", "segunda-costela", "ligamentos-esternoclaviculares"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["1ª costela", "desfiladeiro torácico", "tubérculo do escaleno"],
+      "source_objects": ["First rib.l", "First rib.r"]
+    },
+    {
+      "id": "segunda-costela",
+      "name": "Segunda costela",
+      "english": "second rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Costela atípica com a tuberosidade do serrátil anterior; referência para contar todas as demais.",
+      "fields": {
+        "Tipo": "Osso plano, costela atípica.",
+        "Localização": "Tronco",
+        "Principais partes": "Cerca do dobro do comprimento da primeira; tuberosidade para o músculo serrátil anterior na face externa; cabeça com duas facetas, para T1 e T2.",
+        "Função": "Continua a formação da parede torácica superior e dá origem à primeira digitação do serrátil anterior.",
+        "Articula-se com": "T1 e T2, atrás; esterno, à frente, na altura do ângulo do esterno.",
+        "Na prática": "É a referência mais confiável para contar costelas: o ângulo do esterno, palpável como um degrau, marca exatamente a articulação da segunda costela. A partir dela, conta-se para baixo.",
+        "Palpação básica": "Localize o ângulo do esterno com o dedo e deslize lateralmente: a costela que você encontra é a segunda.",
+        "Marcos para o exercício": "A tuberosidade do serrátil anterior liga esta costela diretamente à mecânica escapular, o que conecta a respiração ao movimento do ombro."
+      },
+      "related": ["vertebra-t1", "vertebra-t2", "esterno", "primeira-costela", "terceira-costela", "serratil-anterior", "escaleno-posterior"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["2ª costela", "ângulo do esterno", "ângulo de Louis"],
+      "source_objects": ["Second rib.l", "Second rib.r"]
+    },
+    {
+      "id": "terceira-costela",
+      "name": "Terceira costela",
+      "english": "third rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Primeira costela típica: cabeça com duas facetas, tubérculo articulado e sulco na borda inferior.",
+      "fields": {
+        "Tipo": "Osso plano, costela típica, verdadeira.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com duas facetas, que se apoiam em duas vértebras e no disco entre elas; colo; tubérculo com faceta para o processo transverso; ângulo, onde o corpo muda de direção; sulco da costela na borda inferior interna.",
+        "Função": "Forma a parede torácica e participa da mecânica respiratória, com movimento tanto em braço de bomba quanto em alça de balde.",
+        "Articula-se com": "T2 e T3, atrás; esterno, à frente, pela terceira cartilagem costal.",
+        "Na prática": "É o primeiro exemplo da costela típica, o modelo para entender as demais. O sulco da costela abriga a veia, a artéria e o nervo intercostais, nessa ordem de cima para baixo.",
+        "Palpação básica": "Palpável na parede torácica anterior, uma costela abaixo da segunda, e no dorso junto ao ângulo costal.",
+        "Marcos para o exercício": "Por causa do feixe no sulco, a punção pleural é feita rente à borda superior da costela de baixo, longe dos vasos e do nervo."
+      },
+      "related": ["vertebra-t2", "vertebra-t3", "esterno", "segunda-costela", "quarta-costela", "cartilagens-costais", "intercostais-internos"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["3ª costela", "costela típica", "sulco da costela"],
+      "source_objects": ["Third rib.l", "Third rib.r"]
+    },
+    {
+      "id": "quarta-costela",
+      "name": "Quarta costela",
+      "english": "fourth rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Costela típica verdadeira; seu nível marca o plano do mamilo no homem.",
+      "fields": {
+        "Tipo": "Osso plano, costela típica, verdadeira.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com duas facetas; colo, tubérculo, ângulo e corpo; sulco da costela na borda inferior.",
+        "Função": "Participa da parede torácica e da expansão do tórax na inspiração.",
+        "Articula-se com": "T3 e T4, atrás; esterno, à frente, pela quarta cartilagem costal.",
+        "Na prática": "O quarto espaço intercostal é referência para procedimentos torácicos, e o nível da quarta costela corresponde aproximadamente ao plano do mamilo em homens adultos.",
+        "Palpação básica": "Palpável na parede anterior do tórax, contando a partir do ângulo do esterno.",
+        "Marcos para o exercício": "A faixa entre a terceira e a sexta costela é onde as costelas estão mais presas ao esterno, e por isso a menos móvel do gradil."
+      },
+      "related": ["vertebra-t3", "vertebra-t4", "esterno", "terceira-costela", "quinta-costela", "cartilagens-costais", "peitoral-maior"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["4ª costela"],
+      "source_objects": ["Fourth rib.l", "Fourth rib.r"]
+    },
+    {
+      "id": "quinta-costela",
+      "name": "Quinta costela",
+      "english": "fifth rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Costela típica verdadeira; o quinto espaço intercostal é onde se ausculta o ictus cordis.",
+      "fields": {
+        "Tipo": "Osso plano, costela típica, verdadeira.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com duas facetas; colo, tubérculo, ângulo e corpo; sulco da costela.",
+        "Função": "Compõe a parede torácica média e participa da respiração.",
+        "Articula-se com": "T4 e T5, atrás; esterno, à frente, pela quinta cartilagem costal.",
+        "Na prática": "O quinto espaço intercostal, na linha hemiclavicular, é onde se palpa e ausculta o ictus cordis, o choque da ponta do coração. É referência clássica do exame físico.",
+        "Palpação básica": "Palpável na parede anterior do tórax; o espaço abaixo dela é o quinto espaço intercostal.",
+        "Marcos para o exercício": "É também a referência para a drenagem torácica, feita no quinto espaço, na linha axilar média."
+      },
+      "related": ["vertebra-t4", "vertebra-t5", "esterno", "quarta-costela", "sexta-costela", "cartilagens-costais", "serratil-anterior"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["5ª costela", "ictus cordis"],
+      "source_objects": ["Fifth rib.l", "Fifth rib.r"]
+    },
+    {
+      "id": "sexta-costela",
+      "name": "Sexta costela",
+      "english": "sixth rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Costela típica verdadeira; última digitação do peitoral maior e transição para a parede abdominal.",
+      "fields": {
+        "Tipo": "Osso plano, costela típica, verdadeira.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com duas facetas; colo, tubérculo, ângulo e corpo; sulco da costela.",
+        "Função": "Compõe a parede torácica e serve de origem a músculos abdominais e torácicos.",
+        "Articula-se com": "T5 e T6, atrás; esterno, à frente, pela sexta cartilagem costal.",
+        "Na prática": "A partir dela, as costelas passam a dar origem às digitações do oblíquo externo do abdome, que se entrelaçam com as do serrátil anterior na parede lateral.",
+        "Palpação básica": "Palpável na parede ântero-lateral do tórax; suas digitações musculares ficam visíveis em pessoas magras.",
+        "Marcos para o exercício": "A partir daqui as costelas ficam progressivamente mais móveis, e a expansão em alça de balde ganha importância na respiração."
+      },
+      "related": ["vertebra-t5", "vertebra-t6", "esterno", "quinta-costela", "setima-costela", "obliquo-externo", "peitoral-maior", "serratil-anterior"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["6ª costela"],
+      "source_objects": ["Sixth rib.l", "Sixth rib.r"]
+    },
+    {
+      "id": "setima-costela",
+      "name": "Sétima costela",
+      "english": "seventh rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "A última costela verdadeira; a mais longa e o ponto mais baixo do esterno.",
+      "fields": {
+        "Tipo": "Osso plano, costela típica, verdadeira. É a mais longa.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com duas facetas; colo, tubérculo, ângulo e corpo longo; sulco da costela.",
+        "Função": "Fecha a série das costelas verdadeiras, que alcançam o esterno por cartilagem própria.",
+        "Articula-se com": "T6 e T7, atrás; esterno, à frente, pela sétima cartilagem costal, na junção do corpo com o processo xifoide.",
+        "Na prática": "Marca o limite inferior do esterno e o início do ângulo infraesternal, formado pelas cartilagens costais de baixo. É uma referência para localizar o rebordo costal.",
+        "Palpação básica": "Siga o rebordo costal para cima e para dentro: a sétima cartilagem é a última que chega ao esterno.",
+        "Marcos para o exercício": "O ângulo infraesternal é usado para avaliar a posição das costelas inferiores e o padrão respiratório; ângulos muito abertos ou fechados mudam a mecânica do diafragma."
+      },
+      "related": ["vertebra-t6", "vertebra-t7", "esterno", "sexta-costela", "oitava-costela", "cartilagens-costais", "diafragma", "reto-do-abdomen"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["7ª costela", "ângulo infraesternal", "rebordo costal"],
+      "source_objects": ["Seventh rib.l", "Seventh rib.r"]
+    },
+    {
+      "id": "oitava-costela",
+      "name": "Oitava costela",
+      "english": "eighth rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Primeira costela falsa: sua cartilagem se liga à da sétima, não ao esterno.",
+      "fields": {
+        "Tipo": "Osso plano, costela falsa.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com duas facetas; colo, tubérculo, ângulo e corpo; sulco da costela.",
+        "Função": "Compõe a parte inferior da caixa torácica, com fixação indireta ao esterno.",
+        "Articula-se com": "T7 e T8, atrás; à frente, com a cartilagem da sétima costela, e não diretamente com o esterno.",
+        "Na prática": "É onde começam as costelas falsas. A ligação indireta ao esterno dá a essa faixa mais mobilidade, o que é bom para a respiração mas também permite a síndrome da costela deslizante, em que a cartilagem escorrega e causa dor em fisgada.",
+        "Palpação básica": "Palpável ao longo do rebordo costal, lateralmente ao ponto onde a sétima cartilagem chega ao esterno.",
+        "Marcos para o exercício": "A expansão das costelas inferiores é o alvo da respiração diafragmática; esta faixa é onde se coloca a mão para dar feedback ao paciente."
+      },
+      "related": ["vertebra-t7", "vertebra-t8", "setima-costela", "nona-costela", "cartilagens-costais", "diafragma", "obliquo-externo"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["8ª costela", "costela falsa", "costela deslizante"],
+      "source_objects": ["Eighth rib.l", "Eighth rib.r"]
+    },
+    {
+      "id": "nona-costela",
+      "name": "Nona costela",
+      "english": "ninth rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Costela falsa; última que se apoia em duas vértebras pela cabeça.",
+      "fields": {
+        "Tipo": "Osso plano, costela falsa.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com duas facetas, a última da série a ter duas; colo, tubérculo e corpo; sulco da costela pouco marcado.",
+        "Função": "Compõe a parede torácica inferior e dá inserção ao diafragma e aos músculos abdominais.",
+        "Articula-se com": "T8 e T9, atrás; à frente, com a cartilagem da oitava costela.",
+        "Na prática": "Da décima costela em diante, a cabeça passa a se apoiar numa única vértebra. A nona é a última do padrão clássico de duas facetas.",
+        "Palpação básica": "Palpável no rebordo costal, na parede lateral do tronco.",
+        "Marcos para o exercício": "Fraturas das costelas inferiores exigem atenção ao baço, à esquerda, e ao fígado, à direita, que ficam logo abaixo."
+      },
+      "related": ["vertebra-t8", "vertebra-t9", "oitava-costela", "decima-costela", "cartilagens-costais", "diafragma", "serratil-posterior-inferior"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["9ª costela"],
+      "source_objects": ["Ninth rib.l", "Ninth rib.r"]
+    },
+    {
+      "id": "decima-costela",
+      "name": "Décima costela",
+      "english": "tenth rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Costela falsa atípica: cabeça com faceta única, apoiada só em T10.",
+      "fields": {
+        "Tipo": "Osso plano, costela falsa, atípica.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com uma única faceta, que se apoia só no corpo de T10; tubérculo ainda presente, articulado com o processo transverso; corpo curto.",
+        "Função": "Fecha a série de costelas que ainda alcançam o rebordo costal.",
+        "Articula-se com": "T10, atrás, por uma faceta só; à frente, com a cartilagem da nona costela.",
+        "Na prática": "É a última costela ligada ao rebordo costal. As duas seguintes terminam livres, o que muda completamente a mecânica da parede lateral do abdome.",
+        "Palpação básica": "Sua cartilagem é a última do rebordo costal; siga a borda inferior das costelas até onde ela termina.",
+        "Marcos para o exercício": "A transição para as flutuantes nesta altura é o que permite a expansão lateral inferior do tronco na respiração profunda."
+      },
+      "related": ["vertebra-t10", "nona-costela", "decima-primeira-costela", "cartilagens-costais", "diafragma", "quadrado-lombar"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["10ª costela"],
+      "source_objects": ["Tenth rib.l", "Tenth rib.r"]
+    },
+    {
+      "id": "decima-primeira-costela",
+      "name": "Décima primeira costela",
+      "english": "eleventh rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "Costela flutuante: sem tubérculo, sem ângulo e sem ligação à frente.",
+      "fields": {
+        "Tipo": "Osso plano, costela flutuante, atípica.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com faceta única; sem colo definido, sem tubérculo e sem ângulo; corpo curto que termina numa ponta cartilaginosa livre.",
+        "Função": "Dá inserção a músculos da parede abdominal e ao diafragma, sem fechar a caixa torácica à frente.",
+        "Articula-se com": "Apenas T11, atrás. Não tem articulação costotransversária nem ligação anterior.",
+        "Na prática": "Termina livre na musculatura da parede abdominal. Por não ter ponto fixo à frente, acompanha o movimento do tronco e é ponto de referência para o quadrado lombar.",
+        "Palpação básica": "Palpável como extremidade livre na parede lateral do tronco, abaixo do rebordo costal.",
+        "Marcos para o exercício": "A distância entre a última costela e a crista ilíaca é medida usada para avaliar encurtamento do quadrado lombar e inclinação lateral do tronco."
+      },
+      "related": ["vertebra-t11", "decima-costela", "decima-segunda-costela", "quadrado-lombar", "diafragma", "obliquo-interno"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["11ª costela", "costela flutuante"],
+      "source_objects": ["Eleventh rib.l", "Eleventh rib.r"]
+    },
+    {
+      "id": "decima-segunda-costela",
+      "name": "Décima segunda costela",
+      "english": "twelfth rib",
+      "kind": "ossos",
+      "region": "Tronco",
+      "depth": "profunda",
+      "summary": "A menor e mais variável; costela flutuante que ancora o quadrado lombar e o diafragma.",
+      "fields": {
+        "Tipo": "Osso plano, costela flutuante, atípica. A mais curta de todas.",
+        "Localização": "Tronco",
+        "Principais partes": "Cabeça com faceta única; sem tubérculo, sem ângulo e sem sulco da costela; corpo muito curto, de comprimento bastante variável entre pessoas.",
+        "Função": "Serve de ponto de ancoragem para o diafragma, pelo ligamento arqueado lateral, e para o quadrado lombar.",
+        "Articula-se com": "Apenas T12, atrás.",
+        "Na prática": "O quadrado lombar a fixa durante a inspiração, dando ponto de apoio ao diafragma. Sua palpação é referência para localizar o ângulo costovertebral, usado na pesquisa de dor renal pela punho-percussão.",
+        "Palpação básica": "Palpável como extremidade livre na região lombar lateral, logo abaixo da décima primeira; em algumas pessoas é tão curta que quase não se sente.",
+        "Marcos para o exercício": "É o elo direto entre respiração e coluna lombar: o diafragma se insere nela e o quadrado lombar a estabiliza, o que liga o padrão respiratório ao controle lombopélvico."
+      },
+      "related": ["vertebra-t12", "decima-primeira-costela", "quadrado-lombar", "diafragma", "serratil-posterior-inferior", "vertebras-lombares"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["12ª costela", "costela flutuante", "ângulo costovertebral"],
+      "source_objects": ["Twelfth rib.l", "Twelfth rib.r"]
+    }
+  ]
+}

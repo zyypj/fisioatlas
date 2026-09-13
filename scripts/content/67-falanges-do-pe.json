@@ -1,0 +1,571 @@
+{
+  "patches": [
+    {
+      "id": "falanges-do-pe",
+      "name": "Falanges do pé (visão geral)",
+      "summary": "Os 14 ossos dos dedos de cada pé; cada falange tem ficha própria, por dedo e por fileira.",
+      "fields": {
+        "Tipo": "Visão geral do grupo. Cada falange tem ficha própria, por dedo e por fileira.",
+        "Localização": "Pé",
+        "Principais partes": "Cada falange tem base, corpo e cabeça. O hálux tem duas falanges, proximal e distal; os outros quatro dedos têm as três, embora curtas.",
+        "Função": "Formam o esqueleto dos dedos do pé e estabilizam o antepé no impulso da marcha.",
+        "Articula-se com": "Metatarsais, nas metatarsofalângicas, e entre si, nas interfalângicas.",
+        "Na prática": "São 14 falanges em cada pé. As do hálux sustentam carga no impulso; as dos dedos menores são pequenas e frequentemente deformadas em garra ou martelo.",
+        "Palpação básica": "Palpáveis no dorso de cada dedo; as interfalângicas, pelas pregas cutâneas.",
+        "Marcos para o exercício": "Abra as fichas individuais de cada dedo, da proximal à distal, para comparar o hálux robusto com os dedos menores.",
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada falange tem a sua: abra-as para ver todos os ossos dos dedos dos dois pés."
+      },
+      "related": [
+        "falange-proximal-do-halux",
+        "falange-distal-do-halux",
+        "falange-proximal-do-segundo-dedo-do-pe",
+        "falange-proximal-do-terceiro-dedo-do-pe",
+        "falange-proximal-do-quarto-dedo-do-pe",
+        "falange-proximal-do-quinto-dedo-do-pe",
+        "metatarsais",
+        "metatarsofalangicas",
+        "interfalangicas-do-pe"
+      ],
+      "aliases": [
+        "falanges dos dedos do pé",
+        "dedos do pé"
+      ],
+      "source_objects": []
+    }
+  ],
+  "new": [
+    {
+      "id": "falange-proximal-do-halux",
+      "name": "Falange proximal do hálux",
+      "english": "proximal phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "A metatarsofalângica do hálux é a articulação do impulso.",
+      "fields": {
+        "Tipo": "Longo, a maior falange do dedo.",
+        "Localização": "Pé",
+        "Principais partes": "Base côncava para a cabeça do metatarsal, corpo e cabeça em tróclea.",
+        "Função": "Forma o primeiro segmento do hálux e é movida pelos músculos intrínsecos e pelos tendões longos.",
+        "Articula-se com": "Cabeça do 1º metatarsal, na metatarsofalângica, e a falange distal, na interfalângica (única do dedo).",
+        "Na prática": "A metatarsofalângica do hálux é a articulação do impulso. Sua hiperextensão forçada lesa a placa plantar, o turf toe; a perda de extensão por artrose é o hallux rigidus, que dói ao subir rampa e na fase final do passo.",
+        "Palpação básica": "Palpável no dorso do hálux, logo distal à cabeça do metatarsal.",
+        "Marcos para o exercício": "Base para trabalhar a metatarsofalângica do hálux e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "primeiro-metatarsal",
+        "metatarsofalangicas",
+        "falange-distal-do-halux",
+        "interfalangicas-do-pe",
+        "extensor-longo-do-halux",
+        "abdutor-do-halux"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange proximal do hálux",
+        "turf toe",
+        "hallux rigidus"
+      ],
+      "source_objects": [
+        "Proximal phalanx of first finger of foot.l",
+        "Proximal phalanx of first finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-distal-do-halux",
+      "name": "Falange distal do hálux",
+      "english": "distal phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "O flexor longo do hálux insere-se na base plantar e dá a propulsão final do passo; o extensor longo do hálux, na base dorsal.",
+      "fields": {
+        "Tipo": "Longo, a menor falange.",
+        "Localização": "Pé",
+        "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+        "Função": "Forma a extremidade do hálux e ancora os tendões que dão o último apoio da ponta.",
+        "Articula-se com": "Falange proximal, na interfalângica (única do dedo).",
+        "Na prática": "O flexor longo do hálux insere-se na base plantar e dá a propulsão final do passo; o extensor longo do hálux, na base dorsal. A falange distal larga sustenta a unha, local de hematoma subungueal no corredor.",
+        "Palpação básica": "Tuberosidade palpável sob a polpa do hálux.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "falange-proximal-do-halux",
+        "interfalangicas-do-pe",
+        "flexor-longo-do-halux",
+        "extensor-longo-do-halux"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange distal do hálux"
+      ],
+      "source_objects": [
+        "Distal phalanx of first finger of foot.l",
+        "Distal phalanx of first finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-proximal-do-segundo-dedo-do-pe",
+      "name": "Falange proximal do segundo dedo do pé",
+      "english": "proximal phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "O segundo dedo é o mais sujeito ao dedo em garra e ao dedo em martelo, com a falange proximal hiperestendida na metatarsofalângica e as interfalângicas flexionadas, gerando calo dorsal.",
+      "fields": {
+        "Tipo": "Longo, a maior falange do dedo.",
+        "Localização": "Pé",
+        "Principais partes": "Base côncava para a cabeça do metatarsal, corpo e cabeça em tróclea.",
+        "Função": "Forma o primeiro segmento do segundo dedo do pé e é movida pelos músculos intrínsecos e pelos tendões longos.",
+        "Articula-se com": "Cabeça do 2º metatarsal, na metatarsofalângica, e a falange média, na interfalângica proximal.",
+        "Na prática": "O segundo dedo é o mais sujeito ao dedo em garra e ao dedo em martelo, com a falange proximal hiperestendida na metatarsofalângica e as interfalângicas flexionadas, gerando calo dorsal.",
+        "Palpação básica": "Palpável no dorso do segundo dedo do pé, logo distal à cabeça do metatarsal.",
+        "Marcos para o exercício": "Base para trabalhar a metatarsofalângica do segundo dedo do pé e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "segundo-metatarsal",
+        "metatarsofalangicas",
+        "falange-media-do-segundo-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "extensor-longo-dos-dedos",
+        "interosseos-dorsais-do-pe"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange proximal do segundo dedo do pé",
+        "dedo em garra",
+        "dedo em martelo"
+      ],
+      "source_objects": [
+        "Proximal phalanx of second finger of foot.l",
+        "Proximal phalanx of second finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-media-do-segundo-dedo-do-pe",
+      "name": "Falange média do segundo dedo do pé",
+      "english": "middle phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Segmento médio de um dedo menor.",
+      "fields": {
+        "Tipo": "Longo, intermediário em tamanho.",
+        "Localização": "Pé",
+        "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+        "Função": "Forma o segmento médio do segundo dedo do pé, entre as duas interfalângicas.",
+        "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+        "Na prática": "Segmento médio de um dedo menor. A rigidez da interfalângica proximal aqui fixa o dedo em martelo e cria atrito com o calçado.",
+        "Palpação básica": "Palpável no dorso do segundo dedo do pé, entre as pregas interfalângicas.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "falange-proximal-do-segundo-dedo-do-pe",
+        "falange-distal-do-segundo-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "flexor-curto-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange média do segundo dedo do pé"
+      ],
+      "source_objects": [
+        "Middle phalanx of second finger of foot.l",
+        "Middle phalanx of second finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-distal-do-segundo-dedo-do-pe",
+      "name": "Falange distal do segundo dedo do pé",
+      "english": "distal phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Ponta do segundo dedo.",
+      "fields": {
+        "Tipo": "Longo, a menor falange.",
+        "Localização": "Pé",
+        "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+        "Função": "Forma a extremidade do segundo dedo do pé e ancora os tendões que dão o último apoio da ponta.",
+        "Articula-se com": "Falange média, na interfalângica distal.",
+        "Na prática": "Ponta do segundo dedo. O flexor longo dos dedos flete a interfalângica distal; a deformidade em martelo pode acabar em calo doloroso na polpa.",
+        "Palpação básica": "Tuberosidade palpável sob a polpa do segundo dedo do pé.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "falange-media-do-segundo-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "flexor-longo-dos-dedos",
+        "extensor-longo-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange distal do segundo dedo do pé"
+      ],
+      "source_objects": [
+        "Distal phalanx of second finger of foot.l",
+        "Distal phalanx of second finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-proximal-do-terceiro-dedo-do-pe",
+      "name": "Falange proximal do terceiro dedo do pé",
+      "english": "proximal phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Terceiro dedo, semelhante ao segundo.",
+      "fields": {
+        "Tipo": "Longo, a maior falange do dedo.",
+        "Localização": "Pé",
+        "Principais partes": "Base côncava para a cabeça do metatarsal, corpo e cabeça em tróclea.",
+        "Função": "Forma o primeiro segmento do terceiro dedo do pé e é movida pelos músculos intrínsecos e pelos tendões longos.",
+        "Articula-se com": "Cabeça do 3º metatarsal, na metatarsofalângica, e a falange média, na interfalângica proximal.",
+        "Na prática": "Terceiro dedo, semelhante ao segundo. Participa do apoio dos dedos menores no fim do impulso e sofre as mesmas deformidades em garra e martelo.",
+        "Palpação básica": "Palpável no dorso do terceiro dedo do pé, logo distal à cabeça do metatarsal.",
+        "Marcos para o exercício": "Base para trabalhar a metatarsofalângica do terceiro dedo do pé e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "terceiro-metatarsal",
+        "metatarsofalangicas",
+        "falange-media-do-terceiro-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "interosseos-dorsais-do-pe",
+        "lumbricais-do-pe"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange proximal do terceiro dedo do pé"
+      ],
+      "source_objects": [
+        "Proximal phalanx of third finger of foot.l",
+        "Proximal phalanx of third finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-media-do-terceiro-dedo-do-pe",
+      "name": "Falange média do terceiro dedo do pé",
+      "english": "middle phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Segmento médio do terceiro dedo, curto e de pouca mobilidade própria.",
+      "fields": {
+        "Tipo": "Longo, intermediário em tamanho.",
+        "Localização": "Pé",
+        "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+        "Função": "Forma o segmento médio do terceiro dedo do pé, entre as duas interfalângicas.",
+        "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+        "Na prática": "Segmento médio do terceiro dedo, curto e de pouca mobilidade própria.",
+        "Palpação básica": "Palpável no dorso do terceiro dedo do pé, entre as pregas interfalângicas.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "falange-proximal-do-terceiro-dedo-do-pe",
+        "falange-distal-do-terceiro-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "flexor-curto-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange média do terceiro dedo do pé"
+      ],
+      "source_objects": [
+        "Middle phalanx of third finger of foot.l",
+        "Middle phalanx of third finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-distal-do-terceiro-dedo-do-pe",
+      "name": "Falange distal do terceiro dedo do pé",
+      "english": "distal phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Ponta do terceiro dedo; ancora o flexor longo dos dedos e o extensor longo dos dedos.",
+      "fields": {
+        "Tipo": "Longo, a menor falange.",
+        "Localização": "Pé",
+        "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+        "Função": "Forma a extremidade do terceiro dedo do pé e ancora os tendões que dão o último apoio da ponta.",
+        "Articula-se com": "Falange média, na interfalângica distal.",
+        "Na prática": "Ponta do terceiro dedo; ancora o flexor longo dos dedos e o extensor longo dos dedos.",
+        "Palpação básica": "Tuberosidade palpável sob a polpa do terceiro dedo do pé.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "falange-media-do-terceiro-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "flexor-longo-dos-dedos",
+        "extensor-longo-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange distal do terceiro dedo do pé"
+      ],
+      "source_objects": [
+        "Distal phalanx of third finger of foot.l",
+        "Distal phalanx of third finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-proximal-do-quarto-dedo-do-pe",
+      "name": "Falange proximal do quarto dedo do pé",
+      "english": "proximal phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Quarto dedo, na coluna lateral mais móvel do pé.",
+      "fields": {
+        "Tipo": "Longo, a maior falange do dedo.",
+        "Localização": "Pé",
+        "Principais partes": "Base côncava para a cabeça do metatarsal, corpo e cabeça em tróclea.",
+        "Função": "Forma o primeiro segmento do quarto dedo do pé e é movida pelos músculos intrínsecos e pelos tendões longos.",
+        "Articula-se com": "Cabeça do 4º metatarsal, na metatarsofalângica, e a falange média, na interfalângica proximal.",
+        "Na prática": "Quarto dedo, na coluna lateral mais móvel do pé. As deformidades em garra transferem carga para a cabeça do metatarsal correspondente e geram metatarsalgia.",
+        "Palpação básica": "Palpável no dorso do quarto dedo do pé, logo distal à cabeça do metatarsal.",
+        "Marcos para o exercício": "Base para trabalhar a metatarsofalângica do quarto dedo do pé e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "quarto-metatarsal",
+        "metatarsofalangicas",
+        "falange-media-do-quarto-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "interosseos-plantares",
+        "lumbricais-do-pe"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange proximal do quarto dedo do pé"
+      ],
+      "source_objects": [
+        "Proximal phalanx of fourth finger of foot.l",
+        "Proximal phalanx of fourth finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-media-do-quarto-dedo-do-pe",
+      "name": "Falange média do quarto dedo do pé",
+      "english": "middle phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Segmento médio do quarto dedo, muito curto.",
+      "fields": {
+        "Tipo": "Longo, intermediário em tamanho.",
+        "Localização": "Pé",
+        "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+        "Função": "Forma o segmento médio do quarto dedo do pé, entre as duas interfalângicas.",
+        "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+        "Na prática": "Segmento médio do quarto dedo, muito curto.",
+        "Palpação básica": "Palpável no dorso do quarto dedo do pé, entre as pregas interfalângicas.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "falange-proximal-do-quarto-dedo-do-pe",
+        "falange-distal-do-quarto-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "flexor-curto-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange média do quarto dedo do pé"
+      ],
+      "source_objects": [
+        "Middle phalanx of fourth finger of foot.l",
+        "Middle phalanx of fourth finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-distal-do-quarto-dedo-do-pe",
+      "name": "Falange distal do quarto dedo do pé",
+      "english": "distal phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Ponta do quarto dedo; a deformidade em garra apoia a polpa no chão e forma calo.",
+      "fields": {
+        "Tipo": "Longo, a menor falange.",
+        "Localização": "Pé",
+        "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+        "Função": "Forma a extremidade do quarto dedo do pé e ancora os tendões que dão o último apoio da ponta.",
+        "Articula-se com": "Falange média, na interfalângica distal.",
+        "Na prática": "Ponta do quarto dedo; a deformidade em garra apoia a polpa no chão e forma calo.",
+        "Palpação básica": "Tuberosidade palpável sob a polpa do quarto dedo do pé.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "falange-media-do-quarto-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "flexor-longo-dos-dedos",
+        "extensor-longo-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange distal do quarto dedo do pé"
+      ],
+      "source_objects": [
+        "Distal phalanx of fourth finger of foot.l",
+        "Distal phalanx of fourth finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-proximal-do-quinto-dedo-do-pe",
+      "name": "Falange proximal do quinto dedo do pé",
+      "english": "proximal phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Quinto dedo.",
+      "fields": {
+        "Tipo": "Longo, a maior falange do dedo.",
+        "Localização": "Pé",
+        "Principais partes": "Base côncava para a cabeça do metatarsal, corpo e cabeça em tróclea.",
+        "Função": "Forma o primeiro segmento do quinto dedo do pé e é movida pelos músculos intrínsecos e pelos tendões longos.",
+        "Articula-se com": "Cabeça do 5º metatarsal, na metatarsofalângica, e a falange média, na interfalângica proximal.",
+        "Na prática": "Quinto dedo. O quinto dedo em varo com metatarsalgia lateral e o calo entre o 4º e o 5º dedos, o cravo interdigital, são queixas frequentes; no calçado apertado o 5º é o mais comprimido.",
+        "Palpação básica": "Palpável no dorso do quinto dedo do pé, logo distal à cabeça do metatarsal.",
+        "Marcos para o exercício": "Base para trabalhar a metatarsofalângica do quinto dedo do pé e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "quinto-metatarsal",
+        "metatarsofalangicas",
+        "falange-media-do-quinto-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "abdutor-do-dedo-minimo-do-pe",
+        "interosseos-plantares"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange proximal do quinto dedo do pé"
+      ],
+      "source_objects": [
+        "Proximal phalanx of fifth finger of foot.l",
+        "Proximal phalanx of fifth finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-media-do-quinto-dedo-do-pe",
+      "name": "Falange média do quinto dedo do pé",
+      "english": "middle phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "No quinto dedo a falange média costuma estar fundida à distal, um achado normal que reduz o número de peças móveis.",
+      "fields": {
+        "Tipo": "Longo, intermediário em tamanho.",
+        "Localização": "Pé",
+        "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+        "Função": "Forma o segmento médio do quinto dedo do pé, entre as duas interfalângicas.",
+        "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+        "Na prática": "No quinto dedo a falange média costuma estar fundida à distal, um achado normal que reduz o número de peças móveis.",
+        "Palpação básica": "Palpável no dorso do quinto dedo do pé, entre as pregas interfalângicas.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "falange-proximal-do-quinto-dedo-do-pe",
+        "falange-distal-do-quinto-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "flexor-curto-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange média do quinto dedo do pé",
+        "falange fundida"
+      ],
+      "source_objects": [
+        "Middle phalanx of fifth finger of foot.l",
+        "Middle phalanx of fifth finger of foot.r"
+      ]
+    },
+    {
+      "id": "falange-distal-do-quinto-dedo-do-pe",
+      "name": "Falange distal do quinto dedo do pé",
+      "english": "distal phalanx of foot",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Ponta do quinto dedo, a menor de todas as falanges; sustenta uma unha pequena, muitas vezes acometida por onicomicose e trauma de calçado.",
+      "fields": {
+        "Tipo": "Longo, a menor falange.",
+        "Localização": "Pé",
+        "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+        "Função": "Forma a extremidade do quinto dedo do pé e ancora os tendões que dão o último apoio da ponta.",
+        "Articula-se com": "Falange média, na interfalângica distal.",
+        "Na prática": "Ponta do quinto dedo, a menor de todas as falanges; sustenta uma unha pequena, muitas vezes acometida por onicomicose e trauma de calçado.",
+        "Palpação básica": "Tuberosidade palpável sob a polpa do quinto dedo do pé.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+      },
+      "related": [
+        "falanges-do-pe",
+        "falange-media-do-quinto-dedo-do-pe",
+        "interfalangicas-do-pe",
+        "flexor-longo-dos-dedos",
+        "extensor-longo-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange distal do quinto dedo do pé"
+      ],
+      "source_objects": [
+        "Distal phalanx of fifth finger of foot.l",
+        "Distal phalanx of fifth finger of foot.r"
+      ]
+    }
+  ]
+}

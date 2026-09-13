@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { MeshoptDecoder } from "three/addons/libs/meshopt_decoder.module.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 const parts = [
@@ -78,7 +79,11 @@ export default function JointLesson() {
     const observer = new ResizeObserver(resize);
     observer.observe(el);
     resize();
-    new GLTFLoader().load(
+    // O modelo passa pela mesma compressão Meshopt dos modelos do atlas,
+    // então precisa do decodificador, como faz o AtlasEngine.
+    new GLTFLoader()
+      .setMeshoptDecoder(MeshoptDecoder)
+      .load(
       "/lessons/synovial.glb",
       (gltf) => {
         if (!alive) {
@@ -151,7 +156,7 @@ export default function JointLesson() {
   return (
     <article className="joint-lesson">
       <div>
-        <span className="eyebrow">LABORATÓRIO · HIGGSFIELD 3D</span>
+        <span className="eyebrow">LABORATÓRIO · MODELO PRÓPRIO</span>
         <h2>Por dentro de uma articulação sinovial</h2>
         <p>
           Gire o modelo e destaque suas partes. O espaço entre as cartilagens
@@ -186,7 +191,7 @@ export default function JointLesson() {
         </div>
       </div>
       <p className="availability">
-        Esquema genérico ampliado, construído no Higgsfield. As formas e o
+        Esquema genérico ampliado, gerado por script no Blender. As formas e o
         espaço articular foram simplificados para ensino; não correspondem a uma
         articulação específica.{" "}
         <a

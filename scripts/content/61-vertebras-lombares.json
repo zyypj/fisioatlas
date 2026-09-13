@@ -1,0 +1,140 @@
+{
+  "patches": [
+    {
+      "id": "vertebras-lombares",
+      "name": "Vértebras lombares (visão geral)",
+      "summary": "O que define uma vértebra lombar: corpo maciço, facetas sagitais e processo espinhoso quadrangular.",
+      "fields": {
+        "Tipo": "Visão geral do grupo. As cinco vértebras lombares têm ficha própria, de L1 a L5.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo grande e maciço, mais largo que alto; forame vertebral triangular; processo espinhoso curto, largo e quadrangular, horizontal; processos transversos longos e finos, na verdade processos costiformes; processos mamilares e acessórios.",
+        "Função": "Suportam a maior carga axial de toda a coluna. Permitem boa flexão e extensão e muito pouca rotação.",
+        "Articula-se com": "Entre si pelos discos e pelas zigapofisárias; acima com T12; abaixo com o sacro.",
+        "Na prática": "As facetas orientadas no plano sagital travam a rotação: são apenas 2° a 3° por segmento. Forçar rotação lombar é o que sobrecarrega faceta e disco, e essa é a base de boa parte da orientação de movimento na lombalgia.",
+        "Palpação básica": "Processos espinhosos grandes e facilmente palpáveis. A linha entre os pontos mais altos das cristas ilíacas, a linha de Tuffier, cruza o espaço L3-L4 ou o espinhoso de L4.",
+        "Marcos para o exercício": "O multífido lombar, o transverso do abdome, o diafragma e o assoalho pélvico formam a unidade de estabilização profunda desta região. O processo mamilar é a origem do multífido.",
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria: cada vértebra lombar tem a sua. Abra de L1 a L5 para comparar o tamanho crescente dos corpos e a mudança de orientação das facetas."
+      },
+      "related": ["vertebra-l1", "vertebra-l2", "vertebra-l3", "vertebra-l4", "vertebra-l5", "vertebras-toracicas", "sacro", "multifido-lombar", "nucleo-pulposo", "ligamento-iliolombar"],
+      "aliases": ["lombar", "L1 a L5", "coluna lombar"],
+      "source_objects": []
+    }
+  ],
+  "new": [
+    {
+      "id": "vertebra-l1",
+      "name": "Vértebra L1",
+      "english": "first lumbar vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Primeira lombar; nível onde a medula espinal termina e começa a cauda equina.",
+      "fields": {
+        "Tipo": "Irregular, lombar.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo maciço; processo espinhoso quadrangular e horizontal; processos costiformes longos; facetas articulares orientadas no plano sagital.",
+        "Função": "Faz a transição entre a coluna torácica, rígida e ligada às costelas, e a lombar, móvel em flexão e extensão.",
+        "Articula-se com": "T12, acima, e L2, abaixo.",
+        "Na prática": "É o nível mais importante da coluna para a neurologia: o cone medular, extremidade da medula espinal, termina em geral entre L1 e L2. Abaixo disso o canal contém apenas a cauda equina, o que muda completamente o quadro de uma lesão nesse ponto.",
+        "Palpação básica": "Processo espinhoso palpável na linha média, cerca de três níveis acima da linha das cristas ilíacas.",
+        "Marcos para o exercício": "A punção lombar é feita abaixo de L2, justamente para não atingir a medula. A junção toracolombar, entre T12 e L1, concentra forças por ser a passagem entre um segmento rígido e um móvel, e é local frequente de fratura por compressão."
+      },
+      "related": ["vertebras-toracicas", "vertebra-l2", "vertebras-lombares", "psoas-maior", "diafragma", "quadrado-lombar", "nucleo-pulposo"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["L1", "primeira lombar", "cone medular", "junção toracolombar"],
+      "source_objects": ["Vertebra L1"]
+    },
+    {
+      "id": "vertebra-l2",
+      "name": "Vértebra L2",
+      "english": "second lumbar vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Limite inferior habitual da medula espinal; abaixo dela o canal só tem cauda equina.",
+      "fields": {
+        "Tipo": "Irregular, lombar.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo maciço; processo espinhoso quadrangular; processos costiformes longos; processos mamilares nos processos articulares superiores.",
+        "Função": "Suporta carga axial elevada e participa da flexão e extensão lombar.",
+        "Articula-se com": "L1, acima, e L3, abaixo.",
+        "Na prática": "É a referência de segurança da punção lombar: como a medula termina em geral acima de L2, a agulha entra abaixo desse nível, entre L3-L4 ou L4-L5, encontrando só as raízes da cauda equina, que se afastam da ponta.",
+        "Palpação básica": "Processo espinhoso palpável na linha média, dois níveis acima da linha das cristas ilíacas.",
+        "Marcos para o exercício": "O psoas maior nasce dos corpos e discos de T12 a L5, incluindo L2. A raiz L2 participa da flexão do quadril e da sensibilidade da face anterior da coxa."
+      },
+      "related": ["vertebra-l1", "vertebra-l3", "vertebras-lombares", "psoas-maior", "nervo-femoral", "nervo-genitofemoral", "multifido-lombar"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["L2", "segunda lombar", "cauda equina"],
+      "source_objects": ["Vertebra L2"]
+    },
+    {
+      "id": "vertebra-l3",
+      "name": "Vértebra L3",
+      "english": "third lumbar vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Vértebra central da lombar, com os processos costiformes mais longos; nível usual da punção lombar.",
+      "fields": {
+        "Tipo": "Irregular, lombar.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo maciço; processos costiformes os mais longos de toda a coluna lombar; processo espinhoso quadrangular e horizontal.",
+        "Função": "Ocupa o centro da lordose lombar e é um dos níveis de maior mobilidade em flexão e extensão.",
+        "Articula-se com": "L2, acima, e L4, abaixo.",
+        "Na prática": "O espaço L3-L4 é um dos escolhidos para punção lombar e anestesia raquidiana, por estar abaixo do fim da medula e ser facilmente localizado pela linha das cristas ilíacas.",
+        "Palpação básica": "Processo espinhoso palpável na linha média, logo acima da linha que une as cristas ilíacas.",
+        "Marcos para o exercício": "Os processos costiformes longos dão inserção ao quadrado lombar e ao psoas. A raiz L3 participa da extensão do joelho e da sensibilidade da face anterior da coxa; o reflexo patelar avalia sobretudo L3 e L4."
+      },
+      "related": ["vertebra-l2", "vertebra-l4", "vertebras-lombares", "quadrado-lombar", "psoas-maior", "nervo-femoral", "reto-femoral"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["L3", "terceira lombar", "punção lombar"],
+      "source_objects": ["Vertebra L3"]
+    },
+    {
+      "id": "vertebra-l4",
+      "name": "Vértebra L4",
+      "english": "fourth lumbar vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Marcada pela linha das cristas ilíacas; L4-L5 é um dos discos que mais herniam.",
+      "fields": {
+        "Tipo": "Irregular, lombar.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo maciço; processo espinhoso quadrangular; processos costiformes um pouco mais curtos que os de L3; facetas sagitais.",
+        "Função": "Suporta carga elevada na parte baixa da lordose e participa da flexão e extensão.",
+        "Articula-se com": "L3, acima, e L5, abaixo.",
+        "Na prática": "O disco L4-L5 é, junto com L5-S1, o que mais hernia. A radiculopatia de L4 produz fraqueza de extensão do joelho e de dorsiflexão do tornozelo pelo tibial anterior, com reflexo patelar diminuído e dormência na face medial da perna.",
+        "Palpação básica": "Seu processo espinhoso costuma estar exatamente na linha que une os pontos mais altos das cristas ilíacas, a linha de Tuffier. É a referência mais usada para contar a lombar de baixo para cima.",
+        "Marcos para o exercício": "A bifurcação da aorta em artérias ilíacas comuns ocorre no nível de L4. Teste de elevação da perna estendida e o exame de força do tibial anterior fazem parte da avaliação desse nível."
+      },
+      "related": ["vertebra-l3", "vertebra-l5", "vertebras-lombares", "osso-do-quadril", "nucleo-pulposo", "tibial-anterior", "nervo-femoral", "ligamento-iliolombar"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["L4", "quarta lombar", "linha de Tuffier", "hérnia L4-L5"],
+      "source_objects": ["Vertebra L4"]
+    },
+    {
+      "id": "vertebra-l5",
+      "name": "Vértebra L5",
+      "english": "fifth lumbar vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "A maior vértebra móvel; corpo em cunha e local clássico da espondilólise e da espondilolistese.",
+      "fields": {
+        "Tipo": "Irregular, lombar, atípica pela forma em cunha.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "O maior corpo vertebral do esqueleto móvel, nitidamente mais alto à frente que atrás, o que produz a forma em cunha; processos costiformes curtos e robustos; processo espinhoso o menor da lombar.",
+        "Função": "Faz a transição entre a coluna móvel e o sacro fixo, transmitindo toda a carga do tronco à pelve.",
+        "Articula-se com": "L4, acima, e o sacro, abaixo, na articulação lombossacra.",
+        "Na prática": "A base do sacro é inclinada, o que cria uma força de cisalhamento que empurra L5 para a frente. A parte interarticular de L5 é o ponto mais sobrecarregado: sua fratura por estresse é a espondilólise, comum em ginastas e jogadores que fazem hiperextensão repetida, e sua falência bilateral permite o escorregamento, a espondilolistese.",
+        "Palpação básica": "Processo espinhoso pequeno, palpável logo abaixo de L4 e acima do sulco do sacro; às vezes difícil de sentir por ser curto.",
+        "Marcos para o exercício": "O ligamento iliolombar ancora L5 ao ilíaco e é a principal estrutura que resiste a esse escorregamento. A radiculopatia de L5 produz fraqueza de extensão do hálux, o teste motor mais sensível desse nível."
+      },
+      "related": ["vertebra-l4", "sacro", "vertebras-lombares", "ligamento-iliolombar", "osso-do-quadril", "extensor-longo-do-halux", "nervo-ciatico", "sacroiliaca", "nucleo-pulposo"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["L5", "quinta lombar", "espondilólise", "espondilolistese", "junção lombossacra"],
+      "source_objects": ["Vertebra L5"]
+    }
+  ]
+}

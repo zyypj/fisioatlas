@@ -1,0 +1,575 @@
+{
+  "patches": [
+    {
+      "id": "falanges-da-mao",
+      "name": "Falanges da mão (visão geral)",
+      "summary": "Os 14 ossos dos dedos de cada mão; cada falange tem ficha própria, por dedo e por fileira.",
+      "fields": {
+        "Tipo": "Visão geral do grupo. Cada falange tem ficha própria, por dedo e por fileira.",
+        "Localização": "Mão",
+        "Principais partes": "Cada falange tem base, corpo e cabeça. O polegar tem duas falanges, proximal e distal; os outros quatro dedos têm as três.",
+        "Função": "Formam o esqueleto dos dedos e são movidas pelos flexores e extensores para a preensão fina.",
+        "Articula-se com": "Metacarpais, nas metacarpofalângicas, e entre si, nas interfalângicas.",
+        "Na prática": "São 14 falanges em cada mão. Abra a ficha de cada dedo para ver as diferenças: polegar do esquiador, dedo em gatilho, dedo em martelo e jersey finger têm cada um o seu lugar.",
+        "Palpação básica": "Palpáveis em toda a extensão; as pregas cutâneas dorsais marcam as interfalângicas.",
+        "Marcos para o exercício": "Abra as fichas individuais de cada dedo, da proximal à distal, para comparar comprimento e função.",
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada falange tem a sua: abra-as para ver todos os ossos dos dedos das duas mãos."
+      },
+      "related": [
+        "falange-proximal-do-polegar",
+        "falange-distal-do-polegar",
+        "falange-proximal-do-indicador",
+        "falange-proximal-do-medio",
+        "falange-proximal-do-anelar",
+        "falange-proximal-do-minimo",
+        "metacarpais",
+        "metacarpofalangicas",
+        "interfalangicas-da-mao"
+      ],
+      "aliases": [
+        "falanges dos dedos da mão",
+        "dedos"
+      ],
+      "source_objects": []
+    }
+  ],
+  "new": [
+    {
+      "id": "falange-proximal-do-polegar",
+      "name": "Falange proximal do polegar",
+      "english": "proximal phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "Na base da falange proximal do polegar inserem-se os ligamentos colaterais da metacarpofalângica.",
+      "fields": {
+        "Tipo": "Longo, a maior falange do dedo.",
+        "Localização": "Mão",
+        "Principais partes": "Base côncava para a cabeça do metacarpal, corpo e cabeça em tróclea.",
+        "Função": "Forma o primeiro segmento do polegar e é movida pelos músculos intrínsecos e pelos tendões longos.",
+        "Articula-se com": "Cabeça do 1º metacarpal, na metacarpofalângica, e a falange distal, na interfalângica (única do dedo).",
+        "Na prática": "Na base da falange proximal do polegar inserem-se os ligamentos colaterais da metacarpofalângica. A ruptura do colateral ulnar aí é o polegar do esquiador, ou do guarda-caça, que desestabiliza a pinça e a preensão de chave.",
+        "Palpação básica": "Palpável no dorso do polegar, logo distal à cabeça do metacarpal.",
+        "Marcos para o exercício": "Base para trabalhar a metacarpofalângica do polegar e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "primeiro-metacarpal",
+        "metacarpofalangicas",
+        "falange-distal-do-polegar",
+        "interfalangicas-da-mao",
+        "extensor-longo-do-polegar",
+        "extensor-curto-do-polegar"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange proximal do polegar",
+        "polegar do esquiador",
+        "gamekeeper"
+      ],
+      "source_objects": [
+        "Proximal phalanx of first finger of hand.l",
+        "Proximal phalanx of first finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-distal-do-polegar",
+      "name": "Falange distal do polegar",
+      "english": "distal phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "O flexor longo do polegar insere-se na base palmar e flete a interfalângica; o extensor longo do polegar, na base dorsal.",
+      "fields": {
+        "Tipo": "Longo, a menor falange.",
+        "Localização": "Mão",
+        "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+        "Função": "Forma a extremidade do polegar e ancora os tendões que dão o último apoio da ponta.",
+        "Articula-se com": "Falange proximal, na interfalângica (única do dedo).",
+        "Na prática": "O flexor longo do polegar insere-se na base palmar e flete a interfalângica; o extensor longo do polegar, na base dorsal. O polegar responde por perto de metade da função da mão, e perder a flexão da IP compromete a pinça de força.",
+        "Palpação básica": "Tuberosidade palpável sob a polpa do polegar.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "falange-proximal-do-polegar",
+        "interfalangicas-da-mao",
+        "flexor-longo-do-polegar",
+        "extensor-longo-do-polegar"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange distal do polegar",
+        "IP do polegar"
+      ],
+      "source_objects": [
+        "Distal phalanx of first finger of hand.l",
+        "Distal phalanx of first finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-proximal-do-indicador",
+      "name": "Falange proximal do indicador",
+      "english": "proximal phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "O indicador tem extensão independente, pelo extensor do indicador, o que permite apontar com os demais dedos fechados.",
+      "fields": {
+        "Tipo": "Longo, a maior falange do dedo.",
+        "Localização": "Mão",
+        "Principais partes": "Base côncava para a cabeça do metacarpal, corpo e cabeça em tróclea.",
+        "Função": "Forma o primeiro segmento do indicador e é movida pelos músculos intrínsecos e pelos tendões longos.",
+        "Articula-se com": "Cabeça do 2º metacarpal, na metacarpofalângica, e a falange média, na interfalângica proximal.",
+        "Na prática": "O indicador tem extensão independente, pelo extensor do indicador, o que permite apontar com os demais dedos fechados. A base recebe o primeiro interósseo dorsal, importante na pinça lateral.",
+        "Palpação básica": "Palpável no dorso do indicador, logo distal à cabeça do metacarpal.",
+        "Marcos para o exercício": "Base para trabalhar a metacarpofalângica do indicador e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "segundo-metacarpal",
+        "metacarpofalangicas",
+        "falange-media-do-indicador",
+        "interfalangicas-da-mao",
+        "extensor-do-indicador",
+        "interosseos-dorsais-da-mao"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange proximal do indicador"
+      ],
+      "source_objects": [
+        "Proximal phalanx of second finger of hand.l",
+        "Proximal phalanx of second finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-media-do-indicador",
+      "name": "Falange média do indicador",
+      "english": "middle phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "O dedo em gatilho é frequente no indicador e no médio: o nódulo do tendão flexor trava ao passar pela polia A1, na raiz do dedo, e o dedo salta ao estender.",
+      "fields": {
+        "Tipo": "Longo, intermediário em tamanho.",
+        "Localização": "Mão",
+        "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+        "Função": "Forma o segmento médio do indicador, entre as duas interfalângicas.",
+        "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+        "Na prática": "O dedo em gatilho é frequente no indicador e no médio: o nódulo do tendão flexor trava ao passar pela polia A1, na raiz do dedo, e o dedo salta ao estender.",
+        "Palpação básica": "Palpável no dorso do indicador, entre as pregas interfalângicas.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "falange-proximal-do-indicador",
+        "falange-distal-do-indicador",
+        "interfalangicas-da-mao",
+        "flexor-superficial-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange média do indicador",
+        "dedo em gatilho"
+      ],
+      "source_objects": [
+        "Middle phalanx of second finger of hand.l",
+        "Middle phalanx of second finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-distal-do-indicador",
+      "name": "Falange distal do indicador",
+      "english": "distal phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "A ruptura do tendão extensor terminal na base dorsal causa o dedo em martelo, com a ponta caída e sem extensão ativa da interfalângica distal.",
+      "fields": {
+        "Tipo": "Longo, a menor falange.",
+        "Localização": "Mão",
+        "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+        "Função": "Forma a extremidade do indicador e ancora os tendões que dão o último apoio da ponta.",
+        "Articula-se com": "Falange média, na interfalângica distal.",
+        "Na prática": "A ruptura do tendão extensor terminal na base dorsal causa o dedo em martelo, com a ponta caída e sem extensão ativa da interfalângica distal.",
+        "Palpação básica": "Tuberosidade palpável sob a polpa do indicador.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "falange-media-do-indicador",
+        "interfalangicas-da-mao",
+        "flexor-profundo-dos-dedos",
+        "extensor-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange distal do indicador",
+        "dedo em martelo",
+        "mallet finger"
+      ],
+      "source_objects": [
+        "Distal phalanx of second finger of hand.l",
+        "Distal phalanx of second finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-proximal-do-medio",
+      "name": "Falange proximal do dedo médio",
+      "english": "proximal phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "O dedo médio é o mais longo e serve de eixo de referência para a abdução e a adução dos dedos, medidas em relação a ele.",
+      "fields": {
+        "Tipo": "Longo, a maior falange do dedo.",
+        "Localização": "Mão",
+        "Principais partes": "Base côncava para a cabeça do metacarpal, corpo e cabeça em tróclea.",
+        "Função": "Forma o primeiro segmento do dedo médio e é movida pelos músculos intrínsecos e pelos tendões longos.",
+        "Articula-se com": "Cabeça do 3º metacarpal, na metacarpofalângica, e a falange média, na interfalângica proximal.",
+        "Na prática": "O dedo médio é o mais longo e serve de eixo de referência para a abdução e a adução dos dedos, medidas em relação a ele.",
+        "Palpação básica": "Palpável no dorso do dedo médio, logo distal à cabeça do metacarpal.",
+        "Marcos para o exercício": "Base para trabalhar a metacarpofalângica do dedo médio e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "terceiro-metacarpal",
+        "metacarpofalangicas",
+        "falange-media-do-medio",
+        "interfalangicas-da-mao",
+        "interosseos-dorsais-da-mao",
+        "lumbricais-da-mao"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange proximal do dedo médio"
+      ],
+      "source_objects": [
+        "Proximal phalanx of third finger of hand.l",
+        "Proximal phalanx of third finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-media-do-medio",
+      "name": "Falange média do dedo médio",
+      "english": "middle phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "Segmento médio do dedo mais longo.",
+      "fields": {
+        "Tipo": "Longo, intermediário em tamanho.",
+        "Localização": "Mão",
+        "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+        "Função": "Forma o segmento médio do dedo médio, entre as duas interfalângicas.",
+        "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+        "Na prática": "Segmento médio do dedo mais longo. O flexor superficial dos dedos insere-se aqui; testá-lo isoladamente, com os outros dedos estendidos, avalia a integridade desse tendão.",
+        "Palpação básica": "Palpável no dorso do dedo médio, entre as pregas interfalângicas.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "falange-proximal-do-medio",
+        "falange-distal-do-medio",
+        "interfalangicas-da-mao",
+        "flexor-superficial-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange média do dedo médio"
+      ],
+      "source_objects": [
+        "Middle phalanx of third finger of hand.l",
+        "Middle phalanx of third finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-distal-do-medio",
+      "name": "Falange distal do dedo médio",
+      "english": "distal phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "O flexor profundo dos dedos insere-se na base e é o único flexor da interfalângica distal; travar as outras articulações isola essa ação no exame.",
+      "fields": {
+        "Tipo": "Longo, a menor falange.",
+        "Localização": "Mão",
+        "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+        "Função": "Forma a extremidade do dedo médio e ancora os tendões que dão o último apoio da ponta.",
+        "Articula-se com": "Falange média, na interfalângica distal.",
+        "Na prática": "O flexor profundo dos dedos insere-se na base e é o único flexor da interfalângica distal; travar as outras articulações isola essa ação no exame.",
+        "Palpação básica": "Tuberosidade palpável sob a polpa do dedo médio.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "falange-media-do-medio",
+        "interfalangicas-da-mao",
+        "flexor-profundo-dos-dedos",
+        "extensor-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange distal do dedo médio"
+      ],
+      "source_objects": [
+        "Distal phalanx of third finger of hand.l",
+        "Distal phalanx of third finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-proximal-do-anelar",
+      "name": "Falange proximal do dedo anelar",
+      "english": "proximal phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "Os raios do anelar e do mínimo são os mais afetados pela contratura de Dupuytren, que espessa a fáscia palmar e puxa o dedo para a palma em flexão fixa.",
+      "fields": {
+        "Tipo": "Longo, a maior falange do dedo.",
+        "Localização": "Mão",
+        "Principais partes": "Base côncava para a cabeça do metacarpal, corpo e cabeça em tróclea.",
+        "Função": "Forma o primeiro segmento do dedo anelar e é movida pelos músculos intrínsecos e pelos tendões longos.",
+        "Articula-se com": "Cabeça do 4º metacarpal, na metacarpofalângica, e a falange média, na interfalângica proximal.",
+        "Na prática": "Os raios do anelar e do mínimo são os mais afetados pela contratura de Dupuytren, que espessa a fáscia palmar e puxa o dedo para a palma em flexão fixa.",
+        "Palpação básica": "Palpável no dorso do dedo anelar, logo distal à cabeça do metacarpal.",
+        "Marcos para o exercício": "Base para trabalhar a metacarpofalângica do dedo anelar e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "quarto-metacarpal",
+        "metacarpofalangicas",
+        "falange-media-do-anelar",
+        "interfalangicas-da-mao",
+        "interosseos-palmares",
+        "lumbricais-da-mao"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange proximal do dedo anelar",
+        "Dupuytren"
+      ],
+      "source_objects": [
+        "Proximal phalanx of fourth finger of hand.l",
+        "Proximal phalanx of fourth finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-media-do-anelar",
+      "name": "Falange média do dedo anelar",
+      "english": "middle phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "Segmento médio do anelar.",
+      "fields": {
+        "Tipo": "Longo, intermediário em tamanho.",
+        "Localização": "Mão",
+        "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+        "Função": "Forma o segmento médio do dedo anelar, entre as duas interfalângicas.",
+        "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+        "Na prática": "Segmento médio do anelar. A rigidez da interfalângica proximal aqui é comum após trauma e limita o fechamento completo da mão.",
+        "Palpação básica": "Palpável no dorso do dedo anelar, entre as pregas interfalângicas.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "falange-proximal-do-anelar",
+        "falange-distal-do-anelar",
+        "interfalangicas-da-mao",
+        "flexor-superficial-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange média do dedo anelar"
+      ],
+      "source_objects": [
+        "Middle phalanx of fourth finger of hand.l",
+        "Middle phalanx of fourth finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-distal-do-anelar",
+      "name": "Falange distal do dedo anelar",
+      "english": "distal phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "A avulsão do flexor profundo, o jersey finger, ocorre classicamente no anelar, ao agarrar a camisa de um adversário: o tendão arranca-se da base da falange distal e o dedo perde a flexão da ponta.",
+      "fields": {
+        "Tipo": "Longo, a menor falange.",
+        "Localização": "Mão",
+        "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+        "Função": "Forma a extremidade do dedo anelar e ancora os tendões que dão o último apoio da ponta.",
+        "Articula-se com": "Falange média, na interfalângica distal.",
+        "Na prática": "A avulsão do flexor profundo, o jersey finger, ocorre classicamente no anelar, ao agarrar a camisa de um adversário: o tendão arranca-se da base da falange distal e o dedo perde a flexão da ponta.",
+        "Palpação básica": "Tuberosidade palpável sob a polpa do dedo anelar.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "falange-media-do-anelar",
+        "interfalangicas-da-mao",
+        "flexor-profundo-dos-dedos",
+        "extensor-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange distal do dedo anelar",
+        "jersey finger",
+        "avulsão do flexor profundo"
+      ],
+      "source_objects": [
+        "Distal phalanx of fourth finger of hand.l",
+        "Distal phalanx of fourth finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-proximal-do-minimo",
+      "name": "Falange proximal do dedo mínimo",
+      "english": "proximal phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "O abdutor do dedo mínimo afasta o mínimo e estabiliza a borda ulnar da mão; a base da falange proximal é sua inserção.",
+      "fields": {
+        "Tipo": "Longo, a maior falange do dedo.",
+        "Localização": "Mão",
+        "Principais partes": "Base côncava para a cabeça do metacarpal, corpo e cabeça em tróclea.",
+        "Função": "Forma o primeiro segmento do dedo mínimo e é movida pelos músculos intrínsecos e pelos tendões longos.",
+        "Articula-se com": "Cabeça do 5º metacarpal, na metacarpofalângica, e a falange média, na interfalângica proximal.",
+        "Na prática": "O abdutor do dedo mínimo afasta o mínimo e estabiliza a borda ulnar da mão; a base da falange proximal é sua inserção.",
+        "Palpação básica": "Palpável no dorso do dedo mínimo, logo distal à cabeça do metacarpal.",
+        "Marcos para o exercício": "Base para trabalhar a metacarpofalângica do dedo mínimo e o equilíbrio entre os flexores longos e os músculos intrínsecos do dedo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "quinto-metacarpal",
+        "metacarpofalangicas",
+        "falange-media-do-minimo",
+        "interfalangicas-da-mao",
+        "abdutor-do-dedo-minimo-da-mao",
+        "interosseos-palmares"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange proximal do dedo mínimo"
+      ],
+      "source_objects": [
+        "Proximal phalanx of fifth finger of hand.l",
+        "Proximal phalanx of fifth finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-media-do-minimo",
+      "name": "Falange média do dedo mínimo",
+      "english": "middle phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "Segmento médio do dedo mínimo, o menor dos dedos longos.",
+      "fields": {
+        "Tipo": "Longo, intermediário em tamanho.",
+        "Localização": "Mão",
+        "Principais partes": "Base com duas facetas, corpo e cabeça em tróclea.",
+        "Função": "Forma o segmento médio do dedo mínimo, entre as duas interfalângicas.",
+        "Articula-se com": "Falange proximal, na interfalângica proximal, e falange distal, na interfalângica distal.",
+        "Na prática": "Segmento médio do dedo mínimo, o menor dos dedos longos. Participa do fechamento da mão em concha, junto com o quarto raio.",
+        "Palpação básica": "Palpável no dorso do dedo mínimo, entre as pregas interfalângicas.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica proximal e reconhecer a deformidade em martelo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "falange-proximal-do-minimo",
+        "falange-distal-do-minimo",
+        "interfalangicas-da-mao",
+        "flexor-superficial-dos-dedos"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange média do dedo mínimo"
+      ],
+      "source_objects": [
+        "Middle phalanx of fifth finger of hand.l",
+        "Middle phalanx of fifth finger of hand.r"
+      ]
+    },
+    {
+      "id": "falange-distal-do-minimo",
+      "name": "Falange distal do dedo mínimo",
+      "english": "distal phalanx of hand",
+      "kind": "ossos",
+      "region": "Mão",
+      "depth": "superficial",
+      "summary": "Ponta do dedo mínimo.",
+      "fields": {
+        "Tipo": "Longo, a menor falange.",
+        "Localização": "Mão",
+        "Principais partes": "Base, corpo curto e tuberosidade que sustenta a polpa e a unha.",
+        "Função": "Forma a extremidade do dedo mínimo e ancora os tendões que dão o último apoio da ponta.",
+        "Articula-se com": "Falange média, na interfalângica distal.",
+        "Na prática": "Ponta do dedo mínimo. Como nos demais dedos, o flexor profundo flete a interfalângica distal e o tendão extensor terminal a estende; sua ruptura causa dedo em martelo.",
+        "Palpação básica": "Tuberosidade palpável sob a polpa do dedo mínimo.",
+        "Marcos para o exercício": "Referência para isolar a flexão da interfalângica distal e reconhecer o dedo em martelo."
+      },
+      "related": [
+        "falanges-da-mao",
+        "falange-media-do-minimo",
+        "interfalangicas-da-mao",
+        "flexor-profundo-dos-dedos",
+        "extensor-do-dedo-minimo"
+      ],
+      "sources": [
+        "openstax-bones",
+        "z-anatomy"
+      ],
+      "aliases": [
+        "falange distal do dedo mínimo"
+      ],
+      "source_objects": [
+        "Distal phalanx of fifth finger of hand.l",
+        "Distal phalanx of fifth finger of hand.r"
+      ]
+    }
+  ]
+}

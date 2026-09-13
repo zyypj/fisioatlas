@@ -278,7 +278,7 @@ export const rigs: Record<Animation, AnimationRig> = {
   cervical: {
     bilateral: true,
     segment: "proximal",
-    bone: "vertebras-toracicas",
+    bone: "vertebra-t1",
     pivot: "superior",
     axis: [1, 0, 0],
     sign: -1,
@@ -290,7 +290,7 @@ export const rigs: Record<Animation, AnimationRig> = {
   cervicalrot: {
     bilateral: true,
     segment: "proximal",
-    bone: "vertebras-toracicas",
+    bone: "vertebra-t1",
     pivot: "superior",
     axis: [0, 1, 0],
     sign: 1,
@@ -302,7 +302,7 @@ export const rigs: Record<Animation, AnimationRig> = {
   cervicalinc: {
     bilateral: true,
     segment: "proximal",
-    bone: "vertebras-toracicas",
+    bone: "vertebra-t1",
     pivot: "superior",
     axis: [0, 0, -1],
     sign: 1,

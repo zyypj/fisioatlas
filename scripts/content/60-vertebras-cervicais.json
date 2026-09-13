@@ -1,0 +1,140 @@
+{
+  "patches": [
+    {
+      "id": "vertebras-cervicais",
+      "name": "Vértebras cervicais (visão geral)",
+      "summary": "O que define uma vértebra cervical: corpo pequeno, forame transversário e processo espinhoso bífido.",
+      "fields": {
+        "Tipo": "Visão geral do grupo. As sete vértebras cervicais têm ficha própria: atlas, áxis e de C3 a C7.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo pequeno e largo no sentido transversal; forame vertebral grande e triangular; forame transversário em cada processo transverso; processo espinhoso curto e bífido de C3 a C6; processos articulares orientados a cerca de 45°.",
+        "Função": "Sustentam a cabeça e permitem a maior mobilidade de toda a coluna, em todos os planos. O corpo pequeno reflete a carga leve; o forame vertebral grande abriga o alargamento cervical da medula.",
+        "Articula-se com": "Entre si pelos discos e pelas zigapofisárias; acima com o crânio, pelo atlas; abaixo com T1.",
+        "Na prática": "A orientação das facetas a 45° é o que permite tanta rotação e inclinação, mas também o que deixa a região vulnerável ao traumatismo em chicote. Cerca de metade da rotação total acontece só entre atlas e áxis.",
+        "Palpação básica": "Os processos espinhosos são palpáveis na linha média posterior; o de C7, a vértebra proeminente, é o mais saliente e serve para contar os demais. O tubérculo anterior de C6, ou tubérculo carotídeo, é palpável lateralmente.",
+        "Marcos para o exercício": "O forame transversário dá passagem à artéria vertebral, de C6 a C1, o que exige cuidado em manobras cervicais de alta velocidade. As únicas cervicais sem processo espinhoso bífido são C7 e, em geral, C6.",
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria: cada vértebra cervical tem a sua. Abra atlas, áxis ou de C3 a C7 para ver e comparar os ossos individualmente."
+      },
+      "related": ["atlas", "axis", "vertebra-c3", "vertebra-c4", "vertebra-c5", "vertebra-c6", "vertebra-c7", "vertebras-toracicas", "intervertebrais", "nucleo-pulposo"],
+      "aliases": ["cervical", "C1 a C7", "coluna cervical"],
+      "source_objects": []
+    }
+  ],
+  "new": [
+    {
+      "id": "vertebra-c3",
+      "name": "Vértebra C3",
+      "english": "third cervical vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Primeira vértebra cervical típica; serve de modelo para entender C3 a C6.",
+      "fields": {
+        "Tipo": "Irregular, cervical típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo pequeno, mais largo que profundo, com processos uncinados nas bordas laterais superiores; forame transversário; processo espinhoso curto e bífido; facetas articulares superiores voltadas para cima e para trás.",
+        "Função": "Transmite carga leve e permite grande amplitude de flexão, extensão, inclinação e rotação. É a primeira das cervicais típicas, abaixo do complexo atlas-áxis.",
+        "Articula-se com": "Áxis, acima, e C4, abaixo, pelo disco intervertebral e pelas articulações zigapofisárias e uncovertebrais.",
+        "Na prática": "Marca a transição entre a coluna cervical alta, especializada em rotação, e a cervical baixa, que trabalha em conjunto. Dor referida a partir da faceta C2-C3 costuma projetar-se na região occipital e participa da cefaleia cervicogênica.",
+        "Palpação básica": "Processo espinhoso palpável na linha média, logo abaixo do espinhoso proeminente do áxis; costuma ser mais difícil de sentir por ser curto e bífido.",
+        "Marcos para o exercício": "Os processos uncinados formam as articulações uncovertebrais, exclusivas da cervical, que guiam o movimento e limitam o deslizamento lateral. Sua artrose estreita o forame intervertebral e comprime a raiz."
+      },
+      "related": ["axis", "vertebra-c4", "vertebras-cervicais", "intervertebrais", "nucleo-pulposo", "multifido-cervical", "longo-do-pescoco"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["C3", "terceira cervical"],
+      "source_objects": ["Vertebra C3"]
+    },
+    {
+      "id": "vertebra-c4",
+      "name": "Vértebra C4",
+      "english": "fourth cervical vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Cervical típica no nível da cartilagem tireóidea; referência do nível medular do nervo frênico.",
+      "fields": {
+        "Tipo": "Irregular, cervical típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo pequeno com processos uncinados; forame transversário; processo espinhoso curto e bífido; facetas articulares a cerca de 45°.",
+        "Função": "Sustenta a carga da cabeça e participa do movimento combinado da cervical baixa.",
+        "Articula-se com": "C3, acima, e C5, abaixo, pelo disco e pelas zigapofisárias e uncovertebrais.",
+        "Na prática": "Está no nível da cartilagem tireóidea e da bifurcação da artéria carótida comum, referências de superfície úteis no exame do pescoço. O nervo frênico nasce sobretudo de C4, o que faz desse nível um divisor de águas na lesão medular: acima dele, a respiração espontânea é perdida.",
+        "Palpação básica": "Processo espinhoso palpável na linha média; a cartilagem tireóidea, à frente, marca o mesmo nível.",
+        "Marcos para o exercício": "A regra clássica é que C3, C4 e C5 mantêm o diafragma vivo. Lesões acima de C4 comprometem a ventilação espontânea."
+      },
+      "related": ["vertebra-c3", "vertebra-c5", "vertebras-cervicais", "diafragma", "intervertebrais", "escaleno-anterior"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["C4", "quarta cervical", "nervo frênico"],
+      "source_objects": ["Vertebra C4"]
+    },
+    {
+      "id": "vertebra-c5",
+      "name": "Vértebra C5",
+      "english": "fifth cervical vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Cervical típica no ápice da lordose; nível de maior mobilidade e de degeneração discal frequente.",
+      "fields": {
+        "Tipo": "Irregular, cervical típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo pequeno com processos uncinados proeminentes; forame transversário; processo espinhoso curto e bífido.",
+        "Função": "Fica próxima do ápice da lordose cervical e participa dos segmentos de maior mobilidade da coluna.",
+        "Articula-se com": "C4, acima, e C6, abaixo.",
+        "Na prática": "O segmento C5-C6 é um dos que mais se movem e um dos que mais degeneram. A radiculopatia de C5 produz fraqueza de abdução do ombro e de flexão do cotovelo, com alteração do reflexo bicipital.",
+        "Palpação básica": "Processo espinhoso palpável na linha média, na parte média do pescoço.",
+        "Marcos para o exercício": "A raiz C5 inerva deltoide e bíceps braquial. Testar abdução do ombro resistida é o rastreio motor mais rápido desse nível."
+      },
+      "related": ["vertebra-c4", "vertebra-c6", "vertebras-cervicais", "deltoide", "biceps-braquial", "plexo-braquial", "nucleo-pulposo"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["C5", "quinta cervical", "radiculopatia C5"],
+      "source_objects": ["Vertebra C5"]
+    },
+    {
+      "id": "vertebra-c6",
+      "name": "Vértebra C6",
+      "english": "sixth cervical vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "Tem o tubérculo carotídeo, referência palpável; último nível com forame transversário atravessado pela artéria vertebral.",
+      "fields": {
+        "Tipo": "Irregular, cervical típica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Corpo pequeno com processos uncinados; tubérculo anterior do processo transverso muito desenvolvido, chamado tubérculo carotídeo ou de Chassaignac; forame transversário; processo espinhoso curto, bífido de forma variável.",
+        "Função": "Participa do segmento cervical de maior mobilidade e transição para a cervical baixa.",
+        "Articula-se com": "C5, acima, e C7, abaixo.",
+        "Na prática": "O tubérculo carotídeo é referência clássica: a artéria carótida comum pode ser comprimida contra ele, e ele orienta o bloqueio do gânglio estrelado. A artéria vertebral entra no forame transversário em C6 na maioria das pessoas, subindo daí até o crânio.",
+        "Palpação básica": "O tubérculo carotídeo é palpável lateralmente, no nível da cartilagem cricóidea. Palpação firme e cuidadosa, pela proximidade da carótida.",
+        "Marcos para o exercício": "A raiz C6 dá sensibilidade ao polegar e ao lado radial do antebraço, e inerva os extensores do punho. O reflexo braquiorradial testa esse nível."
+      },
+      "related": ["vertebra-c5", "vertebra-c7", "vertebras-cervicais", "braquiorradial", "extensor-radial-longo-do-carpo", "plexo-braquial", "escaleno-anterior"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["C6", "sexta cervical", "tubérculo carotídeo", "Chassaignac"],
+      "source_objects": ["Vertebra C6"]
+    },
+    {
+      "id": "vertebra-c7",
+      "name": "Vértebra C7",
+      "english": "seventh cervical vertebra",
+      "kind": "ossos",
+      "region": "Coluna vertebral",
+      "depth": "profunda",
+      "summary": "A vértebra proeminente; seu processo espinhoso longo e não bífido é a referência para contar a coluna.",
+      "fields": {
+        "Tipo": "Irregular, cervical atípica, de transição para a torácica.",
+        "Localização": "Coluna vertebral",
+        "Principais partes": "Processo espinhoso longo, horizontal e não bífido, que termina num tubérculo único; forame transversário pequeno, que em geral não dá passagem à artéria vertebral, apenas à veia; processos transversos grandes.",
+        "Função": "Faz a transição entre a coluna cervical e a torácica, tanto na forma quanto na mecânica.",
+        "Articula-se com": "C6, acima, e T1, abaixo.",
+        "Na prática": "É a referência anatômica mais usada da coluna: o espinhoso proeminente na base do pescoço permite contar as demais vértebras. Para diferenciá-lo de T1, peça extensão cervical: o espinhoso de C7 se move e some sob os dedos, o de T1 permanece.",
+        "Palpação básica": "Facilmente palpável e muitas vezes visível como a saliência na base do pescoço, com a pessoa em flexão cervical.",
+        "Marcos para o exercício": "Dá inserção ao ligamento nucal, ao trapézio, ao romboide menor e ao serrátil posterior superior. A costela cervical, uma variação que surge do seu processo transverso, é causa reconhecida de síndrome do desfiladeiro torácico."
+      },
+      "related": ["vertebra-c6", "vertebras-toracicas", "vertebras-cervicais", "ligamento-nucal", "trapezio", "romboide-menor", "plexo-braquial", "escaleno-medio"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["C7", "vértebra proeminente", "sétima cervical", "costela cervical"],
+      "source_objects": ["Vertebra C7"]
+    }
+  ]
+}

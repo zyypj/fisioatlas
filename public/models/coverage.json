@@ -976,72 +976,22 @@
     ]
   },
   "vertebras-cervicais": {
-    "name": "Vértebras cervicais",
+    "name": "Vértebras cervicais (visão geral)",
     "kind": "ossos",
-    "sourceObjects": [
-      "Vertebra C3",
-      "Vertebra C4",
-      "Vertebra C5",
-      "Vertebra C6",
-      "Vertebra C7"
-    ],
-    "modelIds": [
-      "ZA-3e0eee8778a5f2",
-      "ZA-bff9085efefcb3",
-      "ZA-dc49017304bfab",
-      "ZA-8a947f4284315c",
-      "ZA-63fa4563c47f6b"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "vertebras-toracicas": {
-    "name": "Vértebras torácicas",
+    "name": "Vértebras torácicas (visão geral)",
     "kind": "ossos",
-    "sourceObjects": [
-      "Vertebra T1",
-      "Vertebra T10",
-      "Vertebra T11",
-      "Vertebra T12",
-      "Vertebra T2",
-      "Vertebra T3",
-      "Vertebra T4",
-      "Vertebra T5",
-      "Vertebra T6",
-      "Vertebra T7",
-      "Vertebra T8",
-      "Vertebra T9"
-    ],
-    "modelIds": [
-      "ZA-ecb1f7dbc175da",
-      "ZA-ddbf6c72bc29c5",
-      "ZA-18b015b2b8a113",
-      "ZA-792ba4c0105fcd",
-      "ZA-e3f0a4de64962f",
-      "ZA-20e95e2499fd17",
-      "ZA-84f5b2614efc41",
-      "ZA-235aff25d47f45",
-      "ZA-fe40150f8e263b",
-      "ZA-be0449a3e41911",
-      "ZA-d0a286ba14e27b",
-      "ZA-39310f10f871f0"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "vertebras-lombares": {
-    "name": "Vértebras lombares",
+    "name": "Vértebras lombares (visão geral)",
     "kind": "ossos",
-    "sourceObjects": [
-      "Vertebra L1",
-      "Vertebra L2",
-      "Vertebra L3",
-      "Vertebra L4",
-      "Vertebra L5"
-    ],
-    "modelIds": [
-      "ZA-a268f2cafbd46c",
-      "ZA-383d4717457a61",
-      "ZA-50d6b6d1e9bdae",
-      "ZA-9b3e08dcf3827b",
-      "ZA-cfb0a2a0fed8f0"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "sacro": {
     "name": "Sacro",
@@ -1064,60 +1014,10 @@
     ]
   },
   "costelas": {
-    "name": "Costelas",
+    "name": "Costelas (visão geral)",
     "kind": "ossos",
-    "sourceObjects": [
-      "Eighth rib.l",
-      "Eighth rib.r",
-      "Eleventh rib.l",
-      "Eleventh rib.r",
-      "Fifth rib.l",
-      "Fifth rib.r",
-      "First rib.l",
-      "First rib.r",
-      "Fourth rib.l",
-      "Fourth rib.r",
-      "Ninth rib.l",
-      "Ninth rib.r",
-      "Second rib.r",
-      "Second rib.l",
-      "Seventh rib.l",
-      "Seventh rib.r",
-      "Sixth rib.l",
-      "Sixth rib.r",
-      "Tenth rib.l",
-      "Tenth rib.r",
-      "Third rib.l",
-      "Third rib.r",
-      "Twelfth rib.l",
-      "Twelfth rib.r"
-    ],
-    "modelIds": [
-      "ZA-be538ded659c0e",
-      "ZA-10e781b42ca15c",
-      "ZA-4a8d5c3e136dd5",
-      "ZA-de22fedf8db395",
-      "ZA-22be6cf4870e79",
-      "ZA-07750711de2880",
-      "ZA-861098e2ad6d5f",
-      "ZA-5f467e0a0e22c1",
-      "ZA-f6891ad7d6ecbb",
-      "ZA-147bb1e888a9f1",
-      "ZA-ab005e833046c8",
-      "ZA-6f76b6bcc3c870",
-      "ZA-7c364a97d557e4",
-      "ZA-19f705a99deeaa",
-      "ZA-60e1d0917fd5f7",
-      "ZA-c7dda0a73f51ff",
-      "ZA-2aa5870d308142",
-      "ZA-7e86f39de90ba8",
-      "ZA-e47857b7da871d",
-      "ZA-4a79b7c42a45c3",
-      "ZA-24f1569dfcb072",
-      "ZA-cf02c4ba2331cd",
-      "ZA-9778f93d63cbe0",
-      "ZA-a6652efdcd29c6"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "esterno": {
     "name": "Esterno",
@@ -1290,96 +1190,16 @@
     ]
   },
   "metacarpais": {
-    "name": "Metacarpais",
+    "name": "Metacarpais (visão geral)",
     "kind": "ossos",
-    "sourceObjects": [
-      "Fifth metacarpal bone.l",
-      "Fifth metacarpal bone.r",
-      "First metacarpal bone.l",
-      "First metacarpal bone.r",
-      "Fourth metacarpal bone.l",
-      "Fourth metacarpal bone.r",
-      "Second metacarpal bone.l",
-      "Second metacarpal bone.r",
-      "Third metacarpal bone.l",
-      "Third metacarpal bone.r"
-    ],
-    "modelIds": [
-      "ZA-22e10f0df37ada",
-      "ZA-63f1fe6563a53b",
-      "ZA-9df38dd0067f8e",
-      "ZA-0ca27c38f6ab39",
-      "ZA-72081f4dbc2370",
-      "ZA-d885ef7d1a0584",
-      "ZA-1557e03b4112dd",
-      "ZA-2c738171c8d19f",
-      "ZA-dd7c3d15646d92",
-      "ZA-a30ca0ea41b749"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "falanges-da-mao": {
-    "name": "Falanges da mão",
+    "name": "Falanges da mão (visão geral)",
     "kind": "ossos",
-    "sourceObjects": [
-      "Distal phalanx of fifth finger of hand.l",
-      "Distal phalanx of fifth finger of hand.r",
-      "Distal phalanx of first finger of hand.l",
-      "Distal phalanx of first finger of hand.r",
-      "Distal phalanx of fourth finger of hand.l",
-      "Distal phalanx of fourth finger of hand.r",
-      "Distal phalanx of second finger of hand.l",
-      "Distal phalanx of second finger of hand.r",
-      "Distal phalanx of third finger of hand.l",
-      "Distal phalanx of third finger of hand.r",
-      "Middle phalanx of fifth finger of hand.l",
-      "Middle phalanx of fifth finger of hand.r",
-      "Middle phalanx of fourth finger of hand.l",
-      "Middle phalanx of fourth finger of hand.r",
-      "Middle phalanx of second finger of hand.l",
-      "Middle phalanx of second finger of hand.r",
-      "Middle phalanx of third finger of hand.l",
-      "Middle phalanx of third finger of hand.r",
-      "Proximal phalanx of fifth finger of hand.l",
-      "Proximal phalanx of fifth finger of hand.r",
-      "Proximal phalanx of first finger of hand.l",
-      "Proximal phalanx of first finger of hand.r",
-      "Proximal phalanx of fourth finger of hand.l",
-      "Proximal phalanx of fourth finger of hand.r",
-      "Proximal phalanx of second finger of hand.l",
-      "Proximal phalanx of second finger of hand.r",
-      "Proximal phalanx of third finger of hand.l",
-      "Proximal phalanx of third finger of hand.r"
-    ],
-    "modelIds": [
-      "ZA-ccff27b79ec8e9",
-      "ZA-0c77c2d8ff99f2",
-      "ZA-48e48518b26bcf",
-      "ZA-5f1ee7ec033a6f",
-      "ZA-fd4f42e270065f",
-      "ZA-4ce81819884916",
-      "ZA-ab8574e540f5ad",
-      "ZA-754686312c3d29",
-      "ZA-f6f3b71c5c8c03",
-      "ZA-246f9aa59fd09a",
-      "ZA-20da467531b352",
-      "ZA-a4d46065b80672",
-      "ZA-5955d7f9c31067",
-      "ZA-4869c6ede8bd46",
-      "ZA-d7ed85a2496bb0",
-      "ZA-c60a22411ad8c0",
-      "ZA-6c214d35b4a9c7",
-      "ZA-e4e03b2db07bd1",
-      "ZA-e9effcce041423",
-      "ZA-5a47814091b922",
-      "ZA-9e49555b8e9231",
-      "ZA-e6c7801fd264ef",
-      "ZA-164e3978d46984",
-      "ZA-ce23d4b5c9b625",
-      "ZA-c36d7bb09a02c1",
-      "ZA-b7e1d81f56ce2f",
-      "ZA-c30338b26464d9",
-      "ZA-35f7092ca4daad"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "osso-do-quadril": {
     "name": "Osso do quadril",
@@ -1526,96 +1346,16 @@
     ]
   },
   "metatarsais": {
-    "name": "Metatarsais",
+    "name": "Metatarsais (visão geral)",
     "kind": "ossos",
-    "sourceObjects": [
-      "Fifth metatarsal bone.l",
-      "Fifth metatarsal bone.r",
-      "First metatarsal bone.l",
-      "First metatarsal bone.r",
-      "Fourth metatarsal bone.l",
-      "Fourth metatarsal bone.r",
-      "Second metatarsal bone.r",
-      "Second metatarsal bone.l",
-      "Third metatarsal bone.l",
-      "Third metatarsal bone.r"
-    ],
-    "modelIds": [
-      "ZA-1121d2712fdac7",
-      "ZA-32252c5a8288c3",
-      "ZA-5c4831118859bc",
-      "ZA-18d651c7c4cb48",
-      "ZA-a1dbeb10397d29",
-      "ZA-ed21d2eab3634f",
-      "ZA-48e6cf5ecc82e8",
-      "ZA-661f01d69bb1de",
-      "ZA-b0bd7f9ca22f4a",
-      "ZA-d1a9c79b5c8977"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "falanges-do-pe": {
-    "name": "Falanges do pé",
+    "name": "Falanges do pé (visão geral)",
     "kind": "ossos",
-    "sourceObjects": [
-      "Distal phalanx of fifth finger of foot.l",
-      "Distal phalanx of fifth finger of foot.r",
-      "Distal phalanx of first finger of foot.l",
-      "Distal phalanx of first finger of foot.r",
-      "Distal phalanx of fourth finger of foot.l",
-      "Distal phalanx of fourth finger of foot.r",
-      "Distal phalanx of second finger of foot.l",
-      "Distal phalanx of second finger of foot.r",
-      "Distal phalanx of third finger of foot.l",
-      "Distal phalanx of third finger of foot.r",
-      "Middle phalanx of fifth finger of foot.l",
-      "Middle phalanx of fifth finger of foot.r",
-      "Middle phalanx of fourth finger of foot.l",
-      "Middle phalanx of fourth finger of foot.r",
-      "Middle phalanx of second finger of foot.l",
-      "Middle phalanx of second finger of foot.r",
-      "Middle phalanx of third finger of foot.l",
-      "Middle phalanx of third finger of foot.r",
-      "Proximal phalanx of fifth finger of foot.l",
-      "Proximal phalanx of fifth finger of foot.r",
-      "Proximal phalanx of first finger of foot.l",
-      "Proximal phalanx of first finger of foot.r",
-      "Proximal phalanx of fourth finger of foot.l",
-      "Proximal phalanx of fourth finger of foot.r",
-      "Proximal phalanx of second finger of foot.l",
-      "Proximal phalanx of second finger of foot.r",
-      "Proximal phalanx of third finger of foot.l",
-      "Proximal phalanx of third finger of foot.r"
-    ],
-    "modelIds": [
-      "ZA-0c8d46736cd0d0",
-      "ZA-01e1daf784598d",
-      "ZA-689f96bec92fe9",
-      "ZA-686672aa34d163",
-      "ZA-707a07d23c678e",
-      "ZA-9d3008c2cf380c",
-      "ZA-d400833c81b942",
-      "ZA-f4fea5520ea8c8",
-      "ZA-f16f0b464cfedc",
-      "ZA-b0bb4f092e61f4",
-      "ZA-c745bc67fc7867",
-      "ZA-ef3fdc0d337beb",
-      "ZA-55245cbccd638c",
-      "ZA-ec0e725e5b644c",
-      "ZA-d0a388cf29f70a",
-      "ZA-903162e237b8c4",
-      "ZA-85c811aae06a86",
-      "ZA-f6d27914d0348e",
-      "ZA-c64cb1b7ece01a",
-      "ZA-4ad33d8271cde1",
-      "ZA-ea4819f97e8c21",
-      "ZA-c07969394566b5",
-      "ZA-73d870dff5ab90",
-      "ZA-0378c0a07cd4e3",
-      "ZA-b310de8c5e1bdb",
-      "ZA-caf3052e22833f",
-      "ZA-896315e816ea4d",
-      "ZA-e9ea85158fac7e"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "glenoumeral": {
     "name": "Glenoumeral",
@@ -6683,6 +6423,826 @@
       "ZA-3c606501e3fc01",
       "ZA-b8a521f62f63ec",
       "ZA-6e5a1685144c68"
+    ]
+  },
+  "vertebra-c3": {
+    "name": "Vértebra C3",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra C3"
+    ],
+    "modelIds": [
+      "ZA-3e0eee8778a5f2"
+    ]
+  },
+  "vertebra-c4": {
+    "name": "Vértebra C4",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra C4"
+    ],
+    "modelIds": [
+      "ZA-bff9085efefcb3"
+    ]
+  },
+  "vertebra-c5": {
+    "name": "Vértebra C5",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra C5"
+    ],
+    "modelIds": [
+      "ZA-dc49017304bfab"
+    ]
+  },
+  "vertebra-c6": {
+    "name": "Vértebra C6",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra C6"
+    ],
+    "modelIds": [
+      "ZA-8a947f4284315c"
+    ]
+  },
+  "vertebra-c7": {
+    "name": "Vértebra C7",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra C7"
+    ],
+    "modelIds": [
+      "ZA-63fa4563c47f6b"
+    ]
+  },
+  "vertebra-l1": {
+    "name": "Vértebra L1",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra L1"
+    ],
+    "modelIds": [
+      "ZA-a268f2cafbd46c"
+    ]
+  },
+  "vertebra-l2": {
+    "name": "Vértebra L2",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra L2"
+    ],
+    "modelIds": [
+      "ZA-383d4717457a61"
+    ]
+  },
+  "vertebra-l3": {
+    "name": "Vértebra L3",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra L3"
+    ],
+    "modelIds": [
+      "ZA-50d6b6d1e9bdae"
+    ]
+  },
+  "vertebra-l4": {
+    "name": "Vértebra L4",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra L4"
+    ],
+    "modelIds": [
+      "ZA-9b3e08dcf3827b"
+    ]
+  },
+  "vertebra-l5": {
+    "name": "Vértebra L5",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra L5"
+    ],
+    "modelIds": [
+      "ZA-cfb0a2a0fed8f0"
+    ]
+  },
+  "vertebra-t1": {
+    "name": "Vértebra T1",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T1"
+    ],
+    "modelIds": [
+      "ZA-ecb1f7dbc175da"
+    ]
+  },
+  "vertebra-t2": {
+    "name": "Vértebra T2",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T2"
+    ],
+    "modelIds": [
+      "ZA-e3f0a4de64962f"
+    ]
+  },
+  "vertebra-t3": {
+    "name": "Vértebra T3",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T3"
+    ],
+    "modelIds": [
+      "ZA-20e95e2499fd17"
+    ]
+  },
+  "vertebra-t4": {
+    "name": "Vértebra T4",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T4"
+    ],
+    "modelIds": [
+      "ZA-84f5b2614efc41"
+    ]
+  },
+  "vertebra-t5": {
+    "name": "Vértebra T5",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T5"
+    ],
+    "modelIds": [
+      "ZA-235aff25d47f45"
+    ]
+  },
+  "vertebra-t6": {
+    "name": "Vértebra T6",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T6"
+    ],
+    "modelIds": [
+      "ZA-fe40150f8e263b"
+    ]
+  },
+  "vertebra-t7": {
+    "name": "Vértebra T7",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T7"
+    ],
+    "modelIds": [
+      "ZA-be0449a3e41911"
+    ]
+  },
+  "vertebra-t8": {
+    "name": "Vértebra T8",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T8"
+    ],
+    "modelIds": [
+      "ZA-d0a286ba14e27b"
+    ]
+  },
+  "vertebra-t9": {
+    "name": "Vértebra T9",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T9"
+    ],
+    "modelIds": [
+      "ZA-39310f10f871f0"
+    ]
+  },
+  "vertebra-t10": {
+    "name": "Vértebra T10",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T10"
+    ],
+    "modelIds": [
+      "ZA-ddbf6c72bc29c5"
+    ]
+  },
+  "vertebra-t11": {
+    "name": "Vértebra T11",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T11"
+    ],
+    "modelIds": [
+      "ZA-18b015b2b8a113"
+    ]
+  },
+  "vertebra-t12": {
+    "name": "Vértebra T12",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Vertebra T12"
+    ],
+    "modelIds": [
+      "ZA-792ba4c0105fcd"
+    ]
+  },
+  "primeira-costela": {
+    "name": "Primeira costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "First rib.l",
+      "First rib.r"
+    ],
+    "modelIds": [
+      "ZA-861098e2ad6d5f",
+      "ZA-5f467e0a0e22c1"
+    ]
+  },
+  "segunda-costela": {
+    "name": "Segunda costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Second rib.l",
+      "Second rib.r"
+    ],
+    "modelIds": [
+      "ZA-19f705a99deeaa",
+      "ZA-7c364a97d557e4"
+    ]
+  },
+  "terceira-costela": {
+    "name": "Terceira costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Third rib.l",
+      "Third rib.r"
+    ],
+    "modelIds": [
+      "ZA-24f1569dfcb072",
+      "ZA-cf02c4ba2331cd"
+    ]
+  },
+  "quarta-costela": {
+    "name": "Quarta costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Fourth rib.l",
+      "Fourth rib.r"
+    ],
+    "modelIds": [
+      "ZA-f6891ad7d6ecbb",
+      "ZA-147bb1e888a9f1"
+    ]
+  },
+  "quinta-costela": {
+    "name": "Quinta costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Fifth rib.l",
+      "Fifth rib.r"
+    ],
+    "modelIds": [
+      "ZA-22be6cf4870e79",
+      "ZA-07750711de2880"
+    ]
+  },
+  "sexta-costela": {
+    "name": "Sexta costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Sixth rib.l",
+      "Sixth rib.r"
+    ],
+    "modelIds": [
+      "ZA-2aa5870d308142",
+      "ZA-7e86f39de90ba8"
+    ]
+  },
+  "setima-costela": {
+    "name": "Sétima costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Seventh rib.l",
+      "Seventh rib.r"
+    ],
+    "modelIds": [
+      "ZA-60e1d0917fd5f7",
+      "ZA-c7dda0a73f51ff"
+    ]
+  },
+  "oitava-costela": {
+    "name": "Oitava costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Eighth rib.l",
+      "Eighth rib.r"
+    ],
+    "modelIds": [
+      "ZA-be538ded659c0e",
+      "ZA-10e781b42ca15c"
+    ]
+  },
+  "nona-costela": {
+    "name": "Nona costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Ninth rib.l",
+      "Ninth rib.r"
+    ],
+    "modelIds": [
+      "ZA-ab005e833046c8",
+      "ZA-6f76b6bcc3c870"
+    ]
+  },
+  "decima-costela": {
+    "name": "Décima costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Tenth rib.l",
+      "Tenth rib.r"
+    ],
+    "modelIds": [
+      "ZA-e47857b7da871d",
+      "ZA-4a79b7c42a45c3"
+    ]
+  },
+  "decima-primeira-costela": {
+    "name": "Décima primeira costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Eleventh rib.l",
+      "Eleventh rib.r"
+    ],
+    "modelIds": [
+      "ZA-4a8d5c3e136dd5",
+      "ZA-de22fedf8db395"
+    ]
+  },
+  "decima-segunda-costela": {
+    "name": "Décima segunda costela",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Twelfth rib.l",
+      "Twelfth rib.r"
+    ],
+    "modelIds": [
+      "ZA-9778f93d63cbe0",
+      "ZA-a6652efdcd29c6"
+    ]
+  },
+  "primeiro-metacarpal": {
+    "name": "1º metacarpal (do polegar)",
+    "kind": "ossos",
+    "sourceObjects": [
+      "First metacarpal bone.l",
+      "First metacarpal bone.r"
+    ],
+    "modelIds": [
+      "ZA-9df38dd0067f8e",
+      "ZA-0ca27c38f6ab39"
+    ]
+  },
+  "segundo-metacarpal": {
+    "name": "2º metacarpal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Second metacarpal bone.l",
+      "Second metacarpal bone.r"
+    ],
+    "modelIds": [
+      "ZA-1557e03b4112dd",
+      "ZA-2c738171c8d19f"
+    ]
+  },
+  "terceiro-metacarpal": {
+    "name": "3º metacarpal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Third metacarpal bone.l",
+      "Third metacarpal bone.r"
+    ],
+    "modelIds": [
+      "ZA-dd7c3d15646d92",
+      "ZA-a30ca0ea41b749"
+    ]
+  },
+  "quarto-metacarpal": {
+    "name": "4º metacarpal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Fourth metacarpal bone.l",
+      "Fourth metacarpal bone.r"
+    ],
+    "modelIds": [
+      "ZA-72081f4dbc2370",
+      "ZA-d885ef7d1a0584"
+    ]
+  },
+  "quinto-metacarpal": {
+    "name": "5º metacarpal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Fifth metacarpal bone.l",
+      "Fifth metacarpal bone.r"
+    ],
+    "modelIds": [
+      "ZA-22e10f0df37ada",
+      "ZA-63f1fe6563a53b"
+    ]
+  },
+  "falange-proximal-do-polegar": {
+    "name": "Falange proximal do polegar",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Proximal phalanx of first finger of hand.l",
+      "Proximal phalanx of first finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-9e49555b8e9231",
+      "ZA-e6c7801fd264ef"
+    ]
+  },
+  "falange-distal-do-polegar": {
+    "name": "Falange distal do polegar",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of first finger of hand.l",
+      "Distal phalanx of first finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-48e48518b26bcf",
+      "ZA-5f1ee7ec033a6f"
+    ]
+  },
+  "falange-proximal-do-indicador": {
+    "name": "Falange proximal do indicador",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Proximal phalanx of second finger of hand.l",
+      "Proximal phalanx of second finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-c36d7bb09a02c1",
+      "ZA-b7e1d81f56ce2f"
+    ]
+  },
+  "falange-media-do-indicador": {
+    "name": "Falange média do indicador",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Middle phalanx of second finger of hand.l",
+      "Middle phalanx of second finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-d7ed85a2496bb0",
+      "ZA-c60a22411ad8c0"
+    ]
+  },
+  "falange-distal-do-indicador": {
+    "name": "Falange distal do indicador",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of second finger of hand.l",
+      "Distal phalanx of second finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-ab8574e540f5ad",
+      "ZA-754686312c3d29"
+    ]
+  },
+  "falange-proximal-do-medio": {
+    "name": "Falange proximal do dedo médio",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Proximal phalanx of third finger of hand.l",
+      "Proximal phalanx of third finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-c30338b26464d9",
+      "ZA-35f7092ca4daad"
+    ]
+  },
+  "falange-media-do-medio": {
+    "name": "Falange média do dedo médio",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Middle phalanx of third finger of hand.l",
+      "Middle phalanx of third finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-6c214d35b4a9c7",
+      "ZA-e4e03b2db07bd1"
+    ]
+  },
+  "falange-distal-do-medio": {
+    "name": "Falange distal do dedo médio",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of third finger of hand.l",
+      "Distal phalanx of third finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-f6f3b71c5c8c03",
+      "ZA-246f9aa59fd09a"
+    ]
+  },
+  "falange-proximal-do-anelar": {
+    "name": "Falange proximal do dedo anelar",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Proximal phalanx of fourth finger of hand.l",
+      "Proximal phalanx of fourth finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-164e3978d46984",
+      "ZA-ce23d4b5c9b625"
+    ]
+  },
+  "falange-media-do-anelar": {
+    "name": "Falange média do dedo anelar",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Middle phalanx of fourth finger of hand.l",
+      "Middle phalanx of fourth finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-5955d7f9c31067",
+      "ZA-4869c6ede8bd46"
+    ]
+  },
+  "falange-distal-do-anelar": {
+    "name": "Falange distal do dedo anelar",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of fourth finger of hand.l",
+      "Distal phalanx of fourth finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-fd4f42e270065f",
+      "ZA-4ce81819884916"
+    ]
+  },
+  "falange-proximal-do-minimo": {
+    "name": "Falange proximal do dedo mínimo",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Proximal phalanx of fifth finger of hand.l",
+      "Proximal phalanx of fifth finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-e9effcce041423",
+      "ZA-5a47814091b922"
+    ]
+  },
+  "falange-media-do-minimo": {
+    "name": "Falange média do dedo mínimo",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Middle phalanx of fifth finger of hand.l",
+      "Middle phalanx of fifth finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-20da467531b352",
+      "ZA-a4d46065b80672"
+    ]
+  },
+  "falange-distal-do-minimo": {
+    "name": "Falange distal do dedo mínimo",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of fifth finger of hand.l",
+      "Distal phalanx of fifth finger of hand.r"
+    ],
+    "modelIds": [
+      "ZA-ccff27b79ec8e9",
+      "ZA-0c77c2d8ff99f2"
+    ]
+  },
+  "primeiro-metatarsal": {
+    "name": "1º metatarsal (do hálux)",
+    "kind": "ossos",
+    "sourceObjects": [
+      "First metatarsal bone.l",
+      "First metatarsal bone.r"
+    ],
+    "modelIds": [
+      "ZA-5c4831118859bc",
+      "ZA-18d651c7c4cb48"
+    ]
+  },
+  "segundo-metatarsal": {
+    "name": "2º metatarsal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Second metatarsal bone.l",
+      "Second metatarsal bone.r"
+    ],
+    "modelIds": [
+      "ZA-661f01d69bb1de",
+      "ZA-48e6cf5ecc82e8"
+    ]
+  },
+  "terceiro-metatarsal": {
+    "name": "3º metatarsal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Third metatarsal bone.l",
+      "Third metatarsal bone.r"
+    ],
+    "modelIds": [
+      "ZA-b0bd7f9ca22f4a",
+      "ZA-d1a9c79b5c8977"
+    ]
+  },
+  "quarto-metatarsal": {
+    "name": "4º metatarsal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Fourth metatarsal bone.l",
+      "Fourth metatarsal bone.r"
+    ],
+    "modelIds": [
+      "ZA-a1dbeb10397d29",
+      "ZA-ed21d2eab3634f"
+    ]
+  },
+  "quinto-metatarsal": {
+    "name": "5º metatarsal",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Fifth metatarsal bone.l",
+      "Fifth metatarsal bone.r"
+    ],
+    "modelIds": [
+      "ZA-1121d2712fdac7",
+      "ZA-32252c5a8288c3"
+    ]
+  },
+  "falange-proximal-do-halux": {
+    "name": "Falange proximal do hálux",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Proximal phalanx of first finger of foot.l",
+      "Proximal phalanx of first finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-ea4819f97e8c21",
+      "ZA-c07969394566b5"
+    ]
+  },
+  "falange-distal-do-halux": {
+    "name": "Falange distal do hálux",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of first finger of foot.l",
+      "Distal phalanx of first finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-689f96bec92fe9",
+      "ZA-686672aa34d163"
+    ]
+  },
+  "falange-proximal-do-segundo-dedo-do-pe": {
+    "name": "Falange proximal do segundo dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Proximal phalanx of second finger of foot.l",
+      "Proximal phalanx of second finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-b310de8c5e1bdb",
+      "ZA-caf3052e22833f"
+    ]
+  },
+  "falange-media-do-segundo-dedo-do-pe": {
+    "name": "Falange média do segundo dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Middle phalanx of second finger of foot.l",
+      "Middle phalanx of second finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-d0a388cf29f70a",
+      "ZA-903162e237b8c4"
+    ]
+  },
+  "falange-distal-do-segundo-dedo-do-pe": {
+    "name": "Falange distal do segundo dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of second finger of foot.l",
+      "Distal phalanx of second finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-d400833c81b942",
+      "ZA-f4fea5520ea8c8"
+    ]
+  },
+  "falange-proximal-do-terceiro-dedo-do-pe": {
+    "name": "Falange proximal do terceiro dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Proximal phalanx of third finger of foot.l",
+      "Proximal phalanx of third finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-896315e816ea4d",
+      "ZA-e9ea85158fac7e"
+    ]
+  },
+  "falange-media-do-terceiro-dedo-do-pe": {
+    "name": "Falange média do terceiro dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Middle phalanx of third finger of foot.l",
+      "Middle phalanx of third finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-85c811aae06a86",
+      "ZA-f6d27914d0348e"
+    ]
+  },
+  "falange-distal-do-terceiro-dedo-do-pe": {
+    "name": "Falange distal do terceiro dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of third finger of foot.l",
+      "Distal phalanx of third finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-f16f0b464cfedc",
+      "ZA-b0bb4f092e61f4"
+    ]
+  },
+  "falange-proximal-do-quarto-dedo-do-pe": {
+    "name": "Falange proximal do quarto dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Proximal phalanx of fourth finger of foot.l",
+      "Proximal phalanx of fourth finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-73d870dff5ab90",
+      "ZA-0378c0a07cd4e3"
+    ]
+  },
+  "falange-media-do-quarto-dedo-do-pe": {
+    "name": "Falange média do quarto dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Middle phalanx of fourth finger of foot.l",
+      "Middle phalanx of fourth finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-55245cbccd638c",
+      "ZA-ec0e725e5b644c"
+    ]
+  },
+  "falange-distal-do-quarto-dedo-do-pe": {
+    "name": "Falange distal do quarto dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of fourth finger of foot.l",
+      "Distal phalanx of fourth finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-707a07d23c678e",
+      "ZA-9d3008c2cf380c"
+    ]
+  },
+  "falange-proximal-do-quinto-dedo-do-pe": {
+    "name": "Falange proximal do quinto dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Proximal phalanx of fifth finger of foot.l",
+      "Proximal phalanx of fifth finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-c64cb1b7ece01a",
+      "ZA-4ad33d8271cde1"
+    ]
+  },
+  "falange-media-do-quinto-dedo-do-pe": {
+    "name": "Falange média do quinto dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Middle phalanx of fifth finger of foot.l",
+      "Middle phalanx of fifth finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-c745bc67fc7867",
+      "ZA-ef3fdc0d337beb"
+    ]
+  },
+  "falange-distal-do-quinto-dedo-do-pe": {
+    "name": "Falange distal do quinto dedo do pé",
+    "kind": "ossos",
+    "sourceObjects": [
+      "Distal phalanx of fifth finger of foot.l",
+      "Distal phalanx of fifth finger of foot.r"
+    ],
+    "modelIds": [
+      "ZA-0c8d46736cd0d0",
+      "ZA-01e1daf784598d"
     ]
   }
 }

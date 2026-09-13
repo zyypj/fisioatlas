@@ -1,0 +1,140 @@
+{
+  "patches": [
+    {
+      "id": "metatarsais",
+      "name": "Metatarsais (visão geral)",
+      "summary": "Os cinco ossos longos do médio-pé; cada um tem ficha própria, do primeiro ao quinto.",
+      "fields": {
+        "Tipo": "Visão geral do grupo. Cada metatarsal tem ficha própria, do 1º ao 5º.",
+        "Localização": "Pé",
+        "Principais partes": "Cada osso tem base proximal, corpo e cabeça distal. As cabeças formam a região que apoia o antepé no chão.",
+        "Função": "Cinco ossos longos que ligam o tarso às falanges e distribuem a carga do peso pelo antepé.",
+        "Articula-se com": "Cuneiformes e cuboide, proximalmente, nas tarsometatarsais; entre si, nas intermetatarsais; e com as falanges proximais, nas metatarsofalângicas.",
+        "Na prática": "As cabeças dos metatarsais formam os pontos de apoio do antepé. Sobrecarga sob uma cabeça, a metatarsalgia, é queixa comum e muda conforme o raio. O 1º e o 5º são os mais individualizados clinicamente.",
+        "Palpação básica": "Palpáveis em toda a extensão no dorso do pé; as cabeças, na planta, sob a prega dos dedos.",
+        "Marcos para o exercício": "Abra as fichas do 1º ao 5º metatarsal para comparar a função de apoio e as fraturas típicas de cada raio.",
+        "Estudo 3D": "Esta ficha é uma visão geral e não tem malha própria. Cada metatarsal tem a sua: abra do 1º ao 5º para ver a base recuada do 2º e a tuberosidade do 5º."
+      },
+      "related": ["primeiro-metatarsal", "segundo-metatarsal", "terceiro-metatarsal", "quarto-metatarsal", "quinto-metatarsal", "falanges-do-pe", "metatarsofalangicas", "ligamentos-tarsometatarsais"],
+      "aliases": ["metatarso", "ossos do antepé"],
+      "source_objects": []
+    }
+  ],
+  "new": [
+    {
+      "id": "primeiro-metatarsal",
+      "name": "1º metatarsal (do hálux)",
+      "english": "first metatarsal bone",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "O mais curto e mais grosso; sustenta a maior parte da carga do antepé, com dois sesamoides sob a cabeça.",
+      "fields": {
+        "Tipo": "Longo, curto e robusto.",
+        "Localização": "Pé",
+        "Principais partes": "Base para o cuneiforme medial, corpo forte e cabeça larga, com dois sesamoides na face plantar.",
+        "Função": "Forma a coluna medial do pé e recebe a maior parte da carga do antepé no impulso da marcha.",
+        "Articula-se com": "Cuneiforme medial, na base, e a falange proximal do hálux, na metatarsofalângica.",
+        "Na prática": "O desvio do hálux para fora com proeminência medial da cabeça é o hálux valgo, o joanete. Os dois sesamoides sob a cabeça funcionam como polia dos flexores e são local de sesamoidite e dor sob o hálux. A insuficiência do 1º raio joga carga para os metatarsais vizinhos.",
+        "Palpação básica": "A cabeça é a proeminência medial na base do hálux; os sesamoides são palpáveis na planta, sob ela.",
+        "Marcos para o exercício": "O tibial anterior insere-se na base medial e o fibular longo na base plantar-lateral; juntos controlam o apoio do 1º raio. Ativar o flexor curto do hálux e o abdutor do hálux faz parte da reabilitação do joanete."
+      },
+      "related": ["metatarsais", "cuneiforme-medial", "sesamoides-do-halux", "tibial-anterior", "fibular-longo", "abdutor-do-halux", "flexor-curto-do-halux"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["primeiro metatarso", "metatarsal do hálux", "hálux valgo", "joanete"],
+      "source_objects": ["First metatarsal bone.l", "First metatarsal bone.r"]
+    },
+    {
+      "id": "segundo-metatarsal",
+      "name": "2º metatarsal",
+      "english": "second metatarsal bone",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "O mais longo; sua base recuada é a chave de encaixe do médio-pé e o local clássico da fratura de estresse.",
+      "fields": {
+        "Tipo": "Longo, o mais comprido dos metatarsais.",
+        "Localização": "Pé",
+        "Principais partes": "Base encaixada entre os três cuneiformes, num recesso profundo, corpo longo e cabeça.",
+        "Função": "É a pedra angular do arco transverso e do médio-pé: a base recuada trava o 2º raio, tornando-o rígido e estável.",
+        "Articula-se com": "Principalmente o cuneiforme intermédio, mais os cuneiformes medial e lateral, e os metatarsais vizinhos; distalmente, a falange proximal do 2º dedo.",
+        "Na prática": "Por ser rígido, o 2º metatarsal sofre a fratura de estresse clássica, a fratura da marcha, comum em recrutas e corredores. Sua base é o ponto de referência da articulação de Lisfranc: uma lesão nesse encaixe desalinha todo o médio-pé e é fácil de subestimar.",
+        "Palpação básica": "A base é palpável no ponto mais alto do dorso do médio-pé; o corpo, ao longo do dorso do antepé.",
+        "Marcos para o exercício": "Referência para reconhecer dor de fratura de estresse no atleta e para avaliar a estabilidade do médio-pé após entorses do mediopé."
+      },
+      "related": ["metatarsais", "cuneiforme-intermedio", "primeiro-metatarsal", "terceiro-metatarsal", "ligamentos-tarsometatarsais"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["segundo metatarso", "fratura da marcha", "Lisfranc", "pedra angular"],
+      "source_objects": ["Second metatarsal bone.l", "Second metatarsal bone.r"]
+    },
+    {
+      "id": "terceiro-metatarsal",
+      "name": "3º metatarsal",
+      "english": "third metatarsal bone",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Metatarsal central da coluna medial; articula-se com o cuneiforme lateral.",
+      "fields": {
+        "Tipo": "Longo.",
+        "Localização": "Pé",
+        "Principais partes": "Base para o cuneiforme lateral, corpo e cabeça.",
+        "Função": "Completa a coluna medial rígida do pé, junto com o 1º e o 2º raios, participando do apoio central do antepé.",
+        "Articula-se com": "Cuneiforme lateral, na base; com o 2º e o 4º metatarsais ao lado; e com a falange proximal do 3º dedo.",
+        "Na prática": "Divide com o 2º metatarsal as fraturas de estresse do antepé. A cabeça do 2º e do 3º metatarsais é onde a metatarsalgia central mais aparece, muitas vezes ligada a um 1º raio insuficiente que não sustenta sua parte da carga.",
+        "Palpação básica": "Palpável no centro do dorso do antepé, entre o 2º e o 4º metatarsais.",
+        "Marcos para o exercício": "As cabeças do 2º e 3º são o ponto de descarga a proteger na metatarsalgia, com palmilhas de alívio retrocapital."
+      },
+      "related": ["metatarsais", "cuneiforme-lateral", "segundo-metatarsal", "quarto-metatarsal", "metatarsofalangicas"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["terceiro metatarso", "metatarsalgia central"],
+      "source_objects": ["Third metatarsal bone.l", "Third metatarsal bone.r"]
+    },
+    {
+      "id": "quarto-metatarsal",
+      "name": "4º metatarsal",
+      "english": "fourth metatarsal bone",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Início da coluna lateral, mais móvel; sua base já se articula com o cuboide.",
+      "fields": {
+        "Tipo": "Longo.",
+        "Localização": "Pé",
+        "Principais partes": "Base para o cuboide, corpo e cabeça.",
+        "Função": "Faz a transição para a coluna lateral do pé, mais móvel, que se adapta ao terreno irregular.",
+        "Articula-se com": "Cuboide, na base; com o 3º e o 5º metatarsais ao lado; e com a falange proximal do 4º dedo.",
+        "Na prática": "A coluna lateral, do 4º e 5º metatarsais com o cuboide, tem mais mobilidade que a medial. Essa mobilidade é o que permite ao pé se moldar a superfícies irregulares; perdê-la, por rigidez, transfere carga e sobrecarrega os raios vizinhos.",
+        "Palpação básica": "Palpável no dorso lateral do antepé, entre o 3º e o 5º metatarsais.",
+        "Marcos para o exercício": "Referência para avaliar a mobilidade da coluna lateral do pé em pés rígidos ou pós-imobilização."
+      },
+      "related": ["metatarsais", "cuboide", "terceiro-metatarsal", "quinto-metatarsal"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["quarto metatarso", "coluna lateral do pé"],
+      "source_objects": ["Fourth metatarsal bone.l", "Fourth metatarsal bone.r"]
+    },
+    {
+      "id": "quinto-metatarsal",
+      "name": "5º metatarsal",
+      "english": "fifth metatarsal bone",
+      "kind": "ossos",
+      "region": "Pé",
+      "depth": "superficial",
+      "summary": "Tem uma tuberosidade proeminente na base; sede das fraturas por avulsão e de Jones.",
+      "fields": {
+        "Tipo": "Longo.",
+        "Localização": "Pé",
+        "Principais partes": "Base com uma tuberosidade lateral saliente, corpo e cabeça.",
+        "Função": "Forma a borda lateral do antepé e recebe o fibular curto na tuberosidade, que everte e estabiliza a coluna lateral.",
+        "Articula-se com": "Cuboide, na base; com o 4º metatarsal ao lado; e com a falange proximal do 5º dedo.",
+        "Na prática": "A base do 5º metatarsal tem duas fraturas famosas: a avulsão da tuberosidade, quando o fibular curto arranca um fragmento numa entorse em inversão, que costuma consolidar bem; e a fratura de Jones, um pouco mais distal, na junção metáfise-diáfise, de má vascularização e alto risco de não consolidar. Distingui-las muda o tratamento.",
+        "Palpação básica": "A tuberosidade é a saliência óssea fácil de achar no meio da borda lateral do pé.",
+        "Marcos para o exercício": "O fibular curto insere-se na tuberosidade; após entorse em inversão, dor exatamente aí sugere fratura de avulsão e não só lesão ligamentar."
+      },
+      "related": ["metatarsais", "cuboide", "quarto-metatarsal", "fibular-curto", "fibular-terceiro"],
+      "sources": ["openstax-bones", "z-anatomy"],
+      "aliases": ["quinto metatarso", "fratura de Jones", "tuberosidade do 5º metatarsal"],
+      "source_objects": ["Fifth metatarsal bone.l", "Fifth metatarsal bone.r"]
+    }
+  ]
+}
