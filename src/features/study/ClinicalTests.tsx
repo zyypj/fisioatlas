@@ -1,10 +1,22 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useSearchParams } from "react-router-dom";
+import { ArrowLeft, ArrowRight, Search, X } from "lucide-react";
 import { byId } from "../../data";
-import { clinicalTests, clinicalTestById } from "../../data/clinicalTests";
-import type { ClinicalTest } from "../../data/clinicalTests";
+import {
+  clinicalCategories,
+  clinicalKinds,
+  clinicalTests,
+  clinicalTestById,
+} from "../../data/clinicalTests";
+import type { ClinicalKind, ClinicalTest } from "../../data/clinicalTests";
 import { sources } from "../../data/sources";
 import { clinicalStagesFor, parseClinicalStage } from "./clinicalGuide";
+import {
+  filterClinicalTests,
+  groupClinicalTests,
+  parseClinicalFilters,
+} from "./clinicalCatalog";
+import type { ClinicalFilters } from "./clinicalCatalog";
 
 const LasegueViewer = lazy(() => import("../viewer/LasegueViewer"));
 
@@ -389,7 +401,13 @@ function Lesson({
   const chooseStep = (index: number) => setStep(index);
   return (
     <>
-      <span className="eyebrow">FISIOTERAPIA · AVALIAÇÃO NEURODINÂMICA</span>
+      <span className="eyebrow">
+        FISIOTERAPIA ·{" "}
+        {clinicalCategories
+          .find((item) => item.id === test.category)
+          ?.name.toUpperCase()}{" "}
+        · {clinicalKinds[test.kind].toUpperCase()}
+      </span>
       <h1>{test.name}</h1>
       <p className="lead">{test.summary}</p>
       <div className="chips clinical-aliases">
@@ -582,6 +600,163 @@ function Lesson({
   );
 }
 
+function ClinicalCatalog({ onOpen }: { onOpen: (id: string) => void }) {
+  const [params, setParams] = useSearchParams();
+  const filters = parseClinicalFilters(params);
+  const update = (change: Partial<ClinicalFilters>) => {
+    const next = { ...filters, ...change },
+      search = new URLSearchParams();
+    if (next.query) search.set("q", next.query);
+    if (next.category) search.set("regiao", next.category);
+    if (next.kind) search.set("tipo", next.kind);
+    setParams(search, { replace: true });
+  };
+  const filtering = Boolean(filters.query.trim() || filters.kind);
+  // Contagens por região respeitam busca e tipo, mas não a própria região.
+  const matching = filterClinicalTests(clinicalTests, {
+    ...filters,
+    category: "",
+  });
+  const results = filters.category
+    ? matching.filter((test) => test.category === filters.category)
+    : matching;
+  const groups = groupClinicalTests(results).filter(
+    (group) =>
+      (!filters.category || group.id === filters.category) &&
+      (group.tests.length > 0 || !filtering),
+  );
+  const kinds = (Object.keys(clinicalKinds) as ClinicalKind[]).filter(
+    (kind) =>
+      kind === filters.kind || clinicalTests.some((test) => test.kind === kind),
+  );
+  return (
+    <>
+      <span className="eyebrow">FISIOTERAPIA · DA MANOBRA AO RACIOCÍNIO</span>
+      <h1>Testes de fisioterapia</h1>
+      <p className="lead">
+        Aprenda o movimento, a indicação e a interpretação antes de aplicar um
+        teste no exame clínico.
+      </p>
+      <div className="clinical-filters" role="search">
+        <label className="clinical-search">
+          <Search size={17} aria-hidden="true" />
+          <input
+            type="search"
+            value={filters.query}
+            placeholder="Buscar teste (ex.: SLR, Slump)"
+            aria-label="Buscar testes"
+            onChange={(e) => update({ query: e.target.value })}
+          />
+        </label>
+        <label className="clinical-kind">
+          Tipo
+          <select
+            value={filters.kind}
+            onChange={(e) => update({ kind: e.target.value as ClinicalKind })}
+          >
+            <option value="">Todos os tipos</option>
+            {kinds.map((kind) => (
+              <option key={kind} value={kind}>
+                {clinicalKinds[kind]}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+      <div
+        className="clinical-category-tabs"
+        role="group"
+        aria-label="Filtrar por região"
+      >
+        {[{ id: "" as const, name: "Todas" }, ...clinicalCategories].map(
+          (category) => {
+            const count = category.id
+              ? matching.filter((test) => test.category === category.id).length
+              : matching.length;
+            const selected = filters.category === category.id;
+            return (
+              <button
+                key={category.id || "todas"}
+                className={selected ? "active" : ""}
+                aria-pressed={selected}
+                onClick={() => update({ category: category.id })}
+              >
+                {category.name}
+                <span>{count}</span>
+              </button>
+            );
+          },
+        )}
+      </div>
+      <div className="clinical-results" role="status">
+        <span>
+          {results.length === 1
+            ? "1 teste encontrado"
+            : `${results.length} testes encontrados`}
+        </span>
+        {(filtering || filters.category) && (
+          <button
+            className="text-button"
+            onClick={() => update({ query: "", category: "", kind: "" })}
+          >
+            <X size={14} /> Limpar filtros
+          </button>
+        )}
+      </div>
+      {groups.length === 0 ? (
+        <div className="clinical-empty">
+          <h2>Nenhum teste encontrado</h2>
+          <p>Tente outro termo, troque o tipo ou veja todas as regiões.</p>
+        </div>
+      ) : (
+        groups.map((group) => (
+          <section
+            className="clinical-category"
+            key={group.id}
+            aria-labelledby={`categoria-${group.id}`}
+          >
+            <header>
+              <h2 id={`categoria-${group.id}`}>
+                {group.name}
+                <span>
+                  {group.tests.length === 1
+                    ? "1 teste"
+                    : `${group.tests.length} testes`}
+                </span>
+              </h2>
+              <p>{group.description}</p>
+            </header>
+            {group.tests.length ? (
+              <div className="library-grid">
+                {group.tests.map((item) => (
+                  <button
+                    className="library-card"
+                    key={item.id}
+                    onClick={() => onOpen(item.id)}
+                  >
+                    <span className="category-pill">
+                      {clinicalKinds[item.kind]}
+                    </span>
+                    <h3>{item.name}</h3>
+                    <p>{item.summary}</p>
+                    <span className="card-link">
+                      Começar passo a passo <ArrowRight size={15} />
+                    </span>
+                  </button>
+                ))}
+              </div>
+            ) : (
+              <p className="clinical-soon">
+                Em breve: os testes de {group.name.toLowerCase()} entram aqui.
+              </p>
+            )}
+          </section>
+        ))
+      )}
+    </>
+  );
+}
+
 export function ClinicalTests({
   id,
   onOpen,
@@ -602,36 +777,7 @@ export function ClinicalTests({
           <TestModule key={test.id} test={test} onSelect={onSelect} />
         </>
       ) : (
-        <>
-          <span className="eyebrow">
-            FISIOTERAPIA · DA MANOBRA AO RACIOCÍNIO
-          </span>
-          <h1>Testes de fisioterapia</h1>
-          <p className="lead">
-            Aprenda o movimento, a indicação e a interpretação antes de aplicar
-            um teste no exame clínico.
-          </p>
-          <div className="library-grid">
-            {clinicalTests.map((item) => (
-              <button
-                className="library-card"
-                key={item.id}
-                onClick={() => onOpen(item.id)}
-              >
-                <span className="category-pill">{item.region}</span>
-                <h2>{item.name}</h2>
-                <p>{item.summary}</p>
-                <span className="card-link">
-                  Começar passo a passo <ArrowRight size={15} />
-                </span>
-              </button>
-            ))}
-          </div>
-          <p className="clinical-note">
-            Lasègue e Slump: explore a demonstração 3D, acompanhe o passo a
-            passo e pratique a interpretação dos achados.
-          </p>
-        </>
+        <ClinicalCatalog onOpen={onOpen} />
       )}
     </div>
   );

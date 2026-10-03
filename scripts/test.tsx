@@ -60,7 +60,18 @@ import {
   smartOpacity,
   isInStudyContext,
 } from "../src/features/viewer/smartLayers";
-import { clinicalTests } from "../src/data/clinicalTests";
+import {
+  clinicalCategories,
+  clinicalKinds,
+  clinicalTests,
+} from "../src/data/clinicalTests";
+import {
+  filterClinicalTests,
+  groupClinicalTests,
+  normalizeSearch,
+  parseClinicalFilters,
+} from "../src/features/study/clinicalCatalog";
+import type { ClinicalFilters } from "../src/features/study/clinicalCatalog";
 import {
   clinicalStages,
   clinicalStagesFor,
@@ -340,6 +351,76 @@ test("Roteiro clínico tolera progresso inválido e resolve anatomia, fontes e c
     </MemoryRouter>,
   );
   assert.ok(invalid.includes("Vamos voltar ao atlas?"));
+});
+
+test("Testes clínicos: categorias, busca sem acento e filtros pela URL", () => {
+  assert.deepEqual(
+    clinicalCategories.map((item) => item.id),
+    ["joelho", "cotovelo", "lombar", "ombro"],
+  );
+  for (const lesson of clinicalTests) {
+    assert.ok(
+      clinicalCategories.some((item) => item.id === lesson.category),
+      `Categoria inválida: ${lesson.id}`,
+    );
+    assert.ok(lesson.kind in clinicalKinds, `Tipo inválido: ${lesson.id}`);
+  }
+  assert.equal(normalizeSearch("  LASÈGUE "), "lasegue");
+  const none: ClinicalFilters = { query: "", category: "", kind: "" };
+  const ids = (filters: Partial<ClinicalFilters>) =>
+    filterClinicalTests(clinicalTests, { ...none, ...filters }).map(
+      (test) => test.id,
+    );
+  assert.deepEqual(ids({}), ["lasegue", "slump"]);
+  assert.deepEqual(ids({ query: "lasegue" }), ["lasegue"]);
+  assert.deepEqual(ids({ query: "slr" }), ["lasegue"]);
+  assert.deepEqual(ids({ query: "lombar neurodinamico" }), [
+    "lasegue",
+    "slump",
+  ]);
+  assert.deepEqual(ids({ query: "slump ombro" }), []);
+  assert.deepEqual(ids({ category: "lombar" }), ["lasegue", "slump"]);
+  assert.deepEqual(ids({ category: "ombro" }), []);
+  assert.deepEqual(ids({ kind: "ligamentar" }), []);
+  const groups = groupClinicalTests(clinicalTests);
+  assert.deepEqual(
+    groups.map((group) => [group.id, group.tests.length]),
+    [
+      ["joelho", 0],
+      ["cotovelo", 0],
+      ["lombar", 2],
+      ["ombro", 0],
+    ],
+  );
+  assert.deepEqual(
+    parseClinicalFilters(
+      new URLSearchParams("q=slump&regiao=lombar&tipo=neurodinamico"),
+    ),
+    { query: "slump", category: "lombar", kind: "neurodinamico" },
+  );
+  assert.deepEqual(
+    parseClinicalFilters(new URLSearchParams("regiao=quadril&tipo=xyz")),
+    none,
+  );
+  const render = (path: string) =>
+    renderToString(
+      <MemoryRouter initialEntries={[path]}>
+        <AtlasApp />
+      </MemoryRouter>,
+    ).replace(/<!--.*?-->/g, "");
+  const all = render("/testes");
+  for (const category of clinicalCategories)
+    assert.ok(all.includes(`id="categoria-${category.id}"`));
+  assert.ok(all.includes("Em breve: os testes de joelho entram aqui."));
+  assert.ok(all.includes("2 testes encontrados"));
+  const knee = render("/testes?regiao=joelho");
+  assert.ok(knee.includes('id="categoria-joelho"'));
+  assert.ok(!knee.includes('id="categoria-lombar"'));
+  const searched = render("/testes?q=slump");
+  assert.ok(searched.includes("Teste de Slump"));
+  assert.ok(!searched.includes("Teste de Lasègue"));
+  assert.ok(!searched.includes('id="categoria-ombro"'));
+  assert.ok(render("/testes?q=inexistente").includes("Nenhum teste encontrado"));
 });
 
 test("Catálogo: IDs únicos, cobertura, campos musculares e relações resolvidas", () => {

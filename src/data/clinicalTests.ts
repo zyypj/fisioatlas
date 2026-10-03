@@ -1,8 +1,59 @@
 import { slumpTest } from "./slumpTest";
+
+export type ClinicalCategory = "joelho" | "cotovelo" | "lombar" | "ombro";
+export type ClinicalKind =
+  | "neurodinamico"
+  | "ligamentar"
+  | "meniscal"
+  | "musculotendineo"
+  | "impacto"
+  | "instabilidade";
+
+export const clinicalCategories: {
+  id: ClinicalCategory;
+  name: string;
+  description: string;
+}[] = [
+  {
+    id: "joelho",
+    name: "Joelho",
+    description:
+      "Ligamentos cruzados e colaterais, meniscos e articulação patelofemoral.",
+  },
+  {
+    id: "cotovelo",
+    name: "Cotovelo",
+    description:
+      "Epicondilites, estabilidade ligamentar e nervos ao redor do cotovelo.",
+  },
+  {
+    id: "lombar",
+    name: "Lombar",
+    description: "Coluna lombossacra e sistema neural do membro inferior.",
+  },
+  {
+    id: "ombro",
+    name: "Ombro",
+    description:
+      "Manguito rotador, impacto subacromial e instabilidade glenoumeral.",
+  },
+];
+
+export const clinicalKinds: Record<ClinicalKind, string> = {
+  neurodinamico: "Neurodinâmico",
+  ligamentar: "Ligamentar",
+  meniscal: "Meniscal",
+  musculotendineo: "Musculotendíneo",
+  impacto: "Impacto",
+  instabilidade: "Instabilidade",
+};
+
 export interface ClinicalTest {
   id: string;
   name: string;
   aliases: string[];
+  category: ClinicalCategory;
+  kind: ClinicalKind;
   region: string;
   summary: string;
   purpose: string;
@@ -31,6 +82,8 @@ export const clinicalTests: ClinicalTest[] = [
     id: "lasegue",
     name: "Teste de Lasègue",
     aliases: ["SLR", "Straight Leg Raise", "Elevação da perna estendida"],
+    category: "lombar",
+    kind: "neurodinamico",
     region: "Coluna lombossacra · membro inferior",
     summary:
       "Elevação passiva da perna com o joelho estendido para investigar sintomas relacionados ao sistema neural lombossacro.",

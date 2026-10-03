@@ -8,6 +8,8 @@ export const slumpTest: ClinicalTest = {
     "Seated Slump Test",
     "Teste neurodinâmico sentado",
   ],
+  category: "lombar",
+  kind: "neurodinamico",
   region: "Coluna · sistema neural do membro inferior",
   summary:
     "Sequência em posição sentada que combina movimentos do tronco, cervical, joelho e tornozelo para investigar a resposta dos sintomas à carga neural.",
