@@ -482,17 +482,19 @@ export function Sources() {
       <div className="source-note">
         <h3>Sobre esta edição</h3>
         <p>
-          {structures.length} fichas de estudo e 10 movimentos animados. A cobertura de malhas é
-          informada em cada ficha. Os modelos representam a anatomia de um
-          adulto do Z-Anatomy, derivado do BodyParts3D; variações individuais e
-          detalhes finos não estão integralmente representados.
+          {structures.length} fichas de estudo e 10 movimentos animados. A
+          cobertura de malhas é informada em cada ficha. Os modelos representam
+          a anatomia de um adulto do Z-Anatomy, derivado do BodyParts3D;
+          variações individuais e detalhes finos não estão integralmente
+          representados.
         </p>
         <p>
-          As animações incluem um modelo mecânico reduzido: equilíbrio músculo–tendão,
-          resposta ligamentar à tração e reserva geométrica de deslizamento neural.
-          O movimento é imposto; as forças não dirigem o esqueleto. Os parâmetros
-          e trajetos são aproximados, sem calibração clínica. Consulte as equações
-          e limitações no painel Simulação dos tecidos.
+          As animações incluem um modelo mecânico reduzido: equilíbrio
+          músculo–tendão, resposta ligamentar à tração e reserva geométrica de
+          deslizamento neural. O movimento é imposto; as forças não dirigem o
+          esqueleto. Os parâmetros e trajetos são aproximados, sem calibração
+          clínica. Consulte as equações e limitações no painel Simulação dos
+          tecidos.
         </p>
         <p>
           Este material apoia o estudo e deve ser confrontado com as referências

@@ -81,9 +81,7 @@ export default function JointLesson() {
     resize();
     // O modelo passa pela mesma compressão Meshopt dos modelos do atlas,
     // então precisa do decodificador, como faz o AtlasEngine.
-    new GLTFLoader()
-      .setMeshoptDecoder(MeshoptDecoder)
-      .load(
+    new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).load(
       "/lessons/synovial.glb",
       (gltf) => {
         if (!alive) {

@@ -1,0 +1,18 @@
+# Dependências e build
+node_modules
+dist
+package-lock.json
+
+# Gerados pelo pipeline de modelos (scripts/*.py e *.mjs reescrevem estes
+# arquivos; formatá-los aqui só criaria diffs que o próximo build desfaz)
+public/models
+public/OMBRO.md
+src/data/structures.json
+src/data/model-manifest.json
+src/data/shoulder.json
+scripts/content/70-ombro-manguito.json
+deploy/fisioatlas.egg.json
+picking-benchmark.json
+
+# Conteúdo anatômico de entrada (dados, não código)
+scripts/content

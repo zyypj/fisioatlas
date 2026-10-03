@@ -2,8 +2,8 @@ import { Pause, Play, RotateCcw, Users } from "lucide-react";
 import type { Movement, Layers, Kind } from "../../types";
 import { byId } from "../../data";
 import { movements } from "../../data/movements";
-import { MechanicsPanel } from './MechanicsPanel';
-import type { MechanicsOptions, MechanicsReport } from './biomechanics';
+import { MechanicsPanel } from "./MechanicsPanel";
+import type { MechanicsOptions, MechanicsReport } from "./biomechanics";
 interface Props {
   movement: Movement;
   playing: boolean;
@@ -23,7 +23,7 @@ interface Props {
   mechanics: MechanicsOptions;
   mechanicsReport: MechanicsReport | null;
   onMechanics: (options: MechanicsOptions) => void;
-  onFocus: (id:string) => void;
+  onFocus: (id: string) => void;
 }
 export function MovementPanel(p: Props) {
   const m = p.movement;
@@ -132,25 +132,58 @@ export function MovementPanel(p: Props) {
       </div>
       <p className="availability">
         Movimento do lado direito. Ative todos os tecidos para explorar sua
-        resposta mecânica no painel abaixo. Ângulo ilustrativo; parâmetros não calibrados para uso clínico.
+        resposta mecânica no painel abaixo. Ângulo ilustrativo; parâmetros não
+        calibrados para uso clínico.
       </p>
       <label className="field-label">
         Estruturas em movimento
-        <select value={p.motionMode} onChange={e => p.onMotionMode(e.target.value as "all" | "bones")}>
+        <select
+          value={p.motionMode}
+          onChange={(e) => p.onMotionMode(e.target.value as "all" | "bones")}
+        >
           <option value="all">Todos os tecidos disponíveis</option>
           <option value="bones">Somente ossos</option>
         </select>
       </label>
-      <MechanicsPanel movement={m} options={p.mechanics} report={p.mechanicsReport} active={p.motionMode==='all'&&!p.agonists} onChange={p.onMechanics} onFocus={p.onFocus} />
-      {p.motionMode === "all" && <fieldset className="motion-layers">
-        <legend>Visibilidade durante o movimento</legend>
-        <p className="availability">As camadas mostram as malhas disponíveis. Há tendões próprios no pé, tornozelo e pescoço; a cobertura tendínea dos demais segmentos ainda é parcial.</p>
-        {Object.entries({ossos:'Ossos',musculos:'Músculos',articulacoes:'Articulações',ligamentos:'Ligamentos',tendoes:'Tendões',nervos:'Nervos'}).map(([kind,label]) => <label key={kind}>
-          <span>{label}</span>
-          <input type="range" aria-label={`${label} no movimento`} min="0" max="100" value={p.layers[kind as Kind]} onChange={e=>p.onLayer(kind as Kind,+e.target.value)} />
-          <output>{p.layers[kind as Kind]}%</output>
-        </label>)}
-      </fieldset>}
+      <MechanicsPanel
+        movement={m}
+        options={p.mechanics}
+        report={p.mechanicsReport}
+        active={p.motionMode === "all" && !p.agonists}
+        onChange={p.onMechanics}
+        onFocus={p.onFocus}
+      />
+      {p.motionMode === "all" && (
+        <fieldset className="motion-layers">
+          <legend>Visibilidade durante o movimento</legend>
+          <p className="availability">
+            As camadas mostram as malhas disponíveis. Há tendões próprios no pé,
+            tornozelo e pescoço; a cobertura tendínea dos demais segmentos ainda
+            é parcial.
+          </p>
+          {Object.entries({
+            ossos: "Ossos",
+            musculos: "Músculos",
+            articulacoes: "Articulações",
+            ligamentos: "Ligamentos",
+            tendoes: "Tendões",
+            nervos: "Nervos",
+          }).map(([kind, label]) => (
+            <label key={kind}>
+              <span>{label}</span>
+              <input
+                type="range"
+                aria-label={`${label} no movimento`}
+                min="0"
+                max="100"
+                value={p.layers[kind as Kind]}
+                onChange={(e) => p.onLayer(kind as Kind, +e.target.value)}
+              />
+              <output>{p.layers[kind as Kind]}%</output>
+            </label>
+          ))}
+        </fieldset>
+      )}
       <div className="roles-box">
         <span>AGONISTA × ANTAGONISTA</span>
         <p>

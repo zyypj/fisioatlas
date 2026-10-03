@@ -6,6 +6,7 @@ entre o arquivo real e a cópia embutida, e resolve o escape do JSON.
 
 Uso: python scripts/make_egg.py
 """
+
 import json
 import sys
 import urllib.request
@@ -185,7 +186,9 @@ def main():
         verificar_imagens(egg)
 
     destino = DEPLOY / "fisioatlas.egg.json"
-    destino.write_text(json.dumps(egg, ensure_ascii=False, indent=4) + "\n", encoding="utf8")
+    destino.write_text(
+        json.dumps(egg, ensure_ascii=False, indent=4) + "\n", encoding="utf8"
+    )
 
     # Confere que o resultado é JSON válido e que o script embutido reconstrói
     # o servidor byte a byte.

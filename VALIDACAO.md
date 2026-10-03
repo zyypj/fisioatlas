@@ -4,15 +4,15 @@ Versão local de produção compilada com `npm run build`, servida em http://127
 
 ## Catálogo após a ampliação
 
-| Sistema | Fichas |
-|---|---|
-| Músculos | 184 |
-| Ligamentos e membranas | 102 |
-| Ossos | 56 |
-| Articulações, discos, lábios, meniscos e bolsas | 39 |
-| Nervos | 35 |
-| Tendões, aponeuroses, retináculos, fáscias e bainhas | 29 |
-| **Total** | **445** |
+| Sistema                                              | Fichas  |
+| ---------------------------------------------------- | ------- |
+| Músculos                                             | 184     |
+| Ligamentos e membranas                               | 102     |
+| Ossos                                                | 56      |
+| Articulações, discos, lábios, meniscos e bolsas      | 39      |
+| Nervos                                               | 35      |
+| Tendões, aponeuroses, retináculos, fáscias e bainhas | 29      |
+| **Total**                                            | **445** |
 
 - 441 das 445 fichas têm malha 3D própria; 1.446 malhas e 1.871.964 triângulos.
 - Modelos comprimidos: 13,95 MiB no total, contra 11,91 MiB da versão anterior, que tinha 220 fichas e 699 malhas. O catálogo dobrou de tamanho e o peso de carregamento subiu cerca de 17%.
@@ -100,6 +100,7 @@ Os ângulos das animações são escolhas de visualização, calibradas para que
 A mecânica dos tecidos continua usando parâmetros genéricos e movimento imposto, conforme documentado em `public/BIOMECANICA.md`. Não houve auditoria clínica independente do conteúdo textual acrescentado.
 
 Os testes visuais usaram dimensões emuladas no navegador, não aparelhos físicos.
+
 # Módulo ombro e manguito rotador — 03/10/2026
 
 - 82 fichas do módulo com representação 3D individual: 67 usam componentes Z-Anatomy e 15 usam complementos topográficos aproximados produzidos no Higgsfield 3D Jutsu. Os complementos foram integrados bilateralmente, com o lado esquerdo espelhado.
@@ -110,7 +111,6 @@ Os testes visuais usaram dimensões emuladas no navegador, não aparelhos físic
 - Higgsfield: projeto `b80fd313-010f-4c2c-bd02-95f9d13b5ffe`, revisão 2. Render conferido e iluminação corrigida. Geometria aproximada, sem segmentação de paciente ou validação clínica; fonte GLB, script e hash registrados em `public/models/provenance.json`.
 - Repetição do integrador preservou 1.543 componentes, sem duplicar malhas. Recompilar o conteúdo preservou as associações Higgsfield, sem export pendente.
 - Documentação de cada ficha, inventário, referências e limites: `public/OMBRO.md`. Conferência estática e testes de software não validam espessuras, trajetos, forças, tensões ou cinemática clínica dos complementos.
-
 
 ## Slump 3D e correção dos músculos da coxa — 03/10/2026
 

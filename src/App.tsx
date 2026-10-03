@@ -35,15 +35,18 @@ import {
 import { movementById, movements, terminology } from "./data/movements";
 import { useStudy } from "./hooks/useStudy";
 import { StructurePanel } from "./components/StructurePanel";
-import { SmartLayersPanel } from './components/SmartLayersPanel';
-import type { RevealMode } from './features/viewer/smartLayers';
+import { SmartLayersPanel } from "./components/SmartLayersPanel";
+import type { RevealMode } from "./features/viewer/smartLayers";
 import { ShoulderModule } from "./features/study/ShoulderModule";
-import { ClinicalTests } from './features/study/ClinicalTests';
-import { clinicalTestById } from './data/clinicalTests';
-import shoulder from './data/shoulder.json';
+import { ClinicalTests } from "./features/study/ClinicalTests";
+import { clinicalTestById } from "./data/clinicalTests";
+import shoulder from "./data/shoulder.json";
 import { MovementPanel } from "./features/movements/MovementPanel";
-import { defaultMechanics } from './features/movements/biomechanics';
-import type { MechanicsOptions, MechanicsReport } from './features/movements/biomechanics';
+import { defaultMechanics } from "./features/movements/biomechanics";
+import type {
+  MechanicsOptions,
+  MechanicsReport,
+} from "./features/movements/biomechanics";
 import {
   Compare,
   Flashcards,
@@ -98,7 +101,7 @@ export function AtlasApp() {
   const invalid =
     (section === "anatomia" && !selected) ||
     (section === "movimentos" && !!parts[1] && !movementById[parts[1]]) ||
-    (section === 'testes' && !!parts[1] && !clinicalTestById[parts[1]]) ||
+    (section === "testes" && !!parts[1] && !clinicalTestById[parts[1]]) ||
     ![
       "atlas",
       "anatomia",
@@ -118,17 +121,29 @@ export function AtlasApp() {
     [searchOpen, setSearchOpen] = useState(false),
     [searchIndex, setSearchIndex] = useState(0),
     searchRef = useRef<HTMLInputElement>(null);
-  const motionLayers: Layers = { ossos: 35, musculos: 15, articulacoes: 35, ligamentos: 100, tendoes: 100, nervos: 100 };
+  const motionLayers: Layers = {
+    ossos: 35,
+    musculos: 15,
+    articulacoes: 35,
+    ligamentos: 100,
+    tendoes: 100,
+    nervos: 100,
+  };
   const [motionMode, setMotionMode] = useState<"all" | "bones">("all");
-  const [mechanics,setMechanics] = useState<MechanicsOptions>({...defaultMechanics});
-  const [mechanicsReport,setMechanicsReport] = useState<MechanicsReport|null>(null);
-  const [layers, setLayers] = useState<Layers>(move ? motionLayers : initialLayers),
+  const [mechanics, setMechanics] = useState<MechanicsOptions>({
+    ...defaultMechanics,
+  });
+  const [mechanicsReport, setMechanicsReport] =
+    useState<MechanicsReport | null>(null);
+  const [layers, setLayers] = useState<Layers>(
+      move ? motionLayers : initialLayers,
+    ),
     [isolated, setIsolated] = useState(false),
     [hidden, setHidden] = useState<string[]>([]),
     [transparent, setTransparent] = useState<string[]>([]);
-  const [reveal,setReveal] = useState<RevealMode>('ghost');
-  const [regionOnly,setRegionOnly] = useState(false);
-  const [occluders,setOccluders] = useState<string[]>([]);
+  const [reveal, setReveal] = useState<RevealMode>("ghost");
+  const [regionOnly, setRegionOnly] = useState(false);
+  const [occluders, setOccluders] = useState<string[]>([]);
   const [menuOpen, setMenuOpen] = useState(false),
     [layersOpen, setLayersOpen] = useState(false),
     [region, setRegion] = useState(""),
@@ -168,7 +183,7 @@ export function AtlasApp() {
     })),
   ];
   function go(path: string) {
-    if (path.startsWith('/movimentos') && !move) {
+    if (path.startsWith("/movimentos") && !move) {
       setLayers(motionLayers);
       setDeepOnly(false);
       setHidden([]);
@@ -570,9 +585,12 @@ export function AtlasApp() {
               </Suspense>
               <div className="atlas-footer">
                 <span>
-                  <span className="status-dot" /> {selected?.modelSource === 'higgsfield-shoulder' ? '3D didático · Higgsfield' : 'Atlas anatômico 3D'} <i />{" "}
-                  {structures.filter((s) => s.modelIds.length).length} fichas
-                  com malha
+                  <span className="status-dot" />{" "}
+                  {selected?.modelSource === "higgsfield-shoulder"
+                    ? "3D didático · Higgsfield"
+                    : "Atlas anatômico 3D"}{" "}
+                  <i /> {structures.filter((s) => s.modelIds.length).length}{" "}
+                  fichas com malha
                 </span>
                 <button onClick={() => go("/fontes")}>
                   Conheça as fontes <ArrowRight size={12} />
@@ -591,10 +609,23 @@ export function AtlasApp() {
                   mechanics={mechanics}
                   mechanicsReport={mechanicsReport}
                   onMechanics={setMechanics}
-                  onFocus={(id)=>{setLayers(l=>({...l,[byId[id].kind]:100}));doCommand('focus-tissue',id);}}
+                  onFocus={(id) => {
+                    setLayers((l) => ({ ...l, [byId[id].kind]: 100 }));
+                    doCommand("focus-tissue", id);
+                  }}
                   layers={layers}
-                  onMotionMode={(mode) => { setMotionMode(mode); setAgonists(false); if (mode === 'all') { setLayers(motionLayers); setDeepOnly(false); } }}
-                  onLayer={(kind, value) => { setDeepOnly(false); setLayers(l => ({ ...l, [kind]: value })); }}
+                  onMotionMode={(mode) => {
+                    setMotionMode(mode);
+                    setAgonists(false);
+                    if (mode === "all") {
+                      setLayers(motionLayers);
+                      setDeepOnly(false);
+                    }
+                  }}
+                  onLayer={(kind, value) => {
+                    setDeepOnly(false);
+                    setLayers((l) => ({ ...l, [kind]: value }));
+                  }}
                   onMovement={chooseMovement}
                   onPlay={() => {
                     setAgonists(false);
@@ -744,24 +775,79 @@ export function AtlasApp() {
           <Sources />
         ) : section === "fundamentos" ? (
           <Foundations onMotion={chooseMovement} />
-        ) : section === 'testes' ? (
-          <ClinicalTests id={parts[1]} onOpen={id=>go('/testes'+(id?'/'+id:''))} onSelect={id=>{select(id);setRegionOnly(true);setReveal('ghost');setLayers({ossos:35,musculos:60,articulacoes:0,ligamentos:0,tendoes:0,nervos:100});setHidden([]);setTransparent([]);}}/>
+        ) : section === "testes" ? (
+          <ClinicalTests
+            id={parts[1]}
+            onOpen={(id) => go("/testes" + (id ? "/" + id : ""))}
+            onSelect={(id) => {
+              select(id);
+              setRegionOnly(true);
+              setReveal("ghost");
+              setLayers({
+                ossos: 35,
+                musculos: 60,
+                articulacoes: 0,
+                ligamentos: 0,
+                tendoes: 0,
+                nervos: 100,
+              });
+              setHidden([]);
+              setTransparent([]);
+            }}
+          />
         ) : section === "ombro" ? (
-          <ShoulderModule onSelect={id => {
-            select(id);
-            const kind=byId[id].kind;
-            setLayers({ ossos: kind === 'ossos' ? 100 : 30, musculos: kind === 'musculos' ? 70 : 12, articulacoes: kind === 'articulacoes' ? 100 : 0, ligamentos: kind === 'ligamentos' ? 100 : 0, tendoes: kind === 'tendoes' ? 100 : 30, nervos: kind === 'nervos' ? 100 : 0 });
-            const moduleIds=new Set(shoulder.groups.flatMap(g=>g.ids));
-            setHidden(structures.filter(s=>!moduleIds.has(s.id)).map(s=>s.id));
-            setTransparent([...shoulder.groups.find(g=>g.title==='Músculos que movimentam e orientam o ombro')!.ids, ...shoulder.groups.flatMap(g=>g.ids).filter(x=>byId[x].kind===kind)].filter(x=>x!==id));
-          }} onMovement={chooseMovement} onExplore={() => {
-            select('supraespinal');
-            setRegion('Ombro');
-            setLayers({ ossos: 35, musculos: 65, articulacoes: 0, ligamentos: 20, tendoes: 100, nervos: 0 });
-            const moduleIds=new Set(shoulder.groups.flatMap(g=>g.ids));
-            setHidden(structures.filter(s=>!moduleIds.has(s.id)).map(s=>s.id));
-            setTransparent(shoulder.groups.find(g=>g.title==='Músculos que movimentam e orientam o ombro')!.ids);
-          }} />
+          <ShoulderModule
+            onSelect={(id) => {
+              select(id);
+              const kind = byId[id].kind;
+              setLayers({
+                ossos: kind === "ossos" ? 100 : 30,
+                musculos: kind === "musculos" ? 70 : 12,
+                articulacoes: kind === "articulacoes" ? 100 : 0,
+                ligamentos: kind === "ligamentos" ? 100 : 0,
+                tendoes: kind === "tendoes" ? 100 : 30,
+                nervos: kind === "nervos" ? 100 : 0,
+              });
+              const moduleIds = new Set(shoulder.groups.flatMap((g) => g.ids));
+              setHidden(
+                structures.filter((s) => !moduleIds.has(s.id)).map((s) => s.id),
+              );
+              setTransparent(
+                [
+                  ...shoulder.groups.find(
+                    (g) =>
+                      g.title === "Músculos que movimentam e orientam o ombro",
+                  )!.ids,
+                  ...shoulder.groups
+                    .flatMap((g) => g.ids)
+                    .filter((x) => byId[x].kind === kind),
+                ].filter((x) => x !== id),
+              );
+            }}
+            onMovement={chooseMovement}
+            onExplore={() => {
+              select("supraespinal");
+              setRegion("Ombro");
+              setLayers({
+                ossos: 35,
+                musculos: 65,
+                articulacoes: 0,
+                ligamentos: 20,
+                tendoes: 100,
+                nervos: 0,
+              });
+              const moduleIds = new Set(shoulder.groups.flatMap((g) => g.ids));
+              setHidden(
+                structures.filter((s) => !moduleIds.has(s.id)).map((s) => s.id),
+              );
+              setTransparent(
+                shoulder.groups.find(
+                  (g) =>
+                    g.title === "Músculos que movimentam e orientam o ombro",
+                )!.ids,
+              );
+            }}
+          />
         ) : section === "regioes" ? (
           <div className="region-page">
             <div className="region-filters">
@@ -828,16 +914,37 @@ export function AtlasApp() {
             </div>
             <p>
               Escolha o que ver. Ajuste a transparência para revelar relações.
-              Para tablets, use Leve em Qualidade 3D: modelos simplificados
-              com transparência suave.
+              Para tablets, use Leve em Qualidade 3D: modelos simplificados com
+              transparência suave.
             </p>
-            <SmartLayersPanel selected={selected} mode={reveal} regionOnly={regionOnly}
-              occluders={occluders} hidden={hidden} transparent={transparent}
-              onMode={setReveal} onRegion={setRegionOnly}
-              onBestView={()=>{doCommand('best-view');setLayersOpen(false);}}
-              onHide={id=>setHidden(h=>[...new Set([...h,id])])}
-              onRestore={id=>{setHidden(h=>h.filter(x=>x!==id));setTransparent(t=>t.filter(x=>x!==id));}}
-              onReset={()=>{setHidden([]);setTransparent([]);setDeepOnly(false);setRegionOnly(false);setReveal('ghost');setLayers(initialLayers);if(selected)setLayers(l=>({...l,[selected.kind]:100}));}}
+            <SmartLayersPanel
+              selected={selected}
+              mode={reveal}
+              regionOnly={regionOnly}
+              occluders={occluders}
+              hidden={hidden}
+              transparent={transparent}
+              onMode={setReveal}
+              onRegion={setRegionOnly}
+              onBestView={() => {
+                doCommand("best-view");
+                setLayersOpen(false);
+              }}
+              onHide={(id) => setHidden((h) => [...new Set([...h, id])])}
+              onRestore={(id) => {
+                setHidden((h) => h.filter((x) => x !== id));
+                setTransparent((t) => t.filter((x) => x !== id));
+              }}
+              onReset={() => {
+                setHidden([]);
+                setTransparent([]);
+                setDeepOnly(false);
+                setRegionOnly(false);
+                setReveal("ghost");
+                setLayers(initialLayers);
+                if (selected)
+                  setLayers((l) => ({ ...l, [selected.kind]: 100 }));
+              }}
             />
             {(Object.keys(labels) as Kind[]).map((kind) => (
               <div className="layer-control" key={kind}>
@@ -1047,17 +1154,17 @@ export function AtlasApp() {
               <p>
                 <b>Arraste</b> para girar · <b>role o mouse</b> para aproximar ·{" "}
                 <b>um clique</b> abre a ficha da estrutura · <b>dois cliques</b>{" "}
-                isolam ela do resto. No teclado: setas sobre o modelo, + / − para
-                zoom e 0 para voltar ao início.
+                isolam ela do resto. No teclado: setas sobre o modelo, + / −
+                para zoom e 0 para voltar ao início.
               </p>
             </div>
             <div className="simple-box">
               <span>NO LABORATÓRIO DE MOVIMENTO</span>
               <p>
-                Em <b>Movimentos</b>, escolha a articulação e o movimento, aperte
-                Reproduzir e arraste a linha do tempo para parar em qualquer
-                ângulo. O botão <b>Ver agonistas e antagonistas</b> pinta de rosa
-                quem produz o movimento e de azul quem o freia.
+                Em <b>Movimentos</b>, escolha a articulação e o movimento,
+                aperte Reproduzir e arraste a linha do tempo para parar em
+                qualquer ângulo. O botão <b>Ver agonistas e antagonistas</b>{" "}
+                pinta de rosa quem produz o movimento e de azul quem o freia.
               </p>
             </div>
             <button

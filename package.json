@@ -12,7 +12,9 @@
     "test": "tsx --tsconfig tsconfig.tests.json --test scripts/test.tsx",
     "models:prepare": "python scripts/rebuild_models.py",
     "models:light": "node scripts/build_light_models.mjs",
-    "format": "prettier --write src scripts/*.{tsx,mjs}"
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:py": "ruff format scripts"
   },
   "dependencies": {
     "lucide-react": "^1.44.0",

@@ -106,7 +106,13 @@ function enviar(req, res, arquivo, status, cache) {
   const comprimir = COMPRIMIVEL.test(tipo) && info.size > 1024;
   const codec =
     comprimir && /\bbr\b/.test(aceita)
-      ? ["br", () => createBrotliCompress({ params: { [zlib.BROTLI_PARAM_QUALITY]: 5 } })]
+      ? [
+          "br",
+          () =>
+            createBrotliCompress({
+              params: { [zlib.BROTLI_PARAM_QUALITY]: 5 },
+            }),
+        ]
       : comprimir && /\bgzip\b/.test(aceita)
         ? ["gzip", () => createGzip({ level: 6 })]
         : null;
@@ -121,7 +127,11 @@ function enviar(req, res, arquivo, status, cache) {
     return createReadStream(arquivo).pipe(codec[1]()).pipe(res);
   }
 
-  res.writeHead(status, { ...base, "Content-Length": info.size, "Accept-Ranges": "bytes" });
+  res.writeHead(status, {
+    ...base,
+    "Content-Length": info.size,
+    "Accept-Ranges": "bytes",
+  });
   if (req.method === "HEAD") return res.end();
   return createReadStream(arquivo).pipe(res);
 }
@@ -183,7 +193,13 @@ const servidor = createServer((req, res) => {
 
   try {
     if (existsSync(arquivo) && statSync(arquivo).isFile())
-      return enviar(req, res, arquivo, 200, cacheDe(new URL(req.url, "http://x").pathname));
+      return enviar(
+        req,
+        res,
+        arquivo,
+        200,
+        cacheDe(new URL(req.url, "http://x").pathname),
+      );
 
     // Rota do BrowserRouter: devolve o index.html para o React resolver.
     // Arquivo com extensão que não existe é 404 de verdade, não rota.
@@ -219,8 +235,12 @@ const servidor = createServer((req, res) => {
 
 if (!existsSync(join(RAIZ, "index.html"))) {
   console.warn(`[FisioAtlas] ATENÇÃO: index.html não encontrado em ${RAIZ}`);
-  console.warn("[FisioAtlas] Envie a pasta dist/ por SFTP ou reinstale com GIT_REPO preenchido.");
-  console.warn("[FisioAtlas] O servidor vai subir e mostrar uma página explicando isso.");
+  console.warn(
+    "[FisioAtlas] Envie a pasta dist/ por SFTP ou reinstale com GIT_REPO preenchido.",
+  );
+  console.warn(
+    "[FisioAtlas] O servidor vai subir e mostrar uma página explicando isso.",
+  );
 }
 
 servidor.listen(PORTA, HOST, () => {

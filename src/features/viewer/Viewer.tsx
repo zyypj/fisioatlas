@@ -14,9 +14,9 @@ import {
 import { AtlasEngine } from "./AtlasEngine";
 import type { ViewerState } from "./AtlasEngine";
 import { byId } from "../../data";
-import type { MechanicsReport } from '../movements/biomechanics';
-import { parseRenderQuality, QUALITY_STORAGE_KEY } from './renderPerformance';
-import type { RenderQuality } from './renderPerformance';
+import type { MechanicsReport } from "../movements/biomechanics";
+import { parseRenderQuality, QUALITY_STORAGE_KEY } from "./renderPerformance";
+import type { RenderQuality } from "./renderPerformance";
 
 interface Props {
   state: ViewerState;
@@ -33,11 +33,14 @@ interface Props {
 }
 export default function Viewer(props: Props) {
   const [quality, setQuality] = useState<RenderQuality>(() => {
-    try { return parseRenderQuality(localStorage.getItem(QUALITY_STORAGE_KEY)); }
-    catch { return 'auto'; }
+    try {
+      return parseRenderQuality(localStorage.getItem(QUALITY_STORAGE_KEY));
+    } catch {
+      return "auto";
+    }
   });
   const qualityRef = useRef(quality);
-  const savedView = useRef<ReturnType<AtlasEngine['captureView']> | null>(null);
+  const savedView = useRef<ReturnType<AtlasEngine["captureView"]> | null>(null);
   const host = useRef<HTMLDivElement>(null),
     engine = useRef<AtlasEngine | null>(null),
     callbacks = useRef(props);
@@ -89,7 +92,8 @@ export default function Viewer(props: Props) {
       );
       engine.current = e;
       void e.load().then(() => {
-        if (engine.current === e && savedView.current) e.restoreView(savedView.current);
+        if (engine.current === e && savedView.current)
+          e.restoreView(savedView.current);
       });
       return () => {
         resize.disconnect();
@@ -173,7 +177,11 @@ export default function Viewer(props: Props) {
             const value = parseRenderQuality(e.target.value);
             qualityRef.current = value;
             setQuality(value);
-            try { localStorage.setItem(QUALITY_STORAGE_KEY, value); } catch { /* Private storage can be unavailable. */ }
+            try {
+              localStorage.setItem(QUALITY_STORAGE_KEY, value);
+            } catch {
+              /* Private storage can be unavailable. */
+            }
           }}
         >
           <option value="auto">Automática</option>

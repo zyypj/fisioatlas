@@ -1,20 +1,71 @@
 """Author-maintained Portuguese learning catalog. Run before prepare_models.py."""
+
 import json, unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'src/data'
+OUT = ROOT / "src/data"
 OUT.mkdir(parents=True, exist_ok=True)
+
+
 def slug(s):
-    return unicodedata.normalize('NFKD',s).encode('ascii','ignore').decode().lower().replace(' ', '-').replace('(', '').replace(')', '')
+    return (
+        unicodedata.normalize("NFKD", s)
+        .encode("ascii", "ignore")
+        .decode()
+        .lower()
+        .replace(" ", "-")
+        .replace("(", "")
+        .replace(")", "")
+    )
+
+
 items = []
-def add(name, english, kind, region, summary, fields, related=(), depth='superficial', sources=()):
-    item = dict(id=slug(name), name=name, english=english, kind=kind, region=region, summary=summary, fields=fields, related=list(related), depth=depth, sources=list(sources or ['openstax-'+ ('muscles' if kind=='musculos' else 'bones' if kind=='ossos' else 'joints')]), aliases=[], modelIds=[])
+
+
+def add(
+    name,
+    english,
+    kind,
+    region,
+    summary,
+    fields,
+    related=(),
+    depth="superficial",
+    sources=(),
+):
+    item = dict(
+        id=slug(name),
+        name=name,
+        english=english,
+        kind=kind,
+        region=region,
+        summary=summary,
+        fields=fields,
+        related=list(related),
+        depth=depth,
+        sources=list(
+            sources
+            or [
+                "openstax-"
+                + (
+                    "muscles"
+                    if kind == "musculos"
+                    else "bones"
+                    if kind == "ossos"
+                    else "joints"
+                )
+            ]
+        ),
+        aliases=[],
+        modelIds=[],
+    )
     items.append(item)
     return item
 
+
 # name | model ontology term | region | origin | insertion | nerve | action | everyday example
-muscles = '''
+muscles = """
 Deltoide|deltoid|Ombro|Terço lateral da clavícula, acrômio e espinha da escápula.|Tuberosidade deltoidea do úmero.|Nervo axilar (C5–C6).|Abduz o braço; fibras anteriores auxiliam flexão e rotação medial; posteriores, extensão e rotação lateral.|Levantar o braço para alcançar uma prateleira lateral.
 Supraespinal|supraspinatus|Ombro|Fossa supraespinal da escápula.|Faceta superior do tubérculo maior do úmero.|Nervo supraescapular (C5–C6).|Auxilia a abdução desde seu início e estabiliza a cabeça do úmero.|Começar a afastar o braço do corpo.
 Infraespinal|infraspinatus|Ombro|Fossa infraespinal da escápula.|Faceta média do tubérculo maior do úmero.|Nervo supraescapular (C5–C6).|Rotação lateral do braço e estabilização glenoumeral.|Girar o braço para fora com o cotovelo junto ao tronco.
@@ -80,13 +131,43 @@ Fibular curto|peroneus brevis|Perna|Face lateral distal da fíbula.|Tuberosidade
 Extensor longo dos dedos|extensor digitorum longus|Perna|Côndilo lateral da tíbia, fíbula anterior e membrana interóssea.|Falanges médias e distais dos dedos 2–5 pelas expansões extensoras.|Nervo fibular profundo (L5–S1).|Extensão dos dedos e dorsiflexão.|Levantar os dedos durante o passo.
 Flexor longo do hálux|flexor hallucis longus|Perna|Face posterior distal da fíbula e membrana interóssea.|Base plantar da falange distal do hálux.|Nervo tibial (S2–S3).|Flexão do hálux e auxílio na flexão plantar.|Impulsionar o corpo pelo dedão ao caminhar.
 Poplíteo|popliteus|Joelho|Côndilo lateral do fêmur e menisco lateral.|Face posterior da tíbia, acima da linha do sóleo.|Nervo tibial (L4–S1).|Auxilia o desbloqueio do joelho: rotação medial da tíbia livre ou lateral do fêmur apoiado.|Iniciar a flexão de um joelho estendido.
-'''
-deep = ['Supraespinal','Infraespinal','Subescapular','Redondo menor','Braquial','Coracobraquial','Pronador quadrado','Supinador','Flexor profundo dos dedos','Peitoral menor','Romboide maior','Transverso do abdômen','Quadrado lombar','Glúteo mínimo','Psoas maior','Ilíaco','Piriforme','Vasto intermédio','Tibial posterior','Flexor longo do hálux','Poplíteo']
+"""
+deep = [
+    "Supraespinal",
+    "Infraespinal",
+    "Subescapular",
+    "Redondo menor",
+    "Braquial",
+    "Coracobraquial",
+    "Pronador quadrado",
+    "Supinador",
+    "Flexor profundo dos dedos",
+    "Peitoral menor",
+    "Romboide maior",
+    "Transverso do abdômen",
+    "Quadrado lombar",
+    "Glúteo mínimo",
+    "Psoas maior",
+    "Ilíaco",
+    "Piriforme",
+    "Vasto intermédio",
+    "Tibial posterior",
+    "Flexor longo do hálux",
+    "Poplíteo",
+]
 for line in muscles.strip().splitlines():
-    n,e,r,o,i,v,a,p = line.split('|')
-    add(n,e,'musculos',r,a,{'Origem':o,'Inserção':i,'Inervação':v,'Ação':a,'Na prática':p},depth='profunda' if n in deep else 'superficial')
+    n, e, r, o, i, v, a, p = line.split("|")
+    add(
+        n,
+        e,
+        "musculos",
+        r,
+        a,
+        {"Origem": o, "Inserção": i, "Inervação": v, "Ação": a, "Na prática": p},
+        depth="profunda" if n in deep else "superficial",
+    )
 
-bones='''
+bones = """
 Frontal|frontal bone|Cabeça e pescoço|Plano e pneumático|Forma a testa, parte do teto das órbitas e da fossa anterior do crânio.|Margem supraorbital; glabela; seio frontal.
 Parietal|parietal bone|Cabeça e pescoço|Plano|Compõe a região superior e lateral do neurocrânio.|Linhas temporais; suturas coronal, sagital e lambdoide.
 Temporal|temporal bone|Cabeça e pescoço|Irregular e pneumático|Participa da base do crânio, abriga estruturas da audição e se articula com a mandíbula.|Processos mastoide e estiloide; fossa mandibular; meato acústico externo.
@@ -135,12 +216,19 @@ Cuneiforme intermédio|intermediate cuneiform|Pé|Curto|Osso do tarso alinhado a
 Cuneiforme lateral|lateral cuneiform|Pé|Curto|Osso do tarso alinhado ao terceiro metatarsal.|Superfícies articulares.
 Metatarsais|metatarsal bone|Pé|Longos|Cinco ossos conectam o tarso aos dedos e ajudam a formar os arcos.|Bases; corpos; cabeças; tuberosidade do quinto metatarsal.
 Falanges do pé|phalanx of foot|Pé|Longos|Formam os dedos; o hálux possui duas, e os demais, três.|Bases; corpos; cabeças.
-'''
+"""
 for line in bones.strip().splitlines():
-    n,e,r,t,s,p=line.split('|')
-    add(n,e,'ossos',r,s,{'Tipo':t,'Localização':r,'Principais partes':p,'Função':s})
+    n, e, r, t, s, p = line.split("|")
+    add(
+        n,
+        e,
+        "ossos",
+        r,
+        s,
+        {"Tipo": t, "Localização": r, "Principais partes": p, "Função": s},
+    )
 
-joints='''
+joints = """
 Glenoumeral|Ombro|Sinovial esferóidea|Cabeça do úmero e cavidade glenoidal da escápula.|Flexão, extensão, abdução, adução e rotações.|Manguito rotador, lábio glenoidal, cápsula e ligamentos glenoumerais.|Permite posicionar a mão no espaço; mobilidade depende também da escápula.|umero,escapula,deltoide,supraespinal,infraespinal,subescapular,redondo-menor
 Acromioclavicular|Ombro|Sinovial plana|Acrômio e extremidade acromial da clavícula.|Pequenos deslizamentos e rotações associados à escápula.|Ligamentos acromioclavicular e coracoclavicular.|Participa da elevação completa do braço.|escapula,clavicula
 Esternoclavicular|Ombro|Sinovial selar com disco articular|Clavícula, manúbrio e primeira cartilagem costal.|Elevação, depressão, protração, retração e rotação da clavícula.|Ligamentos esternoclaviculares, interclavicular e costoclavicular.|Conexão articular óssea do membro superior com o esqueleto axial.|clavicula,esterno
@@ -162,12 +250,26 @@ Temporomandibular|Cabeça e pescoço|Sinovial com disco; rotação e translaçã
 Atlanto-occipital|Cabeça e pescoço|Sinovial elipsóidea|Côndilos occipitais e facetas superiores do atlas.|Principalmente flexão e extensão; pequena inclinação lateral.|Membranas atlanto-occipitais e ligamentos craniocervicais.|Participa do gesto de concordar com a cabeça.|occipital,atlas
 Atlantoaxial|Cabeça e pescoço|Complexo sinovial; mediana trocoide|Atlas e áxis.|Principalmente rotação cervical.|Ligamento transverso do atlas e ligamentos alares.|Participa do gesto de negar com a cabeça.|atlas,axis
 Intervertebrais|Coluna vertebral|Sínfises entre corpos e sinoviais planas entre processos articulares|Corpos e processos articulares de vértebras adjacentes.|Flexão, extensão, inclinação e rotação, variáveis por região.|Discos, cápsulas e ligamentos vertebrais.|Distribuem carga e permitem mobilidade segmentar.|vertebras-cervicais,vertebras-toracicas,vertebras-lombares
-'''
+"""
 for line in joints.strip().splitlines():
-    n,r,t,s,m,st,f,rel=line.split('|')
-    add(n,'','articulacoes',r,f,{'Classificação':t,'Superfícies articulares':s,'Movimentos':m,'Estabilizadores':st,'Na prática':f},rel.split(','))
+    n, r, t, s, m, st, f, rel = line.split("|")
+    add(
+        n,
+        "",
+        "articulacoes",
+        r,
+        f,
+        {
+            "Classificação": t,
+            "Superfícies articulares": s,
+            "Movimentos": m,
+            "Estabilizadores": st,
+            "Na prática": f,
+        },
+        rel.split(","),
+    )
 
-extras='''
+extras = """
 Ligamento cruzado anterior|anterior cruciate ligament|ligamentos|Joelho|Limita o deslocamento anterior da tíbia em relação ao fêmur e contribui para a estabilidade rotacional.|joelho,femur,tibia
 Ligamento cruzado posterior|posterior cruciate ligament|ligamentos|Joelho|Limita o deslocamento posterior da tíbia em relação ao fêmur.|joelho,femur,tibia
 Ligamento colateral tibial|tibial collateral ligament|ligamentos|Joelho|Estabilizador medial que resiste ao estresse em valgo; sua parte profunda se relaciona ao menisco medial.|joelho,menisco-medial
@@ -194,37 +296,101 @@ Nervo fibular comum|common fibular nerve|nervos|Perna|Contorna o colo da fíbula
 Nervo glúteo superior|superior gluteal nerve|nervos|Quadril|Inerva glúteos médio e mínimo e tensor da fáscia lata.|gluteo-medio,gluteo-minimo,tensor-da-fascia-lata
 Nervo glúteo inferior|inferior gluteal nerve|nervos|Quadril|Inerva o glúteo máximo, importante na extensão potente do quadril.|gluteo-maximo
 Plexo braquial|brachial plexus|nervos|Ombro|Rede formada principalmente pelos ramos anteriores C5–T1, que origina nervos do membro superior.|nervo-axilar,nervo-radial,nervo-mediano,nervo-ulnar,nervo-musculocutaneo
-'''
+"""
 for line in extras.strip().splitlines():
-    n,e,k,r,s,rel=line.split('|')
-    add(n,e,k,r,s,{'Localização':r,'Função':s},rel.split(','),sources=['teach-nerves' if k=='nervos' else 'openstax-joints'])
+    n, e, k, r, s, rel = line.split("|")
+    add(
+        n,
+        e,
+        k,
+        r,
+        s,
+        {"Localização": r, "Função": s},
+        rel.split(","),
+        sources=["teach-nerves" if k == "nervos" else "openstax-joints"],
+    )
 
 # Explicit relationships are navigable IDs, never guessed anatomical attachment coordinates.
-byid={x['id']:x for x in items}
-assert len(byid)==len(items), 'Duplicate structure IDs'
+byid = {x["id"]: x for x in items}
+assert len(byid) == len(items), "Duplicate structure IDs"
 for a in items:
-    if a['kind']=='musculos':
-        a['fields']['Localização']=a['region']
-        a['fields']['Camada de estudo']='Profunda' if a['depth']=='profunda' else 'Superficial'
+    if a["kind"] == "musculos":
+        a["fields"]["Localização"] = a["region"]
+        a["fields"]["Camada de estudo"] = (
+            "Profunda" if a["depth"] == "profunda" else "Superficial"
+        )
         for b in items:
-            if b['kind']=='articulacoes' and a['id'] in b['related']: a['related'].append(b['id'])
+            if b["kind"] == "articulacoes" and a["id"] in b["related"]:
+                a["related"].append(b["id"])
         for b in items:
-            if b['kind']=='nervos' and a['id'] in b['related']: a['related'].append(b['id'])
-    a['related']=list(dict.fromkeys(a['related']))
-byid['supraespinal']['related'] += ['escapula','umero','deltoide','infraespinal','subescapular','redondo-menor']
-byid['supraespinal']['fields'].update({'Grupo muscular':'Manguito rotador.','Plano e eixo':'Abdução: plano frontal e eixo ântero-posterior.','Sinergistas':'Deltoide na abdução; demais músculos do manguito na estabilização.','Antagonistas':'Adutores do ombro, como peitoral maior e latíssimo do dorso.','Observação funcional':'Atua ao longo da abdução, não apenas nos primeiros graus. O manguito ajuda a manter a cabeça umeral centrada.','Exemplo de exercício':'Elevação do braço no plano da escápula, em contexto didático.','Palpação básica':'A fossa supraespinal situa-se acima da espinha da escápula; o músculo é profundo ao trapézio. Palpação guiada em aula.'})
-byid['biceps-braquial']['fields'].update({'Grupo muscular':'Compartimento anterior do braço.','Plano e eixo':'Flexão: plano sagital e eixo transversal. Supinação: plano transversal e eixo longitudinal do antebraço.','Antagonistas':'Tríceps na flexão; pronadores na supinação.','Sinergistas':'Braquial e braquiorradial na flexão; supinador na supinação.','Exemplo de exercício':'Rosca com antebraço supinado, como exemplo de análise do movimento.','Palpação básica':'Ventre muscular anterior do braço durante flexão suave do cotovelo.','Observação funcional':'A contribuição para flexão depende da posição do antebraço e da carga.'})
-byid['biceps-braquial']['related'] += ['escapula','radio','braquial','triceps-braquial']
-byid['femur']['fields']['Articula-se com']='Osso do quadril (acetábulo), tíbia e patela.'
-byid['femur']['related'] += ['coxofemoral','joelho','patela','tibia','osso-do-quadril']
-byid['ligamento-cruzado-anterior']['aliases']=['LCA']
-byid['ligamento-cruzado-posterior']['aliases']=['LCP']
-byid['tendao-calcaneo']['aliases']=['Aquiles','tendão de Aquiles']
-byid['supraespinal']['aliases']=['supraespinhoso','supraspinatus']
-byid['latissimo-do-dorso']['aliases']=['grande dorsal']
-byid['ulna']['aliases']=['cúbito']
-byid['fibula']['aliases']=['perônio']
+            if b["kind"] == "nervos" and a["id"] in b["related"]:
+                a["related"].append(b["id"])
+    a["related"] = list(dict.fromkeys(a["related"]))
+byid["supraespinal"]["related"] += [
+    "escapula",
+    "umero",
+    "deltoide",
+    "infraespinal",
+    "subescapular",
+    "redondo-menor",
+]
+byid["supraespinal"]["fields"].update(
+    {
+        "Grupo muscular": "Manguito rotador.",
+        "Plano e eixo": "Abdução: plano frontal e eixo ântero-posterior.",
+        "Sinergistas": "Deltoide na abdução; demais músculos do manguito na estabilização.",
+        "Antagonistas": "Adutores do ombro, como peitoral maior e latíssimo do dorso.",
+        "Observação funcional": "Atua ao longo da abdução, não apenas nos primeiros graus. O manguito ajuda a manter a cabeça umeral centrada.",
+        "Exemplo de exercício": "Elevação do braço no plano da escápula, em contexto didático.",
+        "Palpação básica": "A fossa supraespinal situa-se acima da espinha da escápula; o músculo é profundo ao trapézio. Palpação guiada em aula.",
+    }
+)
+byid["biceps-braquial"]["fields"].update(
+    {
+        "Grupo muscular": "Compartimento anterior do braço.",
+        "Plano e eixo": "Flexão: plano sagital e eixo transversal. Supinação: plano transversal e eixo longitudinal do antebraço.",
+        "Antagonistas": "Tríceps na flexão; pronadores na supinação.",
+        "Sinergistas": "Braquial e braquiorradial na flexão; supinador na supinação.",
+        "Exemplo de exercício": "Rosca com antebraço supinado, como exemplo de análise do movimento.",
+        "Palpação básica": "Ventre muscular anterior do braço durante flexão suave do cotovelo.",
+        "Observação funcional": "A contribuição para flexão depende da posição do antebraço e da carga.",
+    }
+)
+byid["biceps-braquial"]["related"] += [
+    "escapula",
+    "radio",
+    "braquial",
+    "triceps-braquial",
+]
+byid["femur"]["fields"]["Articula-se com"] = (
+    "Osso do quadril (acetábulo), tíbia e patela."
+)
+byid["femur"]["related"] += [
+    "coxofemoral",
+    "joelho",
+    "patela",
+    "tibia",
+    "osso-do-quadril",
+]
+byid["ligamento-cruzado-anterior"]["aliases"] = ["LCA"]
+byid["ligamento-cruzado-posterior"]["aliases"] = ["LCP"]
+byid["tendao-calcaneo"]["aliases"] = ["Aquiles", "tendão de Aquiles"]
+byid["supraespinal"]["aliases"] = ["supraespinhoso", "supraspinatus"]
+byid["latissimo-do-dorso"]["aliases"] = ["grande dorsal"]
+byid["ulna"]["aliases"] = ["cúbito"]
+byid["fibula"]["aliases"] = ["perônio"]
 for a in items:
-    for rel in a['related']: assert rel in byid, (a['id'],rel)
-(OUT/'structures.json').write_text(json.dumps(items,ensure_ascii=False,indent=2),encoding='utf8')
-print(f'{len(items)} fichas: '+str({k:sum(x['kind']==k for x in items) for k in sorted(set(x['kind'] for x in items))}))
+    for rel in a["related"]:
+        assert rel in byid, (a["id"], rel)
+(OUT / "structures.json").write_text(
+    json.dumps(items, ensure_ascii=False, indent=2), encoding="utf8"
+)
+print(
+    f"{len(items)} fichas: "
+    + str(
+        {
+            k: sum(x["kind"] == k for x in items)
+            for k in sorted(set(x["kind"] for x in items))
+        }
+    )
+)

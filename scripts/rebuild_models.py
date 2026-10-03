@@ -1,22 +1,56 @@
 """Rebuild the current six-system atlas from locally downloaded Z-Anatomy."""
+
 from pathlib import Path
 import shutil, subprocess
-root=Path(__file__).resolve().parents[1]
-blender=shutil.which('blender')
+
+root = Path(__file__).resolve().parents[1]
+blender = shutil.which("blender")
 if not blender:
-    candidates=list((root.parent/'scratch/blender').glob('*/blender.exe'))
-    if candidates:blender=str(candidates[0])
-if not blender:raise SystemExit('Instale Blender 4.5 LTS e adicione blender ao PATH.')
-if not (root.parent/'scratch/z-anatomy/Z-Anatomy/Startup.blend').exists():
-    raise SystemExit('Extraia o ZIP oficial Z-Anatomy em ../scratch/z-anatomy/ antes de preparar.')
+    candidates = list((root.parent / "scratch/blender").glob("*/blender.exe"))
+    if candidates:
+        blender = str(candidates[0])
+if not blender:
+    raise SystemExit("Instale Blender 4.5 LTS e adicione blender ao PATH.")
+if not (root.parent / "scratch/z-anatomy/Z-Anatomy/Startup.blend").exists():
+    raise SystemExit(
+        "Extraia o ZIP oficial Z-Anatomy em ../scratch/z-anatomy/ antes de preparar."
+    )
 import sys
+
 for command in [
-    [blender,'--background','--factory-startup','--python-exit-code','1','--python','scripts/inspect_z_anatomy.py'],
-    [sys.executable,'scripts/build_expansion.py'],
-    [blender,'--background','--factory-startup','--python-exit-code','1','--python','scripts/export_z_anatomy.py'],
-    [shutil.which('node') or 'node','scripts/optimize_models.mjs'],
-]:subprocess.run(command,cwd=root,check=True)
-if (root/'public/models/shoulder-higgsfield-source.glb').exists():
-    subprocess.run([shutil.which('node') or 'node','scripts/integrate_shoulder.mjs'],cwd=root,check=True)
-    subprocess.run([sys.executable,'scripts/document_shoulder.py'],cwd=root,check=True)
-subprocess.run([shutil.which('node') or 'node','scripts/build_light_models.mjs'],cwd=root,check=True)
+    [
+        blender,
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "scripts/inspect_z_anatomy.py",
+    ],
+    [sys.executable, "scripts/build_expansion.py"],
+    [
+        blender,
+        "--background",
+        "--factory-startup",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "scripts/export_z_anatomy.py",
+    ],
+    [shutil.which("node") or "node", "scripts/optimize_models.mjs"],
+]:
+    subprocess.run(command, cwd=root, check=True)
+if (root / "public/models/shoulder-higgsfield-source.glb").exists():
+    subprocess.run(
+        [shutil.which("node") or "node", "scripts/integrate_shoulder.mjs"],
+        cwd=root,
+        check=True,
+    )
+    subprocess.run(
+        [sys.executable, "scripts/document_shoulder.py"], cwd=root, check=True
+    )
+subprocess.run(
+    [shutil.which("node") or "node", "scripts/build_light_models.mjs"],
+    cwd=root,
+    check=True,
+)

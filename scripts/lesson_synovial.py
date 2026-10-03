@@ -16,6 +16,7 @@ pretende representar um joelho, um ombro ou o exame de alguém.
 Os nomes das malhas começam com Osso, Cartilagem, Capsula, Membrana e
 Ligamento porque JointLesson.tsx seleciona as peças por esse prefixo.
 """
+
 import math
 from pathlib import Path
 
@@ -25,9 +26,9 @@ import bpy
 RAIZ = Path(__file__).resolve().parents[1]
 DESTINO = RAIZ / "public/lessons/synovial.glb"
 
-SEGMENTOS = 96            # divisões ao redor do eixo
-ALTURA = 0.16             # metade da altura total, para bater com a câmera da cena
-ABERTURA = math.radians(120)   # quanto da cápsula fica aberto, na frente
+SEGMENTOS = 96  # divisões ao redor do eixo
+ALTURA = 0.16  # metade da altura total, para bater com a câmera da cena
+ABERTURA = math.radians(120)  # quanto da cápsula fica aberto, na frente
 
 # Cores de tecido, escolhidas para leitura didática e não para realismo.
 CORES = {
@@ -62,7 +63,9 @@ def revolver(nome, perfil, a0=0.0, a1=2 * math.pi, fechado=True, espessura=0.0):
     """
     bm = bmesh.new()
     n = len(perfil)
-    passos = SEGMENTOS if fechado else max(8, int(SEGMENTOS * (a1 - a0) / (2 * math.pi)))
+    passos = (
+        SEGMENTOS if fechado else max(8, int(SEGMENTOS * (a1 - a0) / (2 * math.pi)))
+    )
     polos = {}
     aneis = []
     for i in range(passos if fechado else passos + 1):
@@ -176,12 +179,18 @@ def construir():
     revolver(
         "Cartilagem_superior",
         domo(0.0625, 0.0295, 0.0245, 18),
-        fechado=False, a0=0.0, a1=2 * math.pi, espessura=0.005,
+        fechado=False,
+        a0=0.0,
+        a1=2 * math.pi,
+        espessura=0.005,
     )
     revolver(
         "Cartilagem_inferior",
         concavidade(0.0645, -0.0075, 0.0125, 16),
-        fechado=False, a0=0.0, a1=2 * math.pi, espessura=0.005,
+        fechado=False,
+        a0=0.0,
+        a1=2 * math.pi,
+        espessura=0.005,
     )
 
     # --- cápsula e membrana sinovial: cascas abertas na frente ---
@@ -193,11 +202,23 @@ def construir():
         + arco(0.080, 0.000, 0.072, -0.044, 8)
         + arco(0.072, -0.044, 0.040, -0.082, 10, curva=0.006)
     )
-    revolver("Capsula_fibrosa_em_corte", capsula, a0=inicio, a1=fim,
-             fechado=False, espessura=0.0045)
+    revolver(
+        "Capsula_fibrosa_em_corte",
+        capsula,
+        a0=inicio,
+        a1=fim,
+        fechado=False,
+        espessura=0.0045,
+    )
     sinovial = [(r - 0.007, z) for r, z in capsula]
-    revolver("Membrana_sinovial_em_corte", sinovial, a0=inicio, a1=fim,
-             fechado=False, espessura=0.002)
+    revolver(
+        "Membrana_sinovial_em_corte",
+        sinovial,
+        a0=inicio,
+        a1=fim,
+        fechado=False,
+        espessura=0.002,
+    )
 
     # --- ligamentos colaterais: duas tiras laterais, por fora da cápsula ---
     for indice, angulo in enumerate((0.0, math.pi)):
@@ -207,7 +228,7 @@ def construir():
             + arco(0.013, -0.030, 0.008, -0.086, 8)
         )
         obj = revolver(f"Ligamento{'' if indice == 0 else '.001'}", tira)
-        obj.scale = (1.0, 0.55, 1.0)          # achata a tira
+        obj.scale = (1.0, 0.55, 1.0)  # achata a tira
         obj.location = (0.086 * math.cos(angulo), 0.086 * math.sin(angulo), 0.0)
         obj.rotation_euler = (0.0, 0.0, angulo)
 

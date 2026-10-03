@@ -57,13 +57,35 @@ export function onAnimatedSide(rig: AnimationRig, centerX: number) {
   return rig.bilateral || centerX < 0 || Math.abs(centerX) < MEIO;
 }
 
-const CADEIA_SUPERIOR = ["Ombro", "Braço", "Cotovelo", "Antebraço", "Punho", "Mão"];
-const CADEIA_INFERIOR = ["Pelve", "Quadril", "Coxa", "Joelho", "Perna", "Tornozelo", "Pé"];
+const CADEIA_SUPERIOR = [
+  "Ombro",
+  "Braço",
+  "Cotovelo",
+  "Antebraço",
+  "Punho",
+  "Mão",
+];
+const CADEIA_INFERIOR = [
+  "Pelve",
+  "Quadril",
+  "Coxa",
+  "Joelho",
+  "Perna",
+  "Tornozelo",
+  "Pé",
+];
 // A cadeia axial acompanha o que o rig da coluna de fato gira: tudo acima do
 // sacro, incluindo os membros superiores, que vão junto com o tronco.
 const CADEIA_AXIAL = [
-  "Coluna vertebral", "Tronco", "Cabeça e pescoço",
-  "Ombro", "Braço", "Cotovelo", "Antebraço", "Punho", "Mão",
+  "Coluna vertebral",
+  "Tronco",
+  "Cabeça e pescoço",
+  "Ombro",
+  "Braço",
+  "Cotovelo",
+  "Antebraço",
+  "Punho",
+  "Mão",
 ];
 const CADEIA_CERVICAL = ["Cabeça e pescoço"];
 
@@ -284,7 +306,11 @@ export const rigs: Record<Animation, AnimationRig> = {
     sign: -1,
     regions: ["Cabeça e pescoço"],
     chain: "cervical",
-    spanning: ["ligamento-nucal", "ligamentos-amarelos", "ligamento-longitudinal-anterior"],
+    spanning: [
+      "ligamento-nucal",
+      "ligamentos-amarelos",
+      "ligamento-longitudinal-anterior",
+    ],
     view: "lateral-direita",
   },
   cervicalrot: {
@@ -321,7 +347,10 @@ export const rigs: Record<Animation, AnimationRig> = {
     regions: [],
     include: ["mandibula", "hioide"],
     chain: "axial",
-    spanning: ["ligamento-temporomandibular-lateral", "ligamento-esfenomandibular"],
+    spanning: [
+      "ligamento-temporomandibular-lateral",
+      "ligamento-esfenomandibular",
+    ],
     view: "lateral-direita",
   },
   spine: {
@@ -331,7 +360,17 @@ export const rigs: Record<Animation, AnimationRig> = {
     pivot: "superior",
     axis: [1, 0, 0],
     sign: -1,
-    regions: ["Coluna vertebral", "Tronco", "Cabeça e pescoço", "Ombro", "Braço", "Cotovelo", "Antebraço", "Punho", "Mão"],
+    regions: [
+      "Coluna vertebral",
+      "Tronco",
+      "Cabeça e pescoço",
+      "Ombro",
+      "Braço",
+      "Cotovelo",
+      "Antebraço",
+      "Punho",
+      "Mão",
+    ],
     chain: "axial",
     spanning: [
       "ligamento-longitudinal-anterior",
@@ -349,7 +388,17 @@ export const rigs: Record<Animation, AnimationRig> = {
     pivot: "superior",
     axis: [0, 1, 0],
     sign: 1,
-    regions: ["Coluna vertebral", "Tronco", "Cabeça e pescoço", "Ombro", "Braço", "Cotovelo", "Antebraço", "Punho", "Mão"],
+    regions: [
+      "Coluna vertebral",
+      "Tronco",
+      "Cabeça e pescoço",
+      "Ombro",
+      "Braço",
+      "Cotovelo",
+      "Antebraço",
+      "Punho",
+      "Mão",
+    ],
     chain: "axial",
     spanning: ["ligamentos-interespinais", "ligamentos-intertransversarios"],
     view: "anterior",
@@ -361,7 +410,17 @@ export const rigs: Record<Animation, AnimationRig> = {
     pivot: "superior",
     axis: [0, 0, -1],
     sign: 1,
-    regions: ["Coluna vertebral", "Tronco", "Cabeça e pescoço", "Ombro", "Braço", "Cotovelo", "Antebraço", "Punho", "Mão"],
+    regions: [
+      "Coluna vertebral",
+      "Tronco",
+      "Cabeça e pescoço",
+      "Ombro",
+      "Braço",
+      "Cotovelo",
+      "Antebraço",
+      "Punho",
+      "Mão",
+    ],
     chain: "axial",
     spanning: ["ligamentos-intertransversarios", "ligamento-iliolombar"],
     view: "anterior",

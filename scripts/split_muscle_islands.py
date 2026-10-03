@@ -11,6 +11,7 @@ metatarsal) e dá a cada uma o nome anatômico correto.
 Gera scratch/z-anatomy/Z-Anatomy/Startup-split.blend e atualiza scratch/z-inventory.json.
 Malhas fundidas numa ilha só (interósseos palmares, lumbricais do pé) NÃO são tocadas.
 """
+
 import bpy, bmesh, json
 from pathlib import Path
 from mathutils import Vector
@@ -24,10 +25,30 @@ ORD = ["First", "Second", "Third", "Fourth", "Fifth"]
 
 # grupo -> (n_esperado, eixo_bones, template_nome)
 GROUPS = [
-    ("Dorsal interossei muscles of hand", 4, ("First metacarpal bone", "Fifth metacarpal bone"), "{ord} dorsal interosseous of hand"),
-    ("Lumbrical muscles of hand", 4, ("First metacarpal bone", "Fifth metacarpal bone"), "{ord} lumbrical of hand"),
-    ("Dorsal interossei muscles of foot", 4, ("First metatarsal bone", "Fifth metatarsal bone"), "{ord} dorsal interosseous of foot"),
-    ("Plantar interossei muscles", 3, ("First metatarsal bone", "Fifth metatarsal bone"), "{ord} plantar interosseous"),
+    (
+        "Dorsal interossei muscles of hand",
+        4,
+        ("First metacarpal bone", "Fifth metacarpal bone"),
+        "{ord} dorsal interosseous of hand",
+    ),
+    (
+        "Lumbrical muscles of hand",
+        4,
+        ("First metacarpal bone", "Fifth metacarpal bone"),
+        "{ord} lumbrical of hand",
+    ),
+    (
+        "Dorsal interossei muscles of foot",
+        4,
+        ("First metatarsal bone", "Fifth metatarsal bone"),
+        "{ord} dorsal interosseous of foot",
+    ),
+    (
+        "Plantar interossei muscles",
+        3,
+        ("First metatarsal bone", "Fifth metatarsal bone"),
+        "{ord} plantar interosseous",
+    ),
 ]
 
 
@@ -37,17 +58,22 @@ def centro(obj):
 
 def ilhas_bmesh(me):
     """Retorna listas de índices de vértice, uma por componente conexo (por arestas)."""
-    bm = bmesh.new(); bm.from_mesh(me); bm.verts.ensure_lookup_table()
-    visto = set(); comps = []
+    bm = bmesh.new()
+    bm.from_mesh(me)
+    bm.verts.ensure_lookup_table()
+    visto = set()
+    comps = []
     for v in bm.verts:
         if v.index in visto:
             continue
-        pilha = [v]; comp = []
+        pilha = [v]
+        comp = []
         while pilha:
             x = pilha.pop()
             if x.index in visto:
                 continue
-            visto.add(x.index); comp.append(x.index)
+            visto.add(x.index)
+            comp.append(x.index)
             for e in x.link_edges:
                 o = e.other_vert(x)
                 if o.index not in visto:
@@ -78,14 +104,18 @@ def nova_malha(nome, idxs, coords, faces, matriz, colecoes):
 def um_lado(base, comps, coords, faces, eixo, template, side):
     obj = bpy.data.objects.get(f"{base}.{side}")
     if not obj:
-        print(f"  MISSING {base}.{side}"); return []
+        print(f"  MISSING {base}.{side}")
+        return []
     matriz = obj.matrix_world.copy()
     colecoes = list(obj.users_collection)
-    pecas = [nova_malha(f"tmp_{side}_{i}", c, coords, faces, matriz, colecoes)
-             for i, c in enumerate(comps)]
+    pecas = [
+        nova_malha(f"tmp_{side}_{i}", c, coords, faces, matriz, colecoes)
+        for i, c in enumerate(comps)
+    ]
     a = bpy.data.objects.get(f"{eixo[0]}.{side}")
     b = bpy.data.objects.get(f"{eixo[1]}.{side}")
-    axis = (centro(b) - centro(a)); axis.normalize()
+    axis = centro(b) - centro(a)
+    axis.normalize()
     origem = centro(a)
     pecas.sort(key=lambda o: (centro(o) - origem).dot(axis))
     novos = []
@@ -100,7 +130,8 @@ def separar(base, n, eixo, template):
     """Separa .l e .r (que compartilham a mesma malha) e remove os originais."""
     obj_l = bpy.data.objects.get(f"{base}.l")
     if not obj_l:
-        print(f"  MISSING {base}.l"); return []
+        print(f"  MISSING {base}.l")
+        return []
     comps, coords, faces = ilhas_bmesh(obj_l.data)
     if len(comps) != n:
         print(f"  AVISO {base}: {len(comps)} ilhas (esperado {n})")
@@ -124,8 +155,10 @@ def separar(base, n, eixo, template):
 def inv_row(name):
     o = bpy.data.objects[name]
     return {
-        "name": o.name, "type": "MESH",
-        "vertices": len(o.data.vertices), "faces": len(o.data.polygons),
+        "name": o.name,
+        "type": "MESH",
+        "vertices": len(o.data.vertices),
+        "faces": len(o.data.polygons),
         "collections": [c.name for c in o.users_collection],
         "bounds": [list(o.matrix_world @ Vector(v)) for v in o.bound_box],
     }

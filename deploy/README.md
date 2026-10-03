@@ -20,18 +20,18 @@ O egg não define IP nem porta — quem define é a alocação do painel. A port
 chega ao servidor pela variável `SERVER_PORT`, e o processo escuta em
 `0.0.0.0`, então atende em qualquer IP do nó.
 
-1. **Importar o egg.** Painel → *Admin* → *Nests* → *Import Egg* → envie
+1. **Importar o egg.** Painel → _Admin_ → _Nests_ → _Import Egg_ → envie
    `fisioatlas.egg.json`. Escolha um nest (serve o "Others").
-2. **Criar a alocação.** *Admin* → *Nodes* → seu nó → aba *Allocation*.
-   Em *IP Address* ponha `151.244.40.191` e em *Ports* ponha `1028`. Criar.
-3. **Criar o servidor** com o egg *FisioAtlas 3D* e escolha essa alocação como
-   *Primary Allocation*. Não precisa de alocação extra.
+2. **Criar a alocação.** _Admin_ → _Nodes_ → seu nó → aba _Allocation_.
+   Em _IP Address_ ponha `151.244.40.191` e em _Ports_ ponha `1028`. Criar.
+3. **Criar o servidor** com o egg _FisioAtlas 3D_ e escolha essa alocação como
+   _Primary Allocation_. Não precisa de alocação extra.
 4. **Liberar a porta** no firewall do host:
    ```bash
    sudo ufw allow 1028/tcp
    ```
    Se o nó estiver atrás de NAT, redirecione a 1028 também no roteador.
-5. **Imagem do Docker.** Em *Startup* → *Docker Image*, deixe **Node 20**
+5. **Imagem do Docker.** Em _Startup_ → _Docker Image_, deixe **Node 20**
    (`ghcr.io/pterodactyl/yolks:nodejs_20`). Não existe `nodejs_22` no yolks: o
    repositório do Pterodactyl vai até o `nodejs_20` e o do parkervcp até o
    `nodejs_21`. Pedir uma tag inexistente faz o pull falhar na hora de subir.
@@ -45,7 +45,7 @@ Depois é só abrir `http://151.244.40.191:1028`.
 
 Se ainda não houver build lá, o servidor sobe assim mesmo e a página explica o
 que falta, em vez de cair em erro. Isso é de propósito: um servidor que morre
-faz o painel marcar *crashed* e esconder o motivo real, que é só arquivo
+faz o painel marcar _crashed_ e esconder o motivo real, que é só arquivo
 faltando. Assim que o `dist/` chegar, basta atualizar a página — não precisa
 reiniciar.
 
@@ -61,7 +61,7 @@ npm run build
 ```
 
 Depois envie o conteúdo de `dist/` para a pasta `dist/` do servidor, por SFTP
-(o painel mostra host, porta e usuário na aba *Settings*). A cada nova versão,
+(o painel mostra host, porta e usuário na aba _Settings_). A cada nova versão,
 reenvie e reinicie.
 
 ### B) Com repositório — compila sozinho
@@ -81,7 +81,7 @@ de 100 MiB por padrão (`docker.tmpfs_size` no `config.yml` do Wings), e o
 `ENOSPC` mesmo com dezenas de GB livres na VPS, porque o tmpfs não enxerga o
 disco — ele vive na RAM.
 
-Reinstalar (*Settings* → *Reinstall Server*) puxa a versão mais nova.
+Reinstalar (_Settings_ → _Reinstall Server_) puxa a versão mais nova.
 
 ## Testado onde vai rodar
 
@@ -99,11 +99,11 @@ com os modelos em `model/gltf-binary`.
 
 ## Peso
 
-| | |
-|---|---|
-| `dist/` como sai do build | 27,6 MiB |
-| removido na instalação | 10,8 MiB |
-| efetivamente servido | **16,9 MiB** |
+|                           |              |
+| ------------------------- | ------------ |
+| `dist/` como sai do build | 27,6 MiB     |
+| removido na instalação    | 10,8 MiB     |
+| efetivamente servido      | **16,9 MiB** |
 
 Os 10,8 MiB removidos são `musculos.glb`, `ossos.glb` e `tendoes.glb` — sobras
 do pipeline BodyParts3D anterior, que o app não carrega mais desde a migração
@@ -116,14 +116,14 @@ conforme você liga ossos, músculos, ligamentos e assim por diante.
 
 ## Variáveis do egg
 
-| Variável | Padrão | Para quê |
-|---|---|---|
-| `GIT_REPO` | vazio | URL do repositório. Vazio = modo SFTP |
-| `GIT_BRANCH` | `main` | Branch a clonar |
-| `PROJECT_DIR` | vazio | Subpasta do projeto dentro do repositório |
-| `GIT_USER` | vazio | Só para repositório privado |
-| `GIT_TOKEN` | vazio | Só para repositório privado |
-| `WEB_ROOT` | `dist` | Pasta servida |
+| Variável      | Padrão | Para quê                                  |
+| ------------- | ------ | ----------------------------------------- |
+| `GIT_REPO`    | vazio  | URL do repositório. Vazio = modo SFTP     |
+| `GIT_BRANCH`  | `main` | Branch a clonar                           |
+| `PROJECT_DIR` | vazio  | Subpasta do projeto dentro do repositório |
+| `GIT_USER`    | vazio  | Só para repositório privado               |
+| `GIT_TOKEN`   | vazio  | Só para repositório privado               |
+| `WEB_ROOT`    | `dist` | Pasta servida                             |
 
 ## Rodar o servidor local, igual ao da produção
 
@@ -148,11 +148,11 @@ importa sem reclamar e só falha quando alguém tenta subir o servidor.
 
 ## Se não abrir
 
-| Sintoma | Provável causa |
-|---|---|
-| `failed to pull ... not found` ao iniciar | Imagem inexistente. Use **Node 20**; não há `nodejs_22` no yolks |
-| Página diz "ainda não há site para servir" | `dist/` vazio: envie o build por SFTP ou configure `GIT_REPO` |
-| Abre a home, mas F5 em `/atlas` dá 404 | Não é este servidor; algum proxy na frente sem fallback de SPA |
-| Corpo 3D não aparece, console do navegador reclama de MIME | Idem: proxy servindo `.glb` como `application/octet-stream` |
-| `ENOSPC: no space left on device` durante `npm ci` | Compilação caindo em `/tmp`, que é tmpfs de 100 MiB. Esta versão do egg compila no volume; se persistir, aumente `docker.tmpfs_size` no Wings |
-| Nada responde de fora, mas `/healthz` responde no host | Firewall ou NAT bloqueando a 1028 |
+| Sintoma                                                    | Provável causa                                                                                                                                |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `failed to pull ... not found` ao iniciar                  | Imagem inexistente. Use **Node 20**; não há `nodejs_22` no yolks                                                                              |
+| Página diz "ainda não há site para servir"                 | `dist/` vazio: envie o build por SFTP ou configure `GIT_REPO`                                                                                 |
+| Abre a home, mas F5 em `/atlas` dá 404                     | Não é este servidor; algum proxy na frente sem fallback de SPA                                                                                |
+| Corpo 3D não aparece, console do navegador reclama de MIME | Idem: proxy servindo `.glb` como `application/octet-stream`                                                                                   |
+| `ENOSPC: no space left on device` durante `npm ci`         | Compilação caindo em `/tmp`, que é tmpfs de 100 MiB. Esta versão do egg compila no volume; se persistir, aumente `docker.tmpfs_size` no Wings |
+| Nada responde de fora, mas `/healthz` responde no host     | Firewall ou NAT bloqueando a 1028                                                                                                             |

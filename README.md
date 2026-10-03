@@ -127,7 +127,6 @@ O esquema de articulação sinovial foi construído por script próprio no Higgs
 
 Os resumos em português são redação própria de fatos anatômicos; não foram reproduzidas páginas, fotografias ou tabelas de livros. Os modelos conservam sua atribuição. Não foram usadas imagens geradas para representar anatomia 3D.
 
-
 Os módulos de **Lasègue** (`/testes/lasegue`) e **Slump** (`/testes/slump`)
 combinam ficha clínica, referências primárias, casos fictícios e roteiro salvo
 no navegador. O Slump tem 12 etapas de estudo, incluindo sete demonstrações 3D:

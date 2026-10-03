@@ -4,15 +4,45 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { MeshoptDecoder } from "three/addons/libs/meshopt_decoder.module.js";
 import { byId, colors } from "../../data";
 import { attachSoftMotion, motionWeight } from "./softMotion";
-import { rigs, rigPivot, rigMoves, rigBounds, onAnimatedSide, weightHeight, chainRegions } from "./animationRigs";
-import { applyTransparency, fadeOpacity, pickableMeshes, renderPixelRatio, renderProfile, modelManifestUrl } from './renderPerformance';
-import { AtlasBatches } from './atlasBatches';
-import type { RenderQuality } from './renderPerformance';
-import { findOccluders, isInStudyContext, selectedBounds, smartOpacity } from './smartLayers';
-import type { LayerMesh, RevealMode } from './smartLayers';
-import { centerlineRig, deformedPathLength } from './tissueRig';
-import { activationStep, ligamentForce, muscleEquilibrium, nerveResponse, tendonForce } from '../movements/biomechanics';
-import type { MechanicsOptions, MechanicsReport, TissueReading } from '../movements/biomechanics';
+import {
+  rigs,
+  rigPivot,
+  rigMoves,
+  rigBounds,
+  onAnimatedSide,
+  weightHeight,
+  chainRegions,
+} from "./animationRigs";
+import {
+  applyTransparency,
+  fadeOpacity,
+  pickableMeshes,
+  renderPixelRatio,
+  renderProfile,
+  modelManifestUrl,
+} from "./renderPerformance";
+import { AtlasBatches } from "./atlasBatches";
+import type { RenderQuality } from "./renderPerformance";
+import {
+  findOccluders,
+  isInStudyContext,
+  selectedBounds,
+  smartOpacity,
+} from "./smartLayers";
+import type { LayerMesh, RevealMode } from "./smartLayers";
+import { centerlineRig, deformedPathLength } from "./tissueRig";
+import {
+  activationStep,
+  ligamentForce,
+  muscleEquilibrium,
+  nerveResponse,
+  tendonForce,
+} from "../movements/biomechanics";
+import type {
+  MechanicsOptions,
+  MechanicsReport,
+  TissueReading,
+} from "../movements/biomechanics";
 import type { Layers, Movement, ModelManifest } from "../../types";
 
 type AnatomicalMesh = THREE.Mesh<
@@ -74,7 +104,7 @@ export class AtlasEngine {
   private lastMechanicsReport = 0;
   private readings: TissueReading[] = [];
   private dirty = true;
-  private renderStateKey = '';
+  private renderStateKey = "";
   private settleUntil = 0;
   private lastHover = 0;
   private interacting = false;
@@ -84,10 +114,12 @@ export class AtlasEngine {
   private smartContext = new Set<string>();
   private smartDirty = true;
   private lastSmartScan = 0;
-  private reportedOccluders = '';
-  private touchDevice = navigator.maxTouchPoints > 0 && window.matchMedia('(any-pointer: coarse)').matches;
-  private profile = renderProfile('auto', this.touchDevice);
-  private heatColor = new THREE.Color('#df563f');
+  private reportedOccluders = "";
+  private touchDevice =
+    navigator.maxTouchPoints > 0 &&
+    window.matchMedia("(any-pointer: coarse)").matches;
+  private profile = renderProfile("auto", this.touchDevice);
+  private heatColor = new THREE.Color("#df563f");
   private pointerStart = { x: 0, y: 0 };
   private lastSelected: string | null = null;
   private wasMovement: string | undefined;
@@ -99,7 +131,7 @@ export class AtlasEngine {
     element: HTMLDivElement,
     events: EngineEvents,
     initial: ViewerState,
-    quality: RenderQuality = 'auto',
+    quality: RenderQuality = "auto",
   ) {
     this.element = element;
     this.events = events;
@@ -131,12 +163,14 @@ export class AtlasEngine {
     this.controls.enablePan = true;
     this.controls.addEventListener("start", () => {
       this.interacting = true;
-      this.events.hover('', 0, 0);
+      this.events.hover("", 0, 0);
       this.targetCamera = null;
       this.targetLook = null;
       this.events.view("livre");
     });
-    this.controls.addEventListener('end', () => { this.interacting = false; });
+    this.controls.addEventListener("end", () => {
+      this.interacting = false;
+    });
     // A rolagem do mouse é tratada dentro do próprio OrbitControls, que já chama
     // update() e zera a escala antes do próximo quadro. O update() do loop então
     // retornava false e o render sob demanda descartava o quadro — o zoom só
@@ -187,9 +221,14 @@ export class AtlasEngine {
       if (mesh) this.events.isolate(mesh.userData.structureId);
     });
     canvas.addEventListener("pointermove", (e) => {
-      if (e.pointerType !== 'mouse') return;
+      if (e.pointerType !== "mouse") return;
       // Orbiting must not trigger millions of triangle tests under the cursor.
-      if (this.interacting || e.buttons || (this.state.playing && this.state.movement)) return;
+      if (
+        this.interacting ||
+        e.buttons ||
+        (this.state.playing && this.state.movement)
+      )
+        return;
       if (e.timeStamp - this.lastHover < 80) return;
       this.lastHover = e.timeStamp;
       const mesh = this.hit(e);
@@ -264,22 +303,30 @@ export class AtlasEngine {
     if (!w || !h) return;
     this.camera.aspect = w / h;
     this.camera.updateProjectionMatrix();
-    this.renderer.setPixelRatio(renderPixelRatio(w, h, window.devicePixelRatio, this.profile));
+    this.renderer.setPixelRatio(
+      renderPixelRatio(w, h, window.devicePixelRatio, this.profile),
+    );
     this.renderer.setSize(w, h);
-    this.renderer.domElement.dataset.renderProfile = this.profile.light ? 'light' : 'detail';
+    this.renderer.domElement.dataset.renderProfile = this.profile.light
+      ? "light"
+      : "detail";
     this.dirty = true;
   }
   captureView() {
-    return { position: this.camera.position.clone(), target: this.controls.target.clone(), up: this.camera.up.clone() };
+    return {
+      position: this.camera.position.clone(),
+      target: this.controls.target.clone(),
+      up: this.camera.up.clone(),
+    };
   }
-  restoreView(view: ReturnType<AtlasEngine['captureView']>) {
+  restoreView(view: ReturnType<AtlasEngine["captureView"]>) {
     this.camera.position.copy(view.position);
     this.controls.target.copy(view.target);
     this.camera.up.copy(view.up);
     this.targetCamera = null;
     this.targetLook = null;
     this.controls.update();
-    this.events.view('livre');
+    this.events.view("livre");
     this.dirty = true;
     this.smartDirty = true;
   }
@@ -360,7 +407,8 @@ export class AtlasEngine {
                 color: colors[entry.kind],
                 roughness: 0.66,
                 metalness: 0,
-                transparent: this.profile.light || this.state.layers[entry.kind] < 100,
+                transparent:
+                  this.profile.light || this.state.layers[entry.kind] < 100,
                 depthWrite: this.state.layers[entry.kind] === 100,
                 opacity: this.state.layers[entry.kind] / 100,
                 side: THREE.DoubleSide,
@@ -378,16 +426,19 @@ export class AtlasEngine {
             const b = geometry.boundingBox!;
             mesh.userData.center = b.getCenter(new THREE.Vector3());
             mesh.userData.bounds = b.clone();
-            if (entry.kind !== "ossos") mesh.userData.softMotion = attachSoftMotion(mesh);
+            if (entry.kind !== "ossos")
+              mesh.userData.softMotion = attachSoftMotion(mesh);
             this.meshes.push(mesh);
-            this.layerMeshes.push({id, bounds:mesh.userData.bounds});
+            this.layerMeshes.push({ id, bounds: mesh.userData.bounds });
             systemGroup.add(mesh);
           }
         });
         sourceGeometries.forEach((g) => g.dispose());
         this.scene.add(systemGroup);
         if (this.profile.light && systemGroup.children.length) {
-          const draw = new AtlasBatches(systemGroup.children as AnatomicalMesh[]);
+          const draw = new AtlasBatches(
+            systemGroup.children as AnatomicalMesh[],
+          );
           this.batches.push({ source: systemGroup, draw });
           this.scene.add(draw.opaque, draw.transparent);
         }
@@ -409,7 +460,8 @@ export class AtlasEngine {
         );
       }
       if (this.state.selected) this.focus(this.state.selected);
-      else if(this.state.movement) this.preset(rigs[this.state.movement.animation].view,true);
+      else if (this.state.movement)
+        this.preset(rigs[this.state.movement.animation].view, true);
     } catch (e) {
       if (!this.disposed)
         this.events.load(
@@ -430,7 +482,9 @@ export class AtlasEngine {
       this.smartDirty = true;
     }
     if (!state.playing && state.progress !== this.state.progress) {
-      for (const m of this.meshes) if (m.userData.mechanicsRig) m.userData.mechanicsRig.previousLength = undefined;
+      for (const m of this.meshes)
+        if (m.userData.mechanicsRig)
+          m.userData.mechanicsRig.previousLength = undefined;
     }
     const changed = state.selected !== this.lastSelected;
     const movementChanged = state.movement?.id !== this.wasMovement;
@@ -469,10 +523,16 @@ export class AtlasEngine {
     const b = new THREE.Box3();
     for (const m of matching) {
       if (this.state.movement && !this.state.agonists) {
-        const positions=m.geometry.getAttribute('position'),point=new THREE.Vector3();
-        m.updateWorldMatrix(true,false);
-        for(let i=0;i<positions.count;i+=Math.max(1,Math.floor(positions.count/1500))) {
-          m.getVertexPosition(i,point);b.expandByPoint(point.applyMatrix4(m.matrixWorld));
+        const positions = m.geometry.getAttribute("position"),
+          point = new THREE.Vector3();
+        m.updateWorldMatrix(true, false);
+        for (
+          let i = 0;
+          i < positions.count;
+          i += Math.max(1, Math.floor(positions.count / 1500))
+        ) {
+          m.getVertexPosition(i, point);
+          b.expandByPoint(point.applyMatrix4(m.matrixWorld));
         }
       } else b.union(m.userData.bounds);
     }
@@ -507,13 +567,15 @@ export class AtlasEngine {
       ? new THREE.Vector3(0.7, 1.8, 0.3)
       : this.box.getSize(new THREE.Vector3());
     const halfFov = Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2));
-    const distance = Math.max(size.y / (2 * halfFov), size.x / (2 * halfFov * this.camera.aspect)) * 1.14;
+    const distance =
+      Math.max(
+        size.y / (2 * halfFov),
+        size.x / (2 * halfFov * this.camera.aspect),
+      ) * 1.14;
     this.targetLook = this.overallCenter.clone();
     this.targetCamera = this.overallCenter
       .clone()
-      .add(
-        new THREE.Vector3(0, 0, distance),
-      );
+      .add(new THREE.Vector3(0, 0, distance));
   }
   preset(view: string, whole = false) {
     this.events.view(view);
@@ -547,61 +609,93 @@ export class AtlasEngine {
   }
   private layerCandidates() {
     const hidden = new Set(this.state.hidden);
-    const selected=this.state.selected ? byId[this.state.selected] : null;
-    const bounds=selected && this.state.regionOnly ? selectedBounds(this.layerMeshes,selected.id) : null;
-    return this.layerMeshes.filter(m => {
-      const s=byId[m.id];
-      return this.state.layers[s.kind]>0 && !hidden.has(s.id) &&
-        (!s.envelope || this.state.envelopes || s.id===this.state.selected) &&
-        (!bounds || !selected || isInStudyContext(m,selected,bounds));
+    const selected = this.state.selected ? byId[this.state.selected] : null;
+    const bounds =
+      selected && this.state.regionOnly
+        ? selectedBounds(this.layerMeshes, selected.id)
+        : null;
+    return this.layerMeshes.filter((m) => {
+      const s = byId[m.id];
+      return (
+        this.state.layers[s.kind] > 0 &&
+        !hidden.has(s.id) &&
+        (!s.envelope || this.state.envelopes || s.id === this.state.selected) &&
+        (!bounds || !selected || isInStudyContext(m, selected, bounds))
+      );
     });
   }
   private refreshSmartLayers(time: number) {
     if (!this.smartDirty) return;
-    if ((this.interacting || this.targetCamera) && time-this.lastSmartScan<120) return;
-    this.lastSmartScan=time;
-    this.smartDirty=false;
-    const id=this.state.selected;
-    const bounds=id ? selectedBounds(this.layerMeshes,id) : null;
+    if (
+      (this.interacting || this.targetCamera) &&
+      time - this.lastSmartScan < 120
+    )
+      return;
+    this.lastSmartScan = time;
+    this.smartDirty = false;
+    const id = this.state.selected;
+    const bounds = id ? selectedBounds(this.layerMeshes, id) : null;
     this.smartOccluders.clear();
     this.smartContext.clear();
     if (id && bounds && !this.state.movement && !this.state.isolated) {
-      const candidates=this.layerCandidates();
-      if (this.state.reveal && this.state.reveal!=='off')
-        this.smartOccluders=new Set(findOccluders(candidates,id,bounds,this.camera));
+      const candidates = this.layerCandidates();
+      if (this.state.reveal && this.state.reveal !== "off")
+        this.smartOccluders = new Set(
+          findOccluders(candidates, id, bounds, this.camera),
+        );
       if (this.state.regionOnly)
         for (const m of this.layerMeshes)
-          if (isInStudyContext(m,byId[id],bounds)) this.smartContext.add(m.id);
+          if (isInStudyContext(m, byId[id], bounds))
+            this.smartContext.add(m.id);
     }
-    const ids=[...this.smartOccluders];
-    const key=ids.join('|');
-    if (key!==this.reportedOccluders) {
-      this.reportedOccluders=key;
+    const ids = [...this.smartOccluders];
+    const key = ids.join("|");
+    if (key !== this.reportedOccluders) {
+      this.reportedOccluders = key;
       this.events.occlusion?.(ids);
     }
   }
   bestView() {
-    const id=this.state.selected;
+    const id = this.state.selected;
     if (!id || this.state.movement) return;
-    const bounds=selectedBounds(this.layerMeshes,id);
+    const bounds = selectedBounds(this.layerMeshes, id);
     if (!bounds) return;
-    const center=bounds.getCenter(new THREE.Vector3());
-    const distance=Math.max(0.42,bounds.getSize(new THREE.Vector3()).length()*2)/Math.min(1,this.camera.aspect);
-    const options: [string,number[]][]=[['anterior',[0,0,1]],['posterior',[0,0,-1]],['lateral-direita',[-1,0,0]],['lateral-esquerda',[1,0,0]],['superior',[0,1,0.01]],['inferior',[0,-1,0.01]]];
-    const candidates=this.layerCandidates();
-    let best=options[0], score=Infinity;
+    const center = bounds.getCenter(new THREE.Vector3());
+    const distance =
+      Math.max(0.42, bounds.getSize(new THREE.Vector3()).length() * 2) /
+      Math.min(1, this.camera.aspect);
+    const options: [string, number[]][] = [
+      ["anterior", [0, 0, 1]],
+      ["posterior", [0, 0, -1]],
+      ["lateral-direita", [-1, 0, 0]],
+      ["lateral-esquerda", [1, 0, 0]],
+      ["superior", [0, 1, 0.01]],
+      ["inferior", [0, -1, 0.01]],
+    ];
+    const candidates = this.layerCandidates();
+    let best = options[0],
+      score = Infinity;
     for (const option of options) {
-      const camera=this.camera.clone();
-      camera.position.copy(center).add(new THREE.Vector3(...option[1]).normalize().multiplyScalar(distance));
+      const camera = this.camera.clone();
+      camera.position
+        .copy(center)
+        .add(
+          new THREE.Vector3(...option[1]).normalize().multiplyScalar(distance),
+        );
       camera.lookAt(center);
-      const blockers=findOccluders(candidates,id,bounds,camera);
-      if (blockers.length<score) {score=blockers.length;best=option;}
+      const blockers = findOccluders(candidates, id, bounds, camera);
+      if (blockers.length < score) {
+        score = blockers.length;
+        best = option;
+      }
     }
     this.events.view(best[0]);
-    this.targetLook=center;
-    this.targetCamera=center.clone().add(new THREE.Vector3(...best[1]).normalize().multiplyScalar(distance));
-    this.dirty=true;
-    this.smartDirty=true;
+    this.targetLook = center;
+    this.targetCamera = center
+      .clone()
+      .add(new THREE.Vector3(...best[1]).normalize().multiplyScalar(distance));
+    this.dirty = true;
+    this.smartDirty = true;
   }
   private buildArrows() {
     for (const [dir, color] of [
@@ -641,7 +735,10 @@ export class AtlasEngine {
     const angle = THREE.MathUtils.degToRad(move.maxAngle) * amount;
     const axis = new THREE.Vector3(...jointRig.axis);
     const signedAngle = angle * jointRig.sign;
-    const quaternion = new THREE.Quaternion().setFromAxisAngle(axis, signedAngle);
+    const quaternion = new THREE.Quaternion().setFromAxisAngle(
+      axis,
+      signedAngle,
+    );
     for (const m of this.meshes) {
       const s = byId[m.userData.structureId];
       if (s.kind !== "ossos") {
@@ -651,80 +748,160 @@ export class AtlasEngine {
         // mandíbula arrastaria todo o tronco em torno de um pivô na cabeça.
         const inScope =
           jointRig.softScope === "movers"
-            ? jointRig.include?.includes(s.id) || jointRig.spanning.includes(s.id)
+            ? jointRig.include?.includes(s.id) ||
+              jointRig.spanning.includes(s.id)
             : chainRegions[jointRig.chain].includes(s.region);
-        const eligible = onAnimatedSide(jointRig, m.userData.center.x) &&
-          (inScope || move.agonists.includes(s.id) || move.antagonists.includes(s.id));
+        const eligible =
+          onAnimatedSide(jointRig, m.userData.center.x) &&
+          (inScope ||
+            move.agonists.includes(s.id) ||
+            move.antagonists.includes(s.id));
         if (soft && eligible && this.state.motionMode === "all") {
-          const rigKey=move.id+':'+this.state.mechanics.enabled;
+          const rigKey = move.id + ":" + this.state.mechanics.enabled;
           if (m.userData.rigMovement !== rigKey) {
-            const positions = m.geometry.getAttribute('position');
-            const weights = m.geometry.getAttribute('tissueWeight');
-            const attachedEnds=this.state.mechanics.enabled&&jointRig.spanning.includes(s.id);
-            const fixedSyndesmosis=this.state.mechanics.enabled&&move.animation==='ankle'&&['ligamento-tibiofibular-anterior','ligamento-tibiofibular-posterior'].includes(s.id);
-            const weightAt=(x:number,y:number)=>{
-              if(fixedSyndesmosis)return 0;
+            const positions = m.geometry.getAttribute("position");
+            const weights = m.geometry.getAttribute("tissueWeight");
+            const attachedEnds =
+              this.state.mechanics.enabled && jointRig.spanning.includes(s.id);
+            const fixedSyndesmosis =
+              this.state.mechanics.enabled &&
+              move.animation === "ankle" &&
+              [
+                "ligamento-tibiofibular-anterior",
+                "ligamento-tibiofibular-posterior",
+              ].includes(s.id);
+            const weightAt = (x: number, y: number) => {
+              if (fixedSyndesmosis) return 0;
               // Geometric superior/inferior ends approximate attachments to the
               // proximal/distal bone; short ligaments must not move both ends
               // with the old 8 cm blend band. Still requires anatomical calibration.
-              if(attachedEnds){const bounds:THREE.Box3=m.userData.bounds;return THREE.MathUtils.smoothstep(bounds.max.y-y,0,Math.max(1e-5,bounds.max.y-bounds.min.y));}
+              if (attachedEnds) {
+                const bounds: THREE.Box3 = m.userData.bounds;
+                return THREE.MathUtils.smoothstep(
+                  bounds.max.y - y,
+                  0,
+                  Math.max(1e-5, bounds.max.y - bounds.min.y),
+                );
+              }
               let w = motionWeight(weightHeight(jointRig, y, pivot.y), pivot.y);
               // Shoulder muscles can span the trunk: keep their medial attachment fixed.
-              if (jointRig.lateralPivot) w *= THREE.MathUtils.smoothstep(-x, -pivot.x - 0.08, -pivot.x + 0.02);
+              if (jointRig.lateralPivot)
+                w *= THREE.MathUtils.smoothstep(
+                  -x,
+                  -pivot.x - 0.08,
+                  -pivot.x + 0.02,
+                );
               return w;
             };
-            for (let i = 0; i < positions.count; i++) weights.setX(i,weightAt(positions.getX(i),positions.getY(i)));
+            for (let i = 0; i < positions.count; i++)
+              weights.setX(i, weightAt(positions.getX(i), positions.getY(i)));
             weights.needsUpdate = true;
             m.userData.rigMovement = rigKey;
             const rig = centerlineRig(positions);
-            m.userData.mechanicsRig = { ...rig, activation: 0, previousLength: undefined,
-              weights: rig.points.map(point => weightAt(point.x,point.y)),
+            m.userData.mechanicsRig = {
+              ...rig,
+              activation: 0,
+              previousLength: undefined,
+              weights: rig.points.map((point) => weightAt(point.x, point.y)),
             };
             soft.shapeOrigin.value.copy(rig.origin);
             soft.shapeDirection.value.copy(rig.direction);
-            soft.shapeSpan.value=rig.span;
+            soft.shapeSpan.value = rig.span;
           }
           soft.tissuePivot.value.copy(pivot);
           soft.tissueAxis.value.copy(axis);
           soft.tissueAngle.value = signedAngle;
-          if (this.state.mechanics.enabled && s.kind !== 'articulacoes') {
-            const rig=m.userData.mechanicsRig;
-            const spansJoint=Math.max(...rig.weights)-Math.min(...rig.weights)>0.02;
-            const drivenMuscle=move.agonists.includes(s.id)||move.antagonists.includes(s.id);
+          if (this.state.mechanics.enabled && s.kind !== "articulacoes") {
+            const rig = m.userData.mechanicsRig;
+            const spansJoint =
+              Math.max(...rig.weights) - Math.min(...rig.weights) > 0.02;
+            const drivenMuscle =
+              move.agonists.includes(s.id) || move.antagonists.includes(s.id);
             if (spansJoint || drivenMuscle) {
-              const options=this.state.mechanics;
-              const length=deformedPathLength(rig.points,rig.weights,pivot,axis,soft.tissueAngle.value);
-              const rate=rig.previousLength===undefined||dt<=0?0:(length-rig.previousLength)/dt;
-              rig.previousLength=length;
-              const reading: TissueReading={id:s.id,kind:s.kind,length,restLength:rig.restLength,
-                strain:length/rig.restLength-1,force:0,activation:0,fiberRatio:1,tendonStrain:0,excursion:0,residual:0,limited:false};
-              soft.fiberFraction.value=0.7;soft.radialScale.value=1;soft.neuralExcursion.value=0;
-              if (s.kind==='musculos') {
-                const excitation=move.agonists.includes(s.id)?options.activation:move.antagonists.includes(s.id)?options.coactivation:0;
-                rig.activation=activationStep(rig.activation,excitation,dt);
-                const result=muscleEquilibrium(length,rig.restLength,rig.activation,options.tendonCompliance,rate/(rig.restLength*0.7*10));
-                Object.assign(reading,result,{activation:rig.activation});
-                soft.fiberFraction.value=THREE.MathUtils.clamp(result.fiberRatio*0.7*rig.restLength/length,0.1,0.9);
-                soft.radialScale.value=Math.sqrt(1/THREE.MathUtils.clamp(result.fiberRatio,0.5,1.6));
-              } else if (s.kind==='ligamentos') {
-                const slackLength=rig.restLength*(1+options.slack);
-                reading.strain=length/slackLength-1;
-                reading.force=ligamentForce(reading.strain,rate/slackLength,options.stiffness);
-                reading.limited=Math.abs(reading.strain)>0.15;
-                soft.radialScale.value=1/Math.sqrt(Math.max(0.5,length/rig.restLength));
-              } else if (s.kind==='tendoes') {
-                reading.tendonStrain=Math.max(0,reading.strain);
-                reading.force=tendonForce(reading.strain,options.tendonCompliance);
-                reading.limited=Math.abs(reading.strain)>0.15;
-                soft.radialScale.value=1/Math.sqrt(Math.max(0.5,length/rig.restLength));
-              } else if (s.kind==='nervos') {
-                Object.assign(reading,nerveResponse(length,rig.restLength,options.nerveReserve));
-                soft.neuralExcursion.value=reading.excursion;
-                soft.radialScale.value=1/Math.sqrt(1+reading.strain);
-                reading.limited=reading.strain>0.1;
+              const options = this.state.mechanics;
+              const length = deformedPathLength(
+                rig.points,
+                rig.weights,
+                pivot,
+                axis,
+                soft.tissueAngle.value,
+              );
+              const rate =
+                rig.previousLength === undefined || dt <= 0
+                  ? 0
+                  : (length - rig.previousLength) / dt;
+              rig.previousLength = length;
+              const reading: TissueReading = {
+                id: s.id,
+                kind: s.kind,
+                length,
+                restLength: rig.restLength,
+                strain: length / rig.restLength - 1,
+                force: 0,
+                activation: 0,
+                fiberRatio: 1,
+                tendonStrain: 0,
+                excursion: 0,
+                residual: 0,
+                limited: false,
+              };
+              soft.fiberFraction.value = 0.7;
+              soft.radialScale.value = 1;
+              soft.neuralExcursion.value = 0;
+              if (s.kind === "musculos") {
+                const excitation = move.agonists.includes(s.id)
+                  ? options.activation
+                  : move.antagonists.includes(s.id)
+                    ? options.coactivation
+                    : 0;
+                rig.activation = activationStep(rig.activation, excitation, dt);
+                const result = muscleEquilibrium(
+                  length,
+                  rig.restLength,
+                  rig.activation,
+                  options.tendonCompliance,
+                  rate / (rig.restLength * 0.7 * 10),
+                );
+                Object.assign(reading, result, { activation: rig.activation });
+                soft.fiberFraction.value = THREE.MathUtils.clamp(
+                  (result.fiberRatio * 0.7 * rig.restLength) / length,
+                  0.1,
+                  0.9,
+                );
+                soft.radialScale.value = Math.sqrt(
+                  1 / THREE.MathUtils.clamp(result.fiberRatio, 0.5, 1.6),
+                );
+              } else if (s.kind === "ligamentos") {
+                const slackLength = rig.restLength * (1 + options.slack);
+                reading.strain = length / slackLength - 1;
+                reading.force = ligamentForce(
+                  reading.strain,
+                  rate / slackLength,
+                  options.stiffness,
+                );
+                reading.limited = Math.abs(reading.strain) > 0.15;
+                soft.radialScale.value =
+                  1 / Math.sqrt(Math.max(0.5, length / rig.restLength));
+              } else if (s.kind === "tendoes") {
+                reading.tendonStrain = Math.max(0, reading.strain);
+                reading.force = tendonForce(
+                  reading.strain,
+                  options.tendonCompliance,
+                );
+                reading.limited = Math.abs(reading.strain) > 0.15;
+                soft.radialScale.value =
+                  1 / Math.sqrt(Math.max(0.5, length / rig.restLength));
+              } else if (s.kind === "nervos") {
+                Object.assign(
+                  reading,
+                  nerveResponse(length, rig.restLength, options.nerveReserve),
+                );
+                soft.neuralExcursion.value = reading.excursion;
+                soft.radialScale.value = 1 / Math.sqrt(1 + reading.strain);
+                reading.limited = reading.strain > 0.1;
               }
-              soft.shapeEnabled.value=1;
-              m.userData.mechanicalReading=reading;
+              soft.shapeEnabled.value = 1;
+              m.userData.mechanicalReading = reading;
               this.readings.push(reading);
             }
           }
@@ -749,9 +926,23 @@ export class AtlasEngine {
     this.lastTime = time;
     if (document.hidden) return;
     const cameraChanged = this.controls.update();
-    const moving = !!this.state.movement && this.state.playing && !this.state.agonists;
-    const settling = !!this.state.movement && !this.state.agonists && this.state.motionMode === 'all' && this.state.mechanics.enabled && time < this.settleUntil;
-    if (!this.dirty && !this.smartDirty && !cameraChanged && !this.targetCamera && !moving && !settling) return;
+    const moving =
+      !!this.state.movement && this.state.playing && !this.state.agonists;
+    const settling =
+      !!this.state.movement &&
+      !this.state.agonists &&
+      this.state.motionMode === "all" &&
+      this.state.mechanics.enabled &&
+      time < this.settleUntil;
+    if (
+      !this.dirty &&
+      !this.smartDirty &&
+      !cameraChanged &&
+      !this.targetCamera &&
+      !moving &&
+      !settling
+    )
+      return;
     this.dirty = false;
     if (this.state.playing && this.state.movement) {
       this.elapsed += dt * this.state.speed * 0.7;
@@ -763,12 +954,17 @@ export class AtlasEngine {
     }
     this.motion(dt);
     for (const mesh of this.meshes) mesh.userData.softMotion?.updateBounds();
-    if (time-this.lastMechanicsReport>120 && this.state.movement) {
+    if (time - this.lastMechanicsReport > 120 && this.state.movement) {
       // One representative component per ficha: longest reference path, not a sum of normalized forces.
-      const entries=new Map<string,TissueReading>();
-      for(const r of this.readings)if(!entries.has(r.id)||entries.get(r.id)!.restLength<r.restLength)entries.set(r.id,r);
-      this.events.mechanics({movementId:this.state.movement.id,rows:[...entries.values()]});
-      this.lastMechanicsReport=time;
+      const entries = new Map<string, TissueReading>();
+      for (const r of this.readings)
+        if (!entries.has(r.id) || entries.get(r.id)!.restLength < r.restLength)
+          entries.set(r.id, r);
+      this.events.mechanics({
+        movementId: this.state.movement.id,
+        rows: [...entries.values()],
+      });
+      this.lastMechanicsReport = time;
     }
     const selected = this.state.selected ? byId[this.state.selected] : null;
     this.refreshSmartLayers(time);
@@ -804,13 +1000,26 @@ export class AtlasEngine {
       )
         opacity = 0;
       if (selected && !this.state.movement && !this.state.isolated)
-        opacity=smartOpacity(opacity,s.id,selected.id,this.state.reveal || 'off',this.smartOccluders,!this.state.regionOnly || this.smartContext.has(s.id));
+        opacity = smartOpacity(
+          opacity,
+          s.id,
+          selected.id,
+          this.state.reveal || "off",
+          this.smartOccluders,
+          !this.state.regionOnly || this.smartContext.has(s.id),
+        );
       if (roleMove && s.kind === "musculos" && !isAgonist && !isAntagonist)
         opacity *= 0.12;
-      if (this.state.movement && !this.state.agonists && this.state.motionMode === "bones")
+      if (
+        this.state.movement &&
+        !this.state.agonists &&
+        this.state.motionMode === "bones"
+      )
         opacity =
           s.kind === "ossos" && !this.state.hidden.includes(s.id) ? 1 : 0;
-      const nextOpacity = this.profile.light ? opacity : fadeOpacity(mesh.material.opacity, opacity);
+      const nextOpacity = this.profile.light
+        ? opacity
+        : fadeOpacity(mesh.material.opacity, opacity);
       if (nextOpacity !== opacity) this.dirty = true;
       applyTransparency(mesh.material, nextOpacity, this.profile.light);
       mesh.visible = mesh.material.opacity > 0.015;
@@ -823,10 +1032,18 @@ export class AtlasEngine {
             : "#d2749a"
           : colors[s.kind];
       mesh.material.color.set(color);
-      const reading:TissueReading|null=mesh.userData.mechanicalReading;
+      const reading: TissueReading | null = mesh.userData.mechanicalReading;
       if (reading && this.state.mechanics.heatmap && !isSelected) {
-        const signal=reading.kind==='musculos'?reading.activation:reading.kind==='nervos'?reading.strain/0.1:reading.force/2;
-        mesh.material.color.lerp(this.heatColor,THREE.MathUtils.clamp(signal,0,1));
+        const signal =
+          reading.kind === "musculos"
+            ? reading.activation
+            : reading.kind === "nervos"
+              ? reading.strain / 0.1
+              : reading.force / 2;
+        mesh.material.color.lerp(
+          this.heatColor,
+          THREE.MathUtils.clamp(signal, 0, 1),
+        );
       }
       mesh.material.emissive.set(isSelected ? "#4a1b2c" : "#000000");
       mesh.material.emissiveIntensity = isSelected ? 0.18 : 0;
@@ -847,8 +1064,12 @@ export class AtlasEngine {
     }
     this.renderer.render(this.scene, this.camera);
     this.lastRender = time;
-    this.renderer.domElement.dataset.drawCalls = String(this.renderer.info.render.calls);
-    this.renderer.domElement.dataset.triangles = String(this.renderer.info.render.triangles);
+    this.renderer.domElement.dataset.drawCalls = String(
+      this.renderer.info.render.calls,
+    );
+    this.renderer.domElement.dataset.triangles = String(
+      this.renderer.info.render.triangles,
+    );
   };
   dispose() {
     this.disposed = true;
