@@ -54,19 +54,22 @@
     "summary": "Auxilia a abdução desde seu início e estabiliza a cabeça do úmero.",
     "fields": {
       "Origem": "Fossa supraespinal da escápula.",
-      "Inserção": "Faceta superior do tubérculo maior do úmero.",
+      "Inserção": "Faceta superior do tubérculo maior do úmero; fibras continuam com a cápsula.",
       "Inervação": "Nervo supraescapular (C5–C6).",
-      "Ação": "Auxilia a abdução desde seu início e estabiliza a cabeça do úmero.",
-      "Na prática": "Começar a afastar o braço do corpo.",
+      "Ação": "Auxilia a abdução e comprime a cabeça umeral contra a glenoide.",
+      "Na prática": "Observe a ação e a estabilização em conjunto. Um teste isolado não identifica com certeza uma lesão.",
       "Localização": "Ombro",
       "Camada de estudo": "Profunda",
       "Grupo muscular": "Manguito rotador.",
       "Plano e eixo": "Abdução: plano frontal e eixo ântero-posterior.",
       "Sinergistas": "Deltoide na abdução; demais músculos do manguito na estabilização.",
       "Antagonistas": "Adutores do ombro, como peitoral maior e latíssimo do dorso.",
-      "Observação funcional": "Atua ao longo da abdução, não apenas nos primeiros graus. O manguito ajuda a manter a cabeça umeral centrada.",
+      "Observação funcional": "Auxilia a abdução e comprime a cabeça umeral contra a glenoide. A contribuição depende da posição do braço e da tarefa.",
       "Exemplo de exercício": "Elevação do braço no plano da escápula, em contexto didático.",
-      "Palpação básica": "A fossa supraespinal situa-se acima da espinha da escápula; o músculo é profundo ao trapézio. Palpação guiada em aula."
+      "Palpação básica": "A fossa supraespinal situa-se acima da espinha da escápula; o músculo é profundo ao trapézio. Palpação guiada em aula.",
+      "Tendão correspondente": "Tendão do supraespinal.",
+      "Papel no manguito": "Estabilização dinâmica por compressão e controle da translação da cabeça umeral.",
+      "Relações anatômicas": "Passa superiormente à cabeça umeral, sob o arco coracoacromial e a bolsa subacromial."
     },
     "related": [
       "glenoumeral",
@@ -76,16 +79,23 @@
       "deltoide",
       "infraespinal",
       "subescapular",
-      "redondo-menor"
+      "redondo-menor",
+      "tendao-supraespinal",
+      "labio-glenoidal"
     ],
     "depth": "profunda",
     "sources": [
       "openstax-muscles",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "teach-shoulder"
     ],
     "aliases": [
       "supraespinhoso",
-      "supraspinatus"
+      "supraspinatus",
+      "manguito rotador"
     ],
     "modelIds": [
       "ZA-0425424460a596",
@@ -106,19 +116,22 @@
     "summary": "Rotação lateral do braço e estabilização glenoumeral.",
     "fields": {
       "Origem": "Fossa infraespinal da escápula.",
-      "Inserção": "Faceta média do tubérculo maior do úmero.",
+      "Inserção": "Faceta média do tubérculo maior do úmero; fibras adjacentes ao supraespinal se entrelaçam.",
       "Inervação": "Nervo supraescapular (C5–C6).",
-      "Ação": "Rotação lateral do braço e estabilização glenoumeral.",
-      "Na prática": "Girar o braço para fora com o cotovelo junto ao tronco.",
+      "Ação": "Produz rotação lateral e contribui para centralizar a cabeça umeral.",
+      "Na prática": "Observe a ação e a estabilização em conjunto. Um teste isolado não identifica com certeza uma lesão.",
       "Localização": "Ombro",
       "Camada de estudo": "Profunda",
       "Grupo muscular": "Manguito rotador; rotadores laterais do ombro.",
       "Plano e eixo": "Rotação lateral no plano transverso e eixo vertical; estabilização no plano frontal.",
       "Sinergistas": "Redondo menor na rotação lateral; demais músculos do manguito na estabilização; fibras posteriores do deltoide.",
       "Antagonistas": "Subescapular, peitoral maior, latíssimo do dorso e redondo maior na rotação medial.",
-      "Observação funcional": "É o principal rotador lateral do ombro, responsável por cerca de 60% dessa força. Sua atrofia isolada, visível como um afundamento na fossa infraespinal, é achado clássico em atletas de arremesso por compressão do nervo supraescapular na incisura espinoglenoidal.",
+      "Observação funcional": "Produz rotação lateral e contribui para centralizar a cabeça umeral. A contribuição depende da posição do braço e da tarefa.",
       "Exemplo de exercício": "Rotação lateral com elástico, cotovelo junto ao corpo a 90°, e progressão para 90° de abdução, em contexto didático.",
-      "Palpação básica": "Palpável na fossa infraespinal, abaixo da espinha da escápula, pedindo rotação lateral resistida com o cotovelo colado ao tronco."
+      "Palpação básica": "Palpável na fossa infraespinal, abaixo da espinha da escápula, pedindo rotação lateral resistida com o cotovelo colado ao tronco.",
+      "Tendão correspondente": "Tendão do infraespinal.",
+      "Papel no manguito": "Estabilização dinâmica por compressão e controle da translação da cabeça umeral.",
+      "Relações anatômicas": "Situa-se posteriormente à cabeça umeral, abaixo do supraespinal e acima do redondo menor."
     },
     "related": [
       "glenoumeral",
@@ -127,14 +140,23 @@
       "umero",
       "redondo-menor",
       "subescapular",
-      "ligamentos-transversos-da-escapula"
+      "ligamentos-transversos-da-escapula",
+      "tendao-infraespinal",
+      "labio-glenoidal"
     ],
     "depth": "profunda",
     "sources": [
       "openstax-muscles",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "teach-shoulder"
     ],
-    "aliases": [],
+    "aliases": [
+      "infraespinhoso",
+      "manguito rotador"
+    ],
     "modelIds": [
       "ZA-87ff24e3a85dbd",
       "ZA-3eade513dbf4cd"
@@ -154,19 +176,22 @@
     "summary": "Rotação medial e estabilização glenoumeral.",
     "fields": {
       "Origem": "Fossa subescapular.",
-      "Inserção": "Tubérculo menor do úmero.",
+      "Inserção": "Tubérculo menor do úmero; fibras inferiores também se fixam junto à sua crista.",
       "Inervação": "Nervos subescapulares superior e inferior (C5–C6).",
-      "Ação": "Rotação medial e estabilização glenoumeral.",
-      "Na prática": "Trazer a mão em direção ao abdômen.",
+      "Ação": "Produz rotação medial, auxilia a adução e estabiliza anteriormente a cabeça umeral.",
+      "Na prática": "Observe a ação e a estabilização em conjunto. Um teste isolado não identifica com certeza uma lesão.",
       "Localização": "Ombro",
       "Camada de estudo": "Profunda",
       "Grupo muscular": "Manguito rotador; rotadores mediais do ombro.",
       "Plano e eixo": "Rotação medial no plano transverso e eixo vertical.",
       "Sinergistas": "Peitoral maior, latíssimo do dorso e redondo maior na rotação medial; demais músculos do manguito na estabilização.",
       "Antagonistas": "Infraespinal e redondo menor na rotação lateral.",
-      "Observação funcional": "É o único músculo do manguito rotador na face anterior da escápula e o único rotador medial do grupo. Funciona como o principal freio anterior dinâmico da cabeça umeral, complementando os ligamentos glenoumerais. Sua lesão costuma passar despercebida porque o peitoral maior compensa a rotação medial.",
+      "Observação funcional": "Produz rotação medial, auxilia a adução e estabiliza anteriormente a cabeça umeral. A contribuição depende da posição do braço e da tarefa.",
       "Exemplo de exercício": "Rotação medial com elástico e exercício de empurrar a mão contra a barriga com o cotovelo à frente, em contexto didático.",
-      "Palpação básica": "De difícil acesso: apenas sua borda lateral é palpável na parede anterior da axila, com o braço em abdução. Avaliado sobretudo pelo teste de lift-off e pelo belly-press."
+      "Palpação básica": "De difícil acesso: apenas sua borda lateral é palpável na parede anterior da axila, com o braço em abdução. Avaliado sobretudo pelo teste de lift-off e pelo belly-press.",
+      "Tendão correspondente": "Tendão do subescapular.",
+      "Papel no manguito": "Estabilização dinâmica por compressão e controle da translação da cabeça umeral.",
+      "Relações anatômicas": "É anterior à articulação; suas fibras superiores participam da contenção do tendão da cabeça longa do bíceps."
     },
     "related": [
       "glenoumeral",
@@ -176,14 +201,22 @@
       "umero",
       "infraespinal",
       "bainha-intertubercular",
-      "ligamento-transverso-do-umero"
+      "ligamento-transverso-do-umero",
+      "tendao-subescapular",
+      "labio-glenoidal"
     ],
     "depth": "profunda",
     "sources": [
       "openstax-muscles",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "teach-shoulder"
     ],
-    "aliases": [],
+    "aliases": [
+      "manguito rotador"
+    ],
     "modelIds": [
       "ZA-84c7d3654da909",
       "ZA-bb19dc35992bc5"
@@ -203,19 +236,23 @@
     "summary": "Rotação lateral e estabilização do ombro.",
     "fields": {
       "Origem": "Porção superior da borda lateral da escápula.",
-      "Inserção": "Faceta inferior do tubérculo maior do úmero.",
+      "Inserção": "Faceta inferior do tubérculo maior do úmero, junto à cápsula posterior.",
       "Inervação": "Nervo axilar (C5–C6).",
-      "Ação": "Rotação lateral e estabilização do ombro.",
-      "Na prática": "Girar o braço para fora.",
+      "Ação": "Produz rotação lateral, auxilia a adução e estabiliza a cabeça umeral.",
+      "Na prática": "Observe a ação e a estabilização em conjunto. Um teste isolado não identifica com certeza uma lesão.",
       "Localização": "Ombro",
       "Camada de estudo": "Profunda",
       "Grupo muscular": "Manguito rotador; rotadores laterais do ombro.",
       "Plano e eixo": "Rotação lateral no plano transverso e eixo vertical.",
       "Sinergistas": "Infraespinal na rotação lateral; demais músculos do manguito na estabilização.",
       "Antagonistas": "Subescapular, peitoral maior e redondo maior na rotação medial.",
-      "Observação funcional": "É o único músculo do manguito rotador inervado pelo nervo axilar, e não pelo supraescapular ou subescapular. Por isso, na lesão do nervo axilar a rotação lateral fica parcialmente comprometida, além da abdução pelo deltoide. Forma a borda inferior do espaço quadrangular, por onde passa o próprio nervo axilar.",
+      "Observação funcional": "Produz rotação lateral, auxilia a adução e estabiliza a cabeça umeral. A contribuição depende da posição do braço e da tarefa.",
       "Exemplo de exercício": "Rotação lateral resistida a 90° de abdução, que recruta mais o redondo menor do que o infraespinal, em contexto didático.",
-      "Palpação básica": "Palpável na borda lateral da escápula, abaixo do infraespinal e acima do redondo maior, com rotação lateral resistida."
+      "Palpação básica": "Palpável na borda lateral da escápula, abaixo do infraespinal e acima do redondo maior, com rotação lateral resistida.",
+      "Tendão correspondente": "Tendão do redondo menor.",
+      "Papel no manguito": "Estabilização dinâmica por compressão e controle da translação da cabeça umeral.",
+      "Relações anatômicas": "Ocupa a região posterior inferior do manguito, superior ao redondo maior.",
+      "Espaço quadrangular": "Forma a borda superior. As demais bordas são redondo maior inferiormente, cabeça longa do tríceps medialmente e colo cirúrgico do úmero lateralmente. Passam o nervo axilar e os vasos circunflexos posteriores do úmero."
     },
     "related": [
       "glenoumeral",
@@ -224,14 +261,23 @@
       "umero",
       "infraespinal",
       "redondo-maior",
-      "deltoide"
+      "deltoide",
+      "tendao-redondo-menor",
+      "labio-glenoidal"
     ],
     "depth": "profunda",
     "sources": [
       "openstax-muscles",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "teach-shoulder",
+      "quadrangular-space"
     ],
-    "aliases": [],
+    "aliases": [
+      "manguito rotador"
+    ],
     "modelIds": [
       "ZA-a9f9cad10f26f8",
       "ZA-fd5c02294b4754"
@@ -263,7 +309,8 @@
       "Antagonistas": "Deltoide e supraespinal na abdução; infraespinal e redondo menor na rotação lateral.",
       "Observação funcional": "É frequentemente chamado de o pequeno ajudante do latíssimo do dorso, porque tem quase as mesmas ações. Não faz parte do manguito rotador, ao contrário do redondo menor, e é inervado pelo nervo subescapular inferior. Junto com o redondo menor e a cabeça longa do tríceps, delimita os espaços quadrangular e triangular da axila.",
       "Exemplo de exercício": "Puxada e remada com ênfase na adução e extensão do braço, em contexto didático.",
-      "Palpação básica": "Palpável na borda lateral da escápula, formando a prega posterior da axila junto com o latíssimo do dorso, na adução resistida."
+      "Palpação básica": "Palpável na borda lateral da escápula, formando a prega posterior da axila junto com o latíssimo do dorso, na adução resistida.",
+      "Relação com o manguito": "Auxilia adução e rotação medial, mas não é um dos quatro músculos do manguito rotador."
     },
     "related": [
       "nervo-subescapular-inferior",
@@ -276,7 +323,8 @@
     "depth": "superficial",
     "sources": [
       "openstax-muscles",
-      "z-anatomy"
+      "z-anatomy",
+      "teach-shoulder"
     ],
     "aliases": [],
     "modelIds": [
@@ -4196,7 +4244,10 @@
       "Função": "Base óssea do ombro, articula-se com úmero e clavícula.",
       "Articula-se com": "Úmero, na articulação glenoumeral, e clavícula, na acromioclavicular. Com o tórax mantém uma relação funcional, chamada articulação escapulotorácica, que não é uma articulação verdadeira.",
       "Palpação básica": "A espinha da escápula, o acrômio, a borda medial e o ângulo inferior são facilmente palpáveis. O processo coracoide é sentido cerca de 2 cm abaixo da clavícula, no terço lateral, com pressão firme.",
-      "Marcos para o exercício": "Em repouso fica entre T2 e T7, com cerca de 30° de rotação anterior no plano transverso. Recebe dezessete músculos. Sua rotação superior de aproximadamente 60° durante a elevação do braço é essencial para a mecânica do ombro."
+      "Marcos para o exercício": "A escápula orienta a glenoide por rotações, inclinações e translações. Posição e ritmo variam entre pessoas e tarefas.",
+      "Marcos do manguito": "Fossas supraespinal, infraespinal e subescapular e borda lateral dão origem aos quatro músculos.",
+      "Marcos articulares": "Glenoide e lábio articulam com a cabeça umeral; acrômio articula com a clavícula; processo coracoide recebe ligamentos e tendões.",
+      "Arco coracoacromial": "Acrômio, processo coracoide e ligamento coracoacromial formam o teto sobre o manguito."
     },
     "related": [
       "umero",
@@ -4215,12 +4266,17 @@
       "romboide-menor",
       "levantador-da-escapula",
       "ligamentos-transversos-da-escapula",
-      "ligamento-coracoacromial"
+      "ligamento-coracoacromial",
+      "interface-escapulotoracica",
+      "cartilagem-glenoidal"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection"
     ],
     "aliases": [],
     "modelIds": [
@@ -4247,7 +4303,10 @@
       "Função": "Forma o braço e participa do ombro e do cotovelo.",
       "Articula-se com": "Escápula, acima, na articulação glenoumeral; rádio e ulna, abaixo, nas articulações do cotovelo.",
       "Palpação básica": "O tubérculo maior é palpável abaixo do acrômio; o sulco intertubercular, entre os tubérculos, com o braço em leve rotação medial. Os epicôndilos medial e lateral são facilmente palpáveis no cotovelo.",
-      "Marcos para o exercício": "O nervo axilar contorna o colo cirúrgico e o nervo radial percorre o sulco espiral, ambos em risco nas fraturas correspondentes. O epicôndilo lateral é a origem dos extensores, na epicondilalgia lateral; o medial, dos flexores e pronadores."
+      "Marcos para o exercício": "O nervo axilar contorna o colo cirúrgico e o nervo radial percorre o sulco espiral, ambos em risco nas fraturas correspondentes. O epicôndilo lateral é a origem dos extensores, na epicondilalgia lateral; o medial, dos flexores e pronadores.",
+      "Marcos do manguito": "Tubérculo maior: facetas superior (supraespinal), média (infraespinal) e inferior (redondo menor). Tubérculo menor: subescapular.",
+      "Sulco intertubercular": "Entre os tubérculos; recebe o tendão da cabeça longa do bíceps e sua bainha.",
+      "Colos": "Colo anatômico junto à margem da cabeça e fixação capsular; colo cirúrgico inferiormente, próximo ao trajeto do nervo axilar."
     },
     "related": [
       "escapula",
@@ -4265,12 +4324,21 @@
       "triceps-braquial",
       "tendao-comum-dos-extensores",
       "tendao-comum-dos-flexores",
-      "ligamento-transverso-do-umero"
+      "ligamento-transverso-do-umero",
+      "cartilagem-cabeca-umeral",
+      "tendao-cabeca-longa-biceps",
+      "tendao-supraespinal",
+      "tendao-infraespinal",
+      "tendao-redondo-menor",
+      "tendao-subescapular"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection"
     ],
     "aliases": [],
     "modelIds": [
@@ -5445,10 +5513,15 @@
     "summary": "Permite posicionar a mão no espaço; mobilidade depende também da escápula.",
     "fields": {
       "Classificação": "Sinovial esferóidea",
-      "Superfícies articulares": "Cabeça do úmero e cavidade glenoidal da escápula.",
+      "Superfícies articulares": "Cabeça do úmero e cavidade glenoidal da escápula, ambas revestidas de cartilagem hialina.",
       "Movimentos": "Flexão, extensão, abdução, adução e rotações.",
       "Estabilizadores": "Manguito rotador, lábio glenoidal, cápsula e ligamentos glenoumerais.",
-      "Na prática": "Permite posicionar a mão no espaço; mobilidade depende também da escápula."
+      "Na prática": "Permite posicionar a mão no espaço; mobilidade depende também da escápula.",
+      "Cápsula fibrosa": "Fixa-se ao redor da glenoide e do lábio e ao colo anatômico do úmero; possui folga inferior para a elevação do braço.",
+      "Estabilizadores estáticos": "Cápsula, lábio, ligamentos glenoumerais e coracoumeral, pressão intra-articular e congruência.",
+      "Estabilizadores dinâmicos": "Manguito rotador e músculos que orientam a escápula; o deltoide produz elevação em equilíbrio com o manguito.",
+      "Membrana e cavidade": "Sinovial interna, cartilagens e recessos; o tendão da cabeça longa do bíceps é intra-articular e extrassinovial.",
+      "Ritmo escapuloumeral": "O movimento do braço combina glenoumeral, escapulotorácica, acromioclavicular e esternoclavicular; a proporção não é fixa."
     },
     "related": [
       "umero",
@@ -5457,12 +5530,34 @@
       "supraespinal",
       "infraespinal",
       "subescapular",
-      "redondo-menor"
+      "redondo-menor",
+      "tendao-supraespinal",
+      "tendao-infraespinal",
+      "tendao-redondo-menor",
+      "tendao-subescapular",
+      "tendao-cabeca-longa-biceps",
+      "cabo-rotador",
+      "crescente-rotador",
+      "polia-bicipital",
+      "intervalo-rotador",
+      "cartilagem-cabeca-umeral",
+      "cartilagem-glenoidal",
+      "membrana-sinovial-ombro",
+      "recesso-subescapular",
+      "bolsa-subcoracoidea",
+      "interface-escapulotoracica",
+      "labio-glenoidal",
+      "ligamento-glenoumeral-superior",
+      "ligamento-glenoumeral-medio",
+      "ligamento-glenoumeral-inferior"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-joints",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection"
     ],
     "aliases": [],
     "modelIds": [
@@ -5740,8 +5835,7 @@
     ],
     "depth": "superficial",
     "sources": [
-      "openstax-joints",
-      "z-anatomy"
+      "openstax-joints"
     ],
     "aliases": [
       "trapeziometacarpal",
@@ -6565,8 +6659,7 @@
     ],
     "depth": "superficial",
     "sources": [
-      "openstax-joints",
-      "z-anatomy"
+      "openstax-joints"
     ],
     "aliases": [
       "tendão patelar",
@@ -8173,17 +8266,18 @@
     "english": "inferior glenohumeral ligament",
     "kind": "ligamentos",
     "region": "Ombro",
-    "summary": "Principal estabilizador anterior do ombro em 90° de abdução com rotação lateral; sua avulsão é a lesão de Bankart.",
+    "summary": "Complexo capsuloligamentar inferior que limita translação da cabeça umeral, especialmente com o braço abduzido.",
     "fields": {
       "Localização": "Ombro",
       "Identificação na fonte": "Inferior glenohumeral ligament",
-      "Estudo 3D": "Explore o trajeto e as relações espaciais. Os lados disponíveis estão listados nos componentes da malha.",
+      "Estudo 3D": "A fonte fornece uma malha única do complexo em cada lado; as três porções são documentadas, mas não segmentadas separadamente.",
       "Fixações": "Lábio glenoidal ântero-inferior e póstero-inferior até a borda inferior do colo anatômico e cirúrgico do úmero. Forma um complexo em rede, com banda anterior, banda posterior e o recesso axilar entre elas.",
-      "Função": "É o estabilizador estático mais importante do ombro na posição de armar o arremesso, com 90° de abdução e rotação lateral máxima. A banda anterior tensiona em rotação lateral e a posterior em rotação medial, como uma rede que se desloca conforme o giro.",
+      "Função": "Restringe translações com o braço abduzido; a banda tensionada depende também da rotação.",
       "Tensiona em": "Abdução a 90° com rotação lateral, na posição de armar um saque ou um arremesso.",
       "Teste clínico": "Teste de apreensão e teste de recolocação (relocation), com o braço a 90° de abdução e rotação lateral.",
-      "Lesão típica": "Sua avulsão do lábio glenoidal ântero-inferior é a lesão de Bankart, base da luxação anterior recidivante do ombro.",
-      "Na prática": "É o ligamento da instabilidade anterior. Quem já luxou o ombro sente medo exatamente na posição em que ele deveria estar segurando."
+      "Lesão típica": "Bankart envolve o complexo capsulolabral anteroinferior na glenoide; avulsão do ligamento na fixação umeral é chamada HAGL. Não são sinônimos.",
+      "Na prática": "A região tensionada depende da combinação entre abdução e rotação. A malha estática mostra o complexo, sem simular uma lesão.",
+      "Partes": "Complexo com banda anterior, banda posterior e bolsa axilar interposta, contínuo com a cápsula inferior."
     },
     "related": [
       "glenoumeral",
@@ -8195,7 +8289,10 @@
     ],
     "depth": "profunda",
     "sources": [
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection"
     ],
     "aliases": [
       "Inferior glenohumeral ligament",
@@ -14029,8 +14126,8 @@
       "interósseos dorsais"
     ],
     "modelIds": [],
-    "modelSource": null,
-    "modelComponents": []
+    "modelComponents": [],
+    "modelSource": null
   },
   {
     "id": "interosseos-plantares",
@@ -14077,8 +14174,8 @@
       "interósseos plantares"
     ],
     "modelIds": [],
-    "modelSource": null,
-    "modelComponents": []
+    "modelComponents": [],
+    "modelSource": null
   },
   {
     "id": "aponeurose-plantar",
@@ -14683,7 +14780,9 @@
       "Teste clínico": "Teste de Speed, com flexão resistida do ombro com cotovelo estendido e antebraço supinado, e teste de Yergason, com supinação resistida.",
       "Na prática": "Dor anterior do ombro é frequentemente atribuída ao manguito rotador quando a origem é a cabeça longa do bíceps; palpar o sulco intertubercular separa os dois quadros rapidamente.",
       "Localização": "Ombro",
-      "Camada de estudo": "Profunda"
+      "Camada de estudo": "Profunda",
+      "Relação": "Envolve o tendão bicipital no sulco, com continuidade sinovial proximal. Não é o corpo do tendão.",
+      "Estudo 3D": "A malha representa a bainha sinovial da fonte; o tendão tem ficha complementar própria."
     },
     "related": [
       "umero",
@@ -14691,12 +14790,17 @@
       "glenoumeral",
       "subescapular",
       "ligamento-coracoumeral",
-      "supraespinal"
+      "supraespinal",
+      "tendao-cabeca-longa-biceps",
+      "polia-bicipital"
     ],
     "depth": "profunda",
     "sources": [
       "openstax-muscles",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection"
     ],
     "aliases": [
       "bainha do bíceps",
@@ -15692,8 +15796,8 @@
       "garra ulnar"
     ],
     "modelIds": [],
-    "modelSource": null,
-    "modelComponents": []
+    "modelComponents": [],
+    "modelSource": null
   },
   {
     "id": "interosseos-dorsais-da-mao",
@@ -15743,8 +15847,8 @@
       "primeiro interósseo dorsal"
     ],
     "modelIds": [],
-    "modelSource": null,
-    "modelComponents": []
+    "modelComponents": [],
+    "modelSource": null
   },
   {
     "id": "interosseos-palmares",
@@ -17465,14 +17569,15 @@
     "region": "Ombro",
     "summary": "Anel fibrocartilaginoso que aprofunda a cavidade glenoidal; sede das lesões de Bankart e SLAP.",
     "fields": {
-      "Classificação": "Anel fibrocartilaginoso periférico, fixado à margem da cavidade glenoidal da escápula.",
+      "Classificação": "Anel predominantemente fibrocartilaginoso periférico, distinto da cartilagem hialina da superfície glenoidal.",
       "Superfícies articulares": "Circunda a margem da cavidade glenoidal, aumentando sua profundidade em cerca de 50% e sua área de contato com a cabeça do úmero.",
       "Movimentos": "Não se move por si só. Acompanha as mudanças de tensão dos ligamentos glenoumerais, que nele se ancoram, e do tendão da cabeça longa do bíceps, que se continua com sua porção superior.",
       "Estabilizadores": "Ligamentos glenoumerais superior, médio e inferior, cápsula articular e tendão da cabeça longa do bíceps braquial.",
-      "Na prática": "É a estrutura central da instabilidade do ombro. Sua avulsão ântero-inferior é a lesão de Bankart, base da luxação anterior recidivante. Sua lesão superior, envolvendo a inserção do bíceps, é a lesão SLAP, comum em atletas de arremesso.",
-      "Função": "Aprofunda a rasa cavidade glenoidal, aumenta a congruência com a cabeça umeral e serve de ancoragem aos ligamentos glenoumerais. Também vedam a articulação, contribuindo para a pressão negativa intra-articular.",
+      "Na prática": "Lesões superiores do complexo bíceps–lábio são chamadas SLAP; achados de imagem e sintomas precisam ser correlacionados.",
+      "Função": "Aumenta a profundidade e a área de contato glenoidal e contribui para a vedação articular.",
       "Teste clínico": "Teste de apreensão e recolocação para lesões ântero-inferiores; teste de O'Brien e de compressão ativa para lesões superiores.",
-      "Localização": "Ombro"
+      "Localização": "Ombro",
+      "Fixações": "Borda da glenoide; continuidade com cápsula e ligamentos. Sua região superior relaciona-se à origem do tendão da cabeça longa do bíceps."
     },
     "related": [
       "glenoumeral",
@@ -17482,12 +17587,17 @@
       "ligamento-glenoumeral-inferior",
       "ligamento-glenoumeral-medio",
       "ligamento-glenoumeral-superior",
-      "bainha-intertubercular"
+      "bainha-intertubercular",
+      "cartilagem-glenoidal",
+      "tendao-cabeca-longa-biceps"
     ],
     "depth": "profunda",
     "sources": [
       "openstax-joints",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection"
     ],
     "aliases": [
       "lábrum glenoidal",
@@ -18713,7 +18823,7 @@
     "english": "transverse humeral ligament",
     "kind": "ligamentos",
     "region": "Ombro",
-    "summary": "Faixa que cobre o sulco intertubercular e mantém o tendão da cabeça longa do bíceps no lugar.",
+    "summary": "Fibras sobre o sulco intertubercular, relacionadas à contenção do tendão bicipital e ao complexo da polia.",
     "fields": {
       "Fixações": "Tubérculo maior até o tubérculo menor do úmero, atravessando a abertura do sulco intertubercular.",
       "Função": "Transforma o sulco intertubercular em um túnel e mantém dentro dele o tendão da cabeça longa do bíceps braquial, impedindo que ele escape medialmente durante a rotação do ombro.",
@@ -18721,7 +18831,8 @@
       "Teste clínico": "Sensação de estalido doloroso na face anterior do ombro durante a rotação, com dor à palpação do sulco intertubercular.",
       "Lesão típica": "Sua insuficiência, geralmente associada à lesão do tendão do subescapular, permite a subluxação medial do tendão da cabeça longa do bíceps.",
       "Na prática": "Estudos anatômicos mostram que a contenção do tendão depende mais das fibras do tendão do subescapular e do ligamento coracoumeral do que deste ligamento isoladamente. Por isso, dor anterior do ombro com estalido pede avaliação do subescapular.",
-      "Localização": "Ombro"
+      "Localização": "Ombro",
+      "Relação com o bíceps": "Cruza a região do sulco intertubercular. A contenção proximal do tendão depende também da polia e de fibras dos tendões adjacentes; não atribuir toda a estabilidade a este ligamento."
     },
     "related": [
       "umero",
@@ -18730,12 +18841,17 @@
       "subescapular",
       "bainha-intertubercular",
       "ligamento-coracoumeral",
-      "supraespinal"
+      "supraespinal",
+      "tendao-cabeca-longa-biceps",
+      "polia-bicipital"
     ],
     "depth": "profunda",
     "sources": [
       "openstax-joints",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection"
     ],
     "aliases": [
       "transverse humeral",
@@ -18753,7 +18869,7 @@
   },
   {
     "id": "ligamentos-transversos-da-escapula",
-    "name": "Ligamentos transversos da escápula",
+    "name": "Ligamentos transversos da escápula (visão geral)",
     "english": "transverse scapular ligaments",
     "kind": "ligamentos",
     "region": "Ombro",
@@ -18765,7 +18881,8 @@
       "Teste clínico": "Teste de adução horizontal com estiramento do nervo supraescapular; avaliar atrofia do supraespinal e do infraespinal nas fossas correspondentes.",
       "Lesão típica": "São os dois pontos onde o nervo supraescapular é comprimido. Na incisura da escápula, a compressão afeta supraespinal e infraespinal; na incisura espinoglenoidal, apenas o infraespinal, o que produz atrofia isolada e visível da fossa infraespinal.",
       "Na prática": "Atrofia isolada do infraespinal em atletas de vôlei e tênis é achado clássico e aponta para compressão na incisura espinoglenoidal, muitas vezes por um cisto paralabral.",
-      "Localização": "Ombro"
+      "Localização": "Ombro",
+      "Estudo 3D": "Abra a ficha do ligamento superior ou inferior para estudar cada malha separadamente."
     },
     "related": [
       "escapula",
@@ -18773,7 +18890,9 @@
       "supraespinal",
       "infraespinal",
       "glenoumeral",
-      "labio-glenoidal"
+      "labio-glenoidal",
+      "ligamento-transverso-superior-escapula",
+      "ligamento-transverso-inferior-escapula"
     ],
     "depth": "profunda",
     "sources": [
@@ -18785,23 +18904,13 @@
       "incisura da escápula",
       "nervo supraescapular"
     ],
-    "modelIds": [
-      "ZA-0fda6b150e1917",
-      "ZA-ae617a439f60c6",
-      "ZA-71774bbd5ed5dd",
-      "ZA-d20098e09a849e"
-    ],
-    "modelComponents": [
-      "Superior transverse scapular ligament.l",
-      "Superior transverse scapular ligament.r",
-      "Inferior transverse scapular ligament.l",
-      "Inferior transverse scapular ligament.r"
-    ],
-    "modelSource": "z-anatomy"
+    "modelIds": [],
+    "modelComponents": [],
+    "modelSource": null
   },
   {
     "id": "ligamentos-esternoclaviculares",
-    "name": "Ligamentos esternoclaviculares",
+    "name": "Ligamentos esternoclaviculares (visão geral)",
     "english": "sternoclavicular ligaments",
     "kind": "ligamentos",
     "region": "Ombro",
@@ -18813,7 +18922,8 @@
       "Teste clínico": "Palpação da interlinha durante elevação, protração e retração do ombro, comparando com o lado oposto.",
       "Lesão típica": "A luxação esternoclavicular é rara. Quando ocorre, a posterior é a que preocupa, porque a clavícula pode comprimir traqueia, esôfago e grandes vasos atrás do manúbrio, configurando urgência.",
       "Na prática": "Apesar de ter superfícies articulares muito incongruentes, quase nunca luxa, graças ao disco articular e a este conjunto de ligamentos. Em traumas, é mais comum fraturar a clavícula do que luxar esta articulação.",
-      "Localização": "Ombro"
+      "Localização": "Ombro",
+      "Estudo 3D": "Cada ligamento deste conjunto tem agora ficha e malha individuais."
     },
     "related": [
       "esternoclavicular",
@@ -18822,7 +18932,11 @@
       "costelas",
       "disco-esternoclavicular",
       "subclavio",
-      "acromioclavicular"
+      "acromioclavicular",
+      "ligamento-esternoclavicular-anterior",
+      "ligamento-esternoclavicular-posterior",
+      "ligamento-interclavicular",
+      "ligamento-costoclavicular"
     ],
     "depth": "profunda",
     "sources": [
@@ -18834,27 +18948,9 @@
       "interclavicular",
       "luxação esternoclavicular"
     ],
-    "modelIds": [
-      "ZA-0218bfa16d2d3c",
-      "ZA-9b34d41ceb172f",
-      "ZA-9fe1de3c3e601e",
-      "ZA-dec3754f411bde",
-      "ZA-aa67b043dcc7d4",
-      "ZA-fe9880256b812b",
-      "ZA-80b0096589be97",
-      "ZA-4d19d6f8e5a863"
-    ],
-    "modelComponents": [
-      "Anterior sternoclavicular ligament.l",
-      "Anterior sternoclavicular ligament.r",
-      "Posterior sternoclavicular ligament.l",
-      "Posterior sternoclavicular ligament.r",
-      "Interclavicular ligament.l",
-      "Interclavicular ligament.r",
-      "Costoclavicular ligament.l",
-      "Costoclavicular ligament.r"
-    ],
-    "modelSource": "z-anatomy"
+    "modelIds": [],
+    "modelComponents": [],
+    "modelSource": null
   },
   {
     "id": "ligamento-metacarpal-transverso-profundo",
@@ -21056,7 +21152,7 @@
   },
   {
     "id": "bolsas-do-ombro",
-    "name": "Bolsas do ombro",
+    "name": "Bolsas do ombro (visão geral)",
     "english": "bursae of shoulder",
     "kind": "articulacoes",
     "region": "Ombro",
@@ -21066,10 +21162,11 @@
       "Superfícies articulares": "A subacromial fica entre o arco coracoacromial e o tendão do supraespinal; a subdeltóidea, entre o deltoide e o tubérculo maior. As duas são contínuas na maioria das pessoas e formam um único saco. Há ainda a subcutânea do acrômio, a subtendínea do infraespinal, a do redondo maior, a do trapézio e a coracobraquial.",
       "Movimentos": "Deslizam durante a elevação do braço, permitindo que o tendão do supraespinal passe sob o arco coracoacromial sem atrito. Não se movem por si: são deslizadas pelas estruturas vizinhas.",
       "Estabilizadores": "Não estabilizam; sua função é reduzir atrito. A vedação depende da integridade do manguito rotador: uma ruptura completa faz a bolsa se comunicar com a articulação.",
-      "Na prática": "A bursite subacromial raramente é isolada. Costuma acompanhar tendinopatia do manguito e alteração do ritmo escapuloumeral, e é por isso que o tratamento eficaz combina controle de carga, fortalecimento do manguito e reeducação escapular, e não apenas repouso.",
-      "Função": "Permitem o deslizamento livre entre o manguito rotador, o deltoide e o arco coracoacromial. A subacromial-subdeltóidea é a maior bolsa do corpo humano.",
+      "Na prática": "Relacionar os achados às estruturas vizinhas e à avaliação. Dor regional não distingue bursite de tendinopatia por si só.",
+      "Função": "Redução de atrito; a configuração e as comunicações variam.",
       "Teste clínico": "Testes de impacto de Neer e Hawkins-Kennedy; arco doloroso entre 60° e 120° de abdução; dor à palpação abaixo da borda anterolateral do acrômio.",
-      "Localização": "Ombro"
+      "Localização": "Ombro",
+      "Estudo 3D": "As bolsas agora têm fichas e malhas individuais. Abra uma bolsa relacionada para selecionar seu componente."
     },
     "related": [
       "glenoumeral",
@@ -21082,52 +21179,33 @@
       "redondo-maior",
       "trapezio",
       "ligamento-coracoacromial",
-      "coracobraquial"
+      "coracobraquial",
+      "bolsa-subacromial",
+      "bolsa-subdeltoidea",
+      "bolsa-subcutanea-acromial",
+      "bolsa-subtendinea-infraespinal",
+      "bolsa-subtendinea-redondo-maior",
+      "bolsa-subtendinea-trapezio",
+      "bolsa-coracobraquial",
+      "bolsa-subcoracoidea",
+      "recesso-subescapular"
     ],
     "depth": "profunda",
     "sources": [
       "openstax-joints",
-      "z-anatomy"
+      "z-anatomy",
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection"
     ],
     "aliases": [
       "bursite subacromial",
       "bolsa subdeltóidea",
       "impacto subacromial"
     ],
-    "modelIds": [
-      "ZA-9fdb41ced3b07d",
-      "ZA-a6661f9fa65189",
-      "ZA-4f66edafc8f4b1",
-      "ZA-75d445e02e39f2",
-      "ZA-316f41f3e03480",
-      "ZA-e09b7cf5693183",
-      "ZA-a948d37d76e6e6",
-      "ZA-454f95a2241656",
-      "ZA-0284424347ccb1",
-      "ZA-5f29b3d055dd26",
-      "ZA-865e3d6ac15f69",
-      "ZA-e980626ca2cbb8",
-      "ZA-92f9cc31b2b545",
-      "ZA-6625b1050576c9"
-    ],
-    "modelComponents": [
-      "Subacromial bursa.l",
-      "Subacromial bursa.r",
-      "Subdeltoid bursa.l",
-      "Subdeltoid bursa.r",
-      "Subcutaneous acromial bursa.l",
-      "Subcutaneous acromial bursa.r",
-      "Subtendinous bursa of infraspinatus muscle.l",
-      "Subtendinous bursa of infraspinatus muscle.r",
-      "Subtendinous bursa of teres major muscle.l",
-      "Subtendinous bursa of teres major muscle.r",
-      "Subtendinous bursa of trapezius muscle.l",
-      "Subtendinous bursa of trapezius muscle.r",
-      "Coracobrachial bursa.l",
-      "Coracobrachial bursa.r"
-    ],
-    "modelSource": "z-anatomy",
-    "modelNote": "Representação articular pelos componentes anatômicos listados abaixo (discos, meniscos ou ligamentos de suporte)."
+    "modelIds": [],
+    "modelComponents": [],
+    "modelSource": null
   },
   {
     "id": "bolsas-do-cotovelo",
@@ -21658,7 +21736,8 @@
       "Teste clínico": "Avaliadas indiretamente nos testes de desfiladeiro torácico, como o teste de Wright e a manobra costoclavicular.",
       "Na prática": "A continuidade entre fáscia antebraquial, retináculos e aponeurose palmar explica por que restrições no antebraço repercutem na mobilidade do punho e dos dedos.",
       "Localização": "Braço",
-      "Camada de estudo": "Superficial"
+      "Camada de estudo": "Superficial",
+      "Estudo 3D": "Esta ficha mantém fáscias braquial, antebraquial e dorsal da mão. Fáscias deltoidea, peitoral e clavipeitoral têm fichas individuais no módulo do ombro."
     },
     "related": [
       "umero",
@@ -21674,7 +21753,10 @@
       "retinaculo-dos-flexores-do-punho",
       "retinaculo-dos-extensores-do-punho",
       "plexo-braquial",
-      "septos-intermusculares"
+      "septos-intermusculares",
+      "fascia-deltoidea",
+      "fascia-peitoral",
+      "fascia-clavipeitoral"
     ],
     "depth": "superficial",
     "sources": [
@@ -21692,12 +21774,6 @@
       "ZA-bf74252c868882",
       "ZA-988c712dde94b5",
       "ZA-88abb64d46686d",
-      "ZA-efdb0afe712125",
-      "ZA-52e57ac59233c7",
-      "ZA-4e96004f27d182",
-      "ZA-182443e0f28ff4",
-      "ZA-6900eece38b9a1",
-      "ZA-99c5e4b75c1ed5",
       "ZA-71c3acd3b1b399",
       "ZA-902cd04905d3ed"
     ],
@@ -21707,12 +21783,6 @@
       "Brachial fascia.r",
       "Antebrachial fascia.l",
       "Antebrachial fascia.r",
-      "Deltoid fascia.l",
-      "Deltoid fascia.r",
-      "Pectoral fascia.l",
-      "Pectoral fascia.r",
-      "Clavipectoral fascia.l",
-      "Clavipectoral fascia.r",
       "Dorsal fascia of hand.l",
       "Dorsal fascia of hand.r"
     ],
@@ -26371,11 +26441,11 @@
       "ZA-6b8257bf0a5d54",
       "ZA-2ba0b1feac685b"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Descending part of trapezius muscle.l",
       "Descending part of trapezius muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "trapezio-medio",
@@ -26420,11 +26490,11 @@
       "ZA-053d1ef6d803ef",
       "ZA-a8729a66ef5355"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Transverse part of trapezius muscle.l",
       "Transverse part of trapezius muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "trapezio-inferior",
@@ -26468,11 +26538,11 @@
       "ZA-03d11aa52a6f36",
       "ZA-70cdd4466a0d05"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Ascending part of trapezius muscle.l",
       "Ascending part of trapezius muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "deltoide-anterior",
@@ -26494,7 +26564,8 @@
       "Sinergistas": "Peitoral maior (porção clavicular), coracobraquial.",
       "Antagonistas": "Deltoide posterior e latíssimo do dorso.",
       "Exemplo de exercício": "Desenvolvimento frontal e elevação frontal.",
-      "Palpação básica": "Palpável na frente do ombro, logo abaixo da clavícula lateral."
+      "Palpação básica": "Palpável na frente do ombro, logo abaixo da clavícula lateral.",
+      "Relação com o manguito": "O deltoide movimenta o braço; o manguito contribui para centralizar a cabeça umeral durante essa ação."
     },
     "related": [
       "deltoide",
@@ -26502,12 +26573,17 @@
       "clavicula",
       "umero",
       "peitoral-maior",
-      "glenoumeral"
+      "glenoumeral",
+      "supraespinal",
+      "infraespinal",
+      "redondo-menor",
+      "subescapular"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-muscles",
-      "z-anatomy"
+      "z-anatomy",
+      "teach-shoulder"
     ],
     "aliases": [
       "porção clavicular do deltoide",
@@ -26518,11 +26594,11 @@
       "ZA-50e681ac8f5124",
       "ZA-bc88f0f42d616e"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Clavicular part of deltoid muscle.l",
       "Clavicular part of deltoid muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "deltoide-medio",
@@ -26544,19 +26620,24 @@
       "Sinergistas": "Supraespinal (início da abdução).",
       "Antagonistas": "Peitoral maior e latíssimo do dorso (adução).",
       "Exemplo de exercício": "Elevação lateral.",
-      "Palpação básica": "Palpável na face lateral do ombro, abaixo do acrômio."
+      "Palpação básica": "Palpável na face lateral do ombro, abaixo do acrômio.",
+      "Relação com o manguito": "O deltoide movimenta o braço; o manguito contribui para centralizar a cabeça umeral durante essa ação."
     },
     "related": [
       "deltoide",
       "nervo-axilar",
       "umero",
       "supraespinal",
-      "glenoumeral"
+      "glenoumeral",
+      "infraespinal",
+      "redondo-menor",
+      "subescapular"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-muscles",
-      "z-anatomy"
+      "z-anatomy",
+      "teach-shoulder"
     ],
     "aliases": [
       "porção acromial do deltoide",
@@ -26567,11 +26648,11 @@
       "ZA-b74d57488cede4",
       "ZA-dfbfb91949824f"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Acromial part of deltoid muscle.l",
       "Acromial part of deltoid muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "deltoide-posterior",
@@ -26593,19 +26674,25 @@
       "Sinergistas": "Infraespinhoso e redondo menor (rotação lateral e abdução horizontal).",
       "Antagonistas": "Deltoide anterior e peitoral maior.",
       "Exemplo de exercício": "Crucifixo invertido e face pull.",
-      "Palpação básica": "Palpável atrás do ombro, abaixo da espinha da escápula."
+      "Palpação básica": "Palpável atrás do ombro, abaixo da espinha da escápula.",
+      "Relação com o manguito": "O deltoide movimenta o braço; o manguito contribui para centralizar a cabeça umeral durante essa ação."
     },
     "related": [
       "deltoide",
       "nervo-axilar",
       "escapula",
       "umero",
-      "glenoumeral"
+      "glenoumeral",
+      "supraespinal",
+      "infraespinal",
+      "redondo-menor",
+      "subescapular"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-muscles",
-      "z-anatomy"
+      "z-anatomy",
+      "teach-shoulder"
     ],
     "aliases": [
       "porção espinal do deltoide",
@@ -26616,11 +26703,11 @@
       "ZA-0378b861a51baf",
       "ZA-3d3652cd3db07f"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Scapular spinal part of deltoid muscle.l",
       "Scapular spinal part of deltoid muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "peitoral-clavicular",
@@ -26665,11 +26752,11 @@
       "ZA-3c0a9b09661fd7",
       "ZA-9ac365e0905b0b"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Clavicular head of pectoralis major muscle.l",
       "Clavicular head of pectoralis major muscle.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "peitoral-esternocostal",
@@ -26717,13 +26804,13 @@
       "ZA-2b3e1cd7bf55f6",
       "ZA-5b6bc3c090d774"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Sternocostal head of pectoralis major muscle.l",
       "Sternocostal head of pectoralis major muscle.r",
       "(Abdominal part of pectoralis major muscle).l",
       "(Abdominal part of pectoralis major muscle).r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "primeiro-interosseo-dorsal-da-mao",
@@ -26765,11 +26852,11 @@
       "ZA-2abbab9ae24d13",
       "ZA-ede6436d94642e"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "First dorsal interosseous of hand.l",
       "First dorsal interosseous of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "segundo-interosseo-dorsal-da-mao",
@@ -26811,11 +26898,11 @@
       "ZA-c94c101633f85c",
       "ZA-8c6834c0e42001"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Second dorsal interosseous of hand.l",
       "Second dorsal interosseous of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "terceiro-interosseo-dorsal-da-mao",
@@ -26857,11 +26944,11 @@
       "ZA-0dbbc36b8ecbab",
       "ZA-9471f6174e75a8"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Third dorsal interosseous of hand.l",
       "Third dorsal interosseous of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "quarto-interosseo-dorsal-da-mao",
@@ -26903,11 +26990,11 @@
       "ZA-a64f1f109647b0",
       "ZA-9324d5d496ac77"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Fourth dorsal interosseous of hand.l",
       "Fourth dorsal interosseous of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "primeiro-lumbrical-da-mao",
@@ -26947,11 +27034,11 @@
       "ZA-4bc93b881bb3c6",
       "ZA-29e7f1bd7335f0"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "First lumbrical of hand.l",
       "First lumbrical of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "segundo-lumbrical-da-mao",
@@ -26991,11 +27078,11 @@
       "ZA-cee40496dfe6e5",
       "ZA-4c10b8c4af8581"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Second lumbrical of hand.l",
       "Second lumbrical of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "terceiro-lumbrical-da-mao",
@@ -27035,11 +27122,11 @@
       "ZA-73ab1128adf0d3",
       "ZA-6de28805b2d459"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Third lumbrical of hand.l",
       "Third lumbrical of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "quarto-lumbrical-da-mao",
@@ -27079,11 +27166,11 @@
       "ZA-74696d51adc2ed",
       "ZA-4a9fb7e91a34a4"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Fourth lumbrical of hand.l",
       "Fourth lumbrical of hand.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "primeiro-interosseo-dorsal-do-pe",
@@ -27124,11 +27211,11 @@
       "ZA-9c849d1550adeb",
       "ZA-23986f2edee313"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "First dorsal interosseous of foot.l",
       "First dorsal interosseous of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "segundo-interosseo-dorsal-do-pe",
@@ -27169,11 +27256,11 @@
       "ZA-2e47ca755f1fc7",
       "ZA-d21f187889fbee"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Second dorsal interosseous of foot.l",
       "Second dorsal interosseous of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "terceiro-interosseo-dorsal-do-pe",
@@ -27214,11 +27301,11 @@
       "ZA-2cb34041238837",
       "ZA-a3a311144e35c3"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Third dorsal interosseous of foot.l",
       "Third dorsal interosseous of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "quarto-interosseo-dorsal-do-pe",
@@ -27259,11 +27346,11 @@
       "ZA-0b7ac2d8a1e19f",
       "ZA-5405ddc2ae9311"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Fourth dorsal interosseous of foot.l",
       "Fourth dorsal interosseous of foot.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "primeiro-interosseo-plantar",
@@ -27304,11 +27391,11 @@
       "ZA-7715e7f5b3d20f",
       "ZA-bb5dba814eb4ac"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "First plantar interosseous.l",
       "First plantar interosseous.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "segundo-interosseo-plantar",
@@ -27349,11 +27436,11 @@
       "ZA-f036a69551ed86",
       "ZA-b833c2cbff00f9"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Second plantar interosseous.l",
       "Second plantar interosseous.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
   },
   {
     "id": "terceiro-interosseo-plantar",
@@ -27394,10 +27481,1254 @@
       "ZA-6aa20717b412bb",
       "ZA-965ff35d9cb18e"
     ],
-    "modelSource": "z-anatomy",
     "modelComponents": [
       "Third plantar interosseous.l",
       "Third plantar interosseous.r"
-    ]
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "tendao-supraespinal",
+    "name": "Tendão do supraespinal",
+    "english": "supraspinatus tendon",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Transmite a força do supraespinal ao úmero e integra o manguito ao redor da cabeça umeral.",
+    "fields": {
+      "Tipo": "Tendão do manguito rotador; tecido conjuntivo denso predominantemente colágeno.",
+      "Continuidade proximal": "Junção musculotendínea do supraespinal.",
+      "Inserção": "Faceta superior do tubérculo maior do úmero; fibras continuam com a cápsula.",
+      "Relações": "Passa superiormente à cabeça umeral, sob o arco coracoacromial e a bolsa subacromial.",
+      "Função": "Auxilia a abdução e comprime a cabeça umeral contra a glenoide.",
+      "Integração com a cápsula": "As fibras tendíneas se entrelaçam com as dos tendões vizinhos e com a cápsula glenoumeral; a separação em peças é didática.",
+      "Vascularização": "Recebe ramos regionais da rede supraescapular e circunflexa umeral; a distribuição varia ao longo do tendão.",
+      "Na prática": "Diferencie ventre muscular, junção musculotendínea, tendão e entese. Dor, fraqueza e alterações de imagem precisam de avaliação conjunta.",
+      "Estudo 3D": "Superfície topográfica aproximada criada no Higgsfield; espessura, inserção e percurso não foram segmentados da fonte."
+    },
+    "related": [
+      "supraespinal",
+      "umero",
+      "escapula",
+      "glenoumeral",
+      "nervo-supraescapular",
+      "cabo-rotador",
+      "crescente-rotador"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-tendao-supraespinal-r",
+      "HG-tendao-supraespinal-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Tendão do supraespinal.r",
+      "Complemento didático: Tendão do supraespinal.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Superfície topográfica aproximada criada no Higgsfield; espessura, inserção e percurso não foram segmentados da fonte. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "tendao-infraespinal",
+    "name": "Tendão do infraespinal",
+    "english": "infraspinatus tendon",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Transmite a força do infraespinal ao úmero e integra o manguito ao redor da cabeça umeral.",
+    "fields": {
+      "Tipo": "Tendão do manguito rotador; tecido conjuntivo denso predominantemente colágeno.",
+      "Continuidade proximal": "Junção musculotendínea do infraespinal.",
+      "Inserção": "Faceta média do tubérculo maior do úmero; fibras adjacentes ao supraespinal se entrelaçam.",
+      "Relações": "Situa-se posteriormente à cabeça umeral, abaixo do supraespinal e acima do redondo menor.",
+      "Função": "Produz rotação lateral e contribui para centralizar a cabeça umeral.",
+      "Integração com a cápsula": "As fibras tendíneas se entrelaçam com as dos tendões vizinhos e com a cápsula glenoumeral; a separação em peças é didática.",
+      "Vascularização": "Recebe ramos regionais da rede supraescapular e circunflexa umeral; a distribuição varia ao longo do tendão.",
+      "Na prática": "Diferencie ventre muscular, junção musculotendínea, tendão e entese. Dor, fraqueza e alterações de imagem precisam de avaliação conjunta.",
+      "Estudo 3D": "Superfície topográfica aproximada criada no Higgsfield; espessura, inserção e percurso não foram segmentados da fonte."
+    },
+    "related": [
+      "infraespinal",
+      "umero",
+      "escapula",
+      "glenoumeral",
+      "nervo-supraescapular",
+      "cabo-rotador",
+      "crescente-rotador"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-tendao-infraespinal-r",
+      "HG-tendao-infraespinal-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Tendão do infraespinal.r",
+      "Complemento didático: Tendão do infraespinal.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Superfície topográfica aproximada criada no Higgsfield; espessura, inserção e percurso não foram segmentados da fonte. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "tendao-redondo-menor",
+    "name": "Tendão do redondo menor",
+    "english": "teres minor tendon",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Transmite a força do redondo menor ao úmero e integra o manguito ao redor da cabeça umeral.",
+    "fields": {
+      "Tipo": "Tendão do manguito rotador; tecido conjuntivo denso predominantemente colágeno.",
+      "Continuidade proximal": "Junção musculotendínea do redondo menor.",
+      "Inserção": "Faceta inferior do tubérculo maior do úmero, junto à cápsula posterior.",
+      "Relações": "Ocupa a região posterior inferior do manguito, superior ao redondo maior.",
+      "Função": "Produz rotação lateral, auxilia a adução e estabiliza a cabeça umeral.",
+      "Integração com a cápsula": "As fibras tendíneas se entrelaçam com as dos tendões vizinhos e com a cápsula glenoumeral; a separação em peças é didática.",
+      "Vascularização": "Recebe ramos regionais da rede supraescapular e circunflexa umeral; a distribuição varia ao longo do tendão.",
+      "Na prática": "Diferencie ventre muscular, junção musculotendínea, tendão e entese. Dor, fraqueza e alterações de imagem precisam de avaliação conjunta.",
+      "Estudo 3D": "Superfície topográfica aproximada criada no Higgsfield; espessura, inserção e percurso não foram segmentados da fonte."
+    },
+    "related": [
+      "redondo-menor",
+      "umero",
+      "escapula",
+      "glenoumeral",
+      "nervo-axilar",
+      "cabo-rotador",
+      "crescente-rotador"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-tendao-redondo-menor-r",
+      "HG-tendao-redondo-menor-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Tendão do redondo menor.r",
+      "Complemento didático: Tendão do redondo menor.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Superfície topográfica aproximada criada no Higgsfield; espessura, inserção e percurso não foram segmentados da fonte. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "tendao-subescapular",
+    "name": "Tendão do subescapular",
+    "english": "subscapularis tendon",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Transmite a força do subescapular ao úmero e integra o manguito ao redor da cabeça umeral.",
+    "fields": {
+      "Tipo": "Tendão do manguito rotador; tecido conjuntivo denso predominantemente colágeno.",
+      "Continuidade proximal": "Junção musculotendínea do subescapular.",
+      "Inserção": "Tubérculo menor do úmero; fibras inferiores também se fixam junto à sua crista.",
+      "Relações": "É anterior à articulação; suas fibras superiores participam da contenção do tendão da cabeça longa do bíceps.",
+      "Função": "Produz rotação medial, auxilia a adução e estabiliza anteriormente a cabeça umeral.",
+      "Integração com a cápsula": "As fibras tendíneas se entrelaçam com as dos tendões vizinhos e com a cápsula glenoumeral; a separação em peças é didática.",
+      "Vascularização": "Recebe ramos regionais da rede supraescapular e circunflexa umeral; a distribuição varia ao longo do tendão.",
+      "Na prática": "Diferencie ventre muscular, junção musculotendínea, tendão e entese. Dor, fraqueza e alterações de imagem precisam de avaliação conjunta.",
+      "Estudo 3D": "Superfície topográfica aproximada criada no Higgsfield; espessura, inserção e percurso não foram segmentados da fonte."
+    },
+    "related": [
+      "subescapular",
+      "umero",
+      "escapula",
+      "glenoumeral",
+      "nervo-subescapular-superior",
+      "cabo-rotador",
+      "crescente-rotador"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-tendao-subescapular-r",
+      "HG-tendao-subescapular-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Tendão do subescapular.r",
+      "Complemento didático: Tendão do subescapular.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Superfície topográfica aproximada criada no Higgsfield; espessura, inserção e percurso não foram segmentados da fonte. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "tendao-cabeca-longa-biceps",
+    "name": "Tendão da cabeça longa do bíceps",
+    "english": "long head of biceps tendon",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Tendão vizinho ao manguito: cruza a articulação e segue pelo sulco intertubercular; não pertence aos quatro músculos do manguito.",
+    "fields": {
+      "Origem": "Tubérculo supraglenoidal da escápula e lábio glenoidal superior, com variação da participação de cada fixação.",
+      "Trajeto": "Segmento proximal intra-articular e extrassinovial; atravessa o intervalo rotador e entra no sulco intertubercular.",
+      "Contenção": "Polia bicipital formada por fibras do ligamento coracoumeral, ligamento glenoumeral superior e tendões adjacentes.",
+      "Continuidade distal": "Continua com a cabeça longa do bíceps braquial. Este modelo inclui somente o segmento proximal.",
+      "Função": "Transmite força do bíceps; sua contribuição para estabilidade do ombro depende da posição e da carga.",
+      "Na prática": "Lesões do subescapular e da polia podem acompanhar instabilidade do tendão. A origem superior relaciona-se com lesões SLAP.",
+      "Estudo 3D": "Trajeto tubular didático aproximado, separado da bainha e do músculo; não mede o sulco nem a entese."
+    },
+    "related": [
+      "biceps-braquial",
+      "bainha-intertubercular",
+      "polia-bicipital",
+      "intervalo-rotador",
+      "labio-glenoidal",
+      "ligamento-transverso-do-umero"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-tendao-cabeca-longa-biceps-r",
+      "HG-tendao-cabeca-longa-biceps-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Tendão da cabeça longa do bíceps.r",
+      "Complemento didático: Tendão da cabeça longa do bíceps.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Trajeto tubular didático aproximado, separado da bainha e do músculo; não mede o sulco nem a entese. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "cabo-rotador",
+    "name": "Cabo rotador",
+    "english": "rotator cable",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Espessamento de fibras que distribui cargas no manguito superior e posterior.",
+    "fields": {
+      "Tipo": "Espessamento transversal do complexo capsulotendíneo, relacionado a fibras do ligamento coracoumeral.",
+      "Relações": "Contorna a região medial do crescente, conectando regiões anteriores e posteriores do manguito.",
+      "Função": "Redistribui a tensão tendínea; não é um quinto tendão muscular independente.",
+      "Variações": "Espessura, definição e extensão variam entre pessoas.",
+      "Estudo 3D": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos."
+    },
+    "related": [
+      "tendao-supraespinal",
+      "tendao-infraespinal",
+      "ligamento-coracoumeral",
+      "crescente-rotador"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-cabo-rotador-r",
+      "HG-cabo-rotador-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Cabo rotador.r",
+      "Complemento didático: Cabo rotador.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "crescente-rotador",
+    "name": "Crescente rotador",
+    "english": "rotator crescent",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Região distal mais fina do manguito entre o cabo rotador e a fixação no tubérculo maior.",
+    "fields": {
+      "Tipo": "Área do complexo tendíneo, e não um músculo ou tendão adicional.",
+      "Localização": "Lateral ao cabo rotador, junto à inserção dos tendões superiores e posteriores.",
+      "Função": "Continuidade da transmissão de força para a entese.",
+      "Na prática": "Ajuda a localizar a região das rupturas; a extensão da lesão não é representada neste modelo.",
+      "Estudo 3D": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos."
+    },
+    "related": [
+      "cabo-rotador",
+      "tendao-supraespinal",
+      "tendao-infraespinal",
+      "umero"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-crescente-rotador-r",
+      "HG-crescente-rotador-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Crescente rotador.r",
+      "Complemento didático: Crescente rotador.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "polia-bicipital",
+    "name": "Polia bicipital",
+    "english": "biceps pulley",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Complexo fibroso que orienta e contém o tendão da cabeça longa do bíceps na saída da articulação.",
+    "fields": {
+      "Tipo": "Complexo de fibras; não é um ligamento único.",
+      "Componentes": "Ligamentos coracoumeral e glenoumeral superior, com contribuição dos tendões do subescapular e do supraespinal.",
+      "Função": "Contenção do tendão bicipital na transição para o sulco intertubercular.",
+      "Na prática": "Pode ser lesada junto com o subescapular, permitindo subluxação do tendão bicipital.",
+      "Estudo 3D": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos."
+    },
+    "related": [
+      "intervalo-rotador",
+      "tendao-cabeca-longa-biceps",
+      "ligamento-coracoumeral",
+      "ligamento-glenoumeral-superior",
+      "tendao-subescapular",
+      "tendao-supraespinal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-polia-bicipital-r",
+      "HG-polia-bicipital-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Polia bicipital.r",
+      "Complemento didático: Polia bicipital.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "intervalo-rotador",
+    "name": "Intervalo rotador",
+    "english": "rotator interval",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Região capsular anterior superior entre os tendões do supraespinal e do subescapular.",
+    "fields": {
+      "Classificação": "Região anatômica; não é uma articulação ou um espaço vazio independente.",
+      "Limites": "Supraespinal superiormente, subescapular inferiormente e processo coracoide medialmente.",
+      "Conteúdo": "Cápsula, ligamentos coracoumeral e glenoumeral superior e tendão da cabeça longa do bíceps.",
+      "Função": "Participa da estabilidade e da contenção do tendão bicipital.",
+      "Estudo 3D": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos."
+    },
+    "related": [
+      "polia-bicipital",
+      "tendao-supraespinal",
+      "tendao-subescapular",
+      "tendao-cabeca-longa-biceps",
+      "ligamento-coracoumeral",
+      "ligamento-glenoumeral-superior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-intervalo-rotador-r",
+      "HG-intervalo-rotador-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Intervalo rotador.r",
+      "Complemento didático: Intervalo rotador.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "cartilagem-cabeca-umeral",
+    "name": "Cartilagem da cabeça umeral",
+    "english": "humeral head articular cartilage",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Revestimento hialino da superfície articular da cabeça do úmero.",
+    "fields": {
+      "Classificação": "Cartilagem articular hialina, distinta do fibrocartilaginoso lábio glenoidal.",
+      "Localização": "Superfície da cabeça voltada para a glenoide, até a transição do colo anatômico.",
+      "Função": "Distribui cargas e oferece uma superfície de baixo atrito.",
+      "Nutrição": "Predominantemente por difusão a partir do líquido sinovial; sem vascularização direta normal.",
+      "Estudo 3D": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos."
+    },
+    "related": [
+      "umero",
+      "cartilagem-glenoidal",
+      "glenoumeral",
+      "membrana-sinovial-ombro"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-cartilagem-cabeca-umeral-r",
+      "HG-cartilagem-cabeca-umeral-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Cartilagem da cabeça umeral.r",
+      "Complemento didático: Cartilagem da cabeça umeral.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "cartilagem-glenoidal",
+    "name": "Cartilagem da glenoide",
+    "english": "glenoid articular cartilage",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Revestimento hialino da cavidade glenoidal da escápula.",
+    "fields": {
+      "Classificação": "Cartilagem hialina articular; o lábio periférico é uma estrutura distinta.",
+      "Localização": "Superfície glenoidal da escápula, em contato com a cartilagem da cabeça umeral.",
+      "Função": "Reduz atrito e distribui cargas de contato.",
+      "Na prática": "Observe a superfície articular e o anel periférico do lábio separadamente.",
+      "Estudo 3D": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos."
+    },
+    "related": [
+      "escapula",
+      "labio-glenoidal",
+      "cartilagem-cabeca-umeral",
+      "glenoumeral"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-cartilagem-glenoidal-r",
+      "HG-cartilagem-glenoidal-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Cartilagem da glenoide.r",
+      "Complemento didático: Cartilagem da glenoide.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "membrana-sinovial-ombro",
+    "name": "Membrana sinovial do ombro",
+    "english": "glenohumeral synovial membrane",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Revestimento interno da cápsula que mantém o líquido sinovial da articulação.",
+    "fields": {
+      "Classificação": "Membrana sinovial; tecido conjuntivo especializado, diferente da cápsula fibrosa externa.",
+      "Localização": "Face interna não cartilaginosa da cápsula, com reflexões e recessos.",
+      "Função": "Produção e manutenção do líquido sinovial, que lubrifica e nutre a cartilagem.",
+      "Relação com o bíceps": "A sinovial reflete-se ao redor do tendão proximal; o tendão é intra-articular, mas extrassinovial.",
+      "Estudo 3D": "Meia superfície em corte para mostrar a organização; não é segmentação da membrana real."
+    },
+    "related": [
+      "glenoumeral",
+      "recesso-subescapular",
+      "bainha-intertubercular",
+      "cartilagem-glenoidal",
+      "cartilagem-cabeca-umeral"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-membrana-sinovial-ombro-r",
+      "HG-membrana-sinovial-ombro-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Membrana sinovial do ombro.r",
+      "Complemento didático: Membrana sinovial do ombro.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Meia superfície em corte para mostrar a organização; não é segmentação da membrana real. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "recesso-subescapular",
+    "name": "Recesso subescapular",
+    "english": "subscapular recess",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Extensão sinovial da cavidade glenoumeral adjacente ao subescapular.",
+    "fields": {
+      "Classificação": "Recesso comunicante da articulação; também descrito como bolsa subtendínea do subescapular.",
+      "Localização": "Entre o subescapular e a face anterior da escápula, próximo ao colo e à cápsula anterior.",
+      "Relações": "Comunica-se com a cavidade glenoumeral; é diferente da bolsa subcoracoidea.",
+      "Função": "Permite acomodação e deslizamento junto ao subescapular.",
+      "Estudo 3D": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos."
+    },
+    "related": [
+      "subescapular",
+      "tendao-subescapular",
+      "glenoumeral",
+      "membrana-sinovial-ombro",
+      "bolsa-subcoracoidea"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-recesso-subescapular-r",
+      "HG-recesso-subescapular-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Recesso subescapular.r",
+      "Complemento didático: Recesso subescapular.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "bolsa-subcoracoidea",
+    "name": "Bolsa subcoracoidea",
+    "english": "subcoracoid bursa",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Bolsa entre o processo coracoide e o subescapular que facilita seu deslizamento.",
+    "fields": {
+      "Classificação": "Bolsa sinovial extra-articular, distinta do recesso subescapular.",
+      "Localização": "Anterior ao subescapular e inferior ao processo coracoide.",
+      "Função": "Reduz atrito no deslizamento regional.",
+      "Variações": "Comunicações e tamanho podem variar; não presumir continuidade com a articulação.",
+      "Estudo 3D": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos."
+    },
+    "related": [
+      "escapula",
+      "subescapular",
+      "tendao-subescapular",
+      "recesso-subescapular"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-bolsa-subcoracoidea-r",
+      "HG-bolsa-subcoracoidea-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Bolsa subcoracoidea.r",
+      "Complemento didático: Bolsa subcoracoidea.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Complemento didático do Higgsfield: superfície aproximada para localizar a estrutura, sem validação de espessura ou limites histológicos. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "interface-escapulotoracica",
+    "name": "Interface escapulotorácica",
+    "english": "scapulothoracic interface",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Plano funcional de deslizamento entre escápula, músculos interpostos e parede torácica.",
+    "fields": {
+      "Classificação": "Articulação funcional; não possui cápsula sinovial própria nem contato osso com osso.",
+      "Superfícies": "Face anterior da escápula com subescapular, serrátil anterior e parede torácica interpostos.",
+      "Movimentos": "Elevação, depressão, protração, retração, rotações e inclinações da escápula.",
+      "Função": "Posiciona a glenoide durante a elevação do braço. O ritmo escapuloumeral varia com tarefa, fase e pessoa.",
+      "Estudo 3D": "Região de referência aproximada, e não uma malha de tecido ou cartilagem; estudar com escápula e serrátil anterior."
+    },
+    "related": [
+      "escapula",
+      "serratil-anterior",
+      "subescapular",
+      "trapezio-superior",
+      "trapezio-medio",
+      "trapezio-inferior",
+      "romboide-maior",
+      "romboide-menor"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "higgsfield-shoulder"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "HG-interface-escapulotoracica-r",
+      "HG-interface-escapulotoracica-l"
+    ],
+    "modelComponents": [
+      "Complemento didático: Interface escapulotorácica.r",
+      "Complemento didático: Interface escapulotorácica.l"
+    ],
+    "modelSource": "higgsfield-shoulder",
+    "modelNote": "Região de referência aproximada, e não uma malha de tecido ou cartilagem; estudar com escápula e serrátil anterior. Lado esquerdo espelhado do direito."
+  },
+  {
+    "id": "bolsa-subacromial",
+    "name": "Bolsa subacromial",
+    "english": "subacromial bursa",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Facilita o deslizamento e reduz o atrito entre estruturas próximas do ombro.",
+    "fields": {
+      "Classificação": "Bolsa sinovial; não é uma articulação independente.",
+      "Localização": "Entre o arco coracoacromial e a superfície superior do manguito.",
+      "Função": "Redução de atrito entre tecidos em movimento.",
+      "Relação com o manguito": "Subacromial e subdeltóidea frequentemente formam um complexo contínuo. Não há comunicação normal obrigatória com a glenoumeral.",
+      "Na prática": "A presença de líquido ou dor regional não define, isoladamente, qual tecido está lesionado.",
+      "Estudo 3D": "Componente próprio da fonte Z-Anatomy; dimensões e separação representam o indivíduo e a convenção da base."
+    },
+    "related": [
+      "supraespinal",
+      "tendao-supraespinal",
+      "ligamento-coracoacromial",
+      "glenoumeral",
+      "bolsas-do-ombro"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-9fdb41ced3b07d",
+      "ZA-a6661f9fa65189"
+    ],
+    "modelComponents": [
+      "Subacromial bursa.l",
+      "Subacromial bursa.r"
+    ],
+    "modelSource": "z-anatomy",
+    "modelNote": "Representação articular pelos componentes anatômicos listados abaixo (discos, meniscos ou ligamentos de suporte)."
+  },
+  {
+    "id": "bolsa-subdeltoidea",
+    "name": "Bolsa subdeltóidea",
+    "english": "subdeltoid bursa",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Facilita o deslizamento e reduz o atrito entre estruturas próximas do ombro.",
+    "fields": {
+      "Classificação": "Bolsa sinovial; não é uma articulação independente.",
+      "Localização": "Entre o deltoide e o manguito sobre a região lateral do úmero.",
+      "Função": "Redução de atrito entre tecidos em movimento.",
+      "Relação com o manguito": "Subacromial e subdeltóidea frequentemente formam um complexo contínuo. Não há comunicação normal obrigatória com a glenoumeral.",
+      "Na prática": "A presença de líquido ou dor regional não define, isoladamente, qual tecido está lesionado.",
+      "Estudo 3D": "Componente próprio da fonte Z-Anatomy; dimensões e separação representam o indivíduo e a convenção da base."
+    },
+    "related": [
+      "deltoide-medio",
+      "umero",
+      "tendao-supraespinal",
+      "glenoumeral",
+      "bolsas-do-ombro"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-4f66edafc8f4b1",
+      "ZA-75d445e02e39f2"
+    ],
+    "modelComponents": [
+      "Subdeltoid bursa.l",
+      "Subdeltoid bursa.r"
+    ],
+    "modelSource": "z-anatomy",
+    "modelNote": "Representação articular pelos componentes anatômicos listados abaixo (discos, meniscos ou ligamentos de suporte)."
+  },
+  {
+    "id": "bolsa-subcutanea-acromial",
+    "name": "Bolsa subcutânea acromial",
+    "english": "subcutaneous acromial bursa",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Facilita o deslizamento e reduz o atrito entre estruturas próximas do ombro.",
+    "fields": {
+      "Classificação": "Bolsa sinovial; não é uma articulação independente.",
+      "Localização": "Entre pele e acrômio; é superficial ao arco e distinta da bolsa subacromial.",
+      "Função": "Redução de atrito entre tecidos em movimento.",
+      "Relação com o manguito": "Subacromial e subdeltóidea frequentemente formam um complexo contínuo. Não há comunicação normal obrigatória com a glenoumeral.",
+      "Na prática": "A presença de líquido ou dor regional não define, isoladamente, qual tecido está lesionado.",
+      "Estudo 3D": "Componente próprio da fonte Z-Anatomy; dimensões e separação representam o indivíduo e a convenção da base."
+    },
+    "related": [
+      "escapula",
+      "acromioclavicular",
+      "glenoumeral",
+      "bolsas-do-ombro"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-316f41f3e03480",
+      "ZA-e09b7cf5693183"
+    ],
+    "modelComponents": [
+      "Subcutaneous acromial bursa.l",
+      "Subcutaneous acromial bursa.r"
+    ],
+    "modelSource": "z-anatomy",
+    "modelNote": "Representação articular pelos componentes anatômicos listados abaixo (discos, meniscos ou ligamentos de suporte)."
+  },
+  {
+    "id": "bolsa-subtendinea-infraespinal",
+    "name": "Bolsa subtendínea do infraespinal",
+    "english": "subtendinous bursa of infraspinatus muscle",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Facilita o deslizamento e reduz o atrito entre estruturas próximas do ombro.",
+    "fields": {
+      "Classificação": "Bolsa sinovial; não é uma articulação independente.",
+      "Localização": "Adjacente ao tendão do infraespinal na região posterior da articulação.",
+      "Função": "Redução de atrito entre tecidos em movimento.",
+      "Relação com o manguito": "Subacromial e subdeltóidea frequentemente formam um complexo contínuo. Não há comunicação normal obrigatória com a glenoumeral.",
+      "Na prática": "A presença de líquido ou dor regional não define, isoladamente, qual tecido está lesionado.",
+      "Estudo 3D": "Componente próprio da fonte Z-Anatomy; dimensões e separação representam o indivíduo e a convenção da base."
+    },
+    "related": [
+      "infraespinal",
+      "tendao-infraespinal",
+      "glenoumeral",
+      "bolsas-do-ombro"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-a948d37d76e6e6",
+      "ZA-454f95a2241656"
+    ],
+    "modelComponents": [
+      "Subtendinous bursa of infraspinatus muscle.l",
+      "Subtendinous bursa of infraspinatus muscle.r"
+    ],
+    "modelSource": "z-anatomy",
+    "modelNote": "Representação articular pelos componentes anatômicos listados abaixo (discos, meniscos ou ligamentos de suporte)."
+  },
+  {
+    "id": "bolsa-subtendinea-redondo-maior",
+    "name": "Bolsa subtendínea do redondo maior",
+    "english": "subtendinous bursa of teres major muscle",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Facilita o deslizamento e reduz o atrito entre estruturas próximas do ombro.",
+    "fields": {
+      "Classificação": "Bolsa sinovial; não é uma articulação independente.",
+      "Localização": "Junto ao trajeto e à fixação do redondo maior.",
+      "Função": "Redução de atrito entre tecidos em movimento.",
+      "Relação com o manguito": "Subacromial e subdeltóidea frequentemente formam um complexo contínuo. Não há comunicação normal obrigatória com a glenoumeral.",
+      "Na prática": "A presença de líquido ou dor regional não define, isoladamente, qual tecido está lesionado.",
+      "Estudo 3D": "Componente próprio da fonte Z-Anatomy; dimensões e separação representam o indivíduo e a convenção da base."
+    },
+    "related": [
+      "redondo-maior",
+      "umero",
+      "glenoumeral",
+      "bolsas-do-ombro"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-0284424347ccb1",
+      "ZA-5f29b3d055dd26"
+    ],
+    "modelComponents": [
+      "Subtendinous bursa of teres major muscle.l",
+      "Subtendinous bursa of teres major muscle.r"
+    ],
+    "modelSource": "z-anatomy",
+    "modelNote": "Representação articular pelos componentes anatômicos listados abaixo (discos, meniscos ou ligamentos de suporte)."
+  },
+  {
+    "id": "bolsa-subtendinea-trapezio",
+    "name": "Bolsa subtendínea do trapézio",
+    "english": "subtendinous bursa of trapezius muscle",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Facilita o deslizamento e reduz o atrito entre estruturas próximas do ombro.",
+    "fields": {
+      "Classificação": "Bolsa sinovial; não é uma articulação independente.",
+      "Localização": "Junto às fixações escapulares do trapézio.",
+      "Função": "Redução de atrito entre tecidos em movimento.",
+      "Relação com o manguito": "Subacromial e subdeltóidea frequentemente formam um complexo contínuo. Não há comunicação normal obrigatória com a glenoumeral.",
+      "Na prática": "A presença de líquido ou dor regional não define, isoladamente, qual tecido está lesionado.",
+      "Estudo 3D": "Componente próprio da fonte Z-Anatomy; dimensões e separação representam o indivíduo e a convenção da base."
+    },
+    "related": [
+      "trapezio-medio",
+      "escapula",
+      "glenoumeral",
+      "bolsas-do-ombro"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-865e3d6ac15f69",
+      "ZA-e980626ca2cbb8"
+    ],
+    "modelComponents": [
+      "Subtendinous bursa of trapezius muscle.l",
+      "Subtendinous bursa of trapezius muscle.r"
+    ],
+    "modelSource": "z-anatomy",
+    "modelNote": "Representação articular pelos componentes anatômicos listados abaixo (discos, meniscos ou ligamentos de suporte)."
+  },
+  {
+    "id": "bolsa-coracobraquial",
+    "name": "Bolsa coracobraquial",
+    "english": "coracobrachial bursa",
+    "kind": "articulacoes",
+    "region": "Ombro",
+    "summary": "Facilita o deslizamento e reduz o atrito entre estruturas próximas do ombro.",
+    "fields": {
+      "Classificação": "Bolsa sinovial; não é uma articulação independente.",
+      "Localização": "Junto à origem e ao trajeto proximal do coracobraquial.",
+      "Função": "Redução de atrito entre tecidos em movimento.",
+      "Relação com o manguito": "Subacromial e subdeltóidea frequentemente formam um complexo contínuo. Não há comunicação normal obrigatória com a glenoumeral.",
+      "Na prática": "A presença de líquido ou dor regional não define, isoladamente, qual tecido está lesionado.",
+      "Estudo 3D": "Componente próprio da fonte Z-Anatomy; dimensões e separação representam o indivíduo e a convenção da base."
+    },
+    "related": [
+      "coracobraquial",
+      "escapula",
+      "glenoumeral",
+      "bolsas-do-ombro"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-92f9cc31b2b545",
+      "ZA-6625b1050576c9"
+    ],
+    "modelComponents": [
+      "Coracobrachial bursa.l",
+      "Coracobrachial bursa.r"
+    ],
+    "modelSource": "z-anatomy",
+    "modelNote": "Representação articular pelos componentes anatômicos listados abaixo (discos, meniscos ou ligamentos de suporte)."
+  },
+  {
+    "id": "ligamento-transverso-superior-escapula",
+    "name": "Ligamento transverso superior da escápula",
+    "english": "superior transverse scapular ligament",
+    "kind": "ligamentos",
+    "region": "Ombro",
+    "summary": "O nervo supraescapular geralmente passa sob ele; a artéria supraescapular geralmente passa sobre ele.",
+    "fields": {
+      "Tipo": "Ligamento de tecido conjuntivo denso.",
+      "Fixações": "Fecha superiormente a incisura da escápula.",
+      "Função": "O nervo supraescapular geralmente passa sob ele; a artéria supraescapular geralmente passa sobre ele.",
+      "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
+      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+    },
+    "related": [
+      "nervo-supraescapular",
+      "supraespinal",
+      "escapula"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-0fda6b150e1917",
+      "ZA-ae617a439f60c6"
+    ],
+    "modelComponents": [
+      "Superior transverse scapular ligament.l",
+      "Superior transverse scapular ligament.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "ligamento-transverso-inferior-escapula",
+    "name": "Ligamento transverso inferior da escápula",
+    "english": "inferior transverse scapular ligament",
+    "kind": "ligamentos",
+    "region": "Ombro",
+    "summary": "Relaciona-se ao trajeto do nervo supraescapular em direção ao infraespinal; desenvolvimento variável.",
+    "fields": {
+      "Tipo": "Ligamento de tecido conjuntivo denso.",
+      "Fixações": "Cruza a região da incisura espinoglenoidal.",
+      "Função": "Relaciona-se ao trajeto do nervo supraescapular em direção ao infraespinal; desenvolvimento variável.",
+      "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
+      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+    },
+    "related": [
+      "nervo-supraescapular",
+      "infraespinal",
+      "escapula"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-71774bbd5ed5dd",
+      "ZA-d20098e09a849e"
+    ],
+    "modelComponents": [
+      "Inferior transverse scapular ligament.l",
+      "Inferior transverse scapular ligament.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "ligamento-esternoclavicular-anterior",
+    "name": "Ligamento esternoclavicular anterior",
+    "english": "anterior sternoclavicular ligament",
+    "kind": "ligamentos",
+    "region": "Ombro",
+    "summary": "Reforça a cápsula anterior e limita translação excessiva da clavícula.",
+    "fields": {
+      "Tipo": "Ligamento de tecido conjuntivo denso.",
+      "Fixações": "Extremidade medial da clavícula ao manúbrio anteriormente.",
+      "Função": "Reforça a cápsula anterior e limita translação excessiva da clavícula.",
+      "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
+      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+    },
+    "related": [
+      "clavicula",
+      "esterno",
+      "esternoclavicular",
+      "escapula"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-0218bfa16d2d3c",
+      "ZA-9b34d41ceb172f"
+    ],
+    "modelComponents": [
+      "Anterior sternoclavicular ligament.l",
+      "Anterior sternoclavicular ligament.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "ligamento-esternoclavicular-posterior",
+    "name": "Ligamento esternoclavicular posterior",
+    "english": "posterior sternoclavicular ligament",
+    "kind": "ligamentos",
+    "region": "Ombro",
+    "summary": "Reforça a cápsula posterior; participa da estabilidade esternoclavicular.",
+    "fields": {
+      "Tipo": "Ligamento de tecido conjuntivo denso.",
+      "Fixações": "Extremidade medial da clavícula ao manúbrio posteriormente.",
+      "Função": "Reforça a cápsula posterior; participa da estabilidade esternoclavicular.",
+      "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
+      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+    },
+    "related": [
+      "clavicula",
+      "esterno",
+      "esternoclavicular",
+      "escapula"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-9fe1de3c3e601e",
+      "ZA-dec3754f411bde"
+    ],
+    "modelComponents": [
+      "Posterior sternoclavicular ligament.l",
+      "Posterior sternoclavicular ligament.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "ligamento-interclavicular",
+    "name": "Ligamento interclavicular",
+    "english": "interclavicular ligament",
+    "kind": "ligamentos",
+    "region": "Ombro",
+    "summary": "Reforça superiormente as articulações e restringe depressão excessiva.",
+    "fields": {
+      "Tipo": "Ligamento de tecido conjuntivo denso.",
+      "Fixações": "Une as extremidades mediais das clavículas sobre a incisura jugular.",
+      "Função": "Reforça superiormente as articulações e restringe depressão excessiva.",
+      "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
+      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+    },
+    "related": [
+      "clavicula",
+      "esterno",
+      "esternoclavicular",
+      "escapula"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-aa67b043dcc7d4",
+      "ZA-fe9880256b812b"
+    ],
+    "modelComponents": [
+      "Interclavicular ligament.l",
+      "Interclavicular ligament.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "ligamento-costoclavicular",
+    "name": "Ligamento costoclavicular",
+    "english": "costoclavicular ligament",
+    "kind": "ligamentos",
+    "region": "Ombro",
+    "summary": "Ancora a clavícula à parede torácica e restringe movimentos excessivos.",
+    "fields": {
+      "Tipo": "Ligamento de tecido conjuntivo denso.",
+      "Fixações": "Primeira costela e sua cartilagem à face inferior da clavícula medial.",
+      "Função": "Ancora a clavícula à parede torácica e restringe movimentos excessivos.",
+      "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
+      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+    },
+    "related": [
+      "clavicula",
+      "esternoclavicular",
+      "escapula"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-80b0096589be97",
+      "ZA-4d19d6f8e5a863"
+    ],
+    "modelComponents": [
+      "Costoclavicular ligament.l",
+      "Costoclavicular ligament.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "fascia-deltoidea",
+    "name": "Fáscia deltoidea",
+    "english": "deltoid fascia",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Reveste o deltoide e continua com fáscias adjacentes.",
+    "fields": {
+      "Tipo": "Fáscia de revestimento e continuidade conjuntiva; não é um tendão do manguito.",
+      "Localização": "Reveste o deltoide e continua com fáscias adjacentes.",
+      "Função": "Organiza e conecta compartimentos de tecidos da cintura escapular.",
+      "Estudo 3D": "Fáscia da fonte Z-Anatomy. Por envolver a musculatura, fica oculta por padrão; selecionar a ficha permite estudá-la."
+    },
+    "related": [
+      "deltoide-anterior",
+      "deltoide-medio",
+      "deltoide-posterior"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-efdb0afe712125",
+      "ZA-52e57ac59233c7"
+    ],
+    "envelope": true,
+    "modelComponents": [
+      "Deltoid fascia.l",
+      "Deltoid fascia.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "fascia-peitoral",
+    "name": "Fáscia peitoral",
+    "english": "pectoral fascia",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Reveste o peitoral maior e continua com a fáscia axilar e braquial.",
+    "fields": {
+      "Tipo": "Fáscia de revestimento e continuidade conjuntiva; não é um tendão do manguito.",
+      "Localização": "Reveste o peitoral maior e continua com a fáscia axilar e braquial.",
+      "Função": "Organiza e conecta compartimentos de tecidos da cintura escapular.",
+      "Estudo 3D": "Fáscia da fonte Z-Anatomy. Por envolver a musculatura, fica oculta por padrão; selecionar a ficha permite estudá-la."
+    },
+    "related": [
+      "peitoral-clavicular",
+      "peitoral-esternocostal"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-4e96004f27d182",
+      "ZA-182443e0f28ff4"
+    ],
+    "envelope": true,
+    "modelComponents": [
+      "Pectoral fascia.l",
+      "Pectoral fascia.r"
+    ],
+    "modelSource": "z-anatomy"
+  },
+  {
+    "id": "fascia-clavipeitoral",
+    "name": "Fáscia clavipeitoral",
+    "english": "clavipectoral fascia",
+    "kind": "tendoes",
+    "region": "Ombro",
+    "summary": "Envolve o subclávio e o peitoral menor e participa da organização profunda da parede anterior da axila.",
+    "fields": {
+      "Tipo": "Fáscia de revestimento e continuidade conjuntiva; não é um tendão do manguito.",
+      "Localização": "Envolve o subclávio e o peitoral menor e participa da organização profunda da parede anterior da axila.",
+      "Função": "Organiza e conecta compartimentos de tecidos da cintura escapular.",
+      "Estudo 3D": "Fáscia da fonte Z-Anatomy. Por envolver a musculatura, fica oculta por padrão; selecionar a ficha permite estudá-la."
+    },
+    "related": [
+      "subclavio",
+      "peitoral-menor",
+      "clavicula"
+    ],
+    "depth": "profunda",
+    "sources": [
+      "shoulder-anatomy",
+      "shoulder-variants",
+      "cuff-dissection",
+      "z-anatomy"
+    ],
+    "aliases": [],
+    "modelIds": [
+      "ZA-6900eece38b9a1",
+      "ZA-99c5e4b75c1ed5"
+    ],
+    "envelope": true,
+    "modelComponents": [
+      "Clavipectoral fascia.l",
+      "Clavipectoral fascia.r"
+    ],
+    "modelSource": "z-anatomy"
   }
 ]

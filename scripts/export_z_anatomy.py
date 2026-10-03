@@ -4,10 +4,22 @@ Run with Blender --background --factory-startup --python scripts/export_z_anatom
 Source scripts are disabled. Geometry is evaluated, triangulated and transformed,
 not generated from prompts. Each source object and association is recorded.
 """
-import bpy,json,struct,hashlib,math
+import bpy,json,struct,hashlib,math,os,time
 from pathlib import Path
 from collections import defaultdict
 ROOT=Path(__file__).resolve().parents[1];RAW=ROOT.parent/'scratch';DEST=ROOT/'public/models'
+def write_atomic(path, data):
+    # Windows readers can hold the current file open. Write a sibling first,
+    # then replace it; never expose a partially written GLB or JSON document.
+    temp=path.with_name(path.name+'.tmp')
+    temp.write_bytes(data if isinstance(data,bytes) else data.encode('utf8'))
+    for attempt in range(8):
+        try:
+            os.replace(temp,path)
+            return
+        except OSError:
+            if attempt==7: raise
+            time.sleep(.15*(attempt+1))
 mapping=json.loads((RAW/'z-mapping.json').read_text(encoding='utf8'))
 catalog=json.loads((ROOT/'src/data/structures.json').read_text(encoding='utf8'))
 # Prefere o Startup-split.blend, que tem as malhas de grupo (interosseos, lumbricais)
@@ -71,14 +83,14 @@ for kind,entries in groups.items():
     while len(binary)%4:binary.append(0)
     doc['buffers']=[{'byteLength':len(binary)}];chunk=json.dumps(doc,separators=(',',':')).encode();chunk+=b' '*((-len(chunk))%4)
     data=struct.pack('<III',0x46546C67,2,28+len(chunk)+len(binary))+struct.pack('<II',len(chunk),0x4E4F534A)+chunk+struct.pack('<II',len(binary),0x004E4942)+binary
-    filename='z-'+kind+'.glb';(DEST/filename).write_bytes(data)
+    filename='z-'+kind+'.glb';write_atomic(DEST/filename,data)
     manifest.append({'kind':kind,'url':'/models/'+filename,'bytes':len(data),'meshes':len(entries)})
     print(kind,len(entries),total_triangles,len(data),flush=True)
 for s in catalog:coverage[s['id']]={'name':s['name'],'kind':s['kind'],'sourceObjects':mapping[s['id']],'modelIds':s['modelIds']}
-(DEST/'manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf8')
-(ROOT/'src/data/model-manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf8')
-(ROOT/'src/data/structures.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf8')
-(DEST/'bounds.json').write_text(json.dumps(bounds),encoding='utf8')
-(DEST/'coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2),encoding='utf8')
-(DEST/'provenance.json').write_text(json.dumps({'source':'https://github.com/Z-Anatomy/Models-of-human-anatomy','archiveSHA256':hashlib.sha256((RAW/'z-anatomy.zip').read_bytes()).hexdigest(),'manifest':manifest,'unmapped':[(s['name'],s['english']) for s in catalog if not s['modelIds']],'converted':'2026-09-10','transform':'Blender world coordinates in metres; Z-up to Y-up; capped viewport subdivision 1, curve resolution 6 and bevel 3; evaluated modifiers, triangulation, per-vertex normals. No anatomical geometry invented.'},ensure_ascii=False,indent=2),encoding='utf8')
+write_atomic(DEST/'manifest.json',json.dumps(manifest,indent=2))
+write_atomic(ROOT/'src/data/model-manifest.json',json.dumps(manifest,indent=2))
+write_atomic(ROOT/'src/data/structures.json',json.dumps(catalog,ensure_ascii=False,indent=2))
+write_atomic(DEST/'bounds.json',json.dumps(bounds))
+write_atomic(DEST/'coverage.json',json.dumps(coverage,ensure_ascii=False,indent=2))
+write_atomic(DEST/'provenance.json',json.dumps({'source':'https://github.com/Z-Anatomy/Models-of-human-anatomy','archiveSHA256':hashlib.sha256((RAW/'z-anatomy.zip').read_bytes()).hexdigest(),'manifest':manifest,'unmapped':[(s['name'],s['english']) for s in catalog if not s['modelIds']],'converted':'2026-10-03','transform':'Blender world coordinates in metres; Z-up to Y-up; capped viewport subdivision 1, curve resolution 6 and bevel 3; evaluated modifiers, triangulation, per-vertex normals. Source anatomy geometry preserved; didactic complements are integrated separately.'},ensure_ascii=False,indent=2))
 print('Completed',sum(bool(s['modelIds']) for s in catalog),'of',len(catalog),flush=True)

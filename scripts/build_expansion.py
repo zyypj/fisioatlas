@@ -171,7 +171,9 @@ def main():
     for sid in order:
         objetos = mapping.get(sid, [])
         salvo = modelos.get(sid, {})
-        if salvo.get('modelComponents', []) == objetos and (objetos or not salvo.get('modelIds')):
+        if not objetos and salvo.get('modelSource') == 'higgsfield-shoulder':
+            catalog[sid].update(salvo)
+        elif salvo.get('modelComponents', []) == objetos and (objetos or not salvo.get('modelIds')):
             catalog[sid].update(salvo)
         elif objetos:
             pendentes.append(sid)

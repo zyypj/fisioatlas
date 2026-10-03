@@ -1,7 +1,9 @@
 import bpy, json
 from pathlib import Path
 root = Path(__file__).resolve().parents[2]
-bpy.ops.wm.open_mainfile(filepath=str(root/'scratch/z-anatomy/Z-Anatomy/Startup.blend'), load_ui=False, use_scripts=False)
+source=root/'scratch/z-anatomy/Z-Anatomy/Startup-split.blend'
+if not source.exists(): source=root/'scratch/z-anatomy/Z-Anatomy/Startup.blend'
+bpy.ops.wm.open_mainfile(filepath=str(source), load_ui=False, use_scripts=False)
 rows=[]
 for o in bpy.data.objects:
     if o.type in ('MESH','CURVE'):

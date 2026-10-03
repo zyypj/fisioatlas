@@ -1,0 +1,148 @@
+{
+  "groups": [
+    {
+      "title": "Ossos e marcos anatômicos",
+      "ids": [
+        "escapula",
+        "umero",
+        "clavicula",
+        "esterno"
+      ]
+    },
+    {
+      "title": "Os quatro músculos do manguito",
+      "ids": [
+        "supraespinal",
+        "infraespinal",
+        "redondo-menor",
+        "subescapular"
+      ]
+    },
+    {
+      "title": "Tendões e continuidade do manguito",
+      "ids": [
+        "tendao-supraespinal",
+        "tendao-infraespinal",
+        "tendao-redondo-menor",
+        "tendao-subescapular",
+        "tendao-cabeca-longa-biceps",
+        "cabo-rotador",
+        "crescente-rotador",
+        "polia-bicipital",
+        "bainha-intertubercular"
+      ]
+    },
+    {
+      "title": "Articulações, cápsula e superfícies",
+      "ids": [
+        "glenoumeral",
+        "acromioclavicular",
+        "esternoclavicular",
+        "interface-escapulotoracica",
+        "labio-glenoidal",
+        "disco-acromioclavicular",
+        "disco-esternoclavicular",
+        "cartilagem-cabeca-umeral",
+        "cartilagem-glenoidal",
+        "membrana-sinovial-ombro",
+        "intervalo-rotador"
+      ]
+    },
+    {
+      "title": "Ligamentos",
+      "ids": [
+        "ligamento-acromioclavicular",
+        "ligamento-conoide",
+        "ligamento-trapezoide",
+        "ligamento-coracoacromial",
+        "ligamento-coracoumeral",
+        "ligamento-glenoumeral-superior",
+        "ligamento-glenoumeral-medio",
+        "ligamento-glenoumeral-inferior",
+        "ligamento-transverso-do-umero",
+        "ligamento-transverso-superior-escapula",
+        "ligamento-transverso-inferior-escapula",
+        "ligamento-esternoclavicular-anterior",
+        "ligamento-esternoclavicular-posterior",
+        "ligamento-interclavicular",
+        "ligamento-costoclavicular"
+      ]
+    },
+    {
+      "title": "Bolsas e recessos sinoviais",
+      "ids": [
+        "bolsa-subacromial",
+        "bolsa-subdeltoidea",
+        "bolsa-subcutanea-acromial",
+        "bolsa-subtendinea-infraespinal",
+        "bolsa-subtendinea-redondo-maior",
+        "bolsa-subtendinea-trapezio",
+        "bolsa-coracobraquial",
+        "bolsa-subcoracoidea",
+        "recesso-subescapular"
+      ]
+    },
+    {
+      "title": "Fáscias e continuidade conjuntiva",
+      "ids": [
+        "fascia-deltoidea",
+        "fascia-peitoral",
+        "fascia-clavipeitoral"
+      ]
+    },
+    {
+      "title": "Músculos que movimentam e orientam o ombro",
+      "ids": [
+        "deltoide-anterior",
+        "deltoide-medio",
+        "deltoide-posterior",
+        "trapezio-superior",
+        "trapezio-medio",
+        "trapezio-inferior",
+        "serratil-anterior",
+        "romboide-maior",
+        "romboide-menor",
+        "levantador-da-escapula",
+        "peitoral-clavicular",
+        "peitoral-esternocostal",
+        "peitoral-menor",
+        "latissimo-do-dorso",
+        "redondo-maior",
+        "subclavio",
+        "coracobraquial",
+        "biceps-braquial",
+        "triceps-braquial"
+      ]
+    },
+    {
+      "title": "Nervos e plexo",
+      "ids": [
+        "nervo-supraescapular",
+        "nervo-axilar",
+        "nervo-subescapular-superior",
+        "nervo-subescapular-inferior",
+        "nervo-dorsal-da-escapula",
+        "nervo-toracico-longo",
+        "nervo-toracodorsal",
+        "plexo-braquial"
+      ]
+    }
+  ],
+  "generated": [
+    "tendao-supraespinal",
+    "tendao-infraespinal",
+    "tendao-redondo-menor",
+    "tendao-subescapular",
+    "tendao-cabeca-longa-biceps",
+    "cabo-rotador",
+    "crescente-rotador",
+    "polia-bicipital",
+    "intervalo-rotador",
+    "cartilagem-cabeca-umeral",
+    "cartilagem-glenoidal",
+    "membrana-sinovial-ombro",
+    "recesso-subescapular",
+    "bolsa-subcoracoidea",
+    "interface-escapulotoracica"
+  ]
+}

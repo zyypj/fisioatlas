@@ -1,5 +1,35 @@
 export const sources = [
   {
+    id: 'shoulder-anatomy',
+    name: 'NCBI Bookshelf — Anatomia da articulação glenoumeral',
+    url: 'https://www.ncbi.nlm.nih.gov/books/NBK537018/',
+    note: 'Relações entre cápsula, lábio, ligamentos, cartilagens e tendão da cabeça longa do bíceps. Resumos próprios para estudo macroscópico; variações anatômicas são possíveis.',
+  },
+  {
+    id: 'shoulder-variants',
+    name: 'Shoulder Anatomy and Normal Variants — revisão anatômica',
+    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/',
+    note: 'Referência para intervalo rotador, polia bicipital, recessos sinoviais e bolsas subcoracoidea e subacromial. A geometria complementar do aplicativo é aproximada.',
+  },
+  {
+    id: 'cuff-dissection',
+    name: 'Clark e Harryman — Tendons, ligaments, and capsule of the rotator cuff',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/1624486/',
+    note: 'Estudo de dissecção e microscopia sobre a continuidade entre tendões, cápsula e ligamentos do manguito. As peças do modelo são separadas para facilitar o estudo.',
+  },
+  {
+    id: 'quadrangular-space',
+    name: 'NCBI Bookshelf — Espaço quadrangular do braço',
+    url: 'https://www.ncbi.nlm.nih.gov/books/NBK537324/',
+    note: 'Limites do espaço quadrangular e relação com o nervo axilar e os vasos circunflexos posteriores do úmero.',
+  },
+  {
+    id: 'higgsfield-shoulder',
+    name: 'FisioAtlas + Higgsfield 3D Jutsu — complementos didáticos do ombro',
+    url: '/OMBRO.md',
+    note: 'Tendões, cartilagens, sinovial e regiões funcionais construídos por script em escala métrica. Aproximações topográficas alinhadas ao atlas; não são malhas segmentadas ou validadas para medidas clínicas. Procedência e limites no documento.',
+  },
+  {
     id: 'mechanics',
     name: 'Mecânica dos tecidos — equações e hipóteses do aplicativo',
     url: '/BIOMECANICA.md',

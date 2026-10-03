@@ -35,6 +35,8 @@ import {
 import { movementById, movements, terminology } from "./data/movements";
 import { useStudy } from "./hooks/useStudy";
 import { StructurePanel } from "./components/StructurePanel";
+import { ShoulderModule } from "./features/study/ShoulderModule";
+import shoulder from './data/shoulder.json';
 import { MovementPanel } from "./features/movements/MovementPanel";
 import { defaultMechanics } from './features/movements/biomechanics';
 import type { MechanicsOptions, MechanicsReport } from './features/movements/biomechanics';
@@ -61,6 +63,7 @@ const initialLayers: Layers = {
 const navItems = [
   ["/atlas", "Atlas 3D", Box],
   ["/regioes", "Regiões do corpo", Layers3],
+  ["/ombro", "Ombro e manguito", Bone],
   ["/movimentos", "Movimentos", Activity],
   ["/planos", "Planos e termos", Move3D],
   ["/quiz", "Quiz 3D", Brain],
@@ -97,6 +100,7 @@ export function AtlasApp() {
       "quiz",
       "planos",
       "regioes",
+      "ombro",
       "flashcards",
       "meus-estudos",
       "comparar",
@@ -175,6 +179,7 @@ export function AtlasApp() {
     setPlaying(false);
     setAgonists(false);
     setHidden((h) => h.filter((x) => x !== id));
+    setTransparent((t) => t.filter((x) => x !== id));
     setLayers((l) => ({ ...l, [byId[id].kind]: 100 }));
     go(structurePath(byId[id]));
   }
@@ -550,7 +555,7 @@ export function AtlasApp() {
               </Suspense>
               <div className="atlas-footer">
                 <span>
-                  <span className="status-dot" /> Modelo 3D real <i />{" "}
+                  <span className="status-dot" /> {selected?.modelSource === 'higgsfield-shoulder' ? '3D didático · Higgsfield' : 'Atlas anatômico 3D'} <i />{" "}
                   {structures.filter((s) => s.modelIds.length).length} fichas
                   com malha
                 </span>
@@ -724,6 +729,22 @@ export function AtlasApp() {
           <Sources />
         ) : section === "fundamentos" ? (
           <Foundations onMotion={chooseMovement} />
+        ) : section === "ombro" ? (
+          <ShoulderModule onSelect={id => {
+            select(id);
+            const kind=byId[id].kind;
+            setLayers({ ossos: kind === 'ossos' ? 100 : 30, musculos: kind === 'musculos' ? 70 : 12, articulacoes: kind === 'articulacoes' ? 100 : 0, ligamentos: kind === 'ligamentos' ? 100 : 0, tendoes: kind === 'tendoes' ? 100 : 30, nervos: kind === 'nervos' ? 100 : 0 });
+            const moduleIds=new Set(shoulder.groups.flatMap(g=>g.ids));
+            setHidden(structures.filter(s=>!moduleIds.has(s.id)).map(s=>s.id));
+            setTransparent([...shoulder.groups.find(g=>g.title==='Músculos que movimentam e orientam o ombro')!.ids, ...shoulder.groups.flatMap(g=>g.ids).filter(x=>byId[x].kind===kind)].filter(x=>x!==id));
+          }} onMovement={chooseMovement} onExplore={() => {
+            select('supraespinal');
+            setRegion('Ombro');
+            setLayers({ ossos: 35, musculos: 65, articulacoes: 0, ligamentos: 20, tendoes: 100, nervos: 0 });
+            const moduleIds=new Set(shoulder.groups.flatMap(g=>g.ids));
+            setHidden(structures.filter(s=>!moduleIds.has(s.id)).map(s=>s.id));
+            setTransparent(shoulder.groups.find(g=>g.title==='Músculos que movimentam e orientam o ombro')!.ids);
+          }} />
         ) : section === "regioes" ? (
           <div className="region-page">
             <div className="region-filters">

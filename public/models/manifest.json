@@ -14,20 +14,20 @@
   {
     "kind": "articulacoes",
     "url": "/models/z-articulacoes.glb",
-    "bytes": 1716104,
-    "meshes": 200
+    "bytes": 2081520,
+    "meshes": 214
   },
   {
     "kind": "ligamentos",
     "url": "/models/z-ligamentos.glb",
-    "bytes": 1709712,
+    "bytes": 1709796,
     "meshes": 296
   },
   {
     "kind": "tendoes",
     "url": "/models/z-tendoes.glb",
-    "bytes": 1853776,
-    "meshes": 127
+    "bytes": 2029656,
+    "meshes": 143
   },
   {
     "kind": "nervos",

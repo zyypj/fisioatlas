@@ -167,7 +167,9 @@ export function StructurePanel({ selected: s, ...p }: Props) {
         <p className="availability">
           <Info size={14} />{" "}
           {s.modelNote ||
-            "Malha anatômica Z-Anatomy, preservada no mesmo referencial do corpo."}
+            (s.modelSource === 'higgsfield-shoulder'
+              ? 'Modelo didático aproximado criado no Higgsfield 3D Jutsu. Consulte os limites na documentação do ombro.'
+              : "Malha anatômica Z-Anatomy, preservada no mesmo referencial do corpo.")}
         </p>
       )}
       {!!s.modelComponents?.length && (

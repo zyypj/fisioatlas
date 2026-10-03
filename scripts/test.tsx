@@ -17,6 +17,7 @@ import { attachSoftMotion, motionWeight } from "../src/features/viewer/softMotio
 import { activationStep, ligamentForce, muscleEquilibrium, nerveResponse, tendonForce, forceVelocity } from '../src/features/movements/biomechanics';
 import { centerlineRig, deformedPathLength } from '../src/features/viewer/tissueRig';
 import { pickableMeshes, fadeOpacity } from '../src/features/viewer/renderPerformance';
+import shoulder from '../src/data/shoulder.json';
 
 test("Catálogo: IDs únicos, cobertura, campos musculares e relações resolvidas", () => {
   assert.equal(new Set(structures.map((s) => s.id)).size, structures.length);
@@ -91,6 +92,7 @@ test("Todas as fichas, movimentos e seções renderizam em suas rotas", () => {
     ...[
       "atlas",
       "regioes",
+      "ombro",
       "quiz",
       "planos",
       "flashcards",
@@ -188,11 +190,36 @@ test("Novas camadas: representação identificada e registro de cobertura consis
   const coverage = JSON.parse(await readFile("public/models/coverage.json", "utf8"));
   for(const s of structures){
     assert.deepEqual(coverage[s.id].modelIds,s.modelIds);
-    if(s.modelIds.length){assert.equal(s.modelSource,"z-anatomy");assert.ok(s.modelComponents?.length);}
+    if(s.modelIds.length){assert.ok(['z-anatomy','higgsfield-shoulder'].includes(s.modelSource || ''));assert.ok(s.modelComponents?.length);}
   }
   for(const id of ['ligamento-cruzado-anterior','ligamento-cruzado-posterior','menisco-medial','menisco-lateral','nervo-mediano','nervo-ciatico','glenoumeral','joelho']) assert.ok(byId[id].modelIds.length,id);
   assert.ok(byId['nervo-mediano'].modelIds.length>2,'Ramos do nervo mediano preservados');
   assert.ok(byId.joelho.modelNote?.includes('cápsula'));
+});
+
+test('Ombro: cobertura individual, procedência, lados e relações entre músculo e tendão', async () => {
+  const ids=shoulder.groups.flatMap(g=>g.ids);
+  assert.equal(new Set(ids).size,ids.length);
+  const bounds=JSON.parse(await readFile('public/models/bounds.json','utf8'));
+  for(const id of ids){
+    const s=byId[id];assert.ok(s,id);assert.ok(s.modelIds.length,id);
+    for(const eid of s.modelIds) assert.equal(bounds[eid].id,id,eid);
+  }
+  for(const id of shoulder.generated){
+    const s=byId[id];assert.equal(s.modelSource,'higgsfield-shoulder');
+    assert.equal(s.modelIds.length,2);assert.ok(s.sources.includes('higgsfield-shoulder'));
+    assert.ok(s.modelNote?.length);
+    const right=bounds[s.modelIds.find(x=>x.endsWith('-r'))!],left=bounds[s.modelIds.find(x=>x.endsWith('-l'))!];
+    assert.ok(right.max[0]<0 && left.min[0]>0,id);
+    assert.ok(right.min[1]>1.2 && right.max[1]<1.45,id);
+    assert.ok(Math.abs(right.min[0]+left.max[0])<.0001,id);
+  }
+  for(const id of ['supraespinal','infraespinal','redondo-menor','subescapular']) {
+    const tendon=byId['tendao-'+id];assert.ok(tendon.related.includes(id));assert.ok(byId[id].related.includes(tendon.id));
+  }
+  assert.ok(byId['redondo-menor'].fields['Espaço quadrangular'].includes('borda superior'));
+  const html=renderToString(<MemoryRouter initialEntries={['/ombro']}><AtlasApp/></MemoryRouter>).replace(/<!--.*?-->/g,'');
+  assert.ok(html.includes(`${ids.length} estruturas documentadas`));assert.ok(html.includes(`${ids.length} com representação`));
 });
 test("Lição de articulação sinovial: oito componentes locais, sem dependências externas", async () => {
   const doc=await new NodeIO().registerExtensions(ALL_EXTENSIONS)

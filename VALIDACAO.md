@@ -100,3 +100,13 @@ Os ângulos das animações são escolhas de visualização, calibradas para que
 A mecânica dos tecidos continua usando parâmetros genéricos e movimento imposto, conforme documentado em `public/BIOMECANICA.md`. Não houve auditoria clínica independente do conteúdo textual acrescentado.
 
 Os testes visuais usaram dimensões emuladas no navegador, não aparelhos físicos.
+# Módulo ombro e manguito rotador — 03/10/2026
+
+- 82 fichas do módulo com representação 3D individual: 67 usam componentes Z-Anatomy e 15 usam complementos topográficos aproximados produzidos no Higgsfield 3D Jutsu. Os complementos foram integrados bilateralmente, com o lado esquerdo espelhado.
+- 31 fichas novas; bolsas, ligamentos e fáscias antes agrupados foram separados sem atribuir o mesmo componente original a duas fichas.
+- `npm test`: 19 testes aprovados, 638 rotas renderizadas. A suíte decodificou os GLB e verificou 568 fichas com malha, 1.543 componentes e 3.515.009 triângulos no atlas inteiro; todas as 82 entradas do módulo têm IDs e limites geométricos correspondentes.
+- `npm run build`: aprovado. `npm run lint`: aprovado com os dois avisos existentes no efeito de apresentação da ajuda (set-state-in-effect e exhaustive-deps). O Vite mantém o aviso de tamanho de chunks.
+- Navegador do Codex: página `/ombro` revisada visualmente; pesquisa do tendão supraespinal, abertura de ficha, detalhes e isolamento 3D conferidos. A captura do módulo final está em `public/lessons/shoulder/modulo.jpg`.
+- Higgsfield: projeto `b80fd313-010f-4c2c-bd02-95f9d13b5ffe`, revisão 2. Render conferido e iluminação corrigida. Geometria aproximada, sem segmentação de paciente ou validação clínica; fonte GLB, script e hash registrados em `public/models/provenance.json`.
+- Repetição do integrador preservou 1.543 componentes, sem duplicar malhas. Recompilar o conteúdo preservou as associações Higgsfield, sem export pendente.
+- Documentação de cada ficha, inventário, referências e limites: `public/OMBRO.md`. Conferência estática e testes de software não validam espessuras, trajetos, forças, tensões ou cinemática clínica dos complementos.

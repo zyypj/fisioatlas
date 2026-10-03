@@ -17,20 +17,20 @@
     {
       "kind": "articulacoes",
       "url": "/models/z-articulacoes.glb",
-      "bytes": 1716104,
-      "meshes": 200
+      "bytes": 2081520,
+      "meshes": 214
     },
     {
       "kind": "ligamentos",
       "url": "/models/z-ligamentos.glb",
-      "bytes": 1709712,
+      "bytes": 1709796,
       "meshes": 296
     },
     {
       "kind": "tendoes",
       "url": "/models/z-tendoes.glb",
-      "bytes": 1853776,
-      "meshes": 127
+      "bytes": 2029656,
+      "meshes": 143
     },
     {
       "kind": "nervos",
@@ -115,9 +115,48 @@
     [
       "Interósseos dorsais da mão (visão geral)",
       "dorsal interossei of hand"
+    ],
+    [
+      "Ligamentos transversos da escápula (visão geral)",
+      "transverse scapular ligaments"
+    ],
+    [
+      "Ligamentos esternoclaviculares (visão geral)",
+      "sternoclavicular ligaments"
+    ],
+    [
+      "Bolsas do ombro (visão geral)",
+      "bursae of shoulder"
     ]
   ],
-  "converted": "2026-09-10",
-  "transform": "Blender world coordinates in metres; Z-up to Y-up; capped viewport subdivision 1, curve resolution 6 and bevel 3; evaluated modifiers, triangulation, per-vertex normals. No anatomical geometry invented.",
-  "optimization": "Deduplication, vertex welding, error-bounded simplification (ratio 0.2, relative error 0.0008) and Meshopt compression with glTF-Transform; quantization from medium preset. Mesh names and anatomical membership preserved; no geometry invented."
+  "converted": "2026-10-03",
+  "transform": "Blender world coordinates in metres; Z-up to Y-up; capped viewport subdivision 1, curve resolution 6 and bevel 3; evaluated modifiers, triangulation, per-vertex normals. Source anatomy geometry preserved; didactic complements are integrated separately.",
+  "optimization": "Deduplication, vertex welding, error-bounded simplification (ratio 0.2, relative error 0.0008) and Meshopt compression with glTF-Transform; quantization from medium preset. Mesh names and anatomical membership preserved; no geometry invented.",
+  "shoulder": {
+    "projectId": "b80fd313-010f-4c2c-bd02-95f9d13b5ffe",
+    "revision": 2,
+    "created": "2026-10-03",
+    "sourceFile": "public/models/shoulder-higgsfield-source.glb",
+    "sha256": "fd4f6681c9bf42ed3ffc481553f9e39372e362848b44a1d9a603ded6ba2255d5",
+    "script": "scripts/higgsfield_shoulder.py",
+    "integration": "scripts/integrate_shoulder.mjs",
+    "structures": [
+      "tendao-supraespinal",
+      "tendao-infraespinal",
+      "tendao-redondo-menor",
+      "tendao-subescapular",
+      "tendao-cabeca-longa-biceps",
+      "cabo-rotador",
+      "crescente-rotador",
+      "polia-bicipital",
+      "intervalo-rotador",
+      "cartilagem-cabeca-umeral",
+      "cartilagem-glenoidal",
+      "membrana-sinovial-ombro",
+      "recesso-subescapular",
+      "bolsa-subcoracoidea",
+      "interface-escapulotoracica"
+    ],
+    "representation": "15 approximate topographic complements; no patient segmentation. Right geometry mirrored for left. Context bones omitted. Metre scale; glTF Y-up frame matches Z-Anatomy atlas."
+  }
 }

@@ -18,6 +18,8 @@ Para desenvolver: `npm run dev -- --host 127.0.0.1 --port 5173`.
 
 ## O que está implementado
 
+- Módulo **Ombro e manguito rotador** em `/ombro`: 82 estruturas com fichas e representação 3D, incluindo os quatro músculos, seus tendões, articulações e cápsulas, ligamentos, lábio, cartilagens, bolsas, recessos, fáscias, estabilizadores escapulares e nervos relacionados. Foram acrescentadas 31 fichas e 15 complementos didáticos produzidos no Higgsfield 3D Jutsu. Procedência, cobertura e limites de cada representação: [documentação do ombro](public/OMBRO.md). Complementos são aproximações topográficas, sem segmentação ou validação clínica.
+
 - 445 fichas: 184 músculos, 102 ligamentos e membranas, 56 ossos ou grupos ósseos, 39 entradas de articulações, discos, lábios, meniscos e bolsas sinoviais, 35 nervos e plexos, e 29 tendões, aponeuroses, retináculos, fáscias e bainhas tendíneas.
 - 441 fichas associadas a componentes reais do Z-Anatomy/BodyParts3D. 1.446 malhas, aproximadamente 13,95 MiB de GLB comprimidos com Meshopt, em seis sistemas. Todas as estruturas musculoesqueléticas modeladas na fonte estão no atlas.
 - Giro, zoom, deslocamento, seis vistas, foco, seleção, destaque, transparência, ocultação e isolamento por menu ou duplo clique.

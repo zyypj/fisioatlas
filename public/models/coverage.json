@@ -4886,44 +4886,16 @@
     ]
   },
   "ligamentos-transversos-da-escapula": {
-    "name": "Ligamentos transversos da escápula",
+    "name": "Ligamentos transversos da escápula (visão geral)",
     "kind": "ligamentos",
-    "sourceObjects": [
-      "Superior transverse scapular ligament.l",
-      "Superior transverse scapular ligament.r",
-      "Inferior transverse scapular ligament.l",
-      "Inferior transverse scapular ligament.r"
-    ],
-    "modelIds": [
-      "ZA-0fda6b150e1917",
-      "ZA-ae617a439f60c6",
-      "ZA-71774bbd5ed5dd",
-      "ZA-d20098e09a849e"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "ligamentos-esternoclaviculares": {
-    "name": "Ligamentos esternoclaviculares",
+    "name": "Ligamentos esternoclaviculares (visão geral)",
     "kind": "ligamentos",
-    "sourceObjects": [
-      "Anterior sternoclavicular ligament.l",
-      "Anterior sternoclavicular ligament.r",
-      "Posterior sternoclavicular ligament.l",
-      "Posterior sternoclavicular ligament.r",
-      "Interclavicular ligament.l",
-      "Interclavicular ligament.r",
-      "Costoclavicular ligament.l",
-      "Costoclavicular ligament.r"
-    ],
-    "modelIds": [
-      "ZA-0218bfa16d2d3c",
-      "ZA-9b34d41ceb172f",
-      "ZA-9fe1de3c3e601e",
-      "ZA-dec3754f411bde",
-      "ZA-aa67b043dcc7d4",
-      "ZA-fe9880256b812b",
-      "ZA-80b0096589be97",
-      "ZA-4d19d6f8e5a863"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "ligamento-metacarpal-transverso-profundo": {
     "name": "Ligamento metacarpal transverso profundo",
@@ -5652,40 +5624,10 @@
     ]
   },
   "bolsas-do-ombro": {
-    "name": "Bolsas do ombro",
+    "name": "Bolsas do ombro (visão geral)",
     "kind": "articulacoes",
-    "sourceObjects": [
-      "Subacromial bursa.l",
-      "Subacromial bursa.r",
-      "Subdeltoid bursa.l",
-      "Subdeltoid bursa.r",
-      "Subcutaneous acromial bursa.l",
-      "Subcutaneous acromial bursa.r",
-      "Subtendinous bursa of infraspinatus muscle.l",
-      "Subtendinous bursa of infraspinatus muscle.r",
-      "Subtendinous bursa of teres major muscle.l",
-      "Subtendinous bursa of teres major muscle.r",
-      "Subtendinous bursa of trapezius muscle.l",
-      "Subtendinous bursa of trapezius muscle.r",
-      "Coracobrachial bursa.l",
-      "Coracobrachial bursa.r"
-    ],
-    "modelIds": [
-      "ZA-9fdb41ced3b07d",
-      "ZA-a6661f9fa65189",
-      "ZA-4f66edafc8f4b1",
-      "ZA-75d445e02e39f2",
-      "ZA-316f41f3e03480",
-      "ZA-e09b7cf5693183",
-      "ZA-a948d37d76e6e6",
-      "ZA-454f95a2241656",
-      "ZA-0284424347ccb1",
-      "ZA-5f29b3d055dd26",
-      "ZA-865e3d6ac15f69",
-      "ZA-e980626ca2cbb8",
-      "ZA-92f9cc31b2b545",
-      "ZA-6625b1050576c9"
-    ]
+    "sourceObjects": [],
+    "modelIds": []
   },
   "bolsas-do-cotovelo": {
     "name": "Bolsas do cotovelo",
@@ -5923,12 +5865,6 @@
       "Brachial fascia.r",
       "Antebrachial fascia.l",
       "Antebrachial fascia.r",
-      "Deltoid fascia.l",
-      "Deltoid fascia.r",
-      "Pectoral fascia.l",
-      "Pectoral fascia.r",
-      "Clavipectoral fascia.l",
-      "Clavipectoral fascia.r",
       "Dorsal fascia of hand.l",
       "Dorsal fascia of hand.r"
     ],
@@ -5937,12 +5873,6 @@
       "ZA-bf74252c868882",
       "ZA-988c712dde94b5",
       "ZA-88abb64d46686d",
-      "ZA-efdb0afe712125",
-      "ZA-52e57ac59233c7",
-      "ZA-4e96004f27d182",
-      "ZA-182443e0f28ff4",
-      "ZA-6900eece38b9a1",
-      "ZA-99c5e4b75c1ed5",
       "ZA-71c3acd3b1b399",
       "ZA-902cd04905d3ed"
     ]
@@ -7457,6 +7387,408 @@
     "modelIds": [
       "ZA-6aa20717b412bb",
       "ZA-965ff35d9cb18e"
+    ]
+  },
+  "tendao-supraespinal": {
+    "name": "Tendão do supraespinal",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Complemento didático: Tendão do supraespinal.r",
+      "Complemento didático: Tendão do supraespinal.l"
+    ],
+    "modelIds": [
+      "HG-tendao-supraespinal-r",
+      "HG-tendao-supraespinal-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "tendao-infraespinal": {
+    "name": "Tendão do infraespinal",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Complemento didático: Tendão do infraespinal.r",
+      "Complemento didático: Tendão do infraespinal.l"
+    ],
+    "modelIds": [
+      "HG-tendao-infraespinal-r",
+      "HG-tendao-infraespinal-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "tendao-redondo-menor": {
+    "name": "Tendão do redondo menor",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Complemento didático: Tendão do redondo menor.r",
+      "Complemento didático: Tendão do redondo menor.l"
+    ],
+    "modelIds": [
+      "HG-tendao-redondo-menor-r",
+      "HG-tendao-redondo-menor-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "tendao-subescapular": {
+    "name": "Tendão do subescapular",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Complemento didático: Tendão do subescapular.r",
+      "Complemento didático: Tendão do subescapular.l"
+    ],
+    "modelIds": [
+      "HG-tendao-subescapular-r",
+      "HG-tendao-subescapular-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "tendao-cabeca-longa-biceps": {
+    "name": "Tendão da cabeça longa do bíceps",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Complemento didático: Tendão da cabeça longa do bíceps.r",
+      "Complemento didático: Tendão da cabeça longa do bíceps.l"
+    ],
+    "modelIds": [
+      "HG-tendao-cabeca-longa-biceps-r",
+      "HG-tendao-cabeca-longa-biceps-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "cabo-rotador": {
+    "name": "Cabo rotador",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Complemento didático: Cabo rotador.r",
+      "Complemento didático: Cabo rotador.l"
+    ],
+    "modelIds": [
+      "HG-cabo-rotador-r",
+      "HG-cabo-rotador-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "crescente-rotador": {
+    "name": "Crescente rotador",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Complemento didático: Crescente rotador.r",
+      "Complemento didático: Crescente rotador.l"
+    ],
+    "modelIds": [
+      "HG-crescente-rotador-r",
+      "HG-crescente-rotador-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "polia-bicipital": {
+    "name": "Polia bicipital",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Complemento didático: Polia bicipital.r",
+      "Complemento didático: Polia bicipital.l"
+    ],
+    "modelIds": [
+      "HG-polia-bicipital-r",
+      "HG-polia-bicipital-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "intervalo-rotador": {
+    "name": "Intervalo rotador",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Complemento didático: Intervalo rotador.r",
+      "Complemento didático: Intervalo rotador.l"
+    ],
+    "modelIds": [
+      "HG-intervalo-rotador-r",
+      "HG-intervalo-rotador-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "cartilagem-cabeca-umeral": {
+    "name": "Cartilagem da cabeça umeral",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Complemento didático: Cartilagem da cabeça umeral.r",
+      "Complemento didático: Cartilagem da cabeça umeral.l"
+    ],
+    "modelIds": [
+      "HG-cartilagem-cabeca-umeral-r",
+      "HG-cartilagem-cabeca-umeral-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "cartilagem-glenoidal": {
+    "name": "Cartilagem da glenoide",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Complemento didático: Cartilagem da glenoide.r",
+      "Complemento didático: Cartilagem da glenoide.l"
+    ],
+    "modelIds": [
+      "HG-cartilagem-glenoidal-r",
+      "HG-cartilagem-glenoidal-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "membrana-sinovial-ombro": {
+    "name": "Membrana sinovial do ombro",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Complemento didático: Membrana sinovial do ombro.r",
+      "Complemento didático: Membrana sinovial do ombro.l"
+    ],
+    "modelIds": [
+      "HG-membrana-sinovial-ombro-r",
+      "HG-membrana-sinovial-ombro-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "recesso-subescapular": {
+    "name": "Recesso subescapular",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Complemento didático: Recesso subescapular.r",
+      "Complemento didático: Recesso subescapular.l"
+    ],
+    "modelIds": [
+      "HG-recesso-subescapular-r",
+      "HG-recesso-subescapular-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "bolsa-subcoracoidea": {
+    "name": "Bolsa subcoracoidea",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Complemento didático: Bolsa subcoracoidea.r",
+      "Complemento didático: Bolsa subcoracoidea.l"
+    ],
+    "modelIds": [
+      "HG-bolsa-subcoracoidea-r",
+      "HG-bolsa-subcoracoidea-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "interface-escapulotoracica": {
+    "name": "Interface escapulotorácica",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Complemento didático: Interface escapulotorácica.r",
+      "Complemento didático: Interface escapulotorácica.l"
+    ],
+    "modelIds": [
+      "HG-interface-escapulotoracica-r",
+      "HG-interface-escapulotoracica-l"
+    ],
+    "source": "higgsfield-shoulder",
+    "representation": "didactic approximation"
+  },
+  "bolsa-subacromial": {
+    "name": "Bolsa subacromial",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Subacromial bursa.l",
+      "Subacromial bursa.r"
+    ],
+    "modelIds": [
+      "ZA-9fdb41ced3b07d",
+      "ZA-a6661f9fa65189"
+    ]
+  },
+  "bolsa-subdeltoidea": {
+    "name": "Bolsa subdeltóidea",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Subdeltoid bursa.l",
+      "Subdeltoid bursa.r"
+    ],
+    "modelIds": [
+      "ZA-4f66edafc8f4b1",
+      "ZA-75d445e02e39f2"
+    ]
+  },
+  "bolsa-subcutanea-acromial": {
+    "name": "Bolsa subcutânea acromial",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Subcutaneous acromial bursa.l",
+      "Subcutaneous acromial bursa.r"
+    ],
+    "modelIds": [
+      "ZA-316f41f3e03480",
+      "ZA-e09b7cf5693183"
+    ]
+  },
+  "bolsa-subtendinea-infraespinal": {
+    "name": "Bolsa subtendínea do infraespinal",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Subtendinous bursa of infraspinatus muscle.l",
+      "Subtendinous bursa of infraspinatus muscle.r"
+    ],
+    "modelIds": [
+      "ZA-a948d37d76e6e6",
+      "ZA-454f95a2241656"
+    ]
+  },
+  "bolsa-subtendinea-redondo-maior": {
+    "name": "Bolsa subtendínea do redondo maior",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Subtendinous bursa of teres major muscle.l",
+      "Subtendinous bursa of teres major muscle.r"
+    ],
+    "modelIds": [
+      "ZA-0284424347ccb1",
+      "ZA-5f29b3d055dd26"
+    ]
+  },
+  "bolsa-subtendinea-trapezio": {
+    "name": "Bolsa subtendínea do trapézio",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Subtendinous bursa of trapezius muscle.l",
+      "Subtendinous bursa of trapezius muscle.r"
+    ],
+    "modelIds": [
+      "ZA-865e3d6ac15f69",
+      "ZA-e980626ca2cbb8"
+    ]
+  },
+  "bolsa-coracobraquial": {
+    "name": "Bolsa coracobraquial",
+    "kind": "articulacoes",
+    "sourceObjects": [
+      "Coracobrachial bursa.l",
+      "Coracobrachial bursa.r"
+    ],
+    "modelIds": [
+      "ZA-92f9cc31b2b545",
+      "ZA-6625b1050576c9"
+    ]
+  },
+  "ligamento-transverso-superior-escapula": {
+    "name": "Ligamento transverso superior da escápula",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Superior transverse scapular ligament.l",
+      "Superior transverse scapular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-0fda6b150e1917",
+      "ZA-ae617a439f60c6"
+    ]
+  },
+  "ligamento-transverso-inferior-escapula": {
+    "name": "Ligamento transverso inferior da escápula",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Inferior transverse scapular ligament.l",
+      "Inferior transverse scapular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-71774bbd5ed5dd",
+      "ZA-d20098e09a849e"
+    ]
+  },
+  "ligamento-esternoclavicular-anterior": {
+    "name": "Ligamento esternoclavicular anterior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Anterior sternoclavicular ligament.l",
+      "Anterior sternoclavicular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-0218bfa16d2d3c",
+      "ZA-9b34d41ceb172f"
+    ]
+  },
+  "ligamento-esternoclavicular-posterior": {
+    "name": "Ligamento esternoclavicular posterior",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Posterior sternoclavicular ligament.l",
+      "Posterior sternoclavicular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-9fe1de3c3e601e",
+      "ZA-dec3754f411bde"
+    ]
+  },
+  "ligamento-interclavicular": {
+    "name": "Ligamento interclavicular",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Interclavicular ligament.l",
+      "Interclavicular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-aa67b043dcc7d4",
+      "ZA-fe9880256b812b"
+    ]
+  },
+  "ligamento-costoclavicular": {
+    "name": "Ligamento costoclavicular",
+    "kind": "ligamentos",
+    "sourceObjects": [
+      "Costoclavicular ligament.l",
+      "Costoclavicular ligament.r"
+    ],
+    "modelIds": [
+      "ZA-80b0096589be97",
+      "ZA-4d19d6f8e5a863"
+    ]
+  },
+  "fascia-deltoidea": {
+    "name": "Fáscia deltoidea",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Deltoid fascia.l",
+      "Deltoid fascia.r"
+    ],
+    "modelIds": [
+      "ZA-efdb0afe712125",
+      "ZA-52e57ac59233c7"
+    ]
+  },
+  "fascia-peitoral": {
+    "name": "Fáscia peitoral",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Pectoral fascia.l",
+      "Pectoral fascia.r"
+    ],
+    "modelIds": [
+      "ZA-4e96004f27d182",
+      "ZA-182443e0f28ff4"
+    ]
+  },
+  "fascia-clavipeitoral": {
+    "name": "Fáscia clavipeitoral",
+    "kind": "tendoes",
+    "sourceObjects": [
+      "Clavipectoral fascia.l",
+      "Clavipectoral fascia.r"
+    ],
+    "modelIds": [
+      "ZA-6900eece38b9a1",
+      "ZA-99c5e4b75c1ed5"
     ]
   }
 }
