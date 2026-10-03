@@ -30,6 +30,24 @@ export const sources = [
     note: 'Tendões, cartilagens, sinovial e regiões funcionais construídos por script em escala métrica. Aproximações topográficas alinhadas ao atlas; não são malhas segmentadas ou validadas para medidas clínicas. Procedência e limites no documento.',
   },
   {
+    id: 'sternoclavicular-anatomy',
+    name: 'Lee et al. — Anatomia cirúrgica da articulação esternoclavicular (2014)',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/25274794/',
+    note: 'Dissecção das relações ligamentares, musculares e ósseas da região esternoclavicular.',
+  },
+  {
+    id: 'sternoclavicular-stability',
+    name: 'Spencer et al. — Estabilizadores da articulação esternoclavicular (2002)',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/11845148/',
+    note: 'Estudo cadavérico das contribuições da cápsula anterior e posterior e dos ligamentos interclavicular e costoclavicular para restringir translação.',
+  },
+  {
+    id: 'interclavicular-anatomy',
+    name: 'Tubbs et al. — Anatomia do ligamento interclavicular (2007)',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/17563831/',
+    note: 'Estudo de 50 cadáveres sobre fixações, variações e comportamento do ligamento interclavicular.',
+  },
+  {
     id: 'mechanics',
     name: 'Mecânica dos tecidos — equações e hipóteses do aplicativo',
     url: '/BIOMECANICA.md',

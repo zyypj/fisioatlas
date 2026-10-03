@@ -165,11 +165,76 @@
         "ligamento-esternoclavicular-anterior",
         "ligamento-esternoclavicular-posterior",
         "ligamento-interclavicular",
-        "ligamento-costoclavicular"
+        "ligamento-costoclavicular",
+        "primeira-costela"
       ],
       "fields": {
-        "Estudo 3D": "Cada ligamento deste conjunto tem agora ficha e malha individuais."
-      }
+        "Estudo 3D": "Cada ligamento deste conjunto tem ficha e malha individuais.",
+        "Função": "Os reforços anterior e posterior da cápsula, o interclavicular e o costoclavicular atuam em conjunto. O complexo capsular posterior é importante para restringir translações anterior e posterior."
+      },
+      "sources": [
+        "sternoclavicular-anatomy",
+        "sternoclavicular-stability"
+      ]
+    },
+    {
+      "id": "clavicula",
+      "fields": {
+        "Ligamentos mediais": "Esternoclavicular anterior e posterior reforçam a cápsula; interclavicular une as extremidades mediais das clavículas; costoclavicular prende a clavícula à primeira costela e sua cartilagem.",
+        "Ligamentos laterais": "Acromioclavicular reforça a articulação com o acrômio. Conoide e trapezoide formam o ligamento coracoclavicular e unem a clavícula ao processo coracoide.",
+        "Marcos ligamentares": "Medialmente: impressão do ligamento costoclavicular. Lateralmente: tubérculo conoide e linha trapezoidea na face inferior.",
+        "Discos articulares": "O disco esternoclavicular divide a cavidade em dois compartimentos. O disco acromioclavicular tem morfologia e presença variáveis."
+      },
+      "related": [
+        "ligamento-esternoclavicular-anterior",
+        "ligamento-esternoclavicular-posterior",
+        "ligamento-interclavicular",
+        "ligamento-costoclavicular",
+        "ligamento-acromioclavicular",
+        "disco-esternoclavicular",
+        "disco-acromioclavicular",
+        "primeira-costela"
+      ],
+      "sources": [
+        "sternoclavicular-anatomy",
+        "sternoclavicular-stability"
+      ]
+    },
+    {
+      "id": "esternoclavicular",
+      "english": "sternoclavicular joint",
+      "fields": {
+        "Estabilizadores": "Ligamento esternoclavicular anterior, ligamento esternoclavicular posterior, ligamento interclavicular e ligamento costoclavicular; o disco e a cápsula também contribuem para a estabilidade.",
+        "Disco articular": "Disco fibrocartilaginoso entre clavícula e manúbrio/primeira cartilagem costal, que divide a cavidade sinovial em dois compartimentos.",
+        "Cápsula e ligamentos": "Os ligamentos anterior e posterior reforçam as respectivas faces da cápsula. O interclavicular reforça a região superior, e o costoclavicular une a clavícula à primeira costela e sua cartilagem.",
+        "Relação com o ombro": "Permite o movimento da clavícula necessário à elevação do braço, em conjunto com a acromioclavicular e a interface escapulotorácica."
+      },
+      "related": [
+        "ligamento-esternoclavicular-anterior",
+        "ligamento-esternoclavicular-posterior",
+        "ligamento-interclavicular",
+        "ligamento-costoclavicular",
+        "disco-esternoclavicular",
+        "primeira-costela",
+        "subclavio",
+        "acromioclavicular"
+      ],
+      "sources": [
+        "sternoclavicular-anatomy",
+        "sternoclavicular-stability"
+      ]
+    },
+    {
+      "id": "primeira-costela",
+      "related": [
+        "ligamento-costoclavicular",
+        "clavicula",
+        "esternoclavicular"
+      ],
+      "sources": [
+        "sternoclavicular-anatomy",
+        "sternoclavicular-stability"
+      ]
     },
     {
       "id": "glenoumeral",
@@ -1215,7 +1280,8 @@
         "Fixações": "Extremidade medial da clavícula ao manúbrio anteriormente.",
         "Função": "Reforça a cápsula anterior e limita translação excessiva da clavícula.",
         "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
-        "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+        "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.",
+        "Relações anatômicas": "Reforço anterior da cápsula; cruza a face anterior da articulação entre a clavícula medial e o manúbrio."
       },
       "related": [
         "clavicula",
@@ -1224,9 +1290,8 @@
         "escapula"
       ],
       "sources": [
-        "shoulder-anatomy",
-        "shoulder-variants",
-        "cuff-dissection",
+        "sternoclavicular-anatomy",
+        "sternoclavicular-stability",
         "z-anatomy"
       ],
       "aliases": [],
@@ -1248,7 +1313,8 @@
         "Fixações": "Extremidade medial da clavícula ao manúbrio posteriormente.",
         "Função": "Reforça a cápsula posterior; participa da estabilidade esternoclavicular.",
         "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
-        "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+        "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.",
+        "Relações anatômicas": "Reforço posterior da cápsula; o complexo capsular posterior tem papel importante no controle das translações anterior e posterior."
       },
       "related": [
         "clavicula",
@@ -1257,9 +1323,8 @@
         "escapula"
       ],
       "sources": [
-        "shoulder-anatomy",
-        "shoulder-variants",
-        "cuff-dissection",
+        "sternoclavicular-anatomy",
+        "sternoclavicular-stability",
         "z-anatomy"
       ],
       "aliases": [],
@@ -1281,7 +1346,8 @@
         "Fixações": "Une as extremidades mediais das clavículas sobre a incisura jugular.",
         "Função": "Reforça superiormente as articulações e restringe depressão excessiva.",
         "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
-        "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+        "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.",
+        "Relações anatômicas": "Cruza a incisura jugular, com fibras entre as clavículas e o manúbrio. Interclavicular significa entre as clavículas."
       },
       "related": [
         "clavicula",
@@ -1290,12 +1356,16 @@
         "escapula"
       ],
       "sources": [
-        "shoulder-anatomy",
-        "shoulder-variants",
-        "cuff-dissection",
-        "z-anatomy"
+        "sternoclavicular-anatomy",
+        "sternoclavicular-stability",
+        "z-anatomy",
+        "interclavicular-anatomy"
       ],
-      "aliases": [],
+      "aliases": [
+        "intraclavicular",
+        "ligamento intraclavicular",
+        "ligamento entre as clavículas"
+      ],
       "source_objects": [
         "Interclavicular ligament.l",
         "Interclavicular ligament.r"
@@ -1314,17 +1384,18 @@
         "Fixações": "Primeira costela e sua cartilagem à face inferior da clavícula medial.",
         "Função": "Ancora a clavícula à parede torácica e restringe movimentos excessivos.",
         "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
-        "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+        "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.",
+        "Relações anatômicas": "Situa-se inferiormente à clavícula medial; possui fascículos anterior e posterior com orientação diferente. A fonte mostra o conjunto em uma malha por lado."
       },
       "related": [
         "clavicula",
+        "primeira-costela",
         "esternoclavicular",
         "escapula"
       ],
       "sources": [
-        "shoulder-anatomy",
-        "shoulder-variants",
-        "cuff-dissection",
+        "sternoclavicular-anatomy",
+        "sternoclavicular-stability",
         "z-anatomy"
       ],
       "aliases": [],

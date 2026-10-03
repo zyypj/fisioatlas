@@ -22,6 +22,8 @@ O manguito é formado por supraespinal, infraespinal, redondo menor e subescapul
 
 ## Relações essenciais
 
+A clavícula conecta-se ao esterno pela esternoclavicular e ao acrômio pela acromioclavicular. Sua ficha dá acesso direto aos ligamentos esternoclavicular anterior, esternoclavicular posterior, interclavicular e costoclavicular, além dos ligamentos acromioclavicular, conoide e trapezoide e dos discos articulares. O costoclavicular também está conectado à primeira costela.
+
 O manguito integra estabilização dinâmica; lábio, cápsula e ligamentos contribuem para estabilidade passiva. Os tendões superiores passam sob o arco coracoacromial, separados dele pelas bolsas. A polia contém o tendão bicipital na saída do intervalo. O recesso subescapular comunica-se com a articulação, enquanto a bolsa subcoracoidea é uma estrutura distinta. A escápula posiciona a glenoide pelo movimento combinado da cintura escapular.
 
 A inervação principal do manguito é supraescapular (supraespinal e infraespinal), axilar (redondo menor) e subescapular superior/inferior (subescapular). A vascularização regional envolve a rede supraescapular, subescapular/circunflexa escapular e circunflexa umeral, com variações. Os vasos são descritos, sem malhas individuais neste módulo.
@@ -130,13 +132,21 @@ Liga o membro superior ao esqueleto axial e mantém o ombro afastado do tórax.
 
 **Marcos para o exercício:** Sua curva em S tem uma zona de transição no terço médio, que é o local mais comum de fratura, responsável por cerca de 80% dos casos. Recebe o trapézio e o deltoide acima e o peitoral maior e o subclávio abaixo.
 
+**Ligamentos mediais:** Esternoclavicular anterior e posterior reforçam a cápsula; interclavicular une as extremidades mediais das clavículas; costoclavicular prende a clavícula à primeira costela e sua cartilagem.
+
+**Ligamentos laterais:** Acromioclavicular reforça a articulação com o acrômio. Conoide e trapezoide formam o ligamento coracoclavicular e unem a clavícula ao processo coracoide.
+
+**Marcos ligamentares:** Medialmente: impressão do ligamento costoclavicular. Lateralmente: tubérculo conoide e linha trapezoidea na face inferior.
+
+**Discos articulares:** O disco esternoclavicular divide a cavidade em dois compartimentos. O disco acromioclavicular tem morfologia e presença variáveis.
+
 **Representação 3D:** Malha anatômica da fonte Z-Anatomy. 
 
 **Componentes:** Clavicle.l, Clavicle.r
 
-**Conexões:** Esterno, Escápula, Esternoclavicular, Acromioclavicular, Ligamento conoide, Ligamento trapezoide, Ligamentos esternoclaviculares (visão geral), Trapézio (visão geral), Deltoide (visão geral), Peitoral maior (visão geral), Subclávio
+**Conexões:** Esterno, Escápula, Esternoclavicular, Acromioclavicular, Ligamento conoide, Ligamento trapezoide, Ligamentos esternoclaviculares (visão geral), Trapézio (visão geral), Deltoide (visão geral), Peitoral maior (visão geral), Subclávio, Ligamento esternoclavicular anterior, Ligamento esternoclavicular posterior, Ligamento interclavicular, Ligamento costoclavicular, Ligamento acromioclavicular, Disco articular esternoclavicular, Disco articular acromioclavicular, Primeira costela
 
-**Fontes da ficha (IDs da página Fontes):** openstax-bones, z-anatomy
+**Fontes da ficha (IDs da página Fontes):** openstax-bones, z-anatomy, sternoclavicular-anatomy, sternoclavicular-stability
 
 ### Esterno
 
@@ -705,17 +715,23 @@ Conexão articular óssea do membro superior com o esqueleto axial.
 
 **Movimentos:** Elevação, depressão, protração, retração e rotação da clavícula.
 
-**Estabilizadores:** Ligamentos esternoclaviculares, interclavicular e costoclavicular.
+**Estabilizadores:** Ligamento esternoclavicular anterior, ligamento esternoclavicular posterior, ligamento interclavicular e ligamento costoclavicular; o disco e a cápsula também contribuem para a estabilidade.
 
 **Na prática:** Conexão articular óssea do membro superior com o esqueleto axial.
+
+**Disco articular:** Disco fibrocartilaginoso entre clavícula e manúbrio/primeira cartilagem costal, que divide a cavidade sinovial em dois compartimentos.
+
+**Cápsula e ligamentos:** Os ligamentos anterior e posterior reforçam as respectivas faces da cápsula. O interclavicular reforça a região superior, e o costoclavicular une a clavícula à primeira costela e sua cartilagem.
+
+**Relação com o ombro:** Permite o movimento da clavícula necessário à elevação do braço, em conjunto com a acromioclavicular e a interface escapulotorácica.
 
 **Representação 3D:** Malha anatômica da fonte Z-Anatomy. Representação articular por cápsula: a cápsula envolve a articulação, não é uma superfície óssea.
 
 **Componentes:** Articular capsule of sternoclavicular joint.l, Articular capsule of sternoclavicular joint.r
 
-**Conexões:** Clavícula, Esterno
+**Conexões:** Clavícula, Esterno, Ligamento esternoclavicular anterior, Ligamento esternoclavicular posterior, Ligamento interclavicular, Ligamento costoclavicular, Disco articular esternoclavicular, Primeira costela, Subclávio, Acromioclavicular
 
-**Fontes da ficha (IDs da página Fontes):** openstax-joints, z-anatomy
+**Fontes da ficha (IDs da página Fontes):** openstax-joints, z-anatomy, sternoclavicular-anatomy, sternoclavicular-stability
 
 ### Interface escapulotorácica
 
@@ -1284,13 +1300,15 @@ Reforça a cápsula anterior e limita translação excessiva da clavícula.
 
 **Estudo 3D:** Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.
 
+**Relações anatômicas:** Reforço anterior da cápsula; cruza a face anterior da articulação entre a clavícula medial e o manúbrio.
+
 **Representação 3D:** Malha anatômica da fonte Z-Anatomy. 
 
 **Componentes:** Anterior sternoclavicular ligament.l, Anterior sternoclavicular ligament.r
 
 **Conexões:** Clavícula, Esterno, Esternoclavicular, Escápula
 
-**Fontes da ficha (IDs da página Fontes):** shoulder-anatomy, shoulder-variants, cuff-dissection, z-anatomy
+**Fontes da ficha (IDs da página Fontes):** sternoclavicular-anatomy, sternoclavicular-stability, z-anatomy
 
 ### Ligamento esternoclavicular posterior
 
@@ -1308,13 +1326,15 @@ Reforça a cápsula posterior; participa da estabilidade esternoclavicular.
 
 **Estudo 3D:** Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.
 
+**Relações anatômicas:** Reforço posterior da cápsula; o complexo capsular posterior tem papel importante no controle das translações anterior e posterior.
+
 **Representação 3D:** Malha anatômica da fonte Z-Anatomy. 
 
 **Componentes:** Posterior sternoclavicular ligament.l, Posterior sternoclavicular ligament.r
 
 **Conexões:** Clavícula, Esterno, Esternoclavicular, Escápula
 
-**Fontes da ficha (IDs da página Fontes):** shoulder-anatomy, shoulder-variants, cuff-dissection, z-anatomy
+**Fontes da ficha (IDs da página Fontes):** sternoclavicular-anatomy, sternoclavicular-stability, z-anatomy
 
 ### Ligamento interclavicular
 
@@ -1332,13 +1352,15 @@ Reforça superiormente as articulações e restringe depressão excessiva.
 
 **Estudo 3D:** Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.
 
+**Relações anatômicas:** Cruza a incisura jugular, com fibras entre as clavículas e o manúbrio. Interclavicular significa entre as clavículas.
+
 **Representação 3D:** Malha anatômica da fonte Z-Anatomy. 
 
 **Componentes:** Interclavicular ligament.l, Interclavicular ligament.r
 
 **Conexões:** Clavícula, Esterno, Esternoclavicular, Escápula
 
-**Fontes da ficha (IDs da página Fontes):** shoulder-anatomy, shoulder-variants, cuff-dissection, z-anatomy
+**Fontes da ficha (IDs da página Fontes):** sternoclavicular-anatomy, sternoclavicular-stability, z-anatomy, interclavicular-anatomy
 
 ### Ligamento costoclavicular
 
@@ -1356,13 +1378,15 @@ Ancora a clavícula à parede torácica e restringe movimentos excessivos.
 
 **Estudo 3D:** Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.
 
+**Relações anatômicas:** Situa-se inferiormente à clavícula medial; possui fascículos anterior e posterior com orientação diferente. A fonte mostra o conjunto em uma malha por lado.
+
 **Representação 3D:** Malha anatômica da fonte Z-Anatomy. 
 
 **Componentes:** Costoclavicular ligament.l, Costoclavicular ligament.r
 
-**Conexões:** Clavícula, Esternoclavicular, Escápula
+**Conexões:** Clavícula, Primeira costela, Esternoclavicular, Escápula
 
-**Fontes da ficha (IDs da página Fontes):** shoulder-anatomy, shoulder-variants, cuff-dissection, z-anatomy
+**Fontes da ficha (IDs da página Fontes):** sternoclavicular-anatomy, sternoclavicular-stability, z-anatomy
 
 
 ## Bolsas e recessos sinoviais
@@ -2761,6 +2785,9 @@ Rede nervosa de C5 a T1 que comanda todo o membro superior; organizada em raíze
 - [Shoulder Anatomy and Normal Variants](https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/).
 - [Clark e Harryman — estudo de tendões, ligamentos e cápsula](https://pubmed.ncbi.nlm.nih.gov/1624486/).
 - [NCBI Bookshelf — espaço quadrangular](https://www.ncbi.nlm.nih.gov/books/NBK537324/).
+- [Lee et al. — anatomia da articulação esternoclavicular](https://pubmed.ncbi.nlm.nih.gov/25274794/).
+- [Spencer et al. — estabilizadores esternoclaviculares](https://pubmed.ncbi.nlm.nih.gov/11845148/).
+- [Tubbs et al. — anatomia do ligamento interclavicular](https://pubmed.ncbi.nlm.nih.gov/17563831/).
 - [Z-Anatomy — malhas originais](https://github.com/Z-Anatomy/Models-of-human-anatomy).
 - [Cena editável Higgsfield 3D Jutsu](https://higgsfield.ai/3d-jutsu/b80fd313-010f-4c2c-bd02-95f9d13b5ffe).
 

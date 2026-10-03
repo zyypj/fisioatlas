@@ -4199,7 +4199,11 @@
       "Função": "Liga o membro superior ao esqueleto axial e mantém o ombro afastado do tórax.",
       "Articula-se com": "Esterno, medialmente, na articulação esternoclavicular, e acrômio da escápula, lateralmente, na articulação acromioclavicular.",
       "Palpação básica": "Palpável em toda a sua extensão, da incisura jugular ao acrômio. É o único osso longo horizontal do corpo e o único elo ósseo entre o membro superior e o esqueleto axial.",
-      "Marcos para o exercício": "Sua curva em S tem uma zona de transição no terço médio, que é o local mais comum de fratura, responsável por cerca de 80% dos casos. Recebe o trapézio e o deltoide acima e o peitoral maior e o subclávio abaixo."
+      "Marcos para o exercício": "Sua curva em S tem uma zona de transição no terço médio, que é o local mais comum de fratura, responsável por cerca de 80% dos casos. Recebe o trapézio e o deltoide acima e o peitoral maior e o subclávio abaixo.",
+      "Ligamentos mediais": "Esternoclavicular anterior e posterior reforçam a cápsula; interclavicular une as extremidades mediais das clavículas; costoclavicular prende a clavícula à primeira costela e sua cartilagem.",
+      "Ligamentos laterais": "Acromioclavicular reforça a articulação com o acrômio. Conoide e trapezoide formam o ligamento coracoclavicular e unem a clavícula ao processo coracoide.",
+      "Marcos ligamentares": "Medialmente: impressão do ligamento costoclavicular. Lateralmente: tubérculo conoide e linha trapezoidea na face inferior.",
+      "Discos articulares": "O disco esternoclavicular divide a cavidade em dois compartimentos. O disco acromioclavicular tem morfologia e presença variáveis."
     },
     "related": [
       "esterno",
@@ -4212,12 +4216,22 @@
       "trapezio",
       "deltoide",
       "peitoral-maior",
-      "subclavio"
+      "subclavio",
+      "ligamento-esternoclavicular-anterior",
+      "ligamento-esternoclavicular-posterior",
+      "ligamento-interclavicular",
+      "ligamento-costoclavicular",
+      "ligamento-acromioclavicular",
+      "disco-esternoclavicular",
+      "disco-acromioclavicular",
+      "primeira-costela"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-bones",
-      "z-anatomy"
+      "z-anatomy",
+      "sternoclavicular-anatomy",
+      "sternoclavicular-stability"
     ],
     "aliases": [],
     "modelIds": [
@@ -5609,7 +5623,7 @@
   {
     "id": "esternoclavicular",
     "name": "Esternoclavicular",
-    "english": "",
+    "english": "sternoclavicular joint",
     "kind": "articulacoes",
     "region": "Ombro",
     "summary": "Conexão articular óssea do membro superior com o esqueleto axial.",
@@ -5617,17 +5631,30 @@
       "Classificação": "Sinovial selar com disco articular",
       "Superfícies articulares": "Clavícula, manúbrio e primeira cartilagem costal.",
       "Movimentos": "Elevação, depressão, protração, retração e rotação da clavícula.",
-      "Estabilizadores": "Ligamentos esternoclaviculares, interclavicular e costoclavicular.",
-      "Na prática": "Conexão articular óssea do membro superior com o esqueleto axial."
+      "Estabilizadores": "Ligamento esternoclavicular anterior, ligamento esternoclavicular posterior, ligamento interclavicular e ligamento costoclavicular; o disco e a cápsula também contribuem para a estabilidade.",
+      "Na prática": "Conexão articular óssea do membro superior com o esqueleto axial.",
+      "Disco articular": "Disco fibrocartilaginoso entre clavícula e manúbrio/primeira cartilagem costal, que divide a cavidade sinovial em dois compartimentos.",
+      "Cápsula e ligamentos": "Os ligamentos anterior e posterior reforçam as respectivas faces da cápsula. O interclavicular reforça a região superior, e o costoclavicular une a clavícula à primeira costela e sua cartilagem.",
+      "Relação com o ombro": "Permite o movimento da clavícula necessário à elevação do braço, em conjunto com a acromioclavicular e a interface escapulotorácica."
     },
     "related": [
       "clavicula",
-      "esterno"
+      "esterno",
+      "ligamento-esternoclavicular-anterior",
+      "ligamento-esternoclavicular-posterior",
+      "ligamento-interclavicular",
+      "ligamento-costoclavicular",
+      "disco-esternoclavicular",
+      "primeira-costela",
+      "subclavio",
+      "acromioclavicular"
     ],
     "depth": "superficial",
     "sources": [
       "openstax-joints",
-      "z-anatomy"
+      "z-anatomy",
+      "sternoclavicular-anatomy",
+      "sternoclavicular-stability"
     ],
     "aliases": [],
     "modelIds": [
@@ -18917,13 +18944,13 @@
     "summary": "Conjunto que torna a esternoclavicular uma das articulações mais estáveis do corpo.",
     "fields": {
       "Fixações": "O anterior e o posterior reforçam a cápsula entre a clavícula e o manúbrio. O interclavicular une as duas clavículas por cima da incisura jugular. O costoclavicular vai da primeira cartilagem costal à face inferior da clavícula.",
-      "Função": "Estabilizam a única articulação verdadeira entre o membro superior e o esqueleto axial. O costoclavicular é o mais forte e o principal freio à elevação da clavícula; o posterior é o principal freio ao deslocamento anterior.",
+      "Função": "Os reforços anterior e posterior da cápsula, o interclavicular e o costoclavicular atuam em conjunto. O complexo capsular posterior é importante para restringir translações anterior e posterior.",
       "Tensiona em": "Elevação do ombro, para o costoclavicular; protração e retração, para os esternoclaviculares anterior e posterior.",
       "Teste clínico": "Palpação da interlinha durante elevação, protração e retração do ombro, comparando com o lado oposto.",
       "Lesão típica": "A luxação esternoclavicular é rara. Quando ocorre, a posterior é a que preocupa, porque a clavícula pode comprimir traqueia, esôfago e grandes vasos atrás do manúbrio, configurando urgência.",
       "Na prática": "Apesar de ter superfícies articulares muito incongruentes, quase nunca luxa, graças ao disco articular e a este conjunto de ligamentos. Em traumas, é mais comum fraturar a clavícula do que luxar esta articulação.",
       "Localização": "Ombro",
-      "Estudo 3D": "Cada ligamento deste conjunto tem agora ficha e malha individuais."
+      "Estudo 3D": "Cada ligamento deste conjunto tem ficha e malha individuais."
     },
     "related": [
       "esternoclavicular",
@@ -18936,12 +18963,15 @@
       "ligamento-esternoclavicular-anterior",
       "ligamento-esternoclavicular-posterior",
       "ligamento-interclavicular",
-      "ligamento-costoclavicular"
+      "ligamento-costoclavicular",
+      "primeira-costela"
     ],
     "depth": "profunda",
     "sources": [
       "openstax-joints",
-      "z-anatomy"
+      "z-anatomy",
+      "sternoclavicular-anatomy",
+      "sternoclavicular-stability"
     ],
     "aliases": [
       "costoclavicular",
@@ -24226,12 +24256,16 @@
       "plexo-braquial",
       "subclavio",
       "segunda-costela",
-      "ligamentos-esternoclaviculares"
+      "ligamentos-esternoclaviculares",
+      "ligamento-costoclavicular",
+      "esternoclavicular"
     ],
     "depth": "profunda",
     "sources": [
       "openstax-bones",
-      "z-anatomy"
+      "z-anatomy",
+      "sternoclavicular-anatomy",
+      "sternoclavicular-stability"
     ],
     "aliases": [
       "1ª costela",
@@ -28482,7 +28516,8 @@
       "Fixações": "Extremidade medial da clavícula ao manúbrio anteriormente.",
       "Função": "Reforça a cápsula anterior e limita translação excessiva da clavícula.",
       "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
-      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.",
+      "Relações anatômicas": "Reforço anterior da cápsula; cruza a face anterior da articulação entre a clavícula medial e o manúbrio."
     },
     "related": [
       "clavicula",
@@ -28492,9 +28527,8 @@
     ],
     "depth": "profunda",
     "sources": [
-      "shoulder-anatomy",
-      "shoulder-variants",
-      "cuff-dissection",
+      "sternoclavicular-anatomy",
+      "sternoclavicular-stability",
       "z-anatomy"
     ],
     "aliases": [],
@@ -28520,7 +28554,8 @@
       "Fixações": "Extremidade medial da clavícula ao manúbrio posteriormente.",
       "Função": "Reforça a cápsula posterior; participa da estabilidade esternoclavicular.",
       "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
-      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.",
+      "Relações anatômicas": "Reforço posterior da cápsula; o complexo capsular posterior tem papel importante no controle das translações anterior e posterior."
     },
     "related": [
       "clavicula",
@@ -28530,9 +28565,8 @@
     ],
     "depth": "profunda",
     "sources": [
-      "shoulder-anatomy",
-      "shoulder-variants",
-      "cuff-dissection",
+      "sternoclavicular-anatomy",
+      "sternoclavicular-stability",
       "z-anatomy"
     ],
     "aliases": [],
@@ -28558,7 +28592,8 @@
       "Fixações": "Une as extremidades mediais das clavículas sobre a incisura jugular.",
       "Função": "Reforça superiormente as articulações e restringe depressão excessiva.",
       "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
-      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.",
+      "Relações anatômicas": "Cruza a incisura jugular, com fibras entre as clavículas e o manúbrio. Interclavicular significa entre as clavículas."
     },
     "related": [
       "clavicula",
@@ -28568,12 +28603,16 @@
     ],
     "depth": "profunda",
     "sources": [
-      "shoulder-anatomy",
-      "shoulder-variants",
-      "cuff-dissection",
-      "z-anatomy"
+      "sternoclavicular-anatomy",
+      "sternoclavicular-stability",
+      "z-anatomy",
+      "interclavicular-anatomy"
     ],
-    "aliases": [],
+    "aliases": [
+      "intraclavicular",
+      "ligamento intraclavicular",
+      "ligamento entre as clavículas"
+    ],
     "modelIds": [
       "ZA-aa67b043dcc7d4",
       "ZA-fe9880256b812b"
@@ -28596,18 +28635,19 @@
       "Fixações": "Primeira costela e sua cartilagem à face inferior da clavícula medial.",
       "Função": "Ancora a clavícula à parede torácica e restringe movimentos excessivos.",
       "Na prática": "Estudar posição, continuidade e relação com nervos ou articulações; o modelo estático não mostra tensão.",
-      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica."
+      "Estudo 3D": "Malha nomeada da fonte Z-Anatomy, preservada em sua posição anatômica.",
+      "Relações anatômicas": "Situa-se inferiormente à clavícula medial; possui fascículos anterior e posterior com orientação diferente. A fonte mostra o conjunto em uma malha por lado."
     },
     "related": [
       "clavicula",
+      "primeira-costela",
       "esternoclavicular",
       "escapula"
     ],
     "depth": "profunda",
     "sources": [
-      "shoulder-anatomy",
-      "shoulder-variants",
-      "cuff-dissection",
+      "sternoclavicular-anatomy",
+      "sternoclavicular-stability",
       "z-anatomy"
     ],
     "aliases": [],
