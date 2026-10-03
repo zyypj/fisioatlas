@@ -15,6 +15,8 @@ import { AtlasEngine } from "./AtlasEngine";
 import type { ViewerState } from "./AtlasEngine";
 import { byId } from "../../data";
 import type { MechanicsReport } from '../movements/biomechanics';
+import { parseRenderQuality, QUALITY_STORAGE_KEY } from './renderPerformance';
+import type { RenderQuality } from './renderPerformance';
 
 interface Props {
   state: ViewerState;
@@ -26,9 +28,15 @@ interface Props {
   onProgress: (n: number) => void;
   onLayers: () => void;
   onMechanics: (report: MechanicsReport) => void;
+  onOcclusion?: (ids: string[]) => void;
   command: { type: string; value?: string; nonce: number };
 }
 export default function Viewer(props: Props) {
+  const [quality, setQuality] = useState<RenderQuality>(() => {
+    try { return parseRenderQuality(localStorage.getItem(QUALITY_STORAGE_KEY)); }
+    catch { return 'auto'; }
+  });
+  const qualityRef = useRef(quality);
   const host = useRef<HTMLDivElement>(null),
     engine = useRef<AtlasEngine | null>(null),
     callbacks = useRef(props);
@@ -73,8 +81,10 @@ export default function Viewer(props: Props) {
           progress: (n) => callbacks.current.onProgress(n),
           view: setView,
           mechanics: (report) => callbacks.current.onMechanics(report),
+          occlusion: (ids) => callbacks.current.onOcclusion?.(ids),
         },
         callbacks.current.state,
+        qualityRef.current,
       );
       engine.current = e;
       e.load();
@@ -101,6 +111,7 @@ export default function Viewer(props: Props) {
     const c = props.command;
     if (c.type === "reset") e.reset();
     if (c.type === "focus-tissue" && c.value) e.focus(c.value);
+    if (c.type === "best-view") e.bestView();
     if (c.type === "preset") e.preset(c.value || "anterior");
     if (c.type === "focus" && callbacks.current.state.selected)
       e.focus(callbacks.current.state.selected);
@@ -148,6 +159,23 @@ export default function Viewer(props: Props) {
           <option value="lateral-esquerda">Lateral esquerda</option>
           <option value="superior">Superior</option>
           <option value="inferior">Inferior</option>
+        </select>
+        <span>QUALIDADE 3D</span>
+        <select
+          aria-label="Qualidade do 3D"
+          value={quality}
+          title="Modo leve: menos pixels e transparência pontilhada. A geometria anatômica é preservada."
+          onChange={(e) => {
+            const value = parseRenderQuality(e.target.value);
+            qualityRef.current = value;
+            setQuality(value);
+            engine.current?.setQuality(value);
+            try { localStorage.setItem(QUALITY_STORAGE_KEY, value); } catch { /* Private storage can be unavailable. */ }
+          }}
+        >
+          <option value="auto">Automática</option>
+          <option value="light">Leve · tablet</option>
+          <option value="detail">Mais detalhes</option>
         </select>
       </div>
       {props.state.isolated && (

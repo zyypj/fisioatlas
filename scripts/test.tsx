@@ -16,8 +16,56 @@ import * as THREE from "three";
 import { attachSoftMotion, motionWeight } from "../src/features/viewer/softMotion";
 import { activationStep, ligamentForce, muscleEquilibrium, nerveResponse, tendonForce, forceVelocity } from '../src/features/movements/biomechanics';
 import { centerlineRig, deformedPathLength } from '../src/features/viewer/tissueRig';
-import { pickableMeshes, fadeOpacity } from '../src/features/viewer/renderPerformance';
+import { applyTransparency, pickableMeshes, fadeOpacity, parseRenderQuality, renderPixelRatio, renderProfile } from '../src/features/viewer/renderPerformance';
 import shoulder from '../src/data/shoulder.json';
+import { findOccluders, selectedBounds, smartOpacity, isInStudyContext } from '../src/features/viewer/smartLayers';
+import { clinicalTests } from '../src/data/clinicalTests';
+import { clinicalStages, parseClinicalStage } from '../src/features/study/clinicalGuide';
+
+test('Camadas inteligentes acompanham a câmera e preservam seleção e ajustes manuais',()=>{
+  const box=(x:number,z:number)=>new THREE.Box3(new THREE.Vector3(x-.2,-.2,z-.2),new THREE.Vector3(x+.2,.2,z+.2));
+  const selected=box(0,0);
+  const meshes=[{id:'selecionado',bounds:selected},{id:'frente',bounds:box(0,2)},{id:'frente',bounds:box(0,1)},{id:'atras',bounds:box(0,-2)},{id:'fora',bounds:box(3,2)}];
+  const camera=new THREE.PerspectiveCamera(40,1,.01,100);
+  camera.position.set(0,0,5);camera.lookAt(0,0,0);
+  assert.deepEqual(findOccluders(meshes,'selecionado',selected,camera),['frente']);
+  camera.position.set(0,0,-5);camera.lookAt(0,0,0);
+  assert.deepEqual(findOccluders(meshes,'selecionado',selected,camera),['atras']);
+  const blockers=new Set(['frente','selecionado']);
+  assert.equal(smartOpacity(.75,'selecionado','selecionado','hide',blockers,false),.75);
+  assert.equal(smartOpacity(0,'frente','selecionado','ghost',blockers,true),0);
+  assert.equal(smartOpacity(1,'frente','selecionado','hide',blockers,true),0);
+  assert.equal(smartOpacity(.5,'frente','selecionado','ghost',blockers,true),.04);
+  assert.equal(smartOpacity(.5,'frente','selecionado','off',blockers,true),.5);
+  assert.equal(smartOpacity(1,'fora','selecionado','off',blockers,false),0);
+  assert.equal(selectedBounds(meshes,'inexistente'),null);
+  const bilateral=[{id:'musculo',bounds:box(-1,0)},{id:'musculo',bounds:box(1,0)}];
+  assert.equal(selectedBounds(bilateral,'musculo')!.getCenter(new THREE.Vector3()).x,-1);
+  const ficha={...byId.supraespinal,related:['relacionado']};
+  assert.ok(isInStudyContext({id:'relacionado',bounds:box(4,0)},ficha,selected));
+  assert.ok(isInStudyContext({id:'vizinho',bounds:box(.45,0)},ficha,selected));
+  assert.equal(isInStudyContext({id:'distante',bounds:box(4,0)},ficha,selected),false);
+});
+
+test('Roteiro clínico tolera progresso inválido e resolve anatomia, fontes e casos',()=>{
+  for(const bad of [null,'','NaN','-1','1.5','10','999999','{}'])assert.equal(parseClinicalStage(bad),0);
+  for(let stage=0;stage<clinicalStages.length;stage++)assert.equal(parseClinicalStage(String(stage)),stage);
+  assert.equal(clinicalTests.length,1);
+  for(const lesson of clinicalTests){
+    for(const id of lesson.related)assert.ok(byId[id],`Anatomia ausente: ${id}`);
+    for(const id of lesson.sources)assert.ok(sources.some(source=>source.id===id),`Fonte ausente: ${id}`);
+    assert.equal(new Set(lesson.cases.map(item=>item.id)).size,lesson.cases.length);
+    for(const item of lesson.cases){assert.ok(item.correct>=0 && item.correct<item.choices.length);assert.ok(item.explanation.length>20);}
+    assert.equal(lesson.steps[0].angle,0);
+    assert.equal(lesson.steps.at(-1)!.angle,0);
+    const html=renderToString(<MemoryRouter initialEntries={['/testes/'+lesson.id]}><AtlasApp/></MemoryRouter>).replace(/<!--.*?-->/g,'');
+    assert.ok(html.includes('Passo 1 de 10'));
+    assert.ok(html.includes('Próximo passo'));
+    assert.ok(!html.includes('Vamos voltar ao atlas?'));
+  }
+  const invalid=renderToString(<MemoryRouter initialEntries={['/testes/inexistente']}><AtlasApp/></MemoryRouter>);
+  assert.ok(invalid.includes('Vamos voltar ao atlas?'));
+});
 
 test("Catálogo: IDs únicos, cobertura, campos musculares e relações resolvidas", () => {
   assert.equal(new Set(structures.map((s) => s.id)).size, structures.length);
@@ -100,6 +148,7 @@ test("Todas as fichas, movimentos e seções renderizam em suas rotas", () => {
       "comparar",
       "fundamentos",
       "fontes",
+      "testes",
     ].map((s) => ({ path: "/" + s, text: "" })),
   ];
   for (const route of routes) {
@@ -346,6 +395,40 @@ test('Desempenho: malhas ocultas não entram na seleção e transições termina
   assert.equal(opacity,1);
   assert.equal(fadeOpacity(0.35,0.35),0.35);
   material.dispose();transparent.material.dispose();g.dispose();
+});
+
+test('Tablet: orçamento de pixels, escolha de qualidade e opacidade sem recompilar shaders',()=>{
+  const automatic=renderProfile('auto',true);
+  assert.equal(automatic.light,true);
+  assert.equal(renderProfile('auto',false).light,false);
+  assert.equal(renderProfile('detail',true).light,false);
+  assert.equal(renderProfile('light',false).light,true);
+  assert.equal(parseRenderQuality('unknown'),'auto');
+  assert.equal(parseRenderQuality(null),'auto');
+  const ratio=renderPixelRatio(2000,1000,2,automatic);
+  assert.ok(2000*1000*ratio*ratio<=750_000+1e-8);
+  assert.equal(renderPixelRatio(600,600,3,automatic),1);
+  assert.equal(renderPixelRatio(600,600,3,renderProfile('detail',true)),1.75);
+  assert.ok(Number.isFinite(renderPixelRatio(0,0,0,automatic)));
+  const material=new THREE.MeshStandardMaterial();
+  applyTransparency(material,1,true);
+  const version=material.version;
+  for(const opacity of [0.95,0.5,0.15,0,1]) {
+    applyTransparency(material,opacity,true);
+    assert.equal(material.opacity,opacity);
+    assert.equal(material.version,version);
+    assert.equal(material.alphaHash,true);
+    assert.equal(material.transparent,false);
+    assert.equal(material.depthWrite,true);
+  }
+  applyTransparency(material,0.95,false);
+  assert.equal(material.alphaHash,false);
+  assert.equal(material.transparent,true);
+  assert.equal(material.depthWrite,false);
+  applyTransparency(material,1,false);
+  assert.equal(material.transparent,false);
+  assert.equal(material.depthWrite,true);
+  material.dispose();
 });
 
 test('Seleção 3D: limites locais rejeitam espaço vazio e incluem tecidos deformados',()=>{

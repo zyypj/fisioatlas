@@ -1,4 +1,11 @@
 export const sources = [
+  { id:'lasegue-technique', name:'NCBI Bookshelf — Straight Leg Raise Test (Lasègue sign)', url:'https://www.ncbi.nlm.nih.gov/books/NBK545299/', note:'Execução, sensibilização e interpretação clínica do SLR.' },
+  { id:'slr-clinical', name:'NCBI Bookshelf — Straight Leg Raise Test', url:'https://www.ncbi.nlm.nih.gov/books/NBK539717/', note:'Indicações, técnica passiva e limites da interpretação.' },
+  { id:'slr-accuracy', name:'Montaner-Cuello et al. — Acurácia do SLR, estudo de fase III (2023)', url:'https://pubmed.ncbi.nlm.nih.gov/38132028/', note:'142 participantes com suspeita de radiculopatia; comparação com eletrodiagnóstico e critérios distintos. Resultados não são estimativas universais.' },
+  { id:'slr-review', name:'Tawa et al. — Acurácia do exame neurológico lombossacro (2017)', url:'https://pubmed.ncbi.nlm.nih.gov/28231784/', note:'Revisão sistemática das limitações e variações dos testes neurológicos e neurodinâmicos.' },
+  { id:'nass-radiculopathy', name:'NASS — Hérnia de disco lombar com radiculopatia (2012)', url:'https://www.spine.org/portals/0/assets/downloads/researchclinicalcare/guidelines/lumbardischerniation.pdf', note:'Diretriz de 2012 para integrar história, força, sensibilidade e testes provocativos. Evidências posteriores sobre o SLR são citadas separadamente.' },
+  { id:'nice-back-pain', name:'NICE NG59 — Dor lombar e ciática: avaliação e manejo', url:'https://www.nice.org.uk/guidance/ng59/chapter/recommendations', note:'Avaliação de causas específicas e uso de imagem quando puder modificar a conduta.' },
+  { id:'nice-neurological', name:'NICE NG127 — Reconhecimento e encaminhamento de condições neurológicas', url:'https://www.nice.org.uk/guidance/ng127/chapter/recommendations-for-adults-aged-over-16', note:'Encaminhamento imediato diante de sintomas sugestivos de cauda equina e avaliação de fraqueza progressiva.' },
   {
     id: 'shoulder-anatomy',
     name: 'NCBI Bookshelf — Anatomia da articulação glenoumeral',

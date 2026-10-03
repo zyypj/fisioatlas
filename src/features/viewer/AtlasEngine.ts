@@ -5,7 +5,10 @@ import { MeshoptDecoder } from "three/addons/libs/meshopt_decoder.module.js";
 import { byId, colors } from "../../data";
 import { attachSoftMotion, motionWeight } from "./softMotion";
 import { rigs, rigPivot, rigMoves, rigBounds, onAnimatedSide, weightHeight, chainRegions } from "./animationRigs";
-import { fadeOpacity, pickableMeshes } from './renderPerformance';
+import { applyTransparency, fadeOpacity, pickableMeshes, renderPixelRatio, renderProfile } from './renderPerformance';
+import type { RenderQuality } from './renderPerformance';
+import { findOccluders, isInStudyContext, selectedBounds, smartOpacity } from './smartLayers';
+import type { LayerMesh, RevealMode } from './smartLayers';
 import { centerlineRig, deformedPathLength } from './tissueRig';
 import { activationStep, ligamentForce, muscleEquilibrium, nerveResponse, tendonForce } from '../movements/biomechanics';
 import type { MechanicsOptions, MechanicsReport, TissueReading } from '../movements/biomechanics';
@@ -31,6 +34,8 @@ export interface ViewerState {
   agonists: boolean;
   motionMode: "all" | "bones";
   mechanics: MechanicsOptions;
+  reveal?: RevealMode;
+  regionOnly?: boolean;
 }
 export interface EngineEvents {
   select: (id: string) => void;
@@ -41,6 +46,7 @@ export interface EngineEvents {
   progress: (value: number) => void;
   view: (value: string) => void;
   mechanics: (report: MechanicsReport) => void;
+  occlusion?: (ids: string[]) => void;
 }
 export class AtlasEngine {
   scene = new THREE.Scene();
@@ -69,6 +75,15 @@ export class AtlasEngine {
   private settleUntil = 0;
   private lastHover = 0;
   private interacting = false;
+  private motionApplied = false;
+  private layerMeshes: LayerMesh[] = [];
+  private smartOccluders = new Set<string>();
+  private smartContext = new Set<string>();
+  private smartDirty = true;
+  private lastSmartScan = 0;
+  private reportedOccluders = '';
+  private touchDevice = navigator.maxTouchPoints > 0 && window.matchMedia('(any-pointer: coarse)').matches;
+  private profile = renderProfile('auto', this.touchDevice);
   private heatColor = new THREE.Color('#df563f');
   private pointerStart = { x: 0, y: 0 };
   private lastSelected: string | null = null;
@@ -81,16 +96,17 @@ export class AtlasEngine {
     element: HTMLDivElement,
     events: EngineEvents,
     initial: ViewerState,
+    quality: RenderQuality = 'auto',
   ) {
     this.element = element;
     this.events = events;
     this.state = initial;
+    this.profile = renderProfile(quality, this.touchDevice);
     this.renderer = new THREE.WebGLRenderer({
       antialias: true,
       alpha: true,
       powerPreference: "high-performance",
     });
-    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
     this.renderer.setClearColor(0xf2f5f3, 0);
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -124,6 +140,7 @@ export class AtlasEngine {
     // aparecia no clique seguinte. Marcar como sujo a cada 'change' resolve.
     this.controls.addEventListener("change", () => {
       this.dirty = true;
+      this.smartDirty = true;
     });
     this.scene.add(new THREE.HemisphereLight(0xffffff, 0x777469, 2.4));
     const key = new THREE.DirectionalLight(0xfff8ee, 3.8);
@@ -167,6 +184,7 @@ export class AtlasEngine {
       if (mesh) this.events.isolate(mesh.userData.structureId);
     });
     canvas.addEventListener("pointermove", (e) => {
+      if (e.pointerType !== 'mouse') return;
       // Orbiting must not trigger millions of triangle tests under the cursor.
       if (this.interacting || e.buttons || (this.state.playing && this.state.movement)) return;
       if (e.timeStamp - this.lastHover < 80) return;
@@ -243,8 +261,14 @@ export class AtlasEngine {
     if (!w || !h) return;
     this.camera.aspect = w / h;
     this.camera.updateProjectionMatrix();
+    this.renderer.setPixelRatio(renderPixelRatio(w, h, window.devicePixelRatio, this.profile));
     this.renderer.setSize(w, h);
+    this.renderer.domElement.dataset.renderProfile = this.profile.light ? 'light' : 'detail';
     this.dirty = true;
+  }
+  setQuality(quality: RenderQuality) {
+    this.profile = renderProfile(quality, this.touchDevice);
+    this.resize();
   }
   async load() {
     try {
@@ -322,7 +346,9 @@ export class AtlasEngine {
                 color: colors[entry.kind],
                 roughness: 0.66,
                 metalness: 0,
-                transparent: this.state.layers[entry.kind] < 100,
+                transparent: !this.profile.light && this.state.layers[entry.kind] < 100,
+                alphaHash: this.profile.light,
+                depthWrite: this.profile.light || this.state.layers[entry.kind] === 100,
                 opacity: this.state.layers[entry.kind] / 100,
                 side: THREE.DoubleSide,
                 forceSinglePass: true,
@@ -341,12 +367,14 @@ export class AtlasEngine {
             mesh.userData.bounds = b.clone();
             if (entry.kind !== "ossos") mesh.userData.softMotion = attachSoftMotion(mesh);
             this.meshes.push(mesh);
+            this.layerMeshes.push({id, bounds:mesh.userData.bounds});
             systemGroup.add(mesh);
           }
         });
         sourceGeometries.forEach((g) => g.dispose());
         this.scene.add(systemGroup);
         this.dirty = true;
+        this.smartDirty = true;
         this.settleUntil = performance.now() + 500;
         loaded += bytes;
         this.box.makeEmpty();
@@ -381,6 +409,7 @@ export class AtlasEngine {
       this.dirty = true;
       this.settleUntil = performance.now() + 500;
       this.renderStateKey = key;
+      this.smartDirty = true;
     }
     if (!state.playing && state.progress !== this.state.progress) {
       for (const m of this.meshes) if (m.userData.mechanicsRig) m.userData.mechanicsRig.previousLength = undefined;
@@ -498,6 +527,64 @@ export class AtlasEngine {
       .add(this.controls.target);
     this.targetLook = this.controls.target.clone();
   }
+  private layerCandidates() {
+    const hidden = new Set(this.state.hidden);
+    const selected=this.state.selected ? byId[this.state.selected] : null;
+    const bounds=selected && this.state.regionOnly ? selectedBounds(this.layerMeshes,selected.id) : null;
+    return this.layerMeshes.filter(m => {
+      const s=byId[m.id];
+      return this.state.layers[s.kind]>0 && !hidden.has(s.id) &&
+        (!s.envelope || this.state.envelopes || s.id===this.state.selected) &&
+        (!bounds || !selected || isInStudyContext(m,selected,bounds));
+    });
+  }
+  private refreshSmartLayers(time: number) {
+    if (!this.smartDirty) return;
+    if ((this.interacting || this.targetCamera) && time-this.lastSmartScan<120) return;
+    this.lastSmartScan=time;
+    this.smartDirty=false;
+    const id=this.state.selected;
+    const bounds=id ? selectedBounds(this.layerMeshes,id) : null;
+    this.smartOccluders.clear();
+    this.smartContext.clear();
+    if (id && bounds && !this.state.movement && !this.state.isolated) {
+      const candidates=this.layerCandidates();
+      if (this.state.reveal && this.state.reveal!=='off')
+        this.smartOccluders=new Set(findOccluders(candidates,id,bounds,this.camera));
+      if (this.state.regionOnly)
+        for (const m of this.layerMeshes)
+          if (isInStudyContext(m,byId[id],bounds)) this.smartContext.add(m.id);
+    }
+    const ids=[...this.smartOccluders];
+    const key=ids.join('|');
+    if (key!==this.reportedOccluders) {
+      this.reportedOccluders=key;
+      this.events.occlusion?.(ids);
+    }
+  }
+  bestView() {
+    const id=this.state.selected;
+    if (!id || this.state.movement) return;
+    const bounds=selectedBounds(this.layerMeshes,id);
+    if (!bounds) return;
+    const center=bounds.getCenter(new THREE.Vector3());
+    const distance=Math.max(0.42,bounds.getSize(new THREE.Vector3()).length()*2)/Math.min(1,this.camera.aspect);
+    const options: [string,number[]][]=[['anterior',[0,0,1]],['posterior',[0,0,-1]],['lateral-direita',[-1,0,0]],['lateral-esquerda',[1,0,0]],['superior',[0,1,0.01]],['inferior',[0,-1,0.01]]];
+    const candidates=this.layerCandidates();
+    let best=options[0], score=Infinity;
+    for (const option of options) {
+      const camera=this.camera.clone();
+      camera.position.copy(center).add(new THREE.Vector3(...option[1]).normalize().multiplyScalar(distance));
+      camera.lookAt(center);
+      const blockers=findOccluders(candidates,id,bounds,camera);
+      if (blockers.length<score) {score=blockers.length;best=option;}
+    }
+    this.events.view(best[0]);
+    this.targetLook=center;
+    this.targetCamera=center.clone().add(new THREE.Vector3(...best[1]).normalize().multiplyScalar(distance));
+    this.dirty=true;
+    this.smartDirty=true;
+  }
   private buildArrows() {
     for (const [dir, color] of [
       [new THREE.Vector3(0, 1, 0), 0x287e79],
@@ -514,6 +601,9 @@ export class AtlasEngine {
   private motion(dt: number) {
     this.readings = [];
     const move = this.state.movement;
+    // Camera/opacity changes in a static atlas need no joint/soft-tissue reset.
+    if ((!move || this.state.agonists) && !this.motionApplied) return;
+    this.motionApplied = !!move && !this.state.agonists;
     for (const m of this.meshes) {
       m.position.set(0, 0, 0);
       m.rotation.set(0, 0, 0);
@@ -642,7 +732,7 @@ export class AtlasEngine {
     const cameraChanged = this.controls.update();
     const moving = !!this.state.movement && this.state.playing && !this.state.agonists;
     const settling = !!this.state.movement && !this.state.agonists && this.state.motionMode === 'all' && this.state.mechanics.enabled && time < this.settleUntil;
-    if (!this.dirty && !cameraChanged && !this.targetCamera && !moving && !settling) return;
+    if (!this.dirty && !this.smartDirty && !cameraChanged && !this.targetCamera && !moving && !settling) return;
     this.dirty = false;
     if (this.state.playing && this.state.movement) {
       this.elapsed += dt * this.state.speed * 0.7;
@@ -662,6 +752,7 @@ export class AtlasEngine {
       this.lastMechanicsReport=time;
     }
     const selected = this.state.selected ? byId[this.state.selected] : null;
+    this.refreshSmartLayers(time);
     // Modo "papéis musculares": agonistas em rosa, antagonistas em azul, o
     // resto da musculatura apagado. Deixar os dois grupos visíveis ao mesmo
     // tempo é o que torna a dupla agonista/antagonista legível no modelo.
@@ -693,32 +784,16 @@ export class AtlasEngine {
         !(s.kind === "ossos" && selected.related.includes(s.id))
       )
         opacity = 0;
-      else if (
-        (selected?.depth === "profunda" ||
-          selected?.kind === "articulacoes" ||
-          selected?.kind === "ligamentos" ||
-          selected?.kind === "nervos" ||
-          selected?.kind === "ossos") &&
-        s.kind === "musculos" &&
-        !isSelected
-      )
-        opacity *= 0.1;
-      if ((selected?.kind === "nervos" || selected?.kind === "ligamentos") && s.kind === "articulacoes") opacity *= 0.12;
-      if (selected?.kind === "ligamentos" && s.kind === "ossos") opacity *= 0.24;
-      if (selected?.kind === "nervos" && s.kind === "ossos") opacity *= 0.5;
+      if (selected && !this.state.movement && !this.state.isolated)
+        opacity=smartOpacity(opacity,s.id,selected.id,this.state.reveal || 'off',this.smartOccluders,!this.state.regionOnly || this.smartContext.has(s.id));
       if (roleMove && s.kind === "musculos" && !isAgonist && !isAntagonist)
         opacity *= 0.12;
       if (this.state.movement && !this.state.agonists && this.state.motionMode === "bones")
         opacity =
           s.kind === "ossos" && !this.state.hidden.includes(s.id) ? 1 : 0;
-      mesh.material.opacity = fadeOpacity(mesh.material.opacity, opacity);
-      if (mesh.material.opacity !== opacity) this.dirty = true;
-      const transparent = mesh.material.opacity < 1;
-      if (mesh.material.transparent !== transparent) {
-        mesh.material.transparent = transparent;
-        mesh.material.needsUpdate = true;
-      }
-      mesh.material.depthWrite = mesh.material.opacity > 0.8;
+      const nextOpacity = this.profile.light ? opacity : fadeOpacity(mesh.material.opacity, opacity);
+      if (nextOpacity !== opacity) this.dirty = true;
+      applyTransparency(mesh.material, nextOpacity, this.profile.light);
       mesh.visible = mesh.material.opacity > 0.015;
       const roleHighlight =
         isSelected || isAgonist || isAntagonist || relatedBone;

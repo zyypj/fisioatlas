@@ -3076,3 +3076,71 @@ small {
 .shoulder-search { display: flex; align-items: center; gap: 10px; margin-top: 28px; padding: 12px 16px; border: 1px solid #d7cce4; border-radius: 12px; }
 .shoulder-search input { width: 100%; border: 0; outline: none; background: transparent; font: inherit; }
 @media (max-width: 760px) { .shoulder-intro { grid-template-columns: 1fr; } .shoulder-intro > div, .shoulder-path { padding: 18px; } }
+
+.smart-layer-panel { padding:18px; margin:18px 0; border:1px solid #d9c8e9; border-radius:12px; background:#f5effb; }
+.smart-layer-panel h3 { margin:10px 0; color:#533775; }
+.smart-layer-panel p, .smart-layer-panel small { font-size:12px; line-height:1.6; }
+.smart-layer-panel label:not(.check-label) { display:block; font-size:12px; margin:12px 0 6px; }
+.smart-layer-panel select { width:100%; padding:10px; border:1px solid #cbb9dc; border-radius:8px; background:white; color:#533775; }
+.smart-layer-panel details { margin-top:14px; }
+.smart-layer-panel summary { cursor:pointer; font-size:12px; line-height:1.7; }
+.layer-adjustment { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:10px 0; border-bottom:1px solid #e0d5ec; font-size:12px; }
+.layer-adjustment button { background:white; border:1px solid #d4c3e4; border-radius:6px; padding:7px; color:#644681; }
+.clinical-page { max-width:1160px; margin:0 auto; }
+.clinical-page > .text-button { margin-bottom:22px; }
+.clinical-page p, .clinical-page li { line-height:1.75; }
+.clinical-page li { margin-bottom:10px; }
+.clinical-page .chips { flex-wrap:wrap; gap:8px; }
+.clinical-aliases > span { padding:6px 12px; border-radius:20px; color:#6c4a88; background:#eee5f8; font-size:12px; }
+.clinical-note { padding:18px 22px; border-left:4px solid #a58bc2; background:#f5f0fa; border-radius:8px; margin:24px 0; }
+.clinical-note p { margin:7px 0 0; }
+.clinical-guide { display:grid; grid-template-columns:1.1fr 1fr; gap:24px; margin:30px 0; }
+.clinical-visual { padding:20px; background:linear-gradient(150deg,#f3eafc,#fdfaff); border-radius:18px; border:1px solid #deceef; }
+.clinical-visual > svg { width:100%; height:auto; display:block; }
+.clinical-visual label { display:block; font-weight:600; color:#654584; }
+.clinical-visual input { width:100%; margin:15px 0; accent-color:#8a66ae; }
+.clinical-visual small { display:block; font-size:12px; line-height:1.6; margin-top:16px; color:#7e6c8e; }
+.clinical-steps h2 { margin-top:0; }
+.clinical-steps ol { list-style:none; margin:0 0 18px; padding:0; }
+.clinical-steps li { margin:5px 0; }
+.clinical-steps li button { display:flex; align-items:center; gap:12px; text-align:left; padding:10px 12px; width:100%; border:1px solid transparent; background:#faf7fd; border-radius:10px; color:#73568d; }
+.clinical-steps li button.active { border-color:#a78ac8; background:#eee2fb; color:#52336f; }
+.clinical-steps li button span { display:grid; place-items:center; width:25px; height:25px; border-radius:50%; background:white; flex-shrink:0; }
+.clinical-cue { background:#f4eff9; padding:12px; border-radius:8px; font-size:13px; }
+.clinical-columns { display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+.clinical-card { padding:24px; margin:0 0 24px; border:1px solid #e3d8ed; border-radius:16px; background:#fff; }
+.clinical-card h2 { margin-top:0; }
+.clinical-card ul, .clinical-card ol { padding-left:22px; }
+.clinical-card .clinical-columns article { padding:0; }
+.clinical-safety { background:#fffaf2; border-color:#ecdbb6; }
+.clinical-card details { border-top:1px solid #e7ddee; padding-top:15px; }
+.clinical-card summary { cursor:pointer; color:#684488; font-weight:600; }
+.clinical-choices { display:grid; gap:10px; }
+.clinical-choices button { justify-content:flex-start; text-align:left; height:auto; min-height:44px; white-space:normal; padding:12px; }
+.clinical-choices button.chosen { border-color:#9265b8; background:#f1e4fb; }
+.clinical-feedback { padding:16px; background:#f0f5f2; border-radius:10px; color:#375d49; }
+.clinical-sources { display:grid; gap:12px; }
+.clinical-sources a { color:#745091; font-size:13px; }
+@media(max-width:900px) { .clinical-guide, .clinical-columns { grid-template-columns:1fr; } .clinical-steps { padding:8px; } }
+@media(max-width:600px) { .clinical-card, .clinical-visual { padding:18px; } .clinical-page .two-buttons { grid-template-columns:1fr; } .layer-adjustment { flex-wrap:wrap; } }
+.clinical-mode{display:flex;gap:6px;margin:18px 0 24px;flex-wrap:wrap}
+.clinical-mode button,.clinical-stage-menu button{padding:10px 14px;border:1px solid var(--border);border-radius:10px;background:#fdfcff;color:#3f2c63;cursor:pointer;text-align:left}
+.clinical-mode button.active,.clinical-stage-menu button.active{background:#eee5fa;border-color:#a38abc;color:#654485;font-weight:700}
+.clinical-progress{background:#fdfcff;border:1px solid var(--border);border-radius:14px;padding:18px;margin:22px 0 12px}
+.clinical-progress>div{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.clinical-progress span{font-size:13px;color:var(--muted)}
+.clinical-progress progress{width:100%;height:9px;accent-color:#8a65b3}
+.clinical-stage-menu{margin:12px 0 20px}
+.clinical-stage-menu summary{cursor:pointer;color:var(--muted)}
+.clinical-stage-menu ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));list-style:none;padding:0;gap:7px}
+.clinical-stage-menu button{width:100%;font-size:13px}
+.guided-stage.with-diagram{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:24px}
+.guided-content h2{margin-top:8px}
+.guided-content h2:focus-visible{outline:2px solid #a38abc;outline-offset:5px;border-radius:4px}
+.guided-content h3{margin-top:24px}
+.guided-content li{margin-bottom:10px;line-height:1.65}
+.guided-stage .clinical-visual{align-self:start}
+.clinical-guide-navigation{position:sticky;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;background:#f6f3fb;z-index:2;margin:4px 0 20px;border-top:1px solid var(--border)}
+.clinical-guide-navigation>span{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.guided-stage.with-diagram{grid-template-columns:1fr}.clinical-stage-menu ol{grid-template-columns:1fr}}
+@media(max-width:600px){.clinical-guide-navigation{gap:6px}.clinical-guide-navigation button{font-size:12px;padding:10px}.clinical-progress{padding:12px}}

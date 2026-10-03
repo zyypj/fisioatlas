@@ -35,7 +35,11 @@ import {
 import { movementById, movements, terminology } from "./data/movements";
 import { useStudy } from "./hooks/useStudy";
 import { StructurePanel } from "./components/StructurePanel";
+import { SmartLayersPanel } from './components/SmartLayersPanel';
+import type { RevealMode } from './features/viewer/smartLayers';
 import { ShoulderModule } from "./features/study/ShoulderModule";
+import { ClinicalTests } from './features/study/ClinicalTests';
+import { clinicalTestById } from './data/clinicalTests';
 import shoulder from './data/shoulder.json';
 import { MovementPanel } from "./features/movements/MovementPanel";
 import { defaultMechanics } from './features/movements/biomechanics';
@@ -65,6 +69,7 @@ const navItems = [
   ["/regioes", "Regiões do corpo", Layers3],
   ["/ombro", "Ombro e manguito", Bone],
   ["/movimentos", "Movimentos", Activity],
+  ["/testes", "Testes de fisioterapia", GraduationCap],
   ["/planos", "Planos e termos", Move3D],
   ["/quiz", "Quiz 3D", Brain],
   ["/flashcards", "Flashcards", SquareStack],
@@ -93,6 +98,7 @@ export function AtlasApp() {
   const invalid =
     (section === "anatomia" && !selected) ||
     (section === "movimentos" && !!parts[1] && !movementById[parts[1]]) ||
+    (section === 'testes' && !!parts[1] && !clinicalTestById[parts[1]]) ||
     ![
       "atlas",
       "anatomia",
@@ -101,6 +107,7 @@ export function AtlasApp() {
       "planos",
       "regioes",
       "ombro",
+      "testes",
       "flashcards",
       "meus-estudos",
       "comparar",
@@ -119,6 +126,9 @@ export function AtlasApp() {
     [isolated, setIsolated] = useState(false),
     [hidden, setHidden] = useState<string[]>([]),
     [transparent, setTransparent] = useState<string[]>([]);
+  const [reveal,setReveal] = useState<RevealMode>('ghost');
+  const [regionOnly,setRegionOnly] = useState(false);
+  const [occluders,setOccluders] = useState<string[]>([]);
   const [menuOpen, setMenuOpen] = useState(false),
     [layersOpen, setLayersOpen] = useState(false),
     [region, setRegion] = useState(""),
@@ -178,6 +188,7 @@ export function AtlasApp() {
     setIsolated(false);
     setPlaying(false);
     setAgonists(false);
+    setOccluders([]);
     setHidden((h) => h.filter((x) => x !== id));
     setTransparent((t) => t.filter((x) => x !== id));
     setLayers((l) => ({ ...l, [byId[id].kind]: 100 }));
@@ -190,6 +201,7 @@ export function AtlasApp() {
     setIsolated(false);
     setHidden([]);
     setTransparent([]);
+    setRegionOnly(false);
     doCommand("reset");
   }
   function chooseMovement(id: string) {
@@ -273,6 +285,8 @@ export function AtlasApp() {
     agonists,
     motionMode,
     mechanics,
+    reveal,
+    regionOnly,
   };
   const list = searchStructures("", system, region);
   return (
@@ -551,6 +565,7 @@ export function AtlasApp() {
                   onProgress={setProgress}
                   onLayers={() => setLayersOpen(true)}
                   onMechanics={setMechanicsReport}
+                  onOcclusion={setOccluders}
                 />
               </Suspense>
               <div className="atlas-footer">
@@ -729,6 +744,8 @@ export function AtlasApp() {
           <Sources />
         ) : section === "fundamentos" ? (
           <Foundations onMotion={chooseMovement} />
+        ) : section === 'testes' ? (
+          <ClinicalTests id={parts[1]} onOpen={id=>go('/testes'+(id?'/'+id:''))} onSelect={id=>{select(id);setRegionOnly(true);setReveal('ghost');setLayers({ossos:35,musculos:60,articulacoes:0,ligamentos:0,tendoes:0,nervos:100});setHidden([]);setTransparent([]);}}/>
         ) : section === "ombro" ? (
           <ShoulderModule onSelect={id => {
             select(id);
@@ -811,7 +828,17 @@ export function AtlasApp() {
             </div>
             <p>
               Escolha o que ver. Ajuste a transparência para revelar relações.
+              Para tablets, use Leve em Qualidade 3D; a transparência fica
+              pontilhada para favorecer a fluidez.
             </p>
+            <SmartLayersPanel selected={selected} mode={reveal} regionOnly={regionOnly}
+              occluders={occluders} hidden={hidden} transparent={transparent}
+              onMode={setReveal} onRegion={setRegionOnly}
+              onBestView={()=>{doCommand('best-view');setLayersOpen(false);}}
+              onHide={id=>setHidden(h=>[...new Set([...h,id])])}
+              onRestore={id=>{setHidden(h=>h.filter(x=>x!==id));setTransparent(t=>t.filter(x=>x!==id));}}
+              onReset={()=>{setHidden([]);setTransparent([]);setDeepOnly(false);setRegionOnly(false);setReveal('ghost');setLayers(initialLayers);if(selected)setLayers(l=>({...l,[selected.kind]:100}));}}
+            />
             {(Object.keys(labels) as Kind[]).map((kind) => (
               <div className="layer-control" key={kind}>
                 <div>
