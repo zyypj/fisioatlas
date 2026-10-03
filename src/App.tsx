@@ -828,8 +828,8 @@ export function AtlasApp() {
             </div>
             <p>
               Escolha o que ver. Ajuste a transparência para revelar relações.
-              Para tablets, use Leve em Qualidade 3D; a transparência fica
-              pontilhada para favorecer a fluidez.
+              Para tablets, use Leve em Qualidade 3D: modelos simplificados
+              com transparência suave.
             </p>
             <SmartLayersPanel selected={selected} mode={reveal} regionOnly={regionOnly}
               occluders={occluders} hidden={hidden} transparent={transparent}

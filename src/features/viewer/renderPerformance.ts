@@ -9,7 +9,11 @@ export function parseRenderQuality(value: string | null): RenderQuality {
 
 export function renderProfile(quality: RenderQuality, touchDevice: boolean) {
   const light = quality === 'light' || (quality === 'auto' && touchDevice);
-  return { light, maxPixelRatio: light ? 1 : 1.75, maxPixels: light ? 750_000 : 2_000_000 };
+  return { light, maxPixelRatio: light ? 1 : 1.75, maxPixels: light ? 600_000 : 2_000_000, maxFps: light ? 30 : 60 };
+}
+
+export function modelManifestUrl(light: boolean) {
+  return light ? '/models/manifest-light.json' : '/models/manifest.json';
 }
 
 /** Budget physical pixels, not CSS size: large high-DPI tablets need a cap. */
@@ -18,19 +22,18 @@ export function renderPixelRatio(width: number, height: number, deviceRatio: num
   return Math.min(ratio, Math.sqrt(profile.maxPixels / Math.max(1, width * height)));
 }
 
-/** Keep the hashed shader active at 100% too: slider updates only its uniform.
- * Depth writes let nearer surviving fragments reject hidden layers. The tradeoff
- * is visible grain; detailed mode retains blended transparency.
- */
+/** Smooth blending in both profiles: hashed fragments shimmer during orbiting.
+ * Keep light shaders blended while sliders move; solid atlas instances are
+ * routed to a separate depth-writing batch. */
 export function applyTransparency(material: THREE.MeshStandardMaterial, opacity: number, light: boolean) {
-  const transparent = !light && opacity < 1;
-  if (material.transparent !== transparent || material.alphaHash !== light) {
+  const transparent = light || opacity < 1;
+  if (material.transparent !== transparent || material.alphaHash) {
     material.transparent = transparent;
-    material.alphaHash = light;
+    material.alphaHash = false;
     material.needsUpdate = true;
   }
   material.opacity = opacity;
-  material.depthWrite = light || opacity === 1;
+  material.depthWrite = opacity === 1;
 }
 
 /** Raycaster does not exclude invisible objects: filter before triangle tests. */

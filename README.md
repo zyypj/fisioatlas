@@ -16,6 +16,21 @@ npm start
 
 Para desenvolver: `npm run dev -- --host 127.0.0.1 --port 5173`.
 
+## Qualidade no tablet
+
+Em **Qualidade 3D → Leve · tablet**, o atlas, o Lasègue e o Slump carregam modelos
+previamente simplificados, com transparência suave e limite de 30 quadros por
+segundo. O atlas estático agrupa estruturas em lotes sólidos e transparentes;
+seleção, ocultação e camadas continuam individuais. O modo detalhado usa as
+malhas originais. Ao trocar a qualidade, o visualizador preserva a câmera e
+os ajustes de estudo e recarrega somente a versão escolhida.
+
+Para regenerar as malhas leves após alterar os modelos detalhados, execute
+`npm run models:light`. A preparação completa também executa essa etapa. O
+[relatório de simplificação](public/models/light-report.json) registra método,
+componentes, triângulos e bytes de cada sistema. Essa simplificação reduz
+detalhes da superfície; ela não acrescenta estruturas anatômicas.
+
 ## O que está implementado
 
 - Módulo **Ombro e manguito rotador** em `/ombro`: 82 estruturas com fichas e representação 3D, incluindo os quatro músculos, seus tendões, articulações e cápsulas, ligamentos, lábio, cartilagens, bolsas, recessos, fáscias, estabilizadores escapulares e nervos relacionados. Foram acrescentadas 31 fichas e 15 complementos didáticos produzidos no Higgsfield 3D Jutsu. Procedência, cobertura e limites de cada representação: [documentação do ombro](public/OMBRO.md). Complementos são aproximações topográficas, sem segmentação ou validação clínica.
@@ -111,3 +126,14 @@ O esquema de articulação sinovial foi construído por script próprio no Higgs
 - Fontes editoriais: `src/data/sources.ts` e página **Fontes e referências**.
 
 Os resumos em português são redação própria de fatos anatômicos; não foram reproduzidas páginas, fotografias ou tabelas de livros. Os modelos conservam sua atribuição. Não foram usadas imagens geradas para representar anatomia 3D.
+
+
+Os módulos de **Lasègue** (`/testes/lasegue`) e **Slump** (`/testes/slump`)
+combinam ficha clínica, referências primárias, casos fictícios e roteiro salvo
+no navegador. O Slump tem 12 etapas de estudo, incluindo sete demonstrações 3D:
+posição sentada, flexão do tronco, flexão cervical, extensão do joelho,
+dorsiflexão, liberação cervical mantendo o membro e retorno. Os tecidos usam
+as mesmas malhas do atlas; posições e deformações são aproximações didáticas,
+sem simular sintomas ou definir diagnóstico por um ângulo. Músculos mediais da
+coxa mantêm o movimento do lado correspondente mesmo próximos da linha média,
+e os glúteos distribuem a transição entre pelve e fêmur.

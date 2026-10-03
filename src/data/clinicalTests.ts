@@ -1,3 +1,4 @@
+import { slumpTest } from "./slumpTest";
 export interface ClinicalTest {
   id: string;
   name: string;
@@ -14,6 +15,8 @@ export interface ClinicalTest {
   record: string;
   related: string[];
   sources: string[];
+  executionNote?: string;
+  evidence?: { text: string; source: string };
   cases: {
     id: string;
     question: string;
@@ -169,6 +172,7 @@ export const clinicalTests: ClinicalTest[] = [
       },
     ],
   },
+  slumpTest,
 ];
 
 export const clinicalTestById = Object.fromEntries(

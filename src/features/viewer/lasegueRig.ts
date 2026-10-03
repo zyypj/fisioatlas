@@ -6,6 +6,9 @@ export interface LaseguePose {
   hip: number;
   ankle: number;
   support: number;
+  knee?: number;
+  trunk?: number;
+  neck?: number;
 }
 export const lasegueDurations = [2.4, 5.5, 2.8, 5.8, 6.2];
 export const laseguePresets: Record<string, Layers> = {
@@ -124,6 +127,7 @@ export function lasegueWeights(
   point: THREE.Vector3,
   hip: THREE.Vector3,
   ankle: THREE.Vector3,
+  bounds?: THREE.Box3,
 ) {
   if (center.x >= 0) return [0, 0] as const;
   const lower = distalRegions.has(structure.region);
@@ -141,7 +145,37 @@ export function lasegueWeights(
     !crossingHip.has(structure.id)
   )
     return [0, 0] as const;
-  const side = THREE.MathUtils.smoothstep(-point.x, 0.005, 0.025);
+  // A component entirely on the tested side belongs to that limb even when
+  // its medial surface approaches the midline (gracilis/adductors). Fading
+  // those vertices by X leaves long sheets behind as the thigh rises.
+  const side =
+    bounds && bounds.max.x <= 0
+      ? 1
+      : THREE.MathUtils.smoothstep(-point.x, 0.005, 0.025);
+  // The gluteal origin covers a broad pelvic surface. A short horizontal
+  // blend band rotates the lower belly like a flap and creases the mesh.
+  // Spread the attachment transition across its own extent, preserving the
+  // superior/medial pelvic origin while the lateral distal attachment moves.
+  if (
+    bounds &&
+    ["gluteo-maximo", "gluteo-medio", "gluteo-minimo"].includes(structure.id)
+  ) {
+    const along = THREE.MathUtils.smoothstep(
+      (bounds.max.y - point.y) / Math.max(0.01, bounds.max.y - bounds.min.y),
+      0.05,
+      0.95,
+    );
+    const lateral = Math.max(Math.abs(bounds.min.x), Math.abs(bounds.max.x));
+    const anchor =
+      structure.id === "gluteo-maximo"
+        ? THREE.MathUtils.smoothstep(
+            Math.abs(point.x),
+            lateral * 0.12,
+            lateral * 0.65,
+          )
+        : 1;
+    return [along * anchor * side, 0] as const;
+  }
   return [
     motionWeight(point.y, hip.y, 0.13) * side,
     motionWeight(point.y, ankle.y, 0.05) * side,
@@ -213,12 +247,20 @@ export function attachLasegueRig(
 ) {
   const position = mesh.geometry.getAttribute("position");
   const center = mesh.geometry.boundingBox!.getCenter(new THREE.Vector3());
+  const bounds = mesh.geometry.boundingBox!.clone();
   const values = new Float32Array(position.count * 2),
     point = new THREE.Vector3();
   let moving = false;
   for (let i = 0; i < position.count; i++) {
     point.fromBufferAttribute(position, i);
-    const weights = lasegueWeights(structure, center, point, hip, ankle);
+    const weights = lasegueWeights(
+      structure,
+      center,
+      point,
+      hip,
+      ankle,
+      bounds,
+    );
     values[i * 2] = weights[0];
     values[i * 2 + 1] = weights[1];
     moving ||= weights[0] > 0 || weights[1] > 0;

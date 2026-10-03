@@ -1,0 +1,53 @@
+{
+  "method": "Meshopt simplification, target ratio 0.18, relative error limit 0.004 of each mesh radius. Original component names and structure IDs retained. Detailed models unchanged.",
+  "systems": [
+    {
+      "kind": "musculos",
+      "components": 488,
+      "trianglesBefore": 1920364,
+      "trianglesAfter": 415012,
+      "bytesBefore": 13099044,
+      "bytesAfter": 3515512
+    },
+    {
+      "kind": "ossos",
+      "components": 230,
+      "trianglesBefore": 631487,
+      "trianglesAfter": 172811,
+      "bytesBefore": 4432152,
+      "bytesAfter": 1525620
+    },
+    {
+      "kind": "articulacoes",
+      "components": 214,
+      "trianglesBefore": 291076,
+      "trianglesAfter": 102711,
+      "bytesBefore": 2081520,
+      "bytesAfter": 1006652
+    },
+    {
+      "kind": "ligamentos",
+      "components": 296,
+      "trianglesBefore": 200281,
+      "trianglesAfter": 54306,
+      "bytesBefore": 1709796,
+      "bytesAfter": 795956
+    },
+    {
+      "kind": "tendoes",
+      "components": 143,
+      "trianglesBefore": 283641,
+      "trianglesAfter": 60876,
+      "bytesBefore": 2029656,
+      "bytesAfter": 649600
+    },
+    {
+      "kind": "nervos",
+      "components": 172,
+      "trianglesBefore": 188160,
+      "trianglesAfter": 35963,
+      "bytesBefore": 1382224,
+      "bytesAfter": 504864
+    }
+  ]
+}

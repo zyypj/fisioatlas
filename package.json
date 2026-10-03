@@ -11,6 +11,7 @@
     "start": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
     "test": "tsx --tsconfig tsconfig.tests.json --test scripts/test.tsx",
     "models:prepare": "python scripts/rebuild_models.py",
+    "models:light": "node scripts/build_light_models.mjs",
     "format": "prettier --write src scripts/*.{tsx,mjs}"
   },
   "dependencies": {

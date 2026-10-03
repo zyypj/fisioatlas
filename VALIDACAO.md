@@ -110,3 +110,13 @@ Os testes visuais usaram dimensões emuladas no navegador, não aparelhos físic
 - Higgsfield: projeto `b80fd313-010f-4c2c-bd02-95f9d13b5ffe`, revisão 2. Render conferido e iluminação corrigida. Geometria aproximada, sem segmentação de paciente ou validação clínica; fonte GLB, script e hash registrados em `public/models/provenance.json`.
 - Repetição do integrador preservou 1.543 componentes, sem duplicar malhas. Recompilar o conteúdo preservou as associações Higgsfield, sem export pendente.
 - Documentação de cada ficha, inventário, referências e limites: `public/OMBRO.md`. Conferência estática e testes de software não validam espessuras, trajetos, forças, tensões ou cinemática clínica dos complementos.
+
+
+## Slump 3D e correção dos músculos da coxa — 03/10/2026
+
+- Slump com 12 etapas de estudo e sete fases animadas no mesmo atlas: sentado, flexão do tronco, flexão cervical, extensão do joelho, dorsiflexão, liberação cervical e retorno. Inclui ficha completa, interpretação, registro, três casos fictícios e referências primárias.
+- Correção da influência do movimento nos músculos mediais: uma malha unilateral mantém o peso do lado mesmo próxima da linha média. Grácil, adutores e semimembranáceo não deixam uma lâmina pendente quando a coxa sobe. Nos glúteos, a transição ocupa a extensão do músculo e preserva a origem superior/medial.
+- Regressões verificam continuidade da sequência, ossos rígidos, membro contralateral sentado, posições usadas na seleção, origens glúteas e músculos mediais. A liberação cervical mantém quadril, joelho, tornozelo e tronco; apenas a cervical muda.
+- Conferência no navegador: Slump sentado e com joelho a 20° de flexão; dorsiflexão de 12°; cervical de 30° para 0° mantendo os demais componentes. Camadas musculares e neurais, troca de modelos leves/completos preservando pose e câmera, e ausência de erros de shader. Lasègue a 80° inspecionado com todos os tecidos.
+- 30 testes aprovados. Build aprovado; lint sem erros, com os dois avisos preexistentes em App.tsx. As medições e capturas são do navegador de desktop, sem avaliação em um Redmi Pad físico.
+- Capturas locais: `slump-3d.png` e `lasegue-corrigido.png`, na pasta de visualizações desta conversa. Animações e deformações são aproximações didáticas; não há simulação de sintomas nem validação clínica independente.

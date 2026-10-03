@@ -37,6 +37,7 @@ export default function Viewer(props: Props) {
     catch { return 'auto'; }
   });
   const qualityRef = useRef(quality);
+  const savedView = useRef<ReturnType<AtlasEngine['captureView']> | null>(null);
   const host = useRef<HTMLDivElement>(null),
     engine = useRef<AtlasEngine | null>(null),
     callbacks = useRef(props);
@@ -87,9 +88,12 @@ export default function Viewer(props: Props) {
         qualityRef.current,
       );
       engine.current = e;
-      e.load();
+      void e.load().then(() => {
+        if (engine.current === e && savedView.current) e.restoreView(savedView.current);
+      });
       return () => {
         resize.disconnect();
+        savedView.current = e.captureView();
         e.dispose();
         engine.current = null;
       };
@@ -104,7 +108,7 @@ export default function Viewer(props: Props) {
         }),
       );
     }
-  }, [attempt]);
+  }, [attempt, quality]);
   useEffect(() => {
     const e = engine.current;
     if (!e) return;
@@ -164,12 +168,11 @@ export default function Viewer(props: Props) {
         <select
           aria-label="Qualidade do 3D"
           value={quality}
-          title="Modo leve: menos pixels e transparência pontilhada. A geometria anatômica é preservada."
+          title="Modo leve: modelos simplificados e transparência suave para estudar no tablet."
           onChange={(e) => {
             const value = parseRenderQuality(e.target.value);
             qualityRef.current = value;
             setQuality(value);
-            engine.current?.setQuality(value);
             try { localStorage.setItem(QUALITY_STORAGE_KEY, value); } catch { /* Private storage can be unavailable. */ }
           }}
         >

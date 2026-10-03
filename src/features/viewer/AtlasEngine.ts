@@ -5,7 +5,8 @@ import { MeshoptDecoder } from "three/addons/libs/meshopt_decoder.module.js";
 import { byId, colors } from "../../data";
 import { attachSoftMotion, motionWeight } from "./softMotion";
 import { rigs, rigPivot, rigMoves, rigBounds, onAnimatedSide, weightHeight, chainRegions } from "./animationRigs";
-import { applyTransparency, fadeOpacity, pickableMeshes, renderPixelRatio, renderProfile } from './renderPerformance';
+import { applyTransparency, fadeOpacity, pickableMeshes, renderPixelRatio, renderProfile, modelManifestUrl } from './renderPerformance';
+import { AtlasBatches } from './atlasBatches';
 import type { RenderQuality } from './renderPerformance';
 import { findOccluders, isInStudyContext, selectedBounds, smartOpacity } from './smartLayers';
 import type { LayerMesh, RevealMode } from './smartLayers';
@@ -66,6 +67,8 @@ export class AtlasEngine {
   private planeMesh: THREE.Mesh;
   private arrows = new THREE.Group();
   private lastTime = 0;
+  private lastRender = 0;
+  private batches: { source: THREE.Group; draw: AtlasBatches }[] = [];
   private elapsed = 0;
   private lastProgress = 0;
   private lastMechanicsReport = 0;
@@ -266,13 +269,24 @@ export class AtlasEngine {
     this.renderer.domElement.dataset.renderProfile = this.profile.light ? 'light' : 'detail';
     this.dirty = true;
   }
-  setQuality(quality: RenderQuality) {
-    this.profile = renderProfile(quality, this.touchDevice);
-    this.resize();
+  captureView() {
+    return { position: this.camera.position.clone(), target: this.controls.target.clone(), up: this.camera.up.clone() };
+  }
+  restoreView(view: ReturnType<AtlasEngine['captureView']>) {
+    this.camera.position.copy(view.position);
+    this.controls.target.copy(view.target);
+    this.camera.up.copy(view.up);
+    this.targetCamera = null;
+    this.targetLook = null;
+    this.controls.update();
+    this.events.view('livre');
+    this.dirty = true;
+    this.smartDirty = true;
   }
   async load() {
     try {
-      const res = await fetch("/models/manifest.json", {
+      this.events.load(0, 0);
+      const res = await fetch(modelManifestUrl(this.profile.light), {
         signal: this.abort.signal,
       });
       if (!res.ok) throw new Error("Manifesto indisponível");
@@ -346,9 +360,8 @@ export class AtlasEngine {
                 color: colors[entry.kind],
                 roughness: 0.66,
                 metalness: 0,
-                transparent: !this.profile.light && this.state.layers[entry.kind] < 100,
-                alphaHash: this.profile.light,
-                depthWrite: this.profile.light || this.state.layers[entry.kind] === 100,
+                transparent: this.profile.light || this.state.layers[entry.kind] < 100,
+                depthWrite: this.state.layers[entry.kind] === 100,
                 opacity: this.state.layers[entry.kind] / 100,
                 side: THREE.DoubleSide,
                 forceSinglePass: true,
@@ -373,6 +386,11 @@ export class AtlasEngine {
         });
         sourceGeometries.forEach((g) => g.dispose());
         this.scene.add(systemGroup);
+        if (this.profile.light && systemGroup.children.length) {
+          const draw = new AtlasBatches(systemGroup.children as AnatomicalMesh[]);
+          this.batches.push({ source: systemGroup, draw });
+          this.scene.add(draw.opaque, draw.transparent);
+        }
         this.dirty = true;
         this.smartDirty = true;
         this.settleUntil = performance.now() + 500;
@@ -726,6 +744,7 @@ export class AtlasEngine {
   private animate = (time: number) => {
     if (this.disposed) return;
     this.frame = requestAnimationFrame(this.animate);
+    if (time - this.lastRender < 1000 / this.profile.maxFps - 1) return;
     const dt = Math.min((time - this.lastTime) / 1000, 0.05);
     this.lastTime = time;
     if (document.hidden) return;
@@ -821,7 +840,15 @@ export class AtlasEngine {
       }
     }
     this.controls.update();
+    const batched = this.profile.light && !this.state.movement;
+    for (const batch of this.batches) {
+      batch.source.visible = !batched;
+      batch.draw.sync(batched);
+    }
     this.renderer.render(this.scene, this.camera);
+    this.lastRender = time;
+    this.renderer.domElement.dataset.drawCalls = String(this.renderer.info.render.calls);
+    this.renderer.domElement.dataset.triangles = String(this.renderer.info.render.triangles);
   };
   dispose() {
     this.disposed = true;
@@ -829,6 +856,10 @@ export class AtlasEngine {
     cancelAnimationFrame(this.frame);
     this.observer.disconnect();
     this.controls.dispose();
+    for (const batch of this.batches) {
+      this.scene.remove(batch.draw.opaque, batch.draw.transparent);
+      batch.draw.dispose();
+    }
     this.scene.traverse((o) => {
       if (o instanceof THREE.Mesh) {
         o.geometry.dispose();

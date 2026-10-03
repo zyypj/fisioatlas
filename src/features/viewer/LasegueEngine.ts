@@ -10,6 +10,7 @@ import {
   pickableMeshes,
   renderPixelRatio,
   renderProfile,
+  modelManifestUrl,
 } from "./renderPerformance";
 import type { RenderQuality } from "./renderPerformance";
 import {
@@ -24,9 +25,19 @@ import {
   supineMatrix,
 } from "./lasegueRig";
 import type { LaseguePose } from "./lasegueRig";
+import {
+  attachSlumpRig,
+  bindSlumpShader,
+  deformSlumpPoint,
+  slumpDurations,
+  slumpJoints,
+  slumpStepPose,
+} from "./slumpRig";
+import type { SlumpJoints } from "./slumpRig";
 
 type AnatomyMesh = THREE.Mesh<THREE.BufferGeometry, THREE.MeshStandardMaterial>;
-type RigUniforms = ReturnType<typeof bindLasegueShader>;
+type RigUniforms =
+  ReturnType<typeof bindLasegueShader> | ReturnType<typeof bindSlumpShader>;
 interface Events {
   load: (percent: number, count: number, error?: string) => void;
   pose: (pose: LaseguePose, progress: number) => void;
@@ -120,8 +131,9 @@ export class LasegueEngine {
   private drawMeshes: AnatomyMesh[] = [];
   private hip = new THREE.Vector3(-0.05, 0.86, -0.02);
   private ankle = new THREE.Vector3(-0.075, 0.08, -0.035);
+  private seatedJoints: SlumpJoints | null = null;
   private pose = { value: { hip: 0, ankle: 0, support: 0 } as LaseguePose };
-  private fromPose = { hip: 0, ankle: 0, support: 0 };
+  private fromPose: LaseguePose = { hip: 0, ankle: 0, support: 0 };
   private hands = [supportHand(), supportHand()];
   private arms: THREE.Mesh[] = [];
   private layers: Layers = { ...laseguePresets.completo };
@@ -141,18 +153,22 @@ export class LasegueEngine {
   private step = 0;
   private frame = 0;
   private lastTime = 0;
+  private lastRender = 0;
   private lastReport = 0;
   private ready = false;
   private dirty = true;
   private disposed = false;
   private events: Events;
   private element: HTMLDivElement;
+  readonly testId: "lasegue" | "slump";
   constructor(
     element: HTMLDivElement,
     events: Events,
     step: number,
     quality: RenderQuality,
+    testId: "lasegue" | "slump" = "lasegue",
   ) {
+    this.testId = testId;
     this.element = element;
     this.events = events;
     this.step = step;
@@ -162,10 +178,10 @@ export class LasegueEngine {
         matchMedia("(any-pointer: coarse)").matches,
     );
     this.playing = !this.reducedMotion;
-    if (this.reducedMotion) this.elapsed = lasegueDurations[step] + this.intro;
-    this.pose.value = lasegueStepPose(
+    if (this.reducedMotion) this.elapsed = this.durations[step] + this.intro;
+    this.pose.value = this.stepPose(
       step,
-      this.playing ? 0 : lasegueDurations[step],
+      this.playing ? 0 : this.durations[step],
     );
     this.fromPose = { ...this.pose.value };
     this.renderer = new THREE.WebGLRenderer({
@@ -184,10 +200,14 @@ export class LasegueEngine {
     canvas.setAttribute("role", "img");
     canvas.setAttribute(
       "aria-label",
-      "Lasègue em 3D: corpo deitado na maca, membro direito elevado passivamente com joelho estendido. Arraste para girar e use os controles para explorar os tecidos.",
+      testId === "slump"
+        ? "Slump em 3D: pessoa sentada na borda da maca; tronco, cervical, joelho e tornozelo em sequência. Arraste para girar e explore os tecidos."
+        : "Lasègue em 3D: corpo deitado na maca, membro direito elevado passivamente com joelho estendido. Arraste para girar e use os controles para explorar os tecidos.",
     );
     canvas.tabIndex = 0;
-    this.body.quaternion.setFromRotationMatrix(supineMatrix);
+    if (testId === "lasegue")
+      this.body.quaternion.setFromRotationMatrix(supineMatrix);
+    else this.body.position.y = 0.84 - this.hip.y;
     this.scene.add(this.body);
     this.sources.visible = false;
     this.body.add(this.sources);
@@ -203,7 +223,11 @@ export class LasegueEngine {
     key.shadow.camera.near = 0.1;
     key.shadow.camera.far = 8;
     key.shadow.normalBias = 0.004;
-    key.target.position.set(0.82, 0.15, 0);
+    key.target.position.set(
+      testId === "slump" ? 0 : 0.82,
+      testId === "slump" ? 0.9 : 0.15,
+      0,
+    );
     this.scene.add(key.target);
     this.scene.add(key);
     const fill = new THREE.DirectionalLight("#c8cfff", 1.4);
@@ -304,7 +328,46 @@ export class LasegueEngine {
     });
     this.frame = requestAnimationFrame(this.animate);
   }
+  private get durations() {
+    return this.testId === "slump" ? slumpDurations : lasegueDurations;
+  }
+  private stepPose(step: number, time: number): LaseguePose {
+    return this.testId === "slump"
+      ? slumpStepPose(step, time)
+      : lasegueStepPose(step, time);
+  }
   private buildTable() {
+    if (this.testId === "slump") {
+      const surface = new THREE.Mesh(
+        new THREE.BoxGeometry(1.8, 0.07, 0.65),
+        new THREE.MeshStandardMaterial({ color: "#c5bbdc", roughness: 0.8 }),
+      );
+      surface.position.set(-0.45, 0.665, -0.33);
+      surface.receiveShadow = true;
+      this.scene.add(surface);
+      const material = new THREE.MeshStandardMaterial({
+        color: "#9a9aaa",
+        roughness: 0.45,
+        metalness: 0.5,
+      });
+      for (const x of [-1.17, 0.25])
+        for (const z of [-0.57, -0.08]) {
+          const leg = new THREE.Mesh(
+            new THREE.CylinderGeometry(0.018, 0.018, 0.63, 12),
+            material,
+          );
+          leg.position.set(x, 0.315, z);
+          this.scene.add(leg);
+        }
+      const ground = new THREE.Mesh(
+        new THREE.PlaneGeometry(6, 6),
+        new THREE.MeshStandardMaterial({ color: "#eee8f7", roughness: 1 }),
+      );
+      ground.rotation.x = -Math.PI / 2;
+      ground.receiveShadow = true;
+      this.scene.add(ground);
+      return;
+    }
     const surface = new THREE.Mesh(
       new THREE.BoxGeometry(1.95, 0.065, 0.64, 1, 1, 1),
       new THREE.MeshStandardMaterial({ color: "#c5bbdc", roughness: 0.8 }),
@@ -376,7 +439,8 @@ export class LasegueEngine {
   }
   async load() {
     try {
-      const response = await fetch("/models/manifest.json", {
+      this.events.load(0, 0);
+      const response = await fetch(modelManifestUrl(this.profile.light), {
         signal: this.abort.signal,
       });
       if (!response.ok) throw new Error("Manifesto indisponível");
@@ -442,11 +506,13 @@ export class LasegueEngine {
         });
         disposeObject(gltf.scene);
         if (asset.kind === "ossos") {
-          const bounds = (id: string) => {
+          const bounds = (id: string, right: boolean = true) => {
             const mesh = batch.find(
               (mesh) =>
                 mesh.userData.structureId === id &&
-                mesh.userData.bounds.max.x < 0,
+                (right
+                  ? mesh.userData.bounds.max.x < 0
+                  : mesh.userData.bounds.min.x > 0),
             );
             if (!mesh) throw new Error(`Referência anatômica ausente: ${id}`);
             return mesh.userData.bounds as THREE.Box3;
@@ -454,15 +520,27 @@ export class LasegueEngine {
           const joints = lasegueJoints(bounds("femur"), bounds("talus"));
           this.hip.copy(joints.hip);
           this.ankle.copy(joints.ankle);
+          if (this.testId === "slump") {
+            this.seatedJoints = slumpJoints(bounds);
+            this.body.position.y = 0.84 - this.hip.y;
+          }
         }
         for (const mesh of batch)
-          attachLasegueRig(
-            mesh,
-            byId[mesh.userData.structureId],
-            this.hip,
-            this.ankle,
-            this.pose,
-          );
+          if (this.testId === "slump")
+            attachSlumpRig(
+              mesh,
+              byId[mesh.userData.structureId],
+              this.seatedJoints!,
+              this.pose,
+            );
+          else
+            attachLasegueRig(
+              mesh,
+              byId[mesh.userData.structureId],
+              this.hip,
+              this.ankle,
+              this.pose,
+            );
         // Render one batch per tissue/envelope. Keep original components only for
         // CPU picking, with their structure IDs and matching deformed vertices.
         const buckets = new Map<string, AnatomyMesh[]>();
@@ -490,11 +568,13 @@ export class LasegueEngine {
             depthPacking: THREE.RGBADepthPacking,
           });
           this.rigs.push(
-            bindLasegueShader(
-              { material: depthMaterial },
-              this.hip,
-              this.ankle,
-            ),
+            this.testId === "slump"
+              ? bindSlumpShader({ material: depthMaterial }, this.seatedJoints!)
+              : bindLasegueShader(
+                  { material: depthMaterial },
+                  this.hip,
+                  this.ankle,
+                ),
           );
           mesh.customDepthMaterial = depthMaterial;
           mesh.receiveShadow = true;
@@ -503,7 +583,11 @@ export class LasegueEngine {
             envelope: !!structure.envelope,
           };
           mesh.frustumCulled = false;
-          this.rigs.push(bindLasegueShader(mesh, this.hip, this.ankle));
+          this.rigs.push(
+            this.testId === "slump"
+              ? bindSlumpShader(mesh, this.seatedJoints!)
+              : bindLasegueShader(mesh, this.hip, this.ankle),
+          );
           this.drawMeshes.push(mesh);
           this.body.add(mesh);
         }
@@ -544,15 +628,41 @@ export class LasegueEngine {
     this.camera.updateProjectionMatrix();
     this.dirty = true;
   }
-  setQuality(quality: RenderQuality) {
-    this.profile = renderProfile(
-      quality,
-      navigator.maxTouchPoints > 0 &&
-        matchMedia("(any-pointer: coarse)").matches,
+  captureView() {
+    return {
+      position: this.camera.position.clone(),
+      target: this.controls.target.clone(),
+      up: this.camera.up.clone(),
+      focus: this.focus,
+      step: this.step,
+      pose: { ...this.pose.value },
+      fromPose: { ...this.fromPose },
+      elapsed: this.elapsed,
+      intro: this.intro,
+      playing: this.playing,
+    };
+  }
+  restoreView(view: ReturnType<LasegueEngine["captureView"]>) {
+    if (this.disposed || !this.ready) return;
+    this.camera.position.copy(view.position);
+    this.controls.target.copy(view.target);
+    this.camera.up.copy(view.up);
+    this.focus = view.focus;
+    if (this.step === view.step) {
+      this.pose.value = { ...view.pose };
+      this.fromPose = { ...view.fromPose };
+      this.elapsed = view.elapsed;
+      this.intro = view.intro;
+      this.playing = view.playing;
+    }
+    this.lastTime = 0;
+    this.controls.update();
+    this.events.playing(this.playing);
+    this.events.pose(
+      { ...this.pose.value },
+      Math.min(1, this.elapsed / (this.durations[this.step] + this.intro)),
     );
-    this.renderer.shadowMap.enabled = !this.profile.light;
-    this.resize();
-    this.updateMaterials();
+    this.dirty = true;
   }
   setLayers(layers: Layers, envelopes: boolean) {
     this.layers = { ...layers };
@@ -586,8 +696,8 @@ export class LasegueEngine {
     this.restart();
     if (this.reducedMotion) {
       this.playing = false;
-      this.elapsed = lasegueDurations[step] + this.intro;
-      this.pose.value = lasegueStepPose(step, lasegueDurations[step]);
+      this.elapsed = this.durations[step] + this.intro;
+      this.pose.value = this.stepPose(step, this.durations[step]);
       this.events.playing(false);
     }
   }
@@ -596,14 +706,21 @@ export class LasegueEngine {
     this.fromPose = { ...this.pose.value };
     this.intro =
       0.7 +
-      Math.abs(this.fromPose.hip - lasegueStepPose(this.step, 0).hip) / 20;
+      Math.max(
+        ...(["hip", "ankle", "knee", "trunk", "neck"] as const).map((key) =>
+          Math.abs(
+            (this.fromPose[key] ?? 0) - (this.stepPose(this.step, 0)[key] ?? 0),
+          ),
+        ),
+      ) /
+        30;
     this.playing = true;
     this.events.playing(true);
     this.events.pose({ ...this.pose.value }, 0);
     this.dirty = true;
   }
   setPlaying(playing: boolean) {
-    if (playing && this.elapsed >= lasegueDurations[this.step] + this.intro) {
+    if (playing && this.elapsed >= this.durations[this.step] + this.intro) {
       this.restart();
       return;
     }
@@ -624,13 +741,47 @@ export class LasegueEngine {
     };
     this.events.pose(
       { ...this.pose.value },
-      Math.min(1, this.elapsed / (lasegueDurations[this.step] + this.intro)),
+      Math.min(1, this.elapsed / (this.durations[this.step] + this.intro)),
+    );
+    this.dirty = true;
+  }
+  setKnee(angle: number) {
+    this.playing = false;
+    this.events.playing(false);
+    this.pose.value = {
+      ...this.pose.value,
+      knee: THREE.MathUtils.clamp(angle, 0, 90),
+    };
+    this.events.pose(
+      { ...this.pose.value },
+      Math.min(1, this.elapsed / (this.durations[this.step] + this.intro)),
     );
     this.dirty = true;
   }
   view(view: string, focus = "corpo") {
     this.focus = focus;
     this.camera.up.set(0, 1, 0);
+    if (this.testId === "slump") {
+      const target = this.seatedTarget(focus);
+      const distance =
+        (focus === "tornozelo" ? 0.8 : focus === "membro" ? 1.6 : 2.8) /
+        Math.min(1, this.camera.aspect);
+      const direction =
+        view === "lateral"
+          ? new THREE.Vector3(-1, 0.12, 0.05)
+          : view === "superior"
+            ? new THREE.Vector3(0, 1, 0.01)
+            : new THREE.Vector3(-1, 0.3, 1.5);
+      if (view === "superior") this.camera.up.set(0, 0, -1);
+      this.controls.target.copy(target);
+      this.camera.position
+        .copy(target)
+        .add(direction.normalize().multiplyScalar(distance));
+      this.camera.lookAt(target);
+      this.controls.update();
+      this.dirty = true;
+      return;
+    }
     let target = new THREE.Vector3(0.82, 0.18, 0),
       distance = 2.65;
     if (focus === "membro") {
@@ -673,25 +824,43 @@ export class LasegueEngine {
     this.controls.update();
     this.dirty = true;
   }
+  private seatedTarget(focus: string) {
+    if (focus === "corpo" || !this.seatedJoints)
+      return new THREE.Vector3(0, 0.97, 0.13);
+    const target = deformSlumpPoint(
+      this.ankle,
+      this.seatedJoints,
+      this.pose.value,
+      [1, 1, 0, 1],
+      [0, 0, 0, 0],
+    );
+    if (focus === "membro") target.add(this.hip).multiplyScalar(0.5);
+    target.add(this.body.position);
+    return target;
+  }
   private updatePose() {
     const pose = this.pose.value;
     if (this.focus === "tornozelo" || this.focus === "membro") {
-      const target = deformLaseguePoint(
-        this.ankle,
-        this.hip,
-        this.ankle,
-        pose,
-        [1, 0],
-      );
-      if (this.focus === "membro") target.add(this.hip).multiplyScalar(0.5);
-      target.applyMatrix4(supineMatrix);
-      if (this.focus === "membro") target.y += 0.06;
+      const target =
+        this.testId === "slump"
+          ? this.seatedTarget(this.focus)
+          : deformLaseguePoint(this.ankle, this.hip, this.ankle, pose, [1, 0]);
+      if (this.testId === "lasegue") {
+        if (this.focus === "membro") target.add(this.hip).multiplyScalar(0.5);
+        target.applyMatrix4(supineMatrix);
+        if (this.focus === "membro") target.y += 0.06;
+      }
       this.camera.position.add(target.clone().sub(this.controls.target));
       this.controls.target.copy(target);
     }
     for (const rig of this.rigs) {
       rig.slrHip.value = -THREE.MathUtils.degToRad(pose.hip);
       rig.slrAnkle.value = -THREE.MathUtils.degToRad(pose.ankle);
+      if ("slrKnee" in rig) {
+        rig.slrKnee.value = THREE.MathUtils.degToRad(pose.knee ?? 90);
+        rig.slrTrunk.value = THREE.MathUtils.degToRad(pose.trunk ?? 0);
+        rig.slrNeck.value = THREE.MathUtils.degToRad(pose.neck ?? 0);
+      }
     }
     const contacts = [
       this.ankle.clone().add(new THREE.Vector3(0, -0.035, -0.065)),
@@ -728,10 +897,14 @@ export class LasegueEngine {
     this.renderer.domElement.dataset.hipAngle = pose.hip.toFixed(2);
     this.renderer.domElement.dataset.ankleAngle = pose.ankle.toFixed(2);
     this.renderer.domElement.dataset.step = String(this.step);
+    this.renderer.domElement.dataset.kneeAngle = String(pose.knee ?? 0);
+    this.renderer.domElement.dataset.trunkAngle = String(pose.trunk ?? 0);
+    this.renderer.domElement.dataset.neckAngle = String(pose.neck ?? 0);
   }
   private animate = (time: number) => {
     if (this.disposed) return;
     this.frame = requestAnimationFrame(this.animate);
+    if (time - this.lastRender < 1000 / this.profile.maxFps - 1) return;
     const dt = this.lastTime
       ? Math.min((time - this.lastTime) / 1000, 0.05)
       : 0;
@@ -742,7 +915,7 @@ export class LasegueEngine {
     this.dirty = false;
     if (this.playing && this.ready) {
       this.elapsed += dt * this.speed;
-      const next = lasegueStepPose(
+      const next = this.stepPose(
         this.step,
         Math.max(0, this.elapsed - this.intro),
       );
@@ -755,8 +928,27 @@ export class LasegueEngine {
           next.support,
           blend,
         ),
+        ...(this.testId === "slump"
+          ? {
+              knee: THREE.MathUtils.lerp(
+                this.fromPose.knee ?? 90,
+                next.knee ?? 90,
+                blend,
+              ),
+              trunk: THREE.MathUtils.lerp(
+                this.fromPose.trunk ?? 0,
+                next.trunk ?? 0,
+                blend,
+              ),
+              neck: THREE.MathUtils.lerp(
+                this.fromPose.neck ?? 0,
+                next.neck ?? 0,
+                blend,
+              ),
+            }
+          : {}),
       };
-      if (this.elapsed >= lasegueDurations[this.step] + this.intro) {
+      if (this.elapsed >= this.durations[this.step] + this.intro) {
         this.playing = false;
         this.events.playing(false);
         this.events.pose({ ...this.pose.value }, 1);
@@ -765,6 +957,10 @@ export class LasegueEngine {
     this.updatePose();
     this.scene.updateMatrixWorld();
     this.renderer.render(this.scene, this.camera);
+    this.lastRender = time;
+    this.renderer.domElement.dataset.triangles = String(
+      this.renderer.info.render.triangles,
+    );
     this.renderer.domElement.dataset.drawCalls = String(
       this.renderer.info.render.calls,
     );
@@ -772,7 +968,7 @@ export class LasegueEngine {
       this.lastReport = time;
       this.events.pose(
         { ...this.pose.value },
-        Math.min(1, this.elapsed / (lasegueDurations[this.step] + this.intro)),
+        Math.min(1, this.elapsed / (this.durations[this.step] + this.intro)),
       );
     }
   };

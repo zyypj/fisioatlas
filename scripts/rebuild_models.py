@@ -19,3 +19,4 @@ for command in [
 if (root/'public/models/shoulder-higgsfield-source.glb').exists():
     subprocess.run([shutil.which('node') or 'node','scripts/integrate_shoulder.mjs'],cwd=root,check=True)
     subprocess.run([sys.executable,'scripts/document_shoulder.py'],cwd=root,check=True)
+subprocess.run([shutil.which('node') or 'node','scripts/build_light_models.mjs'],cwd=root,check=True)

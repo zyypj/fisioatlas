@@ -4,11 +4,11 @@ import { byId } from "../../data";
 import { clinicalTests, clinicalTestById } from "../../data/clinicalTests";
 import type { ClinicalTest } from "../../data/clinicalTests";
 import { sources } from "../../data/sources";
-import { clinicalStages, parseClinicalStage } from "./clinicalGuide";
+import { clinicalStagesFor, parseClinicalStage } from "./clinicalGuide";
 
 const LasegueViewer = lazy(() => import("../viewer/LasegueViewer"));
 
-function ClinicalVisual({ step }: { step: number }) {
+function ClinicalVisual({ step, testId }: { step: number; testId: string }) {
   return (
     <Suspense
       fallback={
@@ -17,7 +17,10 @@ function ClinicalVisual({ step }: { step: number }) {
         </div>
       }
     >
-      <LasegueViewer step={step} />
+      <LasegueViewer
+        step={step}
+        testId={testId === "slump" ? "slump" : "lasegue"}
+      />
     </Suspense>
   );
 }
@@ -27,8 +30,8 @@ function ClinicalSources({ test }: { test: ClinicalTest }) {
     <details className="clinical-card">
       <summary>Fontes e referências do módulo</summary>
       <p>
-        Conteúdo conferido em 03/10/2026. A diretriz NASS citada é de 2012;
-        estudos posteriores sobre o SLR também estão incluídos.
+        Conteúdo conferido em 03/10/2026. Consulte os estudos primários e as
+        diretrizes abaixo para a técnica e os limites de interpretação.
       </p>
       <div className="clinical-sources">
         {test.sources.map((id) => {
@@ -121,15 +124,21 @@ function GuidedLesson({
 }) {
   const stageHeading = useRef<HTMLHeadingElement>(null),
     shouldFocus = useRef(false);
+  const stages = clinicalStagesFor(test.id),
+    executionCount = test.steps.length;
   const storageKey = `fisioatlas-clinical-${test.id}-stage`;
   const [stage, setStage] = useState(() => {
     try {
-      return parseClinicalStage(localStorage.getItem(storageKey));
+      return parseClinicalStage(
+        localStorage.getItem(storageKey),
+        stages.length,
+      );
     } catch {
       return 0;
     }
   });
-  const execution = stage >= 1 && stage <= 5 ? test.steps[stage - 1] : null;
+  const execution =
+    stage >= 1 && stage <= executionCount ? test.steps[stage - 1] : null;
   const [completed, setCompleted] = useState(false);
   useEffect(() => {
     try {
@@ -157,12 +166,12 @@ function GuidedLesson({
       <div className="clinical-progress">
         <div>
           <strong>
-            Passo {stage + 1} de {clinicalStages.length}
+            Passo {stage + 1} de {stages.length}
           </strong>
           <span>Seu avanço é salvo neste navegador.</span>
         </div>
         <progress
-          max={clinicalStages.length}
+          max={stages.length}
           value={stage + 1}
           aria-label="Progresso do roteiro"
         />
@@ -170,7 +179,7 @@ function GuidedLesson({
       <details className="clinical-stage-menu">
         <summary>Etapas do roteiro · ir para uma etapa</summary>
         <ol>
-          {clinicalStages.map((title, index) => (
+          {stages.map((title, index) => (
             <li key={title}>
               <button
                 className={stage === index ? "active" : ""}
@@ -185,15 +194,15 @@ function GuidedLesson({
       </details>
       <section
         className={`clinical-card guided-stage ${execution ? "with-diagram" : ""}`}
-        aria-label={`Passo ${stage + 1}: ${clinicalStages[stage]}`}
+        aria-label={`Passo ${stage + 1}: ${stages[stage]}`}
       >
         <header className="guided-stage-header">
           <span className="eyebrow">ETAPA {stage + 1}</span>
           <h2 ref={stageHeading} tabIndex={-1}>
-            {clinicalStages[stage]}
+            {stages[stage]}
           </h2>
         </header>
-        {execution && <ClinicalVisual step={stage - 1} />}
+        {execution && <ClinicalVisual step={stage - 1} testId={test.id} />}
         <div className="guided-content" aria-live="polite">
           {stage === 0 && (
             <>
@@ -205,8 +214,8 @@ function GuidedLesson({
                 ))}
               </ul>
               <p className="clinical-cue">
-                Neste roteiro, Lasègue corresponde ao SLR passivo: o examinador
-                eleva o membro, mantendo o joelho estendido.
+                {test.executionNote ||
+                  "Neste roteiro, Lasègue corresponde ao SLR passivo: o examinador eleva o membro, mantendo o joelho estendido."}
               </p>
               <p>
                 Aprenda a execução, o registro e o raciocínio. O roteiro é
@@ -232,7 +241,7 @@ function GuidedLesson({
               </ul>
             </div>
           )}
-          {stage === 6 && (
+          {stage === executionCount + 1 && (
             <>
               {test.interpretation.map((item) => (
                 <article key={item.title}>
@@ -252,7 +261,7 @@ function GuidedLesson({
               </p>
             </>
           )}
-          {stage === 7 && (
+          {stage === executionCount + 2 && (
             <>
               <h3>Exemplo de registro</h3>
               <p>{test.record}</p>
@@ -265,15 +274,19 @@ function GuidedLesson({
               </ul>
             </>
           )}
-          {stage === 8 && <PracticeCases test={test} />}
-          {stage === 9 && (
+          {stage === executionCount + 3 && <PracticeCases test={test} />}
+          {stage === executionCount + 4 && (
             <>
               <h3>Confira o que você aprendeu</h3>
               <ul>
                 <li>
                   Reconhecer a indicação e verificar segurança e consentimento.
                 </li>
-                <li>Demonstrar elevação passiva com o joelho estendido.</li>
+                <li>
+                  {test.id === "slump"
+                    ? "Demonstrar a sequência sentada e a liberação cervical mantendo a perna."
+                    : "Demonstrar elevação passiva com o joelho estendido."}
+                </li>
                 <li>
                   Observar sintomas familiares, localização e resposta à
                   diferenciação.
@@ -310,9 +323,9 @@ function GuidedLesson({
           <ArrowLeft size={16} /> Voltar um passo
         </button>
         <span>
-          {stage + 1}/{clinicalStages.length}
+          {stage + 1}/{stages.length}
         </span>
-        {stage < clinicalStages.length - 1 ? (
+        {stage < stages.length - 1 ? (
           <button className="primary" onClick={() => goStage(stage + 1)}>
             Próximo passo <ArrowRight size={16} />
           </button>
@@ -387,13 +400,16 @@ function Lesson({
       <div className="clinical-note">
         <strong>O que este módulo ensina</strong>
         <p>
-          Lasègue aqui corresponde ao SLR passivo. Estude a execução e o
-          raciocínio; a ilustração não simula sintomas de um paciente nem
-          fornece um diagnóstico.
+          {test.executionNote || "Lasègue aqui corresponde ao SLR passivo."}{" "}
+          Estude a execução e o raciocínio; a demonstração não simula sintomas
+          de um paciente nem fornece um diagnóstico.
         </p>
       </div>
-      <section className="clinical-guide" aria-label="Execução do Lasègue">
-        <ClinicalVisual step={step} />
+      <section
+        className="clinical-guide"
+        aria-label={`Execução do ${test.name}`}
+      >
+        <ClinicalVisual step={step} testId={test.id} />
         <div className="clinical-steps">
           <h2>Aprenda a executar</h2>
           <ol>
@@ -477,15 +493,25 @@ function Lesson({
         <details>
           <summary>O que a evidência mostra?</summary>
           <p>
-            A acurácia varia com a população, a técnica e a referência
-            diagnóstica. Um estudo de 2023, com 142 pessoas encaminhadas para
-            eletrodiagnóstico, encontrou sensibilidade de 89% e especificidade
-            de 25% para um dos critérios de SLR. Isso mostra por que um
-            resultado positivo não basta para confirmar radiculopatia; esses
-            valores não são universais.
+            {test.evidence ? (
+              test.evidence.text
+            ) : (
+              <>
+                A acurácia varia com a população, a técnica e a referência
+                diagnóstica. Um estudo de 2023, com 142 pessoas encaminhadas
+                para eletrodiagnóstico, encontrou sensibilidade de 89% e
+                especificidade de 25% para um dos critérios de SLR. Isso mostra
+                por que um resultado positivo não basta para confirmar
+                radiculopatia; esses valores não são universais.
+              </>
+            )}
           </p>
           <a
-            href="https://pubmed.ncbi.nlm.nih.gov/38132028/"
+            href={
+              test.evidence
+                ? sources.find((s) => s.id === test.evidence!.source)?.url
+                : "https://pubmed.ncbi.nlm.nih.gov/38132028/"
+            }
             target="_blank"
             rel="noreferrer"
           >
@@ -536,8 +562,8 @@ function Lesson({
       <section className="clinical-card">
         <h2>Fontes do módulo</h2>
         <p>
-          Conteúdo conferido em 03/10/2026. A diretriz NASS citada é de 2012;
-          estudos posteriores sobre o SLR também estão incluídos.
+          Conteúdo conferido em 03/10/2026. Consulte os estudos primários e as
+          diretrizes abaixo para a técnica e os limites de interpretação.
         </p>
         <div className="clinical-sources">
           {test.sources.map((id) => {
@@ -602,8 +628,8 @@ export function ClinicalTests({
             ))}
           </div>
           <p className="clinical-note">
-            O primeiro módulo é o Lasègue. A biblioteca está organizada para
-            receber novos testes com a mesma sequência de estudo.
+            Lasègue e Slump: explore a demonstração 3D, acompanhe o passo a
+            passo e pratique a interpretação dos achados.
           </p>
         </>
       )}

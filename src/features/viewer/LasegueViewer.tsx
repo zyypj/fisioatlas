@@ -4,15 +4,26 @@ import { byId, labels } from "../../data";
 import type { Kind, Layers } from "../../types";
 import { LasegueEngine } from "./LasegueEngine";
 import { laseguePresets, lasegueStepPose } from "./lasegueRig";
+import { slumpStepPose } from "./slumpRig";
 import { parseRenderQuality, QUALITY_STORAGE_KEY } from "./renderPerformance";
 import type { RenderQuality } from "./renderPerformance";
 
-export default function LasegueViewer({ step }: { step: number }) {
+export default function LasegueViewer({
+  step,
+  testId = "lasegue",
+}: {
+  step: number;
+  testId?: "lasegue" | "slump";
+}) {
+  const slump = testId === "slump",
+    name = slump ? "Slump" : "Lasègue";
   const host = useRef<HTMLDivElement>(null),
     engine = useRef<LasegueEngine | null>(null);
   const [load, setLoad] = useState({ percent: 0, count: 0, error: "" }),
     [attempt, setAttempt] = useState(0);
-  const [pose, setPose] = useState(() => lasegueStepPose(step, 0)),
+  const [pose, setPose] = useState(() =>
+      slump ? slumpStepPose(step, 0) : lasegueStepPose(step, 0),
+    ),
     [progress, setProgress] = useState(0),
     [playing, setPlaying] = useState(false);
   const [layers, setLayers] = useState<Layers>({ ...laseguePresets.completo }),
@@ -29,12 +40,21 @@ export default function LasegueViewer({ step }: { step: number }) {
     [focus, setFocus] = useState("corpo"),
     [selected, setSelected] = useState("");
   const [expanded, setExpanded] = useState(false);
+  const cameraRequest = useRef({
+    view: "obliqua",
+    focus: "corpo",
+    revision: 0,
+  });
   const current = useRef({ step, quality, layers, envelopes, speed });
+  const savedView = useRef<ReturnType<LasegueEngine["captureView"]> | null>(
+    null,
+  );
   useEffect(() => {
     current.current = { step, quality, layers, envelopes, speed };
   }, [step, quality, layers, envelopes, speed]);
   useEffect(() => {
     if (!host.current) return;
+    const cameraRevision = cameraRequest.current.revision;
     let instance: LasegueEngine;
     try {
       instance = new LasegueEngine(
@@ -51,11 +71,22 @@ export default function LasegueViewer({ step }: { step: number }) {
         },
         current.current.step,
         current.current.quality,
+        testId,
       );
       engine.current = instance;
       instance.setLayers(current.current.layers, current.current.envelopes);
       instance.setSpeed(current.current.speed);
-      void instance.load();
+      void instance.load().then(() => {
+        if (engine.current !== instance) return;
+        if (savedView.current) instance.restoreView(savedView.current);
+        // A camera choice made while the new quality loads takes precedence
+        // over the snapshot captured before that choice.
+        if (cameraRequest.current.revision !== cameraRevision)
+          instance.view(
+            cameraRequest.current.view,
+            cameraRequest.current.focus,
+          );
+      });
     } catch {
       queueMicrotask(() =>
         setLoad({
@@ -68,10 +99,11 @@ export default function LasegueViewer({ step }: { step: number }) {
       return;
     }
     return () => {
+      savedView.current = instance.captureView();
       instance.dispose();
       engine.current = null;
     };
-  }, [attempt]);
+  }, [attempt, quality, testId]);
   useEffect(() => {
     engine.current?.setStep(step);
   }, [step]);
@@ -88,6 +120,11 @@ export default function LasegueViewer({ step }: { step: number }) {
   }, [expanded]);
   const ready = load.percent === 100 && !load.error;
   const setCamera = (nextView: string, nextFocus: string) => {
+    cameraRequest.current = {
+      view: nextView,
+      focus: nextFocus,
+      revision: cameraRequest.current.revision + 1,
+    };
     setView(nextView);
     setFocus(nextFocus);
     engine.current?.view(nextView, nextFocus);
@@ -95,20 +132,30 @@ export default function LasegueViewer({ step }: { step: number }) {
   return (
     <section
       className={`lasegue-viewer ${expanded ? "expanded" : ""}`}
-      aria-label="Demonstração anatômica 3D do Lasègue"
+      aria-label={`Demonstração anatômica 3D do ${name}`}
     >
       <div className="lasegue-toolbar">
         <div>
           <span className="eyebrow">ANATOMIA 3D · MEMBRO DIREITO</span>
           <strong>
             {
-              [
-                "Posicionar e apoiar",
-                "Elevar passivamente",
-                "Observar a resposta",
-                "Reduzir e diferenciar",
-                "Retornar com apoio",
-              ][step]
+              (slump
+                ? [
+                    "Sentar e preparar",
+                    "Flexionar o tronco",
+                    "Flexionar a cervical",
+                    "Estender o joelho",
+                    "Dorsifletir o tornozelo",
+                    "Liberar a cervical",
+                    "Retornar e comparar",
+                  ]
+                : [
+                    "Posicionar e apoiar",
+                    "Elevar passivamente",
+                    "Observar a resposta",
+                    "Reduzir e diferenciar",
+                    "Retornar com apoio",
+                  ])[step]
             }
           </strong>
         </div>
@@ -156,11 +203,26 @@ export default function LasegueViewer({ step }: { step: number }) {
             Quadril <strong>{pose.hip.toFixed(1)}°</strong>
           </span>
           <span>
-            Joelho <strong>estendido</strong>
+            Joelho{" "}
+            <strong>
+              {slump
+                ? `${(pose.knee ?? 90).toFixed(1)}° de flexão`
+                : "estendido"}
+            </strong>
           </span>
           <span>
             Tornozelo <strong>{pose.ankle.toFixed(1)}°</strong>
           </span>
+          {slump && (
+            <>
+              <span>
+                Tronco <strong>{(pose.trunk ?? 0).toFixed(1)}°</strong>
+              </span>
+              <span>
+                Cervical <strong>{(pose.neck ?? 0).toFixed(1)}°</strong>
+              </span>
+            </>
+          )}
         </div>
         <div className="lasegue-selection">
           {selected
@@ -191,7 +253,7 @@ export default function LasegueViewer({ step }: { step: number }) {
         <label>
           Velocidade
           <select
-            aria-label="Velocidade da animação do Lasègue"
+            aria-label={`Velocidade da animação do ${name}`}
             value={speed}
             onChange={(event) => {
               setSpeed(+event.target.value);
@@ -214,7 +276,7 @@ export default function LasegueViewer({ step }: { step: number }) {
         <label>
           Vista
           <select
-            aria-label="Vista do Lasègue 3D"
+            aria-label={`Vista do ${name} 3D`}
             value={view}
             onChange={(event) => setCamera(event.target.value, focus)}
           >
@@ -226,7 +288,7 @@ export default function LasegueViewer({ step }: { step: number }) {
         <label>
           Enquadramento
           <select
-            aria-label="Enquadramento do Lasègue 3D"
+            aria-label={`Enquadramento do ${name} 3D`}
             value={focus}
             onChange={(event) => setCamera(view, event.target.value)}
           >
@@ -238,12 +300,11 @@ export default function LasegueViewer({ step }: { step: number }) {
         <label>
           Qualidade
           <select
-            aria-label="Qualidade do Lasègue 3D"
+            aria-label={`Qualidade do ${name} 3D`}
             value={quality}
             onChange={(event) => {
               const next = parseRenderQuality(event.target.value);
               setQuality(next);
-              engine.current?.setQuality(next);
               try {
                 localStorage.setItem(QUALITY_STORAGE_KEY, next);
               } catch {
@@ -258,22 +319,27 @@ export default function LasegueViewer({ step }: { step: number }) {
         </label>
       </div>
       <label className="lasegue-angle">
-        Explorar flexão do quadril · {pose.hip.toFixed(1)}°
+        Explorar flexão do {slump ? "joelho" : "quadril"} ·{" "}
+        {(slump ? (pose.knee ?? 90) : pose.hip).toFixed(1)}°
         <input
-          aria-label="Flexão do quadril no Lasègue 3D"
+          aria-label={`Flexão do ${slump ? "joelho" : "quadril"} no ${name} 3D`}
           type="range"
           min="0"
-          max="80"
+          max={slump ? 90 : 80}
           step="1"
-          value={Math.round(pose.hip)}
+          value={Math.round(slump ? (pose.knee ?? 90) : pose.hip)}
           disabled={!ready}
-          onChange={(event) => engine.current?.setAngle(+event.target.value)}
+          onChange={(event) =>
+            slump
+              ? engine.current?.setKnee(+event.target.value)
+              : engine.current?.setAngle(+event.target.value)
+          }
         />
       </label>
       <div
         className="lasegue-presets"
         role="group"
-        aria-label="Tecidos do Lasègue 3D"
+        aria-label={`Tecidos do ${name} 3D`}
       >
         {[
           ["completo", "Todos os tecidos"],
@@ -298,7 +364,7 @@ export default function LasegueViewer({ step }: { step: number }) {
           <label key={kind}>
             {labels[kind]} <span>{layers[kind]}%</span>
             <input
-              aria-label={`${labels[kind]} no Lasègue 3D`}
+              aria-label={`${labels[kind]} no ${name} 3D`}
               type="range"
               min="0"
               max="100"
@@ -319,10 +385,10 @@ export default function LasegueViewer({ step }: { step: number }) {
         </label>
       </details>
       <small className="lasegue-provenance">
-        Malhas do mesmo atlas anatômico · {load.count} componentes carregados.
-        Mãos de apoio ilustram o examinador. Movimento e deformação dos tecidos
-        são aproximações didáticas, sem simulação de sintomas. A amplitude
-        demonstrada não define o resultado do teste.
+        Malhas do mesmo atlas anatômico · {load.count} componentes carregados.{" "}
+        {!slump && "Mãos de apoio ilustram o examinador. "}Movimento e
+        deformação dos tecidos são aproximações didáticas, sem simulação de
+        sintomas. A amplitude demonstrada não define o resultado do teste.
       </small>
     </section>
   );
