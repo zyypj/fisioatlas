@@ -1,10 +1,26 @@
-import { useEffect, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, Pause, Play } from "lucide-react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { byId } from "../../data";
 import { clinicalTests, clinicalTestById } from "../../data/clinicalTests";
 import type { ClinicalTest } from "../../data/clinicalTests";
 import { sources } from "../../data/sources";
 import { clinicalStages, parseClinicalStage } from "./clinicalGuide";
+
+const LasegueViewer = lazy(() => import("../viewer/LasegueViewer"));
+
+function ClinicalVisual({ step }: { step: number }) {
+  return (
+    <Suspense
+      fallback={
+        <div className="clinical-3d-placeholder" role="status">
+          Preparando demonstração anatômica 3D...
+        </div>
+      }
+    >
+      <LasegueViewer step={step} />
+    </Suspense>
+  );
+}
 
 function ClinicalSources({ test }: { test: ClinicalTest }) {
   return (
@@ -114,10 +130,7 @@ function GuidedLesson({
     }
   });
   const execution = stage >= 1 && stage <= 5 ? test.steps[stage - 1] : null;
-  const [demoAngle, setDemoAngle] = useState<number | null>(null),
-    [playing, setPlaying] = useState(false),
-    [completed, setCompleted] = useState(false);
-  const angle = demoAngle ?? execution?.angle ?? 0;
+  const [completed, setCompleted] = useState(false);
   useEffect(() => {
     try {
       localStorage.setItem(storageKey, String(stage));
@@ -131,21 +144,8 @@ function GuidedLesson({
       shouldFocus.current = false;
     }
   }, [stage]);
-  useEffect(() => {
-    if (!playing) return;
-    let tick = 0;
-    const timer = window.setInterval(() => {
-      if (document.hidden) return;
-      tick++;
-      setDemoAngle(Math.round(30 * (1 - Math.cos((Math.PI * tick) / 30))));
-      if (tick >= 60) setPlaying(false);
-    }, 100);
-    return () => window.clearInterval(timer);
-  }, [playing]);
   const goStage = (index: number) => {
     shouldFocus.current = true;
-    setPlaying(false);
-    setDemoAngle(null);
     setCompleted(false);
     setStage(index);
   };
@@ -187,47 +187,14 @@ function GuidedLesson({
         className={`clinical-card guided-stage ${execution ? "with-diagram" : ""}`}
         aria-label={`Passo ${stage + 1}: ${clinicalStages[stage]}`}
       >
-        {execution && (
-          <div className="clinical-visual">
-            <LasegueDiagram angle={angle} dorsiflexion={stage === 4} />
-            <label htmlFor="guided-angle">Explorar a posição · {angle}°</label>
-            <input
-              id="guided-angle"
-              type="range"
-              min="0"
-              max="80"
-              value={angle}
-              onChange={(e) => {
-                setPlaying(false);
-                setDemoAngle(+e.target.value);
-              }}
-            />
-            {stage === 2 && (
-              <button
-                className="secondary"
-                onClick={() => {
-                  if (playing) setPlaying(false);
-                  else {
-                    setDemoAngle(0);
-                    setPlaying(true);
-                  }
-                }}
-              >
-                {playing ? <Pause size={16} /> : <Play size={16} />}{" "}
-                {playing ? "Pausar movimento" : "Demonstrar elevação"}
-              </button>
-            )}
-            <small>
-              Esquema 2D sem escala anatômica. A animação até 60° é um exemplo;
-              a execução clínica respeita a resposta da pessoa.
-            </small>
-          </div>
-        )}
-        <div className="guided-content" aria-live="polite">
+        <header className="guided-stage-header">
           <span className="eyebrow">ETAPA {stage + 1}</span>
           <h2 ref={stageHeading} tabIndex={-1}>
             {clinicalStages[stage]}
           </h2>
+        </header>
+        {execution && <ClinicalVisual step={stage - 1} />}
+        <div className="guided-content" aria-live="polite">
           {stage === 0 && (
             <>
               <p>{test.purpose}</p>
@@ -398,95 +365,6 @@ function TestModule({
   );
 }
 
-export function LasegueDiagram({
-  angle,
-  dorsiflexion = false,
-}: {
-  angle: number;
-  dorsiflexion?: boolean;
-}) {
-  const radians = (angle * Math.PI) / 180;
-  return (
-    <svg
-      viewBox="0 0 600 370"
-      role="img"
-      aria-label={`Esquema do Lasègue: flexão passiva do quadril de ${angle} graus, joelho estendido${dorsiflexion ? ", dorsiflexão do tornozelo" : ""}.`}
-    >
-      <rect x="25" y="284" width="550" height="20" rx="8" fill="#d6c8e8" />
-      <path d="M55 304V340M545 304V340" stroke="#b6a3cf" strokeWidth="9" />
-      <circle
-        cx="83"
-        cy="247"
-        r="23"
-        fill="#d9c9ec"
-        stroke="#735692"
-        strokeWidth="2"
-      />
-      <path
-        d="M108 262Q150 245 193 252L270 266L274 281L109 281Z"
-        fill="#d9c9ec"
-        stroke="#735692"
-        strokeWidth="2"
-      />
-      <path
-        d="M270 273L510 273L526 253"
-        stroke="#c7b8dc"
-        strokeWidth="15"
-        fill="none"
-        strokeLinecap="round"
-      />
-      <path d="M270 270H520" stroke="#b8aac8" strokeDasharray="5 5" />
-      {angle > 0 && (
-        <path
-          d={`M325 270 A55 55 0 0 0 ${270 + 55 * Math.cos(radians)} ${270 - 55 * Math.sin(radians)}`}
-          stroke="#9070b4"
-          strokeWidth="2"
-          fill="none"
-        />
-      )}
-      <g transform={`rotate(${-angle} 270 270)`}>
-        <path
-          d="M270 270L390 270L510 270"
-          fill="none"
-          stroke="#9474b4"
-          strokeWidth="24"
-          strokeLinecap="round"
-        />
-        <path
-          d="M278 275L504 275"
-          stroke="#e3b347"
-          strokeWidth="3"
-          fill="none"
-          strokeDasharray="7 4"
-        />
-        <circle cx="390" cy="270" r="6" fill="#f4eefb" />
-        <path
-          d={dorsiflexion ? "M510 270L502 247" : "M510 270L512 246"}
-          stroke="#735692"
-          strokeWidth="13"
-          strokeLinecap="round"
-        />
-        <path
-          d="M503 291Q509 285 524 287"
-          stroke="#725386"
-          strokeWidth="3"
-          fill="none"
-        />
-      </g>
-      <circle cx="270" cy="270" r="7" fill="#644780" />
-      <text x="294" y="327" fill="#684b86" fontSize="16">
-        Flexão do quadril: {angle}°
-      </text>
-      <text x="27" y="30" fill="#684b86" fontSize="13">
-        DECÚBITO DORSAL · ELEVAÇÃO PASSIVA
-      </text>
-      <text x="27" y="53" fill="#8a709e" fontSize="12">
-        Joelho estendido · o examinador apoia o membro
-      </text>
-    </svg>
-  );
-}
-
 function Lesson({
   test,
   onSelect,
@@ -494,25 +372,8 @@ function Lesson({
   test: ClinicalTest;
   onSelect: (id: string) => void;
 }) {
-  const [step, setStep] = useState(0),
-    [angle, setAngle] = useState(0),
-    [playing, setPlaying] = useState(false);
-  useEffect(() => {
-    if (!playing) return;
-    let tick = 0;
-    const timer = window.setInterval(() => {
-      if (document.hidden) return;
-      tick++;
-      setAngle(Math.round(30 * (1 - Math.cos((Math.PI * tick) / 30))));
-      if (tick >= 60) setPlaying(false);
-    }, 100);
-    return () => window.clearInterval(timer);
-  }, [playing]);
-  const chooseStep = (index: number) => {
-    setPlaying(false);
-    setStep(index);
-    setAngle(test.steps[index].angle);
-  };
+  const [step, setStep] = useState(0);
+  const chooseStep = (index: number) => setStep(index);
   return (
     <>
       <span className="eyebrow">FISIOTERAPIA · AVALIAÇÃO NEURODINÂMICA</span>
@@ -532,45 +393,7 @@ function Lesson({
         </p>
       </div>
       <section className="clinical-guide" aria-label="Execução do Lasègue">
-        <div className="clinical-visual">
-          <LasegueDiagram angle={angle} dorsiflexion={step === 3} />
-          <label htmlFor="lasegue-angle">Explorar a posição · {angle}°</label>
-          <input
-            id="lasegue-angle"
-            type="range"
-            min="0"
-            max="80"
-            step="1"
-            value={angle}
-            onChange={(e) => {
-              setPlaying(false);
-              setAngle(+e.target.value);
-            }}
-          />
-          <div className="two-buttons">
-            <button
-              className="primary"
-              onClick={() => {
-                if (playing) setPlaying(false);
-                else {
-                  setStep(1);
-                  setAngle(0);
-                  setPlaying(true);
-                }
-              }}
-            >
-              {playing ? <Pause size={16} /> : <Play size={16} />}{" "}
-              {playing ? "Pausar demonstração" : "Reproduzir elevação"}
-            </button>
-            <button className="secondary" onClick={() => chooseStep(0)}>
-              Reiniciar posição
-            </button>
-          </div>
-          <small>
-            Esquema 2D, sem escala anatômica. A reprodução vai até 60° como
-            exemplo; em uma pessoa, pare conforme a resposta dos sintomas.
-          </small>
-        </div>
+        <ClinicalVisual step={step} />
         <div className="clinical-steps">
           <h2>Aprenda a executar</h2>
           <ol>

@@ -3134,9 +3134,10 @@ small {
 .clinical-stage-menu summary{cursor:pointer;color:var(--muted)}
 .clinical-stage-menu ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));list-style:none;padding:0;gap:7px}
 .clinical-stage-menu button{width:100%;font-size:13px}
-.guided-stage.with-diagram{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:24px}
+.guided-stage.with-diagram{display:grid;grid-template-columns:1fr;gap:24px}
 .guided-content h2{margin-top:8px}
-.guided-content h2:focus-visible{outline:2px solid #a38abc;outline-offset:5px;border-radius:4px}
+.guided-stage h2:focus-visible{outline:2px solid #a38abc;outline-offset:5px;border-radius:4px}
+.guided-stage-header h2{margin:8px 0 0}
 .guided-content h3{margin-top:24px}
 .guided-content li{margin-bottom:10px;line-height:1.65}
 .guided-stage .clinical-visual{align-self:start}
@@ -3144,3 +3145,39 @@ small {
 .clinical-guide-navigation>span{font-size:13px;color:var(--muted)}
 @media(max-width:900px){.guided-stage.with-diagram{grid-template-columns:1fr}.clinical-stage-menu ol{grid-template-columns:1fr}}
 @media(max-width:600px){.clinical-guide-navigation{gap:6px}.clinical-guide-navigation button{font-size:12px;padding:10px}.clinical-progress{padding:12px}}
+.clinical-3d-placeholder{display:grid;place-items:center;min-height:440px;background:#f5effa;border-radius:16px;color:#785591}
+.lasegue-viewer{min-width:0;overflow:hidden;border:1px solid #ded1ed;border-radius:16px;background:#faf7ff}
+.lasegue-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;background:#f4edfc}
+.lasegue-toolbar>div{display:grid;gap:6px}
+.lasegue-toolbar strong{font-size:15px;color:#654385}
+.lasegue-scene{position:relative;width:100%;height:420px;background:linear-gradient(160deg,#fefcff,#ede5f5);isolation:isolate}
+.lasegue-scene>canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}
+.lasegue-loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:28px;text-align:center;background:#f5effbee;z-index:3;font-size:13px}
+.lasegue-readout{position:absolute;top:12px;left:12px;right:12px;display:flex;gap:8px;flex-wrap:wrap;pointer-events:none}
+.lasegue-readout span{background:#ffffffdc;border:1px solid #e4d9ef;padding:7px 10px;border-radius:9px;font-size:11px;color:#786283}
+.lasegue-readout strong{color:#5e417d;margin-left:5px}
+.lasegue-selection{position:absolute;bottom:12px;left:12px;right:12px;text-align:center;font-size:11px;color:#65557a;pointer-events:none;background:#faf7ffd9;padding:7px;border-radius:8px}
+.lasegue-control-row{display:flex;flex-wrap:wrap;align-items:end;gap:8px;padding:14px 16px 10px}
+.lasegue-control-row .primary,.lasegue-control-row .secondary{font-size:12px;padding:10px 12px;min-height:42px}
+.lasegue-viewer label{font-size:12px;color:#725587}
+.lasegue-control-row label{display:grid;gap:4px;margin-left:auto}
+.lasegue-viewer select{padding:8px;border:1px solid #dacee8;border-radius:8px;color:#694a86;background:#fff;max-width:100%;min-height:40px}
+.lasegue-animation-progress{display:block;width:calc(100% - 32px);height:5px;margin:0 16px 14px;accent-color:#936bb8}
+.lasegue-camera-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:0 16px 14px}
+.lasegue-camera-controls label{display:grid;gap:5px}
+.lasegue-angle{display:grid;gap:12px;padding:0 16px 14px}
+.lasegue-viewer input[type=range]{width:100%;accent-color:#986ebb}
+.lasegue-presets{display:flex;flex-wrap:wrap;gap:7px;padding:0 16px 14px}
+.lasegue-presets button{padding:9px 11px;font-size:12px}
+.lasegue-presets button[aria-pressed=true]{background:#eee2fb;border-color:#b294ce;color:#69418b}
+.lasegue-layer-controls{padding:14px 16px;border-top:1px solid #e1d5ee}
+.lasegue-layer-controls summary{cursor:pointer;color:#75548e;font-size:12px}
+.lasegue-layer-controls label:not(.check-label){display:grid;grid-template-columns:1fr auto;gap:8px;padding-top:13px}
+.lasegue-layer-controls input[type=range]{grid-column:1/-1}
+.lasegue-layer-controls .check-label{margin-top:16px;display:flex;align-items:center;gap:8px}
+.lasegue-provenance{display:block;padding:0 16px 16px;font-size:11px;line-height:1.6;color:#877493}
+.lasegue-viewer.expanded{position:fixed;inset:14px;z-index:1000;box-shadow:0 0 0 40px #2f1c4588;overflow:auto;border-radius:18px;background:#faf7ff}
+.lasegue-viewer.expanded .lasegue-scene{height:min(65vh,700px)}
+.lasegue-viewer.expanded .lasegue-toolbar{position:sticky;top:0;z-index:5}
+.clinical-guide:has(.lasegue-viewer){grid-template-columns:1fr}
+@media(max-width:600px){.lasegue-scene{height:340px}.lasegue-camera-controls{grid-template-columns:1fr 1fr}.lasegue-camera-controls label:last-child{grid-column:1/-1}.lasegue-control-row label{margin-left:0}.lasegue-toolbar{padding:12px}.guided-stage.with-diagram{padding:12px}.lasegue-viewer.expanded{inset:5px}}

@@ -52,7 +52,7 @@ export const clinicalTests: ClinicalTest[] = [
       },
       {
         title: "Elevar passivamente",
-        angle: 30,
+        angle: 45,
         text: "Apoie o membro e eleve lentamente a perna por flexão do quadril, mantendo o joelho estendido. O examinador produz o movimento; o paciente não levanta a perna sozinho.",
         cue: "Mantenha o joelho estendido e evite compensar com rotação do quadril.",
       },

@@ -21,6 +21,71 @@ import shoulder from '../src/data/shoulder.json';
 import { findOccluders, selectedBounds, smartOpacity, isInStudyContext } from '../src/features/viewer/smartLayers';
 import { clinicalTests } from '../src/data/clinicalTests';
 import { clinicalStages, parseClinicalStage } from '../src/features/study/clinicalGuide';
+import { attachLasegueRig, deformLaseguePoint, lasegueDurations, lasegueJoints, lasegueStepPose, lasegueWeights, smoothMotion, supineMatrix } from '../src/features/viewer/lasegueRig';
+import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
+
+test('Lasègue 3D: sequências suaves, redução antes da dorsiflexão e retorno completo',()=>{
+  assert.equal(smoothMotion(-1),0);assert.equal(smoothMotion(2),1);
+  assert.ok(smoothMotion(.001)<.000001);
+  assert.equal(lasegueStepPose(0,0).hip,0);
+  for(let i=0;i<5;i++){
+    const end=lasegueStepPose(i,lasegueDurations[i]);
+    assert.ok(Number.isFinite(end.hip));assert.ok(end.hip>=0 && end.hip<=80);
+    for(let time=.01;time<lasegueDurations[i];time+=.01){
+      const a=lasegueStepPose(i,time-.01),b=lasegueStepPose(i,time);
+      assert.ok(Math.abs(a.hip-b.hip)<.5,'Movimento contém salto angular');
+      assert.ok(Math.abs(a.ankle-b.ankle)<.5,'Tornozelo contém salto angular');
+    }
+  }
+  assert.equal(lasegueStepPose(1,20).hip,45);
+  assert.equal(lasegueStepPose(3,1.8).hip,35);
+  assert.equal(lasegueStepPose(3,1.8).ankle,0);
+  assert.equal(lasegueStepPose(3,5.8).ankle,12);
+  assert.equal(lasegueStepPose(4,1).ankle,0);
+  assert.equal(lasegueStepPose(4,1).hip,35);
+  assert.deepEqual(lasegueStepPose(4,20),{hip:0,ankle:0,support:0});
+  const up=new THREE.Vector3(0,0,1).transformDirection(supineMatrix);
+  assert.ok(up.distanceTo(new THREE.Vector3(0,1,0))<1e-8,'Superfície anterior precisa estar para cima');
+});
+
+test('Lasègue 3D: ossos mantêm joelho estendido; pelve e membro contralateral ficam fixos',async()=>{
+  const records=Object.values(JSON.parse(await readFile('public/models/bounds.json','utf8'))) as {id:string;min:number[];max:number[]}[];
+  const rightBox=(id:string)=>{const record=records.find(item=>item.id===id && item.max[0]<0)!;assert.ok(record,id);return new THREE.Box3(new THREE.Vector3(...record.min as [number,number,number]),new THREE.Vector3(...record.max as [number,number,number]));};
+  const {hip,ankle}=lasegueJoints(rightBox('femur'),rightBox('talus'));
+  const pose={hip:60,ankle:12,support:1};
+  const knee=rightBox('femur').getCenter(new THREE.Vector3());knee.y=rightBox('femur').min.y;
+  const restDistance=knee.distanceTo(ankle);
+  const movedKnee=deformLaseguePoint(knee,hip,ankle,pose,[1,0]);
+  const movedAnkle=deformLaseguePoint(ankle,hip,ankle,pose,[1,0]);
+  assert.ok(Math.abs(restDistance-movedKnee.distanceTo(movedAnkle))<1e-10);
+  assert.ok(movedAnkle.z>ankle.z,'Elevação deve ocorrer para a face anterior, acima da maca');
+  const side=new THREE.Vector3(-.08,.4,-.03),otherSide=new THREE.Vector3(.08,.4,-.03);
+  assert.deepEqual(lasegueWeights(byId.tibia,side,side,hip,ankle),[1,0]);
+  assert.deepEqual(lasegueWeights(byId.talus,side,side,hip,ankle),[1,1]);
+  assert.deepEqual(lasegueWeights(byId.femur,otherSide,otherSide,hip,ankle),[0,0]);
+  assert.deepEqual(lasegueWeights(byId.sacro,new THREE.Vector3(0,.95,-.04),side,hip,ankle),[0,0]);
+  const origin=new THREE.Vector3(-.05,hip.y+.1,-.05),distal=new THREE.Vector3(-.08,.55,-.03);
+  assert.equal(lasegueWeights(byId['nervo-ciatico'],side,origin,hip,ankle)[0],0);
+  assert.equal(lasegueWeights(byId['nervo-ciatico'],side,distal,hip,ankle)[0],1);
+  assert.ok(deformLaseguePoint(origin,hip,ankle,pose,[0,0]).distanceTo(origin)<1e-10);
+  const geometries:THREE.BufferGeometry[]=[];
+  for(const id of ['tibia','calcaneo']){
+    const bounds=rightBox(id),center=bounds.getCenter(new THREE.Vector3());
+    const geometry=new THREE.BoxGeometry(.02,.02,.02).translate(center.x,center.y,center.z);
+    geometry.computeBoundingBox();
+    const mesh=new THREE.Mesh(geometry,new THREE.MeshStandardMaterial());
+    const shared={value:pose};attachLasegueRig(mesh,byId[id],hip,ankle,shared);
+    const point=new THREE.Vector3().fromBufferAttribute(geometry.getAttribute('position'),0);
+    const weights=geometry.getAttribute('lasegueWeight');
+    const expected=deformLaseguePoint(point,hip,ankle,pose,[weights.getX(0),weights.getY(0)]);
+    assert.ok(mesh.getVertexPosition(0,new THREE.Vector3()).distanceTo(expected)<1e-10,'Seleção e animação devem usar a mesma pose');
+    geometries.push(geometry);mesh.material.dispose();
+  }
+  const merged=mergeGeometries(geometries)!;
+  assert.equal(merged.getAttribute('position').count,geometries.reduce((sum,geometry)=>sum+geometry.getAttribute('position').count,0));
+  assert.equal(merged.getAttribute('lasegueWeight').count,merged.getAttribute('position').count);
+  merged.dispose();geometries.forEach(geometry=>geometry.dispose());
+});
 
 test('Camadas inteligentes acompanham a câmera e preservam seleção e ajustes manuais',()=>{
   const box=(x:number,z:number)=>new THREE.Box3(new THREE.Vector3(x-.2,-.2,z-.2),new THREE.Vector3(x+.2,.2,z+.2));
