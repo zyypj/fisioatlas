@@ -496,6 +496,7 @@ export class LasegueEngine {
             }),
           );
           mesh.userData = {
+            ...object.userData,
             structureId: id,
             bounds: geometry.boundingBox!.clone(),
           };

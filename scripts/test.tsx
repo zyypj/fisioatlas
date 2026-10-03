@@ -94,6 +94,7 @@ import {
   slumpWeights,
   deformSlumpPoint,
   attachSlumpRig,
+  slumpComponentStructure,
 } from "../src/features/viewer/slumpRig";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 
@@ -420,7 +421,9 @@ test("Testes clínicos: categorias, busca sem acento e filtros pela URL", () => 
   assert.ok(searched.includes("Teste de Slump"));
   assert.ok(!searched.includes("Teste de Lasègue"));
   assert.ok(!searched.includes('id="categoria-ombro"'));
-  assert.ok(render("/testes?q=inexistente").includes("Nenhum teste encontrado"));
+  assert.ok(
+    render("/testes?q=inexistente").includes("Nenhum teste encontrado"),
+  );
 });
 
 test("Catálogo: IDs únicos, cobertura, campos musculares e relações resolvidas", () => {
@@ -1453,4 +1456,205 @@ test("Músculos mediais da coxa acompanham a perna sem perder peso perto da linh
     );
     assert.equal(weights.leg[0], 1, id + " sentado contralateral");
   }
+});
+
+test("Slump: psoas e plexo lombar acompanham a coluna sem soltar a pelve", async () => {
+  const j = slumpJoints(await clinicalBounds());
+  const weights = (id: string, x: number, y: number, z = -0.01) => {
+    const point = new THREE.Vector3(x, y, z),
+      bounds = new THREE.Box3(point.clone(), point.clone());
+    return slumpWeights(byId[id], point, point, bounds, j);
+  };
+  const trunk = (id: string, x: number, y: number) =>
+    weights(id, x, y).upper[0];
+  // O topo do psoas, junto a T12, flexiona com o tronco como a vértebra.
+  assert.equal(
+    trunk("psoas-maior", -0.02, 1.15),
+    trunk("diafragma", -0.02, 1.15),
+  );
+  assert.ok(trunk("psoas-maior", -0.02, 1.15) > 0.95);
+  for (const id of [
+    "nervo-ilio-hipogastrico",
+    "nervo-ilioinguinal",
+    "nervo-genitofemoral",
+    "nervo-femoral",
+  ])
+    assert.ok(trunk(id, -0.03, 1.1) > 0.7, id);
+  // Na altura do quadril, o psoas segue a coxa e não o tronco.
+  const low = weights("psoas-maior", -0.06, 0.8);
+  assert.ok(low.leg[0] > 0.9);
+  assert.equal(low.upper[0], 0);
+  // O ilíaco e a pelve, laterais, continuam parados.
+  assert.equal(trunk("iliaco", -0.11, 1.05), 0);
+  assert.equal(trunk("osso-do-quadril", -0.11, 1.05), 0);
+});
+
+test("Slump: ombro sem rasgos entre deltoide, úmero, manguito e axila", async () => {
+  const j = slumpJoints(await clinicalBounds());
+  const arm = (id: string, x: number, y: number, z = -0.03) => {
+    const point = new THREE.Vector3(x, y, z),
+      bounds = new THREE.Box3(point.clone(), point.clone());
+    return slumpWeights(byId[id], point, point, bounds, j).upper[2];
+  };
+  // Ossos rígidos: o úmero balança, a escápula e a clavícula não.
+  assert.equal(arm("umero", -0.2, 1.25), 1);
+  assert.equal(arm("escapula", -0.15, 1.3), 0);
+  assert.equal(arm("clavicula", -0.15, 1.42), 0);
+  // Partes do deltoide: a inserção segue o úmero; a origem no acrômio fica.
+  for (const id of [
+    "deltoide-anterior",
+    "deltoide-medio",
+    "deltoide-posterior",
+  ]) {
+    assert.ok(byId[id], id);
+    assert.equal(arm(id, -0.21, 1.26), 1, id + " na inserção");
+    assert.equal(arm(id, -0.2, 1.44), 0, id + " no acrômio");
+  }
+  // Raiz do braço: cabeça longa do tríceps e nervos saindo do plexo ficam
+  // com o tronco; o braço pendente segue inteiro.
+  assert.equal(arm("triceps-braquial", -0.12, 1.36), 0);
+  assert.equal(arm("nervo-mediano", -0.11, 1.38), 0);
+  assert.equal(arm("triceps-braquial", -0.22, 1.16), 1);
+  assert.equal(arm("nervo-mediano", -0.25, 0.9), 1);
+  // Na axila, tecido do braço e do tronco no mesmo ponto recebem o mesmo peso.
+  for (const [x, y] of [
+    [-0.15, 1.25],
+    [-0.165, 1.28],
+    [0.17, 1.3],
+  ])
+    assert.ok(
+      Math.abs(arm("biceps-braquial", x, y) - arm("latissimo-do-dorso", x, y)) <
+        1e-9,
+      `axila em ${x}, ${y}`,
+    );
+  // O pivô do balanço é o centro da cabeça do úmero: ele não se desloca.
+  const pose = slumpStepPose(2, slumpDurations[2]);
+  for (const right of [1, 0]) {
+    const center = new THREE.Vector3(right ? -0.17 : 0.17, 1.384, -0.026);
+    assert.ok(
+      deformSlumpPoint(
+        center,
+        j,
+        pose,
+        [0, 0, 0, right],
+        [0, 0, 1, right],
+      ).distanceTo(center) < 1e-9,
+    );
+  }
+});
+
+test("Slump: septos reais do braço acompanham o úmero; componentes da coxa e perna permanecem nas suas cadeias", async () => {
+  const j = slumpJoints(await clinicalBounds());
+  const io = new NodeIO()
+    .registerExtensions(ALL_EXTENSIONS)
+    .registerDependencies({ "meshopt.decoder": MeshoptDecoder });
+  const original = byId["septos-intermusculares"];
+  assert.equal(original.region, "Perna");
+  assert.equal(
+    slumpComponentStructure(original, "origem desconhecida"),
+    original,
+  );
+  for (const file of ["z-tendoes.glb", "z-tendoes-light.glb"]) {
+    const doc = await io.read("public/models/" + file);
+    const nodes = doc
+      .getRoot()
+      .listNodes()
+      .filter((n) => n.getMesh() && n.getExtras().structureId === original.id);
+    assert.equal(nodes.length, 14, file);
+    let arms = 0,
+      thighs = 0,
+      legs = 0;
+    for (const node of nodes) {
+      const extras = node.getExtras(),
+        component = slumpComponentStructure(
+          original,
+          String(extras.sourceObject),
+        );
+      const accessor = node
+        .getMesh()!
+        .listPrimitives()[0]
+        .getAttribute("POSITION")!;
+      const g = new THREE.BufferGeometry();
+      const values = new Float32Array(accessor.getCount() * 3),
+        element: number[] = [];
+      for (let i = 0; i < accessor.getCount(); i++)
+        values.set(accessor.getElement(i, element), i * 3);
+      g.setAttribute("position", new THREE.BufferAttribute(values, 3));
+      g.applyMatrix4(new THREE.Matrix4().fromArray(node.getWorldMatrix()));
+      g.computeBoundingBox();
+      const position = g.getAttribute("position"),
+        rest = [0, Math.floor(position.count / 2), position.count - 1].map(
+          (i) => new THREE.Vector3().fromBufferAttribute(position, i),
+        );
+      const mesh = new THREE.Mesh(g, new THREE.MeshStandardMaterial());
+      mesh.userData = { ...extras };
+      const pose = { value: slumpStepPose(0, 0) };
+      attachSlumpRig(mesh, original, j, pose);
+      const weight = g.getAttribute("slumpUpper"),
+        leg = g.getAttribute("slumpLeg");
+      if (component.region === "Braço") {
+        arms++;
+        const right = rest[0].x < 0 ? 1 : 0;
+        for (const step of [0, 1, 2, 3, 4, 5, 6]) {
+          pose.value = slumpStepPose(step, slumpDurations[step]);
+          for (const [sample, i] of [
+            0,
+            Math.floor(position.count / 2),
+            position.count - 1,
+          ].entries()) {
+            // Peso do braço gradual só na raiz do braço; abaixo dela, 1.
+            const armWeight = weight.getZ(i);
+            assert.equal(weight.getX(i), 1);
+            assert.equal(weight.getY(i), 0);
+            assert.ok(armWeight > 0.5 && armWeight <= 1);
+            if (rest[sample].y < 1.12) assert.equal(armWeight, 1);
+            assert.equal(leg.getX(i), 0);
+            const expected = deformSlumpPoint(
+              rest[sample],
+              j,
+              pose.value,
+              [0, 0, 0, right],
+              [1, 0, armWeight, right],
+            );
+            assert.ok(
+              mesh
+                .getVertexPosition(i, new THREE.Vector3())
+                .distanceTo(expected) < 1e-7,
+              `${file}: ${extras.sourceObject} etapa ${step}`,
+            );
+          }
+        }
+        pose.value = slumpStepPose(4, 4);
+        assert.ok(
+          mesh.getVertexPosition(0, new THREE.Vector3()).distanceTo(rest[0]) >
+            0.03,
+          "O septo acompanha o braço e o tronco, não fica no repouso",
+        );
+      } else {
+        if (component.region === "Coxa") thighs++;
+        else {
+          assert.equal(component.region, "Perna");
+          legs++;
+        }
+        for (let i = 0; i < weight.count; i++) {
+          assert.equal(weight.getX(i), 0);
+          assert.equal(weight.getZ(i), 0);
+        }
+        assert.ok(
+          Array.from({ length: leg.count }, (_, i) => leg.getX(i)).some(
+            (w) => w > 0.5,
+          ),
+          "O componente inferior continua acompanhando o quadril",
+        );
+      }
+      g.dispose();
+      mesh.material.dispose();
+    }
+    assert.deepEqual([arms, thighs, legs], [4, 4, 6]);
+  }
+  assert.equal(
+    original.region,
+    "Perna",
+    "A classificação da ficha não foi alterada",
+  );
 });

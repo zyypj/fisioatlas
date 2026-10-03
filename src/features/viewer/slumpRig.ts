@@ -88,6 +88,22 @@ export function slumpJoints(
 
 const legRegions = new Set(["Coxa", "Joelho", "Perna", "Tornozelo", "Pé"]);
 const armRegions = new Set(["Braço", "Cotovelo", "Antebraço", "Punho", "Mão"]);
+/** A catalog entry may group components from different limbs. Resolve the
+ * component's source identity once, before assigning its animation weights. */
+export function slumpComponentStructure(
+  structure: Structure,
+  sourceObject: string,
+): Structure {
+  if (structure.id !== "septos-intermusculares") return structure;
+  const region = /intermuscular septum of arm\.[rl]$/i.test(sourceObject)
+    ? "Braço"
+    : /femoral intermuscular septum\.[rl]$/i.test(sourceObject)
+      ? "Coxa"
+      : /intermuscular septum of leg\.[rl]$/i.test(sourceObject)
+        ? "Perna"
+        : structure.region;
+  return region === structure.region ? structure : { ...structure, region };
+}
 export function slumpWeights(
   structure: Structure,
   center: THREE.Vector3,
@@ -131,23 +147,46 @@ export function slumpWeights(
       ankleWeight = motionWeight(point.y, ankle.y, 0.05);
     }
   }
-  const arm =
-    armRegions.has(structure.region) ||
-    structure.id === "umero" ||
-    structure.id === "deltoide";
+  const arm = armRegions.has(structure.region) || structure.id === "umero";
+  // Ossos giram inteiros. Na raiz do braço, os tecidos moles do braço e do
+  // tronco usam o mesmo campo, para que vizinhos na axila recebam o mesmo
+  // peso: o deltoide, o manguito e as fáscias acompanham o úmero embaixo e por
+  // fora do ombro; as origens na escápula, no acrômio e no plexo braquial
+  // (cabeça longa do tríceps, nervos) ficam com o tronco.
+  const lateral = THREE.MathUtils.smoothstep(Math.abs(point.x), 0.13, 0.19),
+    shoulderBand = THREE.MathUtils.smoothstep(point.y, 1.12, 1.2);
+  const armWeight =
+    structure.kind === "ossos"
+      ? arm
+        ? 1
+        : 0
+      : arm
+        ? 1 - (1 - lateral) * shoulderBand
+        : lateral *
+          shoulderBand *
+          (1 - THREE.MathUtils.smoothstep(point.y, 1.34, 1.42));
+  const spineWeight = THREE.MathUtils.smoothstep(
+    structure.kind === "ossos" ? center.y : point.y,
+    0.96,
+    1.15,
+  );
+  // A pelve não flexiona, e o que está preso a ela fica. O psoas, a fáscia do
+  // iliopsoas e os nervos do plexo lombar, porém, sobem junto aos corpos
+  // vertebrais até T12: acima do quadril e perto da linha média, acompanham as
+  // vértebras; o ilíaco e os glúteos, mais laterais, continuam com a pelve.
   const trunkWeight =
     hipWeight > 0 ||
     leg ||
     structure.region === "Pelve" ||
     structure.region === "Quadril"
-      ? 0
+      ? structure.kind === "ossos"
+        ? 0
+        : spineWeight *
+          (1 - hipWeight) *
+          (1 - THREE.MathUtils.smoothstep(Math.abs(point.x), 0.06, 0.1))
       : arm
         ? 1
-        : THREE.MathUtils.smoothstep(
-            structure.kind === "ossos" ? center.y : point.y,
-            0.96,
-            1.15,
-          );
+        : spineWeight;
   const neckWeight = arm
     ? 0
     : THREE.MathUtils.smoothstep(
@@ -157,7 +196,7 @@ export function slumpWeights(
       );
   return {
     leg: [hipWeight, kneeWeight, ankleWeight, right ? 1 : 0],
-    upper: [trunkWeight, neckWeight, arm ? 1 : 0, right ? 1 : 0],
+    upper: [trunkWeight, neckWeight, armWeight, right ? 1 : 0],
   };
 }
 
@@ -194,10 +233,11 @@ export function deformSlumpPoint(
   rotate(target, knee, right ? (pose.knee ?? 90) : 90, leg[1]);
   rotate(target, hip, -pose.hip, leg[0]);
   if (upper[2] > 0) {
+    // Centro da cabeça do úmero (ajuste de esfera no modelo Z-Anatomy).
     const shoulder = new THREE.Vector3(
-      upper[3] > 0 ? -0.18 : 0.18,
-      1.38,
-      -0.025,
+      upper[3] > 0 ? -0.17 : 0.17,
+      1.384,
+      -0.026,
     );
     rotate(target, shoulder, 15, upper[2]);
     target
@@ -251,7 +291,7 @@ export function bindSlumpShader(
         p=a+slumpX(p-a,slrAnkle*slumpLeg.z*slumpLeg.w);
         p=k+slumpX(p-k,mix(1.57079632679,slrKnee,slumpLeg.w)*slumpLeg.y);
         p=h+slumpX(p-h,slrHip*slumpLeg.x);
-        vec3 shoulder=vec3(mix(.18,-.18,slumpUpper.w),1.38,-.025);
+        vec3 shoulder=vec3(mix(.17,-.17,slumpUpper.w),1.384,-.026);
         p=shoulder+slumpZ(slumpX(p-shoulder,.2617993878*slumpUpper.z),mix(-.2617993878,.2617993878,slumpUpper.w)*slumpUpper.z);
         p=slumpNeck+slumpX(p-slumpNeck,slrNeck*slumpUpper.y);
         return slumpTrunk+slumpX(p-slumpTrunk,slrTrunk*slumpUpper.x);
@@ -267,7 +307,7 @@ export function bindSlumpShader(
         "#include <beginnormal_vertex>\nobjectNormal=slumpNormal(objectNormal);",
       );
   };
-  mesh.material.customProgramCacheKey = () => "fisioatlas-slump-chain-v1";
+  mesh.material.customProgramCacheKey = () => "fisioatlas-slump-chain-v2";
   return uniforms;
 }
 
@@ -277,6 +317,10 @@ export function attachSlumpRig(
   joints: SlumpJoints,
   pose: { value: LaseguePose },
 ) {
+  const component = slumpComponentStructure(
+    structure,
+    mesh.userData.sourceObject ?? "",
+  );
   const bounds = mesh.geometry.boundingBox!.clone(),
     center = bounds.getCenter(new THREE.Vector3()),
     position = mesh.geometry.getAttribute("position");
@@ -285,7 +329,7 @@ export function attachSlumpRig(
     point = new THREE.Vector3();
   for (let i = 0; i < position.count; i++) {
     point.fromBufferAttribute(position, i);
-    const weights = slumpWeights(structure, center, point, bounds, joints);
+    const weights = slumpWeights(component, center, point, bounds, joints);
     leg.set(weights.leg, i * 4);
     upper.set(weights.upper, i * 4);
   }
