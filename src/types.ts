@@ -42,7 +42,12 @@ export type Animation =
   | "jaw"
   | "spine"
   | "spinerot"
-  | "spineinc";
+  | "spineinc"
+  | "girdleelev"
+  | "girdleprot"
+  | "scaprot"
+  | "scaptilt"
+  | "shoulderhoriz";
 export interface Movement {
   id: string;
   name: string;
@@ -57,6 +62,8 @@ export interface Movement {
   animation: Animation;
   maxAngle: number;
   reverse?: boolean;
+  /** -1 gira no sentido oposto ao do rig, como depressão versus elevação. */
+  direction?: 1 | -1;
 }
 export type Layers = Record<Kind, number>;
 export interface StudyState {

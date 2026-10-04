@@ -27,7 +27,7 @@ export interface AnimationRig {
   /** Estruturas que ficam paradas mesmo estando nas regiões listadas. */
   exclude?: string[];
   /** Cadeia usada para decidir quais tecidos moles acompanham o movimento. */
-  chain: "superior" | "inferior" | "axial" | "cervical";
+  chain: "superior" | "inferior" | "axial" | "cervical" | "cintura";
   /** Ligamentos que cruzam a articulação e têm as duas extremidades presas. */
   spanning: string[];
   /** Vista de câmera que melhor mostra o movimento. */
@@ -45,6 +45,26 @@ export interface AnimationRig {
    *  cadeia; "movers" restringe às estruturas que realmente cruzam a
    *  articulação, para movimentos de escopo pequeno como o da mandíbula. */
   softScope?: "chain" | "movers";
+  /** Como calcular o peso de deformação dos tecidos moles. "height" (padrão)
+   *  faz o peso crescer abaixo do pivô, como num membro pendurado. "bones"
+   *  usa a proximidade aos ossos que se movem versus os que ficam, para a
+   *  cintura escapular, em que a escápula desliza sobre o tórax. */
+  weighting?: "height" | "bones";
+  /** Usa só a malha do lado animado para localizar o pivô, mesmo que ela
+   *  esteja a menos de 2 cm do plano mediano, como a esternoclavicular. */
+  strictAnchor?: boolean;
+  /** Pose fixa aplicada antes do giro animado, em graus. A abdução e a adução
+   *  horizontais partem do braço elevado à frente. */
+  base?: { axis: [number, number, number]; angle: number };
+  /** O braço acompanha a cintura escapular só em translação, continuando
+   *  pendurado: depois do giro da escápula, uma contrarrotação no centro da
+   *  cabeça do úmero desfaz a inclinação do membro. Sem isso, encolher os
+   *  ombros abriria o braço como numa abdução. */
+  carryArm?: boolean;
+  /** Tecidos moles fora das regiões da cadeia que também deformam, com o
+   *  peso por proximidade óssea: os músculos que ligam a cintura escapular
+   *  ao tronco e ao pescoço. */
+  tissues?: string[];
 }
 
 /** Estruturas a menos desta distância do plano mediano são consideradas da
@@ -88,13 +108,73 @@ const CADEIA_AXIAL = [
   "Mão",
 ];
 const CADEIA_CERVICAL = ["Cabeça e pescoço"];
+// Na cintura escapular, a cadeia é a do membro superior; os músculos do
+// tronco e do pescoço que se prendem à clavícula e à escápula entram pela
+// lista `tissues` do rig. O resto do tronco (costelas, intercostais, eretores)
+// fica parado, mesmo passando a 1 cm da escápula.
+const CADEIA_CINTURA = CADEIA_SUPERIOR;
+const TECIDOS_DA_CINTURA = [
+  "trapezio-superior",
+  "trapezio-medio",
+  "trapezio-inferior",
+  "romboide-maior",
+  "romboide-menor",
+  "levantador-da-escapula",
+  "serratil-anterior",
+  "peitoral-menor",
+  "peitoral-clavicular",
+  "peitoral-esternocostal",
+  "subclavio",
+  "latissimo-do-dorso",
+  "esternocleidomastoideo",
+  "omo-hioideo",
+  // Nervos que correm sobre o latíssimo e o serrátil.
+  "nervo-toracodorsal",
+  "nervo-toracico-longo",
+];
 
 export const chainRegions: Record<AnimationRig["chain"], string[]> = {
   superior: CADEIA_SUPERIOR,
   inferior: CADEIA_INFERIOR,
   axial: CADEIA_AXIAL,
   cervical: CADEIA_CERVICAL,
+  cintura: CADEIA_CINTURA,
 };
+
+const MEMBRO_SUPERIOR = ["Braço", "Cotovelo", "Antebraço", "Punho", "Mão"];
+
+/** O osso pertence ao braço livre (úmero e segmentos distais)? */
+export function armBone(id: string, region: string) {
+  return id === "umero" || MEMBRO_SUPERIOR.includes(region);
+}
+
+/** Centro aproximado da cabeça do úmero a partir dos limites do úmero do lado
+ *  animado (ajuste de esfera no modelo: ~2,5 cm medial ao limite e ~2 cm
+ *  abaixo do topo). */
+export function humeralHead(bounds: THREE.Box3) {
+  return new THREE.Vector3(
+    bounds.max.x - 0.025,
+    bounds.max.y - 0.021,
+    (bounds.min.z + bounds.max.z) / 2,
+  );
+}
+const LIGAMENTOS_GLENOUMERAIS = [
+  "ligamento-coracoumeral",
+  "ligamento-glenoumeral-superior",
+  "ligamento-glenoumeral-medio",
+  "ligamento-glenoumeral-inferior",
+];
+const LIGAMENTOS_ESTERNOCLAVICULARES = [
+  "ligamento-esternoclavicular-anterior",
+  "ligamento-esternoclavicular-posterior",
+  "ligamento-interclavicular",
+  "ligamento-costoclavicular",
+];
+const LIGAMENTOS_ACROMIOCLAVICULARES = [
+  "ligamento-acromioclavicular",
+  "ligamento-conoide",
+  "ligamento-trapezoide",
+];
 
 export const rigs: Record<Animation, AnimationRig> = {
   elbow: {
@@ -403,6 +483,86 @@ export const rigs: Record<Animation, AnimationRig> = {
     spanning: ["ligamentos-interespinais", "ligamentos-intertransversarios"],
     view: "anterior",
   },
+  // ---- complexo do ombro ----
+  // Elevação/depressão da clavícula na esternoclavicular. A escápula e o braço
+  // vão junto, como no encolher dos ombros.
+  girdleelev: {
+    bone: "esternoclavicular",
+    pivot: "centro",
+    strictAnchor: true,
+    axis: [0, 0, -1],
+    sign: 1,
+    regions: ["Ombro", ...MEMBRO_SUPERIOR],
+    chain: "cintura",
+    weighting: "bones",
+    carryArm: true,
+    tissues: TECIDOS_DA_CINTURA,
+    spanning: LIGAMENTOS_ESTERNOCLAVICULARES,
+    view: "anterior",
+  },
+  // Protração/retração da clavícula na esternoclavicular, em torno do eixo
+  // vertical: o ombro vai para a frente ou para trás.
+  girdleprot: {
+    bone: "esternoclavicular",
+    pivot: "centro",
+    strictAnchor: true,
+    axis: [0, 1, 0],
+    sign: 1,
+    regions: ["Ombro", ...MEMBRO_SUPERIOR],
+    chain: "cintura",
+    weighting: "bones",
+    carryArm: true,
+    tissues: TECIDOS_DA_CINTURA,
+    spanning: LIGAMENTOS_ESTERNOCLAVICULARES,
+    view: "lateral-direita",
+  },
+  // Rotação superior/inferior da escápula na acromioclavicular. O eixo é
+  // perpendicular ao plano da escápula, inclinado ~30° em relação ao frontal;
+  // a clavícula fica parada e o ângulo inferior desliza para fora e para cima.
+  scaprot: {
+    bone: "acromioclavicular",
+    pivot: "centro",
+    axis: [-0.5, 0, -0.866],
+    sign: 1,
+    regions: MEMBRO_SUPERIOR,
+    include: ["escapula"],
+    chain: "cintura",
+    weighting: "bones",
+    carryArm: true,
+    tissues: TECIDOS_DA_CINTURA,
+    spanning: LIGAMENTOS_ACROMIOCLAVICULARES,
+    view: "anterior",
+  },
+  // Inclinação anterior/posterior da escápula na acromioclavicular, em torno
+  // do eixo médio-lateral do plano da escápula.
+  scaptilt: {
+    bone: "acromioclavicular",
+    pivot: "centro",
+    axis: [0.866, 0, -0.5],
+    sign: 1,
+    regions: MEMBRO_SUPERIOR,
+    include: ["escapula"],
+    chain: "cintura",
+    weighting: "bones",
+    carryArm: true,
+    tissues: TECIDOS_DA_CINTURA,
+    spanning: LIGAMENTOS_ACROMIOCLAVICULARES,
+    view: "lateral-direita",
+  },
+  // Abdução/adução horizontal: o braço parte elevado a 90° à frente e gira
+  // no plano transverso em torno do eixo vertical.
+  shoulderhoriz: {
+    bone: "umero",
+    pivot: "superior",
+    axis: [0, 1, 0],
+    sign: 1,
+    base: { axis: [1, 0, 0], angle: -90 },
+    regions: MEMBRO_SUPERIOR,
+    chain: "superior",
+    spanning: LIGAMENTOS_GLENOUMERAIS,
+    view: "anterior",
+    lateralPivot: true,
+  },
   spineinc: {
     bilateral: true,
     segment: "proximal",
@@ -438,7 +598,12 @@ export function rigBounds(
   let found = false;
   for (const m of meshes) {
     if (m.userData.structureId !== rig.bone) continue;
-    if (!onAnimatedSide(rig, m.userData.center.x)) continue;
+    if (
+      rig.strictAnchor
+        ? m.userData.center.x >= 0
+        : !onAnimatedSide(rig, m.userData.center.x)
+    )
+      continue;
     box.union(m.userData.bounds);
     found = true;
   }
@@ -457,6 +622,76 @@ export function rigPivot(rig: AnimationRig, bounds: THREE.Box3) {
   const pivot = new THREE.Vector3(center.x, y, center.z);
   if (rig.lateralPivot) pivot.x = bounds.max.x - 0.02;
   return pivot;
+}
+
+/** Pose de um movimento numa fração `amount` (0 a 1) da amplitude.
+ *
+ *  `quaternion` é o giro dos ossos do segmento em torno de `pivot`, já com a
+ *  pose base. Em rigs com `carryArm`, `carry` é a contrarrotação aplicada em
+ *  seguida aos ossos do braço livre, em torno da cabeça do úmero já
+ *  deslocada, que mantém o braço pendurado. O motor e os testes usam esta
+ *  mesma função. */
+export function movementPose(
+  rig: AnimationRig,
+  move: { maxAngle: number; direction?: 1 | -1 },
+  amount: number,
+  pivot: THREE.Vector3,
+  humerus: THREE.Box3 | null,
+) {
+  const axis = new THREE.Vector3(...rig.axis).normalize();
+  const signedAngle =
+    THREE.MathUtils.degToRad(move.maxAngle) *
+    amount *
+    rig.sign *
+    (move.direction ?? 1);
+  const quaternion = new THREE.Quaternion().setFromAxisAngle(axis, signedAngle);
+  const base = rig.base
+    ? {
+        axis: new THREE.Vector3(...rig.base.axis).normalize(),
+        angle: THREE.MathUtils.degToRad(rig.base.angle),
+      }
+    : undefined;
+  if (base)
+    quaternion.multiply(
+      new THREE.Quaternion().setFromAxisAngle(base.axis, base.angle),
+    );
+  const carry =
+    rig.carryArm && humerus
+      ? {
+          pivot: humeralHead(humerus)
+            .sub(pivot)
+            .applyQuaternion(quaternion)
+            .add(pivot),
+          axis,
+          angle: -signedAngle,
+          quaternion: new THREE.Quaternion().setFromAxisAngle(
+            axis,
+            -signedAngle,
+          ),
+        }
+      : null;
+  return { axis, signedAngle, quaternion, base, carry };
+}
+
+/** Posição de um ponto de osso na pose: segmento girado em torno do pivô e,
+ *  no braço livre, a contrarrotação em torno da cabeça do úmero. */
+export function posedBonePoint(
+  pose: ReturnType<typeof movementPose>,
+  pivot: THREE.Vector3,
+  point: THREE.Vector3,
+  arm: boolean,
+) {
+  const out = point
+    .clone()
+    .sub(pivot)
+    .applyQuaternion(pose.quaternion)
+    .add(pivot);
+  if (pose.carry && arm)
+    out
+      .sub(pose.carry.pivot)
+      .applyQuaternion(pose.carry.quaternion)
+      .add(pose.carry.pivot);
+  return out;
 }
 
 /** Altura a usar no cálculo do peso de deformação.

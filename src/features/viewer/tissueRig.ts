@@ -75,14 +75,30 @@ export function deformedPathLength(
   pivot: THREE.Vector3,
   axis: THREE.Vector3,
   angle: number,
+  base?: { axis: THREE.Vector3; angle: number },
+  second?: {
+    pivot: THREE.Vector3;
+    axis: THREE.Vector3;
+    angle: number;
+    weights: number[];
+  },
 ) {
   const q = new THREE.Quaternion(),
+    pose = new THREE.Quaternion(),
     p = new THREE.Vector3(),
     previous = new THREE.Vector3();
   let length = 0;
   points.forEach((point, i) => {
     q.setFromAxisAngle(axis, angle * weights[i]);
+    if (base)
+      q.multiply(pose.setFromAxisAngle(base.axis, base.angle * weights[i]));
     p.copy(point).sub(pivot).applyQuaternion(q).add(pivot);
+    if (second)
+      p.sub(second.pivot)
+        .applyQuaternion(
+          pose.setFromAxisAngle(second.axis, second.angle * second.weights[i]),
+        )
+        .add(second.pivot);
     if (i) length += previous.distanceTo(p);
     previous.copy(p);
   });

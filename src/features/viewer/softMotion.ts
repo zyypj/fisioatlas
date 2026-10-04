@@ -19,6 +19,14 @@ export function attachSoftMotion(
     tissueAngle: { value: 0 },
     tissuePivot: { value: new THREE.Vector3() },
     tissueAxis: { value: new THREE.Vector3(1, 0, 0) },
+    // Pose fixa aplicada antes do giro animado (ex.: braço elevado à frente).
+    tissueBaseAngle: { value: 0 },
+    tissueBaseAxis: { value: new THREE.Vector3(1, 0, 0) },
+    // Segunda rotação, com pivô e peso próprios (tissueWeight2), aplicada
+    // depois da primeira: mantém o braço pendurado na cintura escapular.
+    tissueAngle2: { value: 0 },
+    tissuePivot2: { value: new THREE.Vector3() },
+    tissueAxis2: { value: new THREE.Vector3(1, 0, 0) },
     shapeEnabled: { value: 0 },
     shapeOrigin: { value: new THREE.Vector3() },
     shapeDirection: { value: new THREE.Vector3(0, -1, 0) },
@@ -27,21 +35,28 @@ export function attachSoftMotion(
     radialScale: { value: 1 },
     neuralExcursion: { value: 0 },
   };
-  mesh.geometry.setAttribute(
-    "tissueWeight",
-    new THREE.BufferAttribute(
-      new Float32Array(mesh.geometry.getAttribute("position").count),
-      1,
-    ),
-  );
+  for (const name of ["tissueWeight", "tissueWeight2"])
+    mesh.geometry.setAttribute(
+      name,
+      new THREE.BufferAttribute(
+        new Float32Array(mesh.geometry.getAttribute("position").count),
+        1,
+      ),
+    );
   mesh.material.onBeforeCompile = (shader) => {
     Object.assign(shader.uniforms, uniforms);
     shader.vertexShader =
       `
       attribute float tissueWeight;
+      attribute float tissueWeight2;
+      uniform float tissueAngle2;
+      uniform vec3 tissuePivot2;
+      uniform vec3 tissueAxis2;
       uniform float tissueAngle;
       uniform vec3 tissuePivot;
       uniform vec3 tissueAxis;
+      uniform float tissueBaseAngle;
+      uniform vec3 tissueBaseAxis;
       uniform float shapeEnabled;
       uniform vec3 shapeOrigin;
       uniform vec3 shapeDirection;
@@ -60,26 +75,33 @@ export function attachSoftMotion(
         return v + shapeEnabled*(shapeDirection*((u-t)*shapeSpan+neuralExcursion*envelope)
           + radial*(radialScale-1.0)*envelope*envelope);
       }
+      vec3 rodrigues(vec3 v, vec3 k, float a) {
+        return v * cos(a) + cross(k, v) * sin(a) + k * dot(k, v) * (1.0 - cos(a));
+      }
       vec3 tissueRotate(vec3 v) {
-        if (tissueAngle == 0.0) return v;
-        float a = tissueAngle * tissueWeight;
-        return v * cos(a) + cross(tissueAxis, v) * sin(a)
-          + tissueAxis * dot(tissueAxis, v) * (1.0 - cos(a));
+        if (tissueAngle == 0.0 && tissueBaseAngle == 0.0) return v;
+        v = rodrigues(v, tissueBaseAxis, tissueBaseAngle * tissueWeight);
+        return rodrigues(v, tissueAxis, tissueAngle * tissueWeight);
+      }
+      vec3 tissueRotate2(vec3 v) {
+        if (tissueAngle2 == 0.0) return v;
+        return rodrigues(v, tissueAxis2, tissueAngle2 * tissueWeight2);
       }
     ` + shader.vertexShader;
     shader.vertexShader = shader.vertexShader
       .replace(
         "#include <begin_vertex>",
-        "#include <begin_vertex>\ntransformed = tissuePivot + tissueRotate(mechanicalShape(transformed) - tissuePivot);",
+        "#include <begin_vertex>\ntransformed = tissuePivot + tissueRotate(mechanicalShape(transformed) - tissuePivot);\ntransformed = tissuePivot2 + tissueRotate2(transformed - tissuePivot2);",
       )
       .replace(
         "#include <beginnormal_vertex>",
-        "#include <beginnormal_vertex>\nobjectNormal = tissueRotate(objectNormal);",
+        "#include <beginnormal_vertex>\nobjectNormal = tissueRotate2(tissueRotate(objectNormal));",
       );
   };
-  mesh.material.customProgramCacheKey = () => "fisioatlas-mechanics-v3";
+  mesh.material.customProgramCacheKey = () => "fisioatlas-mechanics-v5";
   // Raycasting uses the same deformed positions as the shader, including when paused.
   const q = new THREE.Quaternion(),
+    base = new THREE.Quaternion(),
     radial = new THREE.Vector3();
   mesh.getVertexPosition = (index, target) => {
     target.fromBufferAttribute(mesh.geometry.getAttribute("position"), index);
@@ -112,19 +134,46 @@ export function attachSoftMotion(
           (uniforms.radialScale.value - 1) * envelope * envelope,
         );
     }
-    if (uniforms.tissueAngle.value === 0) return target;
+    if (uniforms.tissueAngle2.value !== 0) {
+      const w2 = mesh.geometry.getAttribute("tissueWeight2").getX(index);
+      rotateFirst(target, index);
+      q.setFromAxisAngle(
+        uniforms.tissueAxis2.value,
+        uniforms.tissueAngle2.value * w2,
+      );
+      return target
+        .sub(uniforms.tissuePivot2.value)
+        .applyQuaternion(q)
+        .add(uniforms.tissuePivot2.value);
+    }
+    return rotateFirst(target, index);
+  };
+  function rotateFirst(target: THREE.Vector3, index: number) {
+    if (
+      uniforms.tissueAngle.value === 0 &&
+      uniforms.tissueBaseAngle.value === 0
+    )
+      return target;
     const w = mesh.geometry.getAttribute("tissueWeight").getX(index);
+    base.setFromAxisAngle(
+      uniforms.tissueBaseAxis.value,
+      uniforms.tissueBaseAngle.value * w,
+    );
     q.setFromAxisAngle(
       uniforms.tissueAxis.value,
       uniforms.tissueAngle.value * w,
-    );
+    ).multiply(base);
     return target
       .sub(uniforms.tissuePivot.value)
       .applyQuaternion(q)
       .add(uniforms.tissuePivot.value);
-  };
+  }
   function updateBounds() {
-    if (uniforms.tissueAngle.value === 0 && uniforms.shapeEnabled.value === 0) {
+    const rotating =
+      uniforms.tissueAngle.value !== 0 ||
+      uniforms.tissueBaseAngle.value !== 0 ||
+      uniforms.tissueAngle2.value !== 0;
+    if (!rotating && uniforms.shapeEnabled.value === 0) {
       mesh.geometry.boundingBox = restBox;
       mesh.geometry.boundingSphere = restSphere;
       return;
@@ -141,7 +190,7 @@ export function attachSoftMotion(
           Math.abs(uniforms.radialScale.value - 1) *
             (restSphere.center.distanceTo(uniforms.shapeOrigin.value) +
               restSphere.radius);
-    if (uniforms.tissueAngle.value === 0) {
+    if (!rotating) {
       movingSphere.center.copy(restSphere.center);
       movingSphere.radius = restSphere.radius + extra;
     } else {
@@ -150,6 +199,13 @@ export function attachSoftMotion(
         restSphere.center.distanceTo(uniforms.tissuePivot.value) +
         restSphere.radius +
         extra;
+      // A segunda rotação preserva a distância ao seu pivô.
+      if (uniforms.tissueAngle2.value !== 0) {
+        movingSphere.radius += uniforms.tissuePivot.value.distanceTo(
+          uniforms.tissuePivot2.value,
+        );
+        movingSphere.center.copy(uniforms.tissuePivot2.value);
+      }
     }
     mesh.geometry.boundingBox = null;
     mesh.geometry.boundingSphere = movingSphere;

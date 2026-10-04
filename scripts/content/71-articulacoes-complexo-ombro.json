@@ -1,0 +1,87 @@
+{
+  "patches": [
+    {
+      "id": "esternoclavicular",
+      "summary": "Único ponto de articulação entre o membro superior e o esqueleto axial; move a clavícula e, com ela, a escápula.",
+      "fields": {
+        "Movimentos": "Elevação e depressão da clavícula (eixo ântero-posterior), protração e retração (eixo vertical) e rotação posterior da clavícula em torno do próprio eixo longo, que acompanha a elevação do braço.",
+        "Funções": "É a única conexão articular do membro superior com o esqueleto axial. O disco aumenta a congruência entre superfícies pouco compatíveis, absorve as forças transmitidas pela clavícula e contribui para a estabilidade.",
+        "Músculos relacionados": "Trapézio superior e levantador da escápula na elevação; subclávio e peitoral menor na depressão; serrátil anterior e peitoral menor na protração; romboides e trapézio médio na retração.",
+        "No laboratório de movimentos": "Elevação, depressão, protração e retração da clavícula estão animadas em 3D, com a escápula e o braço acompanhando a clavícula."
+      },
+      "related": [
+        "trapezio-superior",
+        "levantador-da-escapula",
+        "serratil-anterior",
+        "peitoral-menor",
+        "interface-escapulotoracica"
+      ],
+      "sources": ["shoulder-complex-kinematics"]
+    },
+    {
+      "id": "acromioclavicular",
+      "summary": "Une o acrômio à clavícula; seus pequenos ajustes mantêm a escápula junto ao tórax e permitem a rotação superior durante a elevação do braço.",
+      "fields": {
+        "Classificação": "Sinovial plana; pode ter um disco articular incompleto.",
+        "Movimentos": "Rotação superior e inferior da escápula em relação à clavícula, rotações interna e externa e inclinações anterior e posterior. São ajustes pequenos que mantêm a escápula acompanhando a parede torácica enquanto a clavícula se move.",
+        "Estabilizadores": "Ligamentos acromioclaviculares, ligamentos coracoclaviculares (conoide e trapezoide), cápsula, disco e as fibras do deltoide e do trapézio que se fixam ao redor.",
+        "Ligamentos e funções": "Acromioclaviculares (reforços superior e inferior da cápsula): estabilidade horizontal, no sentido ântero-posterior. Coracoclaviculares, conoide medial e trapezoide lateral: principal estabilidade vertical; suspendem a escápula na clavícula (função suspensória estática). Coracoacromial: não cruza a articulação, mas completa o arco sobre a cabeça do úmero.",
+        "Na prática": "Participa da elevação completa do braço. Nas lesões por queda sobre o ombro, a gravidade depende de quais ligamentos, acromioclaviculares ou também coracoclaviculares, foram comprometidos.",
+        "No laboratório de movimentos": "Rotação superior e inferior e inclinação anterior e posterior da escápula estão animadas em 3D, com a clavícula parada e o eixo passando pela acromioclavicular."
+      },
+      "related": [
+        "ligamento-acromioclavicular",
+        "ligamento-conoide",
+        "ligamento-trapezoide",
+        "ligamento-coracoacromial",
+        "disco-acromioclavicular",
+        "esternoclavicular",
+        "interface-escapulotoracica",
+        "glenoumeral",
+        "deltoide-medio",
+        "trapezio-superior"
+      ],
+      "sources": ["ac-joint-anatomy", "shoulder-complex-kinematics"]
+    },
+    {
+      "id": "interface-escapulotoracica",
+      "summary": "Articulação funcional entre escápula e tórax: não tem cápsula, mas é onde a escápula desliza para orientar a glenoide.",
+      "fields": {
+        "Movimentos": "Elevação e depressão; protração (abdução) e retração (adução); rotação superior e inferior; inclinações anterior e posterior e rotações interna e externa. Resultam dos movimentos combinados das articulações esternoclavicular e acromioclavicular.",
+        "Função": "Amplia a amplitude de flexão e abdução do braço; orienta a cavidade glenoidal para manter contato ótimo com a cabeça do úmero; mantém os músculos do ombro num comprimento favorável para gerar força; e oferece base estável para o membro superior.",
+        "Músculos e ações": "Elevação: trapézio superior, levantador da escápula e romboides. Depressão: trapézio inferior, peitoral menor e latíssimo do dorso. Protração: serrátil anterior e peitoral menor. Retração: romboides e trapézio médio. Rotação superior: trapézio superior e inferior com o serrátil anterior. Rotação inferior: romboides, levantador da escápula, peitoral menor e latíssimo do dorso.",
+        "Ritmo escapuloumeral": "Na elevação do braço, a glenoumeral e a escapulotorácica trabalham juntas. Classicamente descreve-se uma proporção global de 2:1, cerca de 2° na glenoumeral para 1° de rotação superior da escápula; nos primeiros ~30° predomina a glenoumeral. A proporção varia entre pessoas, tarefas e fases do movimento.",
+        "No laboratório de movimentos": "Os seis movimentos da escápula estão animados em 3D: elevação, depressão, protração, retração, rotação superior e rotação inferior."
+      },
+      "related": [
+        "levantador-da-escapula",
+        "peitoral-menor",
+        "latissimo-do-dorso",
+        "clavicula",
+        "esternoclavicular",
+        "acromioclavicular",
+        "glenoumeral"
+      ],
+      "sources": ["scapular-kinematics", "shoulder-complex-kinematics"]
+    },
+    {
+      "id": "glenoumeral",
+      "fields": {
+        "Movimentos": "Flexão e extensão, abdução e adução, rotação lateral e medial, e abdução e adução horizontal; a circundução combina esses movimentos.",
+        "Abdução e adução horizontal": "Movimentos no plano transverso com o braço elevado à frente. A adução horizontal leva o braço através do tórax (peitoral maior e deltoide anterior). A abdução horizontal leva-o para fora e para trás (deltoide posterior, infraespinal e redondo menor; latíssimo do dorso, redondo maior e cabeça longa do tríceps auxiliam).",
+        "Ligamentos e funções": "Glenoumeral superior: com o coracoumeral, sustenta o úmero contra a gravidade com o braço ao lado do corpo. Médio: limita a rotação lateral e a translação anterior nas amplitudes intermediárias de abdução. Inferior: principal restrição anteroinferior com o braço abduzido e em rotação lateral. Coracoacromial: forma o arco que impede a migração superior da cabeça do úmero.",
+        "Ritmo escapuloumeral": "Na elevação do braço, a glenoumeral e a escapulotorácica trabalham juntas, com participação da acromioclavicular e da esternoclavicular. Classicamente descreve-se uma proporção global de 2:1, cerca de 2° na glenoumeral para 1° de rotação superior da escápula; nos primeiros ~30° predomina a glenoumeral. A proporção varia entre pessoas, tarefas e fases do movimento."
+      },
+      "related": [
+        "deltoide-anterior",
+        "deltoide-medio",
+        "deltoide-posterior",
+        "ligamento-coracoumeral",
+        "ligamento-coracoacromial",
+        "acromioclavicular",
+        "esternoclavicular"
+      ],
+      "sources": ["scapular-kinematics"]
+    }
+  ]
+}

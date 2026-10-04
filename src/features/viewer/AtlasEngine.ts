@@ -6,6 +6,8 @@ import { byId, colors } from "../../data";
 import { attachSoftMotion, motionWeight } from "./softMotion";
 import {
   rigs,
+  armBone,
+  movementPose,
   rigPivot,
   rigMoves,
   rigBounds,
@@ -22,6 +24,8 @@ import {
   modelManifestUrl,
 } from "./renderPerformance";
 import { AtlasBatches } from "./atlasBatches";
+import { rigBoneField } from "./boneField";
+import { componentStructure } from "./componentStructure";
 import type { RenderQuality } from "./renderPerformance";
 import {
   findOccluders,
@@ -109,6 +113,8 @@ export class AtlasEngine {
   private lastHover = 0;
   private interacting = false;
   private motionApplied = false;
+  /** Campo de peso por proximidade óssea, um por rig da cintura escapular. */
+  private boneFields = new Map<string, ReturnType<typeof rigBoneField>>();
   private layerMeshes: LayerMesh[] = [];
   private smartOccluders = new Set<string>();
   private smartContext = new Set<string>();
@@ -722,6 +728,8 @@ export class AtlasEngine {
       m.userData.mechanicalReading = null;
       if (m.userData.softMotion) {
         m.userData.softMotion.tissueAngle.value = 0;
+        m.userData.softMotion.tissueBaseAngle.value = 0;
+        m.userData.softMotion.tissueAngle2.value = 0;
         m.userData.softMotion.shapeEnabled.value = 0;
       }
     }
@@ -732,15 +740,34 @@ export class AtlasEngine {
     const pivot = rigPivot(jointRig, b);
     const phase = (1 - Math.cos(this.elapsed)) / 2;
     const amount = move.reverse ? 1 - phase : phase;
-    const angle = THREE.MathUtils.degToRad(move.maxAngle) * amount;
-    const axis = new THREE.Vector3(...jointRig.axis);
-    const signedAngle = angle * jointRig.sign;
-    const quaternion = new THREE.Quaternion().setFromAxisAngle(
+    // Braço pendurado na cintura escapular: depois do giro da escápula, uma
+    // contrarrotação em torno da cabeça do úmero já deslocada desfaz a
+    // inclinação do membro, que então só se translada.
+    const humerus = jointRig.carryArm
+      ? rigBounds(
+          { ...jointRig, bone: "umero", strictAnchor: false },
+          this.meshes,
+        )
+      : null;
+    const {
       axis,
       signedAngle,
-    );
+      quaternion,
+      base,
+      carry: carryPose,
+    } = movementPose(jointRig, move, amount, pivot, humerus);
+    const field =
+      jointRig.weighting === "bones" ? this.boneFieldFor(move.animation) : null;
+    const carry = carryPose
+      ? { ...carryPose, field: this.boneFieldFor(move.animation, "arm") }
+      : null;
     for (const m of this.meshes) {
-      const s = byId[m.userData.structureId];
+      // Componentes de fichas agrupadas (septos do braço e da perna) seguem
+      // a região do próprio componente.
+      const s = componentStructure(
+        byId[m.userData.structureId],
+        m.userData.sourceObject ?? "",
+      );
       if (s.kind !== "ossos") {
         const soft = m.userData.softMotion;
         // Com escopo "movers", só deformam os tecidos que realmente cruzam a
@@ -750,7 +777,8 @@ export class AtlasEngine {
           jointRig.softScope === "movers"
             ? jointRig.include?.includes(s.id) ||
               jointRig.spanning.includes(s.id)
-            : chainRegions[jointRig.chain].includes(s.region);
+            : chainRegions[jointRig.chain].includes(s.region) ||
+              !!jointRig.tissues?.includes(s.id);
         const eligible =
           onAnimatedSide(jointRig, m.userData.center.x) &&
           (inScope ||
@@ -770,7 +798,10 @@ export class AtlasEngine {
                 "ligamento-tibiofibular-anterior",
                 "ligamento-tibiofibular-posterior",
               ].includes(s.id);
-            const weightAt = (x: number, y: number) => {
+            const weightAt = (x: number, y: number, z: number) => {
+              // Cintura escapular: proximidade aos ossos que se movem versus
+              // os que ficam, inclusive nos ligamentos que cruzam a articulação.
+              if (field) return field.weightAt(x, y, z);
               if (fixedSyndesmosis) return 0;
               // Geometric superior/inferior ends approximate attachments to the
               // proximal/distal bone; short ligaments must not move both ends
@@ -794,15 +825,40 @@ export class AtlasEngine {
               return w;
             };
             for (let i = 0; i < positions.count; i++)
-              weights.setX(i, weightAt(positions.getX(i), positions.getY(i)));
+              weights.setX(
+                i,
+                weightAt(
+                  positions.getX(i),
+                  positions.getY(i),
+                  positions.getZ(i),
+                ),
+              );
             weights.needsUpdate = true;
+            const weights2 = m.geometry.getAttribute("tissueWeight2");
+            for (let i = 0; i < positions.count; i++)
+              weights2.setX(
+                i,
+                carry
+                  ? carry.field.weightAt(
+                      positions.getX(i),
+                      positions.getY(i),
+                      positions.getZ(i),
+                    )
+                  : 0,
+              );
+            weights2.needsUpdate = true;
             m.userData.rigMovement = rigKey;
             const rig = centerlineRig(positions);
             m.userData.mechanicsRig = {
               ...rig,
               activation: 0,
               previousLength: undefined,
-              weights: rig.points.map((point) => weightAt(point.x, point.y)),
+              weights: rig.points.map((point) =>
+                weightAt(point.x, point.y, point.z),
+              ),
+              weights2: rig.points.map((point) =>
+                carry ? carry.field.weightAt(point.x, point.y, point.z) : 0,
+              ),
             };
             soft.shapeOrigin.value.copy(rig.origin);
             soft.shapeDirection.value.copy(rig.direction);
@@ -811,6 +867,13 @@ export class AtlasEngine {
           soft.tissuePivot.value.copy(pivot);
           soft.tissueAxis.value.copy(axis);
           soft.tissueAngle.value = signedAngle;
+          soft.tissueBaseAngle.value = base?.angle ?? 0;
+          if (base) soft.tissueBaseAxis.value.copy(base.axis);
+          soft.tissueAngle2.value = carry?.angle ?? 0;
+          if (carry) {
+            soft.tissuePivot2.value.copy(carry.pivot);
+            soft.tissueAxis2.value.copy(carry.axis);
+          }
           if (this.state.mechanics.enabled && s.kind !== "articulacoes") {
             const rig = m.userData.mechanicsRig;
             const spansJoint =
@@ -825,6 +888,15 @@ export class AtlasEngine {
                 pivot,
                 axis,
                 soft.tissueAngle.value,
+                base,
+                carry
+                  ? {
+                      pivot: carry.pivot,
+                      axis: carry.axis,
+                      angle: carry.angle,
+                      weights: rig.weights2,
+                    }
+                  : undefined,
               );
               const rate =
                 rig.previousLength === undefined || dt <= 0
@@ -916,7 +988,32 @@ export class AtlasEngine {
         continue;
       m.quaternion.copy(quaternion);
       m.position.copy(pivot).sub(pivot.clone().applyQuaternion(quaternion));
+      if (carry && armBone(s.id, s.region)) {
+        // Segunda rotação em torno da cabeça do úmero deslocada:
+        // x -> c + q2·(q1·x + t1 - c) = (q2·q1)·x + q2·(t1 - c) + c.
+        m.position
+          .sub(carry.pivot)
+          .applyQuaternion(carry.quaternion)
+          .add(carry.pivot);
+        m.quaternion.premultiply(carry.quaternion);
+      }
     }
+  }
+  private boneFieldFor(animation: string, part: "segment" | "arm" = "segment") {
+    const key = animation + ":" + part;
+    let field = this.boneFields.get(key);
+    if (!field) {
+      field = rigBoneField(
+        rigs[animation as keyof typeof rigs],
+        this.meshes.map((m) => ({
+          userData: m.userData,
+          positions: m.geometry.getAttribute("position").array,
+        })),
+        part,
+      );
+      this.boneFields.set(key, field);
+    }
+    return field;
   }
   private animate = (time: number) => {
     if (this.disposed) return;

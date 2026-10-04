@@ -3,6 +3,7 @@ import type { Structure } from "../../types";
 import { lasegueJoints, lasegueWeights, smoothMotion } from "./lasegueRig";
 import type { LaseguePose } from "./lasegueRig";
 import { motionWeight } from "./softMotion";
+import { componentStructure } from "./componentStructure";
 
 export interface SlumpPose extends LaseguePose {
   knee: number;
@@ -88,22 +89,8 @@ export function slumpJoints(
 
 const legRegions = new Set(["Coxa", "Joelho", "Perna", "Tornozelo", "Pé"]);
 const armRegions = new Set(["Braço", "Cotovelo", "Antebraço", "Punho", "Mão"]);
-/** A catalog entry may group components from different limbs. Resolve the
- * component's source identity once, before assigning its animation weights. */
-export function slumpComponentStructure(
-  structure: Structure,
-  sourceObject: string,
-): Structure {
-  if (structure.id !== "septos-intermusculares") return structure;
-  const region = /intermuscular septum of arm\.[rl]$/i.test(sourceObject)
-    ? "Braço"
-    : /femoral intermuscular septum\.[rl]$/i.test(sourceObject)
-      ? "Coxa"
-      : /intermuscular septum of leg\.[rl]$/i.test(sourceObject)
-        ? "Perna"
-        : structure.region;
-  return region === structure.region ? structure : { ...structure, region };
-}
+/** Mantido para os testes do Slump; a regra vive em componentStructure. */
+export const slumpComponentStructure = componentStructure;
 export function slumpWeights(
   structure: Structure,
   center: THREE.Vector3,

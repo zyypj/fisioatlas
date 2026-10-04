@@ -102,6 +102,24 @@ export const sources = [
     note: "Estudo cadavérico das contribuições da cápsula anterior e posterior e dos ligamentos interclavicular e costoclavicular para restringir translação.",
   },
   {
+    id: "ac-joint-anatomy",
+    name: "NCBI Bookshelf — Anatomia da articulação acromioclavicular",
+    url: "https://www.ncbi.nlm.nih.gov/books/NBK499858/",
+    note: "Superfícies, disco, cápsula e ligamentos acromioclaviculares, coracoclaviculares (conoide e trapezoide) e coracoacromial, e seus papéis na estabilidade horizontal e vertical.",
+  },
+  {
+    id: "scapular-kinematics",
+    name: "Ludewig e Reynolds — Cinemática escapular e patologias glenoumerais (2009)",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2730194/",
+    note: "Revisão sobre rotação superior, inclinação posterior e ritmo escapuloumeral durante a elevação do braço, e a contribuição das articulações esternoclavicular e acromioclavicular.",
+  },
+  {
+    id: "shoulder-complex-kinematics",
+    name: "Lawrence et al. — Cinemática 3D das articulações esternoclavicular, acromioclavicular e escapulotorácica (2014)",
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4684907/",
+    note: "Medidas com pinos ósseos dos movimentos de cada articulação do complexo do ombro durante a elevação do braço. Os ângulos das animações do aplicativo são didáticos, não esses valores.",
+  },
+  {
     id: "interclavicular-anatomy",
     name: "Tubbs et al. — Anatomia do ligamento interclavicular (2007)",
     url: "https://pubmed.ncbi.nlm.nih.gov/17563831/",

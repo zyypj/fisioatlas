@@ -19,8 +19,11 @@ import {
   onAnimatedSide,
   weightHeight,
   chainRegions,
+  movementPose,
+  posedBonePoint,
 } from "../src/features/viewer/animationRigs";
-import { movements } from "../src/data/movements";
+import { rigBoneField } from "../src/features/viewer/boneField";
+import { movements, movementById } from "../src/data/movements";
 import { sources } from "../src/data/sources";
 import { parseStudy, emptyStudy } from "../src/services/studyStorage";
 import { NodeIO } from "@gltf-transform/core";
@@ -1190,7 +1193,8 @@ test("Movimento não arrasta tecidos de regiões distantes da articulação", as
       const inScope =
         rig.softScope === "movers"
           ? rig.include?.includes(s.id) || rig.spanning.includes(s.id)
-          : chainRegions[rig.chain].includes(s.region);
+          : chainRegions[rig.chain].includes(s.region) ||
+            !!rig.tissues?.includes(s.id);
       if (!(
         inScope ||
         m.agonists.includes(s.id) ||
@@ -1209,6 +1213,7 @@ test("Movimento não arrasta tecidos de regiões distantes da articulação", as
     // mandíbula girava o tronco e a pelve inteiros em torno de um pivô na cabeça.
     const permitidas = new Set([
       ...chainRegions[rig.chain],
+      ...(rig.tissues ?? []).map((id) => byId[id].region),
       ...[...m.agonists, ...m.antagonists].map((id) => byId[id].region),
     ]);
     for (const id of arrastados) {
@@ -1261,6 +1266,160 @@ test("Movimento não arrasta tecidos de regiões distantes da articulação", as
     "movers",
     "A mandíbula precisa de escopo restrito",
   );
+});
+
+test("Complexo do ombro: EC, AC, escapulotorácica e horizontais com braço pendurado", async () => {
+  // As quatro articulações do complexo do ombro aparecem no laboratório.
+  for (const joint of [
+    "esternoclavicular",
+    "acromioclavicular",
+    "interface-escapulotoracica",
+    "glenoumeral",
+  ])
+    assert.ok(
+      movements.filter((m) => m.joint === joint).length >= 4,
+      `Poucos movimentos em ${joint}`,
+    );
+  assert.ok(movementById["abducao-horizontal-do-ombro"]);
+  assert.ok(movementById["aducao-horizontal-do-ombro"]);
+  // Agonistas e antagonistas precisam ter malha para acender na animação;
+  // fichas de visão geral, como "deltoide", não têm.
+  for (const m of movements)
+    for (const id of [...m.agonists, ...m.antagonists])
+      assert.ok(byId[id]?.modelIds.length, `${m.id}: ${id} sem malha 3D`);
+
+  const io = new NodeIO()
+    .registerExtensions(ALL_EXTENSIONS)
+    .registerDependencies({ "meshopt.decoder": MeshoptDecoder });
+  const meshes: {
+    userData: Record<string, any>;
+    positions: Float32Array;
+  }[] = [];
+  for (const file of ["z-ossos.glb", "z-musculos.glb", "z-articulacoes.glb"]) {
+    const doc = await io.read("public/models/" + file);
+    for (const node of doc.getRoot().listNodes()) {
+      const mesh = node.getMesh(),
+        extras = node.getExtras() as Record<string, string>;
+      if (!mesh || !byId[extras.structureId]) continue;
+      const matrix = new THREE.Matrix4().fromArray(node.getWorldMatrix());
+      const accessor = mesh.listPrimitives()[0].getAttribute("POSITION")!;
+      const positions = new Float32Array(accessor.getCount() * 3),
+        element: number[] = [],
+        v = new THREE.Vector3();
+      for (let i = 0; i < accessor.getCount(); i++)
+        positions.set(
+          v
+            .fromArray(accessor.getElement(i, element))
+            .applyMatrix4(matrix)
+            .toArray(),
+          i * 3,
+        );
+      const bounds = new THREE.Box3().setFromArray(positions);
+      meshes.push({
+        userData: {
+          structureId: extras.structureId,
+          center: bounds.getCenter(new THREE.Vector3()),
+          bounds,
+        },
+        positions,
+      });
+    }
+  }
+  const right = (id: string) =>
+    meshes.find(
+      (m) => m.userData.structureId === id && m.userData.center.x < 0,
+    )!;
+  const points = (id: string) => {
+    const p = right(id).positions,
+      out: THREE.Vector3[] = [];
+    for (let i = 0; i < p.length; i += 3)
+      out.push(new THREE.Vector3(p[i], p[i + 1], p[i + 2]));
+    return out;
+  };
+  const extreme = (id: string, score: (p: THREE.Vector3) => number) =>
+    points(id).reduce((a, b) => (score(b) > score(a) ? b : a));
+  const acromion = extreme("escapula", (p) => -p.x),
+    inferiorAngle = extreme("escapula", (p) => -p.y),
+    clavicleEnd = extreme("clavicula", (p) => -p.x),
+    elbow = extreme("umero", (p) => -p.y),
+    fingertip = extreme("falange-distal-do-medio", (p) => -p.y);
+  const shift = (
+    moveId: string,
+    point: THREE.Vector3,
+    arm: boolean,
+    amount = 1,
+  ) => {
+    const move = movementById[moveId],
+      rig = rigs[move.animation];
+    const pivot = rigPivot(rig, rigBounds(rig, meshes)!);
+    const humerus = rig.carryArm
+      ? rigBounds({ ...rig, bone: "umero", strictAnchor: false }, meshes)
+      : null;
+    const pose = movementPose(rig, move, amount, pivot, humerus);
+    return posedBonePoint(pose, pivot, point, arm).sub(point);
+  };
+  // Sentido de cada movimento, medido em marcos ósseos do lado direito
+  // (x negativo é lateral; z positivo é anterior).
+  const cases: [string, THREE.Vector3, (d: THREE.Vector3) => boolean][] = [
+    ["elevacao-da-clavicula", clavicleEnd, (d) => d.y > 0.03],
+    ["depressao-da-clavicula", clavicleEnd, (d) => d.y < -0.01],
+    ["protracao-da-clavicula", clavicleEnd, (d) => d.z > 0.02],
+    ["retracao-da-clavicula", clavicleEnd, (d) => d.z < -0.02],
+    ["elevacao-da-escapula", acromion, (d) => d.y > 0.03],
+    ["depressao-da-escapula", acromion, (d) => d.y < -0.01],
+    ["abducao-da-escapula", acromion, (d) => d.z > 0.02],
+    ["aducao-da-escapula", acromion, (d) => d.z < -0.02],
+    ["rotacao-superior-da-escapula", inferiorAngle, (d) => d.x < -0.03],
+    ["rotacao-inferior-da-escapula", inferiorAngle, (d) => d.x > 0.01],
+    ["rotacao-superior-acromioclavicular", inferiorAngle, (d) => d.x < -0.03],
+    ["rotacao-inferior-acromioclavicular", inferiorAngle, (d) => d.x > 0.01],
+    ["inclinacao-anterior-da-escapula", inferiorAngle, (d) => d.z < -0.01],
+    ["inclinacao-posterior-da-escapula", inferiorAngle, (d) => d.z > 0.01],
+  ];
+  for (const [id, point, ok] of cases) {
+    const d = shift(id, point, false);
+    assert.ok(
+      ok(d),
+      `${id}: deslocamento ${d.toArray().map((n) => n.toFixed(3))}`,
+    );
+    // Na cintura escapular o braço acompanha só em translação: o cotovelo e a
+    // ponta do dedo se deslocam igual, e o braço continua pendurado.
+    const a = shift(id, elbow, true),
+      b = shift(id, fingertip, true);
+    assert.ok(a.distanceTo(b) < 1e-6, `${id}: o braço inclinou`);
+    // Na acromioclavicular, a clavícula fica parada.
+    if (rigs[movementById[id].animation].bone === "acromioclavicular")
+      assert.ok(
+        shift(id, clavicleEnd, false).length() < 1e-9 ||
+          !rigMoves(rigs[movementById[id].animation], "clavicula", "Ombro"),
+      );
+  }
+  assert.equal(rigMoves(rigs.scaprot, "clavicula", "Ombro"), false);
+  // Horizontais: o braço parte elevado à frente; a adução o leva para a linha
+  // média e a abdução, para fora.
+  const start = shift("aducao-horizontal-do-ombro", fingertip, true, 0);
+  assert.ok(
+    start.z > 0.3 && start.y > 0.3,
+    "A base é o braço elevado à frente",
+  );
+  assert.ok(
+    shift("aducao-horizontal-do-ombro", fingertip, true).x - start.x > 0.2,
+  );
+  assert.ok(
+    shift("abducao-horizontal-do-ombro", fingertip, true).x - start.x < -0.3,
+  );
+  // Peso por proximidade óssea: o romboide fica preso na coluna e segue a
+  // escápula na borda medial; o serrátil fica nas costelas da parede lateral.
+  const field = rigBoneField(rigs.girdleelev, meshes);
+  const weight = (p: THREE.Vector3) => field.weightAt(p.x, p.y, p.z);
+  assert.ok(weight(extreme("romboide-maior", (p) => p.x)) < 0.2);
+  assert.ok(weight(extreme("romboide-maior", (p) => -p.x)) > 0.8);
+  assert.ok(weight(extreme("serratil-anterior", (p) => p.z)) < 0.2);
+  assert.ok(weight(acromion) > 0.99);
+  // Fora dos músculos da cintura, o tronco não entra no movimento.
+  assert.ok(!chainRegions.cintura.includes("Tronco"));
+  assert.ok(!rigs.girdleelev.tissues!.includes("intercostais-externos"));
+  assert.ok(rigs.girdleelev.tissues!.includes("serratil-anterior"));
 });
 
 test("Slump: sete fases contínuas, liberação cervical mantém a perna e retorno confortável", () => {
