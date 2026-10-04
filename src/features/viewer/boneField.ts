@@ -12,17 +12,18 @@ export interface FieldBone {
 /**
  * Peso de deformação por proximidade óssea, para movimentos em que o segmento
  * móvel não fica simplesmente abaixo do pivô, como a escápula deslizando sobre
- * o tórax.
+ * o tórax ou o úmero girando junto ao tronco.
  *
  * Um tecido mole acompanha o movimento na medida em que está mais perto dos
  * ossos que se movem (clavícula, escápula, úmero...) do que dos que ficam
- * (costelas, esterno, coluna). Assim o romboide, o serrátil e o trapézio
- * deformam entre a coluna ou as costelas e a escápula, sem que ninguém precise
- * marcar inserções à mão. É uma aproximação geométrica, não um mapa validado
- * de inserções.
+ * (costelas, esterno, coluna). Assim o romboide, o serrátil, o latíssimo e o
+ * peitoral se esticam entre o tronco e o osso que se move, sem que ninguém
+ * precise marcar inserções à mão. É uma aproximação geométrica, não um mapa
+ * validado de inserções. Depois, o motor suaviza o peso dentro de cada malha
+ * (`smoothMeshWeights`) para que ele não varie através da espessura.
  *
  * As distâncias vêm de uma transformada de distância (chanfro 3D) numa grade
- * regular; fora da grade o peso é zero.
+ * de 1 cm; fora da grade o peso é zero.
  */
 export function boneField(bones: FieldBone[], box: THREE.Box3, cell = 0.01) {
   const nx = Math.max(1, Math.ceil((box.max.x - box.min.x) / cell) + 1),
@@ -45,6 +46,20 @@ export function boneField(bones: FieldBone[], box: THREE.Box3, cell = 0.01) {
   }
   for (const field of [moving, fixed]) chamfer(field, nx, ny, nz, cell);
 
+  const weights = new Float32Array(size);
+  for (let v = 0; v < size; v++) {
+    const toMoving = moving[v],
+      toFixed = fixed[v];
+    weights[v] = !Number.isFinite(toMoving)
+      ? 0
+      : !Number.isFinite(toFixed)
+        ? 1
+        : THREE.MathUtils.smoothstep(
+            toFixed / Math.max(1e-6, toFixed + toMoving),
+            0.3,
+            0.7,
+          );
+  }
   const sample = (field: Float32Array, x: number, y: number, z: number) => {
     const fx = (x - box.min.x) / cell,
       fy = (y - box.min.y) / cell,
@@ -79,24 +94,20 @@ export function boneField(bones: FieldBone[], box: THREE.Box3, cell = 0.01) {
         z > box.max.z
       )
         return 0;
-      const toMoving = sample(moving, x, y, z),
-        toFixed = sample(fixed, x, y, z);
-      if (!Number.isFinite(toMoving)) return 0;
-      if (!Number.isFinite(toFixed)) return 1;
-      const ratio = toFixed / Math.max(1e-6, toFixed + toMoving);
-      const weight = THREE.MathUtils.smoothstep(ratio, 0.3, 0.7);
-      // Contato: o que encosta num osso fica preso a ele. Sem isso, o lábio
-      // glenoidal, entre a glenoide e a cabeça do úmero a poucos milímetros
-      // de cada uma, ganharia meio peso e se soltaria da escápula.
-      return toMoving < toFixed
-        ? Math.max(
-            weight,
-            1 - THREE.MathUtils.smoothstep(toMoving, 0.002, 0.006),
-          )
-        : Math.min(weight, THREE.MathUtils.smoothstep(toFixed, 0.002, 0.006));
+      return sample(weights, x, y, z);
     },
   };
 }
+
+const MEMBRO_INFERIOR = [
+  "Pelve",
+  "Quadril",
+  "Coxa",
+  "Joelho",
+  "Perna",
+  "Tornozelo",
+  "Pé",
+];
 
 /** Monta o campo de um rig a partir das malhas ósseas carregadas. Movem-se os
  *  ossos do lado animado que o rig carrega (clavícula, escápula, braço...);
@@ -121,10 +132,87 @@ export function rigBoneField(
       onAnimatedSide(rig, mesh.userData.center.x) &&
       rigMoves(rig, s.id, s.region) &&
       (part === "segment" || armBone(s.id, s.region));
+    // A pelve e o membro inferior não ancoram nada no ombro; contá-los como
+    // parados puxaria para trás o antebraço e a mão, pendurados ao lado da
+    // coxa.
+    if (!moving && MEMBRO_INFERIOR.includes(s.region)) continue;
     bones.push({ positions: mesh.positions, moving });
     if (moving) box.union(mesh.userData.bounds);
   }
   return boneField(bones, box.expandByScalar(0.12));
+}
+
+/** Suaviza os pesos de uma malha com os vértices dela mesma: cada vértice
+ *  recebe a média dos pesos numa vizinhança de ~3 cm (voxels de `cell`). A
+ *  face profunda de um músculo encosta no osso e a superficial não; sem isso
+ *  a diferença de peso através da espessura cisalha a malha e cria dobras nos
+ *  giros grandes. O gradiente ao longo do comprimento (origem → inserção) é
+ *  preservado, e o peso não se mistura com o de outras estruturas. */
+export function smoothMeshWeights(
+  positions: ArrayLike<number>,
+  weights: Float32Array,
+  cell = 0.01,
+  radius = 2,
+) {
+  const count = weights.length,
+    cells = new Int32Array(count * 3);
+  // Chave numérica por célula (coordenadas de ±5 m em células de 1 cm).
+  const key = (i: number, j: number, k: number) =>
+    ((i + 512) * 1024 + (j + 512)) * 1024 + (k + 512);
+  const sums = new Map<number, number>(),
+    counts = new Map<number, number>();
+  for (let v = 0; v < count; v++) {
+    for (let a = 0; a < 3; a++)
+      cells[v * 3 + a] = Math.floor(positions[v * 3 + a] / cell);
+    const k = key(cells[v * 3], cells[v * 3 + 1], cells[v * 3 + 2]);
+    sums.set(k, (sums.get(k) ?? 0) + weights[v]);
+    counts.set(k, (counts.get(k) ?? 0) + 1);
+  }
+  // Média por célula vizinha, calculada uma vez por célula ocupada.
+  const smoothed = new Map<number, number>(),
+    out = new Float32Array(count);
+  for (let v = 0; v < count; v++) {
+    const ci = cells[v * 3],
+      cj = cells[v * 3 + 1],
+      ck = cells[v * 3 + 2],
+      own = key(ci, cj, ck);
+    let value = smoothed.get(own);
+    if (value === undefined) {
+      let sum = 0,
+        n = 0;
+      for (let di = -radius; di <= radius; di++)
+        for (let dj = -radius; dj <= radius; dj++)
+          for (let dk = -radius; dk <= radius; dk++) {
+            const k = key(ci + di, cj + dj, ck + dk),
+              c = counts.get(k);
+            if (c) ((sum += sums.get(k)!), (n += c));
+          }
+      value = sum / n;
+      smoothed.set(own, value);
+    }
+    out[v] = value;
+  }
+  return out;
+}
+
+const BRACO = ["Braço", "Cotovelo", "Antebraço", "Punho", "Mão"];
+
+/** Peso de um tecido mole no rig. Os tecidos do braço abaixo da raiz do
+ *  membro acompanham o segmento inteiro: perto deles só há costelas a alguns
+ *  centímetros, que puxariam o peso para menos de 1 e torceriam o braço e o
+ *  antebraço. Nos últimos 15 cm abaixo do pivô, decide o campo. */
+export function tissueWeight(
+  field: { weightAt(x: number, y: number, z: number): number },
+  region: string,
+  point: { x: number; y: number; z: number },
+  pivotY: number,
+) {
+  const w = field.weightAt(point.x, point.y, point.z);
+  if (!BRACO.includes(region)) return w;
+  return Math.max(
+    w,
+    1 - THREE.MathUtils.smoothstep(point.y, pivotY - 0.15, pivotY - 0.05),
+  );
 }
 
 /** Transformada de distância em duas passagens com vizinhança 3×3×3. */

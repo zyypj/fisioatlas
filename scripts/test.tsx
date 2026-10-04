@@ -22,7 +22,11 @@ import {
   movementPose,
   posedBonePoint,
 } from "../src/features/viewer/animationRigs";
-import { rigBoneField } from "../src/features/viewer/boneField";
+import {
+  rigBoneField,
+  smoothMeshWeights,
+  tissueWeight,
+} from "../src/features/viewer/boneField";
 import { movements, movementById } from "../src/data/movements";
 import { sources } from "../src/data/sources";
 import { parseStudy, emptyStudy } from "../src/services/studyStorage";
@@ -1418,7 +1422,8 @@ test("Complexo do ombro: EC, AC, escapulotorácica e horizontais com braço pend
   assert.ok(weight(acromion) > 0.99);
   // Glenoumeral: o latíssimo se estica entre o úmero e o tronco, mas a parte
   // abaixo da axila fica no tronco. Com o peso antigo, por altura, ele era
-  // arrastado até 20 cm junto com o braço, formando uma membrana.
+  // arrastado até 20 cm junto com o braço, formando uma membrana; com o peso
+  // de proximidade sem suavização, dobrava na prega posterior da axila.
   for (const id of [
     "abducao-do-ombro",
     "flexao-do-ombro",
@@ -1431,10 +1436,19 @@ test("Complexo do ombro: EC, AC, escapulotorácica e horizontais com braço pend
     const pivot = rigPivot(rig, rigBounds(rig, meshes)!);
     const pose = movementPose(rig, move, 1, pivot, null),
       arm = rigBoneField(rig, meshes);
+    // Mesmo cálculo do motor: campo, regra do braço e suavização na malha.
+    const lat = right("latissimo-do-dorso"),
+      latPoints = points("latissimo-do-dorso");
+    const latWeights = smoothMeshWeights(
+      lat.positions,
+      Float32Array.from(latPoints, (p) =>
+        tissueWeight(arm, byId["latissimo-do-dorso"].region, p, pivot.y),
+      ),
+    );
     let worst = 0;
-    for (const p of points("latissimo-do-dorso")) {
+    for (const [i, p] of latPoints.entries()) {
       if (p.y > 1.2) continue;
-      const w = arm.weightAt(p.x, p.y, p.z);
+      const w = latWeights[i];
       const q = new THREE.Quaternion().setFromAxisAngle(
         pose.axis,
         pose.signedAngle * w,
@@ -1452,7 +1466,7 @@ test("Complexo do ombro: EC, AC, escapulotorácica e horizontais com braço pend
       );
     }
     assert.ok(
-      worst < 0.06,
+      worst < 0.03,
       `${id}: latíssimo arrastado ${(worst * 1000).toFixed(0)} mm`,
     );
   }

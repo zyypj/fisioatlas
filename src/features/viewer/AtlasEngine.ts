@@ -7,6 +7,7 @@ import { attachSoftMotion, motionWeight } from "./softMotion";
 import {
   rigs,
   armBone,
+  humeralHead,
   movementPose,
   rigPivot,
   rigMoves,
@@ -24,7 +25,7 @@ import {
   modelManifestUrl,
 } from "./renderPerformance";
 import { AtlasBatches } from "./atlasBatches";
-import { rigBoneField } from "./boneField";
+import { rigBoneField, smoothMeshWeights, tissueWeight } from "./boneField";
 import { componentStructure } from "./componentStructure";
 import type { RenderQuality } from "./renderPerformance";
 import {
@@ -759,7 +760,11 @@ export class AtlasEngine {
     const field =
       jointRig.weighting === "bones" ? this.boneFieldFor(move.animation) : null;
     const carry = carryPose
-      ? { ...carryPose, field: this.boneFieldFor(move.animation, "arm") }
+      ? {
+          ...carryPose,
+          field: this.boneFieldFor(move.animation, "arm"),
+          restHeadY: humeralHead(humerus!).y,
+        }
       : null;
     for (const m of this.meshes) {
       // Componentes de fichas agrupadas (septos do braço e da perna) seguem
@@ -801,7 +806,8 @@ export class AtlasEngine {
             const weightAt = (x: number, y: number, z: number) => {
               // Cintura escapular: proximidade aos ossos que se movem versus
               // os que ficam, inclusive nos ligamentos que cruzam a articulação.
-              if (field) return field.weightAt(x, y, z);
+              if (field)
+                return tissueWeight(field, s.region, { x, y, z }, pivot.y);
               if (fixedSyndesmosis) return 0;
               // Geometric superior/inferior ends approximate attachments to the
               // proximal/distal bone; short ligaments must not move both ends
@@ -833,18 +839,43 @@ export class AtlasEngine {
                   positions.getZ(i),
                 ),
               );
+            // Com o campo de proximidade, o peso é suavizado dentro da própria
+            // malha para não variar através da espessura do músculo.
+            if (field)
+              (weights.array as Float32Array).set(
+                smoothMeshWeights(
+                  positions.array,
+                  weights.array as Float32Array,
+                  0.01,
+                  2,
+                ),
+              );
             weights.needsUpdate = true;
             const weights2 = m.geometry.getAttribute("tissueWeight2");
             for (let i = 0; i < positions.count; i++)
               weights2.setX(
                 i,
                 carry
-                  ? carry.field.weightAt(
-                      positions.getX(i),
-                      positions.getY(i),
-                      positions.getZ(i),
+                  ? tissueWeight(
+                      carry.field,
+                      s.region,
+                      {
+                        x: positions.getX(i),
+                        y: positions.getY(i),
+                        z: positions.getZ(i),
+                      },
+                      carry.restHeadY,
                     )
                   : 0,
+              );
+            if (carry)
+              (weights2.array as Float32Array).set(
+                smoothMeshWeights(
+                  positions.array,
+                  weights2.array as Float32Array,
+                  0.01,
+                  2,
+                ),
               );
             weights2.needsUpdate = true;
             m.userData.rigMovement = rigKey;
@@ -857,7 +888,9 @@ export class AtlasEngine {
                 weightAt(point.x, point.y, point.z),
               ),
               weights2: rig.points.map((point) =>
-                carry ? carry.field.weightAt(point.x, point.y, point.z) : 0,
+                carry
+                  ? tissueWeight(carry.field, s.region, point, carry.restHeadY)
+                  : 0,
               ),
             };
             soft.shapeOrigin.value.copy(rig.origin);
