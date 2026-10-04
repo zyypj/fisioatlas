@@ -84,7 +84,16 @@ export function boneField(bones: FieldBone[], box: THREE.Box3, cell = 0.01) {
       if (!Number.isFinite(toMoving)) return 0;
       if (!Number.isFinite(toFixed)) return 1;
       const ratio = toFixed / Math.max(1e-6, toFixed + toMoving);
-      return THREE.MathUtils.smoothstep(ratio, 0.3, 0.7);
+      const weight = THREE.MathUtils.smoothstep(ratio, 0.3, 0.7);
+      // Contato: o que encosta num osso fica preso a ele. Sem isso, o lábio
+      // glenoidal, entre a glenoide e a cabeça do úmero a poucos milímetros
+      // de cada uma, ganharia meio peso e se soltaria da escápula.
+      return toMoving < toFixed
+        ? Math.max(
+            weight,
+            1 - THREE.MathUtils.smoothstep(toMoving, 0.002, 0.006),
+          )
+        : Math.min(weight, THREE.MathUtils.smoothstep(toFixed, 0.002, 0.006));
     },
   };
 }

@@ -1416,6 +1416,46 @@ test("Complexo do ombro: EC, AC, escapulotorácica e horizontais com braço pend
   assert.ok(weight(extreme("romboide-maior", (p) => -p.x)) > 0.8);
   assert.ok(weight(extreme("serratil-anterior", (p) => p.z)) < 0.2);
   assert.ok(weight(acromion) > 0.99);
+  // Glenoumeral: o latíssimo se estica entre o úmero e o tronco, mas a parte
+  // abaixo da axila fica no tronco. Com o peso antigo, por altura, ele era
+  // arrastado até 20 cm junto com o braço, formando uma membrana.
+  for (const id of [
+    "abducao-do-ombro",
+    "flexao-do-ombro",
+    "abducao-horizontal-do-ombro",
+    "aducao-horizontal-do-ombro",
+  ]) {
+    const move = movementById[id],
+      rig = rigs[move.animation];
+    assert.equal(rig.weighting, "bones", id);
+    const pivot = rigPivot(rig, rigBounds(rig, meshes)!);
+    const pose = movementPose(rig, move, 1, pivot, null),
+      arm = rigBoneField(rig, meshes);
+    let worst = 0;
+    for (const p of points("latissimo-do-dorso")) {
+      if (p.y > 1.2) continue;
+      const w = arm.weightAt(p.x, p.y, p.z);
+      const q = new THREE.Quaternion().setFromAxisAngle(
+        pose.axis,
+        pose.signedAngle * w,
+      );
+      if (pose.base)
+        q.multiply(
+          new THREE.Quaternion().setFromAxisAngle(
+            pose.base.axis,
+            pose.base.angle * w,
+          ),
+        );
+      worst = Math.max(
+        worst,
+        p.clone().sub(pivot).applyQuaternion(q).add(pivot).distanceTo(p),
+      );
+    }
+    assert.ok(
+      worst < 0.06,
+      `${id}: latíssimo arrastado ${(worst * 1000).toFixed(0)} mm`,
+    );
+  }
   // Fora dos músculos da cintura, o tronco não entra no movimento.
   assert.ok(!chainRegions.cintura.includes("Tronco"));
   assert.ok(!rigs.girdleelev.tissues!.includes("intercostais-externos"));

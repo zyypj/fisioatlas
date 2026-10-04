@@ -205,6 +205,8 @@ export const rigs: Record<Animation, AnimationRig> = {
     ],
     view: "anterior",
     lateralPivot: true,
+    weighting: "bones",
+    tissues: TECIDOS_DA_CINTURA,
   },
   knee: {
     bone: "femur",
@@ -264,6 +266,8 @@ export const rigs: Record<Animation, AnimationRig> = {
     ],
     view: "lateral-direita",
     lateralPivot: true,
+    weighting: "bones",
+    tissues: TECIDOS_DA_CINTURA,
   },
   shoulderrot: {
     bone: "umero",
@@ -280,6 +284,8 @@ export const rigs: Record<Animation, AnimationRig> = {
     ],
     view: "anterior",
     lateralPivot: true,
+    weighting: "bones",
+    tissues: TECIDOS_DA_CINTURA,
   },
   forearm: {
     bone: "ulna",
@@ -562,6 +568,8 @@ export const rigs: Record<Animation, AnimationRig> = {
     spanning: LIGAMENTOS_GLENOUMERAIS,
     view: "anterior",
     lateralPivot: true,
+    weighting: "bones",
+    tissues: TECIDOS_DA_CINTURA,
   },
   spineinc: {
     bilateral: true,
@@ -619,6 +627,8 @@ export function rigPivot(rig: AnimationRig, bounds: THREE.Box3) {
       : rig.pivot === "inferior"
         ? bounds.min.y + 0.025
         : center.y;
+  // No ombro, o eixo passa pelo centro da cabeça do úmero.
+  if (rig.lateralPivot && rig.bone === "umero") return humeralHead(bounds);
   const pivot = new THREE.Vector3(center.x, y, center.z);
   if (rig.lateralPivot) pivot.x = bounds.max.x - 0.02;
   return pivot;
