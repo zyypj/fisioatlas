@@ -15,6 +15,7 @@ import type {
   ClinicalTest,
 } from "../../data/clinicalTests";
 import { sources } from "../../data/sources";
+import { clinicalAnimations } from "../../data/animacoesClinicas";
 import { clinicalStagesFor, parseClinicalStage } from "./clinicalGuide";
 import {
   filterClinicalTests,
@@ -25,6 +26,7 @@ import {
 import type { ClinicalFilters } from "./clinicalCatalog";
 
 const LasegueViewer = lazy(() => import("../viewer/LasegueViewer"));
+const ClinicalTestViewer = lazy(() => import("../viewer/ClinicalTestViewer"));
 
 /** Testes com demonstração 3D animada própria. */
 export const animatedTests = new Set(["lasegue", "slump"]);
@@ -38,7 +40,8 @@ function ClinicalVisual({
   test: ClinicalTest;
   onSelect: (id: string) => void;
 }) {
-  if (!animatedTests.has(test.id))
+  const animation = clinicalAnimations[test.id];
+  if (!animatedTests.has(test.id) && !animation)
     return <StepPanel step={step} test={test} onSelect={onSelect} />;
   return (
     <Suspense
@@ -48,10 +51,14 @@ function ClinicalVisual({
         </div>
       }
     >
-      <LasegueViewer
-        step={step}
-        testId={test.id === "slump" ? "slump" : "lasegue"}
-      />
+      {animation ? (
+        <ClinicalTestViewer test={test} animation={animation} step={step} />
+      ) : (
+        <LasegueViewer
+          step={step}
+          testId={test.id === "slump" ? "slump" : "lasegue"}
+        />
+      )}
     </Suspense>
   );
 }

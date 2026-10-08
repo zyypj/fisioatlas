@@ -109,6 +109,31 @@ import {
   attachSlumpRig,
   slumpComponentStructure,
 } from "../src/features/viewer/slumpRig";
+import { clinicalAnimations } from "../src/data/animacoesClinicas";
+import {
+  anchorPoint,
+  applyPatch,
+  baseMatrix,
+  clinicalJoints,
+  deformClinicalPoint,
+  poseRig,
+  restPose,
+} from "../src/features/viewer/clinicalRig";
+import type {
+  Anchor,
+  ClinicalPose,
+  PosePatch,
+  Side,
+} from "../src/features/viewer/clinicalRig";
+import {
+  sampleSegments,
+  segmentsDuration,
+  stepEndPoses,
+  stepSegments,
+  stepStartPose,
+} from "../src/features/viewer/clinicalAnimation";
+import type { ClinicalAnimation } from "../src/features/viewer/clinicalAnimation";
+import { poseReadout } from "../src/features/viewer/clinicalReadout";
 import { mergeGeometries } from "three/addons/utils/BufferGeometryUtils.js";
 
 test("Lasègue 3D: sequências suaves, redução antes da dorsiflexão e retorno completo", () => {
@@ -2032,4 +2057,205 @@ test("Slump: septos reais do braço acompanham o úmero; componentes da coxa e p
     "Perna",
     "A classificação da ficha não foi alterada",
   );
+});
+
+const clinicalLimbAnchors: Anchor[] = [
+  "coxa-anterior",
+  "coxa-posterior",
+  "coxa-lateral",
+  "patela",
+  "joelho-medial",
+  "joelho-lateral",
+  "tibia-proximal",
+  "tibia-proximal-posterior",
+  "panturrilha",
+  "perna-medial",
+  "perna-lateral",
+  "perna-distal",
+  "tendao-calcaneo",
+  "calcanhar",
+  "calcanhar-plantar",
+  "planta",
+  "pe-medial",
+  "pe-lateral",
+  "dorso-pe",
+  "halux",
+  "sacro",
+  "eias",
+  "crista-iliaca",
+];
+
+/** Todas as poses-chave de uma animação, na ordem em que aparecem. */
+function clinicalKeyPoses(animation: ClinicalAnimation) {
+  const poses = [stepStartPose(animation, 0)];
+  animation.steps.forEach((keys, step) => {
+    let pose = stepStartPose(animation, step);
+    for (const key of keys) {
+      pose = applyPatch(pose, key.pose ?? {});
+      poses.push(pose);
+    }
+  });
+  return poses;
+}
+
+test("Testes clínicos 3D: todo teste tem animação com um quadro por passo", async () => {
+  const j = clinicalJoints(await clinicalBounds());
+  const own = new Set(["lasegue", "slump"]);
+  for (const lesson of clinicalTests) {
+    const animation = clinicalAnimations[lesson.id];
+    if (own.has(lesson.id)) {
+      assert.equal(animation, undefined, lesson.id + " usa motor próprio");
+      continue;
+    }
+    assert.ok(animation, lesson.id + " sem animação 3D");
+    assert.equal(animation.steps.length, lesson.steps.length, lesson.id);
+    for (const keys of animation.steps) {
+      assert.ok(keys.length > 0, lesson.id + " passo vazio");
+      for (const key of keys) {
+        assert.ok((key.duration ?? 1.6) > 0, lesson.id);
+        assert.ok((key.forces ?? []).length <= 4, lesson.id + " setas");
+        for (const force of key.forces ?? []) {
+          assert.ok(
+            anchorPoint(force.at, force.side ?? "direito", j).point,
+            force.at,
+          );
+          assert.ok(Math.hypot(...force.dir) > 0, lesson.id + " direção");
+        }
+      }
+    }
+  }
+  for (const id of Object.keys(clinicalAnimations))
+    assert.ok(
+      clinicalTests.some((lesson) => lesson.id === id),
+      id + " sem teste",
+    );
+  // Segmentos encadeados: cada passo começa onde o anterior terminou.
+  const lachman = clinicalAnimations.lachman;
+  const ends = stepEndPoses(lachman);
+  const segments = stepSegments(lachman, 4, ends[3]);
+  assert.deepEqual(segments[0].from, ends[3]);
+  assert.deepEqual(segments[segments.length - 1].to, ends[4]);
+  assert.deepEqual(
+    sampleSegments(segments, segmentsDuration(segments)).pose,
+    ends[4],
+  );
+});
+
+test("Rig clínico: pé de apoio fixo, corpo sobre a maca e convenções de lado", async () => {
+  const j = clinicalJoints(await clinicalBounds());
+  const world = (
+    animation: ClinicalAnimation,
+    pose: ClinicalPose,
+    anchor: Anchor,
+    side: Side,
+  ) => {
+    const rig = poseRig(pose, j, animation.base, animation.stance);
+    const { point, weights } = anchorPoint(anchor, side, j);
+    return deformClinicalPoint(point, weights, rig, j)
+      .applyMatrix4(rig.global)
+      .applyMatrix4(baseMatrix(animation.base, j));
+  };
+  for (const [id, animation] of Object.entries(clinicalAnimations)) {
+    const poses = clinicalKeyPoses(animation);
+    if (animation.base === "em-pe" && animation.stance) {
+      // O tornozelo de apoio não sai do lugar em nenhuma pose.
+      const sides: Side[] =
+        animation.stance === "ambos"
+          ? ["direito", "esquerdo"]
+          : [animation.stance];
+      for (const pose of poses) {
+        const rig = poseRig(pose, j, "em-pe", animation.stance);
+        const ankle = (side: Side) =>
+          deformClinicalPoint(
+            side === "direito" ? j.ankle : j.leftAnkle,
+            {
+              leg: [1, 1, 0, side === "direito" ? 1 : 0],
+              upper: [0, 0, 0, side === "direito" ? 1 : 0],
+            },
+            rig,
+            j,
+          ).applyMatrix4(rig.global);
+        if (animation.stance === "ambos") {
+          const mid = ankle("direito")
+            .add(ankle("esquerdo"))
+            .multiplyScalar(0.5);
+          const rest = j.ankle.clone().add(j.leftAnkle).multiplyScalar(0.5);
+          assert.ok(mid.distanceTo(rest) < 1e-9, id);
+        } else
+          for (const side of sides)
+            assert.ok(
+              ankle(side).distanceTo(
+                side === "direito" ? j.ankle : j.leftAnkle,
+              ) < 1e-9,
+              id,
+            );
+      }
+    }
+    if (["supino", "prono", "lateral"].includes(animation.base)) {
+      // Nada do que está sobre o tampo atravessa a maca.
+      const from = animation.table?.from ?? -0.13,
+        shift = animation.table?.shift ?? 0;
+      for (const pose of poses)
+        for (const side of ["direito", "esquerdo"] as Side[])
+          for (const anchor of clinicalLimbAnchors) {
+            const p = world(animation, pose, anchor, side);
+            if (p.x < from || p.x > 1.82 || Math.abs(p.z - shift) > 0.32)
+              continue;
+            assert.ok(p.y > -0.02, `${id}: ${anchor} ${side} na maca`);
+          }
+    }
+  }
+  // Repouso: a deformação não mexe em nada.
+  const rest = poseRig(restPose(), j, "em-pe", undefined);
+  const knee = anchorPoint("patela", "direito", j);
+  assert.ok(
+    deformClinicalPoint(knee.point, knee.weights, rest, j).distanceTo(
+      knee.point,
+    ) < 1e-12,
+  );
+  // Valgo e rotação externa do pé levam a parte distal para fora nos dois
+  // lados (X negativo à direita, positivo à esquerda).
+  const lateral = (patch: PosePatch, anchor: Anchor, side: Side) => {
+    const { point, weights } = anchorPoint(anchor, side, j);
+    const moved = deformClinicalPoint(
+      point,
+      weights,
+      poseRig(applyPatch(restPose(), patch), j, "supino", undefined),
+      j,
+    );
+    return (moved.x - point.x) * (side === "direito" ? -1 : 1);
+  };
+  assert.ok(lateral({ right: { kneeValgus: 8 } }, "planta", "direito") > 0.03);
+  assert.ok(lateral({ left: { kneeValgus: 8 } }, "planta", "esquerdo") > 0.03);
+  assert.ok(
+    lateral({ right: { kneeValgus: -8 } }, "planta", "direito") < -0.03,
+  );
+  assert.ok(lateral({ right: { ankleRot: 30 } }, "halux", "direito") > 0.03);
+  assert.ok(lateral({ left: { ankleRot: 30 } }, "halux", "esquerdo") > 0.03);
+  assert.ok(
+    lateral({ right: { hipRot: 30, kneeFlex: 90 } }, "planta", "direito") < 0,
+  );
+  // Pé apoiado: o calcanhar toca a maca.
+  const hook = world(
+    clinicalAnimations["gaveta-anterior-joelho"],
+    stepEndPoses(clinicalAnimations["gaveta-anterior-joelho"])[0],
+    "calcanhar-plantar",
+    "direito",
+  );
+  assert.ok(Math.abs(hook.y) < 0.02, "calcanhar na maca: " + hook.y);
+});
+
+test("Testes clínicos 3D: leitura mostra só as articulações fora do repouso", () => {
+  assert.deepEqual(poseReadout(restPose(), "direito"), []);
+  const pose = applyPatch(restPose(), {
+    right: { kneeFlex: 30, kneeValgus: -5, tibiaShift: 12 },
+    left: { hipFlex: 40 },
+    yaw: 20,
+  });
+  assert.deepEqual(poseReadout(pose, "direito"), [
+    ["Flexão do joelho", "30°"],
+    ["Varo do joelho", "5°"],
+    ["Tíbia anterior", "12 mm"],
+    ["Rotação sobre o pé", "20°"],
+  ]);
 });

@@ -29,10 +29,12 @@ import {
 } from "../../data/clinicalTests";
 import type { ClinicalQuadrant, ClinicalTest } from "../../data/clinicalTests";
 import { sources } from "../../data/sources";
+import { clinicalAnimations } from "../../data/animacoesClinicas";
 import { buildDeck, defaultDeckTitle, parseTestIds, testLabel } from "./deck";
 import type { DeckFormat, DeckOptions, Slide } from "./deck";
 
 const LasegueViewer = lazy(() => import("../viewer/LasegueViewer"));
+const ClinicalTestViewer = lazy(() => import("../viewer/ClinicalTestViewer"));
 const animated = new Set(["lasegue", "slump"]);
 
 /** Opções do deck guardadas na URL, para recarregar e compartilhar. */
@@ -690,14 +692,23 @@ function SlideView({
 /** Visual do passo: animação 3D quando o teste a tem; senão, a linha de
  *  passos e a posição. */
 function StepVisual({ test, index }: { test: ClinicalTest; index: number }) {
-  if (animated.has(test.id))
+  const animation = clinicalAnimations[test.id];
+  if (animated.has(test.id) || animation)
     return (
       <div className="slide-visual slide-3d">
         <Suspense fallback={<p>Carregando demonstração 3D…</p>}>
-          <LasegueViewer
-            step={index}
-            testId={test.id === "slump" ? "slump" : "lasegue"}
-          />
+          {animation ? (
+            <ClinicalTestViewer
+              test={test}
+              animation={animation}
+              step={index}
+            />
+          ) : (
+            <LasegueViewer
+              step={index}
+              testId={test.id === "slump" ? "slump" : "lasegue"}
+            />
+          )}
         </Suspense>
       </div>
     );
