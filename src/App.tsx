@@ -39,6 +39,7 @@ import { SmartLayersPanel } from "./components/SmartLayersPanel";
 import type { RevealMode } from "./features/viewer/smartLayers";
 import { ShoulderModule } from "./features/study/ShoulderModule";
 import { ClinicalTests } from "./features/study/ClinicalTests";
+import { PresentationMode } from "./features/presentation/PresentationMode";
 import { clinicalTestById } from "./data/clinicalTests";
 import shoulder from "./data/shoulder.json";
 import { MovementPanel } from "./features/movements/MovementPanel";
@@ -116,6 +117,7 @@ export function AtlasApp() {
       "comparar",
       "fundamentos",
       "fontes",
+      "apresentacao",
     ].includes(section);
   const [query, setQuery] = useState(""),
     [searchOpen, setSearchOpen] = useState(false),
@@ -304,6 +306,8 @@ export function AtlasApp() {
     regionOnly,
   };
   const list = searchStructures("", system, region);
+  // O modo apresentação ocupa a tela inteira, sem a navegação do app.
+  if (section === "apresentacao") return <PresentationMode />;
   return (
     <div className="app-shell">
       <header className="topbar">
@@ -783,13 +787,17 @@ export function AtlasApp() {
               select(id);
               setRegionOnly(true);
               setReveal("ghost");
+              // A estrutura aberta a partir do teste fica em destaque na sua
+              // camada (nervo, ligamento, menisco, tendão...).
+              const kind = byId[id].kind;
               setLayers({
-                ossos: 35,
-                musculos: 60,
-                articulacoes: 0,
-                ligamentos: 0,
-                tendoes: 0,
-                nervos: 100,
+                ossos: kind === "ossos" ? 100 : 35,
+                musculos:
+                  kind === "musculos" ? 100 : kind === "nervos" ? 60 : 30,
+                articulacoes: kind === "articulacoes" ? 100 : 0,
+                ligamentos: kind === "ligamentos" ? 100 : 0,
+                tendoes: kind === "tendoes" ? 100 : 0,
+                nervos: kind === "nervos" ? 100 : 0,
               });
               setHidden([]);
               setTransparent([]);

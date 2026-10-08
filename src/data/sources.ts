@@ -1,3 +1,5 @@
+import { lowerQuadrantSources } from "./testesClinicos";
+
 export const sources = [
   {
     id: "slump-procedure",
@@ -209,4 +211,5 @@ export const sources = [
     url: "https://sites.google.com/a/umich.edu/bluelink/resources/bluelink-anatomy-tables/musculature-of-the-upper-limb",
     note: "Leitura complementar universitária para revisão de musculatura do membro superior.",
   },
+  ...lowerQuadrantSources,
 ];

@@ -11,7 +11,21 @@ export const clinicalStages = [
   "Revisar e concluir",
 ] as const;
 
-export function clinicalStagesFor(id: string) {
+/** Etapas do roteiro guiado. Lasègue e Slump têm nomes próprios, alinhados
+ *  às demonstrações 3D; os demais testes usam os títulos dos seus passos. */
+export function clinicalStagesFor(
+  test: string | { id: string; steps: { title: string }[] },
+): readonly string[] {
+  const id = typeof test === "string" ? test : test.id;
+  if (id !== "slump" && id !== "lasegue" && typeof test !== "string")
+    return [
+      "Objetivo e indicação",
+      ...test.steps.map((step) => step.title),
+      "Interpretar os achados",
+      "Registrar a avaliação",
+      "Praticar com casos",
+      "Revisar e concluir",
+    ];
   return id === "slump"
     ? [
         "Objetivo e indicação",

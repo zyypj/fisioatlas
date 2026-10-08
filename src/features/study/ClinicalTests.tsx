@@ -1,26 +1,45 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
-import { useSearchParams } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Search, X } from "lucide-react";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { ArrowLeft, ArrowRight, Presentation, Search, X } from "lucide-react";
 import { byId } from "../../data";
 import {
   clinicalCategories,
   clinicalKinds,
+  clinicalQuadrants,
   clinicalTests,
   clinicalTestById,
 } from "../../data/clinicalTests";
-import type { ClinicalKind, ClinicalTest } from "../../data/clinicalTests";
+import type {
+  ClinicalKind,
+  ClinicalQuadrant,
+  ClinicalTest,
+} from "../../data/clinicalTests";
 import { sources } from "../../data/sources";
 import { clinicalStagesFor, parseClinicalStage } from "./clinicalGuide";
 import {
   filterClinicalTests,
   groupClinicalTests,
   parseClinicalFilters,
+  quadrantOf,
 } from "./clinicalCatalog";
 import type { ClinicalFilters } from "./clinicalCatalog";
 
 const LasegueViewer = lazy(() => import("../viewer/LasegueViewer"));
 
-function ClinicalVisual({ step, testId }: { step: number; testId: string }) {
+/** Testes com demonstração 3D animada própria. */
+export const animatedTests = new Set(["lasegue", "slump"]);
+
+function ClinicalVisual({
+  step,
+  test,
+  onSelect,
+}: {
+  step: number;
+  test: ClinicalTest;
+  onSelect: (id: string) => void;
+}) {
+  if (!animatedTests.has(test.id))
+    return <StepPanel step={step} test={test} onSelect={onSelect} />;
   return (
     <Suspense
       fallback={
@@ -31,9 +50,78 @@ function ClinicalVisual({ step, testId }: { step: number; testId: string }) {
     >
       <LasegueViewer
         step={step}
-        testId={testId === "slump" ? "slump" : "lasegue"}
+        testId={test.id === "slump" ? "slump" : "lasegue"}
       />
     </Suspense>
+  );
+}
+
+/** Quadro do passo para testes sem animação 3D: posição, número do passo,
+ *  o que observar e atalhos para as estruturas avaliadas no atlas. */
+function StepPanel({
+  step,
+  test,
+  onSelect,
+}: {
+  step: number;
+  test: ClinicalTest;
+  onSelect: (id: string) => void;
+}) {
+  const current = test.steps[step];
+  return (
+    <div className="clinical-step-panel">
+      <div className="clinical-step-track" aria-hidden="true">
+        {test.steps.map((item, index) => (
+          <span key={item.title} className={index <= step ? "done" : ""} />
+        ))}
+      </div>
+      <span className="eyebrow">
+        PASSO {step + 1} DE {test.steps.length}
+      </span>
+      <strong className="clinical-step-title">{current.title}</strong>
+      {test.position && (
+        <p className="clinical-step-position">
+          <b>Posição:</b> {test.position}
+        </p>
+      )}
+      <p className="clinical-cue">{current.cue}</p>
+      <div className="chips">
+        {test.related.slice(0, 4).map((id) => (
+          <button className="secondary" key={id} onClick={() => onSelect(id)}>
+            {byId[id]?.name} no 3D
+            <ArrowRight size={14} />
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/** Nota de execução mostrada no início do roteiro e da ficha. */
+function executionNote(test: ClinicalTest) {
+  return (
+    test.executionNote ??
+    (test.position ? "Posição: " + test.position : "Siga os passos abaixo.")
+  );
+}
+
+/** O que um resultado isolado não confirma. */
+function cautionFor(test: ClinicalTest) {
+  return (
+    test.caution ??
+    "Um resultado isolado não confirma o diagnóstico; integre-o à história e ao restante do exame."
+  );
+}
+
+/** Checklist de revisão ao fim do roteiro. */
+function reviewFor(test: ClinicalTest) {
+  return (
+    test.review ?? [
+      "Reconhecer a indicação e verificar segurança e consentimento.",
+      "Executar os passos do teste com a técnica correta.",
+      "Interpretar o achado e reconhecer seus limites.",
+      "Registrar os achados e reconhecer sinais que exigem encaminhamento.",
+    ]
   );
 }
 
@@ -136,7 +224,7 @@ function GuidedLesson({
 }) {
   const stageHeading = useRef<HTMLHeadingElement>(null),
     shouldFocus = useRef(false);
-  const stages = clinicalStagesFor(test.id),
+  const stages = clinicalStagesFor(test),
     executionCount = test.steps.length;
   const storageKey = `fisioatlas-clinical-${test.id}-stage`;
   const [stage, setStage] = useState(() => {
@@ -214,7 +302,9 @@ function GuidedLesson({
             {stages[stage]}
           </h2>
         </header>
-        {execution && <ClinicalVisual step={stage - 1} testId={test.id} />}
+        {execution && (
+          <ClinicalVisual step={stage - 1} test={test} onSelect={onSelect} />
+        )}
         <div className="guided-content" aria-live="polite">
           {stage === 0 && (
             <>
@@ -225,10 +315,7 @@ function GuidedLesson({
                   <li key={text}>{text}</li>
                 ))}
               </ul>
-              <p className="clinical-cue">
-                {test.executionNote ||
-                  "Neste roteiro, Lasègue corresponde ao SLR passivo: o examinador eleva o membro, mantendo o joelho estendido."}
-              </p>
+              <p className="clinical-cue">{executionNote(test)}</p>
               <p>
                 Aprenda a execução, o registro e o raciocínio. O roteiro é
                 educativo; não simula sintomas nem fornece um diagnóstico de
@@ -267,10 +354,7 @@ function GuidedLesson({
                   <li key={text}>{text}</li>
                 ))}
               </ol>
-              <p className="clinical-cue">
-                Um resultado isolado não confirma hérnia de disco nem identifica
-                sozinho a causa dos sintomas.
-              </p>
+              <p className="clinical-cue">{cautionFor(test)}</p>
             </>
           )}
           {stage === executionCount + 2 && (
@@ -291,25 +375,9 @@ function GuidedLesson({
             <>
               <h3>Confira o que você aprendeu</h3>
               <ul>
-                <li>
-                  Reconhecer a indicação e verificar segurança e consentimento.
-                </li>
-                <li>
-                  {test.id === "slump"
-                    ? "Demonstrar a sequência sentada e a liberação cervical mantendo a perna."
-                    : "Demonstrar elevação passiva com o joelho estendido."}
-                </li>
-                <li>
-                  Observar sintomas familiares, localização e resposta à
-                  diferenciação.
-                </li>
-                <li>
-                  Relacionar o resultado à história e ao exame neurológico.
-                </li>
-                <li>
-                  Registrar os achados e reconhecer sinais que exigem
-                  encaminhamento.
-                </li>
+                {reviewFor(test).map((text) => (
+                  <li key={text}>{text}</li>
+                ))}
               </ul>
               <h3>Conecte com a anatomia</h3>
               <AnatomyLinks test={test} onSelect={onSelect} />
@@ -418,16 +486,15 @@ function Lesson({
       <div className="clinical-note">
         <strong>O que este módulo ensina</strong>
         <p>
-          {test.executionNote || "Lasègue aqui corresponde ao SLR passivo."}{" "}
-          Estude a execução e o raciocínio; a demonstração não simula sintomas
-          de um paciente nem fornece um diagnóstico.
+          {executionNote(test)} Estude a execução e o raciocínio; a demonstração
+          não simula sintomas de um paciente nem fornece um diagnóstico.
         </p>
       </div>
       <section
         className="clinical-guide"
         aria-label={`Execução do ${test.name}`}
       >
-        <ClinicalVisual step={step} testId={test.id} />
+        <ClinicalVisual step={step} test={test} onSelect={onSelect} />
         <div className="clinical-steps">
           <h2>Aprenda a executar</h2>
           <ol>
@@ -499,43 +566,25 @@ function Lesson({
       </section>
       <section className="clinical-card">
         <h2>Do teste à hipótese clínica</h2>
-        <p>
-          Um resultado isolado não confirma hérnia de disco. Construa o
-          raciocínio com os achados do exame:
-        </p>
+        <p>{cautionFor(test)} Construa o raciocínio com os achados do exame:</p>
         <ol>
           {test.reasoning.map((text) => (
             <li key={text}>{text}</li>
           ))}
         </ol>
-        <details>
-          <summary>O que a evidência mostra?</summary>
-          <p>
-            {test.evidence ? (
-              test.evidence.text
-            ) : (
-              <>
-                A acurácia varia com a população, a técnica e a referência
-                diagnóstica. Um estudo de 2023, com 142 pessoas encaminhadas
-                para eletrodiagnóstico, encontrou sensibilidade de 89% e
-                especificidade de 25% para um dos critérios de SLR. Isso mostra
-                por que um resultado positivo não basta para confirmar
-                radiculopatia; esses valores não são universais.
-              </>
-            )}
-          </p>
-          <a
-            href={
-              test.evidence
-                ? sources.find((s) => s.id === test.evidence!.source)?.url
-                : "https://pubmed.ncbi.nlm.nih.gov/38132028/"
-            }
-            target="_blank"
-            rel="noreferrer"
-          >
-            Ler o estudo e os critérios utilizados ↗
-          </a>
-        </details>
+        {test.evidence && (
+          <details>
+            <summary>O que a evidência mostra?</summary>
+            <p>{test.evidence.text}</p>
+            <a
+              href={sources.find((s) => s.id === test.evidence!.source)?.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ler o estudo e os critérios utilizados ↗
+            </a>
+          </details>
+        )}
       </section>
       <div className="clinical-columns">
         <section className="clinical-card">
@@ -602,26 +651,38 @@ function Lesson({
 
 function ClinicalCatalog({ onOpen }: { onOpen: (id: string) => void }) {
   const [params, setParams] = useSearchParams();
+  const navigate = useNavigate();
   const filters = parseClinicalFilters(params);
   const update = (change: Partial<ClinicalFilters>) => {
     const next = { ...filters, ...change },
       search = new URLSearchParams();
     if (next.query) search.set("q", next.query);
+    if (next.quadrant) search.set("quadrante", next.quadrant);
     if (next.category) search.set("regiao", next.category);
     if (next.kind) search.set("tipo", next.kind);
     setParams(search, { replace: true });
   };
   const filtering = Boolean(filters.query.trim() || filters.kind);
-  // Contagens por região respeitam busca e tipo, mas não a própria região.
+  // Contagens por região respeitam busca, tipo e quadrante, mas não a própria
+  // região; as do quadrante ignoram também o quadrante.
   const matching = filterClinicalTests(clinicalTests, {
     ...filters,
     category: "",
   });
+  const anyQuadrant = filterClinicalTests(clinicalTests, {
+    ...filters,
+    quadrant: "",
+    category: "",
+  });
+  const categories = clinicalCategories.filter(
+    (category) => !filters.quadrant || category.quadrant === filters.quadrant,
+  );
   const results = filters.category
     ? matching.filter((test) => test.category === filters.category)
     : matching;
   const groups = groupClinicalTests(results).filter(
     (group) =>
+      (!filters.quadrant || group.quadrant === filters.quadrant) &&
       (!filters.category || group.id === filters.category) &&
       (group.tests.length > 0 || !filtering),
   );
@@ -643,7 +704,7 @@ function ClinicalCatalog({ onOpen }: { onOpen: (id: string) => void }) {
           <input
             type="search"
             value={filters.query}
-            placeholder="Buscar teste (ex.: SLR, Slump)"
+            placeholder="Buscar teste (ex.: Lachman, FABER, SLR)"
             aria-label="Buscar testes"
             onChange={(e) => update({ query: e.target.value })}
           />
@@ -664,29 +725,57 @@ function ClinicalCatalog({ onOpen }: { onOpen: (id: string) => void }) {
         </label>
       </div>
       <div
+        className="clinical-quadrant-tabs"
+        role="group"
+        aria-label="Filtrar por quadrante"
+      >
+        {(
+          [
+            ["", "Todos os quadrantes"],
+            ...Object.entries(clinicalQuadrants),
+          ] as [ClinicalQuadrant | "", string][]
+        ).map(([quadrant, name]) => {
+          const count = quadrant
+            ? anyQuadrant.filter(
+                (test) => quadrantOf(test.category) === quadrant,
+              ).length
+            : anyQuadrant.length;
+          const selected = filters.quadrant === quadrant;
+          return (
+            <button
+              key={quadrant || "todos"}
+              className={selected ? "active" : ""}
+              aria-pressed={selected}
+              onClick={() => update({ quadrant, category: "" })}
+            >
+              {name}
+              <span>{count}</span>
+            </button>
+          );
+        })}
+      </div>
+      <div
         className="clinical-category-tabs"
         role="group"
         aria-label="Filtrar por região"
       >
-        {[{ id: "" as const, name: "Todas" }, ...clinicalCategories].map(
-          (category) => {
-            const count = category.id
-              ? matching.filter((test) => test.category === category.id).length
-              : matching.length;
-            const selected = filters.category === category.id;
-            return (
-              <button
-                key={category.id || "todas"}
-                className={selected ? "active" : ""}
-                aria-pressed={selected}
-                onClick={() => update({ category: category.id })}
-              >
-                {category.name}
-                <span>{count}</span>
-              </button>
-            );
-          },
-        )}
+        {[{ id: "" as const, name: "Todas" }, ...categories].map((category) => {
+          const count = category.id
+            ? matching.filter((test) => test.category === category.id).length
+            : matching.length;
+          const selected = filters.category === category.id;
+          return (
+            <button
+              key={category.id || "todas"}
+              className={selected ? "active" : ""}
+              aria-pressed={selected}
+              onClick={() => update({ category: category.id })}
+            >
+              {category.name}
+              <span>{count}</span>
+            </button>
+          );
+        })}
       </div>
       <div className="clinical-results" role="status">
         <span>
@@ -694,12 +783,27 @@ function ClinicalCatalog({ onOpen }: { onOpen: (id: string) => void }) {
             ? "1 teste encontrado"
             : `${results.length} testes encontrados`}
         </span>
-        {(filtering || filters.category) && (
+        {(filtering || filters.category || filters.quadrant) && (
           <button
             className="text-button"
-            onClick={() => update({ query: "", category: "", kind: "" })}
+            onClick={() =>
+              update({ query: "", quadrant: "", category: "", kind: "" })
+            }
           >
             <X size={14} /> Limpar filtros
+          </button>
+        )}
+        {results.length > 0 && (
+          <button
+            className="primary clinical-present"
+            onClick={() =>
+              navigate(
+                "/apresentacao?testes=" +
+                  results.map((test) => test.id).join(","),
+              )
+            }
+          >
+            <Presentation size={16} /> Modo apresentação
           </button>
         )}
       </div>
@@ -767,13 +871,22 @@ export function ClinicalTests({
   onSelect: (id: string) => void;
 }) {
   const test = id ? clinicalTestById[id] : null;
+  const navigate = useNavigate();
   return (
     <div className="content-page clinical-page">
       {test ? (
         <>
-          <button className="text-button" onClick={() => onOpen("")}>
-            <ArrowLeft size={15} /> Todos os testes
-          </button>
+          <div className="clinical-topbar">
+            <button className="text-button" onClick={() => onOpen("")}>
+              <ArrowLeft size={15} /> Todos os testes
+            </button>
+            <button
+              className="secondary"
+              onClick={() => navigate("/apresentacao?play=1&testes=" + test.id)}
+            >
+              <Presentation size={16} /> Apresentar este teste
+            </button>
+          </div>
           <TestModule key={test.id} test={test} onSelect={onSelect} />
         </>
       ) : (

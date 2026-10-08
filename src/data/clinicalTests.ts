@@ -1,41 +1,85 @@
 import { slumpTest } from "./slumpTest";
+import { lowerQuadrantTests } from "./testesClinicos";
 
-export type ClinicalCategory = "joelho" | "cotovelo" | "lombar" | "ombro";
+export type ClinicalCategory =
+  | "lombar"
+  | "pelve"
+  | "quadril"
+  | "joelho"
+  | "tornozelo"
+  | "ombro"
+  | "cotovelo";
 export type ClinicalKind =
   | "neurodinamico"
   | "ligamentar"
   | "meniscal"
   | "musculotendineo"
   | "impacto"
-  | "instabilidade";
+  | "instabilidade"
+  | "provocacao"
+  | "comprimento-muscular"
+  | "mobilidade"
+  | "funcional";
+export type ClinicalQuadrant = "inferior" | "superior";
+
+export const clinicalQuadrants: Record<ClinicalQuadrant, string> = {
+  inferior: "Quadrante inferior",
+  superior: "Quadrante superior",
+};
 
 export const clinicalCategories: {
   id: ClinicalCategory;
   name: string;
+  quadrant: ClinicalQuadrant;
   description: string;
 }[] = [
   {
+    id: "lombar",
+    name: "Lombar",
+    quadrant: "inferior",
+    description: "Coluna lombossacra e sistema neural do membro inferior.",
+  },
+  {
+    id: "pelve",
+    name: "Pelve e sacroilíaca",
+    quadrant: "inferior",
+    description:
+      "Articulação sacroilíaca e dor na cintura pélvica: provocação e controle de carga.",
+  },
+  {
+    id: "quadril",
+    name: "Quadril",
+    quadrant: "inferior",
+    description:
+      "Articulação coxofemoral, impacto femoroacetabular, comprimento muscular e abdutores.",
+  },
+  {
     id: "joelho",
     name: "Joelho",
+    quadrant: "inferior",
     description:
       "Ligamentos cruzados e colaterais, meniscos e articulação patelofemoral.",
   },
   {
-    id: "cotovelo",
-    name: "Cotovelo",
+    id: "tornozelo",
+    name: "Tornozelo e pé",
+    quadrant: "inferior",
     description:
-      "Epicondilites, estabilidade ligamentar e nervos ao redor do cotovelo.",
-  },
-  {
-    id: "lombar",
-    name: "Lombar",
-    description: "Coluna lombossacra e sistema neural do membro inferior.",
+      "Ligamentos laterais, sindesmose, tendão do calcâneo, fáscia plantar e mobilidade.",
   },
   {
     id: "ombro",
     name: "Ombro",
+    quadrant: "superior",
     description:
       "Manguito rotador, impacto subacromial e instabilidade glenoumeral.",
+  },
+  {
+    id: "cotovelo",
+    name: "Cotovelo",
+    quadrant: "superior",
+    description:
+      "Epicondilites, estabilidade ligamentar e nervos ao redor do cotovelo.",
   },
 ];
 
@@ -46,6 +90,10 @@ export const clinicalKinds: Record<ClinicalKind, string> = {
   musculotendineo: "Musculotendíneo",
   impacto: "Impacto",
   instabilidade: "Instabilidade",
+  provocacao: "Provocação de dor",
+  "comprimento-muscular": "Comprimento muscular",
+  mobilidade: "Mobilidade",
+  funcional: "Controle e força",
 };
 
 export interface ClinicalTest {
@@ -55,19 +103,26 @@ export interface ClinicalTest {
   category: ClinicalCategory;
   kind: ClinicalKind;
   region: string;
+  /** Posição do paciente e do examinador, em uma frase. */
+  position?: string;
   summary: string;
   purpose: string;
   indications: string[];
   safety: string[];
-  steps: { title: string; text: string; angle: number; cue: string }[];
+  /** `angle` só é usado pelas demonstrações 3D (Lasègue e Slump). */
+  steps: { title: string; text: string; angle?: number; cue: string }[];
   interpretation: { title: string; text: string }[];
   reasoning: string[];
+  /** Ressalva mostrada após a interpretação (o que o teste não confirma). */
+  caution?: string;
   mistakes: string[];
   record: string;
   related: string[];
   sources: string[];
   executionNote?: string;
   evidence?: { text: string; source: string };
+  /** Checklist de revisão ao fim do roteiro. */
+  review?: string[];
   cases: {
     id: string;
     question: string;
@@ -85,6 +140,23 @@ export const clinicalTests: ClinicalTest[] = [
     category: "lombar",
     kind: "neurodinamico",
     region: "Coluna lombossacra · membro inferior",
+    position:
+      "Paciente em decúbito dorsal, relaxado; examinador ao lado do membro testado, uma mão no calcanhar e outra acima do joelho.",
+    executionNote:
+      "Neste roteiro, Lasègue corresponde ao SLR passivo: o examinador eleva o membro, mantendo o joelho estendido.",
+    caution:
+      "Um resultado isolado não confirma hérnia de disco nem identifica sozinho a causa dos sintomas.",
+    evidence: {
+      text: "A acurácia varia com a população, a técnica e a referência diagnóstica. Um estudo de 2023, com 142 pessoas encaminhadas para eletrodiagnóstico, encontrou sensibilidade de 89% e especificidade de 25% para um dos critérios de SLR. Isso mostra por que um resultado positivo não basta para confirmar radiculopatia; esses valores não são universais.",
+      source: "slr-accuracy",
+    },
+    review: [
+      "Reconhecer a indicação e verificar segurança e consentimento.",
+      "Demonstrar elevação passiva com o joelho estendido.",
+      "Observar sintomas familiares, localização e resposta à diferenciação.",
+      "Relacionar o resultado à história e ao exame neurológico.",
+      "Registrar os achados e reconhecer sinais que exigem encaminhamento.",
+    ],
     summary:
       "Elevação passiva da perna com o joelho estendido para investigar sintomas relacionados ao sistema neural lombossacro.",
     purpose:
@@ -226,6 +298,7 @@ export const clinicalTests: ClinicalTest[] = [
     ],
   },
   slumpTest,
+  ...lowerQuadrantTests,
 ];
 
 export const clinicalTestById = Object.fromEntries(

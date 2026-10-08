@@ -71,7 +71,13 @@ import {
   clinicalCategories,
   clinicalKinds,
   clinicalTests,
+  clinicalTestById,
 } from "../src/data/clinicalTests";
+import {
+  buildDeck,
+  defaultDeckTitle,
+  parseTestIds,
+} from "../src/features/presentation/deck";
 import {
   filterClinicalTests,
   groupClinicalTests,
@@ -321,7 +327,7 @@ test("Roteiro clínico tolera progresso inválido e resolve anatomia, fontes e c
   for (let stage = 0; stage < clinicalStages.length; stage++)
     assert.equal(parseClinicalStage(String(stage)), stage);
   assert.deepEqual(
-    clinicalTests.map((test) => test.id),
+    clinicalTests.slice(0, 2).map((test) => test.id),
     ["lasegue", "slump"],
   );
   for (const lesson of clinicalTests) {
@@ -347,9 +353,7 @@ test("Roteiro clínico tolera progresso inválido e resolve anatomia, fontes e c
         <AtlasApp />
       </MemoryRouter>,
     ).replace(/<!--.*?-->/g, "");
-    assert.ok(
-      html.includes("Passo 1 de " + clinicalStagesFor(lesson.id).length),
-    );
+    assert.ok(html.includes("Passo 1 de " + clinicalStagesFor(lesson).length));
     assert.ok(html.includes("Próximo passo"));
     assert.ok(!html.includes("Vamos voltar ao atlas?"));
   }
@@ -361,10 +365,10 @@ test("Roteiro clínico tolera progresso inválido e resolve anatomia, fontes e c
   assert.ok(invalid.includes("Vamos voltar ao atlas?"));
 });
 
-test("Testes clínicos: categorias, busca sem acento e filtros pela URL", () => {
+test("Testes clínicos: quadrantes, categorias, busca sem acento e filtros pela URL", () => {
   assert.deepEqual(
     clinicalCategories.map((item) => item.id),
-    ["joelho", "cotovelo", "lombar", "ombro"],
+    ["lombar", "pelve", "quadril", "joelho", "tornozelo", "ombro", "cotovelo"],
   );
   for (const lesson of clinicalTests) {
     assert.ok(
@@ -373,41 +377,68 @@ test("Testes clínicos: categorias, busca sem acento e filtros pela URL", () => 
     );
     assert.ok(lesson.kind in clinicalKinds, `Tipo inválido: ${lesson.id}`);
   }
+  // O quadrante inferior tem testes em todas as suas regiões.
+  for (const category of clinicalCategories.filter(
+    (item) => item.quadrant === "inferior",
+  ))
+    assert.ok(
+      clinicalTests.filter((test) => test.category === category.id).length >= 4,
+      `Poucos testes em ${category.id}`,
+    );
+  assert.ok(clinicalTests.length >= 35, "Catálogo de testes pequeno");
   assert.equal(normalizeSearch("  LASÈGUE "), "lasegue");
-  const none: ClinicalFilters = { query: "", category: "", kind: "" };
+  const none: ClinicalFilters = {
+    query: "",
+    quadrant: "",
+    category: "",
+    kind: "",
+  };
   const ids = (filters: Partial<ClinicalFilters>) =>
     filterClinicalTests(clinicalTests, { ...none, ...filters }).map(
       (test) => test.id,
     );
-  assert.deepEqual(ids({}), ["lasegue", "slump"]);
-  assert.deepEqual(ids({ query: "lasegue" }), ["lasegue"]);
-  assert.deepEqual(ids({ query: "slr" }), ["lasegue"]);
-  assert.deepEqual(ids({ query: "lombar neurodinamico" }), [
-    "lasegue",
-    "slump",
-  ]);
+  assert.equal(ids({}).length, clinicalTests.length);
+  assert.ok(ids({ query: "lasegue" }).includes("lasegue"));
+  assert.ok(ids({ query: "slr" }).includes("lasegue"));
+  assert.ok(ids({ query: "lachman" }).includes("lachman"));
+  assert.ok(
+    ids({ query: "lombar neurodinamico" }).every(
+      (id) => clinicalTestById[id].category === "lombar",
+    ),
+  );
   assert.deepEqual(ids({ query: "slump ombro" }), []);
-  assert.deepEqual(ids({ category: "lombar" }), ["lasegue", "slump"]);
-  assert.deepEqual(ids({ category: "ombro" }), []);
-  assert.deepEqual(ids({ kind: "ligamentar" }), []);
+  assert.ok(
+    ids({ category: "joelho" }).every(
+      (id) => clinicalTestById[id].category === "joelho",
+    ),
+  );
+  assert.ok(ids({ kind: "ligamentar" }).includes("lachman"));
+  const inferior = ids({ quadrant: "inferior" });
+  assert.equal(inferior.length, clinicalTests.length);
+  assert.deepEqual(ids({ quadrant: "superior" }), []);
+  assert.deepEqual(ids({ query: "quadrante inferior lachman" }), ["lachman"]);
   const groups = groupClinicalTests(clinicalTests);
   assert.deepEqual(
-    groups.map((group) => [group.id, group.tests.length]),
-    [
-      ["joelho", 0],
-      ["cotovelo", 0],
-      ["lombar", 2],
-      ["ombro", 0],
-    ],
+    groups.map((group) => group.id),
+    clinicalCategories.map((item) => item.id),
   );
   assert.deepEqual(
     parseClinicalFilters(
-      new URLSearchParams("q=slump&regiao=lombar&tipo=neurodinamico"),
+      new URLSearchParams(
+        "q=slump&quadrante=inferior&regiao=lombar&tipo=neurodinamico",
+      ),
     ),
-    { query: "slump", category: "lombar", kind: "neurodinamico" },
+    {
+      query: "slump",
+      quadrant: "inferior",
+      category: "lombar",
+      kind: "neurodinamico",
+    },
   );
   assert.deepEqual(
-    parseClinicalFilters(new URLSearchParams("regiao=quadril&tipo=xyz")),
+    parseClinicalFilters(
+      new URLSearchParams("regiao=nuca&tipo=xyz&quadrante=lateral"),
+    ),
     none,
   );
   const render = (path: string) =>
@@ -419,18 +450,149 @@ test("Testes clínicos: categorias, busca sem acento e filtros pela URL", () => 
   const all = render("/testes");
   for (const category of clinicalCategories)
     assert.ok(all.includes(`id="categoria-${category.id}"`));
-  assert.ok(all.includes("Em breve: os testes de joelho entram aqui."));
-  assert.ok(all.includes("2 testes encontrados"));
+  assert.ok(all.includes("Em breve: os testes de cotovelo entram aqui."));
+  assert.ok(all.includes(`${clinicalTests.length} testes encontrados`));
+  assert.ok(all.includes("Modo apresentação"));
+  const lower = render("/testes?quadrante=inferior");
+  assert.ok(lower.includes('id="categoria-joelho"'));
+  assert.ok(!lower.includes('id="categoria-ombro"'));
   const knee = render("/testes?regiao=joelho");
   assert.ok(knee.includes('id="categoria-joelho"'));
   assert.ok(!knee.includes('id="categoria-lombar"'));
   const searched = render("/testes?q=slump");
   assert.ok(searched.includes("Teste de Slump"));
   assert.ok(!searched.includes("Teste de Lasègue"));
-  assert.ok(!searched.includes('id="categoria-ombro"'));
   assert.ok(
     render("/testes?q=inexistente").includes("Nenhum teste encontrado"),
   );
+});
+
+test("Testes clínicos: conteúdo completo, anatomia e fontes resolvidas", () => {
+  const ids = new Set<string>();
+  for (const lesson of clinicalTests) {
+    assert.ok(!ids.has(lesson.id), `id repetido: ${lesson.id}`);
+    ids.add(lesson.id);
+    assert.ok(lesson.steps.length >= 4, `${lesson.id}: poucos passos`);
+    assert.ok(lesson.safety.length >= 3, `${lesson.id}: segurança`);
+    assert.ok(lesson.interpretation.length >= 3, `${lesson.id}: interpretação`);
+    assert.ok(lesson.reasoning.length >= 3, `${lesson.id}: raciocínio`);
+    assert.ok(lesson.mistakes.length >= 3, `${lesson.id}: erros comuns`);
+    assert.equal(lesson.cases.length, 3, `${lesson.id}: casos`);
+    assert.ok(lesson.related.length >= 3, `${lesson.id}: anatomia`);
+    for (const id of lesson.related)
+      assert.ok(byId[id], `${lesson.id}: anatomia ausente ${id}`);
+    for (const id of lesson.sources)
+      assert.ok(
+        sources.some((source) => source.id === id),
+        `${lesson.id}: fonte ausente ${id}`,
+      );
+    if (lesson.evidence)
+      assert.ok(
+        sources.some((source) => source.id === lesson.evidence!.source),
+        `${lesson.id}: fonte da evidência ausente`,
+      );
+    for (const item of lesson.cases) {
+      assert.ok(item.correct >= 0 && item.correct < item.choices.length);
+      assert.ok(item.explanation.length > 20);
+    }
+    // O roteiro guiado usa os passos do próprio teste.
+    const stages = clinicalStagesFor(lesson);
+    assert.equal(stages.length, lesson.steps.length + 5, lesson.id);
+  }
+  assert.equal(
+    new Set(sources.map((source) => source.id)).size,
+    sources.length,
+    "Fontes com id repetido",
+  );
+  for (const source of sources)
+    assert.match(source.url, /^(https:\/\/|\/)/, `URL inválida: ${source.id}`);
+});
+
+test("Modo apresentação: deck por região, formatos, casos e rota", () => {
+  assert.deepEqual(parseTestIds("lachman,xyz,lachman,faber"), [
+    "lachman",
+    "faber",
+  ]);
+  assert.deepEqual(parseTestIds(null), []);
+  const pick = (...list: string[]) => list.map((id) => clinicalTestById[id]);
+  const base = {
+    title: "",
+    subtitle: "Turma 2026",
+    format: "completo" as const,
+    cases: true,
+    references: true,
+  };
+  // Testes escolhidos fora de ordem saem agrupados pela ordem das regiões.
+  const deck = buildDeck(pick("lachman", "lasegue", "faber"), base);
+  assert.equal(deck[0].kind, "cover");
+  assert.equal(deck.at(-1)!.kind, "closing");
+  assert.equal(deck[1].kind, "agenda");
+  const sections = deck.filter((slide) => slide.kind === "section");
+  assert.deepEqual(
+    sections.map((slide) => slide.kind === "section" && slide.name),
+    ["Lombar", "Quadril", "Joelho"],
+  );
+  const titles = deck
+    .filter((slide) => slide.kind === "test")
+    .map((slide) => slide.kind === "test" && slide.test.id);
+  assert.deepEqual(titles, ["lasegue", "faber", "lachman"]);
+  // Formato completo: um slide por passo e os três casos.
+  const lachman = clinicalTestById.lachman;
+  const steps = deck.filter(
+    (slide) => slide.kind === "step" && slide.test.id === "lachman",
+  );
+  assert.equal(steps.length, lachman.steps.length);
+  assert.equal(
+    deck.filter((slide) => slide.kind === "case" && slide.test.id === "lachman")
+      .length,
+    3,
+  );
+  assert.ok(deck.some((slide) => slide.kind === "references"));
+  const cover = deck[0];
+  assert.ok(cover.kind === "cover" && cover.title.includes("inferior"));
+  // Resumido: passos num slide só, um caso e menos slides.
+  const short = buildDeck(pick("lachman", "lasegue", "faber"), {
+    ...base,
+    format: "resumido",
+  });
+  assert.ok(short.length < deck.length);
+  assert.ok(!short.some((slide) => slide.kind === "step"));
+  assert.equal(short.filter((slide) => slide.kind === "steps").length, 3);
+  assert.equal(short.filter((slide) => slide.kind === "case").length, 3);
+  // Sem casos e sem referências.
+  const plain = buildDeck(pick("lachman"), {
+    ...base,
+    cases: false,
+    references: false,
+  });
+  assert.ok(!plain.some((slide) => slide.kind === "case"));
+  assert.ok(!plain.some((slide) => slide.kind === "references"));
+  assert.ok(!plain.some((slide) => slide.kind === "agenda"));
+  assert.equal(defaultDeckTitle(pick("lachman")), lachman.name);
+  // Todo o quadrante inferior monta sem slides vazios.
+  const everything = buildDeck(clinicalTests, base);
+  for (const slide of everything)
+    if (slide.kind === "list") assert.ok(slide.items.length > 0);
+  // Rotas: montagem e apresentação.
+  const render = (path: string) =>
+    renderToString(
+      <MemoryRouter initialEntries={[path]}>
+        <AtlasApp />
+      </MemoryRouter>,
+    ).replace(/<!--.*?-->/g, "");
+  const setup = render("/apresentacao?testes=lachman,faber");
+  assert.ok(setup.includes("Monte sua apresentação"));
+  assert.ok(setup.includes("Iniciar apresentação"));
+  const playing = render(
+    "/apresentacao?play=1&testes=lachman&titulo=Joelho%20em%20foco",
+  );
+  assert.ok(playing.includes("Joelho em foco"));
+  assert.ok(playing.includes("presentation-player"));
+  assert.ok(!playing.includes("Monte sua apresentação"));
+  const second = render("/apresentacao?play=1&testes=lachman&slide=1");
+  assert.ok(second.includes("Teste de Lachman"));
+  // A página de um teste oferece apresentá-lo.
+  assert.ok(render("/testes/lachman").includes("Apresentar este teste"));
 });
 
 test("Catálogo: IDs únicos, cobertura, campos musculares e relações resolvidas", () => {

@@ -11,6 +11,17 @@ export const slumpTest: ClinicalTest = {
   category: "lombar",
   kind: "neurodinamico",
   region: "Coluna · sistema neural do membro inferior",
+  position:
+    "Paciente sentado na borda da maca, coxas apoiadas e mãos atrás do corpo; examinador ao lado, guiando tronco, cervical e perna.",
+  caution:
+    "Um resultado isolado não confirma hérnia de disco nem identifica sozinho a causa dos sintomas.",
+  review: [
+    "Reconhecer a indicação e verificar segurança e consentimento.",
+    "Demonstrar a sequência sentada e a liberação cervical mantendo a perna.",
+    "Observar sintomas familiares, localização e resposta à diferenciação.",
+    "Relacionar o resultado à história e ao exame neurológico.",
+    "Registrar os achados e reconhecer sinais que exigem encaminhamento.",
+  ],
   summary:
     "Sequência em posição sentada que combina movimentos do tronco, cervical, joelho e tornozelo para investigar a resposta dos sintomas à carga neural.",
   executionNote:

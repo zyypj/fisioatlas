@@ -1,14 +1,25 @@
-import { clinicalCategories, clinicalKinds } from "../../data/clinicalTests";
+import {
+  clinicalCategories,
+  clinicalKinds,
+  clinicalQuadrants,
+} from "../../data/clinicalTests";
 import type {
   ClinicalCategory,
   ClinicalKind,
+  ClinicalQuadrant,
   ClinicalTest,
 } from "../../data/clinicalTests";
 
 export interface ClinicalFilters {
   query: string;
+  quadrant: ClinicalQuadrant | "";
   category: ClinicalCategory | "";
   kind: ClinicalKind | "";
+}
+
+/** Quadrante (inferior ou superior) de uma categoria. */
+export function quadrantOf(category: ClinicalCategory) {
+  return clinicalCategories.find((item) => item.id === category)!.quadrant;
 }
 
 /** Minúsculas e sem acentos: "lasegue" encontra "Lasègue". */
@@ -23,9 +34,12 @@ export function normalizeSearch(text: string) {
 /** Lê os filtros da URL, descartando valores desconhecidos. */
 export function parseClinicalFilters(params: URLSearchParams): ClinicalFilters {
   const category = params.get("regiao") ?? "",
-    kind = params.get("tipo") ?? "";
+    kind = params.get("tipo") ?? "",
+    quadrant = params.get("quadrante") ?? "";
   return {
     query: params.get("q") ?? "",
+    quadrant:
+      quadrant in clinicalQuadrants ? (quadrant as ClinicalQuadrant) : "",
     category: clinicalCategories.some((item) => item.id === category)
       ? (category as ClinicalCategory)
       : "",
@@ -42,6 +56,7 @@ function searchableText(test: ClinicalTest) {
       test.region,
       test.summary,
       category?.name ?? "",
+      category ? clinicalQuadrants[category.quadrant] : "",
       clinicalKinds[test.kind],
     ].join(" "),
   );
@@ -50,10 +65,11 @@ function searchableText(test: ClinicalTest) {
 /** Cada palavra da busca precisa aparecer em algum campo do teste. */
 export function filterClinicalTests(
   tests: ClinicalTest[],
-  { query, category, kind }: ClinicalFilters,
+  { query, quadrant, category, kind }: ClinicalFilters,
 ) {
   const words = normalizeSearch(query).split(/\s+/).filter(Boolean);
   return tests.filter((test) => {
+    if (quadrant && quadrantOf(test.category) !== quadrant) return false;
     if (category && test.category !== category) return false;
     if (kind && test.kind !== kind) return false;
     const text = searchableText(test);
